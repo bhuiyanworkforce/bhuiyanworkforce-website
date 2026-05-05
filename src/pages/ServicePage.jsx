@@ -61,9 +61,7 @@ export default function ServicePage() {
             {/* Right column */}
             <div className="prose">
               <h2>Overview</h2>
-              {service.overview.split('
-
-').map((para) => <p key={para.slice(0, 40)}>{para}</p>)}
+              {service.overview.split('\n\n').map((para) => <p key={para.slice(0, 40)}>{para}</p>)}
 
               <h2>Roles &amp; Skills We Supply</h2>
               <ul>{service.roles.map(r => <li key={r}>{r}</li>)}</ul>
