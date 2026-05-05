@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 534" width="800" height="534">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2744"/>
+      <stop offset="100%" style="stop-color:#1a3a5c"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4956a"/>
+      <stop offset="100%" style="stop-color:#b8784e"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e4976"/>
+      <stop offset="100%" style="stop-color:#0d2035"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="534" fill="url(#bg)"/>
+
+  <!-- Glow circles -->
+  <circle cx="600" cy="150" r="200" fill="rgba(201,168,76,0.08)"/>
+  <circle cx="150" cy="400" r="150" fill="rgba(30,73,118,0.3)"/>
+
+  <!-- Building structure -->
+  <rect x="480" y="80" width="160" height="320" fill="#1e4976" rx="4"/>
+  <rect x="500" y="100" width="30" height="25" fill="rgba(201,168,76,0.3)" rx="2"/>
+  <rect x="545" y="100" width="30" height="25" fill="rgba(201,168,76,0.3)" rx="2"/>
+  <rect x="590" y="100" width="30" height="25" fill="rgba(201,168,76,0.3)" rx="2"/>
+  <rect x="500" y="145" width="30" height="25" fill="rgba(201,168,76,0.25)" rx="2"/>
+  <rect x="545" y="145" width="30" height="25" fill="rgba(201,168,76,0.25)" rx="2"/>
+  <rect x="590" y="145" width="30" height="25" fill="rgba(201,168,76,0.25)" rx="2"/>
+  <rect x="500" y="190" width="30" height="25" fill="rgba(201,168,76,0.2)" rx="2"/>
+  <rect x="545" y="190" width="30" height="25" fill="rgba(201,168,76,0.2)" rx="2"/>
+  <rect x="590" y="190" width="30" height="25" fill="rgba(201,168,76,0.2)" rx="2"/>
+  <rect x="500" y="235" width="30" height="25" fill="rgba(201,168,76,0.15)" rx="2"/>
+  <rect x="545" y="235" width="30" height="25" fill="rgba(201,168,76,0.15)" rx="2"/>
+  <rect x="590" y="235" width="30" height="25" fill="rgba(201,168,76,0.15)" rx="2"/>
+
+  <!-- Scaffolding -->
+  <rect x="460" y="60" width="8" height="340" fill="#c9a84c" opacity="0.6"/>
+  <rect x="640" y="60" width="8" height="340" fill="#c9a84c" opacity="0.6"/>
+  <rect x="460" y="60" width="188" height="6" fill="#c9a84c" opacity="0.6"/>
+  <rect x="460" y="160" width="188" height="4" fill="#c9a84c" opacity="0.4"/>
+  <rect x="460" y="260" width="188" height="4" fill="#c9a84c" opacity="0.4"/>
+
+  <!-- Ground -->
+  <rect x="0" y="400" width="800" height="134" fill="url(#ground)"/>
+
+  <!-- Worker 1 - left -->
+  <g transform="translate(180,220)">
+    <!-- Hard hat -->
+    <ellipse cx="30" cy="0" rx="26" ry="10" fill="#c9a84c"/>
+    <rect x="10" y="0" width="40" height="6" fill="#c9a84c"/>
+    <!-- Head -->
+    <ellipse cx="30" cy="12" rx="16" ry="18" fill="url(#skin)"/>
+    <!-- Body / vest -->
+    <rect x="14" y="28" width="32" height="50" fill="#e8a020" rx="4"/>
+    <!-- Vest stripes -->
+    <rect x="14" y="35" width="32" height="4" fill="#c9a84c" opacity="0.6"/>
+    <rect x="14" y="55" width="32" height="4" fill="#c9a84c" opacity="0.6"/>
+    <!-- Arms -->
+    <rect x="0" y="30" width="14" height="36" fill="#1e4976" rx="6"/>
+    <rect x="46" y="30" width="14" height="36" fill="#1e4976" rx="6"/>
+    <!-- Hands -->
+    <ellipse cx="7" cy="68" rx="8" ry="7" fill="url(#skin)"/>
+    <ellipse cx="53" cy="68" rx="8" ry="7" fill="url(#skin)"/>
+    <!-- Legs -->
+    <rect x="16" y="76" width="14" height="50" fill="#1a3a5c" rx="4"/>
+    <rect x="32" y="76" width="14" height="50" fill="#1a3a5c" rx="4"/>
+    <!-- Boots -->
+    <rect x="12" y="122" width="20" height="10" fill="#0a1628" rx="3"/>
+    <rect x="30" y="122" width="20" height="10" fill="#0a1628" rx="3"/>
+  </g>
+
+  <!-- Worker 2 - center (taller) -->
+  <g transform="translate(310,180)">
+    <!-- Hard hat -->
+    <ellipse cx="34" cy="0" rx="28" ry="11" fill="#e63946"/>
+    <rect x="12" y="0" width="44" height="7" fill="#e63946"/>
+    <!-- Head -->
+    <ellipse cx="34" cy="14" rx="17" ry="19" fill="url(#skin)"/>
+    <!-- Body -->
+    <rect x="16" y="32" width="36" height="56" fill="#1e4976" rx="4"/>
+    <!-- Reflective vest over -->
+    <rect x="16" y="38" width="36" height="6" fill="#c9a84c" opacity="0.7"/>
+    <rect x="16" y="60" width="36" height="6" fill="#c9a84c" opacity="0.7"/>
+    <!-- Arms holding clipboard -->
+    <rect x="0" y="34" width="16" height="40" fill="#1e4976" rx="6"/>
+    <rect x="52" y="34" width="16" height="28" fill="#1e4976" rx="6"/>
+    <!-- Clipboard -->
+    <rect x="50" y="56" width="28" height="36" fill="#f0e6c8" rx="3"/>
+    <rect x="54" y="62" width="20" height="2" fill="#1a3a5c" opacity="0.4"/>
+    <rect x="54" y="68" width="20" height="2" fill="#1a3a5c" opacity="0.4"/>
+    <rect x="54" y="74" width="14" height="2" fill="#1a3a5c" opacity="0.4"/>
+    <!-- Hands -->
+    <ellipse cx="8" cy="76" rx="9" ry="8" fill="url(#skin)"/>
+    <ellipse cx="60" cy="94" rx="9" ry="8" fill="url(#skin)"/>
+    <!-- Legs -->
+    <rect x="18" y="86" width="15" height="55" fill="#0f2744" rx="4"/>
+    <rect x="35" y="86" width="15" height="55" fill="#0f2744" rx="4"/>
+    <!-- Boots -->
+    <rect x="14" y="136" width="22" height="11" fill="#0a1628" rx="3"/>
+    <rect x="33" y="136" width="22" height="11" fill="#0a1628" rx="3"/>
+  </g>
+
+  <!-- Worker 3 - right -->
+  <g transform="translate(440,230)">
+    <!-- Hard hat -->
+    <ellipse cx="28" cy="0" rx="25" ry="10" fill="#c9a84c"/>
+    <rect x="8" y="0" width="40" height="6" fill="#c9a84c"/>
+    <!-- Head -->
+    <ellipse cx="28" cy="12" rx="15" ry="17" fill="url(#skin)"/>
+    <!-- Body -->
+    <rect x="13" y="28" width="30" height="48" fill="#e8a020" rx="4"/>
+    <rect x="13" y="35" width="30" height="4" fill="#c9a84c" opacity="0.6"/>
+    <rect x="13" y="53" width="30" height="4" fill="#c9a84c" opacity="0.6"/>
+    <!-- Arms (one raised) -->
+    <rect x="0" y="28" width="13" height="38" fill="#1e4976" rx="6"/>
+    <rect x="43" y="10" width="13" height="36" fill="#1e4976" rx="6" transform="rotate(-30,49,18)"/>
+    <!-- Tool in raised hand -->
+    <rect x="60" y="0" width="5" height="30" fill="#888" rx="2"/>
+    <rect x="55" y="0" width="15" height="8" fill="#555" rx="2"/>
+    <!-- Hands -->
+    <ellipse cx="6" cy="68" rx="8" ry="7" fill="url(#skin)"/>
+    <ellipse cx="66" cy="8" rx="8" ry="7" fill="url(#skin)"/>
+    <!-- Legs -->
+    <rect x="15" y="74" width="12" height="48" fill="#1a3a5c" rx="4"/>
+    <rect x="29" y="74" width="12" height="48" fill="#1a3a5c" rx="4"/>
+    <!-- Boots -->
+    <rect x="11" y="118" width="18" height="9" fill="#0a1628" rx="3"/>
+    <rect x="27" y="118" width="18" height="9" fill="#0a1628" rx="3"/>
+  </g>
+
+  <!-- Decorative gold dots -->
+  <circle cx="100" cy="100" r="3" fill="#c9a84c" opacity="0.4"/>
+  <circle cx="120" cy="80" r="2" fill="#c9a84c" opacity="0.3"/>
+  <circle cx="90" cy="130" r="2" fill="#c9a84c" opacity="0.3"/>
+  <circle cx="700" cy="350" r="3" fill="#c9a84c" opacity="0.3"/>
+  <circle cx="720" cy="380" r="2" fill="#c9a84c" opacity="0.25"/>
+
+  <!-- Ground line -->
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#c9a84c" stroke-width="1" opacity="0.2"/>
+</svg>
