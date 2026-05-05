@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
     <div ref={ref} style={{ position: 'relative', display: 'inline-block' }}>
       <button
         onClick={() => setOpen(v => !v)}
-        aria-haspopup="listbox"
+        aria-haspopup="true"
         aria-expanded={open}
         aria-label="Change language"
         style={{
@@ -43,41 +43,41 @@ export default function LanguageSwitcher() {
       </button>
 
       {open && (
-        <ul
-          role="listbox"
+        <div
+          role="menu"
           aria-label="Select language"
           style={{
             position: 'absolute', top: 'calc(100% + 8px)', right: 0,
             background: 'var(--navy-deep, #081e3f)',
             border: '1px solid rgba(255,255,255,0.12)',
             borderRadius: 10, padding: '6px 0',
-            minWidth: 140, listStyle: 'none', margin: 0,
+            minWidth: 140,
             boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
             zIndex: 999,
           }}
         >
           {LANGUAGES.map(l => (
-            <li key={l.code} role="option" aria-selected={l.code === lang}>
-              <button
-                onClick={() => { setLang(l.code); setOpen(false); }}
-                style={{
-                  width: '100%', textAlign: 'left', padding: '9px 16px',
-                  display: 'flex', alignItems: 'center', gap: 10,
-                  background: l.code === lang ? 'rgba(201,168,76,0.12)' : 'transparent',
-                  border: 'none', color: l.code === lang ? 'var(--gold)' : 'rgba(255,255,255,0.8)',
-                  fontSize: '0.85rem', cursor: 'pointer', fontWeight: l.code === lang ? 700 : 400,
-                  fontFamily: 'inherit', transition: 'background 0.15s',
-                }}
-                onMouseEnter={e => { if (l.code !== lang) e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
-                onMouseLeave={e => { if (l.code !== lang) e.currentTarget.style.background = 'transparent'; }}
-              >
-                <span>{l.flag}</span>
-                <span>{l.label}</span>
-                {l.code === lang && <span style={{ marginLeft: 'auto', fontSize: '0.7rem' }}>✓</span>}
-              </button>
-            </li>
+            <button
+              key={l.code}
+              role="menuitem"
+              onClick={() => { setLang(l.code); setOpen(false); }}
+              style={{
+                width: '100%', textAlign: 'left', padding: '9px 16px',
+                display: 'flex', alignItems: 'center', gap: 10,
+                background: l.code === lang ? 'rgba(201,168,76,0.12)' : 'transparent',
+                border: 'none', color: l.code === lang ? 'var(--gold)' : 'rgba(255,255,255,0.8)',
+                fontSize: '0.85rem', cursor: 'pointer', fontWeight: l.code === lang ? 700 : 400,
+                fontFamily: 'inherit', transition: 'background 0.15s',
+              }}
+              onMouseEnter={e => { if (l.code !== lang) e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
+              onMouseLeave={e => { if (l.code !== lang) e.currentTarget.style.background = 'transparent'; }}
+            >
+              <span>{l.flag}</span>
+              <span>{l.label}</span>
+              {l.code === lang && <span style={{ marginLeft: 'auto', fontSize: '0.7rem' }}>✓</span>}
+            </button>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );

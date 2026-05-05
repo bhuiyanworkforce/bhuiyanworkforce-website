@@ -17,68 +17,75 @@ function renderHeading(line, keyVal) {
   );
 }
 
-function collectBulletList(lines, startIndex, keyVal) {
+function parseBulletList(lines, startIndex, keyVal) {
   const items = [];
-  let i = startIndex;
-  while (i < lines.length && lines[i].trim().startsWith('- ')) {
-    const itemLine = lines[i].trim().slice(2);
+  let idx = startIndex;
+  while (idx < lines.length && lines[idx].trim().startsWith('- ')) {
+    const itemLine = lines[idx].trim().slice(2);
     items.push(
       <li key={`bullet-${itemLine.slice(0, 40)}`} style={{ padding: '5px 0 5px 24px', position: 'relative', fontSize: '0.95rem', color: 'var(--text-body)', lineHeight: 1.7 }}>
         <span style={{ position: 'absolute', left: 0, color: 'var(--gold)', fontWeight: 700 }}>→</span>
         {renderInlineBold(itemLine)}
       </li>
     );
-    i++;
+    idx += 1;
   }
-  return { element: <ul key={keyVal} style={{ listStyle: 'none', marginBottom: 20 }}>{items}</ul>, nextIndex: i - 1 };
+  return { element: <ul key={keyVal} style={{ listStyle: 'none', marginBottom: 20 }}>{items}</ul>, consumed: idx - startIndex };
 }
 
-function collectNumberedList(lines, startIndex, keyVal) {
+function parseNumberedList(lines, startIndex, keyVal) {
   const items = [];
-  let i = startIndex;
-  while (i < lines.length && /^\d+\./.test(lines[i].trim())) {
-    const itemLine = lines[i].trim().replace(/^\d+\.\s*/, '');
+  let idx = startIndex;
+  while (idx < lines.length && /^\d+\./.test(lines[idx].trim())) {
+    const itemLine = lines[idx].trim().replace(/^\d+\.\s*/, '');
     items.push(
       <li key={`numbered-${itemLine.slice(0, 40)}`} style={{ padding: '8px 0 8px 16px', fontSize: '0.95rem', color: 'var(--text-body)', lineHeight: 1.7 }}>
         {renderInlineBold(itemLine)}
       </li>
     );
-    i++;
+    idx += 1;
   }
-  return { element: <ol key={keyVal} style={{ marginBottom: 20, paddingLeft: 20 }}>{items}</ol>, nextIndex: i - 1 };
+  return { element: <ol key={keyVal} style={{ marginBottom: 20, paddingLeft: 20 }}>{items}</ol>, consumed: idx - startIndex };
 }
 
 function renderContent(content) {
   const lines = content.trim().split('\n');
   const elements = [];
   let key = 0;
+  let pos = 0;
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (!line) continue;
+  while (pos < lines.length) {
+    const line = lines[pos].trim();
+    if (!line) {
+      pos += 1;
+      continue;
+    }
 
     if (line.startsWith('## ')) {
       elements.push(renderHeading(line, key++));
+      pos += 1;
     } else if (line.startsWith('**') && line.endsWith('**') && !line.slice(2, -2).includes('**')) {
       elements.push(
         <p key={key++} style={{ fontWeight: 700, color: 'var(--navy)', marginBottom: 8 }}>
           {renderInlineBold(line)}
         </p>
       );
+      pos += 1;
     } else if (line.startsWith('- ')) {
-      const { element, nextIndex } = collectBulletList(lines, i, key++);
+      const { element, consumed } = parseBulletList(lines, pos, key++);
       elements.push(element);
-      i = nextIndex;
+      pos += consumed;
     } else if (/^\d+\./.test(line)) {
-      const { element, nextIndex } = collectNumberedList(lines, i, key++);
+      const { element, consumed } = parseNumberedList(lines, pos, key++);
       elements.push(element);
-      i = nextIndex;
+      pos += consumed;
     } else {
       elements.push(
         <p key={key++} style={{ color: 'var(--text-body)', lineHeight: 1.8, marginBottom: 16, fontSize: '0.97rem' }}>
           {renderInlineBold(line)}
         </p>
       );
+      pos += 1;
     }
   }
   return elements;
