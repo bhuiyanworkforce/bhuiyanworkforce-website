@@ -369,22 +369,22 @@ ${fields.coverLetter || 'Not provided'}
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
                     <div style={groupStyle}>
-                      <label style={labelStyle}>Upload CV / Resume (PDF or Word, max 5MB)</label>
-                      <input type="file" accept=".pdf,.doc,.docx" onChange={handleFile('cvFile')}
+                      <label htmlFor="wa-cvFile" style={labelStyle}>Upload CV / Resume (PDF or Word, max 5MB)</label>
+                      <input id="wa-cvFile" type="file" accept=".pdf,.doc,.docx" onChange={handleFile('cvFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.cvFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.cvFile.name}</span>}
                     </div>
 
                     <div style={groupStyle}>
-                      <label style={labelStyle}>Upload Passport Copy (PDF or image, max 5MB)</label>
-                      <input type="file" accept=".pdf,.jpg,.jpeg,.png" onChange={handleFile('passportFile')}
+                      <label htmlFor="wa-passportFile" style={labelStyle}>Upload Passport Copy (PDF or image, max 5MB)</label>
+                      <input id="wa-passportFile" type="file" accept=".pdf,.jpg,.jpeg,.png" onChange={handleFile('passportFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.passportFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.passportFile.name}</span>}
                     </div>
 
                     <div style={groupStyle}>
-                      <label style={labelStyle}>Upload Trade/Skills Certificate (optional)</label>
-                      <input type="file" accept=".pdf,.jpg,.jpeg,.png" onChange={handleFile('certFile')}
+                      <label htmlFor="wa-certFile" style={labelStyle}>Upload Trade/Skills Certificate (optional)</label>
+                      <input id="wa-certFile" type="file" accept=".pdf,.jpg,.jpeg,.png" onChange={handleFile('certFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.certFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.certFile.name}</span>}
                     </div>

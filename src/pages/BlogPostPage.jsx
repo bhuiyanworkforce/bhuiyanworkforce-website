@@ -5,11 +5,49 @@ import { getPost, POSTS } from '../data/posts';
 function renderInlineBold(text) {
   const parts = text.split(/\*\*(.*?)\*\*/g);
   return parts.map((part, pi) =>
-    pi % 2 === 1 ? <strong key={pi} style={{ color: 'var(--navy)' }}>{part}</strong> : part
+    pi % 2 === 1 ? <strong key={part} style={{ color: 'var(--navy)' }}>{part}</strong> : part
   );
 }
 
-// Simple markdown-like renderer for the post content
+function renderHeading(line, keyVal) {
+  return (
+    <h2 key={keyVal} style={{ fontFamily: 'var(--font-display)', fontSize: '1.6rem', color: 'var(--navy)', margin: '40px 0 16px', fontWeight: 700 }}>
+      {line.replace(/^## /, '')}
+    </h2>
+  );
+}
+
+function collectBulletList(lines, startIndex, keyVal) {
+  const items = [];
+  let i = startIndex;
+  while (i < lines.length && lines[i].trim().startsWith('- ')) {
+    const itemLine = lines[i].trim().slice(2);
+    items.push(
+      <li key={`bullet-${itemLine.slice(0, 40)}`} style={{ padding: '5px 0 5px 24px', position: 'relative', fontSize: '0.95rem', color: 'var(--text-body)', lineHeight: 1.7 }}>
+        <span style={{ position: 'absolute', left: 0, color: 'var(--gold)', fontWeight: 700 }}>→</span>
+        {renderInlineBold(itemLine)}
+      </li>
+    );
+    i++;
+  }
+  return { element: <ul key={keyVal} style={{ listStyle: 'none', marginBottom: 20 }}>{items}</ul>, nextIndex: i - 1 };
+}
+
+function collectNumberedList(lines, startIndex, keyVal) {
+  const items = [];
+  let i = startIndex;
+  while (i < lines.length && /^\d+\./.test(lines[i].trim())) {
+    const itemLine = lines[i].trim().replace(/^\d+\.\s*/, '');
+    items.push(
+      <li key={`numbered-${itemLine.slice(0, 40)}`} style={{ padding: '8px 0 8px 16px', fontSize: '0.95rem', color: 'var(--text-body)', lineHeight: 1.7 }}>
+        {renderInlineBold(itemLine)}
+      </li>
+    );
+    i++;
+  }
+  return { element: <ol key={keyVal} style={{ marginBottom: 20, paddingLeft: 20 }}>{items}</ol>, nextIndex: i - 1 };
+}
+
 function renderContent(content) {
   const lines = content.trim().split('\n');
   const elements = [];
@@ -20,51 +58,22 @@ function renderContent(content) {
     if (!line) continue;
 
     if (line.startsWith('## ')) {
-      elements.push(
-        <h2 key={key++} style={{ fontFamily: 'var(--font-display)', fontSize: '1.6rem', color: 'var(--navy)', margin: '40px 0 16px', fontWeight: 700 }}>
-          {line.replaceAll('## ', '')}
-        </h2>
-      );
-    } else if (line.startsWith('**') && line.endsWith('**') && !line.slice(2,-2).includes('**')) {
+      elements.push(renderHeading(line, key++));
+    } else if (line.startsWith('**') && line.endsWith('**') && !line.slice(2, -2).includes('**')) {
       elements.push(
         <p key={key++} style={{ fontWeight: 700, color: 'var(--navy)', marginBottom: 8 }}>
           {renderInlineBold(line)}
         </p>
       );
     } else if (line.startsWith('- ')) {
-      // Collect consecutive list items
-      const items = [];
-      while (i < lines.length && lines[i].trim().startsWith('- ')) {
-        const itemLine = lines[i].trim().replace('- ', '');
-        // Handle bold inside list items
-        items.push(
-          <li key={`bullet-${i}`} style={{ padding: '5px 0 5px 24px', position: 'relative', fontSize: '0.95rem', color: 'var(--text-body)', lineHeight: 1.7 }}>
-            <span style={{ position: 'absolute', left: 0, color: 'var(--gold)', fontWeight: 700 }}>→</span>
-            {renderInlineBold(itemLine)}
-          </li>
-        );
-        i++;
-      }
-      i--; // step back one since the for loop will increment
-      elements.push(<ul key={key++} style={{ listStyle: 'none', marginBottom: 20 }}>{items}</ul>);
+      const { element, nextIndex } = collectBulletList(lines, i, key++);
+      elements.push(element);
+      i = nextIndex;
     } else if (/^\d+\./.test(line)) {
-      // Numbered list - collect items
-      const items = [];
-      while (i < lines.length && /^\d+\./.test(lines[i].trim())) {
-        const itemLine = lines[i].trim().replace(/^\d+\.\s*/, '');
-        items.push(
-          <li key={`numbered-${i}`} style={{ padding: '8px 0 8px 16px', fontSize: '0.95rem', color: 'var(--text-body)', lineHeight: 1.7 }}>
-            {renderInlineBold(itemLine)}
-          </li>
-        );
-        i++;
-      }
-      i--;
-      elements.push(
-        <ol key={key++} style={{ marginBottom: 20, paddingLeft: 20 }}>{items}</ol>
-      );
+      const { element, nextIndex } = collectNumberedList(lines, i, key++);
+      elements.push(element);
+      i = nextIndex;
     } else {
-      // Regular paragraph — handle inline bold
       elements.push(
         <p key={key++} style={{ color: 'var(--text-body)', lineHeight: 1.8, marginBottom: 16, fontSize: '0.97rem' }}>
           {renderInlineBold(line)}
@@ -107,14 +116,12 @@ export default function BlogPostPage() {
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: 64, alignItems: 'start' }}>
 
-            {/* Article content */}
             <article>
               <p style={{ fontSize: '1.1rem', color: 'var(--gray-500)', lineHeight: 1.8, marginBottom: 40, paddingBottom: 40, borderBottom: '1px solid var(--gray-100)', fontStyle: 'italic' }}>
                 {post.excerpt}
               </p>
               {renderContent(post.content)}
 
-              {/* Back to blog */}
               <div style={{ marginTop: 48, paddingTop: 32, borderTop: '1px solid var(--gray-100)' }}>
                 <Link to="/blog" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--navy)', fontWeight: 600, fontSize: '0.9rem' }}>
                   ← Back to all articles
@@ -122,9 +129,7 @@ export default function BlogPostPage() {
               </div>
             </article>
 
-            {/* Sidebar */}
             <aside style={{ position: 'sticky', top: 100 }}>
-              {/* CTA box */}
               <div style={{ background: 'var(--navy)', borderRadius: 'var(--radius-lg)', padding: 28, marginBottom: 28 }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', color: 'var(--white)', fontSize: '1.15rem', marginBottom: 10 }}>
                   Need Workers?
@@ -141,7 +146,6 @@ export default function BlogPostPage() {
                 </a>
               </div>
 
-              {/* Other posts */}
               <div>
                 <h4 style={{ fontSize: '0.78rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--gold)', marginBottom: 16 }}>
                   More Articles

@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
+import PropTypes from 'prop-types';
 import { LANGUAGES } from './translations';
 
 const LanguageContext = createContext({ lang: 'en', setLang: () => {} });
@@ -27,7 +28,7 @@ export function LanguageProvider({ children }) {
     document.documentElement.setAttribute('lang', lang);
   }, [lang]);
 
-  const value = useMemo(() => ({ lang, setLang }), [lang]);
+  const value = useMemo(() => ({ lang, setLang }), [lang, setLang]);
 
   return (
     <LanguageContext.Provider value={value}>
@@ -39,3 +40,7 @@ export function LanguageProvider({ children }) {
 export function useLang() {
   return useContext(LanguageContext);
 }
+
+LanguageProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};

@@ -44,7 +44,8 @@ export default function LanguageSwitcher() {
 
       {open && (
         <ul
-          role="menu"
+          role="listbox"
+          aria-label="Select language"
           style={{
             position: 'absolute', top: 'calc(100% + 8px)', right: 0,
             background: 'var(--navy-deep, #081e3f)',
@@ -56,10 +57,8 @@ export default function LanguageSwitcher() {
           }}
         >
           {LANGUAGES.map(l => (
-            <li key={l.code}>
+            <li key={l.code} role="option" aria-selected={l.code === lang}>
               <button
-                role="menuitem"
-                aria-checked={l.code === lang}
                 onClick={() => { setLang(l.code); setOpen(false); }}
                 style={{
                   width: '100%', textAlign: 'left', padding: '9px 16px',
