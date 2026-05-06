@@ -1,3 +1,10 @@
+// Shared process step used across most services
+const DOC_STEP = { title: 'Documentation', desc: 'BMET clearance, police clearance, medical fitness checks, and visa paperwork handled end-to-end.' };
+const STANDARD_PROCESS_END = [
+  DOC_STEP,
+  { title: 'Deployment & Aftercare', desc: 'Workers depart with full documentation. We remain the point of contact throughout the contract.' },
+];
+
 export const SERVICES = [
   {
     slug: 'construction',
@@ -14,11 +21,10 @@ export const SERVICES = [
     ],
     countries: ['Saudi Arabia','Qatar','UAE','Kuwait','Bahrain','Oman','Malaysia','Singapore','Libya','Jordan','Maldives'],
     process: [
-      { title: 'Needs Assessment',            desc: 'You submit your manpower requirements — trade types, numbers, project timeline, and destination country.' },
-      { title: 'Candidate Shortlisting',      desc: 'We screen our registered database and conduct trade tests to match candidates to your specifications.' },
-      { title: 'Documentation & Visa',        desc: 'We handle all BMET registration, police clearances, medical fitness checks, and visa paperwork.' },
-      { title: 'Pre-Departure Training',      desc: 'Workers complete a structured orientation covering site safety, emergency procedures, and cultural briefing.' },
-      { title: 'Deployment & Aftercare',      desc: 'Workers depart with full documentation. We remain the point of contact throughout the contract.' },
+      { title: 'Needs Assessment', desc: 'You submit your manpower requirements — trade types, numbers, project timeline, and destination country.' },
+      { title: 'Candidate Shortlisting', desc: 'We screen our registered database and conduct trade tests to match candidates to your specifications.' },
+      { title: 'Pre-Departure Training', desc: 'Workers complete a structured orientation covering site safety, emergency procedures, and cultural briefing.' },
+      ...STANDARD_PROCESS_END,
     ],
     image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
   },
@@ -37,10 +43,10 @@ export const SERVICES = [
     countries: ['Saudi Arabia','UAE','Qatar','Kuwait','Oman','Bahrain','Malaysia','Brunei','Jordan'],
     process: [
       { title: 'Licence & Record Verification', desc: 'We verify each candidate\'s driving licence category, traffic record, and years of experience.' },
-      { title: 'Practical Driving Assessment',  desc: 'Candidates complete a supervised practical test in the relevant vehicle category.' },
-      { title: 'Background & Medical Checks',   desc: 'Criminal background screening, eye test, and fitness-to-drive medical examination.' },
-      { title: 'Documentation',                 desc: 'BMET clearance, police certificate, passport validity check, and destination-country visa application.' },
-      { title: 'Deployment',                    desc: 'Driver is briefed on destination-country traffic laws and employer expectations before departure.' },
+      { title: 'Practical Driving Assessment', desc: 'Candidates complete a supervised practical test in the relevant vehicle category.' },
+      { title: 'Background & Medical Checks', desc: 'Criminal background screening, eye test, and fitness-to-drive medical examination.' },
+      { title: 'Documentation', desc: 'BMET clearance, police certificate, passport validity check, and destination-country visa application.' },
+      { title: 'Deployment', desc: 'Driver is briefed on destination-country traffic laws and employer expectations before departure.' },
     ],
     image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80',
   },
@@ -59,11 +65,11 @@ export const SERVICES = [
     ],
     countries: ['Saudi Arabia','UAE','Qatar','Oman','Bahrain','Kuwait','Maldives','Malaysia','Seychelles','Mauritius'],
     process: [
-      { title: 'Skills Assessment',          desc: 'Practical kitchen test or service role assessment at our facility or via video interview.' },
-      { title: 'Food Safety Certification',  desc: 'All culinary staff hold or obtain a recognised food hygiene certificate (Level 2 or equivalent).' },
-      { title: 'Language & Soft Skills',     desc: 'Basic English communication and guest-service etiquette training.' },
-      { title: 'Documentation',              desc: 'BMET clearance, medical fitness, police certificate, and visa application.' },
-      { title: 'On-Boarding Support',        desc: 'We coordinate with your HR team for a smooth arrival and induction process.' },
+      { title: 'Skills Assessment', desc: 'Practical kitchen test or service role assessment at our facility or via video interview.' },
+      { title: 'Food Safety Certification', desc: 'All culinary staff hold or obtain a recognised food hygiene certificate (Level 2 or equivalent).' },
+      { title: 'Language & Soft Skills', desc: 'Basic English communication and guest-service etiquette training.' },
+      { title: 'Documentation', desc: 'BMET clearance, medical fitness, police certificate, and visa application.' },
+      { title: 'On-Boarding Support', desc: 'We coordinate with your HR team for a smooth arrival and induction process.' },
     ],
     image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
   },
@@ -83,10 +89,10 @@ export const SERVICES = [
     countries: ['Saudi Arabia','UAE','Qatar','Oman','Kuwait','Malaysia','Japan','South Korea','Romania','Poland'],
     process: [
       { title: 'Agricultural Background Check', desc: 'We confirm each candidate\'s farming or horticulture experience through reference checks and practical assessment.' },
-      { title: 'Health & Fitness Medical',       desc: 'Full medical fitness examination appropriate for outdoor physical labour.' },
-      { title: 'Machinery & Safety Training',    desc: 'Basic tractor operation, pesticide handling safety, and manual handling training.' },
-      { title: 'Documentation',                  desc: 'BMET clearance, valid passport, police clearance, and employer-specific visa category.' },
-      { title: 'Seasonal Deployment Planning',   desc: 'We plan deployment timelines around your harvest cycles or landscaping seasons.' },
+      { title: 'Health & Fitness Medical', desc: 'Full medical fitness examination appropriate for outdoor physical labour.' },
+      { title: 'Machinery & Safety Training', desc: 'Basic tractor operation, pesticide handling safety, and manual handling training.' },
+      { title: 'Documentation', desc: 'BMET clearance, valid passport, police clearance, and employer-specific visa category.' },
+      { title: 'Seasonal Deployment Planning', desc: 'We plan deployment timelines around your harvest cycles or landscaping seasons.' },
     ],
     image: 'https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80',
   },
@@ -104,11 +110,11 @@ export const SERVICES = [
     ],
     countries: ['Saudi Arabia','UAE','Qatar','Kuwait','Bahrain','Malaysia','Singapore','Romania','Poland','Hungary'],
     process: [
-      { title: 'Operational Profile',         desc: 'We take a brief from your warehouse manager to understand throughput volumes, shift patterns, and WMS platforms.' },
-      { title: 'Candidate Screening',         desc: 'Physical assessment, basic numeracy check, and reference verification from previous warehouse roles.' },
-      { title: 'Equipment Verification',      desc: 'Licence and competency verification for all candidates requiring plant operation.' },
-      { title: 'Documentation',               desc: 'All standard emigration documentation processed within agreed timelines.' },
-      { title: 'Ramp-Up Deployment',          desc: 'For large teams (50+), we stagger arrivals to allow your induction team to onboard effectively.' },
+      { title: 'Operational Profile', desc: 'We take a brief from your warehouse manager to understand throughput volumes, shift patterns, and WMS platforms.' },
+      { title: 'Candidate Screening', desc: 'Physical assessment, basic numeracy check, and reference verification from previous warehouse roles.' },
+      { title: 'Equipment Verification', desc: 'Licence and competency verification for all candidates requiring plant operation.' },
+      { title: 'Documentation', desc: 'All standard emigration documentation processed within agreed timelines.' },
+      { title: 'Ramp-Up Deployment', desc: 'For large teams (50+), we stagger arrivals to allow your induction team to onboard effectively.' },
     ],
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
   },
@@ -126,11 +132,11 @@ export const SERVICES = [
     ],
     countries: ['Saudi Arabia','Malaysia','Singapore','South Korea','Japan','UAE','Qatar','Romania','Poland','Czech Republic','Hungary'],
     process: [
-      { title: 'Job Profile Review',       desc: 'We study your production process, equipment list, and output standards before screening begins.' },
-      { title: 'Trade Test & Assessment',  desc: 'Practical assessment on relevant machinery or processes — at our centre or via video test.' },
-      { title: 'Safety Training',          desc: 'Factory safety induction, PPE usage, and machine guarding awareness before departure.' },
-      { title: 'Full Documentation',       desc: 'BMET, police clearance, GAMCA medical, and visa processing handled end-to-end.' },
-      { title: 'Employer Liaison',         desc: 'We coordinate with your HR and production planning teams to align arrival with your ramp-up schedule.' },
+      { title: 'Job Profile Review', desc: 'We study your production process, equipment list, and output standards before screening begins.' },
+      { title: 'Trade Test & Assessment', desc: 'Practical assessment on relevant machinery or processes — at our centre or via video test.' },
+      { title: 'Safety Training', desc: 'Factory safety induction, PPE usage, and machine guarding awareness before departure.' },
+      { title: 'Full Documentation', desc: 'BMET, police clearance, GAMCA medical, and visa processing handled end-to-end.' },
+      { title: 'Employer Liaison', desc: 'We coordinate with your HR and production planning teams to align arrival with your ramp-up schedule.' },
     ],
     image: 'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&q=80',
   },
@@ -250,8 +256,7 @@ export const SERVICES = [
     image: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80',
   },
 ];
+
 export function getService(slug) {
   return SERVICES.find(s => s.slug === slug) || null;
 }
-
-// Additional services appended

@@ -1,3 +1,8 @@
+// Shared closing paragraph used in multiple posts
+const BHUIYAN_CTA = `Bhuiyan Workforce Ltd. handles the entire process — from candidate shortlisting and trade testing to documentation, GAMCA medicals, and deployment. Get in touch to discuss your requirements.`;
+
+const BMET_EXPLANATION = `The BMET Smart Card is an official identity document issued by Bangladesh's Bureau of Manpower, Employment and Training (BMET) to workers who have registered for overseas employment. It serves as proof that a worker's overseas job has been officially recorded by the Bangladesh government.`;
+
 export const POSTS = [
   {
     slug: 'gulf-construction-bangladesh',
@@ -28,7 +33,7 @@ Before recruiting from Bangladesh, Gulf employers should be aware of a few key r
 
 **Demand Letter & Employment Contract** must be provided by the employer before the recruitment agency can begin processing. The contract must clearly state salary, working hours, accommodation, and contract duration — and must be attested by the relevant embassy.
 
-**Skill Testing** is strongly recommended. While Bangladesh has a large workforce, quality varies. Working with a registered agency that conducts practical trade tests before shortlisting — as Bhuiyan Workforce Ltd. does — significantly reduces the risk of mismatches.
+**Skill Testing** is strongly recommended. While Bangladesh has a large workforce, quality varies. Working with a registered agency that conducts practical trade tests before shortlisting significantly reduces the risk of mismatches.
 
 **Mobilisation Timeline** typically runs 4–8 weeks from demand letter to worker arrival, depending on the destination country and visa processing speed.
 
@@ -36,7 +41,7 @@ Before recruiting from Bangladesh, Gulf employers should be aware of a few key r
 
 If you're a Gulf-based construction firm looking to source Bangladeshi labour, the first step is to contact a BMET-registered recruitment agency with a clear brief: how many workers, what trades, which destination, and your expected start date.
 
-Bhuiyan Workforce Ltd. handles the entire process — from candidate shortlisting and trade testing to documentation, GAMCA medicals, and deployment. Get in touch to discuss your requirements.
+${BHUIYAN_CTA}
     `,
   },
   {
@@ -49,7 +54,7 @@ Bhuiyan Workforce Ltd. handles the entire process — from candidate shortlistin
     content: `
 ## What Is the BMET Smart Card?
 
-The BMET Smart Card is an official identity document issued by Bangladesh's Bureau of Manpower, Employment and Training (BMET) to workers who have registered for overseas employment. It serves as proof that a worker's overseas job has been officially recorded by the Bangladesh government.
+${BMET_EXPLANATION}
 
 ## Why Is It So Important?
 
@@ -160,7 +165,7 @@ Every year, thousands of Bangladeshi workers fall victim to fraudulent recruitme
 ## Signs of a Legitimate Agency
 
 **1. BMET Compliance**
-All legitimate overseas recruitment activity in Bangladesh is regulated by the Bureau of Manpower, Employment and Training (BMET). Ask any agency about their BMET compliance status and verify their credentials at the BMET website or office. Always confirm that your own worker registration (BMET Smart Card) will be properly handled before departure.
+All legitimate overseas recruitment activity in Bangladesh is regulated by the Bureau of Manpower, Employment and Training (BMET). Ask any agency about their BMET compliance status and verify their credentials at the BMET website or office. Always confirm that your own worker registration will be properly handled before departure.
 
 **2. Transparent Fee Structure**
 Reputable agencies are transparent about their fee structure. Always ask for a written breakdown of all costs before signing anything, and ensure you understand what each charge covers.
@@ -195,10 +200,7 @@ Your agency should handle BMET Smart Card registration as a standard part of the
 
 ## If Something Goes Wrong
 
-If you suspect fraud or find yourself in a difficult situation abroad, contact:
-- The Bangladesh embassy or consulate in your destination country
-- BMET's welfare desk
-- The Wage Earners' Welfare Board
+If you suspect fraud or find yourself in a difficult situation abroad, contact the Bangladesh embassy or consulate in your destination country, BMET's welfare desk, or the Wage Earners' Welfare Board.
 
 Bhuiyan Workforce Ltd. provides verified contracts in Bengali before every departure and handles BMET Smart Card registration as a standard part of the process.
     `,
@@ -229,7 +231,7 @@ Several factors are driving demand for Bangladeshi workers in Eastern Europe:
 
 ## Visa Pathways
 
-Most Eastern European countries issue **seasonal or temporary work permits** for non-EU workers. The process typically involves:
+Most Eastern European countries issue seasonal or temporary work permits for non-EU workers. The process typically involves:
 
 1. A verified job offer from a registered employer
 2. Work permit application submitted by the employer to the relevant government authority
@@ -257,7 +259,7 @@ Eastern European placements come with important differences from Gulf deployment
 - **Cultural adjustment** — European work culture differs from Gulf or South Asian norms
 - **Worker rights** — EU labour law provides strong worker protections; understand your rights before you go
 
-Bhuiyan Workforce Ltd. currently deploys workers to Romania, Poland, Hungary, Croatia, Czech Republic, Lithuania, Latvia, Estonia, Bulgaria, Bosnia & Herzegovina, and Cyprus. Contact us to discuss current vacancies and requirements.
+Bhuiyan Workforce Ltd. currently deploys workers to Romania, Poland, Hungary, Croatia, Czech Republic, Lithuania, Latvia, Estonia, Bulgaria, and Cyprus. Contact us to discuss current vacancies and requirements.
     `,
   },
   {
@@ -270,7 +272,7 @@ Bhuiyan Workforce Ltd. currently deploys workers to Romania, Poland, Hungary, Cr
     content: `
 ## The Scale of Overseas Employment
 
-Bangladesh is one of the world's largest sources of overseas migrant workers, with an estimated 10–12 million Bangladeshi citizens currently working abroad. The remittances they send home — money transferred to families in Bangladesh — represent one of the country's most significant economic forces.
+Bangladesh is one of the world's largest sources of overseas migrant workers, with an estimated 10–12 million Bangladeshi citizens currently working abroad. The remittances they send home represent one of the country's most significant economic forces.
 
 ## Remittances by the Numbers
 
@@ -304,7 +306,7 @@ This is why ethical recruitment matters. A worker who travels on a fraudulent jo
 
 ## Responsible Recruitment's Role
 
-Agencies like Bhuiyan Workforce Ltd. exist at the intersection of economic opportunity and worker protection. Every compliant, verified placement we make contributes to a family's economic security. Every fraudulent placement avoided protects a family from potential disaster.
+Agencies like Bhuiyan Workforce Ltd. exist at the intersection of economic opportunity and worker protection. Every compliant, verified placement contributes to a family's economic security. Every fraudulent placement avoided protects a family from potential disaster.
 
 The goal is not just to send workers abroad — it is to ensure they go to genuine jobs, with verified contracts, full documentation, and the knowledge that they have legal recourse if something goes wrong.
     `,

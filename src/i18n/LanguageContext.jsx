@@ -16,12 +16,12 @@ function getInitialLang() {
 }
 
 export function LanguageProvider({ children }) {
-  const [lang, setLangState] = useState(getInitialLang);
+  const [lang, setLang] = useState(getInitialLang);
 
-  const setLang = useCallback((code) => {
-    setLangState(code);
+  const handleSetLang = useCallback((code) => {
+    setLang(code);
     localStorage.setItem('bw_lang', code);
-  }, []);
+  }, [setLang]);
 
   useEffect(() => {
     const dir = LANGUAGES.find(l => l.code === lang)?.dir || 'ltr';
@@ -29,7 +29,7 @@ export function LanguageProvider({ children }) {
     document.documentElement.setAttribute('lang', lang);
   }, [lang]);
 
-  const value = useMemo(() => ({ lang, setLang }), [lang, setLang]);
+  const value = useMemo(() => ({ lang, setLang: handleSetLang }), [lang, handleSetLang]);
 
   return (
     <LanguageContext.Provider value={value}>
