@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useMemo, useCallback } from 'react';
+import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { LANGUAGES } from './translations';
 
@@ -18,18 +18,14 @@ function getInitialLang() {
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState(getInitialLang);
 
-  const handleSetLang = useCallback((code) => {
-    setLang(code);
-    localStorage.setItem('bw_lang', code);
-  }, [setLang]);
-
   useEffect(() => {
+    localStorage.setItem('bw_lang', lang);
     const dir = LANGUAGES.find(l => l.code === lang)?.dir || 'ltr';
     document.documentElement.setAttribute('dir', dir);
     document.documentElement.setAttribute('lang', lang);
   }, [lang]);
 
-  const value = useMemo(() => ({ lang, setLang: handleSetLang }), [lang, handleSetLang]);
+  const value = useMemo(() => ({ lang, setLang }), [lang]);
 
   return (
     <LanguageContext.Provider value={value}>
