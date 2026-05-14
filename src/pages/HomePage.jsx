@@ -63,7 +63,7 @@ export default function HomePage() {
           <div className="stats-grid">
             {[
               { num: '25+',  label: t('home_stats_countries', lang) },
-              { num: '11',   label: t('home_stats_sectors', lang) },
+              { num: '20',   label: t('home_stats_sectors', lang) },
               { num: '24h',  label: t('home_stats_response', lang) },
               { num: '100%', label: t('home_stats_bmet', lang) },
             ].map(s => (
