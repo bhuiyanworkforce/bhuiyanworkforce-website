@@ -26,9 +26,14 @@ function toBase64(file) {
 
 const TRADE_CATEGORIES = [
   'Construction & Engineering', 'Oil & Gas', 'Drivers & Transport',
-  'Chefs & Hospitality', 'Healthcare & Nursing', 'Security Guards',
+  'Chefs & Hospitality', 'Security Guards',
   'Cleaning & Housekeeping', 'Farm & Garden', 'Warehouse & Logistics',
-  'Factory & Manufacturing', 'Retail & Supermarket Staff', 'Other',
+  'Factory & Manufacturing', 'Retail & Supermarket Staff',
+  'Painting & Finishing', 'Steel Fixing & Reinforcement',
+  'Scaffolding & Formwork', 'Landscaping & Groundskeeping',
+  'Mason & Bricklaying', 'Electrical Helpers & Cable Pullers',
+  'Laundry & Linen Services', 'Food Processing & Packing',
+  'Fishery & Aquaculture', 'Caregiving & Elderly Support', 'Other',
 ];
 
 const COUNTRIES = [
@@ -36,7 +41,7 @@ const COUNTRIES = [
   'Malaysia', 'Singapore', 'Maldives',
   'Poland', 'Romania', 'Italy', 'Portugal', 'Greece', 'Hungary', 'Croatia',
   'Czech Republic', 'Lithuania', 'Latvia', 'Estonia', 'Bulgaria', 'Cyprus',
-  'Russia', 'Slovakia', 'Open to Any Country',
+  'Slovakia', 'Bosnia and Herzegovina', 'Open to Any Country',
 ];
 
 export default function WorkerApplicationPage() {
