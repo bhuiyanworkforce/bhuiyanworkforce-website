@@ -34,7 +34,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": ["Organization", "EmploymentAgency"],
       "name": "Bhuiyan Workforce Ltd.",
       "alternateName": "Bhuiyan Workforce",
       "url": "https://bhuiyanworkforce.com",
@@ -66,7 +66,19 @@
         "https://linkedin.com/company/bhuiyan-workforce",
         "https://www.facebook.com/share/1GjrNbPYvf/"
       ],
-      "areaServed": ["SA","AE","QA","KW","OM","BH","JO","MY","SG","MV","IT","PT","GR","RO","PL","HU","HR","CZ","LT","LV","EE","BG","BA","CY","RU"]
+      "areaServed": ["SA","AE","QA","KW","OM","BH","JO","MY","SG","MV","IT","PT","GR","RO","PL","HU","HR","CZ","LT","LV","EE","BG","BA","CY","RU"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Workforce Recruitment Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construction & Engineering Workers" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drivers & Transport Workers" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hospitality & Catering Staff" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory & Manufacturing Workers" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Farm & Garden Workers" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warehouse & Logistics Staff" } }
+        ]
+      }
     }
     </script>
 
