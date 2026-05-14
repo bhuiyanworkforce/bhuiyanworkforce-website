@@ -71,11 +71,11 @@ export const T = {
     pl: 'Lat działalności',
   },
   home_stats_countries: {
-    en: 'Countries Served',
+    en: 'Deployment Countries',
     bn: 'দেশে কর্মী প্রেরণ',
     ar: 'دولة نخدمها',
-    it: 'Paesi serviti',
-    pl: 'Obsługiwanych krajów',
+    it: 'Paesi di destinazione',
+    pl: 'Krajów docelowych',
   },
   home_stats_workers: {
     en: 'Workers Deployed',
@@ -85,11 +85,25 @@ export const T = {
     pl: 'Oddelegowanych pracowników',
   },
   home_stats_sectors: {
-    en: 'Industry Sectors',
+    en: 'Sectors Covered',
     bn: 'শিল্প খাত',
     ar: 'قطاع صناعي',
-    it: 'Settori industriali',
-    pl: 'Sektorów branżowych',
+    it: 'Settori coperti',
+    pl: 'Objętych sektorów',
+  },
+  home_stats_response: {
+    en: 'Response Time',
+    bn: 'সাড়া দেওয়ার সময়',
+    ar: 'وقت الاستجابة',
+    it: 'Tempo di risposta',
+    pl: 'Czas odpowiedzi',
+  },
+  home_stats_bmet: {
+    en: 'BMET Compliant',
+    bn: 'বিএমইটি সম্মত',
+    ar: 'متوافق مع BMET',
+    it: 'Conforme BMET',
+    pl: 'Zgodność z BMET',
   },
 
   home_services_tag: {
