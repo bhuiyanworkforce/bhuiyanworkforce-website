@@ -49,7 +49,7 @@ export default function HomePage() {
                 <div className="lbl">{t('home_stats_countries', lang)}</div>
               </div>
               <div className="hero-flags">
-                <span>3+</span> {t('home_stats_years', lang)}
+                <span>11</span> {t('home_stats_sectors', lang)}
               </div>
             </div>
           </div>
@@ -62,10 +62,10 @@ export default function HomePage() {
         <div className="container">
           <div className="stats-grid">
             {[
-              { num: '3+',  label: t('home_stats_years', lang) },
-              { num: '25+', label: t('home_stats_countries', lang) },
-              { num: '100+',label: t('home_stats_workers', lang) },
+              { num: '25+',  label: t('home_stats_countries', lang) },
               { num: '11',   label: t('home_stats_sectors', lang) },
+              { num: '24h',  label: t('home_stats_response', lang) },
+              { num: '100%', label: t('home_stats_bmet', lang) },
             ].map(s => (
               <div className="stat-item" key={s.label}>
                 <span className="stat-num">{s.num}</span>
@@ -202,7 +202,7 @@ export default function HomePage() {
                   { icon: '✅', title: 'End-to-End Compliance',   body: 'We handle every step: BMET clearance, GAMCA medicals, visa processing, and contracts. Workers are ready to work on day one.' },
                   { icon: '⚡', title: 'Fast Mobilisation',        body: 'Our pre-registered database means we can present a qualified shortlist within 5–10 working days for most trade categories.' },
                   { icon: '🔍', title: 'Verified Skills',          body: 'Every candidate undergoes a practical trade test and background check. You only see workers who genuinely meet the requirements.' },
-                  { icon: '🤝', title: 'Ethical Recruitment',      body: 'We follow all applicable Bangladesh government regulations and maintain transparent recruitment practices.' },
+                  { icon: '🤝', title: 'Transparent & Compliant',    body: 'We follow all BMET regulations, maintain full documentation for every placement, and operate with clear fee structures disclosed to all parties upfront.' },
                   { icon: '🌍', title: 'Destination Expertise',    body: 'With deployments across 25 countries, we understand the specific documentation and regulatory requirements of each market.' },
                 ].map(f => (
                   <div className="why-feature" key={f.title}>
