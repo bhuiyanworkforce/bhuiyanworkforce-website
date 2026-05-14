@@ -1,10 +1,58 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { getCountry } from '../data/countries';
 
 export default function CountryPage() {
   const { slug } = useParams();
   const country = getCountry(slug);
+
+  useEffect(() => {
+    if (!country) return;
+
+    const title = `Hire Workers for ${country.name} — Bhuiyan Workforce Ltd.`;
+    const description = `Deploy skilled Bangladeshi workers to ${country.name}. BMET-compliant recruitment covering ${country.topSectors?.slice(0, 3).join(', ')}. Fast mobilisation, full documentation support.`;
+
+    document.title = title;
+    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://bhuiyanworkforce.com/countries/${slug}`);
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = `https://bhuiyanworkforce.com/countries/${slug}`;
+
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: title,
+      description,
+      url: `https://bhuiyanworkforce.com/countries/${slug}`,
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bhuiyanworkforce.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Countries', item: 'https://bhuiyanworkforce.com/countries' },
+          { '@type': 'ListItem', position: 3, name: country.name, item: `https://bhuiyanworkforce.com/countries/${slug}` },
+        ],
+      },
+    };
+
+    let script = document.querySelector('#jsonld-country');
+    if (!script) {
+      script = document.createElement('script');
+      script.id = 'jsonld-country';
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(jsonLd);
+
+    return () => { document.querySelector('#jsonld-country')?.remove(); };
+  }, [country, slug]);
 
   if (!country) return <Navigate to="/countries" replace />;
 
@@ -56,7 +104,6 @@ export default function CountryPage() {
 
             {/* Left Column */}
             <div>
-              {/* Top Sectors */}
               <div style={{ marginBottom: 48 }}>
                 <div className="label-tag" style={{ marginBottom: 16 }}>Most In-Demand</div>
                 <h2 className="section-title" style={{ marginBottom: 24 }}>Top Sectors for Bangladeshi Workers</h2>
@@ -70,16 +117,13 @@ export default function CountryPage() {
                 </div>
               </div>
 
-              {/* Salary & Fees */}
               <div style={{ marginBottom: 48 }}>
                 <div className="label-tag" style={{ marginBottom: 16 }}>Financials</div>
                 <h2 className="section-title" style={{ marginBottom: 24 }}>Salary Range & Visa Fees</h2>
-
                 <div style={{ background: 'var(--off-white)', borderRadius: 'var(--radius-lg)', padding: 28, marginBottom: 16, border: '1px solid var(--gray-100)' }}>
                   <div style={{ fontSize: '0.75rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--gold)', marginBottom: 8 }}>Typical Salary Range</div>
                   <div style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--navy)', lineHeight: 1.4 }}>{country.salaryRange}</div>
                 </div>
-
                 <div style={{ background: 'var(--navy)', borderRadius: 'var(--radius-lg)', padding: 28, border: '1px solid rgba(201,168,76,0.2)' }}>
                   <div style={{ fontSize: '0.75rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--gold)', marginBottom: 8 }}>Government Visa Fee</div>
                   <div style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--white)', lineHeight: 1.4 }}>{country.visaFee}</div>
@@ -87,7 +131,6 @@ export default function CountryPage() {
                 </div>
               </div>
 
-              {/* Key Notes */}
               <div>
                 <div className="label-tag" style={{ marginBottom: 16 }}>Important Notes</div>
                 <h2 className="section-title" style={{ marginBottom: 20 }}>What You Need to Know</h2>
@@ -105,7 +148,6 @@ export default function CountryPage() {
 
             {/* Right Column */}
             <div>
-              {/* Process Steps */}
               <div style={{ marginBottom: 48 }}>
                 <div className="label-tag" style={{ marginBottom: 16 }}>Step by Step</div>
                 <h2 className="section-title" style={{ marginBottom: 24 }}>Deployment Process</h2>
@@ -125,7 +167,6 @@ export default function CountryPage() {
                 </div>
               </div>
 
-              {/* Documents */}
               <div>
                 <div className="label-tag" style={{ marginBottom: 16 }}>Checklist</div>
                 <h2 className="section-title" style={{ marginBottom: 24 }}>Required Documents</h2>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { getPost, POSTS } from '../data/posts';
 
@@ -56,10 +56,7 @@ function renderContent(content) {
 
   while (pos < lines.length) {
     const line = lines[pos].trim();
-    if (!line) {
-      pos += 1;
-      continue;
-    }
+    if (!line) { pos += 1; continue; }
 
     if (line.startsWith('## ')) {
       elements.push(renderHeading(line, key++));
@@ -94,6 +91,69 @@ function renderContent(content) {
 export default function BlogPostPage() {
   const { slug } = useParams();
   const post = getPost(slug);
+
+  useEffect(() => {
+    if (!post) return;
+
+    const title = `${post.title} — Bhuiyan Workforce Ltd.`;
+    const description = post.excerpt;
+
+    document.title = title;
+    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://bhuiyanworkforce.com/blog/${slug}`);
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = `https://bhuiyanworkforce.com/blog/${slug}`;
+
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.excerpt,
+      url: `https://bhuiyanworkforce.com/blog/${slug}`,
+      datePublished: post.date,
+      author: {
+        '@type': 'Organization',
+        name: 'Bhuiyan Workforce Ltd.',
+        url: 'https://bhuiyanworkforce.com',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Bhuiyan Workforce Ltd.',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://bhuiyanworkforce.com/logo.png',
+        },
+      },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bhuiyanworkforce.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://bhuiyanworkforce.com/blog' },
+          { '@type': 'ListItem', position: 3, name: post.title, item: `https://bhuiyanworkforce.com/blog/${slug}` },
+        ],
+      },
+    };
+
+    let script = document.querySelector('#jsonld-blog');
+    if (!script) {
+      script = document.createElement('script');
+      script.id = 'jsonld-blog';
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(jsonLd);
+
+    return () => { document.querySelector('#jsonld-blog')?.remove(); };
+  }, [post, slug]);
+
   if (!post) return <Navigate to="/blog" replace />;
 
   const otherPosts = POSTS.filter(p => p.slug !== slug).slice(0, 3);

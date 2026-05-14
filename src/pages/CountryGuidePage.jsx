@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import { getCountryGuide } from '../data/countryGuides';
 import { getCountry } from '../data/countries';
@@ -11,10 +11,68 @@ export default function CountryGuidePage() {
   const [fields, setFields]  = useState({ name: '', company: '', email: '' });
   const [submitting, setSubmitting] = useState(false);
 
-  if (!guide) {
-    // If no specific guide, redirect to employer guide general page
-    return <Navigate to="/employer-guide" replace />;
-  }
+  useEffect(() => {
+    if (!guide) return;
+
+    const title = `Employer's Guide: Recruiting from Bangladesh to ${guide.country} — Bhuiyan Workforce Ltd.`;
+    const description = `Complete employer guide for hiring Bangladeshi workers for ${guide.country}. Covers recruitment process, visa requirements, documentation, and employer obligations. BMET-compliant.`;
+
+    document.title = title;
+    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+    document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://bhuiyanworkforce.com/employer-guide/${slug}`);
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = `https://bhuiyanworkforce.com/employer-guide/${slug}`;
+
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      description,
+      url: `https://bhuiyanworkforce.com/employer-guide/${slug}`,
+      author: {
+        '@type': 'Organization',
+        name: 'Bhuiyan Workforce Ltd.',
+        url: 'https://bhuiyanworkforce.com',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Bhuiyan Workforce Ltd.',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://bhuiyanworkforce.com/logo.png',
+        },
+      },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bhuiyanworkforce.com/' },
+          { '@type': 'ListItem', position: 2, name: "Employer's Guide", item: 'https://bhuiyanworkforce.com/employer-guide' },
+          { '@type': 'ListItem', position: 3, name: guide.country, item: `https://bhuiyanworkforce.com/employer-guide/${slug}` },
+        ],
+      },
+    };
+
+    let script = document.querySelector('#jsonld-guide');
+    if (!script) {
+      script = document.createElement('script');
+      script.id = 'jsonld-guide';
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(jsonLd);
+
+    return () => { document.querySelector('#jsonld-guide')?.remove(); };
+  }, [guide, slug]);
+
+  if (!guide) return <Navigate to="/employer-guide" replace />;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,7 +89,7 @@ export default function CountryGuidePage() {
         }),
       });
       setSubmitted(true);
-    } catch { setSubmitted(true); } // Show success regardless
+    } catch { setSubmitted(true); }
     finally { setSubmitting(false); }
   };
 
@@ -78,7 +136,6 @@ export default function CountryGuidePage() {
                 </div>
               ))}
 
-              {/* Link to full country page */}
               {country && (
                 <div style={{ background: 'var(--off-white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius-lg)', padding: 28, marginTop: 16 }}>
                   <h3 style={{ color: 'var(--navy)', fontFamily: 'var(--font-display)', marginBottom: 12 }}>
@@ -147,7 +204,6 @@ export default function CountryGuidePage() {
                 )}
               </div>
 
-              {/* Quick links to other country guides */}
               <div style={{ marginTop: 20, background: 'var(--off-white)', borderRadius: 'var(--radius)', padding: 20, border: '1px solid var(--gray-100)' }}>
                 <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gray-500)', marginBottom: 12 }}>Other Country Guides</div>
                 {Object.entries({ 'saudi-arabia': '🇸🇦 Saudi Arabia', 'uae': '🇦🇪 UAE', 'poland': '🇵🇱 Poland' })
