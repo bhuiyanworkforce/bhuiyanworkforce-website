@@ -23,7 +23,7 @@ const WHY_US = [
 const DESTINATIONS = [
   { region: 'Middle East (7)', countries: 'Saudi Arabia · United Arab Emirates · Qatar · Kuwait · Oman · Bahrain · Jordan' },
   { region: 'Asia Pacific (3)', countries: 'Malaysia · Singapore · Maldives' },
-  { region: 'Europe (15)', countries: 'Italy · Portugal · Greece · Slovakia · Latvia · Cyprus · Estonia · Lithuania · Poland · Czech Republic · Bulgaria · Russia · Hungary · Croatia · Romania' },
+  { region: 'Europe (15)', countries: 'Italy · Portugal · Greece · Slovakia · Latvia · Cyprus · Estonia · Lithuania · Poland · Czech Republic · Bulgaria · Bosnia and Herzegovina · Hungary · Croatia · Romania' },
 ];
 
 export default function CapabilitiesPage() {
