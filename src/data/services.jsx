@@ -26,7 +26,7 @@ export const SERVICES = [
       { title: 'Pre-Departure Training', desc: 'Workers complete a structured orientation covering site safety, emergency procedures, and cultural briefing.' },
       ...STANDARD_PROCESS_END,
     ],
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
   },
   {
     slug: 'drivers',
@@ -48,7 +48,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, police certificate, passport validity check, and destination-country visa application.' },
       { title: 'Deployment', desc: 'Driver is briefed on destination-country traffic laws and employer expectations before departure.' },
     ],
-    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80',
   },
   {
     slug: 'hospitality',
@@ -71,7 +71,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police certificate, and visa application.' },
       { title: 'On-Boarding Support', desc: 'We coordinate with your HR team for a smooth arrival and induction process.' },
     ],
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
   },
   {
     slug: 'farm-garden',
@@ -94,7 +94,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, valid passport, police clearance, and employer-specific visa category.' },
       { title: 'Seasonal Deployment Planning', desc: 'We plan deployment timelines around your harvest cycles or landscaping seasons.' },
     ],
-    image: 'https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80',
   },
   {
     slug: 'warehouse',
@@ -116,7 +116,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'All standard emigration documentation processed within agreed timelines.' },
       { title: 'Ramp-Up Deployment', desc: 'For large teams (50+), we stagger arrivals to allow your induction team to onboard effectively.' },
     ],
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
   },
   {
     slug: 'factory',
@@ -138,7 +138,7 @@ export const SERVICES = [
       { title: 'Full Documentation', desc: 'BMET, police clearance, GAMCA medical, and visa processing handled end-to-end.' },
       { title: 'Employer Liaison', desc: 'We coordinate with your HR and production planning teams to align arrival with your ramp-up schedule.' },
     ],
-    image: 'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80',
   },
   {
     slug: 'oil-gas',
@@ -161,7 +161,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, GAMCA medical, offshore medical (if required), and visa processing.' },
       { title: 'Mobilisation', desc: 'Coordinated mobilisation to align with your project schedule and rotation roster.' },
     ],
-    image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80',
   },
   {
     slug: 'security',
@@ -184,7 +184,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, police certificate, GAMCA medical, and visa application.' },
       { title: 'Employer Briefing', desc: 'Workers are briefed on your specific site protocols, uniform requirements, and reporting structures.' },
     ],
-    image: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
   },
   {
     slug: 'cleaning',
@@ -207,7 +207,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness (including food hygiene where applicable), and visa processing.' },
       { title: 'Uniform & Presentation Standards', desc: 'Workers are briefed on your uniform requirements and grooming standards before departure.' },
     ],
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80',
   },
   {
     slug: 'retail',
@@ -230,7 +230,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa application.' },
       { title: 'Induction Coordination', desc: 'We liaise with your store management for a smooth first-week induction.' },
     ],
-    image: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
   },
   {
     slug: 'painting-finishing',
@@ -294,7 +294,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa processing.' },
       { title: 'Deployment', desc: 'Workers briefed on employer-specific scaffold systems and site standards before departure.' },
     ],
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1590644365607-5b8a8ebd3e7a?w=800&q=80',
   },
   {
     slug: 'landscaping-groundskeeping',
@@ -338,7 +338,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa processing.' },
       { title: 'Deployment', desc: 'Mobilisation aligned with your project programme and site start dates.' },
     ],
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
   },
   {
     slug: 'electrical-helpers',
@@ -382,7 +382,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness (including food hygiene where applicable), and visa processing.' },
       { title: 'Employer Induction', desc: 'Workers are briefed on your specific linen categories, shift patterns, and productivity standards.' },
     ],
-    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=800&q=80',
   },
   {
     slug: 'food-processing',
@@ -404,7 +404,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, food hygiene certificate, police clearance, and visa processing.' },
       { title: 'Employer Induction Coordination', desc: 'We liaise with your production management for a structured first-week induction.' },
     ],
-    image: 'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1607257882338-70f7dd6dd591?w=800&q=80',
   },
   {
     slug: 'fishery-aquaculture',
@@ -426,7 +426,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, seafarer documentation, police clearance, and destination-country visa.' },
       { title: 'Vessel or Farm Briefing', desc: 'Workers are briefed on vessel-specific safety procedures, watch schedules, or aquaculture farm protocols.' },
     ],
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1498654200943-1088dd4438ae?w=800&q=80',
   },
   {
     slug: 'caregiving',
