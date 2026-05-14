@@ -49,7 +49,7 @@ export default function HomePage() {
                 <div className="lbl">{t('home_stats_countries', lang)}</div>
               </div>
               <div className="hero-flags">
-                <span>11</span> {t('home_stats_sectors', lang)}
+                <span>20</span> {t('home_stats_sectors', lang)}
               </div>
             </div>
           </div>
