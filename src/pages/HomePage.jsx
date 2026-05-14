@@ -106,12 +106,10 @@ export default function HomePage() {
             <p className="section-subtitle">{t('home_countries_sub', lang)}</p>
           </div>
           <div className="countries-map-visual">
-            <div style={{ marginBottom: 32 }}>
-              <Suspense fallback={<div style={{ height: 340, background: '#0a1628', borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' }}>Loading map…</div>}>
-                <WorldMap countries={COUNTRIES} />
-              </Suspense>
-            </div>
-            <div className="countries-grid">
+            <Suspense fallback={<div style={{ height: 500, background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' }}>Loading map…</div>}>
+              <WorldMap countries={COUNTRIES} />
+            </Suspense>
+            <div className="countries-grid" style={{ marginTop: 32 }}>
               {COUNTRIES.map(c => (
                 <Link key={c.slug} to={`/countries/${c.slug}`} style={{ textDecoration: 'none' }}>
                   <div className="country-chip" style={{ cursor: 'pointer' }}>
