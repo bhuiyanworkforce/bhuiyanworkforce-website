@@ -34,9 +34,9 @@ const COUNTRY_COORDS = {
   'latvia':       { coords: [24.9, 56.9] },
   'estonia':      { coords: [25, 58.6] },
   'bulgaria':     { coords: [25.5, 42.7] },
-  'cyprus':       { coords: [33.4, 35.1] },
-  'russia':       { coords: [60, 55] },
-  'slovakia':     { coords: [19.7, 48.7] },
+  'cyprus':             { coords: [33.4, 35.1] },
+  'slovakia':           { coords: [19.7, 48.7] },
+  'bosnia-herzegovina': { coords: [17.5, 43.9] },
 };
 
 const REGION_COLORS = {
