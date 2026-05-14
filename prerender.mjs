@@ -1,45 +1,38 @@
 /**
  * Prerender script for Bhuiyan Workforce Ltd.
- * 
+ *
  * Run AFTER `vite build`:
  *   node prerender.mjs
- * 
+ *
  * This script visits every route using a headless browser (via Puppeteer),
  * waits for the React app to render, then saves the full HTML to dist/.
  * Google and other crawlers then get real HTML — no JavaScript required.
- * 
- * Install once:
- *   npm install --save-dev puppeteer
+ *
+ * Renders up to CONCURRENCY routes in parallel to stay within
+ * Cloudflare Pages' 20-minute build limit.
  */
 
 import puppeteer from 'puppeteer';
-import { createServer } from 'vite';
 import fs from 'fs';
 import path from 'path';
+import http from 'http';
 import { fileURLToPath } from 'url';
 import { PRERENDER_ROUTES } from './vite.config.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(__dirname, 'dist');
 
-async function prerender() {
-  console.log('🚀 Starting prerender...\n');
+// Number of routes rendered simultaneously.
+// 5 is safe for Cloudflare's build VMs. Raise to 8 if builds are still slow.
+const CONCURRENCY = 5;
 
-  // Serve the built dist folder
-  const server = await createServer({
-    root: __dirname,
-    server: { port: 5173 },
-    preview: true,
-  });
-
-  // Use a simple static file server on the dist folder instead
+async function startServer() {
   const { default: serveStatic } = await import('serve-static');
-  const { createServer: createHttpServer } = await import('http');
   const serve = serveStatic(DIST, { index: ['index.html'] });
 
-  const httpServer = createHttpServer((req, res) => {
+  const server = http.createServer((req, res) => {
     serve(req, res, () => {
-      // SPA fallback — serve index.html for all routes
+      // SPA fallback — serve index.html for unknown routes
       const indexPath = path.join(DIST, 'index.html');
       const content = fs.readFileSync(indexPath, 'utf-8');
       res.setHeader('Content-Type', 'text/html');
@@ -47,44 +40,70 @@ async function prerender() {
     });
   });
 
-  await new Promise((resolve) => httpServer.listen(5173, resolve));
+  await new Promise((resolve) => server.listen(5173, resolve));
   console.log('📡 Static server running on http://localhost:5173\n');
+  return server;
+}
 
-  // Launch headless browser
-  const browser = await puppeteer.launch({ headless: 'new' });
+async function renderRoute(browser, route) {
   const page = await browser.newPage();
+  try {
+    const url = `http://localhost:5173${route}`;
+    await page.goto(url, { waitUntil: 'networkidle0', timeout: 15000 });
+    await page.waitForSelector('h1', { timeout: 10000 }).catch(() => {});
 
-  let success = 0;
-  let failed = 0;
+    const html = await page.content();
 
-  for (const route of PRERENDER_ROUTES) {
-    try {
-      const url = `http://localhost:5173${route}`;
-      await page.goto(url, { waitUntil: 'networkidle0', timeout: 15000 });
+    const routePath = route === '/' ? '/index.html' : `${route}/index.html`;
+    const filePath = path.join(DIST, routePath);
+    fs.mkdirSync(path.dirname(filePath), { recursive: true });
+    fs.writeFileSync(filePath, html, 'utf-8');
 
-      // Wait for React to render (look for content that only exists post-render)
-      await page.waitForSelector('h1', { timeout: 10000 }).catch(() => {});
+    console.log(`  ✅ ${route}`);
+    return { route, ok: true };
+  } catch (err) {
+    console.log(`  ❌ ${route} — ${err.message}`);
+    return { route, ok: false };
+  } finally {
+    await page.close();
+  }
+}
 
-      const html = await page.content();
+async function runWithConcurrency(tasks, concurrency) {
+  const results = [];
+  const queue = [...tasks];
 
-      // Determine output path
-      const routePath = route === '/' ? '/index.html' : `${route}/index.html`;
-      const filePath = path.join(DIST, routePath);
-
-      // Ensure directory exists
-      fs.mkdirSync(path.dirname(filePath), { recursive: true });
-      fs.writeFileSync(filePath, html, 'utf-8');
-
-      console.log(`  ✅ ${route}`);
-      success++;
-    } catch (err) {
-      console.log(`  ❌ ${route} — ${err.message}`);
-      failed++;
+  async function worker() {
+    while (queue.length > 0) {
+      const task = queue.shift();
+      results.push(await task());
     }
   }
 
+  await Promise.all(
+    Array.from({ length: concurrency }, () => worker())
+  );
+
+  return results;
+}
+
+async function prerender() {
+  console.log(`🚀 Starting prerender (concurrency: ${CONCURRENCY})...\n`);
+
+  const server = await startServer();
+  const browser = await puppeteer.launch({ headless: 'new' });
+
+  const tasks = PRERENDER_ROUTES.map(
+    (route) => () => renderRoute(browser, route)
+  );
+
+  const results = await runWithConcurrency(tasks, CONCURRENCY);
+
   await browser.close();
-  httpServer.close();
+  server.close();
+
+  const success = results.filter((r) => r.ok).length;
+  const failed = results.filter((r) => !r.ok).length;
 
   console.log(`\n✨ Prerender complete: ${success} succeeded, ${failed} failed`);
   console.log('📁 Output saved to /dist\n');
