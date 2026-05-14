@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 // All routes to prerender — sourced from sitemap.xml
 const PRERENDER_ROUTES = [
@@ -79,9 +78,7 @@ const PRERENDER_ROUTES = [
 ];
 
 export default defineConfig({
-  plugins: [
-    react(),
-  ],
+  plugins: [react()],
   build: {
     outDir: 'dist',
     rollupOptions: {
@@ -92,10 +89,6 @@ export default defineConfig({
         },
       },
     },
-  },
-  // Expose routes for use in prerender script
-  define: {
-    __PRERENDER_ROUTES__: JSON.stringify(PRERENDER_ROUTES),
   },
 });
 
