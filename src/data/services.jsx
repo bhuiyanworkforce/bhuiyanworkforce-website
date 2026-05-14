@@ -138,7 +138,7 @@ export const SERVICES = [
       { title: 'Full Documentation', desc: 'BMET, police clearance, GAMCA medical, and visa processing handled end-to-end.' },
       { title: 'Employer Liaison', desc: 'We coordinate with your HR and production planning teams to align arrival with your ramp-up schedule.' },
     ],
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1612810806695-30f7a8258391?w=800&q=80',
   },
   {
     slug: 'oil-gas',
@@ -161,7 +161,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, GAMCA medical, offshore medical (if required), and visa processing.' },
       { title: 'Mobilisation', desc: 'Coordinated mobilisation to align with your project schedule and rotation roster.' },
     ],
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80',
   },
   {
     slug: 'security',
@@ -184,7 +184,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, police certificate, GAMCA medical, and visa application.' },
       { title: 'Employer Briefing', desc: 'Workers are briefed on your specific site protocols, uniform requirements, and reporting structures.' },
     ],
-    image: 'https://images.unsplash.com/photo-1550534791-2677533605ab?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=80',
   },
   {
     slug: 'cleaning',
@@ -252,7 +252,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, GAMCA medical, police clearance, and visa processing.' },
       { title: 'Deployment', desc: 'Workers depart with safety certifications and employer induction materials.' },
     ],
-    image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=80',
   },
   {
     slug: 'steel-fixing',
@@ -273,7 +273,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and destination-country visa.' },
       { title: 'Deployment', desc: 'Coordinated mobilisation aligned with your project structural programme.' },
     ],
-    image: 'https://images.unsplash.com/photo-1590141462671-ec5d6e5c8e09?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=800&q=80',
   },
   {
     slug: 'scaffolding-formwork',
@@ -294,7 +294,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa processing.' },
       { title: 'Deployment', desc: 'Workers briefed on employer-specific scaffold systems and site standards before departure.' },
     ],
-    image: 'https://images.unsplash.com/photo-1518005068251-37900150dfca?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
   },
   {
     slug: 'landscaping-groundskeeping',
@@ -338,7 +338,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa processing.' },
       { title: 'Deployment', desc: 'Mobilisation aligned with your project programme and site start dates.' },
     ],
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=800&q=80',
   },
   {
     slug: 'electrical-helpers',
@@ -360,7 +360,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, GAMCA medical, police clearance, and destination-country visa.' },
       { title: 'MEP Contractor Briefing', desc: 'Workers are briefed on your specific cable schedules, containment systems, and site procedures.' },
     ],
-    image: 'https://images.unsplash.com/photo-1473308822086-710304d7d30c?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80',
   },
   {
     slug: 'laundry-linen',
@@ -382,7 +382,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness (including food hygiene where applicable), and visa processing.' },
       { title: 'Employer Induction', desc: 'Workers are briefed on your specific linen categories, shift patterns, and productivity standards.' },
     ],
-    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1521656693074-0ef32e80a5d5?w=800&q=80',
   },
   {
     slug: 'food-processing',
@@ -404,7 +404,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, food hygiene certificate, police clearance, and visa processing.' },
       { title: 'Employer Induction Coordination', desc: 'We liaise with your production management for a structured first-week induction.' },
     ],
-    image: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80',
   },
   {
     slug: 'fishery-aquaculture',
@@ -426,7 +426,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, seafarer documentation, police clearance, and destination-country visa.' },
       { title: 'Vessel or Farm Briefing', desc: 'Workers are briefed on vessel-specific safety procedures, watch schedules, or aquaculture farm protocols.' },
     ],
-    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
   },
   {
     slug: 'caregiving',
@@ -448,7 +448,7 @@ export const SERVICES = [
       { title: 'Language Assessment', desc: 'English or Arabic conversational assessment appropriate to the destination country requirement.' },
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa application. Enhanced background check for household placement roles.' },
     ],
-    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80',
   },
 ];
 
