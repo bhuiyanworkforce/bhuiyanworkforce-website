@@ -26,7 +26,7 @@ const FAQS = [
       },
       {
         q: 'What countries do you serve?',
-        a: 'We currently deploy to 25+ countries: Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain, Jordan, Malaysia, Singapore, Maldives, Italy, Portugal, Greece, Romania, Poland, Hungary, Croatia, Czech Republic, Lithuania, Latvia, Estonia, Bulgaria, Cyprus, Russia, and Slovakia. If your destination is not on this list, please contact us — we may still be able to help.',
+        a: 'We currently deploy to 25+ countries: Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain, Jordan, Malaysia, Singapore, Maldives, Italy, Portugal, Greece, Romania, Poland, Hungary, Croatia, Czech Republic, Lithuania, Latvia, Estonia, Bulgaria, Cyprus, Slovakia, and Bosnia and Herzegovina. If your destination is not on this list, please contact us — we may still be able to help.',
       },
       {
         q: 'What are your fees?',
