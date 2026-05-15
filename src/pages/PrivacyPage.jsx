@@ -38,7 +38,7 @@ export default function PrivacyPage() {
             </p>
 
             <h2>1. Who We Are</h2>
-            <p>Bhuiyan Workforce Ltd. ("we", "us", "our") is a licensed international manpower recruitment company registered in Bangladesh and operating under the Bureau of Manpower, Employment and Training (BMET). Our registered office is in Dhaka, Bangladesh. Our website is bhuiyanworkforce.com.</p>
+            <p>Bhuiyan Workforce Ltd. ("we", "us", "our") is a Bangladesh-based international manpower recruitment company. Our registered office is in Brahmanbaria, Bangladesh. Our website is bhuiyanworkforce.com.</p>
             <p>For all privacy-related enquiries, contact us at <a href="mailto:info@bhuiyanworkforce.com" style={{ color: 'var(--navy)', fontWeight: 600 }}>info@bhuiyanworkforce.com</a>.</p>
 
             <h2>2. Who This Policy Applies To</h2>
