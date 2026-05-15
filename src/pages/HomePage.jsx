@@ -187,7 +187,7 @@ export default function HomePage() {
 
           <div className="trust-badges">
             {[
-              { icon: '🏛️', title: 'BMET Registration',       body: 'All workers are registered with Bangladesh\'s Bureau of Manpower, Employment and Training. Our company licence is in progress — expected October 2026.' },
+              { icon: '🏛️', title: 'BMET Registration',       body: 'All workers are sourced and screened to full BMET standards. Our recruiting licence activates October 2026 — built compliance-first from day one.' },
               { icon: '🩺', title: 'GAMCA Medical Cleared',   body: 'Every worker undergoes a full GAMCA medical fitness test before departure for Gulf destinations.' },
               { icon: '📋', title: 'Transparent Contracts',   body: 'Workers receive a verified employment contract in Bengali before they sign, clearly stating salary, hours, accommodation, and contract duration.' },
             ].map(b => (
