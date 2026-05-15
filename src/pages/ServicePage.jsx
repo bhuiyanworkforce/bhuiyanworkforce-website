@@ -1,10 +1,26 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { getService, SERVICES } from '../data/services';
+import useSchema from '../hooks/useSchema';
 
 export default function ServicePage() {
   const { slug } = useParams();
   const service  = getService(slug);
+
+  // Breadcrumb + Service structured data
+  useSchema(service ? {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhuiyanworkforce.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://bhuiyanworkforce.com/services" },
+          { "@type": "ListItem", "position": 3, "name": service.name, "item": `https://bhuiyanworkforce.com/services/${slug}` }
+        ]
+      }
+    ]
+  } : null);
 
   useEffect(() => {
     if (!service) return;

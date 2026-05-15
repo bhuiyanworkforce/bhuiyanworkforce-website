@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLang } from '../i18n/LanguageContext';
+import useSchema from '../hooks/useSchema';
 import { t } from '../i18n/translations';
 
 const FAQS = [
@@ -90,6 +91,14 @@ export default function FAQPage() {
   const [search, setSearch] = React.useState('');
   const { lang } = useLang();
   const filtered = FAQS.map(section => ({
+  useSchema({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhuiyanworkforce.com/" },
+      { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://bhuiyanworkforce.com/faq" }
+    ]
+  });
     ...section,
     items: section.items.filter(item =>
       item.q.toLowerCase().includes(search.toLowerCase()) ||
