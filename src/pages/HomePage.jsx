@@ -95,9 +95,14 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <Link to="/capabilities" className="btn btn-primary" style={{ flexShrink: 0 }}>
-              View &amp; Print Capabilities →
-            </Link>
+<a 
+  href="/capabilities.pdf" 
+  download="Bhuiyan_Workforce_Capabilities.pdf"
+  className="btn btn-primary" 
+  style={{ flexShrink: 0 }}
+>
+  View &amp; Print Capabilities →
+</a>
           </div>
         </div>
       </section>
