@@ -15,7 +15,11 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <LogoSVG variant="light" width={160} />
-            <p style={{ marginTop: 16 }}>Connecting skilled Bangladeshi workers with employers across 25 countries. Trusted, compliant, and transparent recruitment since 2021.</p>
+            <p style={{ marginTop: 16 }}>Connecting skilled Bangladeshi workers with international employers across 25 countries. Ethical, transparent, and fully documented recruitment.</p>
+            <div style={{ marginTop: 14, fontSize: '0.8rem', color: 'rgba(255,255,255,0.45)', lineHeight: 1.6 }}>
+              📍 Kawtoli, Brahmanbaria, Bangladesh 3400<br />
+              BMET Licence: In Progress — October 2026
+            </div>
             <div className="social-links" style={{ marginTop: 20 }}>
               <a href="https://linkedin.com/company/bhuiyan-workforce" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
               <a href="https://www.facebook.com/share/1GjrNbPYvf/" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
@@ -39,11 +43,11 @@ export default function Footer() {
             <h4>Company</h4>
             <ul className="footer-links">
               <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/capabilities">Capabilities Deck</Link></li>
               <li><button onClick={goContact}>Contact</button></li>
               <li><Link to="/faq">FAQ</Link></li>
               <li><Link to="/blog">Blog</Link></li>
               <li><Link to="/countries">Countries</Link></li>
-              <li><Link to="/employer-guide">Employer's Guide</Link></li>
               <li><Link to="/privacy">Privacy Policy</Link></li>
               <li><Link to="/terms">Terms of Service</Link></li>
             </ul>
@@ -74,7 +78,6 @@ export default function Footer() {
 
     {/* Sticky Contact Buttons */}
     <div style={{ position: 'fixed', bottom: 24, right: 20, zIndex: 999, display: 'flex', flexDirection: 'column', gap: 12 }}>
-      {/* Call Button */}
       <a
         href="tel:+8801864567912"
         aria-label="Call us"
@@ -92,7 +95,6 @@ export default function Footer() {
           <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
         </svg>
       </a>
-      {/* WhatsApp Button */}
       <a
         href="https://wa.me/8801864567912"
         target="_blank" rel="noopener noreferrer"
