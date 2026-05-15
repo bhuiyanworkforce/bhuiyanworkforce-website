@@ -98,7 +98,7 @@ export const SERVICES = [
       { title: 'Seasonal Deployment Planning', desc: 'We plan deployment timelines around your harvest cycles or landscaping seasons.' },
     ],
     // Farm workers harvesting crops in the field
-    image: '/images/1000115629.webp',
+    image: '/images/1000115629.jpg',
   },
   {
     slug: 'warehouse',
@@ -445,7 +445,7 @@ export const SERVICES = [
       { title: 'Vessel or Farm Briefing', desc: 'Workers are briefed on vessel-specific safety procedures, watch schedules, or aquaculture farm protocols.' },
     ],
     // Fishermen working on deck hauling nets on a fishing vessel
-    image: '/images/1000115644.webp',
+    image: '/images/1000115644.jpg',
   },
   {
     slug: 'caregiving',
