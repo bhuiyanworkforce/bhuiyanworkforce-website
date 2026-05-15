@@ -121,6 +121,7 @@ export default function ContactForm() {
         <label htmlFor="f-service">Service Required</label>
         <select id="f-service" name="service" value={fields.service} onChange={handleChange}>
           <option value="">— Select a service —</option>
+          <option>Founding Employer Partner Programme</option>
           <option>Construction & Engineering</option>
           <option>Driving & Logistics</option>
           <option>Hospitality & Catering</option>
