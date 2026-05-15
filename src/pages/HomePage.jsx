@@ -12,6 +12,9 @@ const go = (id) => {
   if (el) el.scrollIntoView({ behavior: 'smooth' });
 };
 
+// Founding slots remaining — update this number as slots fill
+const FOUNDING_SLOTS_REMAINING = 10;
+
 export default function HomePage() {
   const { lang } = useLang();
 
@@ -62,16 +65,39 @@ export default function HomePage() {
         <div className="container">
           <div className="stats-grid">
             {[
-              { num: '25+',  label: t('home_stats_countries', lang) },
-              { num: '20',   label: t('home_stats_sectors', lang) },
-              { num: '24h',  label: t('home_stats_response', lang) },
-              { num: '100%', label: t('home_stats_bmet', lang) },
+              { num: '25+',       label: t('home_stats_countries', lang) },
+              { num: '20',        label: t('home_stats_sectors', lang) },
+              { num: '24h',       label: t('home_stats_response', lang) },
+              { num: 'Oct 2026',  label: t('home_stats_bmet', lang) },
             ].map(s => (
               <div className="stat-item" key={s.label}>
                 <span className="stat-num">{s.num}</span>
                 <span className="stat-label">{s.label}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CAPABILITIES DECK CTA ── */}
+      <section style={{ background: 'var(--navy)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '32px 0' }}>
+        <div className="container">
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24, flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+              <span style={{ fontSize: '2.2rem', flexShrink: 0 }}>📄</span>
+              <div>
+                <div className="label-tag" style={{ marginBottom: 6 }}>For Employers</div>
+                <p style={{ color: 'var(--white)', fontWeight: 600, margin: '0 0 4px', fontSize: '1rem' }}>
+                  Download Our Capabilities Deck
+                </p>
+                <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.82rem', margin: 0 }}>
+                  Full overview of services, destinations, recruitment process &amp; team — ready to share with your procurement or HR team.
+                </p>
+              </div>
+            </div>
+            <Link to="/capabilities" className="btn btn-primary" style={{ flexShrink: 0 }}>
+              View &amp; Print Capabilities →
+            </Link>
           </div>
         </div>
       </section>
@@ -142,7 +168,7 @@ export default function HomePage() {
           <div className="process-steps">
             {[
               { n: '01', title: 'Enquiry & Brief',    desc: 'Tell us your requirements: trade category, worker count, destination, timeline. We respond within 24 hours.' },
-              { n: '02', title: 'Candidate Matching', desc: 'We screen our database, conduct trade tests, and present a verified shortlist within 5–10 working days.' },
+              { n: '02', title: 'Candidate Matching', desc: 'We screen our database, conduct trade tests, and present a verified shortlist within 7 working days of licence activation.' },
               { n: '03', title: 'Documentation',      desc: 'We manage BMET registration, visas, medical clearances, and all government approvals end-to-end.' },
               { n: '04', title: 'Deployment',         desc: 'Workers depart with full documentation, pre-departure training completed, and briefed on your standards.' },
             ].map(step => (
@@ -156,7 +182,7 @@ export default function HomePage() {
 
           <div className="trust-badges">
             {[
-              { icon: '🏛️', title: 'BMET Registered',        body: 'All workers are registered with Bangladesh\'s Bureau of Manpower, Employment and Training. Every deployment is fully documented and legally compliant.' },
+              { icon: '🏛️', title: 'BMET Registration',       body: 'All workers are registered with Bangladesh\'s Bureau of Manpower, Employment and Training. Our company licence is in progress — expected October 2026.' },
               { icon: '🩺', title: 'GAMCA Medical Cleared',   body: 'Every worker undergoes a full GAMCA medical fitness test before departure for Gulf destinations.' },
               { icon: '📋', title: 'Transparent Contracts',   body: 'Workers receive a verified employment contract in Bengali before they sign, clearly stating salary, hours, accommodation, and contract duration.' },
             ].map(b => (
@@ -180,9 +206,9 @@ export default function HomePage() {
               />
               <div className="why-image-overlay">
                 {[
-                  { num: '100%', lbl: 'BMET Compliant' },
-                  { num: '24h',  lbl: 'Response Time' },
-                  { num: '11',    lbl: 'Sectors Covered' },
+                  { num: '25+', lbl: 'Deploy Countries' },
+                  { num: '24h', lbl: 'Response Time' },
+                  { num: '20',  lbl: 'Trade Categories' },
                 ].map(s => (
                   <div className="why-image-stat" key={s.lbl}>
                     <div className="num">{s.num}</div>
@@ -198,10 +224,10 @@ export default function HomePage() {
               <div className="why-features">
                 {[
                   { icon: '✅', title: 'End-to-End Compliance',   body: 'We handle every step: BMET clearance, GAMCA medicals, visa processing, and contracts. Workers are ready to work on day one.' },
-                  { icon: '⚡', title: 'Fast Mobilisation',        body: 'Our pre-registered database means we can present a qualified shortlist within 5–10 working days for most trade categories.' },
+                  { icon: '⚡', title: 'Fast Mobilisation',        body: 'Our pre-registered database means we can present a qualified shortlist within 7 working days of licence activation.' },
                   { icon: '🔍', title: 'Verified Skills',          body: 'Every candidate undergoes a practical trade test and background check. You only see workers who genuinely meet the requirements.' },
-                  { icon: '🤝', title: 'Transparent & Compliant',    body: 'We follow all BMET regulations, maintain full documentation for every placement, and operate with clear fee structures disclosed to all parties upfront.' },
-                  { icon: '🌍', title: 'Destination Expertise',    body: 'With deployments across 25 countries, we understand the specific documentation and regulatory requirements of each market.' },
+                  { icon: '🤝', title: 'Ethical by Design',        body: 'We follow ILO ethical recruitment principles: zero worker-paid fees, transparent contracts in their language, and welfare follow-up post-deployment.' },
+                  { icon: '🌍', title: 'Destination Expertise',    body: 'With deployment corridors across 25 countries, we understand the specific documentation and regulatory requirements of each market.' },
                 ].map(f => (
                   <div className="why-feature" key={f.title}>
                     <div className="why-feature-icon" aria-hidden="true">{f.icon}</div>
@@ -209,6 +235,47 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FOUNDING EMPLOYER PROGRAM ── */}
+      <section style={{ background: 'var(--off-white)', borderTop: '4px solid var(--gold)', borderBottom: '1px solid var(--gray-100)', padding: '64px 0' }} id="founding">
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
+            <div>
+              <div className="label-tag" style={{ marginBottom: 16 }}>{t('founding_tag', lang)}</div>
+              <h2 className="section-title" style={{ marginBottom: 20 }}>{t('founding_title', lang)}</h2>
+              <p style={{ color: 'var(--gray-500)', lineHeight: 1.8, fontSize: '1rem', marginBottom: 32 }}>
+                {t('founding_desc', lang)}
+              </p>
+              <button className="btn btn-primary" onClick={() => go('contact')}>
+                {t('founding_cta', lang)}
+              </button>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+              {/* Slot counter */}
+              <div style={{ background: 'var(--white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius)', padding: '28px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
+                <div>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--gold)', marginBottom: 8 }}>Slots Available</div>
+                  <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--navy)', lineHeight: 1 }}>{FOUNDING_SLOTS_REMAINING}</div>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--gray-500)', marginTop: 4 }}>{t('founding_slots', lang)}</div>
+                </div>
+                <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(201,168,76,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.75rem', flexShrink: 0 }}>🏆</div>
+              </div>
+              {/* Benefits */}
+              {[
+                { icon: '⚡', text: 'Priority mobilisation — first in queue when licence activates' },
+                { icon: '📋', text: 'Guaranteed shortlist within 7 working days of licence activation' },
+                { icon: '🤝', text: 'Direct line to the founder for your first placement' },
+                { icon: '🔒', text: 'No obligation — reserve your slot, review when ready' },
+              ].map(b => (
+                <div key={b.text} style={{ display: 'flex', alignItems: 'flex-start', gap: 14, background: 'var(--white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius)', padding: '16px 20px' }}>
+                  <span style={{ fontSize: '1.1rem', flexShrink: 0, marginTop: 1 }}>{b.icon}</span>
+                  <span style={{ fontSize: '0.88rem', color: 'var(--navy)', fontWeight: 500, lineHeight: 1.5 }}>{b.text}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -252,29 +319,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── LEAD MAGNET ── */}
-      <section style={{ background: 'var(--off-white)', borderTop: '1px solid var(--gray-100)', borderBottom: '1px solid var(--gray-100)', padding: '48px 0' }}>
-        <div className="container">
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-              <span style={{ fontSize: '3rem', flexShrink: 0 }}>📘</span>
-              <div>
-                <div className="label-tag" style={{ marginBottom: 8 }}>Free Download</div>
-                <h3 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', fontSize: '1.3rem', margin: '0 0 6px' }}>
-                  The Employer's Complete Guide to Recruiting from Bangladesh
-                </h3>
-                <p style={{ color: 'var(--gray-500)', fontSize: '0.875rem', margin: 0 }}>
-                  Visa timelines, legal compliance, trade testing, mobilisation guides — all in one free resource.
-                </p>
-              </div>
-            </div>
-            <Link to="/employer-guide" className="btn btn-primary" style={{ flexShrink: 0 }}>
-              Download Free Guide →
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* ── CONTACT ── */}
       <section className="section contact" id="contact">
         <div className="container">
@@ -290,6 +334,9 @@ export default function HomePage() {
               <p>We welcome enquiries from employers, recruitment agents, and government bodies. For urgent requirements, WhatsApp or call us directly.</p>
               <div className="contact-items">
                 {[
+                  { icon: '📍', label: 'Office Address', content: (
+                    <span>Kawtoli, Brahmanbaria, Bangladesh — 3400</span>
+                  )},
                   { icon: '✉️', label: 'General Enquiries', content: (
                     <a href="mailto:info@bhuiyanworkforce.com">info@bhuiyanworkforce.com</a>
                   )},

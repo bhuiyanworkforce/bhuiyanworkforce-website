@@ -17,7 +17,7 @@ const WHY_US = [
   { icon: '🌍', title: 'Global Reach', desc: 'Active deployment coverage across 25 countries spanning Middle East, Asia, and Europe.' },
   { icon: '👤', title: 'Dedicated Support', desc: 'Clients receive a dedicated account contact for seamless communication end-to-end.' },
   { icon: '⚡', title: 'Fast Turnaround', desc: 'Streamlined process from requirement submission to worker deployment.' },
-  { icon: '📋', title: 'Full Compliance', desc: 'All placements are fully compliant with BMET regulations and destination-country immigration requirements.' },
+  { icon: '📋', title: 'Licence in Progress', desc: 'Our BMET recruitment licence is in process — expected October 2026. All sourcing and screening is conducted to full BMET standards ahead of activation.' },
 ];
 
 const DESTINATIONS = [
@@ -83,7 +83,7 @@ export default function CapabilitiesPage() {
                   Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Asia, and Europe.
                 </p>
                 <p style={{ color: 'var(--text-body)', lineHeight: 1.8, fontSize: '1rem', margin: 0 }}>
-                  Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. Our recruitment licence and formal registration are currently in process, positioning us to begin formal placements shortly.
+                  Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. Our BMET recruitment licence is in process — expected October 2026. In the meantime we are fully operational in candidate sourcing, screening, and employer relationship-building across all 20 trade categories.
                 </p>
               </div>
             </div>
@@ -176,6 +176,7 @@ export default function CapabilitiesPage() {
           <div className="container">
             <div className="contact-grid">
               {[
+                { label: 'Office', value: 'Kawtoli, Brahmanbaria, Bangladesh 3400', href: 'https://maps.google.com/?q=Brahmanbaria+Bangladesh' },
                 { label: 'Partnerships', value: 'partnerships@bhuiyanworkforce.com', href: 'mailto:partnerships@bhuiyanworkforce.com' },
                 { label: 'General Enquiry', value: 'info@bhuiyanworkforce.com', href: 'mailto:info@bhuiyanworkforce.com' },
                 { label: 'Mobile / WhatsApp', value: '+880 1864 567912', href: 'tel:+8801864567912' },
@@ -258,7 +259,7 @@ export default function CapabilitiesPage() {
         .why-desc { color: var(--gray-500); font-size: 0.85rem; line-height: 1.65; margin: 0; }
 
         .contact-footer-section { background: var(--navy); padding: 48px 0; }
-        .contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 24px; text-align: center; }
         .contact-card { padding: 20px 16px; background: rgba(255,255,255,0.04); border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.08); }
         .contact-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 10px; }
         .contact-value { color: var(--white); font-size: 0.82rem; text-decoration: none; line-height: 1.4; display: block; word-break: break-word; }
