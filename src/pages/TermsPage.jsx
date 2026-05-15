@@ -41,7 +41,7 @@ export default function TermsPage() {
             <p>By accessing or using the bhuiyanworkforce.com website, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use the website. These terms apply to all visitors, employers, and worker candidates who access our website or engage with our services.</p>
 
             <h2>2. About Bhuiyan Workforce Ltd.</h2>
-            <p>Bhuiyan Workforce Ltd. is a licensed international manpower recruitment company registered in Bangladesh, operating under the Bureau of Manpower, Employment and Training (BMET). We connect skilled Bangladeshi workers with employers across 25+ countries in the Gulf, Europe, and Southeast Asia. Our recruitment and deployment services are governed by separate written service agreements between Bhuiyan Workforce Ltd. and the engaging employer.</p>
+            <p>Bhuiyan Workforce Ltd. is a Bangladesh-based international manpower recruitment company. We connect skilled Bangladeshi workers with employers across 25+ countries in the Gulf, Europe, and Southeast Asia. Our recruitment and deployment services are governed by separate written service agreements between Bhuiyan Workforce Ltd. and the engaging employer.</p>
 
             <h2>3. Website Use</h2>
             <p>You may use this website for lawful purposes only. You agree not to:</p>
