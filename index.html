@@ -30,7 +30,7 @@
 
     <title>Bhuiyan Workforce Ltd. — Ethical Global Recruitment from Bangladesh</title>
 
-    <!-- JSON-LD Structured Data -->
+    <!-- JSON-LD Structured Data: Organization + EmploymentAgency -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -38,13 +38,20 @@
       "name": "Bhuiyan Workforce Ltd.",
       "alternateName": "Bhuiyan Workforce",
       "url": "https://bhuiyanworkforce.com",
-      "logo": "https://bhuiyanworkforce.com/logo.png",
-      "description": "Ethical international manpower recruitment company connecting skilled Bangladeshi workers with employers across 25+ countries.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bhuiyanworkforce.com/logo.png",
+        "width": 200,
+        "height": 60
+      },
+      "image": "https://bhuiyanworkforce.com/og-image.png",
+      "description": "Ethical international manpower recruitment company connecting skilled Bangladeshi workers with employers across 25+ countries in the Gulf, Europe, and Southeast Asia.",
       "foundingDate": "2021",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "BD",
-        "addressRegion": "Dhaka"
+        "addressLocality": "Dhaka",
+        "addressRegion": "Dhaka Division"
       },
       "contactPoint": [
         {
@@ -52,7 +59,13 @@
           "telephone": "+880-1864-567912",
           "contactType": "sales",
           "email": "info@bhuiyanworkforce.com",
-          "availableLanguage": ["English", "Bengali"]
+          "availableLanguage": ["English", "Bengali"],
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
         },
         {
           "@type": "ContactPoint",
@@ -62,23 +75,190 @@
           "availableLanguage": ["Bengali", "English"]
         }
       ],
+      "email": "info@bhuiyanworkforce.com",
+      "telephone": "+880-1864-567912",
       "sameAs": [
         "https://linkedin.com/company/bhuiyan-workforce",
         "https://www.facebook.com/share/1GjrNbPYvf/"
       ],
-      "areaServed": ["SA","AE","QA","KW","OM","BH","JO","MY","SG","MV","IT","PT","GR","RO","PL","HU","HR","CZ","LT","LV","EE","BG","BA","CY","RU"],
+      "areaServed": [
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Qatar"},
+        {"@type": "Country", "name": "Kuwait"},
+        {"@type": "Country", "name": "Oman"},
+        {"@type": "Country", "name": "Bahrain"},
+        {"@type": "Country", "name": "Jordan"},
+        {"@type": "Country", "name": "Malaysia"},
+        {"@type": "Country", "name": "Singapore"},
+        {"@type": "Country", "name": "Maldives"},
+        {"@type": "Country", "name": "Italy"},
+        {"@type": "Country", "name": "Portugal"},
+        {"@type": "Country", "name": "Greece"},
+        {"@type": "Country", "name": "Romania"},
+        {"@type": "Country", "name": "Poland"},
+        {"@type": "Country", "name": "Hungary"},
+        {"@type": "Country", "name": "Croatia"},
+        {"@type": "Country", "name": "Czech Republic"},
+        {"@type": "Country", "name": "Lithuania"},
+        {"@type": "Country", "name": "Latvia"},
+        {"@type": "Country", "name": "Estonia"},
+        {"@type": "Country", "name": "Bulgaria"},
+        {"@type": "Country", "name": "Bosnia and Herzegovina"},
+        {"@type": "Country", "name": "Cyprus"}
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Workforce Recruitment Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construction & Engineering Workers" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drivers & Transport Workers" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hospitality & Catering Staff" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory & Manufacturing Workers" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Farm & Garden Workers" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warehouse & Logistics Staff" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construction & Engineering Workers", "url": "https://bhuiyanworkforce.com/services/construction" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drivers & Transport Workers", "url": "https://bhuiyanworkforce.com/services/drivers" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chefs & Hospitality Staff", "url": "https://bhuiyanworkforce.com/services/hospitality" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory & Manufacturing Workers", "url": "https://bhuiyanworkforce.com/services/factory" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Farm & Garden Workers", "url": "https://bhuiyanworkforce.com/services/farm-garden" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warehouse & Logistics Staff", "url": "https://bhuiyanworkforce.com/services/warehouse" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oil & Gas Workers", "url": "https://bhuiyanworkforce.com/services/oil-gas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Security Guards", "url": "https://bhuiyanworkforce.com/services/security" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cleaning & Housekeeping Staff", "url": "https://bhuiyanworkforce.com/services/cleaning" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Retail & Supermarket Staff", "url": "https://bhuiyanworkforce.com/services/retail" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Caregiving & Elderly Support Workers", "url": "https://bhuiyanworkforce.com/services/caregiving" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting & Finishing Workers", "url": "https://bhuiyanworkforce.com/services/painting-finishing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steel Fixing & Reinforcement Workers", "url": "https://bhuiyanworkforce.com/services/steel-fixing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Scaffolding & Formwork Workers", "url": "https://bhuiyanworkforce.com/services/scaffolding-formwork" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mason & Bricklaying Workers", "url": "https://bhuiyanworkforce.com/services/masonry-bricklaying" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Food Processing & Packing Workers", "url": "https://bhuiyanworkforce.com/services/food-processing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fishery & Aquaculture Workers", "url": "https://bhuiyanworkforce.com/services/fishery-aquaculture" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Laundry & Linen Services Staff", "url": "https://bhuiyanworkforce.com/services/laundry-linen" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landscaping & Groundskeeping Workers", "url": "https://bhuiyanworkforce.com/services/landscaping-groundskeeping" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electrical Helpers & Cable Pullers", "url": "https://bhuiyanworkforce.com/services/electrical-helpers" } }
         ]
+      },
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "MD Rezaul Kabir Bhuiyan",
+          "jobTitle": "Founder & CEO",
+          "worksFor": {"@type": "Organization", "name": "Bhuiyan Workforce Ltd."},
+          "email": "Rezaul@bhuiyanworkforce.com",
+          "image": "https://bhuiyanworkforce.com/team-rezaul.webp"
+        },
+        {
+          "@type": "Person",
+          "name": "Asraful Kabir Bhuiyan",
+          "jobTitle": "Business Development Manager",
+          "worksFor": {"@type": "Organization", "name": "Bhuiyan Workforce Ltd."},
+          "image": "https://bhuiyanworkforce.com/team-asraful.webp"
+        },
+        {
+          "@type": "Person",
+          "name": "Kishor Kumar",
+          "jobTitle": "Compliance & Documentation Manager",
+          "worksFor": {"@type": "Organization", "name": "Bhuiyan Workforce Ltd."},
+          "image": "https://bhuiyanworkforce.com/team-kishor.webp"
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite (enables Sitelinks Search Box in Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Bhuiyan Workforce Ltd.",
+      "url": "https://bhuiyanworkforce.com",
+      "description": "Ethical global recruitment from Bangladesh — connecting skilled workers with employers across 25+ countries.",
+      "inLanguage": ["en", "bn"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://bhuiyanworkforce.com/services?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQ (enables rich FAQ results in Google Search) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How quickly can you supply workers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most trade categories, we can present a verified shortlist within 5–10 working days. After employer selection, the full documentation and visa process typically takes 4–8 weeks depending on the destination country. For countries with streamlined visa procedures (e.g. Malaysia, UAE), timelines are often faster."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your minimum order size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We handle both small deployments (5–10 workers) and large-scale mobilisations (200+ workers). There is no minimum order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle all the documentation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We manage BMET registration, Bureau of Manpower clearance, GAMCA medical examinations for Gulf destinations, police clearance certificates, passport validity checks, and the visa application process. You provide a valid demand letter and employment contract; we handle the rest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if a worker underperforms or leaves early?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer a replacement guarantee for workers who leave within the first 90 days for reasons attributable to misrepresentation on their CV or skills test. We will work with you to replace the worker as quickly as possible at no additional placement fee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What countries do you deploy workers to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We currently deploy to 25+ countries including Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain, Jordan, Malaysia, Singapore, Maldives, Italy, Portugal, Greece, Romania, Poland, Hungary, Croatia, Czech Republic, Lithuania, Latvia, Estonia, Bulgaria, Cyprus, and Bosnia and Herzegovina."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are your recruitment fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our fees vary based on worker category, numbers, and destination country. We provide a fully itemised cost breakdown before you commit to anything. We operate on a success-fee model — you pay only after workers are confirmed for deployment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do workers pay a recruitment fee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fees vary depending on the service package and destination country. Please contact us directly to discuss your situation and get a clear breakdown of applicable costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will workers receive a contract before they travel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Workers receive a verified employment contract in Bengali before they agree to travel. It clearly states job title, salary, working hours, accommodation arrangements, and contract duration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is GAMCA and why is it required?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GAMCA (Gulf Approved Medical Centre Association) medical testing is a mandatory health clearance required by all GCC countries before a worker's visa can be processed. It screens for communicable diseases and general fitness for work. We coordinate GAMCA appointments for all workers going to Gulf destinations."
+          }
+        }
+      ]
     }
     </script>
 
