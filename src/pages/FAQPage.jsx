@@ -90,15 +90,17 @@ FAQItem.propTypes = {
 export default function FAQPage() {
   const [search, setSearch] = React.useState('');
   const { lang } = useLang();
-  const filtered = FAQS.map(section => ({
+
   useSchema({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhuiyanworkforce.com/" },
-      { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://bhuiyanworkforce.com/faq" }
-    ]
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bhuiyanworkforce.com/' },
+      { '@type': 'ListItem', position: 2, name: 'FAQ', item: 'https://bhuiyanworkforce.com/faq' },
+    ],
   });
+
+  const filtered = FAQS.map(section => ({
     ...section,
     items: section.items.filter(item =>
       item.q.toLowerCase().includes(search.toLowerCase()) ||
