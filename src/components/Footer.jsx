@@ -18,7 +18,7 @@ export default function Footer() {
             <p style={{ marginTop: 16 }}>Connecting skilled Bangladeshi workers with international employers across 25 countries. Ethical, transparent, and fully documented recruitment.</p>
             <div style={{ marginTop: 14, fontSize: '0.8rem', color: 'rgba(255,255,255,0.45)', lineHeight: 1.6 }}>
               📍 Kawtoli, Brahmanbaria, Bangladesh 3400<br />
-              BMET Licence: In Progress — October 2026
+              BMET Licence: Activating — October 2026
             </div>
             <div className="social-links" style={{ marginTop: 20 }}>
               <a href="https://linkedin.com/company/bhuiyan-workforce" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
