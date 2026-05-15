@@ -30,7 +30,15 @@ export default function HomePage() {
                 {t('home_title1', lang)}
                 <span>{t('home_title2', lang)}</span>
               </h1>
-              <p className="hero-desc">{t('home_desc', lang)}</p>
+              <p className="hero-desc">
+                <strong style={{ display: 'block', marginBottom: 8, color: 'var(--gold)', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.01em' }}>
+                  For international employers hiring from Bangladesh.
+                </strong>
+                {t('home_desc', lang)}
+              </p>
+              <div style={{ marginTop: 12, marginBottom: 4, fontSize: '0.78rem', color: 'rgba(255,255,255,0.45)', letterSpacing: '0.01em' }}>
+                🏛️ BMET Recruitment Licence activating October 2026
+              </div>
               <div className="hero-actions">
                 <button className="btn btn-primary"   onClick={() => go('contact')}>{t('home_find_workers', lang)}</button>
                 <button className="btn btn-secondary" onClick={() => go('services')}>{t('home_our_services', lang)}</button>
@@ -65,10 +73,9 @@ export default function HomePage() {
         <div className="container">
           <div className="stats-grid">
             {[
-              { num: '25+',       label: t('home_stats_countries', lang) },
-              { num: '20',        label: t('home_stats_sectors', lang) },
-              { num: '24h',       label: t('home_stats_response', lang) },
-              { num: 'Oct 2026',  label: t('home_stats_bmet', lang) },
+              { num: '25+', label: t('home_stats_countries', lang) },
+              { num: '20',  label: t('home_stats_sectors', lang) },
+              { num: '24h', label: t('home_stats_response', lang) },
             ].map(s => (
               <div className="stat-item" key={s.label}>
                 <span className="stat-num">{s.num}</span>
@@ -101,7 +108,7 @@ export default function HomePage() {
   className="btn btn-primary" 
   style={{ flexShrink: 0 }}
 >
-  View &amp; Print Capabilities →
+  Download Capabilities PDF →
 </a>
           </div>
         </div>
