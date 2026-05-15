@@ -27,7 +27,7 @@ export const SERVICES = [
       ...STANDARD_PROCESS_END,
     ],
     // Mason laying concrete blocks on a construction site
-    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-4xLxkDeiJC0?w=800&q=80',
   },
   {
     slug: 'drivers',
@@ -50,7 +50,7 @@ export const SERVICES = [
       { title: 'Deployment', desc: 'Driver is briefed on destination-country traffic laws and employer expectations before departure.' },
     ],
     // Truck driver in the cab of a heavy goods vehicle
-    image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-_8TNaYeJF58?w=800&q=80',
   },
   {
     slug: 'hospitality',
@@ -74,7 +74,7 @@ export const SERVICES = [
       { title: 'On-Boarding Support', desc: 'We coordinate with your HR team for a smooth arrival and induction process.' },
     ],
     // Chef actively cooking over a flame in a professional kitchen
-    image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-lNip798LiIs?w=800&q=80',
   },
   {
     slug: 'farm-garden',
@@ -98,7 +98,7 @@ export const SERVICES = [
       { title: 'Seasonal Deployment Planning', desc: 'We plan deployment timelines around your harvest cycles or landscaping seasons.' },
     ],
     // Farm workers harvesting crops in the field
-    image: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-CvKxDB-x6W8?w=800&q=80',
   },
   {
     slug: 'warehouse',
@@ -121,7 +121,7 @@ export const SERVICES = [
       { title: 'Ramp-Up Deployment', desc: 'For large teams (50+), we stagger arrivals to allow your induction team to onboard effectively.' },
     ],
     // Warehouse worker scanning packages in a distribution centre
-    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-cNyDTmtBQbc?w=800&q=80',
   },
   {
     slug: 'factory',
@@ -144,7 +144,7 @@ export const SERVICES = [
       { title: 'Employer Liaison', desc: 'We coordinate with your HR and production planning teams to align arrival with your ramp-up schedule.' },
     ],
     // Workers on a factory production line
-    image: 'https://images.unsplash.com/photo-1612810806695-30f7a8258391?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-XBWF6_TEsFM?w=800&q=80',
   },
   {
     slug: 'oil-gas',
@@ -168,7 +168,7 @@ export const SERVICES = [
       { title: 'Mobilisation', desc: 'Coordinated mobilisation to align with your project schedule and rotation roster.' },
     ],
     // Oil & gas technician working on pipeline equipment
-    image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-vOtSZd_8Af4?w=800&q=80',
   },
   {
     slug: 'security',
@@ -192,7 +192,7 @@ export const SERVICES = [
       { title: 'Employer Briefing', desc: 'Workers are briefed on your specific site protocols, uniform requirements, and reporting structures.' },
     ],
     // Uniformed security guard on duty at a post
-    image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-YQaNsGzQe48?w=800&q=80',
   },
   {
     slug: 'cleaning',
@@ -216,7 +216,7 @@ export const SERVICES = [
       { title: 'Uniform & Presentation Standards', desc: 'Workers are briefed on your uniform requirements and grooming standards before departure.' },
     ],
     // Professional cleaner mopping a commercial floor
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80',
+    image: 'https://images.unsplash.com/photo--4KzDiyZjgw?w=800&q=80',
   },
   {
     slug: 'retail',
@@ -240,7 +240,7 @@ export const SERVICES = [
       { title: 'Induction Coordination', desc: 'We liaise with your store management for a smooth first-week induction.' },
     ],
     // Retail worker stocking shelves in a supermarket
-    image: 'https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-HaZhm6xIUgs?w=800&q=80',
   },
   {
     slug: 'painting-finishing',
@@ -263,7 +263,7 @@ export const SERVICES = [
       { title: 'Deployment', desc: 'Workers depart with safety certifications and employer induction materials.' },
     ],
     // Painter applying paint with a roller on a building wall
-    image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-57ldq9age5U?w=800&q=80',
   },
   {
     slug: 'steel-fixing',
@@ -285,7 +285,7 @@ export const SERVICES = [
       { title: 'Deployment', desc: 'Coordinated mobilisation aligned with your project structural programme.' },
     ],
     // Steel fixer tying rebar on a construction site
-    image: 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-t5j-XCZDSfw?w=800&q=80',
   },
   {
     slug: 'scaffolding-formwork',
@@ -307,7 +307,7 @@ export const SERVICES = [
       { title: 'Deployment', desc: 'Workers briefed on employer-specific scaffold systems and site standards before departure.' },
     ],
     // Scaffolders erecting tubular scaffolding on a building
-    image: 'https://images.unsplash.com/photo-1536566482680-77b04a1176cc?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-7mtBqZo5G6I?w=800&q=80',
   },
   {
     slug: 'landscaping-groundskeeping',
@@ -330,7 +330,7 @@ export const SERVICES = [
       { title: 'Seasonal Planning', desc: 'Deployment coordinated around your planting seasons, project timelines, or resort opening schedules.' },
     ],
     // Groundskeeper trimming hedges and maintaining garden beds
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-ujzmWNiE4cg?w=800&q=80',
   },
   {
     slug: 'masonry-bricklaying',
@@ -353,7 +353,7 @@ export const SERVICES = [
       { title: 'Deployment', desc: 'Mobilisation aligned with your project programme and site start dates.' },
     ],
     // Bricklayer carefully laying bricks with mortar
-    image: 'https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-MXPWld5uysw?w=800&q=80',
   },
   {
     slug: 'electrical-helpers',
@@ -376,7 +376,7 @@ export const SERVICES = [
       { title: 'MEP Contractor Briefing', desc: 'Workers are briefed on your specific cable schedules, containment systems, and site procedures.' },
     ],
     // Electrician installing cables and conduit on a construction site
-    image: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-LMb98OOtoYU?w=800&q=80',
   },
   {
     slug: 'laundry-linen',
@@ -399,7 +399,7 @@ export const SERVICES = [
       { title: 'Employer Induction', desc: 'Workers are briefed on your specific linen categories, shift patterns, and productivity standards.' },
     ],
     // Laundry operative pressing and folding linen in an industrial facility
-    image: 'https://images.unsplash.com/photo-1521656693074-0ef32e80a5d5?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-_NIjgaIdeSU?w=800&q=80',
   },
   {
     slug: 'food-processing',
@@ -422,7 +422,7 @@ export const SERVICES = [
       { title: 'Employer Induction Coordination', desc: 'We liaise with your production management for a structured first-week induction.' },
     ],
     // Workers on a food factory packing and processing line
-    image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-bCgsKqFzUcg?w=800&q=80',
   },
   {
     slug: 'fishery-aquaculture',
@@ -445,7 +445,7 @@ export const SERVICES = [
       { title: 'Vessel or Farm Briefing', desc: 'Workers are briefed on vessel-specific safety procedures, watch schedules, or aquaculture farm protocols.' },
     ],
     // Fishermen working on deck hauling nets on a fishing vessel
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-qLIglFCcAeo?w=800&q=80',
   },
   {
     slug: 'caregiving',
@@ -468,7 +468,7 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa application. Enhanced background check for household placement roles.' },
     ],
     // Caregiver assisting an elderly person with daily support
-    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-bSXk1lOp8T0?w=800&q=80',
   },
 ];
 
