@@ -138,7 +138,7 @@ export default function EmployerGuidePage() {
                           </optgroup>
                           <optgroup label="Europe">
                             <option>Poland</option><option>Romania</option><option>Portugal</option>
-                            <option>Italy</option><option>Germany</option><option>Other Europe</option>
+                            <option>Serbia</option><option>Germany</option><option>Other Europe</option>
                           </optgroup>
                           <optgroup label="Southeast Asia">
                             <option>Malaysia</option><option>Singapore</option><option>Maldives</option>

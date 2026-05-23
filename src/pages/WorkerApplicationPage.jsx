@@ -39,7 +39,7 @@ const TRADE_CATEGORIES = [
 const COUNTRIES = [
   'Saudi Arabia', 'UAE', 'Qatar', 'Kuwait', 'Oman', 'Bahrain', 'Jordan',
   'Malaysia', 'Singapore', 'Maldives',
-  'Poland', 'Romania', 'Italy', 'Portugal', 'Greece', 'Hungary', 'Croatia',
+  'Poland', 'Romania', 'Serbia', 'Portugal', 'Greece', 'Hungary', 'Croatia',
   'Czech Republic', 'Lithuania', 'Latvia', 'Estonia', 'Bulgaria', 'Cyprus',
   'Slovakia', 'Bosnia and Herzegovina', 'Open to Any Country',
 ];
