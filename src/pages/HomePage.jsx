@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
+import { LogoSVG } from '../components/Logo';
 const WorldMap = lazy(() => import('../components/WorldMap'));
 import { SERVICES } from '../data/services';
 import { COUNTRIES } from '../data/countries';
@@ -10,57 +11,239 @@ import { t } from '../i18n/translations';
 const go = (id) => {
   const el = document.getElementById(id);
   if (el) el.scrollIntoView({ behavior: 'smooth' });
+  else globalThis.location.href = '/#' + id;
 };
 
-// Founding slots remaining — update this number as slots fill
 const FOUNDING_SLOTS_REMAINING = 10;
+
+/* ── Particle Field ─────────────────────────────────────────────────────── */
+function ParticleField() {
+  const particles = React.useMemo(() => Array.from({ length: 24 }, (_, i) => ({
+    id: i,
+    x: Math.random() * 100,
+    y: Math.random() * 100,
+    size: 1.5 + Math.random() * 2,
+    dur: 4 + Math.random() * 6,
+    delay: Math.random() * 4,
+  })), []);
+  return (
+    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
+      {particles.map(p => (
+        <div key={p.id} style={{
+          position: 'absolute', left: `${p.x}%`, top: `${p.y}%`,
+          width: p.size, height: p.size, borderRadius: '50%',
+          background: 'rgba(201,168,76,0.55)',
+          animation: `particleFloat ${p.dur}s ${p.delay}s ease-in-out infinite alternate`,
+        }} />
+      ))}
+      <style>{`
+        @keyframes particleFloat {
+          from { transform: translateY(0) translateX(0); opacity: 0.1; }
+          to   { transform: translateY(-16px) translateX(8px); opacity: 0.45; }
+        }
+        @keyframes heroStreak {
+          0%   { transform: scaleX(0); opacity: 0; transform-origin: left; }
+          60%  { opacity: 1; }
+          100% { transform: scaleX(1); opacity: 0.7; transform-origin: left; }
+        }
+        @keyframes heroStagger {
+          from { opacity: 0; transform: translateY(24px); }
+          to   { opacity: 1; transform: none; }
+        }
+        @keyframes imageFloat {
+          0%, 100% { transform: translateY(0); }
+          50%       { transform: translateY(-10px); }
+        }
+        .hero-left-item { opacity: 0; animation: heroStagger 0.7s ease forwards; }
+        .hero-left-item:nth-child(1) { animation-delay: 0.1s; }
+        .hero-left-item:nth-child(2) { animation-delay: 0.25s; }
+        .hero-left-item:nth-child(3) { animation-delay: 0.4s; }
+        .hero-left-item:nth-child(4) { animation-delay: 0.55s; }
+        .hero-left-item:nth-child(5) { animation-delay: 0.7s; }
+        .hero-right-anim { opacity: 0; animation: heroStagger 0.8s 0.5s ease forwards; }
+        .hero-streak-line {
+          position: absolute; top: 28%; left: 0; right: 0; height: 1.5px;
+          background: linear-gradient(90deg, transparent, rgba(201,168,76,0.6) 40%, rgba(232,201,122,0.9) 65%, transparent);
+          transform: scaleX(0); transform-origin: left;
+          animation: heroStreak 1.6s 0.4s cubic-bezier(0.4,0,0.2,1) forwards;
+        }
+        .bw-pulse-dot {
+          width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex-shrink: 0;
+          animation: bwPulse 2s ease-in-out infinite;
+        }
+        @keyframes bwPulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50%       { opacity: 0.5; transform: scale(1.4); }
+        }
+        .bw-stat-glass {
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 12px; padding: 18px 14px; text-align: center;
+        }
+        .bw-stat-glass .num { font-family: var(--font-display); font-size: 1.8rem; font-weight: 900; color: var(--gold); line-height: 1; }
+        .bw-stat-glass .lbl { font-size: 0.62rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.5); margin-top: 6px; }
+        .bw-hero-img-card {
+          border-radius: 20px; overflow: hidden;
+          border: 1px solid rgba(201,168,76,0.2);
+          box-shadow: 0 32px 80px rgba(0,0,0,0.5);
+          animation: imageFloat 6s ease-in-out infinite;
+        }
+        .bw-badge-tr {
+          position: absolute; top: -16px; right: -16px;
+          background: linear-gradient(135deg, var(--gold), var(--gold-light));
+          border-radius: 14px; padding: 12px 18px; text-align: center;
+        }
+        .bw-badge-bl {
+          position: absolute; bottom: -16px; left: -16px;
+          background: rgba(8,25,46,0.92); border: 1px solid rgba(201,168,76,0.25);
+          border-radius: 14px; padding: 12px 18px; text-align: center;
+          backdrop-filter: blur(8px);
+        }
+        .bw-badge-tr .num, .bw-badge-bl .num {
+          font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; line-height: 1;
+        }
+        .bw-badge-tr .num { color: var(--navy); }
+        .bw-badge-bl .num { color: var(--gold); }
+        .bw-badge-tr .lbl, .bw-badge-bl .lbl {
+          font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px;
+        }
+        .bw-badge-tr .lbl { color: rgba(15,39,68,0.8); }
+        .bw-badge-bl .lbl { color: rgba(255,255,255,0.5); }
+        .bw-founding-strip {
+          background: linear-gradient(135deg, #c9a84c, #b8942a, #d4af5a);
+          position: relative; overflow: hidden; padding: 28px 0;
+        }
+        .bw-founding-strip::before {
+          content: ''; position: absolute; inset: 0;
+          background: repeating-linear-gradient(45deg, transparent 20px, rgba(255,255,255,0.04) 21px);
+        }
+        .bw-founding-inner {
+          display: flex; align-items: center; justify-content: space-between;
+          gap: 24px; position: relative; flex-wrap: wrap;
+        }
+        .bw-limited-badge {
+          background: rgba(15,39,68,0.85); color: var(--gold);
+          font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em;
+          text-transform: uppercase; padding: 4px 10px; border-radius: 4px; white-space: nowrap;
+        }
+        .bw-founding-btn {
+          background: var(--navy); color: var(--gold); border: none;
+          padding: 11px 24px; border-radius: 8px; font-family: var(--font-body);
+          font-weight: 700; font-size: 0.88rem; cursor: pointer; white-space: nowrap;
+          transition: background 0.2s;
+        }
+        .bw-founding-btn:hover { background: var(--navy-light); }
+        .bw-founding-benefit {
+          display: flex; align-items: flex-start; gap: 14px;
+          background: white; border: 1px solid var(--gray-100);
+          border-radius: var(--radius); padding: 16px 20px;
+        }
+        .bw-worker-cta {
+          background: var(--navy); border-top: 1px solid rgba(255,255,255,0.06); padding: 48px 0;
+        }
+        @media (max-width: 900px) {
+          .bw-hero-right { display: none !important; }
+          .bw-hero-grid { grid-template-columns: 1fr !important; }
+          .bw-founding-inner { flex-direction: column; align-items: flex-start; }
+        }
+      `}</style>
+    </div>
+  );
+}
 
 export default function HomePage() {
   const { lang } = useLang();
 
   return (
     <>
-      {/* ── HERO ── */}
-      <section className="hero">
-        <div className="container">
-          <div className="hero-grid">
-            <div>
-              <div className="hero-eyebrow">{t('home_eyebrow', lang)}</div>
-              <h1 className="hero-title">
-                {t('home_title1', lang)}
+      {/* ── HERO ─────────────────────────────────────────────────────────────── */}
+      <section className="hero" style={{ position: 'relative' }}>
+        {/* Subtle gold streak */}
+        <div className="hero-streak-line" />
+        <ParticleField />
+
+        <div className="container" style={{ width: '100%', position: 'relative', zIndex: 1 }}>
+          <div className="bw-hero-grid hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
+
+            {/* Left */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+              <div className="hero-left-item hero-eyebrow">{t('home_eyebrow', lang)}</div>
+
+              <h1 className="hero-left-item hero-title">
+                {t('home_title1', lang)}<br />
                 <span>{t('home_title2', lang)}</span>
               </h1>
-              <p className="hero-desc">
-                <strong style={{ display: 'block', marginBottom: 8, color: 'var(--gold)', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.01em' }}>
-                  For international employers hiring from Bangladesh.
-                </strong>
-                {t('home_desc', lang)}
-              </p>
-              <div style={{ marginTop: 12, marginBottom: 4, fontSize: '0.78rem', color: 'rgba(255,255,255,0.45)', letterSpacing: '0.01em' }}>
-                🏛️ BMET Recruitment Licence activating October 2026
+
+              <div className="hero-left-item">
+                <div style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 10,
+                  background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.2)',
+                  borderRadius: 100, padding: '7px 16px',
+                  fontSize: '0.72rem', color: 'var(--gold-light)',
+                }}>
+                  <span className="bw-pulse-dot" />
+                  {t('home_stats_bmet', lang)}
+                </div>
               </div>
-              <div className="hero-actions">
-                <button className="btn btn-primary"   onClick={() => go('contact')}>{t('home_find_workers', lang)}</button>
-                <button className="btn btn-secondary" onClick={() => go('services')}>{t('home_our_services', lang)}</button>
+
+              <p className="hero-left-item hero-desc">{t('home_desc', lang)}</p>
+
+              <div className="hero-left-item hero-actions">
+                <button className="btn btn-primary" onClick={() => go('contact')}>
+                  {t('home_find_workers', lang)}
+                </button>
+                <button className="btn btn-secondary" onClick={() => go('services')}>
+                  {t('home_our_services', lang)}
+                </button>
               </div>
             </div>
 
-            <div className="hero-image">
-              <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75&fm=webp&auto=compress"
-                alt="Construction workers on a job site"
-                className="hero-image-main"
-                fetchPriority="high"
-                decoding="async"
-                width="800"
-                height="534"
-              />
-              <div className="hero-badge">
-                <div className="num">25+</div>
-                <div className="lbl">{t('home_stats_countries', lang)}</div>
+            {/* Right */}
+            <div className="bw-hero-right hero-right-anim" style={{ position: 'relative' }}>
+              <div className="bw-hero-img-card" style={{ position: 'relative' }}>
+                <img
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75&fm=webp&auto=compress"
+                  alt="Construction workers on a job site"
+                  style={{ width: '100%', height: 380, objectFit: 'cover', display: 'block' }}
+                  fetchPriority="high"
+                  decoding="async"
+                  width="800"
+                  height="380"
+                />
+                <div style={{
+                  position: 'absolute', inset: 0,
+                  background: 'linear-gradient(to top, rgba(8,25,46,0.85) 0%, transparent 50%)',
+                }} />
+                <div style={{ position: 'absolute', bottom: 20, left: 20 }}>
+                  <div style={{ fontFamily: 'monospace', fontSize: '0.65rem', color: 'var(--gold)', letterSpacing: '0.08em' }}>
+                    // verified deployment
+                  </div>
+                  <div style={{ fontFamily: 'monospace', fontSize: '0.62rem', color: 'rgba(255,255,255,0.5)', marginTop: 4 }}>
+                    25+ destination countries · 20 trade categories
+                  </div>
+                </div>
+                <div className="bw-badge-tr">
+                  <div className="num">24h</div>
+                  <div className="lbl">Response</div>
+                </div>
+                <div className="bw-badge-bl">
+                  <div className="num">7</div>
+                  <div className="lbl">Day Shortlist</div>
+                </div>
               </div>
-              <div className="hero-flags">
-                <span>20</span> {t('home_stats_sectors', lang)}
+
+              {/* Mini stats row */}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 12, marginTop: 32 }}>
+                {[
+                  { num: '25+', lbl: t('home_stats_countries', lang) },
+                  { num: '20',  lbl: t('home_stats_sectors', lang) },
+                  { num: '100%', lbl: 'Ethical' },
+                ].map(s => (
+                  <div className="bw-stat-glass" key={s.lbl}>
+                    <div className="num">{s.num}</div>
+                    <div className="lbl">{s.lbl}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -68,7 +251,29 @@ export default function HomePage() {
         <div className="hero-scroll" aria-hidden="true">Scroll</div>
       </section>
 
-      {/* ── STATS ── */}
+      {/* ── FOUNDING EMPLOYER STRIP ──────────────────────────────────────────── */}
+      <div className="bw-founding-strip">
+        <div className="container">
+          <div className="bw-founding-inner">
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
+              <span className="bw-limited-badge">Limited</span>
+              <div>
+                <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 700, color: 'var(--navy)' }}>
+                  {t('founding_tag', lang)} — {FOUNDING_SLOTS_REMAINING} slots remaining
+                </div>
+                <div style={{ fontSize: '0.8rem', color: 'rgba(15,39,68,0.7)', marginTop: 2 }}>
+                  Priority mobilisation · Direct founder access · No obligation
+                </div>
+              </div>
+            </div>
+            <button className="bw-founding-btn" onClick={() => go('contact')}>
+              {t('founding_cta', lang)} →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* ── STATS BAND ───────────────────────────────────────────────────────── */}
       <section className="stats-band" aria-label="Key statistics">
         <div className="container">
           <div className="stats-grid">
@@ -76,6 +281,7 @@ export default function HomePage() {
               { num: '25+', label: t('home_stats_countries', lang) },
               { num: '20',  label: t('home_stats_sectors', lang) },
               { num: '24h', label: t('home_stats_response', lang) },
+              { num: 'Oct 2026', label: 'BMET Licence' },
             ].map(s => (
               <div className="stat-item" key={s.label}>
                 <span className="stat-num">{s.num}</span>
@@ -86,7 +292,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CAPABILITIES DECK CTA ── */}
+      {/* ── CAPABILITIES DECK CTA ────────────────────────────────────────────── */}
       <section style={{ background: 'var(--navy)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '32px 0' }}>
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24, flexWrap: 'wrap' }}>
@@ -102,19 +308,19 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-<a 
-  href="/capabilities.pdf" 
-  download="Bhuiyan_Workforce_Capabilities.pdf"
-  className="btn btn-primary" 
-  style={{ flexShrink: 0 }}
->
-  Download Capabilities PDF →
-</a>
+            <a
+              href="/capabilities.pdf"
+              download="Bhuiyan_Workforce_Capabilities.pdf"
+              className="btn btn-primary"
+              style={{ flexShrink: 0 }}
+            >
+              Download Capabilities PDF →
+            </a>
           </div>
         </div>
       </section>
 
-      {/* ── SERVICES ── */}
+      {/* ── SERVICES ─────────────────────────────────────────────────────────── */}
       <section className="section services" id="services">
         <div className="container">
           <div className="section-header">
@@ -128,14 +334,14 @@ export default function HomePage() {
                 <div className="service-icon" aria-hidden="true">{s.icon}</div>
                 <h3>{s.name}</h3>
                 <p>{s.shortDesc}</p>
-                <span className="service-card-link">{t('common_view_det', lang)}</span>
+                <span className="service-card-link">{t('common_view_det', lang)} →</span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── COUNTRIES ── */}
+      {/* ── COUNTRIES ────────────────────────────────────────────────────────── */}
       <section className="section countries">
         <div className="container">
           <div className="section-header">
@@ -144,7 +350,11 @@ export default function HomePage() {
             <p className="section-subtitle">{t('home_countries_sub', lang)}</p>
           </div>
           <div className="countries-map-visual">
-            <Suspense fallback={<div style={{ height: 500, background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' }}>Loading map…</div>}>
+            <Suspense fallback={
+              <div style={{ height: 500, background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' }}>
+                Loading map…
+              </div>
+            }>
               <WorldMap countries={COUNTRIES} />
             </Suspense>
             <div className="countries-grid" style={{ marginTop: 32 }}>
@@ -166,7 +376,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── HOW WE WORK ── */}
+      {/* ── HOW WE WORK ──────────────────────────────────────────────────────── */}
       <section className="section how-we-work">
         <div className="container">
           <div className="section-header text-center" style={{ textAlign: 'center' }}>
@@ -194,9 +404,9 @@ export default function HomePage() {
 
           <div className="trust-badges">
             {[
-              { icon: '🏛️', title: 'BMET Registration',       body: 'All workers are sourced and screened to full BMET standards. Our recruiting licence activates October 2026 — built compliance-first from day one.' },
-              { icon: '🩺', title: 'GAMCA Medical Cleared',   body: 'Every worker undergoes a full GAMCA medical fitness test before departure for Gulf destinations.' },
-              { icon: '📋', title: 'Transparent Contracts',   body: 'Workers receive a verified employment contract in Bengali before they sign, clearly stating salary, hours, accommodation, and contract duration.' },
+              { icon: '🏛️', title: 'BMET Registration',     body: 'All workers are sourced and screened to full BMET standards. Our recruiting licence activates October 2026 — built compliance-first from day one.' },
+              { icon: '🩺', title: 'GAMCA Medical Cleared', body: 'Every worker undergoes a full GAMCA medical fitness test before departure for Gulf destinations.' },
+              { icon: '📋', title: 'Transparent Contracts', body: 'Workers receive a verified employment contract in Bengali before they sign, clearly stating salary, hours, accommodation, and contract duration.' },
             ].map(b => (
               <div className="trust-badge" key={b.title}>
                 <span className="trust-badge-icon" aria-hidden="true">{b.icon}</span>
@@ -207,7 +417,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── WHY CHOOSE US ── */}
+      {/* ── WHY CHOOSE US ────────────────────────────────────────────────────── */}
       <section className="section why-us" id="why-us">
         <div className="container">
           <div className="why-grid">
@@ -215,12 +425,13 @@ export default function HomePage() {
               <img
                 src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=800&q=80"
                 alt="Professional business meeting"
+                loading="lazy"
               />
               <div className="why-image-overlay">
                 {[
                   { num: '25+', lbl: 'Deploy Countries' },
-                  { num: '24h', lbl: 'Response Time' },
-                  { num: '20',  lbl: 'Trade Categories' },
+                  { num: '24h', lbl: t('home_stats_response', lang) },
+                  { num: '20',  lbl: t('home_stats_sectors', lang) },
                 ].map(s => (
                   <div className="why-image-stat" key={s.lbl}>
                     <div className="num">{s.num}</div>
@@ -235,11 +446,11 @@ export default function HomePage() {
               <h2 className="section-title" style={{ marginBottom: 32 }}>Recruitment Done Right</h2>
               <div className="why-features">
                 {[
-                  { icon: '✅', title: 'End-to-End Compliance',   body: 'We handle every step: BMET clearance, GAMCA medicals, visa processing, and contracts. Workers are ready to work on day one.' },
-                  { icon: '⚡', title: 'Fast Mobilisation',        body: 'Our pre-registered database means we can present a qualified shortlist within 7 working days of licence activation.' },
-                  { icon: '🔍', title: 'Verified Skills',          body: 'Every candidate undergoes a practical trade test and background check. You only see workers who genuinely meet the requirements.' },
-                  { icon: '🤝', title: 'Ethical by Design',        body: 'We follow ILO ethical recruitment principles: zero worker-paid fees, transparent contracts in their language, and welfare follow-up post-deployment.' },
-                  { icon: '🌍', title: 'Destination Expertise',    body: 'With deployment corridors across 25 countries, we understand the specific documentation and regulatory requirements of each market.' },
+                  { icon: '✅', title: 'End-to-End Compliance',  body: 'We handle every step: BMET clearance, GAMCA medicals, visa processing, and contracts. Workers are ready to work on day one.' },
+                  { icon: '⚡', title: 'Fast Mobilisation',       body: 'Our pre-registered database means we can present a qualified shortlist within 7 working days of licence activation.' },
+                  { icon: '🔍', title: 'Verified Skills',         body: 'Every candidate undergoes a practical trade test and background check. You only see workers who genuinely meet the requirements.' },
+                  { icon: '🤝', title: 'Ethical by Design',       body: 'We follow ILO ethical recruitment principles: zero worker-paid fees, transparent contracts in their language, and welfare follow-up post-deployment.' },
+                  { icon: '🌍', title: 'Destination Expertise',   body: 'With deployment corridors across 25 countries, we understand the specific documentation and regulatory requirements of each market.' },
                 ].map(f => (
                   <div className="why-feature" key={f.title}>
                     <div className="why-feature-icon" aria-hidden="true">{f.icon}</div>
@@ -252,8 +463,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── FOUNDING EMPLOYER PROGRAM ── */}
-      <section style={{ background: 'var(--off-white)', borderTop: '4px solid var(--gold)', borderBottom: '1px solid var(--gray-100)', padding: '64px 0' }} id="founding">
+      {/* ── FOUNDING EMPLOYER PROGRAMME ──────────────────────────────────────── */}
+      <section
+        style={{ background: 'var(--off-white)', borderTop: '4px solid var(--gold)', borderBottom: '1px solid var(--gray-100)', padding: '64px 0' }}
+        id="founding"
+      >
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center' }}>
             <div>
@@ -268,13 +482,25 @@ export default function HomePage() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               {/* Slot counter */}
-              <div style={{ background: 'var(--white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius)', padding: '28px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
+              <div style={{
+                background: 'var(--white)', border: '1px solid var(--gray-100)',
+                borderRadius: 'var(--radius)', padding: '28px 32px',
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16,
+              }}>
                 <div>
-                  <div style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--gold)', marginBottom: 8 }}>Slots Available</div>
-                  <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--navy)', lineHeight: 1 }}>{FOUNDING_SLOTS_REMAINING}</div>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--gray-500)', marginTop: 4 }}>{t('founding_slots', lang)}</div>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--gold)', marginBottom: 8 }}>
+                    Slots Available
+                  </div>
+                  <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--navy)', lineHeight: 1, fontFamily: 'var(--font-display)' }}>
+                    {FOUNDING_SLOTS_REMAINING}
+                  </div>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--gray-500)', marginTop: 4 }}>
+                    {t('founding_slots', lang)}
+                  </div>
                 </div>
-                <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(201,168,76,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.75rem', flexShrink: 0 }}>🏆</div>
+                <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(201,168,76,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.75rem', flexShrink: 0 }}>
+                  🏆
+                </div>
               </div>
               {/* Benefits */}
               {[
@@ -283,7 +509,7 @@ export default function HomePage() {
                 { icon: '🤝', text: 'Direct line to the founder for your first placement' },
                 { icon: '🔒', text: 'No obligation — reserve your slot, review when ready' },
               ].map(b => (
-                <div key={b.text} style={{ display: 'flex', alignItems: 'flex-start', gap: 14, background: 'var(--white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius)', padding: '16px 20px' }}>
+                <div key={b.text} className="bw-founding-benefit">
                   <span style={{ fontSize: '1.1rem', flexShrink: 0, marginTop: 1 }}>{b.icon}</span>
                   <span style={{ fontSize: '0.88rem', color: 'var(--navy)', fontWeight: 500, lineHeight: 1.5 }}>{b.text}</span>
                 </div>
@@ -293,7 +519,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CTA BAND ── */}
+      {/* ── CTA BAND ─────────────────────────────────────────────────────────── */}
       <section className="cta-band">
         <div className="container">
           <div className="cta-band-inner">
@@ -308,8 +534,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── WORKER CTA ── */}
-      <section style={{ background: 'var(--navy)', borderTop: '1px solid rgba(255,255,255,0.06)', padding: '48px 0' }}>
+      {/* ── WORKER CTA ───────────────────────────────────────────────────────── */}
+      <section className="bw-worker-cta">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
@@ -331,7 +557,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CONTACT ── */}
+      {/* ── CONTACT ──────────────────────────────────────────────────────────── */}
       <section className="section contact" id="contact">
         <div className="container">
           <div className="section-header">
@@ -346,18 +572,10 @@ export default function HomePage() {
               <p>We welcome enquiries from employers, recruitment agents, and government bodies. For urgent requirements, WhatsApp or call us directly.</p>
               <div className="contact-items">
                 {[
-                  { icon: '📍', label: 'Office Address', content: (
-                    <span>Kawtoli, Brahmanbaria, Bangladesh — 3400</span>
-                  )},
-                  { icon: '✉️', label: 'General Enquiries', content: (
-                    <a href="mailto:info@bhuiyanworkforce.com">info@bhuiyanworkforce.com</a>
-                  )},
-                  { icon: '🤝', label: 'Partnerships & Companies', content: (
-                    <a href="mailto:partnerships@bhuiyanworkforce.com">partnerships@bhuiyanworkforce.com</a>
-                  )},
-                  { icon: '👤', label: 'Founder & CEO', content: (
-                    <a href="mailto:Rezaul@bhuiyanworkforce.com">Rezaul@bhuiyanworkforce.com</a>
-                  )},
+                  { icon: '📍', label: 'Office Address', content: <span>Kawtoli, Brahmanbaria, Bangladesh — 3400</span> },
+                  { icon: '✉️', label: 'General Enquiries', content: <a href="mailto:info@bhuiyanworkforce.com">info@bhuiyanworkforce.com</a> },
+                  { icon: '🤝', label: 'Partnerships & Companies', content: <a href="mailto:partnerships@bhuiyanworkforce.com">partnerships@bhuiyanworkforce.com</a> },
+                  { icon: '👤', label: 'Founder & CEO', content: <a href="mailto:Rezaul@bhuiyanworkforce.com">Rezaul@bhuiyanworkforce.com</a> },
                   { icon: '👷', label: 'For Workers (Careers)', content: (
                     <>
                       <a href="mailto:careers@bhuiyanworkforce.com">careers@bhuiyanworkforce.com</a>
@@ -379,6 +597,7 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* Real ContactForm — keeps Cloudflare Worker endpoint, file upload, validation */}
             <ContactForm />
           </div>
         </div>
