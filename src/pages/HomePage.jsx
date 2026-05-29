@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
-import { LogoSVG } from '../components/Logo';
 const WorldMap = lazy(() => import('../components/WorldMap'));
 import { SERVICES } from '../data/services';
 import { COUNTRIES } from '../data/countries';
@@ -329,28 +328,34 @@ export default function HomePage() {
             <p className="section-subtitle">{t('home_services_sub', lang)}</p>
           </div>
           <div className="services-grid">
-            {SERVICES.map(s => (
-              <Link key={s.slug} to={`/services/${s.slug}`} className="service-card" style={{ padding: 0, overflow: 'hidden' }}>
-                {s.image && (
-                  <div style={{ width: '100%', height: 180, overflow: 'hidden', flexShrink: 0 }}>
-                    <img
-                      src={s.image}
-                      alt={s.name}
-                      loading="lazy"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
-                      onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
-                      onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
-                    />
+            {SERVICES.map(s => {
+              // Convert Google Drive uc?export=view URLs to thumbnail URLs that load in browsers
+              const imgSrc = s.image
+                ? s.image.replace('https://drive.google.com/uc?export=view&id=', 'https://lh3.googleusercontent.com/d/')
+                : null;
+              return (
+                <Link key={s.slug} to={`/services/${s.slug}`} className="service-card" style={{ padding: 0, overflow: 'hidden' }}>
+                  {imgSrc && (
+                    <div style={{ width: '100%', height: 180, overflow: 'hidden', flexShrink: 0 }}>
+                      <img
+                        src={imgSrc}
+                        alt={s.name}
+                        loading="lazy"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
+                        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                      />
+                    </div>
+                  )}
+                  <div style={{ padding: '28px 28px 24px' }}>
+                    <div className="service-icon" aria-hidden="true">{s.icon}</div>
+                    <h3>{s.name}</h3>
+                    <p>{s.shortDesc}</p>
+                    <span className="service-card-link">{t('common_view_det', lang)} →</span>
                   </div>
-                )}
-                <div style={{ padding: '28px 28px 24px' }}>
-                  <div className="service-icon" aria-hidden="true">{s.icon}</div>
-                  <h3>{s.name}</h3>
-                  <p>{s.shortDesc}</p>
-                  <span className="service-card-link">{t('common_view_det', lang)} →</span>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
