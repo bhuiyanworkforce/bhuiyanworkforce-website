@@ -131,7 +131,7 @@ export const T = {
   home_countries_sub: {
     en: 'Active deployment corridors across 25 countries — Gulf, Southeast Asia, and Europe — with full immigration and documentation compliance at each destination.',
     bn: 'মধ্যপ্রাচ্য, দক্ষিণ-পূর্ব এশিয়া এবং ইউরোপ মিলিয়ে ২৫টি দেশে সক্রিয় নিয়োগ করিডোর — প্রতিটি গন্তব্যে অভিবাসন ও নথিপত্রের সম্পূর্ণ সম্মতি সহ।',
-    ar: 'ممرات توظيف نشطة في ٢٥ دولة — الخليج وجنوب شرق آسيا وأوروبا — مع الالتزام الكامل بمتطلبات الهجرة والتوثيق في كل وجهة.',
+    ar: 'ممرات توظيف نشطة في ٢٥ دولة — الخليج — مع الالتزام الكامل بمتطلبات الهجرة والتوثيق في كل وجهة.',
     it: 'Corridoi di collocamento attivi in 25 paesi — Golfo Persico, Asia sud-orientale ed Europa — con piena conformità alle normative di immigrazione e documentazione di ogni destinazione.',
     pl: 'Aktywne korytarze rekrutacyjne w 25 krajach — Zatoka Perska, Azja Południowo-Wschodnia i Europa — z pełną zgodnością z przepisami imigracyjnymi i dokumentacyjnymi każdego kraju docelowego.',
   },
