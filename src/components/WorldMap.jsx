@@ -40,6 +40,7 @@ const ISO_TO_SLUG = {
   70:  'bosnia-herzegovina',
   51:  'armenia',
   499: 'montenegro',
+  268: 'georgia',
   50:  'bangladesh',
 };
 
@@ -71,6 +72,7 @@ const COUNTRY_COORDS = {
   'bosnia-herzegovina': [17.5, 43.9],
   'armenia':            [44.5, 40.2],
   'montenegro':         [19.3, 42.4],
+  'georgia':            [44.8, 41.7],
 };
 
 const BANGLADESH_COORDS = [90.3563, 23.6850];
