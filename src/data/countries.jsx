@@ -697,6 +697,31 @@ export const COUNTRIES = [
     notes: 'Montenegro\'s tourism season creates strong seasonal demand for hospitality staff, alongside year-round construction demand. Its EU candidate status and Euro currency make it a relatively straightforward entry point into the Balkan labour market for Bangladeshi workers.',
     flag_detail: 'Montenegro\'s EU candidate status, coastal tourism boom, and active construction pipeline create sustained demand for hospitality and construction workers — with the Euro currency simplifying remittances.',
   },
+  {
+    slug: 'georgia',
+    name: 'Georgia',
+    flag: '🇬🇪',
+    region: 'Caucasus & Central Asia',
+    capital: 'Tbilisi',
+    currency: 'Georgian Lari (GEL)',
+    language: 'Georgian',
+    overview: `Georgia introduced its first-ever mandatory work permit system on 1 March 2026, replacing what had previously been a largely open labour market for foreign nationals. Under the new Law on Labour Migration, foreign workers now require a Special Labour Activity Permit ("right to work") from the State Employment Support Agency, in addition to a D1 Immigration Visa or Labour Residence Permit. Bangladeshi passport holders can already enter Georgia visa-free for up to 365 days, but this does not authorise employment — a work permit is required separately. As a very new regulatory framework, requirements and processing timelines are still stabilising.`,
+    topSectors: ['Construction', 'Hospitality & Tourism', 'Agriculture', 'Manufacturing', 'Logistics'],
+    visaType: 'Special Labour Activity Permit (Right to Work) + D1 Immigration Visa or Labour Residence Permit',
+    visaFee: 'D1 visa: approx. USD 100–300 depending on duration; Special Labour Activity Permit fee to be confirmed against the current Ministry of Labour schedule at time of application',
+    processingTime: '8–12 weeks (includes a mandatory 10-business-day job-posting period before the employer may apply)',
+    process: [
+      { title: 'Job Vacancy Posting (Labour Market Test)', desc: 'Employer must advertise the vacancy on the Georgian government job portal for a minimum of 10 business days before applying for a foreign worker permit.' },
+      { title: 'Special Labour Activity Permit Application', desc: 'Employer applies to the State Employment Support Agency (LEPL) for the worker\'s "right to work," subject to profession-specific quotas.' },
+      { title: 'D1 Visa / Labour Residence Permit', desc: 'Once the work permit is approved, the worker applies for a D1 Immigration Visa (if outside Georgia) or a Labour Residence Permit (if already in the country).' },
+      { title: 'BMET Clearance', desc: 'Worker obtains BMET Smart Card and emigration clearance from Bangladesh\'s Bureau of Manpower, Employment and Training.' },
+      { title: 'Registration on Arrival', desc: 'Worker completes residence permit registration within the required period after arrival, per the new labour migration rules.' },
+    ],
+    documents: [...COMMON_DOCS_EUROPE, 'Special Labour Activity Permit approval', 'Evidence of employer\'s 10-day job-posting compliance'],
+    salaryRange: 'GEL 1,000–3,500/month (approx. USD 370–1,300); wide variation by sector and region — construction and skilled trades trend toward the higher end, general/entry-level roles toward the lower end',
+    notes: 'Georgia\'s work permit system is brand new (effective March 2026) and still stabilising — quotas, processing times, and documentation requirements may change as the government builds out enforcement. We recommend confirming current requirements with us before committing to a mobilisation timeline. Foreign nationals working in Georgia before March 2026 have a transition deadline of January 2027 to regularise under the new system.',
+    flag_detail: 'Georgia\'s strategic Caucasus location, growing construction and tourism sectors, and newly regulated (but still-developing) labour migration framework make it an emerging corridor worth monitoring closely as the new system matures.',
+  },
 ];
 
 export function getCountry(slug) {
