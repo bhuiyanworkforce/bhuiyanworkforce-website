@@ -647,10 +647,60 @@ export const COUNTRIES = [
     notes: 'Bosnia and Herzegovina operates two administrative entities (the Federation of BiH and Republika Srpska), each with its own employment authority. Work permits are issued at entity level. Accommodation is commonly provided by the employer. The country has a lower cost of living than Western EU states, making net purchasing power attractive for Bangladeshi workers.',
     flag_detail: 'Bosnia and Herzegovina\'s EU candidate status and active infrastructure investment pipeline — including EU-funded road and energy projects — create consistent demand for construction and manufacturing workers. The country offers Bangladeshi workers a stepping stone into the broader European labour market.',
   },
+  {
+    slug: 'armenia',
+    name: 'Armenia',
+    flag: '🇦🇲',
+    region: 'Caucasus & Central Asia',
+    capital: 'Yerevan',
+    currency: 'Armenian Dram (AMD)',
+    language: 'Armenian',
+    overview: `Armenia is a Caucasus nation with a growing economy in construction, agriculture, textiles, and information technology. As a member of the Eurasian Economic Union (EAEU) alongside Russia, Belarus, Kazakhstan, and Kyrgyzstan, Armenia has a distinct labour framework from EU member states — foreign workers from outside the EAEU require an individual work permit sponsored by the hiring employer. Armenia is not an EU candidate country, but it maintains a Comprehensive and Enhanced Partnership Agreement (CEPA) with the European Union and has growing trade and investment ties with Europe.`,
+    topSectors: ['Construction', 'Agriculture', 'Textiles & Garments', 'Manufacturing', 'Hospitality'],
+    visaType: 'Armenia Work Permit + Temporary Residence Permit',
+    visaFee: 'Fees vary by permit category — confirmed with the employer at the time of application',
+    processingTime: '6–10 weeks',
+    process: [
+      { title: 'Job Offer & Employer Registration', desc: 'Worker receives a verified job offer from a registered Armenian employer, who applies to Armenia\'s State Employment Agency for permission to hire a foreign national.' },
+      { title: 'Work Permit Application', desc: 'Employer applies for a work permit on behalf of the worker with the relevant Armenian authority.' },
+      { title: 'Visa Application', desc: 'Worker applies for a long-stay visa at the Armenian Embassy or nearest available consulate, or via the appropriate visa service provider.' },
+      { title: 'BMET Clearance', desc: 'Worker obtains BMET Smart Card and emigration clearance from Bangladesh\'s Bureau of Manpower, Employment and Training.' },
+      { title: 'Registration on Arrival', desc: 'Worker registers with the local Migration Service and obtains a temporary residence permit shortly after arrival.' },
+    ],
+    documents: [...COMMON_DOCS_EUROPE, 'Work permit approval', 'Employer registration confirmation'],
+    salaryRange: 'AMD 90,000–180,000/month (approx. EUR 210–420); figures vary significantly by sector and skill level',
+    notes: 'Armenia\'s foreign labour framework is less established than EU member states, so timelines and requirements can shift. As Armenia is not part of the Schengen area, visa and residence procedures are separate from EU processes. We recommend confirming current requirements with us before committing to a mobilisation timeline.',
+    flag_detail: 'Armenia\'s expanding construction and light manufacturing sectors, combined with a developing foreign labour framework, represent an emerging corridor for Bangladeshi workers outside the traditional Gulf and EU markets.',
+  },
+  {
+    slug: 'montenegro',
+    name: 'Montenegro',
+    flag: '🇲🇪',
+    region: 'Europe',
+    capital: 'Podgorica',
+    currency: 'Euro (EUR)',
+    language: 'Montenegrin',
+    overview: `Montenegro is an EU candidate country and the current front-runner among the Western Balkan accession states. Its Adriatic coastline drives a large hospitality and tourism sector, while construction is booming on the back of coastal development and infrastructure projects. Montenegro uses the Euro despite not being an EU or Eurozone member, and its small domestic workforce means labour shortages are common in seasonal and skilled trades alike.`,
+    topSectors: ['Hospitality & Tourism', 'Construction', 'Catering & Food Service', 'Logistics', 'Agriculture'],
+    visaType: 'Montenegro Temporary Residence and Work Permit',
+    visaFee: 'EUR 50–100 (approx.) — employer contribution standard',
+    processingTime: '6–10 weeks',
+    process: [
+      { title: 'Job Offer & Employer Registration', desc: 'Worker receives a verified job offer from a registered Montenegrin employer, who confirms the vacancy with the Employment Agency of Montenegro.' },
+      { title: 'Work Permit Application', desc: 'Employer applies for a combined work and temporary residence permit on behalf of the worker.' },
+      { title: 'Visa Application', desc: 'Worker applies for a Type D (long-stay) visa at the Embassy of Montenegro in Dhaka or nearest available consulate.' },
+      { title: 'BMET Clearance', desc: 'Worker obtains BMET Smart Card and emigration clearance from Bangladesh\'s Bureau of Manpower, Employment and Training.' },
+      { title: 'Registration on Arrival', desc: 'Worker registers with local police within the required period after arrival and collects the residence permit card.' },
+    ],
+    documents: [...COMMON_DOCS_EUROPE, 'Temporary work and residence permit', 'Employer registration confirmation', 'Proof of accommodation'],
+    salaryRange: 'EUR 550–1,100/month; hospitality roles on the coast often include seasonal accommodation and meals',
+    notes: 'Montenegro\'s tourism season creates strong seasonal demand for hospitality staff, alongside year-round construction demand. Its EU candidate status and Euro currency make it a relatively straightforward entry point into the Balkan labour market for Bangladeshi workers.',
+    flag_detail: 'Montenegro\'s EU candidate status, coastal tourism boom, and active construction pipeline create sustained demand for hospitality and construction workers — with the Euro currency simplifying remittances.',
+  },
 ];
 
 export function getCountry(slug) {
   return COUNTRIES.find(c => c.slug === slug) || null;
 }
 
-export const COUNTRY_REGIONS = ['Gulf', 'Southeast Asia', 'South Asia', 'Middle East', 'Europe'];
+export const COUNTRY_REGIONS = ['Gulf', 'Southeast Asia', 'South Asia', 'Middle East', 'Europe', 'Caucasus & Central Asia'];
