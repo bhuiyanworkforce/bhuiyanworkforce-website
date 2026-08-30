@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SERVICES } from '../data/services';
 
 const EMPTY = { name: '', company: '', email: '', service: '', serviceOther: '', message: '', attachment: null };
 
@@ -122,17 +123,7 @@ export default function ContactForm() {
         <select id="f-service" name="service" value={fields.service} onChange={handleChange}>
           <option value="">— Select a service —</option>
           <option>Founding Employer Partner Programme</option>
-          <option>Construction & Engineering</option>
-          <option>Driving & Logistics</option>
-          <option>Hospitality & Catering</option>
-          <option>Agriculture & Horticulture</option>
-          <option>Warehouse & Logistics</option>
-          <option>Manufacturing & Production</option>
-          <option>Oil & Gas</option>
-          <option>Healthcare & Medical</option>
-          <option>Security Services</option>
-          <option>Cleaning & Housekeeping</option>
-          <option>Retail</option>
+          {SERVICES.map(s => <option key={s.slug}>{s.name}</option>)}
           <option>Other</option>
         </select>
       </div>
