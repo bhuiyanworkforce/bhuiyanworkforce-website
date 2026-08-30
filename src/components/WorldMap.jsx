@@ -38,6 +38,8 @@ const ISO_TO_SLUG = {
   196: 'cyprus',
   703: 'slovakia',
   70:  'bosnia-herzegovina',
+  51:  'armenia',
+  499: 'montenegro',
   50:  'bangladesh',
 };
 
@@ -67,16 +69,19 @@ const COUNTRY_COORDS = {
   'cyprus':             [33.4, 35.1],
   'slovakia':           [19.7, 48.7],
   'bosnia-herzegovina': [17.5, 43.9],
+  'armenia':            [44.5, 40.2],
+  'montenegro':         [19.3, 42.4],
 };
 
 const BANGLADESH_COORDS = [90.3563, 23.6850];
 
 const REGION_COLORS = {
-  'Gulf':           '#C9A84C',
-  'Middle East':    '#E8B84B',
-  'Southeast Asia': '#4CAF50',
-  'South Asia':     '#81C784',
-  'Europe':         '#4FC3F7',
+  'Gulf':                     '#C9A84C',
+  'Middle East':              '#E8B84B',
+  'Southeast Asia':           '#4CAF50',
+  'South Asia':               '#81C784',
+  'Europe':                   '#4FC3F7',
+  'Caucasus & Central Asia':  '#BA68C8',
 };
 
 const REGION_ZOOM = {

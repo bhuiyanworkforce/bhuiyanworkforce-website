@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <LogoSVG variant="light" width={160} />
-            <p style={{ marginTop: 16 }}>Connecting skilled Bangladeshi workers with international employers across 25 countries. Ethical, transparent, and fully documented recruitment.</p>
+            <p style={{ marginTop: 16 }}>Connecting skilled Bangladeshi workers with international employers across 25+ countries. Ethical, transparent, and fully documented recruitment.</p>
             <div style={{ marginTop: 14, fontSize: '0.8rem', color: 'rgba(255,255,255,0.45)', lineHeight: 1.6 }}>
               📍 Kawtoli, Brahmanbaria, Bangladesh 3400<br />
               BMET Licence: Activating — October 2026
