@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="wbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2744"/>
+      <stop offset="100%" style="stop-color:#1a3a5c"/>
+    </linearGradient>
+    <linearGradient id="wdoc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f0e6c8"/>
+    </linearGradient>
+    <linearGradient id="wgold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c96f"/>
+      <stop offset="100%" style="stop-color:#c9a84c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#wbg)"/>
+
+  <!-- Glow circles -->
+  <circle cx="120" cy="90" r="180" fill="rgba(201,168,76,0.07)"/>
+  <circle cx="680" cy="420" r="160" fill="rgba(30,73,118,0.35)"/>
+
+  <!-- Decorative dots -->
+  <circle cx="70" cy="420" r="3" fill="#c9a84c" opacity="0.35"/>
+  <circle cx="100" cy="440" r="2" fill="#c9a84c" opacity="0.25"/>
+  <circle cx="730" cy="80" r="3" fill="#c9a84c" opacity="0.35"/>
+  <circle cx="700" cy="60" r="2" fill="#c9a84c" opacity="0.25"/>
+
+  <!-- Document / contract card, left -->
+  <g transform="translate(190,110)">
+    <rect x="0" y="0" width="200" height="260" rx="10" fill="url(#wdoc)" opacity="0.97"/>
+    <rect x="24" y="34" width="110" height="10" rx="3" fill="#0f2744" opacity="0.75"/>
+    <rect x="24" y="58" width="152" height="6" rx="2" fill="#0f2744" opacity="0.28"/>
+    <rect x="24" y="74" width="152" height="6" rx="2" fill="#0f2744" opacity="0.28"/>
+    <rect x="24" y="90" width="110" height="6" rx="2" fill="#0f2744" opacity="0.28"/>
+    <rect x="24" y="120" width="152" height="6" rx="2" fill="#0f2744" opacity="0.2"/>
+    <rect x="24" y="136" width="152" height="6" rx="2" fill="#0f2744" opacity="0.2"/>
+    <rect x="24" y="152" width="90" height="6" rx="2" fill="#0f2744" opacity="0.2"/>
+    <!-- Verified stamp -->
+    <circle cx="150" cy="210" r="34" fill="none" stroke="url(#wgold)" stroke-width="4"/>
+    <path d="M134 210 L146 222 L168 196" fill="none" stroke="url(#wgold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Handshake, right -->
+  <g transform="translate(470,190)">
+    <rect x="-14" y="30" width="90" height="26" rx="13" fill="#e8c96f"/>
+    <rect x="60" y="30" width="90" height="26" rx="13" fill="#1e4976"/>
+    <ellipse cx="40" cy="14" rx="20" ry="18" fill="#d4956a"/>
+    <ellipse cx="110" cy="14" rx="20" ry="18" fill="#b8784e"/>
+  </g>
+
+  <!-- Connecting arc between the document and the handshake -->
+  <path d="M390 200 C 430 160, 440 160, 470 200" fill="none" stroke="#c9a84c" stroke-width="2" stroke-dasharray="4 6" opacity="0.5"/>
+
+  <!-- Ground line -->
+  <line x1="0" y1="440" x2="800" y2="440" stroke="#c9a84c" stroke-width="1" opacity="0.2"/>
+</svg>
