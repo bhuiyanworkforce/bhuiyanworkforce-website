@@ -34,7 +34,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="about-mission-grid">
             <div className="about-mission-img">
-              <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=75&fm=webp&auto=compress" alt="Team meeting" loading="lazy" decoding="async" />
+              <img src="/about-illustration.svg" alt="Illustration of deployment corridors from Bangladesh to partner countries" loading="lazy" decoding="async" />
             </div>
             <div>
               <div className="label-tag">{t('about_story_tag', lang)}</div>

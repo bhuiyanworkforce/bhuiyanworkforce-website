@@ -201,8 +201,8 @@ export default function HomePage() {
             <div className="bw-hero-right hero-right-anim" style={{ position: 'relative' }}>
               <div className="bw-hero-img-card" style={{ position: 'relative' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75&fm=webp&auto=compress"
-                  alt="Construction workers on a job site"
+                  src="/hero-image.svg"
+                  alt="Illustration of workers ready for deployment"
                   style={{ width: '100%', height: 380, objectFit: 'cover', display: 'block' }}
                   fetchPriority="high"
                   decoding="async"
@@ -436,8 +436,8 @@ export default function HomePage() {
           <div className="why-grid">
             <div className="why-image">
               <img
-                src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=800&q=80"
-                alt="Professional business meeting"
+                src="/why-us-illustration.svg"
+                alt="Illustration of a verified employment contract and partnership"
                 loading="lazy"
               />
               <div className="why-image-overlay">
