@@ -14,7 +14,7 @@ const PROCESS_STEPS = [
 const WHY_US = [
   { icon: '🎯', title: 'Direct Talent Access', desc: "Tap into Bangladesh's large, motivated labor pool across all major trade and service sectors." },
   { icon: '✅', title: 'Pre-Screened Workers', desc: 'Every candidate is skills-tested, medically cleared, and document-ready before deployment.' },
-  { icon: '🌍', title: 'Global Reach', desc: 'Active deployment coverage across 25 countries spanning Middle East, Asia, and Europe.' },
+  { icon: '🌍', title: 'Global Reach', desc: 'Active deployment coverage across 25+ countries spanning Middle East, Asia, and Europe.' },
   { icon: '👤', title: 'Dedicated Support', desc: 'Clients receive a dedicated account contact for seamless communication end-to-end.' },
   { icon: '⚡', title: 'Fast Turnaround', desc: 'Streamlined process from requirement submission to worker deployment.' },
   { icon: '📋', title: 'Licence in Progress', desc: 'Our BMET recruitment licence is in process — expected October 2026. All sourcing and screening is conducted to full BMET standards ahead of activation.' },
@@ -65,7 +65,7 @@ export default function CapabilitiesPage() {
         <div className="intro-band">
           <div className="container">
             <p className="intro-text">
-              Connecting Bangladesh's skilled workforce to the world — <strong>25 countries</strong> across Middle East, Asia &amp; Europe.
+              Connecting Bangladesh's skilled workforce to the world — <strong>25+ countries</strong> across Middle East, Asia &amp; Europe.
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function CapabilitiesPage() {
           <div className="container">
             <div className="section-header">
               <div className="label-tag">Global Reach</div>
-              <h2 className="section-title" style={{ color: 'var(--white)' }}>Deployment Destinations — 25 Countries</h2>
+              <h2 className="section-title" style={{ color: 'var(--white)' }}>Deployment Destinations — 25+ Countries</h2>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               {DESTINATIONS.map(d => (

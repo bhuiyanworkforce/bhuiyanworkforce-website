@@ -202,7 +202,7 @@ export default function BlogPostPage() {
                   Need Workers?
                 </h3>
                 <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', lineHeight: 1.6, marginBottom: 20 }}>
-                  Bhuiyan Workforce Ltd. supplies skilled workers across 25 countries. Get in touch for a free consultation.
+                  Bhuiyan Workforce Ltd. supplies skilled workers across 25+ countries. Get in touch for a free consultation.
                 </p>
                 <Link to="/#contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
                   Contact Us →

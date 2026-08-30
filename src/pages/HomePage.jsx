@@ -463,7 +463,7 @@ export default function HomePage() {
                   { icon: '⚡', title: 'Fast Mobilisation',       body: 'Our pre-registered database means we can present a qualified shortlist within 7 working days of licence activation.' },
                   { icon: '🔍', title: 'Verified Skills',         body: 'Every candidate undergoes a practical trade test and background check. You only see workers who genuinely meet the requirements.' },
                   { icon: '🤝', title: 'Ethical by Design',       body: 'We follow ILO ethical recruitment principles: zero worker-paid fees, transparent contracts in their language, and welfare follow-up post-deployment.' },
-                  { icon: '🌍', title: 'Destination Expertise',   body: 'With deployment corridors across 25 countries, we understand the specific documentation and regulatory requirements of each market.' },
+                  { icon: '🌍', title: 'Destination Expertise',   body: 'With deployment corridors across 25+ countries, we understand the specific documentation and regulatory requirements of each market.' },
                 ].map(f => (
                   <div className="why-feature" key={f.title}>
                     <div className="why-feature-icon" aria-hidden="true">{f.icon}</div>
