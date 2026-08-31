@@ -218,7 +218,7 @@ export default function HomePage() {
                     // verified deployment
                   </div>
                   <div style={{ fontFamily: 'monospace', fontSize: '0.62rem', color: 'rgba(255,255,255,0.5)', marginTop: 4 }}>
-                    25+ destination countries · 20 trade categories
+                    25+ destination countries · 25 trade categories
                   </div>
                 </div>
                 <div className="bw-badge-tr">

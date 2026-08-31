@@ -83,7 +83,7 @@ export default function CapabilitiesPage() {
                   Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Asia, and Europe.
                 </p>
                 <p style={{ color: 'var(--text-body)', lineHeight: 1.8, fontSize: '1rem', margin: 0 }}>
-                  Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. Our BMET recruitment licence is in process — expected October 2026. In the meantime we are fully operational in candidate sourcing, screening, and employer relationship-building across all 20 trade categories.
+                  Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. Our BMET recruitment licence is in process — expected October 2026. In the meantime we are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.
                 </p>
               </div>
             </div>
