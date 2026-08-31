@@ -101,19 +101,32 @@ export default function PrivacyPage() {
             </ul>
             <p>To exercise any of these rights, email us at <a href="mailto:info@bhuiyanworkforce.com" style={{ color: 'var(--navy)', fontWeight: 600 }}>info@bhuiyanworkforce.com</a>. We will respond within 30 days.</p>
 
-            <h2>9. Data Security</h2>
+            <h2>9. GDPR — Additional Rights for EU/EEA Data Subjects</h2>
+            <p>If you are located in the European Union or European Economic Area, the General Data Protection Regulation (GDPR) gives you additional rights beyond those listed in Section 8, and requires us to disclose the following:</p>
+            <ul>
+              <li><strong>Legal basis for processing</strong> — we process your data based on your consent (when you submit a contact or application form), our legitimate interest in operating a recruitment business, and, where applicable, the performance of a contract with you or your employer</li>
+              <li><strong>Data Controller</strong> — Bhuiyan Workforce Ltd. is the data controller for personal data submitted through this website</li>
+              <li><strong>Right to restriction of processing</strong> — you may request that we limit how we use your data while a dispute about its accuracy or our right to use it is resolved</li>
+              <li><strong>Right to data portability</strong> — you may request your data in a structured, commonly used, machine-readable format</li>
+              <li><strong>Right to withdraw consent</strong> — where processing is based on consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal</li>
+              <li><strong>Right to lodge a complaint</strong> — you have the right to lodge a complaint with the data protection supervisory authority in your EU/EEA country of residence</li>
+            </ul>
+            <p>To exercise any GDPR right, email us at <a href="mailto:info@bhuiyanworkforce.com" style={{ color: 'var(--navy)', fontWeight: 600 }}>info@bhuiyanworkforce.com</a>. We aim to respond to GDPR requests within 30 days, consistent with regulatory timelines.</p>
+            <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)' }}>This section is provided as a good-faith disclosure and does not constitute legal advice. We recommend consulting a qualified data protection professional for guidance specific to your circumstances.</p>
+
+            <h2>10. Data Security</h2>
             <p>We implement appropriate technical and organisational measures to protect your personal data from unauthorised access, loss, or disclosure. These include encrypted email transmission, restricted access to candidate records, and secure cloud storage. No method of transmission over the internet is 100% secure; however, we take all reasonable steps to protect your information.</p>
 
-            <h2>10. International Data Transfers</h2>
+            <h2>11. International Data Transfers</h2>
             <p>As an international recruitment agency, we necessarily transfer personal data across borders — for example, sharing a worker's documents with an employer in Saudi Arabia or submitting visa applications to European embassies. We do this only where necessary for the recruitment process and in accordance with applicable law.</p>
 
-            <h2>11. Governing Law</h2>
+            <h2>12. Governing Law</h2>
             <p>This Privacy Policy is governed by the laws of Bangladesh, including the Digital Security Act 2018 and any applicable data protection regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.</p>
 
-            <h2>12. Changes to This Policy</h2>
+            <h2>13. Changes to This Policy</h2>
             <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. We will post the updated version on this page with a revised "last updated" date. Continued use of the website after any update constitutes acceptance of the revised policy.</p>
 
-            <h2>13. Contact</h2>
+            <h2>14. Contact</h2>
             <p>For any privacy-related questions, requests, or complaints, please contact us:</p>
             <ul>
               <li>Email: <a href="mailto:info@bhuiyanworkforce.com" style={{ color: 'var(--navy)', fontWeight: 600 }}>info@bhuiyanworkforce.com</a></li>
