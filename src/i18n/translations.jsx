@@ -43,11 +43,11 @@ export const T = {
     pl: 'Etyczna rekrutacja.',
   },
   home_desc: {
-    en: 'Bhuiyan Workforce connects pre-screened Bangladeshi workers with international employers across 25+ countries — every placement fully documented, transparently contracted, and compliant with destination-country requirements.',
-    bn: 'ভূঁইয়া ওয়ার্কফোর্স বাংলাদেশের যাচাইকৃত কর্মীদের ২৫টিরও বেশি দেশের নিয়োগকর্তাদের কাছে পৌঁছে দেয় — প্রতিটি নিয়োগ সম্পূর্ণ নথিভুক্ত, স্বচ্ছ চুক্তিবদ্ধ এবং গন্তব্য দেশের বিধিমালা অনুযায়ী।',
-    ar: 'تربط بهويان ووركفورس العمالة البنغلاديشية المفحوصة مسبقًا بأصحاب عمل دوليين في أكثر من ٢٥ دولة — كل توظيف موثَّق بالكامل، بعقود شفافة، ومتوافق مع متطلبات الدول المستقبِلة.',
-    it: 'Bhuiyan Workforce collega lavoratori bangladesi pre-selezionati con datori di lavoro internazionali in oltre 25 paesi — ogni collocamento completamente documentato, contrattualizzato in modo trasparente e conforme ai requisiti del paese di destinazione.',
-    pl: 'Bhuiyan Workforce łączy wstępnie zweryfikowanych pracowników z Bangladeszu z pracodawcami w ponad 25 krajach — każde oddelegowanie w pełni udokumentowane, przejrzyście zakontraktowane i zgodne z wymogami kraju docelowego.',
+    en: 'Bhuiyan Workforce connects pre-screened Bangladeshi workers with employers across 25+ countries. Every placement is fully documented, transparently contracted, and compliant with destination-country requirements.',
+    bn: 'ভূঁইয়া ওয়ার্কফোর্স বাংলাদেশের যাচাইকৃত কর্মীদের ২৫টিরও বেশি দেশের নিয়োগকর্তাদের কাছে পৌঁছে দেয়। প্রতিটি নিয়োগ সম্পূর্ণ নথিভুক্ত, স্বচ্ছ চুক্তিবদ্ধ এবং গন্তব্য দেশের বিধিমালা অনুযায়ী।',
+    ar: 'تربط بهويان ووركفورس العمالة البنغلاديشية المفحوصة مسبقًا بأصحاب عمل في أكثر من ٢٥ دولة. كل توظيف موثَّق بالكامل، بعقود شفافة، ومتوافق مع متطلبات الدول المستقبِلة.',
+    it: 'Bhuiyan Workforce collega lavoratori bangladesi pre-selezionati con datori di lavoro in oltre 25 paesi. Ogni collocamento è completamente documentato, contrattualizzato in modo trasparente e conforme ai requisiti del paese di destinazione.',
+    pl: 'Bhuiyan Workforce łączy wstępnie zweryfikowanych pracowników z Bangladeszu z pracodawcami w ponad 25 krajach. Każde oddelegowanie jest w pełni udokumentowane, przejrzyście zakontraktowane i zgodne z wymogami kraju docelowego.',
   },
   home_find_workers: {
     en: 'Find Workers Now →',
