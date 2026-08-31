@@ -195,6 +195,16 @@ export default function HomePage() {
                   {t('home_our_services', lang)}
                 </button>
               </div>
+
+              <div className="hero-left-item">
+                <a
+                  href="/capabilities.pdf"
+                  download="Bhuiyan_Workforce_Capabilities.pdf"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: '0.85rem', color: 'var(--gold-light)', fontWeight: 600, textDecoration: 'none' }}
+                >
+                  📄 Download Capabilities PDF →
+                </a>
+              </div>
             </div>
 
             {/* Right */}
@@ -235,7 +245,7 @@ export default function HomePage() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 12, marginTop: 32 }}>
                 {[
                   { num: '25+', lbl: t('home_stats_countries', lang) },
-                  { num: '20',  lbl: t('home_stats_sectors', lang) },
+                  { num: '25',  lbl: t('home_stats_sectors', lang) },
                   { num: '100%', lbl: 'Ethical' },
                 ].map(s => (
                   <div className="bw-stat-glass" key={s.lbl}>
@@ -278,7 +288,7 @@ export default function HomePage() {
           <div className="stats-grid">
             {[
               { num: '25+', label: t('home_stats_countries', lang) },
-              { num: '20',  label: t('home_stats_sectors', lang) },
+              { num: '25',  label: t('home_stats_sectors', lang) },
               { num: '24h', label: t('home_stats_response', lang) },
               { num: 'Oct 2026', label: 'BMET Licence' },
             ].map(s => (
@@ -444,7 +454,7 @@ export default function HomePage() {
                 {[
                   { num: '25+', lbl: 'Deploy Countries' },
                   { num: '24h', lbl: t('home_stats_response', lang) },
-                  { num: '20',  lbl: t('home_stats_sectors', lang) },
+                  { num: '25',  lbl: t('home_stats_sectors', lang) },
                 ].map(s => (
                   <div className="why-image-stat" key={s.lbl}>
                     <div className="num">{s.num}</div>
@@ -462,7 +472,7 @@ export default function HomePage() {
                   { icon: '✅', title: 'End-to-End Compliance',  body: 'We handle every step: BMET clearance, GAMCA medicals, visa processing, and contracts. Workers are ready to work on day one.' },
                   { icon: '⚡', title: 'Fast Mobilisation',       body: 'Our pre-registered database means we can present a qualified shortlist within 7 working days of licence activation.' },
                   { icon: '🔍', title: 'Verified Skills',         body: 'Every candidate undergoes a practical trade test and background check. You only see workers who genuinely meet the requirements.' },
-                  { icon: '🤝', title: 'Ethical by Design',       body: 'We follow ILO ethical recruitment principles: zero worker-paid fees, transparent contracts in their language, and welfare follow-up post-deployment.' },
+                  { icon: '🤝', title: 'Ethical by Design',       body: 'We follow ILO ethical recruitment principles: fully itemised, disclosed costs before you commit to anything, contracts explained in the worker\'s own language, and welfare follow-up post-deployment.' },
                   { icon: '🌍', title: 'Destination Expertise',   body: 'With deployment corridors across 25+ countries, we understand the specific documentation and regulatory requirements of each market.' },
                 ].map(f => (
                   <div className="why-feature" key={f.title}>
@@ -473,6 +483,50 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── WHY WE'RE DIFFERENT (COMPARISON) ────────────────────────────────── */}
+      <section className="section" style={{ background: 'var(--off-white)' }}>
+        <div className="container">
+          <div className="section-header">
+            <div className="label-tag">The Difference</div>
+            <h2 className="section-title">Why We're Different</h2>
+            <p className="section-subtitle">A comparison against what's common elsewhere in this industry — not a claim about any specific agency.</p>
+          </div>
+
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 560 }}>
+              <thead>
+                <tr>
+                  <th style={{ textAlign: 'left', padding: '14px 16px', fontSize: '0.8rem', color: 'var(--gray-500)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}></th>
+                  <th style={{ textAlign: 'left', padding: '14px 16px', fontSize: '0.9rem', color: 'var(--navy)', fontWeight: 700, borderBottom: '2px solid var(--gold)' }}>Bhuiyan Workforce</th>
+                  <th style={{ textAlign: 'left', padding: '14px 16px', fontSize: '0.9rem', color: 'var(--gray-500)', fontWeight: 600, borderBottom: '2px solid var(--gray-100)' }}>Common Elsewhere</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { row: 'Cost Structure', us: 'Fully itemised cost breakdown disclosed before you commit to anything', them: 'Costs often disclosed only after commitment or mid-process' },
+                  { row: 'Payment Model', us: 'Success-fee model — you pay only after workers are confirmed for deployment', them: 'Upfront payment often required regardless of outcome' },
+                  { row: 'Replacement Guarantee', us: '90-day replacement guarantee at no additional placement fee', them: 'Rarely offered, or limited to a much shorter window' },
+                  { row: 'Licence Transparency', us: 'Licence status publicly stated on our website, including while pending', them: 'Licence status often undisclosed or hard to verify' },
+                  { row: 'Partner Vetting', us: 'Regional partner agencies independently verified before engagement', them: 'Partner credentials rarely disclosed to employers or workers' },
+                  { row: 'Documentation', us: 'Every placement documented to destination-country legal requirements', them: 'Documentation practices vary and are often informal' },
+                ].map((r, i) => (
+                  <tr key={r.row} style={{ background: i % 2 === 0 ? 'var(--white)' : 'transparent' }}>
+                    <td style={{ padding: '14px 16px', fontSize: '0.85rem', fontWeight: 600, color: 'var(--navy)' }}>{r.row}</td>
+                    <td style={{ padding: '14px 16px', fontSize: '0.85rem', color: 'var(--gray-700)' }}>
+                      <span style={{ color: 'var(--gold-dark, #b8923f)', marginRight: 6 }}>✓</span>{r.us}
+                    </td>
+                    <td style={{ padding: '14px 16px', fontSize: '0.85rem', color: 'var(--gray-500)' }}>{r.them}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p style={{ fontSize: '0.78rem', color: 'var(--gray-500)', marginTop: 16 }}>
+            We are currently operating ahead of our BMET recruitment licence (expected October 2026) — see our regulatory status above. Fee structures apply during this period and are disclosed in full before any commitment.
+          </p>
         </div>
       </section>
 
