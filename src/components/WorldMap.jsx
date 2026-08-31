@@ -268,17 +268,17 @@ export default function WorldMap({ countries }) {
                         fill={fill}
                         stroke={stroke}
                         strokeWidth={strokeW}
-                        style={{
-                          default: { outline: 'none', transition: 'fill 0.2s ease' },
-                          hover:   { outline: 'none' },
-                          pressed: { outline: 'none' },
-                        }}
-                        onMouseEnter={() => isVisible && setHovered(slug)}
-                        onMouseLeave={() => setHovered(null)}
                         onClick={() => {
                           if (isVisible && country) handleMarkerClick(country);
                         }}
-                        style={{ cursor: isVisible ? 'pointer' : 'default', default: { outline: 'none', transition: 'fill 0.25s ease' }, hover: { outline: 'none' }, pressed: { outline: 'none' } }}
+                        onMouseEnter={() => isVisible && setHovered(slug)}
+                        onMouseLeave={() => setHovered(null)}
+                        style={{
+                          cursor:  isVisible ? 'pointer' : 'default',
+                          default: { outline: 'none', transition: 'fill 0.25s ease' },
+                          hover:   { outline: 'none' },
+                          pressed: { outline: 'none' },
+                        }}
                       />
                     );
                   })
