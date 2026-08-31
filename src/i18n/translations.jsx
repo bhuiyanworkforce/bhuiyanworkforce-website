@@ -107,11 +107,11 @@ export const T = {
     pl: 'Nasze kategorie usług',
   },
   home_services_sub: {
-    en: 'We supply skilled and semi-skilled workers across 20 trade categories, each with sector-specific pre-departure training and full documentation.',
-    bn: 'আমরা ২০টি পেশাদার বিভাগে দক্ষ ও আধা-দক্ষ কর্মী সরবরাহ করি। প্রতিটি কর্মীকে বিদেশ যাওয়ার আগে নির্দিষ্ট প্রশিক্ষণ ও কাগজপত্র প্রস্তুত করা হয়।',
-    ar: 'نوفر عمالة ماهرة وشبه ماهرة في ٢٠ تخصصًا مهنيًا، مع تدريب مهني قبل السفر وتجهيز كامل للوثائق.',
-    it: 'Forniamo lavoratori qualificati e semiqualificati in 20 categorie lavorative, con formazione pre-partenza e documentazione completa.',
-    pl: 'Dostarczamy wykwalifikowanych i półwykwalifikowanych pracowników w 20 kategoriach zawodowych, z branżowym szkoleniem przed wyjazdem i kompletną dokumentacją.',
+    en: 'We supply skilled and semi-skilled workers across 25 trade categories, each with sector-specific pre-departure training and full documentation.',
+    bn: 'আমরা ২৫টি পেশাদার বিভাগে দক্ষ ও আধা-দক্ষ কর্মী সরবরাহ করি। প্রতিটি কর্মীকে বিদেশ যাওয়ার আগে নির্দিষ্ট প্রশিক্ষণ ও কাগজপত্র প্রস্তুত করা হয়।',
+    ar: 'نوفر عمالة ماهرة وشبه ماهرة في ٢٥ تخصصًا مهنيًا، مع تدريب مهني قبل السفر وتجهيز كامل للوثائق.',
+    it: 'Forniamo lavoratori qualificati e semiqualificati in 25 categorie lavorative, con formazione pre-partenza e documentazione completa.',
+    pl: 'Dostarczamy wykwalifikowanych i półwykwalifikowanych pracowników w 25 kategoriach zawodowych, z branżowym szkoleniem przed wyjazdem i kompletną dokumentacją.',
   },
 
   home_countries_tag: {
