@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SERVICES } from '../data/services';
 
-const EMPTY = { name: '', company: '', email: '', service: '', serviceOther: '', message: '', attachment: null };
+const EMPTY = { name: '', company: '', email: '', service: '', serviceOther: '', message: '', attachment: null, hp_phone: '' };
 
 function toBase64(file) {
   return new Promise((resolve, reject) => {
@@ -38,6 +38,15 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Honeypot check: this field is invisible to real users. If it's filled,
+    // the submission is almost certainly from a bot — pretend success and stop.
+    if (fields.hp_phone) {
+      setSubmitted(true);
+      setFields(EMPTY);
+      return;
+    }
+
     const errs = validate(fields);
     if (Object.keys(errs).length) { setErrors(errs); return; }
     setSubmitting(true);
@@ -92,6 +101,18 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate>
+      {/* Honeypot field — hidden from real users, catches basic spam bots */}
+      <input
+        type="text"
+        name="hp_phone"
+        value={fields.hp_phone}
+        onChange={handleChange}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }}
+      />
+
       {serverError && (
         <div className="form-error-banner">
           Something went wrong. Please try again or email us at{' '}
