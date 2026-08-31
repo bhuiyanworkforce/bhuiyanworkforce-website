@@ -470,6 +470,99 @@ export const SERVICES = [
     // Caregiver assisting an elderly person with daily support
     image: 'https://drive.google.com/thumbnail?id=1oUUlJ7PD2sAUK33eKFSAZmBb4RN-pWCU&sz=w800',
   },
+  {
+    slug: 'welding-fabrication',
+    icon: '🔥',
+    name: 'Welding & Fabrication',
+    shortDesc: 'Certified structural and pipe welders, and metal fabricators, for construction, industrial, and oil & gas projects.',
+    overview: `Welding is one of the most consistently in-demand skilled trades across every market we serve. Bhuiyan Workforce supplies structural and pipe welders certified in SMAW, MIG, and TIG processes, alongside fabricators experienced in reading engineering drawings and working to project specifications.\n\nAll welders undergo a practical weld test before being shortlisted, so employers receive verified skill levels rather than self-reported experience.`,
+    roles: [
+      'Structural Welders (SMAW, MIG, TIG)', 'Pipe Welders',
+      'Fabricators & Metal Workers', 'Fitters',
+      'Welding Foremen', 'Assistant QA/QC Welding Inspectors',
+    ],
+    countries: ['Saudi Arabia', 'UAE', 'Qatar', 'Kuwait', 'Oman', 'Malaysia', 'Poland', 'Romania', 'Czech Republic'],
+    process: [
+      { title: 'Practical Weld Test', desc: 'Hands-on assessment covering the relevant welding process and joint types for the role.' },
+      { title: 'Certification Verification', desc: 'Cross-check of any existing welding certificates against destination-country recognition requirements.' },
+      { title: 'Site Safety Training', desc: 'PPE usage, fire safety, and safe working practices around welding equipment and gas cylinders.' },
+      ...STANDARD_PROCESS_END,
+    ],
+  },
+  {
+    slug: 'plumbing-hvac',
+    icon: '🔧',
+    name: 'Plumbing & HVAC',
+    shortDesc: 'Plumbers, pipefitters, and HVAC/AC technicians for construction, facilities management, and maintenance contracts.',
+    overview: `Bhuiyan Workforce supplies plumbers, pipefitters, and HVAC/AC technicians for both new-build construction and ongoing facilities maintenance contracts. AC and refrigeration technicians are in particularly steady demand across Gulf markets, where cooling maintenance is a year-round requirement rather than a seasonal one.\n\nOur workers are assessed on both installation and fault-diagnosis skills, so employers can distinguish between installation crews and maintenance technicians when specifying requirements.`,
+    roles: [
+      'Plumbers & Pipefitters', 'HVAC Technicians',
+      'AC Installation & Maintenance Technicians', 'Refrigeration Technicians',
+      'Ducting Installers', 'Plumbing & HVAC Foremen',
+    ],
+    countries: ['Saudi Arabia', 'UAE', 'Qatar', 'Kuwait', 'Oman', 'Bahrain', 'Malaysia'],
+    process: [
+      { title: 'Trade Skills Assessment', desc: 'Practical test covering pipework, fittings, and — for HVAC roles — installation and fault-diagnosis tasks.' },
+      { title: 'Safety & Refrigerant Handling Training', desc: 'Safe handling of refrigerants and working-at-height awareness for ducting and rooftop unit work.' },
+      ...STANDARD_PROCESS_END,
+    ],
+  },
+  {
+    slug: 'heavy-equipment',
+    icon: '🚜',
+    name: 'Heavy Equipment Operators',
+    shortDesc: 'Certified operators for cranes, excavators, forklifts, and other heavy machinery on construction and industrial sites.',
+    overview: `Large-scale construction and infrastructure projects need certified heavy equipment operators, not general labourers asked to operate machinery informally. Bhuiyan Workforce supplies operators for mobile and tower cranes, excavators, bulldozers, and forklifts, each verified through practical operating assessments before deployment.\n\nThis is a distinct category from our general Drivers & Transport service — these are machinery operators for job sites, not licensed road drivers.`,
+    roles: [
+      'Mobile Crane Operators', 'Tower Crane Operators',
+      'Excavator Operators', 'Bulldozer Operators',
+      'Forklift Operators', 'Loader Operators', 'Heavy Equipment Foremen',
+    ],
+    countries: ['Saudi Arabia', 'UAE', 'Qatar', 'Kuwait', 'Oman', 'Malaysia'],
+    process: [
+      { title: 'Operating Skills Assessment', desc: 'Practical, equipment-specific operating test conducted under supervision.' },
+      { title: 'Certification Check', desc: 'Verification of any existing operating licences or certificates against destination-country requirements.' },
+      { title: 'Site Safety Training', desc: 'Load limits, signalling procedures, and safe operating practices around active job sites.' },
+      ...STANDARD_PROCESS_END,
+    ],
+  },
+  {
+    slug: 'marine-fabrication',
+    icon: '⚓',
+    name: 'Ship & Marine Fabrication',
+    shortDesc: 'Marine welders, fitters, and fabrication workers for shipyards and offshore fabrication projects.',
+    overview: `Ship and marine fabrication is a specialised, lower-volume category compared to our core construction trades, covering marine welders, fitters, and fabrication workers for shipyard and offshore fabrication work. This is a newer category for us, and current deployment volume and country coverage is more limited than our established trades — we recommend an early conversation with us to confirm current capacity and timelines before committing to a project schedule.`,
+    roles: [
+      'Marine Welders', 'Marine Fitters & Fabricators',
+      'Pipefitters (marine)', 'Blasting & Painting Crew (marine coatings)',
+      'Marine Fabrication Foremen',
+    ],
+    countries: ['Saudi Arabia', 'UAE', 'Qatar'],
+    process: [
+      { title: 'Practical Skills Assessment', desc: 'Weld and fabrication testing to marine-standard specifications where required by the employer.' },
+      { title: 'Site Safety Training', desc: 'Confined space awareness, working-at-height, and shipyard-specific safety procedures.' },
+      ...STANDARD_PROCESS_END,
+    ],
+  },
+  {
+    slug: 'domestic-household',
+    icon: '🏠',
+    name: 'Domestic & Household Workers',
+    shortDesc: 'Housekeepers, domestic helpers, and household staff for private residences.',
+    overview: `Bhuiyan Workforce supplies housekeepers, domestic helpers, and household staff for private residences across the Gulf. Candidates are assessed for reliability, household task competency, and communication skills appropriate to the destination market before being shortlisted.\n\nGiven the private, in-home nature of this work, we apply enhanced screening and clear, documented contract terms for every placement in this category.`,
+    roles: [
+      'Housekeepers', 'Domestic Helpers',
+      'Household Cooks', 'Nannies & Childcare Helpers',
+      'General Household Staff', 'Household Drivers',
+    ],
+    countries: ['UAE', 'Qatar', 'Saudi Arabia', 'Kuwait', 'Oman', 'Bahrain'],
+    process: [
+      { title: 'Household Task Assessment', desc: 'Practical assessment of cooking, cleaning, and general household task competency.' },
+      { title: 'Communication Assessment', desc: 'English or Arabic conversational assessment appropriate to the destination household.' },
+      { title: 'Contract Terms Briefing', desc: 'Worker is briefed on and confirms understanding of working hours, rest days, and contract terms before departure.' },
+      { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa application. Enhanced background check for household placement roles.' },
+    ],
+  },
 ];
 
 export function getService(slug) {
