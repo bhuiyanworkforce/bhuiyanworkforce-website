@@ -4,10 +4,14 @@ import { POSTS } from '../data/posts';
 
 export default function BlogPage() {
   const [search, setSearch] = useState('');
+  const [activeTag, setActiveTag] = useState('All');
+  const tags = ['All', ...new Set(POSTS.map(p => p.tag))];
+
   const filtered = POSTS.filter(post =>
-    post.title.toLowerCase().includes(search.toLowerCase()) ||
-    post.excerpt.toLowerCase().includes(search.toLowerCase()) ||
-    (post.tags?.some(t => t.toLowerCase().includes(search.toLowerCase())))
+    (activeTag === 'All' || post.tag === activeTag) &&
+    (post.title.toLowerCase().includes(search.toLowerCase()) ||
+     post.excerpt.toLowerCase().includes(search.toLowerCase()) ||
+     post.tag.toLowerCase().includes(search.toLowerCase()))
   );
 
   return (
@@ -35,6 +39,34 @@ export default function BlogPage() {
         </div>
       </div>
 
+      {/* Tag Filter */}
+      <div style={{ background: 'var(--navy)', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+        <div className="container">
+          <div style={{ display: 'flex', gap: 8, overflowX: 'auto', padding: '16px 0', scrollbarWidth: 'none' }}>
+            {tags.map(tg => (
+              <button
+                key={tg}
+                onClick={() => setActiveTag(tg)}
+                style={{
+                  padding: '8px 20px',
+                  borderRadius: 999,
+                  border: activeTag === tg ? '1px solid var(--gold)' : '1px solid rgba(255,255,255,0.15)',
+                  background: activeTag === tg ? 'var(--gold)' : 'transparent',
+                  color: activeTag === tg ? 'var(--navy)' : 'rgba(255,255,255,0.7)',
+                  fontWeight: activeTag === tg ? 700 : 400,
+                  fontSize: '0.85rem',
+                  cursor: 'pointer',
+                  whiteSpace: 'nowrap',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                {tg}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <section className="section">
         <div className="container">
           <div className="section-header">
@@ -45,7 +77,7 @@ export default function BlogPage() {
 
           {filtered.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '48px 0', color: 'var(--gray-500)' }}>
-              No articles found for "<strong>{search}</strong>" — try different keywords.
+              No articles found{search ? ` for "${search}"` : ''}{activeTag !== 'All' ? ` in "${activeTag}"` : ''} — try different keywords or filters.
             </div>
           ) : (
           <div className="blog-grid">
@@ -54,7 +86,13 @@ export default function BlogPage() {
                 <div className="blog-card-img" aria-hidden="true">{post.icon}</div>
                 <div className="blog-card-body">
                   <div className="blog-meta">
-                    <span className="blog-tag">{post.tag}</span>
+                    <span
+                      className="blog-tag"
+                      onClick={(e) => { e.preventDefault(); e.stopPropagation(); setActiveTag(post.tag); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      {post.tag}
+                    </span>
                     <span className="blog-date">{post.date}</span>
                   </div>
                   <h3>{post.title}</h3>
