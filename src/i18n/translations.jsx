@@ -84,13 +84,6 @@ export const T = {
     it: 'Tempo di risposta',
     pl: 'Czas odpowiedzi',
   },
-  home_stats_bmet: {
-    en: 'BMET Licence: Oct 2026',
-    bn: 'বিএমইটি লাইসেন্স: অক্টো ২০২৬',
-    ar: 'ترخيص BMET: أكتوبر 2026',
-    it: 'Licenza BMET: Ott 2026',
-    pl: 'Licencja BMET: Paź 2026',
-  },
 
   home_services_tag: {
     en: 'What We Offer',
@@ -181,11 +174,11 @@ export const T = {
     pl: 'Dołącz do grona 10 Pracodawców Partnerów Założycielskich',
   },
   founding_desc: {
-    en: 'We are accepting a select group of 10 founding employer partners ahead of our BMET licence activation in October 2026. Founding partners receive priority mobilisation and a guaranteed first shortlist within 7 working days of licence activation — at no obligation.',
-    bn: 'অক্টোবর ২০২৬-এ আমাদের বিএমইটি লাইসেন্স সক্রিয় হওয়ার আগেই আমরা ১০টি প্রতিষ্ঠাতা নিয়োগকর্তা অংশীদার গ্রহণ করছি। প্রতিষ্ঠাতা অংশীদাররা অগ্রাধিকারভিত্তিক নিয়োগ এবং লাইসেন্স সক্রিয়করণের ৭ কার্যদিবসের মধ্যে প্রথম শর্টলিস্ট পাবেন — কোনো বাধ্যবাধকতা ছাড়াই।',
-    ar: 'نقبل مجموعة مختارة من ١٠ شركاء مؤسسين من أصحاب العمل قبيل تفعيل ترخيص BMET في أكتوبر ٢٠٢٦. يحظى الشركاء المؤسسون بأولوية في التعبئة وقائمة مرشحين مضمونة خلال ٧ أيام عمل من تفعيل الترخيص — دون أي التزام.',
-    it: 'Accettiamo un gruppo selezionato di 10 datori di lavoro partner fondatori prima dell\'attivazione della nostra licenza BMET nell\'ottobre 2026. I partner fondatori ricevono mobilizzazione prioritaria e una prima lista di candidati garantita entro 7 giorni lavorativi dall\'attivazione — senza alcun obbligo.',
-    pl: 'Przyjmujemy wybraną grupę 10 pracodawców partnerów założycielskich przed aktywacją naszej licencji BMET w październiku 2026. Partnerzy założycielski otrzymują priorytetową mobilizację i gwarantowaną pierwszą listę kandydatów w ciągu 7 dni roboczych od aktywacji — bez żadnych zobowiązań.',
+    en: 'We are accepting a select group of 10 founding employer partners as we launch. Founding partners receive priority mobilisation and a guaranteed first shortlist within 7 working days — at no obligation.',
+    bn: 'আমরা ১০টি প্রতিষ্ঠাতা নিয়োগকর্তা অংশীদার গ্রহণ করছি। প্রতিষ্ঠাতা অংশীদাররা অগ্রাধিকারভিত্তিক নিয়োগ এবং ৭ কার্যদিবসের মধ্যে প্রথম শর্টলিস্ট পাবেন — কোনো বাধ্যবাধকতা ছাড়াই।',
+    ar: 'نقبل مجموعة مختارة من ١٠ شركاء مؤسسين من أصحاب العمل مع انطلاقنا. يحظى الشركاء المؤسسون بأولوية في التعبئة وقائمة مرشحين مضمونة خلال ٧ أيام عمل — دون أي التزام.',
+    it: 'Accettiamo un gruppo selezionato di 10 datori di lavoro partner fondatori in fase di avvio. I partner fondatori ricevono mobilizzazione prioritaria e una prima lista di candidati garantita entro 7 giorni lavorativi — senza alcun obbligo.',
+    pl: 'Przyjmujemy wybraną grupę 10 pracodawców partnerów założycielskich na początku naszej działalności. Partnerzy założycielski otrzymują priorytetową mobilizację i gwarantowaną pierwszą listę kandydatów w ciągu 7 dni roboczych — bez żadnych zobowiązań.',
   },
   founding_cta: {
     en: 'Reserve a Founding Slot →',
