@@ -48,9 +48,6 @@ export default function AboutPage() {
               <p style={{ color: 'var(--gray-500)', lineHeight: 1.75 }}>
                 Bhuiyan Workforce Ltd. is building verified deployment corridors across 25+ countries across the Gulf, Southeast Asia, and Europe — with every placement designed to be BMET-registered and fully documented.
               </p>
-              <p style={{ color: 'var(--gray-400)', lineHeight: 1.75, marginTop: 16, fontSize: '0.875rem', borderLeft: '3px solid var(--gold)', paddingLeft: 14 }}>
-                <strong>Regulatory Note:</strong> Bhuiyan Workforce Ltd. is currently completing its official BMET Recruiting License registration, expected Q4 2026. We are fully operational in sourcing, screening, and partner relationship development.
-              </p>
             </div>
           </div>
         </div>

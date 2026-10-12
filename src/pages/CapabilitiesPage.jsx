@@ -17,7 +17,6 @@ const WHY_US = [
   { icon: '🌍', title: 'Global Reach', desc: 'Active deployment coverage across 25+ countries spanning Middle East, Asia, and Europe.' },
   { icon: '👤', title: 'Dedicated Support', desc: 'Clients receive a dedicated account contact for seamless communication end-to-end.' },
   { icon: '⚡', title: 'Fast Turnaround', desc: 'Streamlined process from requirement submission to worker deployment.' },
-  { icon: '📋', title: 'Licence in Progress', desc: 'Our BMET recruitment licence is in process — expected October 2026. All sourcing and screening is conducted to full BMET standards ahead of activation.' },
 ];
 
 const DESTINATIONS = [

@@ -173,18 +173,6 @@ export default function HomePage() {
                 <span>{t('home_title2', lang)}</span>
               </h1>
 
-              <div className="hero-left-item">
-                <div style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 10,
-                  background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.2)',
-                  borderRadius: 100, padding: '7px 16px',
-                  fontSize: '0.72rem', color: 'var(--gold-light)',
-                }}>
-                  <span className="bw-pulse-dot" />
-                  {t('home_stats_bmet', lang)}
-                </div>
-              </div>
-
               <p className="hero-left-item hero-desc">{t('home_desc', lang)}</p>
 
               <div className="hero-left-item hero-actions">
@@ -290,7 +278,6 @@ export default function HomePage() {
               { num: '25+', label: t('home_stats_countries', lang) },
               { num: '25',  label: t('home_stats_sectors', lang) },
               { num: '24h', label: t('home_stats_response', lang) },
-              { num: 'Oct 2026', label: 'BMET Licence' },
             ].map(s => (
               <div className="stat-item" key={s.label}>
                 <span className="stat-num">{s.num}</span>
@@ -413,7 +400,7 @@ export default function HomePage() {
           <div className="process-steps">
             {[
               { n: '01', title: 'Enquiry & Brief',    desc: 'Tell us your requirements: trade category, worker count, destination, timeline. We respond within 24 hours.' },
-              { n: '02', title: 'Candidate Matching', desc: 'We screen our database, conduct trade tests, and present a verified shortlist within 7 working days of licence activation.' },
+              { n: '02', title: 'Candidate Matching', desc: 'We screen our database, conduct trade tests, and present a verified shortlist within 7 working days.' },
               { n: '03', title: 'Documentation',      desc: 'We manage BMET registration, visas, medical clearances, and all government approvals end-to-end.' },
               { n: '04', title: 'Deployment',         desc: 'Workers depart with full documentation, pre-departure training completed, and briefed on your standards.' },
             ].map(step => (
@@ -427,7 +414,7 @@ export default function HomePage() {
 
           <div className="trust-badges">
             {[
-              { icon: '🏛️', title: 'BMET Registration',     body: 'All workers are sourced and screened to full BMET standards. Our recruiting licence activates October 2026 — built compliance-first from day one.' },
+              { icon: '🏛️', title: 'BMET Registration',     body: 'All workers are sourced and screened to full BMET standards. Built compliance-first from day one.' },
               { icon: '🩺', title: 'GAMCA Medical Cleared', body: 'Every worker undergoes a full GAMCA medical fitness test before departure for Gulf destinations.' },
               { icon: '📋', title: 'Transparent Contracts', body: 'Workers receive a verified employment contract in Bengali before they sign, clearly stating salary, hours, accommodation, and contract duration.' },
             ].map(b => (
@@ -470,7 +457,7 @@ export default function HomePage() {
               <div className="why-features">
                 {[
                   { icon: '✅', title: 'End-to-End Compliance',  body: 'We handle every step: BMET clearance, GAMCA medicals, visa processing, and contracts. Workers are ready to work on day one.' },
-                  { icon: '⚡', title: 'Fast Mobilisation',       body: 'Our pre-registered database means we can present a qualified shortlist within 7 working days of licence activation.' },
+                  { icon: '⚡', title: 'Fast Mobilisation',       body: 'Our pre-registered database means we can present a qualified shortlist within 7 working days.' },
                   { icon: '🔍', title: 'Verified Skills',         body: 'Every candidate undergoes a practical trade test and background check. You only see workers who genuinely meet the requirements.' },
                   { icon: '🤝', title: 'Ethical by Design',       body: 'We follow ILO ethical recruitment principles: fully itemised, disclosed costs before you commit to anything, contracts explained in the worker\'s own language, and welfare follow-up post-deployment.' },
                   { icon: '🌍', title: 'Destination Expertise',   body: 'With deployment corridors across 25+ countries, we understand the specific documentation and regulatory requirements of each market.' },
@@ -509,7 +496,6 @@ export default function HomePage() {
                   { row: 'Cost Structure', us: 'Fully itemised cost breakdown disclosed before you commit to anything', them: 'Costs often disclosed only after commitment or mid-process' },
                   { row: 'Payment Model', us: 'Success-fee model — you pay only after workers are confirmed for deployment', them: 'Upfront payment often required regardless of outcome' },
                   { row: 'Replacement Guarantee', us: '90-day replacement guarantee at no additional placement fee', them: 'Rarely offered, or limited to a much shorter window' },
-                  { row: 'Licence Transparency', us: 'Licence status publicly stated on our website, including while pending', them: 'Licence status often undisclosed or hard to verify' },
                   { row: 'Partner Vetting', us: 'Regional partner agencies independently verified before engagement', them: 'Partner credentials rarely disclosed to employers or workers' },
                   { row: 'Documentation', us: 'Every placement documented to destination-country legal requirements', them: 'Documentation practices vary and are often informal' },
                 ].map((r, i) => (
@@ -524,9 +510,6 @@ export default function HomePage() {
               </tbody>
             </table>
           </div>
-          <p style={{ fontSize: '0.78rem', color: 'var(--gray-500)', marginTop: 16 }}>
-            We are currently operating ahead of our BMET recruitment licence (expected October 2026) — see our regulatory status above. Fee structures apply during this period and are disclosed in full before any commitment.
-          </p>
         </div>
       </section>
 
@@ -571,8 +554,8 @@ export default function HomePage() {
               </div>
               {/* Benefits */}
               {[
-                { icon: '⚡', text: 'Priority mobilisation — first in queue when licence activates' },
-                { icon: '📋', text: 'Guaranteed shortlist within 7 working days of licence activation' },
+                { icon: '⚡', text: 'Priority mobilisation — first in the queue' },
+                { icon: '📋', text: 'Guaranteed shortlist within 7 working days' },
                 { icon: '🤝', text: 'Direct line to the founder for your first placement' },
                 { icon: '🔒', text: 'No obligation — reserve your slot, review when ready' },
               ].map(b => (
