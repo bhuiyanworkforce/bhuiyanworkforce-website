@@ -90,12 +90,13 @@ test('page counts', () => {
   const pages = listPages();
   const by = (l) => pages.filter((p) => p.lang === l).length;
   assert.equal(by('en'), 10 + 25 + 28 + 13 + 3);
-  assert.equal(by('ar'), 2);
+  assert.equal(by('ar'), 4);
   assert.equal(by('pl'), 2);
 });
 test('availability and 404 resolution', () => {
   assert.equal(resolvePath('/ar/countries/saudi-arabia').status, 'ok');
-  assert.equal(resolvePath('/ar/about').status, 'notfound');
+  assert.equal(resolvePath('/ar/about').status, 'ok');
+  assert.equal(resolvePath('/ar/privacy').status, 'notfound');
   assert.equal(resolvePath('/pl/o-nas').status, 'notfound');
   assert.equal(resolvePath('/countries/atlantis').status, 'notfound');
   assert.equal(resolvePath('/').status, 'ok');
@@ -104,10 +105,11 @@ test('hreflang: self, x-default, only real translations', () => {
   const alts = getAlternates({ type: 'country', id: 'saudi-arabia' });
   assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'x-default']);
   assert.equal(alts.find((a) => a.hreflang === 'x-default').href, 'https://bhuiyanworkforce.com/countries/saudi-arabia');
-  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }), []);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }), []);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'x-default']);
 });
 test('language switcher links', () => {
-  const links = getLanguageLinks({ type: 'page', id: 'about' }, 'en');
+  const links = getLanguageLinks({ type: 'page', id: 'privacy' }, 'en');
   assert.equal(links.find((l) => l.code === 'ar').href, '/ar');
   assert.equal(links.find((l) => l.code === 'ar').fallback, true);
   const ok = getLanguageLinks({ type: 'country', id: 'saudi-arabia' }, 'en');
@@ -148,7 +150,7 @@ test('Polish country page', () => {
   assert.equal(h.jsonld[1].itemListElement[1].item, 'https://bhuiyanworkforce.com/pl/kraje');
 });
 test('untranslated page throws instead of emitting wrong-language head', () => {
-  assert.throws(() => getPageHead({ type: 'page', id: 'about' }, 'ar', {}));
+  assert.throws(() => getPageHead({ type: 'page', id: 'privacy' }, 'ar', {}));
 });
 test('/apply is noindex and excluded from sitemap; 404 has no canonical', () => {
   assert.match(getPageHead({ type: 'page', id: 'apply' }, 'en', {}).robots, /^noindex/);
@@ -193,10 +195,10 @@ test('localizeTo keeps visitors in their language when the page exists there', (
   assert.equal(localizeTo('/countries/saudi-arabia', 'en'), '/countries/saudi-arabia');
 });
 test('localizeTo falls back to the real English page when there is no translation', () => {
-  assert.equal(localizeTo('/about', 'ar'), '/about');
+  assert.equal(localizeTo('/privacy', 'ar'), '/privacy');
   assert.equal(localizeTo('/countries/qatar', 'pl'), '/countries/qatar');
   assert.equal(localizeTo('/capabilities.pdf', 'ar'), '/capabilities.pdf');
-  assert.equal(localizeTo('/ar/about', 'pl'), '/ar/about'); // already prefixed
+  assert.equal(localizeTo('/ar/privacy', 'pl'), '/ar/privacy'); // already prefixed
   assert.equal(localizeTo('mailto:a@b.c', 'ar'), 'mailto:a@b.c');
 });
 test('headTags and headToHtml agree (static HTML and client sync use the same tags)', () => {
