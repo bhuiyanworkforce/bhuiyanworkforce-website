@@ -14,6 +14,7 @@ export const DEFAULT_LOCALE = 'en';
 export const LOCALES = {
   en: {
     code: 'en',
+    flag: '🇬🇧',
     dir: 'ltr',
     hreflang: 'en',
     ogLocale: 'en_GB',
@@ -23,6 +24,7 @@ export const LOCALES = {
   },
   ar: {
     code: 'ar',
+    flag: '🇸🇦',
     dir: 'rtl',
     hreflang: 'ar',
     ogLocale: 'ar_AR',
@@ -36,6 +38,7 @@ export const LOCALES = {
   },
   pl: {
     code: 'pl',
+    flag: '🇵🇱',
     dir: 'ltr',
     hreflang: 'pl',
     ogLocale: 'pl_PL',
@@ -45,6 +48,7 @@ export const LOCALES = {
   },
   bn: {
     code: 'bn',
+    flag: '🇧🇩',
     dir: 'ltr',
     hreflang: 'bn',
     ogLocale: 'bn_BD',
@@ -54,6 +58,7 @@ export const LOCALES = {
   },
   it: {
     code: 'it',
+    flag: '🇮🇹',
     dir: 'ltr',
     hreflang: 'it',
     ogLocale: 'it_IT',

@@ -1,37 +1,44 @@
-import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
+import React, { createContext, useContext, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
-import { LANGUAGES } from './translations';
+import { useLocation } from 'react-router-dom';
+import { resolvePath } from '../routes.js';
+import { LOCALES } from './config.js';
 
-const LanguageContext = createContext({ lang: 'en', setLang: () => {} });
+// The language comes from the URL. There is no localStorage and no browser-language
+// detection. Bengali and Italian are an in-place overlay on English URLs only: it lives in
+// memory and resets on reload.
 
-function getInitialLang() {
-  const stored = localStorage.getItem('bw_lang');
-  if (stored && LANGUAGES.some(l => l.code === stored)) return stored;
-  const browser = navigator.language?.slice(0, 2);
-  if (browser === 'bn') return 'bn';
-  if (browser === 'ar') return 'ar';
-  if (browser === 'it') return 'it';
-  if (browser === 'pl') return 'pl';
-  return 'en';
-}
+const HOME = { type: 'page', id: 'home' };
+
+const LanguageContext = createContext({
+  lang: 'en', urlLang: 'en', dir: 'ltr', arrow: '→', route: HOME, status: 'ok',
+  params: {}, overlay: null, setOverlay: () => {},
+});
 
 export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState(getInitialLang);
+  const { pathname } = useLocation();
+  const [overlay, setOverlay] = useState(null);
 
-  useEffect(() => {
-    localStorage.setItem('bw_lang', lang);
-    const dir = LANGUAGES.find(l => l.code === lang)?.dir || 'ltr';
-    document.documentElement.setAttribute('dir', dir);
-    document.documentElement.setAttribute('lang', lang);
-  }, [lang]);
+  const value = useMemo(() => {
+    const { lang: urlLang, route, status } = resolvePath(pathname);
+    const activeOverlay = urlLang === 'en' ? overlay : null;
+    const lang = activeOverlay || urlLang;
+    const dir = LOCALES[lang]?.dir || 'ltr';
+    const params = route && route.id !== 'home' ? { slug: route.id } : {};
+    return {
+      lang,            // language of the UI strings (overlay or URL language)
+      urlLang,         // language of the URL, used for links and <head>
+      dir,
+      arrow: dir === 'rtl' ? '←' : '→', // "forward" arrow for the current reading direction
+      route: route || HOME,
+      status,
+      params,
+      overlay: activeOverlay,
+      setOverlay,
+    };
+  }, [pathname, overlay]);
 
-  const value = useMemo(() => ({ lang, setLang }), [lang]);
-
-  return (
-    <LanguageContext.Provider value={value}>
-      {children}
-    </LanguageContext.Provider>
-  );
+  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 }
 
 LanguageProvider.propTypes = {
