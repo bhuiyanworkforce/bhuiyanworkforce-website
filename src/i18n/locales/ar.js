@@ -1,4 +1,4 @@
-// Arabic head/SEO strings (Phase 1a: homepage + Saudi Arabia country page).
+// Arabic head/SEO strings (home, About, FAQ and the Saudi Arabia country page so far).
 //
 // Naming rule: the company name stays "Bhuiyan Workforce Ltd." in Latin script.
 // Terminology: "استقدام" and "توريد عمالة" are the terms Gulf employers search
@@ -11,7 +11,7 @@ const NAME = 'Bhuiyan Workforce Ltd.';
 
 export default {
   code: 'ar',
-  translated: ['page:home', 'country:saudi-arabia'],
+  translated: ['page:home', 'page:about', 'page:faq', 'country:saudi-arabia'],
   head: {
     siteName: NAME,
     ogImageAlt: 'Bhuiyan Workforce Ltd. — استقدام عمالة بنغلاديشية بطريقة أخلاقية',
@@ -36,6 +36,14 @@ export default {
           'توريد عمالة بنغلاديشية ماهرة إلى الخليج وأوروبا وجنوب شرق آسيا. استقدام متوافق مع متطلبات BMET وبشفافية كاملة.',
         keywords:
           'استقدام عمالة من بنغلاديش, توريد عمالة بنغلاديشية, عمالة ماهرة من بنجلاديش, مكتب استقدام عمالة, شركة توريد عمالة, استقدام عمالة للسعودية, توريد عمالة للخليج, استقدام عمال بناء, BMET',
+      },
+      about: {
+        title: 'من نحن | Bhuiyan Workforce Ltd.',
+        description: 'تعرّف على Bhuiyan Workforce Ltd.: قصتنا وفريقنا والتزامنا بالاستقدام الأخلاقي ورعاية العمال.',
+      },
+      faq: {
+        title: 'الأسئلة الشائعة | Bhuiyan Workforce Ltd.',
+        description: 'إجابات عن الأسئلة الشائعة من أصحاب العمل والعمال حول إجراءات الاستقدام والرسوم والامتثال.',
       },
     },
     notFound: { title: `الصفحة غير موجودة — ${NAME}`, description: 'الصفحة التي تبحث عنها غير موجودة.' },
