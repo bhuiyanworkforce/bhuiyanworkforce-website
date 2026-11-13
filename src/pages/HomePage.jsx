@@ -5,7 +5,7 @@ const WorldMap = lazy(() => import('../components/WorldMap'));
 import { SERVICES } from '../data/services';
 import { COUNTRIES } from '../data/countries';
 import { useLang } from '../i18n/LanguageContext';
-import { countryName } from '../content';
+import { countryName, localizeService } from '../content';
 import { t } from '../i18n/translations';
 
 const go = (id) => {
@@ -337,7 +337,7 @@ export default function HomePage() {
             <p className="section-subtitle">{t('home_services_sub', lang)}</p>
           </div>
           <div className="services-grid">
-            {SERVICES.map(s => (
+            {SERVICES.map(s => localizeService(s, lang)).map(s => (
               <Link key={s.slug} to={`/services/${s.slug}`} className="service-card" style={{ padding: 0, overflow: 'hidden' }}>
                 {s.image && (
                   <div style={{ width: '100%', height: 180, overflow: 'hidden', flexShrink: 0 }}>

@@ -2,10 +2,16 @@ import React, { useState } from 'react';
 import { Link, useParams, Navigate } from '../i18n/router';
 import { getCountryGuide } from '../data/countryGuides';
 import { getCountry } from '../data/countries';
+import { useLang } from '../i18n/LanguageContext';
+import { t } from '../i18n/translations';
+import { countryName } from '../content/index.js';
+import { localizeGuide } from '../content/index.js';
 
 export default function CountryGuidePage() {
   const { slug } = useParams();
-  const guide = getCountryGuide(slug);
+  const { lang, urlLang, arrow } = useLang();
+  const guide = localizeGuide(getCountryGuide(slug), lang);
+  const tr = (key, vars) => t(key, lang, vars);
   const country = getCountry(slug);
   const [submitted, setSubmitted] = useState(false);
   const [fields, setFields]  = useState({ name: '', company: '', email: '' });
@@ -38,15 +44,15 @@ export default function CountryGuidePage() {
         <div className="container">
           <div className="page-hero-inner">
             <div className="breadcrumb">
-              <Link to="/">Home</Link><span>›</span>
-              <Link to="/employer-guide">Employer's Guide</Link><span>›</span>
+              <Link to="/">{tr('common_home')}</Link><span>›</span>
+              <Link to="/employer-guide">{tr('gd.crumb')}</Link><span>›</span>
               <span style={{ color: 'var(--gold)' }}>{guide.country}</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 16 }}>
               <span style={{ fontSize: '3rem' }}>{guide.flag}</span>
               <div>
-                <div className="label-tag" style={{ marginBottom: 6 }}>Employer's Guide</div>
-                <h1 style={{ margin: 0 }}>Recruiting from Bangladesh to {guide.country}</h1>
+                <div className="label-tag" style={{ marginBottom: 6 }}>{tr('gd.crumb')}</div>
+                <h1 style={{ margin: 0 }}>{tr('gd.h1', { country: guide.country })}</h1>
               </div>
             </div>
             <p>{guide.intro}</p>
@@ -78,13 +84,13 @@ export default function CountryGuidePage() {
               {country && (
                 <div style={{ background: 'var(--off-white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius-lg)', padding: 28, marginTop: 16 }}>
                   <h3 style={{ color: 'var(--navy)', fontFamily: 'var(--font-display)', marginBottom: 12 }}>
-                    {guide.flag} Full {guide.country} Deployment Details
+                    {guide.flag} {tr('gd.details_title', { country: guide.country })}
                   </h3>
                   <p style={{ color: 'var(--gray-500)', marginBottom: 20, fontSize: '0.9rem' }}>
-                    View complete visa requirements, document checklist, salary ranges, and step-by-step deployment process for {guide.country}.
+                    {tr('gd.details_text', { country: guide.country })}
                   </p>
                   <Link to={`/countries/${slug}`} className="btn btn-primary">
-                    View {guide.country} Country Page →
+                    {tr('gd.details_btn', { country: guide.country })}
                   </Link>
                 </div>
               )}
@@ -96,47 +102,47 @@ export default function CountryGuidePage() {
                 {submitted ? (
                   <div style={{ textAlign: 'center', padding: '24px 0' }}>
                     <div style={{ fontSize: '2.5rem', marginBottom: 12 }}>✅</div>
-                    <h3 style={{ color: 'var(--white)', fontFamily: 'var(--font-display)', marginBottom: 8, fontSize: '1.2rem' }}>Request Received!</h3>
+                    <h3 style={{ color: 'var(--white)', fontFamily: 'var(--font-display)', marginBottom: 8, fontSize: '1.2rem' }}>{tr('gd.received')}</h3>
                     <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', lineHeight: 1.6 }}>
-                      Our team will be in touch within 24 hours with a tailored proposal for {guide.country}.
+                      {tr('gd.received_text', { country: guide.country })}
                     </p>
                   </div>
                 ) : (
                   <>
-                    <div className="label-tag" style={{ marginBottom: 12 }}>Get a Proposal</div>
+                    <div className="label-tag" style={{ marginBottom: 12 }}>{tr('gd.proposal_tag')}</div>
                     <h3 style={{ color: 'var(--white)', fontFamily: 'var(--font-display)', fontSize: '1.2rem', marginBottom: 8 }}>
-                      Recruit for {guide.country}
+                      {tr('gd.recruit_for', { country: guide.country })}
                     </h3>
                     <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.82rem', marginBottom: 24, lineHeight: 1.6 }}>
-                      Tell us your requirements and we'll send a tailored recruitment proposal within 24 hours.
+                      {tr('gd.proposal_text')}
                     </p>
                     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
                       <div>
-                        <label htmlFor="cg-name" style={{ display: 'block', fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>Your Name</label>
-                        <input id="cg-name" type="text" required placeholder="Your Name"
+                        <label htmlFor="cg-name" style={{ display: 'block', fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>{tr('gd.your_name')}</label>
+                        <input id="cg-name" type="text" required placeholder={tr('gd.your_name')}
                           value={fields.name}
                           onChange={e => setFields(p => ({ ...p, name: e.target.value }))}
                           style={{ width: '100%', padding: '11px 14px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.07)', color: 'var(--white)', fontSize: '0.875rem', outline: 'none', boxSizing: 'border-box' }}
                         />
                       </div>
                       <div>
-                        <label htmlFor="cg-company" style={{ display: 'block', fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>Company Name</label>
-                        <input id="cg-company" type="text" required placeholder="Company Name"
+                        <label htmlFor="cg-company" style={{ display: 'block', fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>{tr('gd.company_name')}</label>
+                        <input id="cg-company" type="text" required placeholder={tr('gd.company_name')}
                           value={fields.company}
                           onChange={e => setFields(p => ({ ...p, company: e.target.value }))}
                           style={{ width: '100%', padding: '11px 14px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.07)', color: 'var(--white)', fontSize: '0.875rem', outline: 'none', boxSizing: 'border-box' }}
                         />
                       </div>
                       <div>
-                        <label htmlFor="cg-email" style={{ display: 'block', fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>Work Email</label>
-                        <input id="cg-email" type="email" required placeholder="Work Email"
+                        <label htmlFor="cg-email" style={{ display: 'block', fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>{tr('gd.work_email')}</label>
+                        <input id="cg-email" type="email" required placeholder={tr('gd.work_email')}
                           value={fields.email}
                           onChange={e => setFields(p => ({ ...p, email: e.target.value }))}
                           style={{ width: '100%', padding: '11px 14px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.07)', color: 'var(--white)', fontSize: '0.875rem', outline: 'none', boxSizing: 'border-box' }}
                         />
                       </div>
                       <button type="submit" className="btn btn-primary" disabled={submitting} style={{ width: '100%', justifyContent: 'center', marginTop: 4 }}>
-                        {submitting ? 'Sending…' : `Get ${guide.country} Proposal →`}
+                        {submitting ? tr('cf.sending') : tr('gd.get_btn', { country: guide.country })}
                       </button>
                     </form>
                   </>
@@ -144,17 +150,17 @@ export default function CountryGuidePage() {
               </div>
 
               <div style={{ marginTop: 20, background: 'var(--off-white)', borderRadius: 'var(--radius)', padding: 20, border: '1px solid var(--gray-100)' }}>
-                <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gray-500)', marginBottom: 12 }}>Other Country Guides</div>
-                {Object.entries({ 'saudi-arabia': '🇸🇦 Saudi Arabia', 'uae': '🇦🇪 UAE', 'poland': '🇵🇱 Poland' })
+                <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gray-500)', marginBottom: 12 }}>{tr('gd.other_guides')}</div>
+                {Object.entries({ 'saudi-arabia': ['🇸🇦', 'Saudi Arabia'], 'uae': ['🇦🇪', 'UAE'], 'poland': ['🇵🇱', 'Poland'] })
                   .filter(([s]) => s !== slug)
-                  .map(([s, label]) => (
+                  .map(([s, [flag, en]]) => (
                     <Link key={s} to={`/employer-guide/${s}`} style={{ display: 'block', color: 'var(--gold)', fontSize: '0.85rem', padding: '6px 0', textDecoration: 'none', borderBottom: '1px solid var(--gray-100)' }}>
-                      {label} →
+                      {flag} {countryName(urlLang, s, en)} {arrow}
                     </Link>
                   ))
                 }
                 <Link to="/employer-guide" style={{ display: 'block', color: 'var(--gray-500)', fontSize: '0.8rem', marginTop: 10, textDecoration: 'none' }}>
-                  View all guides →
+                  {tr('gd.view_all')}
                 </Link>
               </div>
             </div>

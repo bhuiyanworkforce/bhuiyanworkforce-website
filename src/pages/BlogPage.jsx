@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from '../i18n/router';
 import { POSTS } from '../data/posts';
+import { useLang } from '../i18n/LanguageContext';
+import { localizePost } from '../content/index.js';
 
 export default function BlogPage() {
+  const { lang } = useLang();
+  const localizedPosts = POSTS.map(p => localizePost(p, lang));
   const [search, setSearch] = useState('');
   const [activeTag, setActiveTag] = useState('All');
-  const tags = ['All', ...new Set(POSTS.map(p => p.tag))];
+  const tags = ['All', ...new Set(localizedPosts.map(p => p.tag))];
 
-  const filtered = POSTS.filter(post =>
+  const filtered = localizedPosts.filter(post =>
     (activeTag === 'All' || post.tag === activeTag) &&
     (post.title.toLowerCase().includes(search.toLowerCase()) ||
      post.excerpt.toLowerCase().includes(search.toLowerCase()) ||

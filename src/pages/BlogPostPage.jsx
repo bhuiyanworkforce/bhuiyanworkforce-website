@@ -1,6 +1,9 @@
 import React from 'react';
 import { useParams, Link, Navigate } from '../i18n/router';
 import { getPost, POSTS } from '../data/posts';
+import { useLang } from '../i18n/LanguageContext';
+import { t } from '../i18n/translations';
+import { localizePost } from '../content/index.js';
 
 function renderInlineBold(text) {
   const parts = text.split(/\*\*(.*?)\*\*/g);
@@ -90,11 +93,13 @@ function renderContent(content) {
 
 export default function BlogPostPage() {
   const { slug } = useParams();
-  const post = getPost(slug);
+  const { lang, arrow } = useLang();
+  const post = localizePost(getPost(slug), lang);
+  const tr = (key, vars) => t(key, lang, vars);
 
   if (!post) return <Navigate to="/blog" replace />;
 
-  const otherPosts = POSTS.filter(p => p.slug !== slug).slice(0, 3);
+  const otherPosts = POSTS.filter(p => p.slug !== slug).slice(0, 3).map(p => localizePost(p, lang));
 
   return (
     <>
@@ -102,8 +107,8 @@ export default function BlogPostPage() {
         <div className="container">
           <div className="page-hero-inner">
             <div className="breadcrumb">
-              <Link to="/">Home</Link><span>›</span>
-              <Link to="/blog">Blog</Link><span>›</span>
+              <Link to="/">{tr('common_home')}</Link><span>›</span>
+              <Link to="/blog">{tr('nav_blog')}</Link><span>›</span>
               <span style={{ color: 'var(--gold)' }}>{post.tag}</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
@@ -129,7 +134,7 @@ export default function BlogPostPage() {
 
               <div style={{ marginTop: 48, paddingTop: 32, borderTop: '1px solid var(--gray-100)' }}>
                 <Link to="/blog" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--navy)', fontWeight: 600, fontSize: '0.9rem' }}>
-                  ← Back to all articles
+                  {tr('bp.back')}
                 </Link>
               </div>
             </article>
@@ -137,23 +142,23 @@ export default function BlogPostPage() {
             <aside style={{ position: 'sticky', top: 100 }}>
               <div style={{ background: 'var(--navy)', borderRadius: 'var(--radius-lg)', padding: 28, marginBottom: 28 }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', color: 'var(--white)', fontSize: '1.15rem', marginBottom: 10 }}>
-                  Need Workers?
+                  {tr('bp.need_title')}
                 </h3>
                 <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', lineHeight: 1.6, marginBottom: 20 }}>
-                  Bhuiyan Workforce Ltd. supplies skilled workers across 25+ countries. Get in touch for a free consultation.
+                  {tr('bp.need_text')}
                 </p>
                 <Link to="/#contact" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                  Contact Us →
+                  {tr('common_contact')} {arrow}
                 </Link>
                 <a href="https://wa.me/8801864567912" target="_blank" rel="noopener noreferrer"
                   style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, marginTop: 12, color: 'rgba(255,255,255,0.6)', fontSize: '0.82rem' }}>
-                  💬 WhatsApp Us
+                  {tr('bp.wa')}
                 </a>
               </div>
 
               <div>
                 <h4 style={{ fontSize: '0.78rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--gold)', marginBottom: 16 }}>
-                  More Articles
+                  {tr('bp.more')}
                 </h4>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                   {otherPosts.map(p => (
