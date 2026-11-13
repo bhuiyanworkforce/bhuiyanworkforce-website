@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from '../i18n/router';
 import { LogoSVG } from './Logo';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
 
 export default function Header() {
-  const [scrolled, setScrolled]   = useState(false);
-  const [menuOpen, setMenuOpen]   = useState(false);
-  const location                  = useLocation();
-  const isHome                    = location.pathname === '/';
-  const { lang }                  = useLang();
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { lang, route, status } = useLang();
+  const isHome = status === 'ok' && route.type === 'page' && route.id === 'home';
 
   useEffect(() => {
     const onScroll = () => setScrolled(globalThis.scrollY > 50);
@@ -26,7 +27,7 @@ export default function Header() {
       const el = document.getElementById(id);
       if (el) el.scrollIntoView({ behavior: 'smooth' });
     } else {
-      globalThis.location.href = '/#' + id;
+      navigate('/#' + id); // stays in the current language
     }
   };
 
@@ -35,11 +36,11 @@ export default function Header() {
       <header className={`header${scrolled || !isHome ? ' scrolled' : ''}`}>
         <div className="container">
           <div className="header-inner">
-            <Link to="/" className="header-logo" aria-label="Bhuiyan Workforce Ltd. — Home">
+            <Link to="/" className="header-logo" aria-label={t('a11y.home', lang)}>
               <LogoSVG variant="light" width={180} />
             </Link>
 
-            <nav className="header-nav" aria-label="Main navigation">
+            <nav className="header-nav" aria-label={t('a11y.main_nav', lang)}>
               <button onClick={() => scrollTo('services')}>{t('nav_services', lang)}</button>
               <Link to="/countries">{t('nav_countries', lang)}</Link>
               <Link to="/capabilities">{t('nav_capabilities', lang)}</Link>
@@ -58,8 +59,8 @@ export default function Header() {
 
             <button
               className={`hamburger${menuOpen ? ' open' : ''}`}
-              onClick={() => setMenuOpen(v => !v)}
-              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+              onClick={() => setMenuOpen((v) => !v)}
+              aria-label={menuOpen ? t('a11y.close_menu', lang) : t('a11y.open_menu', lang)}
               aria-expanded={menuOpen}
             >
               <span /><span /><span />
@@ -68,9 +69,9 @@ export default function Header() {
         </div>
       </header>
 
-      <nav className={`mobile-menu${menuOpen ? ' open' : ''}`} aria-label="Mobile navigation">
+      <nav className={`mobile-menu${menuOpen ? ' open' : ''}`} aria-label={t('a11y.mobile_nav', lang)}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 0 16px' }}>
-          <button className="mobile-close" onClick={() => setMenuOpen(false)} aria-label="Close">×</button>
+          <button className="mobile-close" onClick={() => setMenuOpen(false)} aria-label={t('a11y.close', lang)}>×</button>
           <LanguageSwitcher />
         </div>
         <button onClick={() => scrollTo('services')}>{t('nav_services', lang)}</button>

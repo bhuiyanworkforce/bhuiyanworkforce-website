@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '../i18n/router';
 import {
   ComposableMap,
   Geographies,
@@ -198,7 +198,7 @@ export default function WorldMap({ countries }) {
             {region}
           </button>
         ))}
-        <span style={{ marginLeft: 'auto', fontSize: '0.72rem', color: 'rgba(255,255,255,0.3)', alignSelf: 'center' }}>
+        <span style={{ marginInlineStart: 'auto', fontSize: '0.72rem', color: 'rgba(255,255,255,0.3)', alignSelf: 'center' }}>
           {visibleCountries.length} countries
         </span>
       </div>
@@ -335,7 +335,7 @@ export default function WorldMap({ countries }) {
                         stroke={color}
                         strokeWidth={1.5}
                         opacity={0.6}
-                        style={{ animation: `bw-pulse ${2 + Math.random() * 1.2}s ease-out infinite` }}
+                        style={{ animation: `bw-pulse ${2 + ((country.slug.length * 7) % 12) / 10}s ease-out infinite` }}
                       />
                     )}
                     {/* Dot */}
@@ -366,7 +366,7 @@ export default function WorldMap({ countries }) {
 
           {/* Hint text */}
           <div style={{
-            position: 'absolute', bottom: 12, left: 16,
+            position: 'absolute', bottom: 12, insetInlineStart: 16,
             fontSize: '0.68rem', color: 'rgba(255,255,255,0.25)',
             pointerEvents: 'none',
           }}>
@@ -382,7 +382,7 @@ export default function WorldMap({ countries }) {
             minWidth: selectedCountry ? 260 : 0,
             overflow: 'hidden',
             transition: 'width 0.3s ease, min-width 0.3s ease',
-            borderLeft: selectedCountry ? '1px solid rgba(255,255,255,0.08)' : 'none',
+            borderInlineStart: selectedCountry ? '1px solid rgba(255,255,255,0.08)' : 'none',
             background: '#0a1628',
             flexShrink: 0,
           }}
@@ -394,7 +394,7 @@ export default function WorldMap({ countries }) {
               {/* Close */}
               <button
                 onClick={() => setSelected(null)}
-                style={{ position: 'absolute', top: 12, right: 12, background: 'none', border: 'none', color: 'rgba(255,255,255,0.3)', cursor: 'pointer', fontSize: '1.1rem', lineHeight: 1, padding: 4 }}
+                style={{ position: 'absolute', top: 12, insetInlineEnd: 12, background: 'none', border: 'none', color: 'rgba(255,255,255,0.3)', cursor: 'pointer', fontSize: '1.1rem', lineHeight: 1, padding: 4 }}
                 aria-label="Close"
               >×</button>
 

@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from '../i18n/router';
 import { LogoSVG } from './Logo';
 
 export default function Footer() {
+  const navigate = useNavigate();
   const goContact = () => {
     const el = document.getElementById('contact');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
-    else globalThis.location.href = '/#contact';
+    else navigate('/#contact');
   };
 
   return (<>
@@ -55,10 +56,10 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Contact</h4>
             <ul className="footer-links">
-              <li><a href="mailto:info@bhuiyanworkforce.com">info@bhuiyanworkforce.com</a></li>
-              <li><a href="mailto:partnerships@bhuiyanworkforce.com">partnerships@bhuiyanworkforce.com</a></li>
-              <li><a href="mailto:careers@bhuiyanworkforce.com">careers@bhuiyanworkforce.com</a></li>
-              <li><a href="tel:+8801864567912">+880 1864 567912</a></li>
+              <li><a href="mailto:info@bhuiyanworkforce.com"><bdi dir="ltr">info@bhuiyanworkforce.com</bdi></a></li>
+              <li><a href="mailto:partnerships@bhuiyanworkforce.com"><bdi dir="ltr">partnerships@bhuiyanworkforce.com</bdi></a></li>
+              <li><a href="mailto:careers@bhuiyanworkforce.com"><bdi dir="ltr">careers@bhuiyanworkforce.com</bdi></a></li>
+              <li><a href="tel:+8801864567912"><bdi dir="ltr">+880 1864 567912</bdi></a></li>
               <li><a href="https://wa.me/8801864567912" target="_blank" rel="noopener noreferrer">WhatsApp (Employers)</a></li>
               <li><a href="https://wa.me/8801978356710" target="_blank" rel="noopener noreferrer">WhatsApp (Workers)</a></li>
             </ul>
@@ -66,7 +67,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Bhuiyan Workforce Ltd. All rights reserved. Registered in Bangladesh.</p>
+          <p>© <span suppressHydrationWarning>{new Date().getFullYear()}</span> Bhuiyan Workforce Ltd. All rights reserved. Registered in Bangladesh.</p>
           <div className="footer-bottom-links">
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
@@ -76,7 +77,7 @@ export default function Footer() {
     </footer>
 
     {/* Sticky Contact Buttons */}
-    <div style={{ position: 'fixed', bottom: 24, right: 20, zIndex: 999, display: 'flex', flexDirection: 'column', gap: 12 }}>
+    <div style={{ position: 'fixed', bottom: 24, insetInlineEnd: 20, zIndex: 999, display: 'flex', flexDirection: 'column', gap: 12 }}>
       <a
         href="tel:+8801864567912"
         aria-label="Call us"
