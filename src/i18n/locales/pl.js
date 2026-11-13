@@ -11,7 +11,9 @@ const NAME = 'Bhuiyan Workforce Ltd.';
 
 export default {
   code: 'pl',
-  translated: ['page:home', 'page:about', 'page:faq', 'country:saudi-arabia'],
+  // About and FAQ are NOT listed yet: their Polish body text does not exist in src/content/pages.js,
+  // so listing them would serve English text under a Polish URL. Add them here once pl content exists.
+  translated: ['page:home', 'country:saudi-arabia'],
   head: {
     siteName: NAME,
     ogImageAlt: 'Bhuiyan Workforce Ltd. — etyczna rekrutacja pracowników z Bangladeszu',
