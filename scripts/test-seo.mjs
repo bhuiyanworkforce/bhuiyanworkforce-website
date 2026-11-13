@@ -17,6 +17,7 @@ import { headToHtml } from '../src/seo/headHtml.js';
 import { buildSitemap } from '../src/seo/sitemap.js';
 import { localizeTo } from '../src/i18n/localize.js';
 import { headTags } from '../src/seo/headHtml.js';
+import { PAGE_CONTENT } from '../src/content/pages.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 let passed = 0;
@@ -91,13 +92,14 @@ test('page counts', () => {
   const by = (l) => pages.filter((p) => p.lang === l).length;
   assert.equal(by('en'), 10 + 25 + 28 + 13 + 3);
   assert.equal(by('ar'), 4);
-  assert.equal(by('pl'), 2);
+  assert.equal(by('pl'), 4);
 });
 test('availability and 404 resolution', () => {
   assert.equal(resolvePath('/ar/countries/saudi-arabia').status, 'ok');
   assert.equal(resolvePath('/ar/about').status, 'ok');
   assert.equal(resolvePath('/ar/privacy').status, 'notfound');
-  assert.equal(resolvePath('/pl/o-nas').status, 'notfound');
+  assert.equal(resolvePath('/pl/o-nas').status, 'ok');
+  assert.equal(resolvePath('/pl/polityka-prywatnosci').status, 'notfound');
   assert.equal(resolvePath('/countries/atlantis').status, 'notfound');
   assert.equal(resolvePath('/').status, 'ok');
 });
@@ -106,7 +108,7 @@ test('hreflang: self, x-default, only real translations', () => {
   assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'x-default']);
   assert.equal(alts.find((a) => a.hreflang === 'x-default').href, 'https://bhuiyanworkforce.com/countries/saudi-arabia');
   assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }), []);
-  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'x-default']);
 });
 test('language switcher links', () => {
   const links = getLanguageLinks({ type: 'page', id: 'privacy' }, 'en');
@@ -206,6 +208,26 @@ test('headTags and headToHtml agree (static HTML and client sync use the same ta
   assert.equal(tags.filter((t) => t.tag === 'title').length, 1);
   assert.equal(tags.filter((t) => t.tag === 'link' && t.attrs.rel === 'canonical').length, 1);
   assert.equal(headToHtml(homeEn).split('\n').length, tags.length);
+});
+
+console.log('page content');
+test('translated About/FAQ have exactly the same structure as English', () => {
+  const en = PAGE_CONTENT.en;
+  for (const lang of Object.keys(PAGE_CONTENT).filter((l) => l !== 'en')) {
+    const c = PAGE_CONTENT[lang];
+    assert.equal(c.about.story.length, en.about.story.length, `${lang} story`);
+    assert.equal(c.about.values.length, en.about.values.length, `${lang} values`);
+    assert.equal(c.about.team.length, en.about.team.length, `${lang} team`);
+    assert.equal(c.about.partners.length, en.about.partners.length, `${lang} partners`);
+    assert.deepEqual(Object.keys(c.faq.ui), Object.keys(en.faq.ui), `${lang} faq ui keys`);
+    assert.equal(c.faq.categories.length, en.faq.categories.length, `${lang} faq categories`);
+    c.faq.categories.forEach((cat, i) => assert.equal(cat.items.length, en.faq.categories[i].items.length, `${lang} faq category ${i}`));
+    // contact details and every number must survive translation untouched
+    const enText = JSON.stringify([en.about, en.faq]);
+    const trText = JSON.stringify([c.about, c.faq]);
+    const tokens = new Set([...(enText.match(/\d+/g) || []), '+880 1978 356710', 'careers@bhuiyanworkforce.com']);
+    for (const token of tokens) assert.ok(trText.includes(token), `${lang} lost "${token}"`);
+  }
 });
 
 console.log('sitemap');
