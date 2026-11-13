@@ -15,6 +15,8 @@ import {
 import { getPageHead } from '../src/seo/getPageHead.js';
 import { headToHtml } from '../src/seo/headHtml.js';
 import { buildSitemap } from '../src/seo/sitemap.js';
+import { localizeTo } from '../src/i18n/localize.js';
+import { headTags } from '../src/seo/headHtml.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 let passed = 0;
@@ -180,6 +182,28 @@ test('headToHtml escapes and keeps JSON-LD script-safe', () => {
   const html = headToHtml({ ...homeEn, title: 'A & "B" <c>', jsonld: [{ x: '</script><b>' }] });
   assert.ok(html.includes('A &amp; &quot;B&quot; &lt;c&gt;'));
   assert.ok(!html.includes('</script><b>'));
+});
+
+
+console.log('links');
+test('localizeTo keeps visitors in their language when the page exists there', () => {
+  assert.equal(localizeTo('/', 'ar'), '/ar');
+  assert.equal(localizeTo('/#contact', 'ar'), '/ar#contact');
+  assert.equal(localizeTo('/countries/saudi-arabia', 'pl'), '/pl/kraje/arabia-saudyjska');
+  assert.equal(localizeTo('/countries/saudi-arabia', 'en'), '/countries/saudi-arabia');
+});
+test('localizeTo falls back to the real English page when there is no translation', () => {
+  assert.equal(localizeTo('/about', 'ar'), '/about');
+  assert.equal(localizeTo('/countries/qatar', 'pl'), '/countries/qatar');
+  assert.equal(localizeTo('/capabilities.pdf', 'ar'), '/capabilities.pdf');
+  assert.equal(localizeTo('/ar/about', 'pl'), '/ar/about'); // already prefixed
+  assert.equal(localizeTo('mailto:a@b.c', 'ar'), 'mailto:a@b.c');
+});
+test('headTags and headToHtml agree (static HTML and client sync use the same tags)', () => {
+  const tags = headTags(homeEn);
+  assert.equal(tags.filter((t) => t.tag === 'title').length, 1);
+  assert.equal(tags.filter((t) => t.tag === 'link' && t.attrs.rel === 'canonical').length, 1);
+  assert.equal(headToHtml(homeEn).split('\n').length, tags.length);
 });
 
 console.log('sitemap');

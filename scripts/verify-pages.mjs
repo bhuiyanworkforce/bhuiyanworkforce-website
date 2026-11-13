@@ -115,10 +115,19 @@ for (const page of pages) {
 
   // RTL: phone numbers and e-mail addresses must sit in a dir="ltr" element.
   if (head.dir === 'rtl') {
-    for (const m of body.matchAll(/\+880[\d\s-]{6,}/g)) {
-      const before = body.slice(Math.max(0, m.index - 200), m.index);
-      const lastOpen = before.lastIndexOf('<');
-      if (!/dir="ltr"/.test(before.slice(lastOpen))) fail(where, `phone number "${m[0].trim()}" is not inside a dir="ltr" element`);
+    // Only visible text counts: blank out tags first so href="tel:+880..." is not matched.
+    const visible = body.replace(/<[^>]*>/g, (tag) => ' '.repeat(tag.length));
+    for (const m of visible.matchAll(/\+880[\d\s-]{6,}/g)) {
+      const lastOpen = body.lastIndexOf('<', m.index);
+      if (!/dir="ltr"/.test(body.slice(lastOpen, body.indexOf('>', lastOpen) + 1))) {
+        fail(where, `phone number "${m[0].trim()}" is not inside a dir="ltr" element`);
+      }
+    }
+    for (const m of visible.matchAll(/[\w.+-]+@[\w-]+\.[\w.-]+/g)) {
+      const lastOpen = body.lastIndexOf('<', m.index);
+      if (!/dir="ltr"/.test(body.slice(lastOpen, body.indexOf('>', lastOpen) + 1))) {
+        fail(where, `e-mail "${m[0]}" is not inside a dir="ltr" element`);
+      }
     }
   }
 }
