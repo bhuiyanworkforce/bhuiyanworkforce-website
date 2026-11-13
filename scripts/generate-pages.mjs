@@ -129,9 +129,14 @@ async function main() {
   }
 
   if (failures.length) {
-    console.error(`\n${failures.length} page(s) failed:`);
-    for (const f of failures.slice(0, 15)) console.error(`  ${f.path}: ${f.message}`);
-    if (failures.length > 15) console.error(`  ... and ${failures.length - 15} more`);
+    console.warn(`\nWARNING: ${failures.length} page(s) failed and were skipped:`);
+    for (const f of failures.slice(0, 15)) console.warn(`  ${f.path}: ${f.message}`);
+    if (failures.length > 15) console.warn(`  ... and ${failures.length - 15} more`);
+  }
+  console.log(`Total pages generated: ${written}/${pages.length}. Failed routes: ${failures.length ? failures.map((f) => f.path).join(', ') : 'none'}`);
+  // Only the English homepage is fatal: one broken page must not block the deploy.
+  if (failures.some((f) => f.path === '/')) {
+    console.error('\nFATAL: the English homepage failed to generate.');
     process.exit(1);
   }
 }

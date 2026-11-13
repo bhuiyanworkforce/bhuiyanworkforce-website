@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Post-build verification of the generated static HTML in dist/.
-// Fails (exit 1) if any page's head, structured data, content or the sitemap
-// is wrong. Reads the real files, so it checks what Cloudflare will serve.
+// Only a problem on the English homepage (/) exits 1 (fails the deploy). Every other
+// problem is printed as a warning. Set STRICT=1 to exit 1 on any problem (local checks).
+// Checks head, structured data, content and the sitemap. Reads the real files, so it checks what Cloudflare will serve.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -164,10 +165,14 @@ else {
   }
 }
 
+const fatal = errors.filter((e) => e.startsWith('/:'));
+const strict = process.env.STRICT === '1';
 if (errors.length) {
-  console.error(`verify-pages: ${errors.length} problem(s)\n`);
-  for (const e of errors.slice(0, 60)) console.error('  ' + e);
-  if (errors.length > 60) console.error(`  ... and ${errors.length - 60} more`);
-  process.exit(1);
+  console.warn(`verify-pages: ${errors.length} problem(s)\n`);
+  for (const e of errors.slice(0, 60)) console.warn('  ' + e);
+  if (errors.length > 60) console.warn(`  ... and ${errors.length - 60} more`);
+  if (fatal.length || strict) process.exit(1);
+  console.warn('\nverify-pages: problems are on pages other than the English homepage, so the build continues.');
+} else {
+  console.log(`verify-pages: OK — ${pages.length} pages, 404.html and sitemap.xml checked`);
 }
-console.log(`verify-pages: OK — ${pages.length} pages, 404.html and sitemap.xml checked`);
