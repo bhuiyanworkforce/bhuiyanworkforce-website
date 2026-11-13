@@ -1,4 +1,4 @@
-// Arabic head/SEO strings (home, About, FAQ and 19 country pages so far).
+// Arabic head/SEO strings (home, About, FAQ and all 28 country pages and the Countries list).
 //
 // Naming rule: the company name stays "Bhuiyan Workforce Ltd." in Latin script.
 // Terminology: "استقدام" and "توريد عمالة" are the terms Gulf employers search
@@ -32,6 +32,10 @@ export default {
     'country:croatia',
     'country:czech-republic',
     'country:lithuania',
+    'country:latvia', 'country:estonia', 'country:bulgaria', 'country:cyprus',
+    'country:slovakia', 'country:bosnia-herzegovina', 'country:armenia', 'country:montenegro',
+    'country:georgia',
+    'page:countries',
   ],
   head: {
     siteName: NAME,
@@ -65,6 +69,10 @@ export default {
       faq: {
         title: 'الأسئلة الشائعة | Bhuiyan Workforce Ltd.',
         description: 'إجابات عن الأسئلة الشائعة من أصحاب العمل والعمال حول إجراءات الاستقدام والرسوم والامتثال.',
+      },
+      countries: {
+        title: 'الدول التي نوفد إليها العمالة | Bhuiyan Workforce Ltd.',
+        description: 'تفاصيل كاملة عن إيفاد العمالة البنغلاديشية إلى أكثر من 25 دولة في الخليج وأوروبا وجنوب شرق آسيا، تشمل التأشيرات والمستندات ومدد المعالجة.',
       },
     },
     notFound: { title: `الصفحة غير موجودة — ${NAME}`, description: 'الصفحة التي تبحث عنها غير موجودة.' },
@@ -182,6 +190,60 @@ export default {
         title: 'توريد عمالة بنغلاديشية لليتوانيا | Bhuiyan Workforce Ltd.',
         description:
           'استقدام عمالة بنغلاديشية ماهرة لليتوانيا. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، التصنيع، الخدمات اللوجستية والنقل، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'latvia': {
+        name: 'لاتفيا',
+        title: 'توريد عمالة بنغلاديشية للاتفيا | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة للاتفيا. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، التصنيع، الخدمات اللوجستية، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'estonia': {
+        name: 'إستونيا',
+        title: 'توريد عمالة بنغلاديشية لإستونيا | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لإستونيا. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، التصنيع، تقنية المعلومات والتكنولوجيا، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'bulgaria': {
+        name: 'بلغاريا',
+        title: 'توريد عمالة بنغلاديشية لبلغاريا | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لبلغاريا. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، الزراعة وتصنيع الأغذية، التصنيع، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'cyprus': {
+        name: 'قبرص',
+        title: 'توريد عمالة بنغلاديشية لقبرص | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لقبرص. توظيف متوافق مع متطلبات BMET في قطاعات السياحة والضيافة، البناء والإنشاءات، الرعاية المنزلية، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'slovakia': {
+        name: 'سلوفاكيا',
+        title: 'توريد عمالة بنغلاديشية لسلوفاكيا | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لسلوفاكيا. توظيف متوافق مع متطلبات BMET في قطاعات تصنيع السيارات، البناء والإنشاءات، الخدمات اللوجستية والمستودعات، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'bosnia-herzegovina': {
+        name: 'البوسنة والهرسك',
+        title: 'توريد عمالة بنغلاديشية للبوسنة والهرسك | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة للبوسنة والهرسك. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، التصنيع، الزراعة، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'armenia': {
+        name: 'أرمينيا',
+        title: 'توريد عمالة بنغلاديشية لأرمينيا | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لأرمينيا. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، الزراعة، المنسوجات والملابس الجاهزة، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'montenegro': {
+        name: 'الجبل الأسود',
+        title: 'توريد عمالة بنغلاديشية للجبل الأسود | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة للجبل الأسود. توظيف متوافق مع متطلبات BMET في قطاعات الضيافة والسياحة، البناء والإنشاءات، التموين وخدمات الأغذية، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'georgia': {
+        name: 'جورجيا',
+        title: 'توريد عمالة بنغلاديشية لجورجيا | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لجورجيا. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، الضيافة والسياحة، الزراعة، مع تعبئة سريعة ودعم كامل للمستندات.',
       },
     },
     services: {},
