@@ -1,95 +1,21 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// All routes to prerender — sourced from sitemap.xml
-const PRERENDER_ROUTES = [
-  '/',
-  '/about',
-  '/apply',
-  '/blog',
-  '/blog/bmet-smart-card-explained',
-  '/blog/eastern-europe-factory-workers',
-  '/blog/gulf-construction-bangladesh',
-  '/blog/malaysia-vs-gulf-comparison',
-  '/blog/remittance-economy-bangladesh',
-  '/blog/spot-legitimate-recruitment-agency',
-  '/capabilities',
-  '/countries',
-  '/countries/bahrain',
-  '/countries/bosnia-herzegovina',
-  '/countries/bulgaria',
-  '/countries/croatia',
-  '/countries/cyprus',
-  '/countries/czech-republic',
-  '/countries/estonia',
-  '/countries/greece',
-  '/countries/hungary',
-  '/countries/italy',
-  '/countries/jordan',
-  '/countries/kuwait',
-  '/countries/latvia',
-  '/countries/lithuania',
-  '/countries/malaysia',
-  '/countries/maldives',
-  '/countries/oman',
-  '/countries/poland',
-  '/countries/portugal',
-  '/countries/qatar',
-  '/countries/romania',
-  '/countries/saudi-arabia',
-  '/countries/singapore',
-  '/countries/slovakia',
-  '/countries/uae',
-  '/employer-guide',
-  '/employer-guide/bahrain',
-  '/employer-guide/bosnia-herzegovina',
-  '/employer-guide/bulgaria',
-  '/employer-guide/croatia',
-  '/employer-guide/cyprus',
-  '/employer-guide/czech-republic',
-  '/employer-guide/estonia',
-  '/employer-guide/greece',
-  '/employer-guide/hungary',
-  '/employer-guide/italy',
-  '/employer-guide/jordan',
-  '/employer-guide/kuwait',
-  '/employer-guide/latvia',
-  '/employer-guide/lithuania',
-  '/employer-guide/malaysia',
-  '/employer-guide/maldives',
-  '/employer-guide/oman',
-  '/employer-guide/poland',
-  '/employer-guide/portugal',
-  '/employer-guide/qatar',
-  '/employer-guide/romania',
-  '/employer-guide/saudi-arabia',
-  '/employer-guide/singapore',
-  '/employer-guide/slovakia',
-  '/employer-guide/uae',
-  '/faq',
-  '/privacy',
-  '/services/construction',
-  '/services/drivers',
-  '/services/factory',
-  '/services/farm-garden',
-  '/services/hospitality',
-  '/services/warehouse',
-  '/terms',
-];
-
-export default defineConfig({
+// The page list now lives in src/routes.js (used by scripts/generate-pages.mjs).
+// Vendor chunking only applies to the browser build, not the --ssr build.
+export default defineConfig(({ isSsrBuild }) => ({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          map: ['react-simple-maps'],
+    rollupOptions: isSsrBuild
+      ? {}
+      : {
+          output: {
+            manualChunks: {
+              vendor: ['react', 'react-dom', 'react-router-dom'],
+              map: ['react-simple-maps'],
+            },
+          },
         },
-      },
-    },
   },
-});
-
-export { PRERENDER_ROUTES };
+}));
