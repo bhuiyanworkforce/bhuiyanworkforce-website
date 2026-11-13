@@ -17,6 +17,7 @@ import {
   organizationSchema, websiteSchema, breadcrumbSchema, providerRef,
 } from './schema.js';
 import { FAQ_EN } from './faq.en.js';
+import { pageContent, plain } from '../content/pages.js';
 
 const ROBOTS_INDEX = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
 const ROBOTS_NOINDEX = 'noindex, follow';
@@ -98,6 +99,17 @@ function jsonLdFor(route, lang, locale, meta, url) {
         '@type': 'FAQPage',
         mainEntity: FAQ_EN.map(([q, a]) => ({
           '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a },
+        })),
+      });
+    }
+    if (route.id === 'faq' && lang !== 'en') {
+      // Translated FAQ: mark up exactly the Q&As that are visible on the page.
+      const items = pageContent('faq', lang).categories.flatMap((c) => c.items);
+      out.push({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: items.map((i) => ({
+          '@type': 'Question', name: plain(i.q), acceptedAnswer: { '@type': 'Answer', text: plain(i.a) },
         })),
       });
     }
