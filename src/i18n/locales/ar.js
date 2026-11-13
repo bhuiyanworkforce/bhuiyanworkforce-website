@@ -1,4 +1,4 @@
-// Arabic head/SEO strings (home, About, FAQ and the Saudi Arabia country page so far).
+// Arabic head/SEO strings (home, About, FAQ and 10 country pages so far).
 //
 // Naming rule: the company name stays "Bhuiyan Workforce Ltd." in Latin script.
 // Terminology: "استقدام" and "توريد عمالة" are the terms Gulf employers search
@@ -11,7 +11,19 @@ const NAME = 'Bhuiyan Workforce Ltd.';
 
 export default {
   code: 'ar',
-  translated: ['page:home', 'page:about', 'page:faq', 'country:saudi-arabia'],
+  translated: [
+    'page:home', 'page:about', 'page:faq',
+    'country:saudi-arabia',
+    'country:uae',
+    'country:qatar',
+    'country:kuwait',
+    'country:oman',
+    'country:bahrain',
+    'country:jordan',
+    'country:malaysia',
+    'country:singapore',
+    'country:maldives',
+  ],
   head: {
     siteName: NAME,
     ogImageAlt: 'Bhuiyan Workforce Ltd. — استقدام عمالة بنغلاديشية بطريقة أخلاقية',
@@ -53,6 +65,60 @@ export default {
         title: 'توريد عمالة بنغلاديشية للمملكة العربية السعودية | Bhuiyan Workforce Ltd.',
         description:
           'استقدام عمالة بنغلاديشية ماهرة للمملكة العربية السعودية. توظيف متوافق مع متطلبات BMET في قطاعات البناء والبنية التحتية والنظافة والنقل، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'uae': {
+        name: 'الإمارات العربية المتحدة',
+        title: 'توريد عمالة بنغلاديشية للإمارات العربية المتحدة | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة للإمارات العربية المتحدة. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، الضيافة والسياحة، الخدمات اللوجستية والمستودعات، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'qatar': {
+        name: 'قطر',
+        title: 'توريد عمالة بنغلاديشية لقطر | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لقطر. توظيف متوافق مع متطلبات BMET في قطاعات البناء والبنية التحتية، إدارة المرافق، الضيافة، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'kuwait': {
+        name: 'الكويت',
+        title: 'توريد عمالة بنغلاديشية للكويت | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة للكويت. توظيف متوافق مع متطلبات BMET في قطاعات البناء والبنية التحتية، مساندة قطاع النفط والغاز، العمالة المنزلية، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'oman': {
+        name: 'عُمان',
+        title: 'توريد عمالة بنغلاديشية لعُمان | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لعُمان. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، السياحة والضيافة، النقل والخدمات اللوجستية، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'bahrain': {
+        name: 'البحرين',
+        title: 'توريد عمالة بنغلاديشية للبحرين | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة للبحرين. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، الضيافة والأغذية والمشروبات، إدارة المرافق، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'jordan': {
+        name: 'الأردن',
+        title: 'توريد عمالة بنغلاديشية للأردن | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة للأردن. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، صناعة الملابس الجاهزة، العمالة المنزلية، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'malaysia': {
+        name: 'ماليزيا',
+        title: 'توريد عمالة بنغلاديشية لماليزيا | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لماليزيا. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، التصنيع والتجميع، المزارع الكبرى والزراعة، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'singapore': {
+        name: 'سنغافورة',
+        title: 'توريد عمالة بنغلاديشية لسنغافورة | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لسنغافورة. توظيف متوافق مع متطلبات BMET في قطاعات البناء والإنشاءات، القطاع البحري وبناء السفن، التصنيع، مع تعبئة سريعة ودعم كامل للمستندات.',
+      },
+      'maldives': {
+        name: 'جزر المالديف',
+        title: 'توريد عمالة بنغلاديشية لجزر المالديف | Bhuiyan Workforce Ltd.',
+        description:
+          'استقدام عمالة بنغلاديشية ماهرة لجزر المالديف. توظيف متوافق مع متطلبات BMET في قطاعات بناء المنتجعات، الضيافة والأغذية والمشروبات، العمالة المنزلية، مع تعبئة سريعة ودعم كامل للمستندات.',
       },
     },
     services: {},
