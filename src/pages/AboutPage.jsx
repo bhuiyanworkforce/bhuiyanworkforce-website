@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from '../i18n/router';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
+import { pageContent } from '../content/pages';
 
 export default function AboutPage() {
-  const { lang } = useLang();
+  const { lang, urlLang } = useLang();
+  const c = pageContent('about', urlLang);
   return (
     <>
       <div className="page-hero">
@@ -25,20 +27,16 @@ export default function AboutPage() {
         <div className="container">
           <div className="about-mission-grid">
             <div className="about-mission-img">
-              <img src="/about-illustration.svg" alt="Illustration of deployment corridors from Bangladesh to partner countries" loading="lazy" decoding="async" />
+              <img src="/about-illustration.svg" alt={c.imgAlt} loading="lazy" decoding="async" />
             </div>
             <div>
               <div className="label-tag">{t('about_story_tag', lang)}</div>
               <h2 className="section-title" style={{ marginBottom: 20 }}>{t('about_story_h2', lang)}</h2>
-              <p style={{ color: 'var(--gray-500)', lineHeight: 1.75, marginBottom: 16 }}>
-                Bhuiyan Workforce Ltd. was founded with a straightforward mission: to create transparent, ethical pathways for skilled Bangladeshi workers to access legitimate international employment — while giving overseas employers a reliable, fully compliant recruitment partner.
-              </p>
-              <p style={{ color: 'var(--gray-500)', lineHeight: 1.75, marginBottom: 16 }}>
-                Bangladesh has one of the world's most capable overseas workforces, with millions of citizens working abroad in construction, manufacturing, logistics, and hospitality. Too often, those workers have been exploited by unregulated brokers. We exist to be different.
-              </p>
-              <p style={{ color: 'var(--gray-500)', lineHeight: 1.75 }}>
-                Bhuiyan Workforce Ltd. is building verified deployment corridors across 25+ countries across the Gulf, Southeast Asia, and Europe — with every placement designed to be BMET-registered and fully documented.
-              </p>
+              {c.story.map((p, i) => (
+                <p key={i} style={{ color: 'var(--gray-500)', lineHeight: 1.75, marginBottom: i < c.story.length - 1 ? 16 : 0 }}>
+                  {p}
+                </p>
+              ))}
             </div>
           </div>
         </div>
@@ -52,14 +50,7 @@ export default function AboutPage() {
             <h2 className="section-title">{t('about_values_h2', lang)}</h2>
           </div>
           <div className="values-grid">
-            {[
-              { icon: '⚖️', title: 'Transparent Recruitment',    body: 'Workers receive verified, honest job offers in their own language — with clear terms, full documentation, and no hidden fees — before they commit to anything.' },
-              { icon: '🏛️', title: 'Regulatory Compliance',  body: 'Every placement is registered with BMET. Every worker has passed a GAMCA medical. We maintain complete documentation for every deployment.' },
-              { icon: '🔍', title: 'Skills Verification',    body: 'Practical trade tests and independent reference checks ensure you receive workers with the skills they claim.' },
-              { icon: '🤝', title: 'Long-Term Relationships', body: 'We measure success not by transaction volume but by how many employers return for their next requirement.' },
-              { icon: '🌍', title: 'Destination Knowledge',   body: 'Understanding local labour law, visa categories, and cultural context at each destination reduces friction and delays.' },
-              { icon: '📣', title: 'Transparency',            body: 'Employers receive clear timelines, honest candidate availability assessments, and a fully itemised cost breakdown before committing to anything.' },
-            ].map(v => (
+            {c.values.map(v => (
               <div className="value-card" key={v.title}>
                 <div className="value-icon" aria-hidden="true">{v.icon}</div>
                 <h3>{v.title}</h3>
@@ -76,36 +67,10 @@ export default function AboutPage() {
           <div className="section-header">
             <div className="label-tag">{t('about_team_tag', lang)}</div>
             <h2 className="section-title">{t('about_team_h2', lang)}</h2>
-            <p className="section-subtitle">Our team combines recruitment expertise, immigration knowledge, and deep sector understanding across all six service categories.</p>
+            <p className="section-subtitle">{c.teamIntro}</p>
           </div>
           <div className="team-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
-            {[
-              {
-                photo: '/team-rezaul.webp',
-                name: 'MD Rezaul Kabir Bhuiyan',
-                role: 'Founder & CEO',
-                body: 'Computer Science graduate (Jiangnan University, China) with expertise in international business development and technology. Leads all strategic partnerships and business development across Gulf, European, and Asian markets.',
-              },
-              {
-                photo: '/team-asraful.webp',
-                name: 'Asraful Kabir Bhuiyan',
-                role: 'Business Development Manager',
-                body: 'Drives employer relationships and new market expansion across Gulf, European, and Asian markets.',
-              },
-              {
-                photo: '/team-kishor.webp',
-                name: 'Kishor Kumar',
-                role: 'Compliance & Documentation Manager',
-                body: 'Ensures every deployment meets BMET, GAMCA, and destination-country legal requirements. Expert in overseas employment documentation.',
-              },
-              {
-                photo: null,
-                initials: 'AB',
-                name: 'Akhi Begum',
-                role: 'Head of Operations',
-                body: 'Oversees day-to-day recruitment operations, candidate processing, and ensures every deployment meets compliance standards.',
-              },
-            ].map(m => (
+            {c.team.map(m => (
               <div className="team-card" key={m.name}>
                 <div className="team-avatar">
                   {m.photo
@@ -113,7 +78,7 @@ export default function AboutPage() {
                     : <span>{m.initials}</span>
                   }
                 </div>
-                <h4>{m.name}</h4>
+                <h4><bdi dir="ltr">{m.name}</bdi></h4>
                 <p style={{ fontWeight: 600, color: 'var(--gold)', fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 8 }}>{m.role}</p>
                 <p style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }}>{m.body}</p>
               </div>
@@ -126,33 +91,14 @@ export default function AboutPage() {
       <section className="section bg-off-white">
         <div className="container">
           <div className="section-header text-center" style={{ textAlign: 'center' }}>
-            <div className="label-tag">Regional Partners</div>
-            <h2 className="section-title">Our Regional Partner Network</h2>
+            <div className="label-tag">{c.partnersTag}</div>
+            <h2 className="section-title">{c.partnersTitle}</h2>
             <p className="section-subtitle" style={{ maxWidth: 680, margin: '12px auto 0' }}>
-              Bhuiyan Workforce Ltd. works with a network of licensed recruitment and employment agencies across the Gulf and Europe. Our partners hold valid government-issued licenses in their respective countries and operate verified employer relationships across multiple industries.
+              {c.partnersSub}
             </p>
           </div>
           <div className="values-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)', marginTop: 40 }}>
-            {[
-              {
-                flag: '🇵🇱',
-                region: 'EU Licensed Partner',
-                country: 'Poland',
-                body: 'Government-registered employment agency. Authorized to place workers across Poland and the broader European Union.',
-              },
-              {
-                flag: '🇦🇪',
-                region: 'Gulf Licensed Partner',
-                country: 'UAE',
-                body: 'Licensed recruitment agency operating from Dubai with active employer networks across the GCC region.',
-              },
-              {
-                flag: '🇷🇴',
-                region: 'EU Licensed Partner',
-                country: 'Romania',
-                body: 'Authorized employment agency with verified employer relationships in Romania and wider Eastern Europe.',
-              },
-            ].map(p => (
+            {c.partners.map(p => (
               <div className="value-card" key={p.country}>
                 <div className="value-icon" aria-hidden="true" style={{ fontSize: '2rem' }}>{p.flag}</div>
                 <p style={{ fontWeight: 700, fontSize: '0.78rem', color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4 }}>{p.region}</p>
@@ -169,10 +115,10 @@ export default function AboutPage() {
         <div className="container">
           <div className="cta-band-inner">
             <div>
-              <h2>Work With Us</h2>
-              <p>We're always happy to discuss your manpower requirements — no obligation.</p>
+              <h2>{c.ctaTitle}</h2>
+              <p>{c.ctaDesc}</p>
             </div>
-            <Link to="/#contact" className="btn btn-navy">Get In Touch →</Link>
+            <Link to="/#contact" className="btn btn-navy">{c.ctaBtn}</Link>
           </div>
         </div>
       </section>
