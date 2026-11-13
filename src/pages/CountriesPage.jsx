@@ -3,15 +3,28 @@ import { Link } from '../i18n/router';
 import { COUNTRIES, COUNTRY_REGIONS } from '../data/countries';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
+import { localizeCountry } from '../content';
+
+// English region value (used for filtering) -> UI string key.
+const REGION_KEYS = {
+  Gulf: 'cn.r_gulf',
+  'Southeast Asia': 'cn.r_sea',
+  'South Asia': 'cn.r_sa',
+  'Middle East': 'cn.r_me',
+  Europe: 'cn.r_eu',
+  'Caucasus & Central Asia': 'cn.r_cca',
+};
 
 export default function CountriesPage() {
   const [activeRegion, setActiveRegion] = useState('All');
-  const { lang } = useLang();
+  const { lang, urlLang } = useLang();
+  const tr = (key, vars) => t(key, lang, vars);
 
   const regions = ['All', ...COUNTRY_REGIONS];
-  const filtered = activeRegion === 'All'
-    ? COUNTRIES
-    : COUNTRIES.filter(c => c.region === activeRegion);
+  // Filter on the English region; show the translated record.
+  const filtered = COUNTRIES
+    .filter(base => activeRegion === 'All' || base.region === activeRegion)
+    .map(base => localizeCountry(base, urlLang));
 
   return (
     <>
@@ -19,7 +32,7 @@ export default function CountriesPage() {
       <div className="page-hero">
         <div className="container">
           <div className="page-hero-inner">
-            <div className="label-tag" style={{ marginBottom: 16 }}>Global Reach</div>
+            <div className="label-tag" style={{ marginBottom: 16 }}>{tr('cn.label')}</div>
             <h1>{t('countries_hero_h1', lang)}</h1>
             <p>{t('countries_hero_sub', lang)}</p>
           </div>
@@ -47,7 +60,7 @@ export default function CountriesPage() {
                   transition: 'all 0.2s ease',
                 }}
               >
-                {r}
+                {r === 'All' ? tr('cn.all') : tr(REGION_KEYS[r] || r)}
               </button>
             ))}
           </div>
@@ -85,7 +98,7 @@ export default function CountriesPage() {
                     ))}
                     {country.topSectors.length > 3 && (
                       <span style={{ padding: '3px 10px', background: 'var(--off-white)', border: '1px solid var(--gray-100)', borderRadius: 999, fontSize: '0.72rem', color: 'var(--gray-500)' }}>
-                        +{country.topSectors.length - 3} more
+                        {tr('cn.more', { n: country.topSectors.length - 3 })}
                       </span>
                     )}
                   </div>
@@ -93,18 +106,18 @@ export default function CountriesPage() {
                   {/* Quick Stats */}
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 20 }}>
                     <div style={{ background: 'var(--off-white)', borderRadius: 8, padding: '10px 12px' }}>
-                      <div style={{ fontSize: '0.65rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', marginBottom: 4 }}>Processing</div>
+                      <div style={{ fontSize: '0.65rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', marginBottom: 4 }}>{tr('cn.processing')}</div>
                       <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--navy)', lineHeight: 1.3 }}>{country.processingTime}</div>
                     </div>
                     <div style={{ background: 'var(--off-white)', borderRadius: 8, padding: '10px 12px' }}>
-                      <div style={{ fontSize: '0.65rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', marginBottom: 4 }}>Visa Type</div>
+                      <div style={{ fontSize: '0.65rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gold)', marginBottom: 4 }}>{tr('c.visa_type')}</div>
                       <div style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--navy)', lineHeight: 1.3 }}>{country.visaType.split(' ')[0]} {country.visaType.split(' ')[1]}</div>
                     </div>
                   </div>
 
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <span style={{ fontSize: '0.8rem', color: 'var(--gray-500)' }}>{country.documents.length} documents required</span>
-                    <span style={{ color: 'var(--gold)', fontWeight: 700, fontSize: '0.85rem' }}>View Details →</span>
+                    <span style={{ fontSize: '0.8rem', color: 'var(--gray-500)' }}>{tr('cn.docs_req', { n: country.documents.length })}</span>
+                    <span style={{ color: 'var(--gold)', fontWeight: 700, fontSize: '0.85rem' }}>{tr('cn.view')}</span>
                   </div>
                 </div>
               </Link>
@@ -114,9 +127,9 @@ export default function CountriesPage() {
           {/* Bottom note */}
           <div style={{ marginTop: 56, textAlign: 'center', padding: '32px', background: 'var(--off-white)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--gray-100)' }}>
             <p style={{ fontSize: '1rem', color: 'var(--text-body)', marginBottom: 16 }}>
-              Don't see your target country? We may still be able to help.
+              {tr('cn.note')}
             </p>
-            <Link to="/#contact" className="btn btn-primary">Contact Us to Discuss →</Link>
+            <Link to="/#contact" className="btn btn-primary">{tr('cn.contact_btn')}</Link>
           </div>
         </div>
       </section>
