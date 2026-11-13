@@ -461,27 +461,31 @@ button { font-family: var(--font-body); cursor: pointer; border: none; backgroun
 .prose a { color: var(--navy); text-decoration: underline; }
 .prose a:hover { color: var(--gold); }
 
-/* ── RTL / Arabic support ──────────────────────────────────── */
+/* ── RTL / Arabic ───────────────────────────────────────────────
+   <html dir="rtl"> is now set in the generated HTML, so flex and grid rows already run
+   right-to-left. The rules below only flip what was written with physical left/right values. */
+html[lang="ar"] {
+  --font-display: 'Noto Sans Arabic', 'DM Sans', sans-serif;
+  --font-body: 'Noto Sans Arabic', 'DM Sans', sans-serif;
+}
+/* Letter-spacing breaks Arabic letter joining. */
+[dir="rtl"] *, [dir="rtl"] *::before, [dir="rtl"] *::after { letter-spacing: normal !important; }
 [dir="rtl"] .header-nav,
-[dir="rtl"] .mobile-menu {
-  direction: rtl;
-}
-[dir="rtl"] .hero-title,
-[dir="rtl"] .section-title,
-[dir="rtl"] .hero-desc,
-[dir="rtl"] .section-subtitle {
-  direction: rtl;
-  text-align: right;
-}
-[dir="rtl"] .header-inner {
-  flex-direction: row-reverse;
-}
-[dir="rtl"] .breadcrumb {
-  direction: rtl;
-}
-[dir="rtl"] .hero-actions {
-  flex-direction: row-reverse;
-}
+[dir="rtl"] .mobile-menu { direction: rtl; }
+[dir="rtl"] .mobile-close { right: auto; left: 24px; }
+[dir="rtl"] .hero-badge { left: auto; right: -20px; }
+[dir="rtl"] .hero-flags { right: auto; left: -16px; }
+[dir="rtl"] .how-we-work::before { right: auto; left: -100px; }
+[dir="rtl"] .form-group label .req { margin-left: 0; margin-right: 2px; }
+[dir="rtl"] .footer-links a,
+[dir="rtl"] .footer-links button { text-align: right; }
+[dir="rtl"] .faq-question { text-align: right; }
+[dir="rtl"] .prose ul li { padding: 6px 24px 6px 0; }
+[dir="rtl"] .prose ul li::before { content: '←'; left: auto; right: 0; }
+[dir="rtl"] .process-list li { padding: 16px 56px 16px 16px; border-left: 0; border-right: 2px solid var(--gray-100); margin-left: 0; margin-right: 24px; }
+[dir="rtl"] .process-list li::before { left: auto; right: -24px; }
+/* Breadcrumb separators (the spans without a style attribute) point the other way. */
+[dir="rtl"] .breadcrumb > span:not([style]) { display: inline-block; transform: scaleX(-1); }
 
 /* ── Language switcher header spacing ─────────────────────── */
 .header-actions {
