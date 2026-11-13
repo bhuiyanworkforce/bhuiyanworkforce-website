@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { SERVICES } from '../data/services';
+import { useLang } from '../i18n/LanguageContext';
+import { t } from '../i18n/translations';
 
 const EMPTY = { name: '', company: '', email: '', service: '', serviceOther: '', message: '', attachment: null, hp_phone: '' };
 
@@ -12,19 +14,21 @@ function toBase64(file) {
   });
 }
 
-function validate(f) {
+function validate(f, tr) {
   const e = {};
-  if (!f.name.trim())    e.name    = 'Your name is required.';
-  if (!f.email.trim())   e.email   = 'Email address is required.';
+  if (!f.name.trim())    e.name    = tr('cf.err_name');
+  if (!f.email.trim())   e.email   = tr('cf.err_email_req');
   else if (!f.email.includes('@') || !f.email.includes('.') || f.email.indexOf('@') === 0 || f.email.lastIndexOf('.') < f.email.indexOf('@'))
-                         e.email   = 'Please enter a valid email address.';
-  if (!f.message.trim()) e.message = 'Please describe your requirements.';
+                         e.email   = tr('cf.err_email_bad');
+  if (!f.message.trim()) e.message = tr('cf.err_msg_req');
   else if (f.message.trim().length < 20)
-                         e.message = 'Too short — please add more detail (min 20 characters).';
+                         e.message = tr('cf.err_msg_short');
   return e;
 }
 
 export default function ContactForm() {
+  const { lang } = useLang();
+  const tr = (key) => t(key, lang);
   const [fields,      setFields]      = useState(EMPTY);
   const [errors,      setErrors]      = useState({});
   const [submitting,  setSubmitting]  = useState(false);
@@ -47,7 +51,7 @@ export default function ContactForm() {
       return;
     }
 
-    const errs = validate(fields);
+    const errs = validate(fields, tr);
     if (Object.keys(errs).length) { setErrors(errs); return; }
     setSubmitting(true);
     setServerError(false);
@@ -94,8 +98,8 @@ export default function ContactForm() {
   if (submitted) return (
     <div className="form-success">
       <div className="form-success-icon">✓</div>
-      <h3>Message Sent!</h3>
-      <p>Thank you for reaching out. We'll get back to you within one business day.</p>
+      <h3>{tr('cf.success_title')}</h3>
+      <p>{tr('cf.success_text')}</p>
     </div>
   );
 
@@ -115,61 +119,62 @@ export default function ContactForm() {
 
       {serverError && (
         <div className="form-error-banner">
-          Something went wrong. Please try again or email us at{' '}
+          {tr('cf.error_before')}{' '}
           <a href="mailto:info@bhuiyanworkforce.com" style={{ color: '#e53e3e', fontWeight: 600 }}>
-            info@bhuiyanworkforce.com
-          </a>{' '}directly.
+            <bdi dir="ltr">info@bhuiyanworkforce.com</bdi>
+          </a>{' '}{tr('cf.error_after')}
         </div>
       )}
 
       <div className="form-group">
-        <label htmlFor="f-name">Your Name <span className="required">*</span></label>
-        <input id="f-name" name="name" value={fields.name} onChange={handleChange} placeholder="e.g. Ahmed Al-Rashid" />
+        <label htmlFor="f-name">{tr('cf.name')} <span className="required">*</span></label>
+        <input id="f-name" name="name" value={fields.name} onChange={handleChange} placeholder={tr('cf.name_ph')} />
         {errors.name && <span className="field-error">{errors.name}</span>}
       </div>
 
       <div className="form-group">
-        <label htmlFor="f-email">Email Address <span className="required">*</span></label>
-        <input id="f-email" name="email" type="email" value={fields.email} onChange={handleChange} placeholder="you@company.com" />
+        <label htmlFor="f-email">{tr('cf.email')} <span className="required">*</span></label>
+        <input id="f-email" name="email" type="email" dir="ltr" value={fields.email} onChange={handleChange} placeholder="you@company.com" />
         {errors.email && <span className="field-error">{errors.email}</span>}
       </div>
 
       <div className="form-group">
-        <label htmlFor="f-company">Company / Organisation</label>
-        <input id="f-company" name="company" value={fields.company} onChange={handleChange} placeholder="Your company name (optional)" />
+        <label htmlFor="f-company">{tr('cf.company')}</label>
+        <input id="f-company" name="company" value={fields.company} onChange={handleChange} placeholder={tr('cf.company_ph')} />
       </div>
 
       <div className="form-group">
-        <label htmlFor="f-service">Service Required</label>
+        <label htmlFor="f-service">{tr('cf.service')}</label>
         <select id="f-service" name="service" value={fields.service} onChange={handleChange}>
-          <option value="">— Select a service —</option>
-          <option>Founding Employer Partner Programme</option>
-          {SERVICES.map(s => <option key={s.slug}>{s.name}</option>)}
-          <option>Other</option>
+          {/* option values stay English: they are sent to the Worker as the service label */}
+          <option value="">{tr('cf.service_ph')}</option>
+          <option value="Founding Employer Partner Programme">{tr('cf.founding')}</option>
+          {SERVICES.map(s => <option key={s.slug} value={s.name}>{s.name}</option>)}
+          <option value="Other">{tr('cf.other')}</option>
         </select>
       </div>
 
       {fields.service === 'Other' && (
         <div className="form-group">
-          <label htmlFor="f-serviceOther">Please specify</label>
-          <input id="f-serviceOther" name="serviceOther" value={fields.serviceOther} onChange={handleChange} placeholder="Describe the service you need" />
+          <label htmlFor="f-serviceOther">{tr('cf.specify')}</label>
+          <input id="f-serviceOther" name="serviceOther" value={fields.serviceOther} onChange={handleChange} placeholder={tr('cf.specify_ph')} />
         </div>
       )}
 
       <div className="form-group">
-        <label htmlFor="f-message">Your Requirements <span className="required">*</span></label>
+        <label htmlFor="f-message">{tr('cf.message')} <span className="required">*</span></label>
         <textarea
           id="f-message" name="message" rows={5}
           value={fields.message} onChange={handleChange}
-          placeholder="Please describe your workforce requirements — number of workers, roles, destination country, timeline, etc."
+          placeholder={tr('cf.message_ph')}
         />
         {errors.message && <span className="field-error">{errors.message}</span>}
       </div>
 
       <div className="form-group">
         <label htmlFor="f-attachment">
-          Attach Job Description / Demand Letter{' '}
-          <span style={{ color: 'var(--gray-500)', fontWeight: 400 }}>(optional)</span>
+          {tr('cf.attach')}{' '}
+          <span style={{ color: 'var(--gray-500)', fontWeight: 400 }}>{tr('cf.optional')}</span>
         </label>
         <input
           id="f-attachment"
@@ -178,7 +183,7 @@ export default function ContactForm() {
           onChange={e => {
             const file = e.target.files[0];
             if (file && file.size > 5 * 1024 * 1024) {
-              alert('File is too large. Maximum size is 5MB.');
+              alert(tr('cf.file_big'));
               e.target.value = '';
               return;
             }
@@ -186,12 +191,12 @@ export default function ContactForm() {
           }}
           style={{ padding: '10px 0', fontSize: '0.875rem', color: 'var(--gray-500)' }}
         />
-        <span style={{ fontSize: '0.75rem', color: 'var(--gray-500)' }}>PDF, Word, or image — max 5MB</span>
+        <span style={{ fontSize: '0.75rem', color: 'var(--gray-500)' }}>{tr('cf.file_hint')}</span>
       </div>
 
       <div className="form-submit-row">
         <button type="submit" className="btn btn-primary" disabled={submitting}>
-          {submitting ? 'Sending…' : 'Send Message →'}
+          {submitting ? tr('cf.sending') : tr('cf.send')}
         </button>
       </div>
     </form>

@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link, useNavigate } from '../i18n/router';
 import { LogoSVG } from './Logo';
+import { useLang } from '../i18n/LanguageContext';
+import { t } from '../i18n/translations';
 
 export default function Footer() {
   const navigate = useNavigate();
+  const { lang } = useLang();
+  const tr = (key) => t(key, lang);
   const goContact = () => {
     const el = document.getElementById('contact');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -16,9 +20,9 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <LogoSVG variant="light" width={160} />
-            <p style={{ marginTop: 16 }}>Connecting skilled Bangladeshi workers with international employers across 25+ countries. Ethical, transparent, and fully documented recruitment.</p>
+            <p style={{ marginTop: 16 }}>{tr('ft.tagline')}</p>
             <div style={{ marginTop: 14, fontSize: '0.8rem', color: 'rgba(255,255,255,0.45)', lineHeight: 1.6 }}>
-              📍 Kawtoli, Brahmanbaria, Bangladesh 3400
+              📍 <bdi dir="ltr">Kawtoli, Brahmanbaria, Bangladesh 3400</bdi>
             </div>
             <div className="social-links" style={{ marginTop: 20 }}>
               <a href="https://linkedin.com/company/bhuiyan-workforce" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
@@ -28,49 +32,49 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h4>Services</h4>
+            <h4>{tr('ft.services')}</h4>
             <ul className="footer-links">
-              <li><Link to="/services/construction">Construction</Link></li>
-              <li><Link to="/services/drivers">Drivers &amp; Transport</Link></li>
-              <li><Link to="/services/hospitality">Chefs &amp; Hospitality</Link></li>
-              <li><Link to="/services/farm-garden">Farm &amp; Garden</Link></li>
-              <li><Link to="/services/warehouse">Warehouse &amp; Logistics</Link></li>
-              <li><Link to="/services/factory">Factory &amp; Manufacturing</Link></li>
+              <li><Link to="/services/construction">{tr('ft.svc_construction')}</Link></li>
+              <li><Link to="/services/drivers">{tr('ft.svc_drivers')}</Link></li>
+              <li><Link to="/services/hospitality">{tr('ft.svc_hospitality')}</Link></li>
+              <li><Link to="/services/farm-garden">{tr('ft.svc_farm')}</Link></li>
+              <li><Link to="/services/warehouse">{tr('ft.svc_warehouse')}</Link></li>
+              <li><Link to="/services/factory">{tr('ft.svc_factory')}</Link></li>
             </ul>
           </div>
 
           <div className="footer-col">
-            <h4>Company</h4>
+            <h4>{tr('ft.company')}</h4>
             <ul className="footer-links">
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/capabilities">Capabilities Deck</Link></li>
-              <li><button onClick={goContact}>Contact</button></li>
-              <li><Link to="/faq">FAQ</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/countries">Countries</Link></li>
-              <li><Link to="/privacy">Privacy Policy</Link></li>
-              <li><Link to="/terms">Terms of Service</Link></li>
+              <li><Link to="/about">{tr('nav_about')}</Link></li>
+              <li><Link to="/capabilities">{tr('ft.capdeck')}</Link></li>
+              <li><button onClick={goContact}>{tr('ft.contact')}</button></li>
+              <li><Link to="/faq">{tr('nav_faq')}</Link></li>
+              <li><Link to="/blog">{tr('nav_blog')}</Link></li>
+              <li><Link to="/countries">{tr('nav_countries')}</Link></li>
+              <li><Link to="/privacy">{tr('ft.privacy')}</Link></li>
+              <li><Link to="/terms">{tr('ft.terms')}</Link></li>
             </ul>
           </div>
 
           <div className="footer-col">
-            <h4>Contact</h4>
+            <h4>{tr('ft.contact')}</h4>
             <ul className="footer-links">
               <li><a href="mailto:info@bhuiyanworkforce.com"><bdi dir="ltr">info@bhuiyanworkforce.com</bdi></a></li>
               <li><a href="mailto:partnerships@bhuiyanworkforce.com"><bdi dir="ltr">partnerships@bhuiyanworkforce.com</bdi></a></li>
               <li><a href="mailto:careers@bhuiyanworkforce.com"><bdi dir="ltr">careers@bhuiyanworkforce.com</bdi></a></li>
               <li><a href="tel:+8801864567912"><bdi dir="ltr">+880 1864 567912</bdi></a></li>
-              <li><a href="https://wa.me/8801864567912" target="_blank" rel="noopener noreferrer">WhatsApp (Employers)</a></li>
-              <li><a href="https://wa.me/8801978356710" target="_blank" rel="noopener noreferrer">WhatsApp (Workers)</a></li>
+              <li><a href="https://wa.me/8801864567912" target="_blank" rel="noopener noreferrer">{tr('ft.wa_employers')}</a></li>
+              <li><a href="https://wa.me/8801978356710" target="_blank" rel="noopener noreferrer">{tr('ft.wa_workers')}</a></li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>© <span suppressHydrationWarning>{new Date().getFullYear()}</span> Bhuiyan Workforce Ltd. All rights reserved. Registered in Bangladesh.</p>
+          <p>© <span suppressHydrationWarning>{new Date().getFullYear()}</span> <bdi>Bhuiyan Workforce Ltd.</bdi> {tr('ft.rights')}</p>
           <div className="footer-bottom-links">
-            <Link to="/privacy">Privacy Policy</Link>
-            <Link to="/terms">Terms of Service</Link>
+            <Link to="/privacy">{tr('ft.privacy')}</Link>
+            <Link to="/terms">{tr('ft.terms')}</Link>
           </div>
         </div>
       </div>
@@ -80,7 +84,7 @@ export default function Footer() {
     <div style={{ position: 'fixed', bottom: 24, insetInlineEnd: 20, zIndex: 999, display: 'flex', flexDirection: 'column', gap: 12 }}>
       <a
         href="tel:+8801864567912"
-        aria-label="Call us"
+        aria-label={tr('ft.call')}
         style={{
           width: 56, height: 56, borderRadius: '50%',
           background: 'var(--navy)', color: 'var(--gold)',
@@ -98,7 +102,7 @@ export default function Footer() {
       <a
         href="https://wa.me/8801864567912"
         target="_blank" rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
+        aria-label={tr('ft.chat_wa')}
         style={{
           width: 56, height: 56, borderRadius: '50%',
           background: '#25D366',
