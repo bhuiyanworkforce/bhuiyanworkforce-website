@@ -67,11 +67,11 @@ export default {
       },
       privacy: {
         title: 'Privacy Policy — Bhuiyan Workforce Ltd.',
-        description: 'How Bhuiyan Workforce Ltd. handles your personal data.',
+        description: 'How Bhuiyan Workforce Ltd. collects, uses, and protects your personal information in accordance with Bangladesh law.',
       },
       terms: {
         title: 'Terms of Service — Bhuiyan Workforce Ltd.',
-        description: 'Terms and conditions for use of the Bhuiyan Workforce website and services.',
+        description: 'Terms and conditions governing use of the Bhuiyan Workforce Ltd. website and recruitment services, governed by the laws of Bangladesh.',
       },
     },
     notFound: { title: `Page Not Found — ${NAME}`, description: 'The page you are looking for does not exist.' },
