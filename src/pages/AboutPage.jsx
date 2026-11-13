@@ -1,19 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../i18n/router';
 import { useLang } from '../i18n/LanguageContext';
-import useSchema from '../hooks/useSchema';
 import { t } from '../i18n/translations';
 
 export default function AboutPage() {
   const { lang } = useLang();
-  useSchema({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhuiyanworkforce.com/" },
-      { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://bhuiyanworkforce.com/about" }
-    ]
-  });
   return (
     <>
       <div className="page-hero">

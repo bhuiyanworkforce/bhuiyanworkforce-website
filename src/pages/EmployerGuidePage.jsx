@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../i18n/router';
 
 const GUIDE_CONTENTS = [
   { icon: '📋', title: 'Understanding BMET & Emigration Clearance', desc: 'Step-by-step explanation of the Bangladesh Manpower Bureau process every worker must complete.' },

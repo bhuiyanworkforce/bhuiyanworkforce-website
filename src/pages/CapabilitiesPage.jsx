@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../i18n/router';
 import { SERVICES } from '../data/services';
 
 const PROCESS_STEPS = [
@@ -195,7 +195,7 @@ export default function CapabilitiesPage() {
           <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap' }}>
             <p style={{ margin: 0, fontSize: '0.875rem', color: 'var(--gray-500)' }}>
               Share this capabilities page:{' '}
-              <strong style={{ color: 'var(--navy)', marginLeft: 8 }}>bhuiyanworkforce.com/capabilities</strong>
+              <strong style={{ color: 'var(--navy)', marginInlineStart: 8 }}>bhuiyanworkforce.com/capabilities</strong>
             </p>
             <div style={{ display: 'flex', gap: 12 }}>
               <button

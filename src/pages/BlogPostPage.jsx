@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import React from 'react';
+import { useParams, Link, Navigate } from '../i18n/router';
 import { getPost, POSTS } from '../data/posts';
 
 function renderInlineBold(text) {
@@ -24,7 +24,7 @@ function parseBulletList(lines, startIndex, keyVal) {
     const itemLine = lines[idx].trim().slice(2);
     items.push(
       <li key={`bullet-${itemLine.slice(0, 40)}`} style={{ padding: '5px 0 5px 24px', position: 'relative', fontSize: '0.95rem', color: 'var(--text-body)', lineHeight: 1.7 }}>
-        <span style={{ position: 'absolute', left: 0, color: 'var(--gold)', fontWeight: 700 }}>→</span>
+        <span style={{ position: 'absolute', insetInlineStart: 0, color: 'var(--gold)', fontWeight: 700 }}>→</span>
         {renderInlineBold(itemLine)}
       </li>
     );
@@ -45,7 +45,7 @@ function parseNumberedList(lines, startIndex, keyVal) {
     );
     idx += 1;
   }
-  return { element: <ol key={keyVal} style={{ marginBottom: 20, paddingLeft: 20 }}>{items}</ol>, consumed: idx - startIndex };
+  return { element: <ol key={keyVal} style={{ marginBottom: 20, paddingInlineStart: 20 }}>{items}</ol>, consumed: idx - startIndex };
 }
 
 function renderContent(content) {
@@ -91,68 +91,6 @@ function renderContent(content) {
 export default function BlogPostPage() {
   const { slug } = useParams();
   const post = getPost(slug);
-
-  useEffect(() => {
-    if (!post) return;
-
-    const title = `${post.title} — Bhuiyan Workforce Ltd.`;
-    const description = post.excerpt;
-
-    document.title = title;
-    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
-    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://bhuiyanworkforce.com/blog/${slug}`);
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.rel = 'canonical';
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `https://bhuiyanworkforce.com/blog/${slug}`;
-
-    const jsonLd = {
-      '@context': 'https://schema.org',
-      '@type': 'BlogPosting',
-      headline: post.title,
-      description: post.excerpt,
-      url: `https://bhuiyanworkforce.com/blog/${slug}`,
-      datePublished: post.date,
-      author: {
-        '@type': 'Organization',
-        name: 'Bhuiyan Workforce Ltd.',
-        url: 'https://bhuiyanworkforce.com',
-      },
-      publisher: {
-        '@type': 'Organization',
-        name: 'Bhuiyan Workforce Ltd.',
-        logo: {
-          '@type': 'ImageObject',
-          url: 'https://bhuiyanworkforce.com/logo.png',
-        },
-      },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bhuiyanworkforce.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://bhuiyanworkforce.com/blog' },
-          { '@type': 'ListItem', position: 3, name: post.title, item: `https://bhuiyanworkforce.com/blog/${slug}` },
-        ],
-      },
-    };
-
-    let script = document.querySelector('#jsonld-blog');
-    if (!script) {
-      script = document.createElement('script');
-      script.id = 'jsonld-blog';
-      script.type = 'application/ld+json';
-      document.head.appendChild(script);
-    }
-    script.textContent = JSON.stringify(jsonLd);
-
-    return () => { document.querySelector('#jsonld-blog')?.remove(); };
-  }, [post, slug]);
 
   if (!post) return <Navigate to="/blog" replace />;
 

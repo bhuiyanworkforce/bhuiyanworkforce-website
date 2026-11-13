@@ -1,20 +1,7 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from '../i18n/router';
 
 export default function PrivacyPage() {
-  useEffect(() => {
-    const title = 'Privacy Policy — Bhuiyan Workforce Ltd.';
-    const description = 'How Bhuiyan Workforce Ltd. collects, uses, and protects your personal information in accordance with Bangladesh law.';
-    document.title = title;
-    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
-    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:url"]')?.setAttribute('content', 'https://bhuiyanworkforce.com/privacy');
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.appendChild(canonical); }
-    canonical.href = 'https://bhuiyanworkforce.com/privacy';
-  }, []);
-
   return (
     <>
       <div className="page-hero">

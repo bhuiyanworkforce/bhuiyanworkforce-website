@@ -1,80 +1,10 @@
-import React, { useEffect } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import React from 'react';
+import { useParams, Link, Navigate } from '../i18n/router';
 import { getService, SERVICES } from '../data/services';
-import useSchema from '../hooks/useSchema';
 
 export default function ServicePage() {
   const { slug } = useParams();
   const service  = getService(slug);
-
-  // Breadcrumb + Service structured data
-  useSchema(service ? {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhuiyanworkforce.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://bhuiyanworkforce.com/services" },
-          { "@type": "ListItem", "position": 3, "name": service.name, "item": `https://bhuiyanworkforce.com/services/${slug}` }
-        ]
-      }
-    ]
-  } : null);
-
-  useEffect(() => {
-    if (!service) return;
-
-    const title = `${service.name} Workers from Bangladesh — Bhuiyan Workforce Ltd.`;
-    const description = `Hire skilled Bangladeshi ${service.name.toLowerCase()} workers. ${service.shortDesc} BMET-compliant, fast deployment to ${service.countries?.slice(0, 3).join(', ')} and more.`;
-
-    document.title = title;
-    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
-    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://bhuiyanworkforce.com/services/${slug}`);
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.rel = 'canonical';
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `https://bhuiyanworkforce.com/services/${slug}`;
-
-    const jsonLd = {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      name: service.name,
-      description: service.shortDesc,
-      url: `https://bhuiyanworkforce.com/services/${slug}`,
-      provider: {
-        '@type': 'Organization',
-        name: 'Bhuiyan Workforce Ltd.',
-        url: 'https://bhuiyanworkforce.com',
-      },
-      areaServed: service.countries,
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bhuiyanworkforce.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://bhuiyanworkforce.com/#services' },
-          { '@type': 'ListItem', position: 3, name: service.name, item: `https://bhuiyanworkforce.com/services/${slug}` },
-        ],
-      },
-    };
-
-    let script = document.querySelector('#jsonld-service');
-    if (!script) {
-      script = document.createElement('script');
-      script.id = 'jsonld-service';
-      script.type = 'application/ld+json';
-      document.head.appendChild(script);
-    }
-    script.textContent = JSON.stringify(jsonLd);
-
-    return () => { document.querySelector('#jsonld-service')?.remove(); };
-  }, [service, slug]);
 
   if (!service) return <Navigate to="/" replace />;
 
@@ -101,9 +31,13 @@ export default function ServicePage() {
 
             {/* Left column */}
             <div>
-              <div className="service-detail-image">
-                <img src={service.image.replace('q=80', 'q=80&fm=webp')} alt={`${service.name} workers`} loading="lazy" decoding="async" />
-              </div>
+              {/* Five services (welding, plumbing/HVAC, heavy equipment, marine, domestic) have no image
+                  in the data file; without this guard the page crashes instead of rendering. */}
+              {service.image && (
+                <div className="service-detail-image">
+                  <img src={service.image.replace('q=80', 'q=80&fm=webp')} alt={`${service.name} workers`} loading="lazy" decoding="async" />
+                </div>
+              )}
 
               <div className="service-sidebar">
                 <h3>Ready to Hire?</h3>

@@ -1,10 +1,11 @@
-import React, { lazy, Suspense } from 'react';
-import { Link } from 'react-router-dom';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { Link } from '../i18n/router';
 import ContactForm from '../components/ContactForm';
 const WorldMap = lazy(() => import('../components/WorldMap'));
 import { SERVICES } from '../data/services';
 import { COUNTRIES } from '../data/countries';
 import { useLang } from '../i18n/LanguageContext';
+import { countryName } from '../content';
 import { t } from '../i18n/translations';
 
 const go = (id) => {
@@ -15,21 +16,27 @@ const go = (id) => {
 
 const FOUNDING_SLOTS_REMAINING = 10;
 
+const mapPlaceholderStyle = { height: 500, background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' };
+
+// Deterministic pseudo-random value in [0, 1) from integers only, so the server-rendered HTML and
+// the browser render the same positions (Math.random() would cause a hydration mismatch).
+const pseudo = (i, salt) => ((i * 7919 + salt * 104729 + 13) * 2654435761 % 1000003) / 1000003;
+
 /* ── Particle Field ─────────────────────────────────────────────────────── */
 function ParticleField() {
   const particles = React.useMemo(() => Array.from({ length: 24 }, (_, i) => ({
     id: i,
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-    size: 1.5 + Math.random() * 2,
-    dur: 4 + Math.random() * 6,
-    delay: Math.random() * 4,
+    x: pseudo(i, 1) * 100,
+    y: pseudo(i, 2) * 100,
+    size: 1.5 + pseudo(i, 3) * 2,
+    dur: 4 + pseudo(i, 4) * 6,
+    delay: pseudo(i, 5) * 4,
   })), []);
   return (
     <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
       {particles.map(p => (
         <div key={p.id} style={{
-          position: 'absolute', left: `${p.x}%`, top: `${p.y}%`,
+          position: 'absolute', insetInlineStart: `${p.x}%`, top: `${p.y}%`,
           width: p.size, height: p.size, borderRadius: '50%',
           background: 'rgba(201,168,76,0.55)',
           animation: `particleFloat ${p.dur}s ${p.delay}s ease-in-out infinite alternate`,
@@ -88,12 +95,12 @@ function ParticleField() {
           animation: imageFloat 6s ease-in-out infinite;
         }
         .bw-badge-tr {
-          position: absolute; top: -16px; right: -16px;
+          position: absolute; top: -16px; inset-inline-end: -16px;
           background: linear-gradient(135deg, var(--gold), var(--gold-light));
           border-radius: 14px; padding: 12px 18px; text-align: center;
         }
         .bw-badge-bl {
-          position: absolute; bottom: -16px; left: -16px;
+          position: absolute; bottom: -16px; inset-inline-start: -16px;
           background: rgba(8,25,46,0.92); border: 1px solid rgba(201,168,76,0.25);
           border-radius: 14px; padding: 12px 18px; text-align: center;
           backdrop-filter: blur(8px);
@@ -151,7 +158,12 @@ function ParticleField() {
 }
 
 export default function HomePage() {
-  const { lang } = useLang();
+  const { lang, urlLang, arrow } = useLang();
+  // The map needs the browser (topojson fetch, react-simple-maps), so the server and the first
+  // client render both show the same placeholder and the map mounts after hydration.
+  const [mapReady, setMapReady] = useState(false);
+  useEffect(() => { setMapReady(true); }, []);
+  const tr = (key, vars) => t(key, lang, vars);
 
   return (
     <>
@@ -190,7 +202,7 @@ export default function HomePage() {
                   download="Bhuiyan_Workforce_Capabilities.pdf"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: '0.85rem', color: 'var(--gold-light)', fontWeight: 600, textDecoration: 'none' }}
                 >
-                  📄 Download Capabilities PDF →
+                  📄 {tr('h.download_pdf')}
                 </a>
               </div>
             </div>
@@ -200,7 +212,7 @@ export default function HomePage() {
               <div className="bw-hero-img-card" style={{ position: 'relative' }}>
                 <img
                   src="/hero-image.svg"
-                  alt="Illustration of workers ready for deployment"
+                  alt={tr('h.hero_alt')}
                   style={{ width: '100%', height: 380, objectFit: 'cover', display: 'block' }}
                   fetchPriority="high"
                   decoding="async"
@@ -211,21 +223,21 @@ export default function HomePage() {
                   position: 'absolute', inset: 0,
                   background: 'linear-gradient(to top, rgba(8,25,46,0.85) 0%, transparent 50%)',
                 }} />
-                <div style={{ position: 'absolute', bottom: 20, left: 20 }}>
+                <div style={{ position: 'absolute', bottom: 20, insetInlineStart: 20 }}>
                   <div style={{ fontFamily: 'monospace', fontSize: '0.65rem', color: 'var(--gold)', letterSpacing: '0.08em' }}>
-                    // verified deployment
+                    {tr('h.hero_verified')}
                   </div>
                   <div style={{ fontFamily: 'monospace', fontSize: '0.62rem', color: 'rgba(255,255,255,0.5)', marginTop: 4 }}>
-                    25+ destination countries · 25 trade categories
+                    {tr('h.hero_destinations')}
                   </div>
                 </div>
                 <div className="bw-badge-tr">
                   <div className="num">24h</div>
-                  <div className="lbl">Response</div>
+                  <div className="lbl">{tr('h.badge_response')}</div>
                 </div>
                 <div className="bw-badge-bl">
                   <div className="num">7</div>
-                  <div className="lbl">Day Shortlist</div>
+                  <div className="lbl">{tr('h.badge_shortlist')}</div>
                 </div>
               </div>
 
@@ -234,7 +246,7 @@ export default function HomePage() {
                 {[
                   { num: '25+', lbl: t('home_stats_countries', lang) },
                   { num: '25',  lbl: t('home_stats_sectors', lang) },
-                  { num: '100%', lbl: 'Ethical' },
+                  { num: '100%', lbl: tr('h.stat_ethical') },
                 ].map(s => (
                   <div className="bw-stat-glass" key={s.lbl}>
                     <div className="num">{s.num}</div>
@@ -245,7 +257,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="hero-scroll" aria-hidden="true">Scroll</div>
+        <div className="hero-scroll" aria-hidden="true">{tr('h.scroll')}</div>
       </section>
 
       {/* ── FOUNDING EMPLOYER STRIP ──────────────────────────────────────────── */}
@@ -253,25 +265,25 @@ export default function HomePage() {
         <div className="container">
           <div className="bw-founding-inner">
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
-              <span className="bw-limited-badge">Limited</span>
+              <span className="bw-limited-badge">{tr('h.limited')}</span>
               <div>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 700, color: 'var(--navy)' }}>
-                  {t('founding_tag', lang)} — {FOUNDING_SLOTS_REMAINING} slots remaining
+                  {t('founding_tag', lang)} — {tr('h.slots_remaining', { n: FOUNDING_SLOTS_REMAINING })}
                 </div>
                 <div style={{ fontSize: '0.8rem', color: 'rgba(15,39,68,0.7)', marginTop: 2 }}>
-                  Priority mobilisation · Direct founder access · No obligation
+                  {tr('h.founding_perks')}
                 </div>
               </div>
             </div>
             <button className="bw-founding-btn" onClick={() => go('contact')}>
-              {t('founding_cta', lang)} →
+              {t('founding_cta', lang)}
             </button>
           </div>
         </div>
       </div>
 
       {/* ── STATS BAND ───────────────────────────────────────────────────────── */}
-      <section className="stats-band" aria-label="Key statistics">
+      <section className="stats-band" aria-label={tr('h.stats_aria')}>
         <div className="container">
           <div className="stats-grid">
             {[
@@ -295,12 +307,12 @@ export default function HomePage() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
               <span style={{ fontSize: '2.2rem', flexShrink: 0 }}>📄</span>
               <div>
-                <div className="label-tag" style={{ marginBottom: 6 }}>For Employers</div>
+                <div className="label-tag" style={{ marginBottom: 6 }}>{tr('h.deck_tag')}</div>
                 <p style={{ color: 'var(--white)', fontWeight: 600, margin: '0 0 4px', fontSize: '1rem' }}>
-                  Download Our Capabilities Deck
+                  {tr('h.deck_title')}
                 </p>
                 <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.82rem', margin: 0 }}>
-                  Full overview of services, destinations, recruitment process &amp; team — ready to share with your procurement or HR team.
+                  {tr('h.deck_desc')}
                 </p>
               </div>
             </div>
@@ -310,7 +322,7 @@ export default function HomePage() {
               className="btn btn-primary"
               style={{ flexShrink: 0 }}
             >
-              Download Capabilities PDF →
+              {tr('h.download_pdf')}
             </a>
           </div>
         </div>
@@ -343,7 +355,7 @@ export default function HomePage() {
                   <div className="service-icon" aria-hidden="true">{s.icon}</div>
                   <h3>{s.name}</h3>
                   <p>{s.shortDesc}</p>
-                  <span className="service-card-link">{t('common_view_det', lang)} →</span>
+                  <span className="service-card-link">{t('common_view_det', lang)}</span>
                 </div>
               </Link>
             ))}
@@ -360,19 +372,19 @@ export default function HomePage() {
             <p className="section-subtitle">{t('home_countries_sub', lang)}</p>
           </div>
           <div className="countries-map-visual">
-            <Suspense fallback={
-              <div style={{ height: 500, background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' }}>
-                Loading map…
-              </div>
-            }>
-              <WorldMap countries={COUNTRIES} />
-            </Suspense>
+            {mapReady ? (
+              <Suspense fallback={<div style={mapPlaceholderStyle}>{tr('h.map_loading')}</div>}>
+                <WorldMap countries={COUNTRIES} />
+              </Suspense>
+            ) : (
+              <div style={mapPlaceholderStyle}>{tr('h.map_loading')}</div>
+            )}
             <div className="countries-grid" style={{ marginTop: 32 }}>
               {COUNTRIES.map(c => (
                 <Link key={c.slug} to={`/countries/${c.slug}`} style={{ textDecoration: 'none' }}>
                   <div className="country-chip" style={{ cursor: 'pointer' }}>
                     <span className="flag" aria-hidden="true">{c.flag}</span>
-                    {c.name}
+                    {countryName(urlLang, c.slug, c.name)}
                   </div>
                 </Link>
               ))}
@@ -399,10 +411,10 @@ export default function HomePage() {
 
           <div className="process-steps">
             {[
-              { n: '01', title: 'Enquiry & Brief',    desc: 'Tell us your requirements: trade category, worker count, destination, timeline. We respond within 24 hours.' },
-              { n: '02', title: 'Candidate Matching', desc: 'We screen our database, conduct trade tests, and present a verified shortlist within 7 working days.' },
-              { n: '03', title: 'Documentation',      desc: 'We manage BMET registration, visas, medical clearances, and all government approvals end-to-end.' },
-              { n: '04', title: 'Deployment',         desc: 'Workers depart with full documentation, pre-departure training completed, and briefed on your standards.' },
+              { n: '01', title: tr('h.s1_t'), desc: tr('h.s1_d') },
+              { n: '02', title: tr('h.s2_t'), desc: tr('h.s2_d') },
+              { n: '03', title: tr('h.s3_t'), desc: tr('h.s3_d') },
+              { n: '04', title: tr('h.s4_t'), desc: tr('h.s4_d') },
             ].map(step => (
               <div className="process-step" key={step.n}>
                 <div className="process-step-num" aria-hidden="true">{step.n}</div>
@@ -414,9 +426,9 @@ export default function HomePage() {
 
           <div className="trust-badges">
             {[
-              { icon: '🏛️', title: 'BMET Registration',     body: 'All workers are sourced and screened to full BMET standards. Built compliance-first from day one.' },
-              { icon: '🩺', title: 'GAMCA Medical Cleared', body: 'Every worker undergoes a full GAMCA medical fitness test before departure for Gulf destinations.' },
-              { icon: '📋', title: 'Transparent Contracts', body: 'Workers receive a verified employment contract in Bengali before they sign, clearly stating salary, hours, accommodation, and contract duration.' },
+              { icon: '🏛️', title: tr('h.b1_t'), body: tr('h.b1_d') },
+              { icon: '🩺', title: tr('h.b2_t'), body: tr('h.b2_d') },
+              { icon: '📋', title: tr('h.b3_t'), body: tr('h.b3_d') },
             ].map(b => (
               <div className="trust-badge" key={b.title}>
                 <span className="trust-badge-icon" aria-hidden="true">{b.icon}</span>
@@ -434,12 +446,12 @@ export default function HomePage() {
             <div className="why-image">
               <img
                 src="/why-us-illustration.svg"
-                alt="Illustration of a verified employment contract and partnership"
+                alt={tr('h.why_alt')}
                 loading="lazy"
               />
               <div className="why-image-overlay">
                 {[
-                  { num: '25+', lbl: 'Deploy Countries' },
+                  { num: '25+', lbl: tr('h.why_stat_countries') },
                   { num: '24h', lbl: t('home_stats_response', lang) },
                   { num: '25',  lbl: t('home_stats_sectors', lang) },
                 ].map(s => (
@@ -452,15 +464,15 @@ export default function HomePage() {
             </div>
 
             <div>
-              <div className="label-tag">Why Choose Bhuiyan</div>
-              <h2 className="section-title" style={{ marginBottom: 32 }}>Recruitment Done Right</h2>
+              <div className="label-tag">{tr('h.why_tag')}</div>
+              <h2 className="section-title" style={{ marginBottom: 32 }}>{tr('h.why_title')}</h2>
               <div className="why-features">
                 {[
-                  { icon: '✅', title: 'End-to-End Compliance',  body: 'We handle every step: BMET clearance, GAMCA medicals, visa processing, and contracts. Workers are ready to work on day one.' },
-                  { icon: '⚡', title: 'Fast Mobilisation',       body: 'Our pre-registered database means we can present a qualified shortlist within 7 working days.' },
-                  { icon: '🔍', title: 'Verified Skills',         body: 'Every candidate undergoes a practical trade test and background check. You only see workers who genuinely meet the requirements.' },
-                  { icon: '🤝', title: 'Ethical by Design',       body: 'We follow ILO ethical recruitment principles: fully itemised, disclosed costs before you commit to anything, contracts explained in the worker\'s own language, and welfare follow-up post-deployment.' },
-                  { icon: '🌍', title: 'Destination Expertise',   body: 'With deployment corridors across 25+ countries, we understand the specific documentation and regulatory requirements of each market.' },
+                  { icon: '✅', title: tr('h.f1_t'), body: tr('h.f1_d') },
+                  { icon: '⚡', title: tr('h.f2_t'), body: tr('h.f2_d') },
+                  { icon: '🔍', title: tr('h.f3_t'), body: tr('h.f3_d') },
+                  { icon: '🤝', title: tr('h.f4_t'), body: tr('h.f4_d') },
+                  { icon: '🌍', title: tr('h.f5_t'), body: tr('h.f5_d') },
                 ].map(f => (
                   <div className="why-feature" key={f.title}>
                     <div className="why-feature-icon" aria-hidden="true">{f.icon}</div>
@@ -477,32 +489,32 @@ export default function HomePage() {
       <section className="section" style={{ background: 'var(--off-white)' }}>
         <div className="container">
           <div className="section-header">
-            <div className="label-tag">The Difference</div>
-            <h2 className="section-title">Why We're Different</h2>
-            <p className="section-subtitle">A comparison against what's common elsewhere in this industry — not a claim about any specific agency.</p>
+            <div className="label-tag">{tr('h.diff_tag')}</div>
+            <h2 className="section-title">{tr('h.diff_title')}</h2>
+            <p className="section-subtitle">{tr('h.diff_sub')}</p>
           </div>
 
           <div style={{ overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: 560 }}>
               <thead>
                 <tr>
-                  <th style={{ textAlign: 'left', padding: '14px 16px', fontSize: '0.8rem', color: 'var(--gray-500)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}></th>
-                  <th style={{ textAlign: 'left', padding: '14px 16px', fontSize: '0.9rem', color: 'var(--navy)', fontWeight: 700, borderBottom: '2px solid var(--gold)' }}>Bhuiyan Workforce</th>
-                  <th style={{ textAlign: 'left', padding: '14px 16px', fontSize: '0.9rem', color: 'var(--gray-500)', fontWeight: 600, borderBottom: '2px solid var(--gray-100)' }}>Common Elsewhere</th>
+                  <th style={{ textAlign: 'start', padding: '14px 16px', fontSize: '0.8rem', color: 'var(--gray-500)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}></th>
+                  <th style={{ textAlign: 'start', padding: '14px 16px', fontSize: '0.9rem', color: 'var(--navy)', fontWeight: 700, borderBottom: '2px solid var(--gold)' }}>Bhuiyan Workforce</th>
+                  <th style={{ textAlign: 'start', padding: '14px 16px', fontSize: '0.9rem', color: 'var(--gray-500)', fontWeight: 600, borderBottom: '2px solid var(--gray-100)' }}>{tr('h.diff_common')}</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { row: 'Cost Structure', us: 'Fully itemised cost breakdown disclosed before you commit to anything', them: 'Costs often disclosed only after commitment or mid-process' },
-                  { row: 'Payment Model', us: 'Success-fee model — you pay only after workers are confirmed for deployment', them: 'Upfront payment often required regardless of outcome' },
-                  { row: 'Replacement Guarantee', us: '90-day replacement guarantee at no additional placement fee', them: 'Rarely offered, or limited to a much shorter window' },
-                  { row: 'Partner Vetting', us: 'Regional partner agencies independently verified before engagement', them: 'Partner credentials rarely disclosed to employers or workers' },
-                  { row: 'Documentation', us: 'Every placement documented to destination-country legal requirements', them: 'Documentation practices vary and are often informal' },
+                  { row: tr('h.r1'), us: tr('h.r1_us'), them: tr('h.r1_them') },
+                  { row: tr('h.r2'), us: tr('h.r2_us'), them: tr('h.r2_them') },
+                  { row: tr('h.r3'), us: tr('h.r3_us'), them: tr('h.r3_them') },
+                  { row: tr('h.r4'), us: tr('h.r4_us'), them: tr('h.r4_them') },
+                  { row: tr('h.r5'), us: tr('h.r5_us'), them: tr('h.r5_them') },
                 ].map((r, i) => (
                   <tr key={r.row} style={{ background: i % 2 === 0 ? 'var(--white)' : 'transparent' }}>
                     <td style={{ padding: '14px 16px', fontSize: '0.85rem', fontWeight: 600, color: 'var(--navy)' }}>{r.row}</td>
                     <td style={{ padding: '14px 16px', fontSize: '0.85rem', color: 'var(--gray-700)' }}>
-                      <span style={{ color: 'var(--gold-dark, #b8923f)', marginRight: 6 }}>✓</span>{r.us}
+                      <span style={{ color: 'var(--gold-dark, #b8923f)', marginInlineEnd: 6 }}>✓</span>{r.us}
                     </td>
                     <td style={{ padding: '14px 16px', fontSize: '0.85rem', color: 'var(--gray-500)' }}>{r.them}</td>
                   </tr>
@@ -539,7 +551,7 @@ export default function HomePage() {
               }}>
                 <div>
                   <div style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--gold)', marginBottom: 8 }}>
-                    Slots Available
+                    {tr('h.slots_label')}
                   </div>
                   <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--navy)', lineHeight: 1, fontFamily: 'var(--font-display)' }}>
                     {FOUNDING_SLOTS_REMAINING}
@@ -554,10 +566,10 @@ export default function HomePage() {
               </div>
               {/* Benefits */}
               {[
-                { icon: '⚡', text: 'Priority mobilisation — first in the queue' },
-                { icon: '📋', text: 'Guaranteed shortlist within 7 working days' },
-                { icon: '🤝', text: 'Direct line to the founder for your first placement' },
-                { icon: '🔒', text: 'No obligation — reserve your slot, review when ready' },
+                { icon: '⚡', text: tr('h.fb1') },
+                { icon: '📋', text: tr('h.fb2') },
+                { icon: '🤝', text: tr('h.fb3') },
+                { icon: '🔒', text: tr('h.fb4') },
               ].map(b => (
                 <div key={b.text} className="bw-founding-benefit">
                   <span style={{ fontSize: '1.1rem', flexShrink: 0, marginTop: 1 }}>{b.icon}</span>
@@ -574,11 +586,11 @@ export default function HomePage() {
         <div className="container">
           <div className="cta-band-inner">
             <div>
-              <h2>Ready to Fill Your Vacancies?</h2>
-              <p>Tell us your requirements and we'll have a shortlist ready within the week.</p>
+              <h2>{tr('h.cta_title')}</h2>
+              <p>{tr('h.cta_desc')}</p>
             </div>
             <button className="btn btn-navy" onClick={() => go('contact')} style={{ flexShrink: 0 }}>
-              {t('common_contact', lang)} →
+              {t('common_contact', lang)} {arrow}
             </button>
           </div>
         </div>
@@ -591,17 +603,17 @@ export default function HomePage() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
               <span style={{ fontSize: '3rem', flexShrink: 0 }}>👷</span>
               <div>
-                <div className="label-tag" style={{ marginBottom: 8 }}>For Workers</div>
+                <div className="label-tag" style={{ marginBottom: 8 }}>{tr('h.wk_tag')}</div>
                 <h3 style={{ fontFamily: 'var(--font-display)', color: 'var(--white)', fontSize: '1.3rem', margin: '0 0 6px' }}>
-                  Looking for Work Abroad?
+                  {tr('h.wk_title')}
                 </h3>
                 <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', margin: 0 }}>
-                  Register your interest in international employment. Our team reviews all applications and contacts shortlisted candidates within 3–5 working days.
+                  {tr('h.wk_desc')}
                 </p>
               </div>
             </div>
             <Link to="/apply" className="btn btn-primary" style={{ flexShrink: 0 }}>
-              {t('nav_apply', lang)} →
+              {t('nav_apply', lang)} {arrow}
             </Link>
           </div>
         </div>
@@ -611,30 +623,30 @@ export default function HomePage() {
       <section className="section contact" id="contact">
         <div className="container">
           <div className="section-header">
-            <div className="label-tag">Get In Touch</div>
-            <h2 className="section-title">Start Your Recruitment</h2>
-            <p className="section-subtitle">Send us your requirements and we'll respond within 24 hours.</p>
+            <div className="label-tag">{tr('h.ct_tag')}</div>
+            <h2 className="section-title">{tr('h.ct_title')}</h2>
+            <p className="section-subtitle">{tr('h.ct_sub')}</p>
           </div>
 
           <div className="contact-grid">
             <div className="contact-info">
-              <h3>Contact Details</h3>
-              <p>We welcome enquiries from employers, recruitment agents, and government bodies. For urgent requirements, WhatsApp or call us directly.</p>
+              <h3>{tr('h.ct_details')}</h3>
+              <p>{tr('h.ct_intro')}</p>
               <div className="contact-items">
                 {[
-                  { icon: '📍', label: 'Office Address', content: <span>Kawtoli, Brahmanbaria, Bangladesh — 3400</span> },
-                  { icon: '✉️', label: 'General Enquiries', content: <a href="mailto:info@bhuiyanworkforce.com">info@bhuiyanworkforce.com</a> },
-                  { icon: '🤝', label: 'Partnerships & Companies', content: <a href="mailto:partnerships@bhuiyanworkforce.com">partnerships@bhuiyanworkforce.com</a> },
-                  { icon: '👤', label: 'Founder & CEO', content: <a href="mailto:Rezaul@bhuiyanworkforce.com">Rezaul@bhuiyanworkforce.com</a> },
-                  { icon: '👷', label: 'For Workers (Careers)', content: (
+                  { icon: '📍', label: tr('h.ct_address'), content: <bdi dir="ltr">Kawtoli, Brahmanbaria, Bangladesh — 3400</bdi> },
+                  { icon: '✉️', label: tr('h.ct_general'), content: <a href="mailto:info@bhuiyanworkforce.com"><bdi dir="ltr">info@bhuiyanworkforce.com</bdi></a> },
+                  { icon: '🤝', label: tr('h.ct_partner'), content: <a href="mailto:partnerships@bhuiyanworkforce.com"><bdi dir="ltr">partnerships@bhuiyanworkforce.com</bdi></a> },
+                  { icon: '👤', label: tr('h.ct_founder'), content: <a href="mailto:Rezaul@bhuiyanworkforce.com"><bdi dir="ltr">Rezaul@bhuiyanworkforce.com</bdi></a> },
+                  { icon: '👷', label: tr('h.ct_workers'), content: (
                     <>
-                      <a href="mailto:careers@bhuiyanworkforce.com">careers@bhuiyanworkforce.com</a>
-                      <a href="https://wa.me/8801978356710" target="_blank" rel="noopener noreferrer">WhatsApp: +880 1978 356710</a>
+                      <a href="mailto:careers@bhuiyanworkforce.com"><bdi dir="ltr">careers@bhuiyanworkforce.com</bdi></a>
+                      <a href="https://wa.me/8801978356710" target="_blank" rel="noopener noreferrer">WhatsApp: <bdi dir="ltr">+880 1978 356710</bdi></a>
                     </>
                   )},
-                  { icon: '📞', label: 'Phone (Employers)', content: <a href="tel:+8801864567912">+880 1864 567912</a> },
-                  { icon: '💬', label: 'WhatsApp (Employers)', content: <a href="https://wa.me/8801864567912" target="_blank" rel="noopener noreferrer">Chat on WhatsApp →</a> },
-                  { icon: '🕐', label: 'Response Time', content: <span style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--navy)' }}>Within 24 hours, 7 days a week</span> },
+                  { icon: '📞', label: tr('h.ct_phone'), content: <a href="tel:+8801864567912"><bdi dir="ltr">+880 1864 567912</bdi></a> },
+                  { icon: '💬', label: tr('h.ct_wa'), content: <a href="https://wa.me/8801864567912" target="_blank" rel="noopener noreferrer">{tr('h.ct_wa_link')}</a> },
+                  { icon: '🕐', label: tr('h.ct_response'), content: <span style={{ fontSize: '0.9rem', fontWeight: 500, color: 'var(--navy)' }}>{tr('h.ct_response_val')}</span> },
                 ].map(item => (
                   <div className="contact-item" key={item.label}>
                     <div className="contact-item-icon" aria-hidden="true">{item.icon}</div>

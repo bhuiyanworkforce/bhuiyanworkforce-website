@@ -1,20 +1,7 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from '../i18n/router';
 
 export default function TermsPage() {
-  useEffect(() => {
-    const title = 'Terms of Service — Bhuiyan Workforce Ltd.';
-    const description = 'Terms and conditions governing use of the Bhuiyan Workforce Ltd. website and recruitment services, governed by the laws of Bangladesh.';
-    document.title = title;
-    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
-    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:url"]')?.setAttribute('content', 'https://bhuiyanworkforce.com/terms');
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.appendChild(canonical); }
-    canonical.href = 'https://bhuiyanworkforce.com/terms';
-  }, []);
-
   return (
     <>
       <div className="page-hero">

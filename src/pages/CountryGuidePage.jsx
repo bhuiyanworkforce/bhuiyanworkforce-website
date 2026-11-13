@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useParams, Navigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useParams, Navigate } from '../i18n/router';
 import { getCountryGuide } from '../data/countryGuides';
 import { getCountry } from '../data/countries';
 
@@ -10,67 +10,6 @@ export default function CountryGuidePage() {
   const [submitted, setSubmitted] = useState(false);
   const [fields, setFields]  = useState({ name: '', company: '', email: '' });
   const [submitting, setSubmitting] = useState(false);
-
-  useEffect(() => {
-    if (!guide) return;
-
-    const title = `Employer's Guide: Recruiting from Bangladesh to ${guide.country} — Bhuiyan Workforce Ltd.`;
-    const description = `Complete employer guide for hiring Bangladeshi workers for ${guide.country}. Covers recruitment process, visa requirements, documentation, and employer obligations. BMET-compliant.`;
-
-    document.title = title;
-    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
-    document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
-    document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://bhuiyanworkforce.com/employer-guide/${slug}`);
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.rel = 'canonical';
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `https://bhuiyanworkforce.com/employer-guide/${slug}`;
-
-    const jsonLd = {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: title,
-      description,
-      url: `https://bhuiyanworkforce.com/employer-guide/${slug}`,
-      author: {
-        '@type': 'Organization',
-        name: 'Bhuiyan Workforce Ltd.',
-        url: 'https://bhuiyanworkforce.com',
-      },
-      publisher: {
-        '@type': 'Organization',
-        name: 'Bhuiyan Workforce Ltd.',
-        logo: {
-          '@type': 'ImageObject',
-          url: 'https://bhuiyanworkforce.com/logo.png',
-        },
-      },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bhuiyanworkforce.com/' },
-          { '@type': 'ListItem', position: 2, name: "Employer's Guide", item: 'https://bhuiyanworkforce.com/employer-guide' },
-          { '@type': 'ListItem', position: 3, name: guide.country, item: `https://bhuiyanworkforce.com/employer-guide/${slug}` },
-        ],
-      },
-    };
-
-    let script = document.querySelector('#jsonld-guide');
-    if (!script) {
-      script = document.createElement('script');
-      script.id = 'jsonld-guide';
-      script.type = 'application/ld+json';
-      document.head.appendChild(script);
-    }
-    script.textContent = JSON.stringify(jsonLd);
-
-    return () => { document.querySelector('#jsonld-guide')?.remove(); };
-  }, [guide, slug]);
 
   if (!guide) return <Navigate to="/employer-guide" replace />;
 

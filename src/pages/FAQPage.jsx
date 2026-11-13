@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../i18n/router';
 import { useLang } from '../i18n/LanguageContext';
-import useSchema from '../hooks/useSchema';
 import { t } from '../i18n/translations';
 
 const FAQS = [
@@ -91,15 +90,6 @@ export default function FAQPage() {
   const [search, setSearch] = React.useState('');
   const { lang } = useLang();
 
-  useSchema({
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://bhuiyanworkforce.com/' },
-      { '@type': 'ListItem', position: 2, name: 'FAQ', item: 'https://bhuiyanworkforce.com/faq' },
-    ],
-  });
-
   const filtered = FAQS.map(section => ({
     ...section,
     items: section.items.filter(item =>
@@ -155,7 +145,7 @@ export default function FAQPage() {
             <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: 24, fontSize: '0.9rem' }}>
               Employers: contact us via email or WhatsApp. Workers: use the dedicated contacts below.
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 24, textAlign: 'left' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, marginBottom: 24, textAlign: 'start' }}>
               <div style={{ background: 'rgba(255,255,255,0.05)', borderRadius: 'var(--radius)', padding: '20px 24px' }}>
                 <p style={{ color: 'var(--gold)', fontSize: '0.75rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 12 }}>For Employers</p>
                 <a href="mailto:partnerships@bhuiyanworkforce.com" style={{ display: 'block', color: 'rgba(255,255,255,0.75)', fontSize: '0.875rem', marginBottom: 6 }}>✉️ partnerships@bhuiyanworkforce.com</a>
