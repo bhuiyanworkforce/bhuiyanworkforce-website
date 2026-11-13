@@ -120,14 +120,16 @@ for (const page of pages) {
     const visible = body.replace(/<[^>]*>/g, (tag) => ' '.repeat(tag.length));
     for (const m of visible.matchAll(/\+880[\d\s-]{6,}/g)) {
       const lastOpen = body.lastIndexOf('<', m.index);
-      if (!/dir="ltr"/.test(body.slice(lastOpen, body.indexOf('>', lastOpen) + 1))) {
-        fail(where, `phone number "${m[0].trim()}" is not inside a dir="ltr" element`);
+      const isolated = body[m.index - 1] === '\u2066'; // U+2066 LRI isolate placed before the number in text
+      if (!isolated && !/dir="ltr"/.test(body.slice(lastOpen, body.indexOf('>', lastOpen) + 1))) {
+        fail(where, `phone number "${m[0].trim()}" is not inside a dir="ltr" element or LRI isolate`);
       }
     }
     for (const m of visible.matchAll(/[\w.+-]+@[\w-]+\.[\w.-]+/g)) {
       const lastOpen = body.lastIndexOf('<', m.index);
-      if (!/dir="ltr"/.test(body.slice(lastOpen, body.indexOf('>', lastOpen) + 1))) {
-        fail(where, `e-mail "${m[0]}" is not inside a dir="ltr" element`);
+      const isolated = body[m.index - 1] === '\u2066';
+      if (!isolated && !/dir="ltr"/.test(body.slice(lastOpen, body.indexOf('>', lastOpen) + 1))) {
+        fail(where, `e-mail "${m[0]}" is not inside a dir="ltr" element or LRI isolate`);
       }
     }
   }
