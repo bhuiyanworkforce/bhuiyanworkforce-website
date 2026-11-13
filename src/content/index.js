@@ -5,10 +5,14 @@ import { recordFallback } from './fallbacks.js';
 import arCountries from './ar/countries.js';
 import plCountries from './pl/countries.js';
 import arNames from './ar/names.js';
+import arServices from './ar/services.js';
+import arPosts from './ar/posts.js';
+import arGuides from './ar/guides.js';
 import plNames from './pl/names.js';
 
 const COUNTRY_CONTENT = { ar: arCountries, pl: plCountries };
 const COUNTRY_NAMES = { ar: arNames, pl: plNames };
+const ENTITY_CONTENT = { ar: { service: arServices, post: arPosts, guide: arGuides } };
 
 const COUNTRY_KEYS = [
   'name', 'region', 'capital', 'currency', 'overview', 'topSectors', 'visaType', 'visaFee',
@@ -38,4 +42,32 @@ export function countryName(lang, slug, englishName) {
   if (names[slug]) return names[slug];
   recordFallback('country-name', lang, slug);
   return englishName;
+}
+
+
+const SERVICE_KEYS = ['name', 'shortDesc', 'overview', 'roles', 'countries', 'process'];
+export function localizeService(base, lang) {
+  if (!base || lang === 'en') return base;
+  const tr = ENTITY_CONTENT[lang]?.service?.find((x) => x.slug === base.slug);
+  if (!tr) { recordFallback('service', lang, base.slug); return base; }
+  const out = { ...base };
+  for (const key of SERVICE_KEYS) {
+    if (tr[key] !== undefined) out[key] = tr[key];
+    else recordFallback('service', lang, `${base.slug}.${key}`);
+  }
+  return out;
+}
+
+export function localizePost(base, lang) {
+  if (!base || lang === 'en') return base;
+  const tr = ENTITY_CONTENT[lang]?.post?.find((x) => x.slug === base.slug);
+  if (!tr) { recordFallback('post', lang, base.slug); return base; }
+  return { ...base, ...tr };
+}
+
+export function localizeGuide(base, lang) {
+  if (!base || lang === 'en') return base;
+  const tr = ENTITY_CONTENT[lang]?.guide?.[base.country === 'Saudi Arabia' ? 'saudi-arabia' : base.country === 'UAE' ? 'uae' : 'poland'];
+  if (!tr) { recordFallback('guide', lang, base.country); return base; }
+  return tr;
 }
