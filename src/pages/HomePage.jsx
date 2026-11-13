@@ -214,7 +214,7 @@ export default function HomePage() {
                   src="/hero-image.svg"
                   alt={tr('h.hero_alt')}
                   style={{ width: '100%', height: 380, objectFit: 'cover', display: 'block' }}
-                  fetchPriority="high"
+                  fetchpriority="high"
                   decoding="async"
                   width="800"
                   height="380"
