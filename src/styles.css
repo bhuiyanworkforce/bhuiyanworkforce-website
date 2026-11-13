@@ -484,6 +484,7 @@ html[lang="ar"] {
 [dir="rtl"] .prose ul li::before { content: '←'; left: auto; right: 0; }
 [dir="rtl"] .process-list li { padding: 16px 56px 16px 16px; border-left: 0; border-right: 2px solid var(--gray-100); margin-left: 0; margin-right: 24px; }
 [dir="rtl"] .process-list li::before { left: auto; right: -24px; }
+[dir="rtl"] .testimonial-quote-mark { left: auto; right: 40px; }
 /* Breadcrumb separators (the spans without a style attribute) point the other way. */
 [dir="rtl"] .breadcrumb > span:not([style]) { display: inline-block; transform: scaleX(-1); }
 
