@@ -2,7 +2,8 @@
 
 User-agent: *
 Allow: /
-Disallow: /apply
+# /apply stays out of the index via a noindex meta tag, not a Disallow rule:
+# crawlers can only see a noindex tag on pages they are allowed to fetch.
 
 # Sitemap
 Sitemap: https://bhuiyanworkforce.com/sitemap.xml

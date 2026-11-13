@@ -1,0 +1,27 @@
+# Pre-rendered pages that have no real content redirect to their index (301).
+/countries/italy  /countries  301
+/employer-guide/armenia  /employer-guide  301
+/employer-guide/bahrain  /employer-guide  301
+/employer-guide/bosnia-herzegovina  /employer-guide  301
+/employer-guide/bulgaria  /employer-guide  301
+/employer-guide/croatia  /employer-guide  301
+/employer-guide/cyprus  /employer-guide  301
+/employer-guide/czech-republic  /employer-guide  301
+/employer-guide/estonia  /employer-guide  301
+/employer-guide/georgia  /employer-guide  301
+/employer-guide/greece  /employer-guide  301
+/employer-guide/hungary  /employer-guide  301
+/employer-guide/italy  /employer-guide  301
+/employer-guide/jordan  /employer-guide  301
+/employer-guide/kuwait  /employer-guide  301
+/employer-guide/latvia  /employer-guide  301
+/employer-guide/lithuania  /employer-guide  301
+/employer-guide/malaysia  /employer-guide  301
+/employer-guide/maldives  /employer-guide  301
+/employer-guide/montenegro  /employer-guide  301
+/employer-guide/oman  /employer-guide  301
+/employer-guide/portugal  /employer-guide  301
+/employer-guide/qatar  /employer-guide  301
+/employer-guide/romania  /employer-guide  301
+/employer-guide/singapore  /employer-guide  301
+/employer-guide/slovakia  /employer-guide  301
