@@ -21,7 +21,7 @@ export default function PrivacyPage() {
         <div className="container">
           <div style={{ maxWidth: 760, margin: '0 auto' }} className="prose">
             <p style={{ color: 'var(--gray-500)', marginBottom: 32, fontSize: '0.875rem' }}>
-              Last updated: May 2026
+              Last updated: November 2026
             </p>
 
             <h2>1. Who We Are</h2>
@@ -44,6 +44,7 @@ export default function PrivacyPage() {
               <li><strong>Worker candidate registrations</strong> — name, date of birth, nationality, passport details, trade qualifications, work experience, and supporting documents such as certificates and photographs</li>
               <li><strong>Technical data</strong> — IP address, browser type, and pages visited, collected automatically when you use our website</li>
             </ul>
+            <p>Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.</p>
             <p>We do not collect payment information. All financial transactions related to our services are conducted offline.</p>
 
             <h2>4. How We Use Your Information</h2>

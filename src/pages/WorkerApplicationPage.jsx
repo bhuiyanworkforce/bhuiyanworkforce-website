@@ -15,6 +15,15 @@ const EMPTY = {
   cvFile: null, passportFile: null, certFile: null,
 };
 
+// File rules. The worker checks the same limits (worker/contact-form-guard.js).
+const MAX_FILE_BYTES = 5 * 1024 * 1024;
+const MAX_TOTAL_BYTES = 12 * 1024 * 1024;
+const FILE_EXTENSIONS = {
+  cvFile: ['pdf', 'doc', 'docx'],
+  passportFile: ['pdf', 'jpg', 'jpeg', 'png'],
+  certFile: ['pdf', 'jpg', 'jpeg', 'png'],
+};
+
 function toBase64(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -51,6 +60,9 @@ export default function WorkerApplicationPage() {
   const [submitted,  setSubmitted]  = useState(false);
   const [error,      setError]      = useState(false);
   const [step,       setStep]       = useState(1);
+  const [consent,    setConsent]    = useState(false);
+  const [consentError, setConsentError] = useState(false);
+  const [fileError, setFileError] = useState('');
   const { lang }                    = useLang();
 
   const handleChange = ({ target: { name, value } }) =>
@@ -58,16 +70,35 @@ export default function WorkerApplicationPage() {
 
   const handleFile = (field) => (e) => {
     const file = e.target.files[0];
-    if (file && file.size > 5 * 1024 * 1024) {
-      alert('File too large — max 5MB');
+    setFileError('');
+    if (!file) { setFields(p => ({ ...p, [field]: null })); return; }
+
+    const ext = file.name.includes('.') ? file.name.split('.').pop().toLowerCase() : '';
+    if (!FILE_EXTENSIONS[field].includes(ext)) {
+      setFileError(`${file.name}: please upload a ${FILE_EXTENSIONS[field].join(', ').toUpperCase()} file.`);
       e.target.value = '';
       return;
     }
-    setFields(p => ({ ...p, [field]: file || null }));
+    if (file.size > MAX_FILE_BYTES) {
+      setFileError(`${file.name} is larger than 5 MB. Please choose a smaller file.`);
+      e.target.value = '';
+      return;
+    }
+    const others = ['cvFile', 'passportFile', 'certFile']
+      .filter(k => k !== field)
+      .reduce((sum, k) => sum + (fields[k] ? fields[k].size : 0), 0);
+    if (others + file.size > MAX_TOTAL_BYTES) {
+      setFileError('Your files together are over 12 MB. Please choose smaller files or compress the images.');
+      e.target.value = '';
+      return;
+    }
+    setFields(p => ({ ...p, [field]: file }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!consent) { setConsentError(true); return; }
+    const consentAt = new Date().toISOString();
     setSubmitting(true);
     setError(false);
 
@@ -103,6 +134,9 @@ BMET Smart Card: ${fields.hasBMET}
 
 COVER LETTER / ADDITIONAL INFO
 ${fields.coverLetter || 'Not provided'}
+
+CONSENT
+The applicant accepted the Privacy Policy and consented to processing of their data, including uploaded documents, on ${consentAt}.
       `.trim();
 
       // Build attachments array — all 3 files
@@ -137,6 +171,9 @@ ${fields.coverLetter || 'Not provided'}
         service: fields.tradeCategory,
         message: messageBody,
         attachments, // array of all uploaded files
+        formType: 'worker_application',
+        consent: true,
+        consentAt,
       };
 
       const res = await fetch('https://contact-form.bhuiyanrezaul71.workers.dev', {
@@ -395,6 +432,12 @@ ${fields.coverLetter || 'Not provided'}
                       {fields.certFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.certFile.name}</span>}
                     </div>
 
+                    {fileError && (
+                      <div role="alert" style={{ color: '#e53e3e', background: '#fff5f5', padding: '12px 16px', borderRadius: 8, border: '1px solid #fed7d7', fontSize: '0.875rem' }}>
+                        {fileError}
+                      </div>
+                    )}
+
                     <div style={{ background: 'var(--off-white)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 'var(--radius)', padding: '12px 16px', fontSize: '0.82rem', color: 'var(--gray-500)', display: 'flex', gap: 10 }}>
                       <span>📎</span>
                       <span>All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.</span>
@@ -408,7 +451,26 @@ ${fields.coverLetter || 'Not provided'}
                     </div>
 
                     <div style={{ background: 'var(--off-white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius)', padding: 20, fontSize: '0.82rem', color: 'var(--gray-500)', lineHeight: 1.65 }}>
-                      <strong style={{ color: 'var(--navy)' }}>Important:</strong> By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our <Link to="/privacy" style={{ color: 'var(--gold)' }}>Privacy Policy</Link>.
+                      <strong style={{ color: 'var(--navy)' }}>Important:</strong> By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)' }}>Privacy Policy</a>.
+                    </div>
+
+                    <div>
+                      <label htmlFor="wa-consent" style={{ display: 'flex', gap: 12, alignItems: 'flex-start', fontSize: '0.88rem', color: 'var(--navy)', lineHeight: 1.6, cursor: 'pointer' }}>
+                        <input
+                          id="wa-consent" type="checkbox" checked={consent} required
+                          aria-describedby={consentError ? 'wa-consent-error' : undefined}
+                          onChange={(e) => { setConsent(e.target.checked); if (e.target.checked) setConsentError(false); }}
+                          style={{ marginTop: 4, width: 20, height: 20, flexShrink: 0 }}
+                        />
+                        <span>
+                          I have read the <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', fontWeight: 600 }}>Privacy Policy</a> and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed. <span className="required">*</span>
+                        </span>
+                      </label>
+                      {consentError && (
+                        <div id="wa-consent-error" role="alert" style={{ color: '#e53e3e', fontSize: '0.82rem', marginTop: 8 }}>
+                          Please tick the box above to submit your application.
+                        </div>
+                      )}
                     </div>
 
                     {error && (

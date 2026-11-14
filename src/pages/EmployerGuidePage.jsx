@@ -32,6 +32,7 @@ export default function EmployerGuidePage() {
           email: fields.email,
           company: fields.company,
           service: 'Employer Guide Download Request',
+          formType: 'employer_guide',
           message: `Employer Guide download requested.\nCountry of interest: ${fields.country || 'Not specified'}`,
         }),
       });

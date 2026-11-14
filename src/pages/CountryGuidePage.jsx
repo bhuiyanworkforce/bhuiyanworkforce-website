@@ -16,25 +16,29 @@ export default function CountryGuidePage() {
   const [submitted, setSubmitted] = useState(false);
   const [fields, setFields]  = useState({ name: '', company: '', email: '' });
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
 
   if (!guide) return <Navigate to="/employer-guide" replace />;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
+    setError(false);
     try {
-      await fetch('https://contact-form.bhuiyanrezaul71.workers.dev', {
+      const res = await fetch('https://contact-form.bhuiyanrezaul71.workers.dev', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           name: fields.name, email: fields.email,
           company: fields.company,
           service: `Country Guide Request — ${guide.country}`,
           message: `Requested the employer guide for ${guide.country}.`,
+          formType: 'country_guide',
         }),
       });
-      setSubmitted(true);
-    } catch { setSubmitted(true); }
+      if (res.ok) setSubmitted(true);
+      else setError(true);
+    } catch { setError(true); }
     finally { setSubmitting(false); }
   };
 
@@ -141,6 +145,11 @@ export default function CountryGuidePage() {
                           style={{ width: '100%', padding: '11px 14px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.07)', color: 'var(--white)', fontSize: '0.875rem', outline: 'none', boxSizing: 'border-box' }}
                         />
                       </div>
+                      {error && (
+                        <div role="alert" style={{ color: '#e53e3e', fontSize: '0.85rem' }}>
+                          Something went wrong. Please try again, or email <a href="mailto:info@bhuiyanworkforce.com" style={{ color: '#e53e3e', fontWeight: 600 }}>info@bhuiyanworkforce.com</a>.
+                        </div>
+                      )}
                       <button type="submit" className="btn btn-primary" disabled={submitting} style={{ width: '100%', justifyContent: 'center', marginTop: 4 }}>
                         {submitting ? tr('cf.sending') : tr('gd.get_btn', { country: guide.country })}
                       </button>
