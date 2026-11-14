@@ -75,6 +75,8 @@ export const ENTITY_SLUGS = {
       slovenia: 'slowenia',
       'north-macedonia': 'macedonia-polnocna',
       italy: 'wlochy',
+      seychelles: 'seszele',
+      mauritius: 'mauritius',
     },
     service: {
       construction: 'budownictwo',
