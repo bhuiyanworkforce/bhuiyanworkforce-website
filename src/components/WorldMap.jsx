@@ -44,6 +44,8 @@ const ISO_TO_SLUG = {
   705: 'slovenia',
   807: 'north-macedonia',
   380: 'italy',
+  690: 'seychelles',
+  480: 'mauritius',
   50:  'bangladesh',
 };
 
@@ -79,6 +81,8 @@ const COUNTRY_COORDS = {
   'slovenia':           [14.8, 46.1],
   'north-macedonia':    [21.7, 41.6],
   'italy':              [12.5, 42.5],
+  'seychelles':         [55.5, -4.7],
+  'mauritius':          [57.6, -20.3],
 };
 
 const BANGLADESH_COORDS = [90.3563, 23.6850];
@@ -88,6 +92,7 @@ const REGION_COLORS = {
   'Middle East':              '#E8B84B',
   'Southeast Asia':           '#4CAF50',
   'South Asia':               '#81C784',
+  'Indian Ocean':             '#26C6DA',
   'Europe':                   '#4FC3F7',
   'Caucasus & Central Asia':  '#BA68C8',
 };
