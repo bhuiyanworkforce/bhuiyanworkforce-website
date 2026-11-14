@@ -1,6 +1,7 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom/server';
+import './i18n/ar-bundle.js'; // static pages are rendered with Arabic loaded
 import App from './App';
 import { contentData } from './seo/data.js';
 import { getFallbackReport, clearFallbacks } from './content/fallbacks.js';
