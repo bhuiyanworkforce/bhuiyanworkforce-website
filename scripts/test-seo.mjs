@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
+import '../src/i18n/ar-bundle.js'; // registers the Arabic content that is loaded on demand in the browser
 import { buildPath, parsePath, ENTITY_SLUGS, PAGE_SLUGS, SEGMENTS } from '../src/i18n/slugs.js';
 import { LOCALES, REAL_LOCALE_CODES } from '../src/i18n/config.js';
 import {
