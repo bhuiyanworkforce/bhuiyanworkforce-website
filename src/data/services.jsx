@@ -19,7 +19,7 @@ export const SERVICES = [
       'Plumbers & Pipefitters', 'Heavy Equipment Operators (crane, excavator, bulldozer)',
       'Scaffolders', 'Civil Supervisors & Foremen', 'Site Engineers',
     ],
-    countries: ['Saudi Arabia','Qatar','UAE','Kuwait','Bahrain','Oman','Malaysia','Singapore','Libya','Jordan','Maldives'],
+    countries: ['Saudi Arabia','Qatar','UAE','Kuwait','Bahrain','Oman','Malaysia','Singapore','Jordan','Maldives'],
     process: [
       { title: 'Needs Assessment', desc: 'You submit your manpower requirements — trade types, numbers, project timeline, and destination country.' },
       { title: 'Candidate Shortlisting', desc: 'We screen our registered database and conduct trade tests to match candidates to your specifications.' },
@@ -41,7 +41,7 @@ export const SERVICES = [
       'Bus & Coach Drivers', 'Light Vehicle Drivers (pickup, van, SUV)',
       'Delivery Drivers', 'Chauffeurs / Executive Drivers', 'Dumper & Tipper Drivers',
     ],
-    countries: ['Saudi Arabia','UAE','Qatar','Kuwait','Oman','Bahrain','Malaysia','Brunei','Jordan'],
+    countries: ['Saudi Arabia','UAE','Qatar','Kuwait','Oman','Bahrain','Malaysia','Jordan'],
     process: [
       { title: 'Licence & Record Verification', desc: 'We verify each candidate\'s driving licence category, traffic record, and years of experience.' },
       { title: 'Practical Driving Assessment', desc: 'Candidates complete a supervised practical test in the relevant vehicle category.' },
@@ -89,7 +89,7 @@ export const SERVICES = [
       'Tree Pruners & Arborists (assistants)', 'Agricultural Machinery Operators',
       'Packhouse & Grading Line Workers',
     ],
-    countries: ['Saudi Arabia','UAE','Qatar','Oman','Kuwait','Malaysia','Japan','South Korea','Romania','Poland'],
+    countries: ['Saudi Arabia','UAE','Qatar','Oman','Kuwait','Malaysia','Romania','Poland'],
     process: [
       { title: 'Agricultural Background Check', desc: 'We confirm each candidate\'s farming or horticulture experience through reference checks and practical assessment.' },
       { title: 'Health & Fitness Medical', desc: 'Full medical fitness examination appropriate for outdoor physical labour.' },
@@ -135,7 +135,7 @@ export const SERVICES = [
       'Quality Control Inspectors', 'Packing & Wrapping Operatives',
       'Electrical Assembly Technicians', 'Food Processing Workers', 'Production Supervisors',
     ],
-    countries: ['Saudi Arabia','Malaysia','Singapore','South Korea','Japan','UAE','Qatar','Romania','Poland','Czech Republic','Hungary'],
+    countries: ['Saudi Arabia','Malaysia','Singapore','UAE','Qatar','Romania','Poland','Czech Republic','Hungary'],
     process: [
       { title: 'Job Profile Review', desc: 'We study your production process, equipment list, and output standards before screening begins.' },
       { title: 'Trade Test & Assessment', desc: 'Practical assessment on relevant machinery or processes — at our centre or via video test.' },
@@ -436,7 +436,7 @@ export const SERVICES = [
       'Fish Farm Feeding & Monitoring Workers', 'Shellfish Harvesting Workers',
       'Cold Chain & Ice Plant Operatives', 'Vessel Maintenance Helpers',
     ],
-    countries: ['Malaysia', 'South Korea', 'Japan', 'Oman', 'UAE', 'Maldives', 'Saudi Arabia'],
+    countries: ['Malaysia', 'Oman', 'UAE', 'Maldives', 'Saudi Arabia'],
     process: [
       { title: 'Maritime Background Assessment', desc: 'Verification of fishing or vessel crew experience, including boat type and sea time.' },
       { title: 'Basic Safety at Sea', desc: 'Verification of STCW Basic Safety Training or equivalent maritime safety certification where required.' },

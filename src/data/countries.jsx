@@ -17,6 +17,15 @@ const COMMON_DOCS_EUROPE = [
   'Proof of accommodation',
 ];
 
+const COMMON_DOCS_ISLAND = [
+  'Valid passport (min. 6 months remaining)',
+  'BMET Smart Card',
+  'Police clearance certificate',
+  'Medical certificate',
+  'Employment contract',
+  'Passport photos',
+];
+
 const BMET_STEP = { title: 'BMET Clearance', desc: 'Worker obtains BMET Smart Card and emigration clearance in Bangladesh.' };
 const BMET_STEP_BD = { title: 'BMET Clearance (Bangladesh)', desc: 'Workers register with BMET in Dhaka and obtain Smart Card emigration clearance.' };
 const GAMCA_STEP = { title: 'GAMCA Medical', desc: 'Mandatory medical fitness test at a GAMCA-approved centre in Bangladesh.' };
@@ -792,10 +801,60 @@ export const COUNTRIES = [
       { title: 'Visa Application', desc: 'Worker applies for a national long-stay work visa at the Italian Embassy in Dhaka using the Nulla Osta. The employer must confirm the hire within the legal period before the visa is issued.' },
       { title: 'Arrival & Residence Permit', desc: 'Within 15 days of entry the worker and employer sign the residence contract, and the worker applies for the Permesso di Soggiorno (residence permit).' },
     ],
-    documents: [...COMMON_DOCS_EUROPE, 'Nulla Osta (work authorisation)', 'Signed residence contract (after arrival)', 'Proof of accommodation'],
+    documents: [...COMMON_DOCS_EUROPE, 'Nulla Osta (work authorisation)', 'Signed residence contract (after arrival)'],
     salaryRange: 'Set by national collective agreements (CCNL) by sector; typically EUR 1,100–1,800/month for entry-level roles (approx.), higher for skilled trades',
     notes: 'Italy has no single statutory minimum wage; pay is set by sector collective agreements. The quota system means applications are accepted only in fixed windows and only while quota remains, so a Nulla Osta is never guaranteed, and the Nulla Osta does not guarantee the visa. We recommend confirming current quotas and dates with us before committing to a timeline.',
     flag_detail: 'The 2026–2028 Decreto Flussi reserves non-seasonal quota for Bangladeshi nationals, and Italy\'s agriculture, tourism, and construction sectors have steady demand — making Italy a high-potential but quota-dependent European corridor.',
+  },
+  {
+    slug: 'seychelles',
+    name: 'Seychelles',
+    flag: '🇸🇨',
+    region: 'Indian Ocean',
+    capital: 'Victoria',
+    currency: 'Seychelles Rupee (SCR)',
+    language: 'English, French, Seychellois Creole',
+    overview: `Seychelles is an Indian Ocean island nation whose economy is built on high-end tourism and fishing. Its very small population means hotels, resorts, construction firms, and fish-processing businesses depend on foreign workers to fill many roles. Employment of foreign nationals is regulated through the Gainful Occupation Permit (GOP), which is requested by the employer, and employers are expected to show that the role cannot be filled locally before recruiting abroad.`,
+    topSectors: ['Hospitality & Tourism', 'Construction', 'Fishing & Fish Processing', 'Cleaning & Facilities', 'Agriculture'],
+    visaType: 'Gainful Occupation Permit (GOP)',
+    visaFee: 'Permit fees are charged per month of validity (approx. SCR 500–1,000 per month) — confirmed with the employer at the time of application',
+    processingTime: '4–8 weeks (permit approval is often quick, but medicals and documents add time)',
+    process: [
+      { title: 'Local Advertising & Job Offer', desc: 'Seychellois employer advertises the role locally, then offers it to the worker if the Department of Employment accepts that a foreign hire is justified.' },
+      { title: 'GOP Application', desc: 'Employer submits the Gainful Occupation Permit application, with the processing fee, to the Seychelles authorities well before the planned start date. The worker may not start work before approval.' },
+      { title: 'BMET Clearance', desc: 'Worker obtains BMET Smart Card and emigration clearance from Bangladesh\'s Bureau of Manpower, Employment and Training.' },
+      { title: 'Medical & Police Clearance', desc: 'Worker completes the required medical examination and obtains a police clearance certificate issued within the last six months.' },
+      { title: 'Travel & Arrival', desc: 'Worker travels with a copy of the approved GOP, which is presented on arrival at immigration.' },
+    ],
+    documents: [...COMMON_DOCS_ISLAND, 'Gainful Occupation Permit approval', 'Employer registration confirmation'],
+    salaryRange: 'SCR 6,000–12,000/month (approx. USD 415–830); hospitality and construction roles often include accommodation or meals',
+    notes: 'Seychelles has a very small labour market and tight rules on hiring foreign workers, so permit approval depends on the employer\'s case and can change. Permit conditions, fees, and validity are set by the Seychelles authorities. We recommend confirming current requirements with us before committing to a mobilisation timeline.',
+    flag_detail: 'Seychelles\' luxury tourism and fishing industries, combined with a very small local workforce, create steady demand for hospitality, construction, and fish-processing staff.',
+  },
+  {
+    slug: 'mauritius',
+    name: 'Mauritius',
+    flag: '🇲🇺',
+    region: 'Indian Ocean',
+    capital: 'Port Louis',
+    currency: 'Mauritian Rupee (MUR)',
+    language: 'English, French, Mauritian Creole',
+    overview: `Mauritius is an Indian Ocean island nation with a diversified economy covering tourism, manufacturing (including textiles and garments), construction, agriculture, and services. Foreign workers need an appropriate work permit under the Non-Citizens (Employment Restriction) Act, which the employer applies for through the Economic Development Board and the Passport and Immigration Office. Mauritius has also introduced a government-to-government recruitment channel with India for some sectors, so requirements for each nationality can differ.`,
+    topSectors: ['Manufacturing & Textiles', 'Construction', 'Hospitality & Tourism', 'Agriculture', 'Cleaning & Facilities'],
+    visaType: 'Work Permit (Non-Citizens Employment Restriction Act)',
+    visaFee: 'Fees set by the Mauritian authorities and confirmed with the employer at the time of application',
+    processingTime: '6–12 weeks',
+    process: [
+      { title: 'Job Offer & Employer Registration', desc: 'Worker receives a verified job offer from a registered Mauritian employer, who confirms the vacancy and eligibility to recruit foreign workers.' },
+      { title: 'Work Permit Application', desc: 'Employer applies for the work permit on behalf of the worker through the Mauritian electronic permit system run by the Economic Development Board.' },
+      { title: 'BMET Clearance', desc: 'Worker obtains BMET Smart Card and emigration clearance from Bangladesh\'s Bureau of Manpower, Employment and Training.' },
+      { title: 'Medical & Police Clearance', desc: 'Worker completes the required medical examination and obtains a police clearance certificate.' },
+      { title: 'Travel & Registration on Arrival', desc: 'Worker travels once the permit is approved and completes immigration and registration formalities on arrival.' },
+    ],
+    documents: [...COMMON_DOCS_ISLAND, 'Work permit approval', 'Employer registration confirmation'],
+    salaryRange: 'MUR 15,000–30,000/month (approx. USD 330–660); varies by sector, and accommodation is often provided in manufacturing and construction',
+    notes: 'Mauritius regulates foreign labour closely and has recently created a separate government-to-government channel for recruiting from India, so rules differ by nationality and sector. Permit conditions, quotas, and fees can change. We recommend confirming current requirements with us before committing to a mobilisation timeline.',
+    flag_detail: 'Mauritius\' tourism, manufacturing, and construction sectors have long relied on foreign workers, making it an established Indian Ocean destination for Bangladeshi workers in industrial and hospitality trades.',
   },
 ];
 
@@ -803,4 +862,4 @@ export function getCountry(slug) {
   return COUNTRIES.find(c => c.slug === slug) || null;
 }
 
-export const COUNTRY_REGIONS = ['Gulf', 'Southeast Asia', 'South Asia', 'Middle East', 'Europe', 'Caucasus & Central Asia'];
+export const COUNTRY_REGIONS = ['Gulf', 'Southeast Asia', 'South Asia', 'Indian Ocean', 'Middle East', 'Europe', 'Caucasus & Central Asia'];
