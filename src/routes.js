@@ -33,6 +33,7 @@ export const COUNTRY_SLUGS = [
   'maldives', 'serbia', 'portugal', 'greece', 'romania', 'poland', 'hungary', 'croatia',
   'czech-republic', 'lithuania', 'latvia', 'estonia', 'bulgaria', 'cyprus', 'slovakia',
   'bosnia-herzegovina', 'armenia', 'montenegro', 'georgia', 'slovenia', 'north-macedonia', 'italy',
+  'seychelles', 'mauritius',
 ];
 
 export const POST_SLUGS = [
