@@ -5,6 +5,7 @@ import { OVERLAY_LANGUAGES, t } from '../i18n/translations';
 import { LOCALES } from '../i18n/config';
 import { getLanguageLinks } from '../routes.js';
 import { buildPath } from '../i18n/slugs.js';
+import { isLangLoaded } from '../i18n/lazyLangs.js';
 
 // Real languages are plain <a href> links to the same page in that language (present in the
 // static HTML, so crawlers and no-JS visitors can follow them). Bengali and Italian are a
@@ -88,6 +89,9 @@ export default function LanguageSwitcher() {
             to={l.href}
             lang={l.hreflang}
             hrefLang={l.hreflang}
+            // A language whose content is not loaded yet needs a full page load (the pre-rendered
+            // page for that URL is served, and main.jsx loads the content before hydrating).
+            reloadDocument={!isLangLoaded(l.code)}
             dir={l.dir}
             title={l.fallback && !l.current ? t('lang.fallback', lang) : undefined}
             aria-current={l.current && !overlay ? 'true' : undefined}
