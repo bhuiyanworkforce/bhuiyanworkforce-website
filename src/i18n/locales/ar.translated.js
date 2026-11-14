@@ -25,6 +25,8 @@ export const AR_TRANSLATED = [
     'country:latvia', 'country:estonia', 'country:bulgaria', 'country:cyprus',
     'country:slovakia', 'country:bosnia-herzegovina', 'country:armenia', 'country:montenegro',
     'country:georgia',
+    'country:slovenia', 'country:north-macedonia', 'country:italy',
+    'country:seychelles', 'country:mauritius',
     'service:construction',
     'service:drivers',
     'service:hospitality',

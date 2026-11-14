@@ -14,7 +14,7 @@ export default {
     siteName: NAME,
     ogImageAlt: 'Bhuiyan Workforce Ltd. — ethical global recruitment from Bangladesh',
     orgDescription:
-      'Ethical international manpower recruitment company connecting skilled Bangladeshi workers with employers across 25+ countries in the Gulf, Europe, and Southeast Asia.',
+      'Ethical international manpower recruitment company connecting skilled Bangladeshi workers with employers across 25+ countries in the Middle East, Europe, Asia, and Africa.',
     siteDescription:
       'Ethical global recruitment from Bangladesh — connecting skilled workers with employers across 25+ countries.',
     breadcrumb: {
@@ -31,13 +31,13 @@ export default {
         description:
           'Bhuiyan Workforce Ltd. connects skilled Bangladeshi workers with employers across 25+ countries. Ethical, BMET-compliant, transparent global recruitment.',
         ogDescription:
-          'Connecting skilled Bangladeshi workers with employers across 25+ countries. Gulf, Europe & Southeast Asia. BMET-compliant and transparent.',
+          'Connecting skilled Bangladeshi workers with employers across 25+ countries. Middle East, Europe, Asia & Africa. BMET-compliant and transparent.',
         keywords:
           'hire skilled construction workers from Bangladesh, ethical recruitment agency for Saudi Arabia, manpower supply Bangladesh to Europe, BMET registered recruitment agency Bangladesh, Bangladesh to Gulf workers, overseas employment agency Dhaka, manpower export Bangladesh 2026, recruit Bangladeshi workers Poland Romania, construction workers Gulf countries Bangladesh',
       },
       countries: {
         title: 'Countries We Deploy To — Bhuiyan Workforce Ltd.',
-        description: 'Full details on deploying Bangladeshi workers to 25+ countries including Gulf, Europe, and Southeast Asia.',
+        description: 'Full details on deploying Bangladeshi workers to 25+ countries across the Middle East, Europe, Asia, and Africa.',
       },
       about: {
         title: 'About Us — Bhuiyan Workforce Ltd.',
@@ -99,7 +99,7 @@ export default {
       'Malaysia', 'Singapore', 'Maldives', 'Italy', 'Portugal', 'Greece', 'Romania', 'Poland',
       'Hungary', 'Croatia', 'Czech Republic', 'Lithuania', 'Latvia', 'Estonia', 'Bulgaria',
       'Bosnia and Herzegovina', 'Cyprus', 'Serbia', 'Slovakia', 'Slovenia', 'Armenia', 'Georgia',
-      'Montenegro', 'North Macedonia',
+      'Montenegro', 'North Macedonia', 'Seychelles', 'Mauritius',
     ],
   },
 };

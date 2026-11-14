@@ -18,7 +18,7 @@ export default {
     siteName: NAME,
     ogImageAlt: 'Bhuiyan Workforce Ltd. — etyczna rekrutacja pracowników z Bangladeszu',
     orgDescription:
-      'Międzynarodowa firma rekrutacyjna łącząca wykwalifikowanych pracowników z Bangladeszu z pracodawcami w ponad 25 krajach Zatoki Perskiej, Europy i Azji Południowo-Wschodniej, zgodnie z zasadami etycznej rekrutacji.',
+      'Międzynarodowa firma rekrutacyjna łącząca wykwalifikowanych pracowników z Bangladeszu z pracodawcami w ponad 25 krajach Bliskiego Wschodu, Europy, Azji i Afryki, zgodnie z zasadami etycznej rekrutacji.',
     siteDescription:
       'Etyczna rekrutacja z Bangladeszu — łączymy wykwalifikowanych pracowników z pracodawcami w ponad 25 krajach.',
     breadcrumb: {
@@ -65,7 +65,7 @@ export default {
       'Malezja', 'Singapur', 'Malediwy', 'Włochy', 'Portugalia', 'Grecja', 'Rumunia', 'Polska',
       'Węgry', 'Chorwacja', 'Czechy', 'Litwa', 'Łotwa', 'Estonia', 'Bułgaria',
       'Bośnia i Hercegowina', 'Cypr', 'Serbia', 'Słowacja', 'Słowenia', 'Armenia', 'Gruzja',
-      'Czarnogóra', 'Macedonia Północna',
+      'Czarnogóra', 'Macedonia Północna', 'Seszele', 'Mauritius',
     ],
   },
 };

@@ -210,6 +210,7 @@ export default {
   "cn.r_gulf": "Gulf",
   "cn.r_sea": "Southeast Asia",
   "cn.r_sa": "South Asia",
+  "cn.r_io": "Indian Ocean",
   "cn.r_me": "Middle East",
   "cn.r_eu": "Europe",
   "cn.r_cca": "Caucasus & Central Asia",
