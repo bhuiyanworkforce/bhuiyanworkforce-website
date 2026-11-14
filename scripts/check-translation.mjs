@@ -7,6 +7,7 @@
 // keys, placeholders, list lengths, markdown structure, numbers, contact details, brand name,
 // SEO lengths and (for Italian) legally loaded terms. It cannot judge translation QUALITY;
 // a human or a second reviewer still has to read the text. Exit code 1 if any ERROR.
+// Add --all to print every message instead of the first 80.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -198,19 +199,53 @@ else {
   if (h.pages?.home && !/[A-Za-zÀ-ÿ]/.test(h.pages.home.title)) err('head.pages.home', 'title looks empty');
 }
 
-// ---- 8. language-specific terminology
-if (lang === 'it') {
-  const banned = [
-    [/agenzi[ae] (per il lavoro|di somministrazione|interinal\w*)/i, '"agenzia per il lavoro / di somministrazione / interinale" are authorised, regulated activities in Italy (ANPAL register). The company must not describe itself that way.'],
-    [/somministrazione/i, '"somministrazione" is a regulated legal term'],
-    [/intermediazione/i, '"intermediazione" is a regulated legal term'],
-    [/distacc/i, '"distacco" means legal posting of workers (D.Lgs. 136/2016): use "invio", "inserimento" or "impiego"'],
-    [/avviament/i, '"avviamento" has a specific labour-law meaning in Italian'],
-  ];
-  const files = ['ui', 'countries', 'services', 'posts', 'guides'];
-  const all = { ui, countries, services, posts, guides, pages, head };
-  for (const [re, why] of banned) for (const [name, data] of Object.entries(all)) { const m = flat(data || {}).match(re); if (m) err(`terminology (${name})`, `found "${m[0]}": ${why}`); }
-  if (/\b(BMET)\b/.test(flat(EN.PAGE_CONTENT)) && !/BMET/.test(flat(pages || {}))) err('terminology', 'BMET must stay as written');
+// ---- 8. language-specific terminology and script checks
+const strip = (x) => String(x).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/ς/g, 'σ');
+const everything = { ui, countries, services, posts, guides, pages, head };
+function* leaves(v, trail = '') {
+  if (typeof v === 'string') yield [trail, v];
+  else if (Array.isArray(v)) for (let i = 0; i < v.length; i++) yield* leaves(v[i], `${trail}[${i}]`);
+  else if (v && typeof v === 'object') for (const [k, x] of Object.entries(v)) yield* leaves(x, trail ? `${trail}.${k}` : k);
+}
+// Terms that describe authorised/regulated activities in the target country. The company must not use
+// them to describe itself or its service. [regex on accent-stripped lower-case text, explanation]
+const BANNED = {
+  it: [
+    [/agenzi[ae] (per il lavoro|di somministrazione|interinal\w*)/, '"agenzia per il lavoro / di somministrazione / interinale" are authorised, regulated activities in Italy (ANPAL register). The company must not describe itself that way.'],
+    [/somministrazione/, '"somministrazione" is a regulated legal term'],
+    [/intermediazione/, '"intermediazione" is a regulated legal term'],
+    [/distacc/, '"distacco" means legal posting of workers (D.Lgs. 136/2016): use "invio", "inserimento" or "impiego"'],
+    [/avviament/, '"avviamento" has a specific labour-law meaning in Italian'],
+  ],
+  el: [
+    [/γραφει\S*\s+ευρεσ/, '"γραφείο ευρέσεως/εύρεσης εργασίας" is a licensed private employment agency in Greece. The company must not describe itself that way.'],
+    [/προσωριν\S*\s+απασχολ/, '"προσωρινή απασχόληση" (temporary work agency) is a regulated activity in Greece'],
+    [/διαμεσολαβ/, '"διαμεσολάβηση" (intermediation) is the regulated employment-intermediation service: use "πρόσληψη", "στρατολόγηση", "επιλογή προσωπικού"'],
+    [/αποσπασ(η|εις|εων|εως)\b|αποσπασμεν/, '"απόσπαση" means legal posting of workers (Directive 96/71, Law 3846/2010): use "αποστολή" or "πρόσληψη"'],
+    [/μετακλησ/, '"μετάκληση" is the legal immigration procedure for third-country workers; do not use unless the English source mentions it'],
+    [/ενοικιασ\S*\s+(εργαζομεν|προσωπικ|εργατ)/, 'leasing of employees is a regulated activity'],
+  ],
+};
+const WARN_TERMS = {
+  el: [[/τοποθετησ(η|εις|εων)/, '"τοποθέτηση" can read as a regulated placement service; prefer "πρόσληψη" or "ένταξη"'], [/ευρεσ\S*\s+εργασι/, '"εύρεση εργασίας" can read as a job-finding agency service']],
+};
+for (const [re, why] of BANNED[lang] || []) for (const [name, data] of Object.entries(everything)) for (const [trail, text] of leaves(data || {})) { if (re.test(strip(text))) err(`terminology (${name}.${trail})`, why); }
+for (const [re, why] of WARN_TERMS[lang] || []) for (const [name, data] of Object.entries(everything)) for (const [trail, text] of leaves(data || {})) { if (re.test(strip(text))) warn(`terminology (${name}.${trail})`, why); }
+if (lang === 'it' && /BMET/.test(flat(EN.PAGE_CONTENT)) && !/BMET/.test(flat(pages || {}))) err('terminology', 'BMET must stay as written');
+
+if (lang === 'el') {
+  const GREEK = /[Α-Ωα-ωΆ-ώ]/;
+  for (const [name, data] of Object.entries(everything)) for (const [trail, text] of leaves(data || {})) {
+    const where = `${name}.${trail}`;
+    if (/[\u1F00-\u1FFF]/.test(text)) err(where, 'polytonic Greek characters found: use modern monotonic Greek (one accent mark only)');
+    if (/[A-Za-z]\p{Script=Greek}|\p{Script=Greek}[A-Za-z]/u.test(text.replace(/[^\p{L}\s-]/gu, ' ').split(/[\s-]+/).filter((w) => /\p{Script=Greek}/u.test(w) && /[A-Za-z]/.test(w)).join(' '))) {
+      const bad = (text.match(/\p{L}+/gu) || []).filter((w) => /\p{Script=Greek}/u.test(w) && /[A-Za-z]/.test(w));
+      if (bad.length) err(where, `word mixes Greek and Latin letters (look-alike characters): ${bad.slice(0, 3).join(', ')}`);
+    }
+    if (words(text) >= 4 && !GREEK.test(text) && !/^(https?:|[\w.+-]+@)/.test(text.trim())) err(where, 'long text contains no Greek letters (untranslated?)');
+    if (/\?/.test(text) && GREEK.test(text) && !/https?:\/\//.test(text)) warn(where, 'Greek question mark is ";" (not "?")');
+    if (/(^|[\s(«“])'|'($|[\s)»”.,:;])/.test(text) && GREEK.test(text)) warn(where, 'check apostrophe/quote style (use « » or “ ”)');
+  }
 }
 for (const [name, data] of Object.entries({ ui, countries, services, posts, guides, pages, head })) {
   if (data && /بهويان|Bhuiyan Workforce Ltd\.? \(/.test(flat(data))) warn(`brand (${name})`, 'check how the company name is written');
@@ -218,7 +253,8 @@ for (const [name, data] of Object.entries({ ui, countries, services, posts, guid
 }
 
 // ---- report
-const show = (list, label) => { if (list.length) { console.log(`\n${label} (${list.length})`); list.slice(0, 80).forEach((l) => console.log('  ' + l)); if (list.length > 80) console.log(`  ... and ${list.length - 80} more`); } };
+const LIMIT = process.argv.includes('--all') ? Infinity : 80; // node scripts/check-translation.mjs it --all  prints everything
+const show = (list, label) => { if (list.length) { console.log(`\n${label} (${list.length})`); list.slice(0, LIMIT).forEach((l) => console.log('  ' + l)); if (list.length > LIMIT) console.log(`  ... and ${list.length - LIMIT} more (use --all to see everything)`); } };
 show(errors, 'ERRORS'); show(warnings, 'WARNINGS');
 console.log(`\ncheck-translation (${lang}): ${errors.length} error(s), ${warnings.length} warning(s)`);
 process.exit(errors.length ? 1 : 0);
