@@ -8,4 +8,5 @@ export default {
   slovakia: 'سلوفاكيا', 'bosnia-herzegovina': 'البوسنة والهرسك', armenia: 'أرمينيا',
   montenegro: 'الجبل الأسود', georgia: 'جورجيا', slovenia: 'سلوفينيا',
   'north-macedonia': 'مقدونيا الشمالية', italy: 'إيطاليا',
+  seychelles: 'سيشل', mauritius: 'موريشيوس',
 };
