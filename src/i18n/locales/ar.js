@@ -1,4 +1,4 @@
-// Arabic head/SEO strings (home, About, FAQ and 19 country pages so far).
+// Arabic head/SEO strings (home, About, FAQ and all country, service, post and guide pages).
 //
 // Naming rule: the company name stays "Bhuiyan Workforce Ltd." in Latin script.
 // Terminology: "استقدام" and "توريد عمالة" are the terms Gulf employers search
@@ -7,76 +7,13 @@
 // Claims mirror the English page (25+ countries, BMET-compliant, transparent).
 // Keyword choices are editorial assumptions, not measured search volumes.
 
+import { AR_TRANSLATED } from './ar.translated.js';
+
 const NAME = 'Bhuiyan Workforce Ltd.';
 
 export default {
   code: 'ar',
-  translated: [
-    'page:home', 'page:about', 'page:faq',
-    'country:saudi-arabia',
-    'country:uae',
-    'country:qatar',
-    'country:kuwait',
-    'country:oman',
-    'country:bahrain',
-    'country:jordan',
-    'country:malaysia',
-    'country:singapore',
-    'country:maldives',
-    'country:serbia',
-    'country:portugal',
-    'country:greece',
-    'country:romania',
-    'country:poland',
-    'country:hungary',
-    'country:croatia',
-    'country:czech-republic',
-    'country:lithuania',
-    'country:latvia', 'country:estonia', 'country:bulgaria', 'country:cyprus',
-    'country:slovakia', 'country:bosnia-herzegovina', 'country:armenia', 'country:montenegro',
-    'country:georgia',
-    'service:construction',
-    'service:drivers',
-    'service:hospitality',
-    'service:farm-garden',
-    'service:warehouse',
-    'service:factory',
-    'service:oil-gas',
-    'service:security',
-    'service:cleaning',
-    'service:retail',
-    'service:painting-finishing',
-    'service:steel-fixing',
-    'service:scaffolding-formwork',
-    'service:landscaping-groundskeeping',
-    'service:masonry-bricklaying',
-    'service:electrical-helpers',
-    'service:laundry-linen',
-    'service:food-processing',
-    'service:fishery-aquaculture',
-    'service:caregiving',
-    'service:welding-fabrication',
-    'service:plumbing-hvac',
-    'service:heavy-equipment',
-    'service:marine-fabrication',
-    'service:domestic-household',
-    'post:romania-work-visa-2026-changes',
-    'post:armenia-georgia-opportunity',
-    'post:georgia-work-permit-law-explained',
-    'post:montenegro-construction-hospitality-opportunity',
-    'post:certified-welders-gulf-construction',
-    'post:hvac-ac-technician-gulf-demand',
-    'post:gamca-wafid-medical-guide',
-    'post:gulf-construction-bangladesh',
-    'post:bmet-smart-card-explained',
-    'post:malaysia-vs-gulf-comparison',
-    'post:spot-legitimate-recruitment-agency',
-    'post:eastern-europe-factory-workers',
-    'post:remittance-economy-bangladesh',
-    'guide:saudi-arabia',
-    'guide:uae',
-    'guide:poland',
-  ],
+  translated: AR_TRANSLATED,
   head: {
     siteName: NAME,
     ogImageAlt: 'Bhuiyan Workforce Ltd. — استقدام عمالة بنغلاديشية بطريقة أخلاقية',
@@ -416,6 +353,41 @@ export default {
       }
 },
       posts: {
+      "poland-new-work-permit-system-2026": {
+            "title": "نظام تصاريح العمل الجديد في بولندا 2026 | Bhuiyan Workforce Ltd.",
+            "description": "نظام جديد لتصاريح العمل في بولندا منذ يونيو 2025: طلبات إلكترونية وعقد مكتوب إلزامي وغرامات أشد. ما يجب أن يعرفه العمال البنغلاديشيون وأصحاب العمل في 2026.",
+            "name": "بولندا غيّرت نظام تصاريح العمل: ما يجب أن يعرفه العمال البنغلاديشيون وأصحاب العمل في 2026",
+            "headline": "بولندا غيّرت نظام تصاريح العمل: ما يجب أن يعرفه العمال البنغلاديشيون وأصحاب العمل في 2026",
+            "date": "November 2026"
+      },
+      "saudi-arabia-visa-quotas-compliance-2026": {
+            "title": "حصص التأشيرات والامتثال في السعودية 2026 | Bhuiyan Workforce Ltd.",
+            "description": "حدود جديدة لتأشيرات العمل الفورية وتشديد الرقابة على أصحاب العمل في السعودية. تعرّف على قواعد قوى والامتثال وما يعنيه ذلك لتوظيف العمال البنغلاديشيين في 2026.",
+            "name": "المملكة العربية السعودية: حصص تأشيرات أكثر تشددًا وفحوصات امتثال أقوى — ما يجب أن يعرفه أصحاب العمل في 2026",
+            "headline": "المملكة العربية السعودية: حصص تأشيرات أكثر تشددًا وفحوصات امتثال أقوى — ما يجب أن يعرفه أصحاب العمل في 2026",
+            "date": "November 2026"
+      },
+      "uae-wage-emiratisation-rules-2026": {
+            "title": "قواعد الأجور والتوطين في الإمارات 2026 | Bhuiyan Workforce Ltd.",
+            "description": "قواعد أشد لحماية الأجور والتوطين في الإمارات في 2026، مع وضع غير واضح لتأشيرات العمالة البنغلاديشية. ما يجب أن يعرفه أصحاب العمل قبل التوظيف.",
+            "name": "الإمارات العربية المتحدة: قواعد أشد للأجور والتوطين، وصورة غير واضحة لتأشيرات بنغلاديش — ما يجب أن يعرفه أصحاب العمل في 2026",
+            "headline": "الإمارات العربية المتحدة: قواعد أشد للأجور والتوطين، وصورة غير واضحة لتأشيرات بنغلاديش — ما يجب أن يعرفه أصحاب العمل في 2026",
+            "date": "November 2026"
+      },
+      "malaysia-bangladesh-recruitment-reopens-2026": {
+            "title": "إعادة فتح الاستقدام من بنغلاديش إلى ماليزيا 2026 | Bhuiyan Workforce Ltd.",
+            "description": "ماليزيا تعيد فتح الاستقدام من بنغلاديش على مراحل بعد توقف دام عامين. تعرّف على قواعد الحصص والوكالات المعتمدة وما يعنيه ذلك لأصحاب العمل والعمال في 2026.",
+            "name": "ماليزيا: إعادة فتح الاستقدام من بنغلاديش على مراحل بعد توقف دام عامين — ما يحتاج أصحاب العمل إلى معرفته في 2026",
+            "headline": "ماليزيا: إعادة فتح الاستقدام من بنغلاديش على مراحل بعد توقف دام عامين — ما يحتاج أصحاب العمل إلى معرفته في 2026",
+            "date": "November 2026"
+      },
+      "czech-republic-employee-card-rules-2026": {
+            "title": "قواعد بطاقة الموظف في التشيك 2026 | Bhuiyan Workforce Ltd.",
+            "description": "نظام بطاقة الموظف في التشيك والإبلاغ الشهري JMHZ وغرامات الامتثال في 2026. دليل لأصحاب العمل الذين يفكرون في توظيف عمال بنغلاديشيين.",
+            "name": "التشيك: قواعد بطاقة الموظف والتقارير الشهرية وامتثال أشد صرامة — ما يجب أن يعرفه أصحاب العمل في عام 2026",
+            "headline": "التشيك: قواعد بطاقة الموظف والتقارير الشهرية وامتثال أشد صرامة — ما يجب أن يعرفه أصحاب العمل في عام 2026",
+            "date": "November 2026"
+      },
       "romania-work-visa-2026-changes": {
             "title": "تغييرات تأشيرة العمل في رومانيا 2026 | Bhuiyan Workforce Ltd.",
             "description": "ألغت رومانيا نظام تصاريح العمل القديم في أغسطس 2026 واستبدلته بطلب إلكتروني موحّد. نشرح ما تغيّر ومكان تقديم البنغلاديشيين لطلبات التأشيرة.",
