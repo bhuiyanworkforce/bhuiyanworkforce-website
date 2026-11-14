@@ -36,7 +36,10 @@ export const COUNTRY_SLUGS = [
 ];
 
 export const POST_SLUGS = [
-  'poland-new-work-permit-system-2026', 'saudi-arabia-visa-quotas-compliance-2026', 'uae-wage-emiratisation-rules-2026', 'malaysia-bangladesh-recruitment-reopens-2026', 'czech-republic-employee-card-rules-2026',
+  // TEMPORARY: these 5 posts have Arabic text (src/content/ar/posts.js) but no English entry in
+  // src/data/posts.jsx yet. Add the English posts to posts.jsx, then move these slugs back into the list.
+  // 'poland-new-work-permit-system-2026', 'saudi-arabia-visa-quotas-compliance-2026', 'uae-wage-emiratisation-rules-2026',
+  // 'malaysia-bangladesh-recruitment-reopens-2026', 'czech-republic-employee-card-rules-2026',
   'romania-work-visa-2026-changes', 'armenia-georgia-opportunity', 'georgia-work-permit-law-explained',
   'montenegro-construction-hospitality-opportunity', 'certified-welders-gulf-construction',
   'hvac-ac-technician-gulf-demand', 'gamca-wafid-medical-guide', 'gulf-construction-bangladesh',
