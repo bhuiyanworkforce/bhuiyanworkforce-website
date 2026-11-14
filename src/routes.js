@@ -36,6 +36,7 @@ export const COUNTRY_SLUGS = [
 ];
 
 export const POST_SLUGS = [
+  'poland-new-work-permit-system-2026', 'saudi-arabia-visa-quotas-compliance-2026', 'uae-wage-emiratisation-rules-2026', 'malaysia-bangladesh-recruitment-reopens-2026', 'czech-republic-employee-card-rules-2026',
   'romania-work-visa-2026-changes', 'armenia-georgia-opportunity', 'georgia-work-permit-law-explained',
   'montenegro-construction-hospitality-opportunity', 'certified-welders-gulf-construction',
   'hvac-ac-technician-gulf-demand', 'gamca-wafid-medical-guide', 'gulf-construction-bangladesh',
