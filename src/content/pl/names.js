@@ -6,5 +6,6 @@ export default {
   poland: 'Polska', hungary: 'Węgry', croatia: 'Chorwacja', 'czech-republic': 'Czechy',
   lithuania: 'Litwa', latvia: 'Łotwa', estonia: 'Estonia', bulgaria: 'Bułgaria', cyprus: 'Cypr',
   slovakia: 'Słowacja', 'bosnia-herzegovina': 'Bośnia i Hercegowina', armenia: 'Armenia',
-  montenegro: 'Czarnogóra', georgia: 'Gruzja',
+  montenegro: 'Czarnogóra', georgia: 'Gruzja', slovenia: 'Słowenia',
+  'north-macedonia': 'Macedonia Północna', italy: 'Włochy',
 };
