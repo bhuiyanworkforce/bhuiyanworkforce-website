@@ -98,7 +98,8 @@ export default {
       'Saudi Arabia', 'United Arab Emirates', 'Qatar', 'Kuwait', 'Oman', 'Bahrain', 'Jordan',
       'Malaysia', 'Singapore', 'Maldives', 'Italy', 'Portugal', 'Greece', 'Romania', 'Poland',
       'Hungary', 'Croatia', 'Czech Republic', 'Lithuania', 'Latvia', 'Estonia', 'Bulgaria',
-      'Bosnia and Herzegovina', 'Cyprus',
+      'Bosnia and Herzegovina', 'Cyprus', 'Serbia', 'Slovakia', 'Slovenia', 'Armenia', 'Georgia',
+      'Montenegro', 'North Macedonia',
     ],
   },
 };

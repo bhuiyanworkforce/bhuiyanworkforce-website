@@ -149,7 +149,7 @@ export default {
   "home_services_sub": "Dostarczamy wykwalifikowanych i półwykwalifikowanych pracowników w 25 kategoriach zawodowych, z branżowym szkoleniem przed wyjazdem i kompletną dokumentacją.",
   "home_countries_tag": "Nasz globalny zasięg",
   "home_countries_title": "Kraje, do których wysyłamy pracowników",
-  "home_countries_sub": "Aktywne korytarze rekrutacyjne w 25 krajach — Zatoka Perska, Azja Południowo-Wschodnia i Europa — z pełną zgodnością z przepisami imigracyjnymi i dokumentacyjnymi każdego kraju docelowego.",
+  "home_countries_sub": "Aktywne korytarze rekrutacyjne w ponad 25 krajach — Zatoka Perska, Azja Południowo-Wschodnia i Europa — z pełną zgodnością z przepisami imigracyjnymi i dokumentacyjnymi każdego kraju docelowego.",
   "home_view_countries": "Zobacz wszystkie kraje ze szczegółami →",
   "home_process_tag": "Nasze podejście",
   "home_process_title": "Jak działamy",
