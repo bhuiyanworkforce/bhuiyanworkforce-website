@@ -67,6 +67,7 @@ export default function ContactForm() {
         company: fields.company || 'Not provided',
         service: serviceLabel,
         message: fields.message,
+        formType: 'contact',
       };
 
       // Convert attachment to base64 if provided
