@@ -119,7 +119,7 @@ export const PROFILES = {
     warn: [{ re: /mediere/, term: '«mediere»', why: 'can read as the regulated labour-mediation service' }],
     glossary: [['recruitment / ethical recruitment', 'recrutare / recrutare etică'], ['workers / skilled / semi-skilled', 'lucrători / calificați / semicalificați'], ['employer(s)', 'angajator / angajatori'], ['workforce', 'forță de muncă'], ['deployment (workers abroad)', 'trimiterea lucrătorilor'], ['shortlist', 'listă scurtă de candidați verificați'], ['trade test', 'test practic de meserie'], ['visa / work permit', 'viză / permis de muncă'], ['medical clearance', 'aviz medical de aptitudine'], ['police clearance', 'cazier judiciar'], ['success fee', 'comision de succes (success fee)'], ['replacement guarantee', 'garanție de înlocuire'], ['employment contract', 'contract de muncă'], ['compliance', 'conformitate'], ['the Gulf (GCC)', 'Golful / țările din Golf (GCC)'], ['Southeast Asia', 'Asia de Sud-Est'], ['Founding Employer Partners', 'angajatori parteneri fondatori'], ['capabilities deck', 'prezentarea capabilităților companiei']],
     keywords: 'lucrători din Bangladesh, recrutare de lucrători străini, angajare personal calificat din străinătate, recrutare etică, forță de muncă calificată, BMET',
-    notes: ['Romania is also one of the 31 country pages and Romanian employers are a likely audience. Translate the Romania page like every other.'],
+    notes: ['Romania is also one of the 33 country pages and Romanian employers are a likely audience. Translate the Romania page like every other.'],
   },
   // ------------------------------------------------------------------ Hungarian
   hu: {
@@ -215,7 +215,7 @@ export const PROFILES = {
     warn: [],
     glossary: [['recruitment / ethical recruitment', 'набиране на персонал / етично набиране'], ['workers / skilled / semi-skilled', 'работници / квалифицирани / полуквалифицирани'], ['employer(s)', 'работодател / работодатели'], ['workforce', 'работна сила'], ['deployment (workers abroad)', 'изпращане на работници'], ['shortlist', 'кратък списък от проверени кандидати'], ['trade test', 'практически изпит по професията'], ['visa / work permit', 'виза / разрешение за работа'], ['medical clearance', 'медицинско удостоверение за годност'], ['police clearance', 'свидетелство за съдимост'], ['success fee', 'такса при успех (success fee)'], ['replacement guarantee', 'гаранция за замяна'], ['employment contract', 'трудов договор'], ['compliance', 'съответствие с изискванията'], ['the Gulf (GCC)', 'страните от Персийския залив (GCC)'], ['Southeast Asia', 'Югоизточна Азия'], ['Founding Employer Partners', 'работодатели партньори-основатели'], ['capabilities deck', 'презентация на възможностите на компанията']],
     keywords: 'работници от Бангладеш, набиране на чуждестранни работници, наемане на квалифицирани работници от чужбина, етично набиране, квалифицирана работна сила, BMET',
-    notes: ['Bulgaria is also one of the 31 country pages and Bulgarian employers are a likely audience. Translate the Bulgaria page like every other.', 'Acronyms keep Latin script.'],
+    notes: ['Bulgaria is also one of the 33 country pages and Bulgarian employers are a likely audience. Translate the Bulgaria page like every other.', 'Acronyms keep Latin script.'],
   },
   // ------------------------------------------------------------------ Russian (Cyrillic)
   ru: {
