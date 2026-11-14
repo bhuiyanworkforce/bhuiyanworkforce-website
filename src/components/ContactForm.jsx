@@ -114,7 +114,7 @@ export default function ContactForm() {
         tabIndex={-1}
         autoComplete="off"
         aria-hidden="true"
-        style={{ position: 'absolute', insetInlineStart: '-9999px', width: 1, height: 1, opacity: 0 }}
+        style={{ position: 'absolute', width: 1, height: 1, opacity: 0, overflow: 'hidden', clip: 'rect(0 0 0 0)', pointerEvents: 'none' }}
       />
 
       {serverError && (

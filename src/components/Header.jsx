@@ -57,6 +57,8 @@ export default function Header() {
               </button>
             </div>
 
+            <div className="header-lang-mobile"><LanguageSwitcher /></div>
+
             <button
               className={`hamburger${menuOpen ? ' open' : ''}`}
               onClick={() => setMenuOpen((v) => !v)}

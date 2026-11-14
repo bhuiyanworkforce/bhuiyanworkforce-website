@@ -65,7 +65,7 @@ export default function LanguageSwitcher() {
         }}
       >
         <span aria-hidden="true">{current.flag}</span>
-        <span>{current.label}</span>
+        <span className="lang-label">{current.label}</span>
         <span aria-hidden="true" style={{ opacity: 0.6, fontSize: '0.65rem', marginInlineStart: 2 }}>▾</span>
       </button>
 
