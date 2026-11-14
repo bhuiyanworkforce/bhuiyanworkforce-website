@@ -1,6 +1,7 @@
 // UI strings.
 //
 // - Arabic and Polish live in ./locales/ar.ui.js and ./locales/pl.ui.js (real languages with their own URLs).
+//   Polish is registered here; Arabic is registered by ./ar-bundle.js (loaded on demand).
 // - English for keys added in Phase 1b lives in ./locales/en.ui.js.
 // - This file keeps English + Bengali + Italian for the original keys. Bengali and Italian are an in-place
 //   overlay only (no URL, no hreflang): they swap these strings on the English URL after hydration.
@@ -8,8 +9,8 @@
 // Resolution order for t(key, lang): language table -> English -> the key itself.
 // Any real-language lookup that falls back to English is recorded and reported by the page generator.
 
-import arUi from './locales/ar.ui.js';
 import plUi from './locales/pl.ui.js';
+import { REAL_UI, registerUi } from './uiTables.js';
 import enUi from './locales/en.ui.js';
 import { LOCALES, OVERLAY_LOCALE_CODES } from './config.js';
 import { recordFallback } from '../content/fallbacks.js';
@@ -19,7 +20,7 @@ export const OVERLAY_LANGUAGES = OVERLAY_LOCALE_CODES.map((code) => ({
   code, label: LOCALES[code].label, dir: LOCALES[code].dir,
 }));
 
-const REAL_UI = { ar: arUi, pl: plUi };
+registerUi('pl', plUi);
 
 export const T = {
   nav_services: { en: "Services", bn: "সেবা", it: "Servizi" },
