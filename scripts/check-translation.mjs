@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Structural quality gate for a translated language.
 //
-//   node scripts/check-translation.mjs it        (also works for: ar, pl)
+//   node scripts/check-translation.mjs it --all   (any language code; rules per language live in scripts/translation-profiles.mjs)
 //
 // Compares the translation files against the English source and the Arabic reference shapes:
 // keys, placeholders, list lengths, markdown structure, numbers, contact details, brand name,
@@ -12,10 +12,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { PROFILES } from './translation-profiles.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const lang = process.argv[2];
-if (!lang || lang === 'en') { console.error('usage: node scripts/check-translation.mjs <lang code, e.g. it>'); process.exit(2); }
+if (!lang || lang === 'en') { console.error('usage: node scripts/check-translation.mjs <lang code, e.g. it>'); process.exitCode = 2; throw new Error('missing language code'); }
 
 const errors = [];
 const warnings = [];
@@ -199,7 +200,7 @@ else {
   if (h.pages?.home && !/[A-Za-zÀ-ÿ]/.test(h.pages.home.title)) err('head.pages.home', 'title looks empty');
 }
 
-// ---- 8. language-specific terminology and script checks
+// ---- 8. language-specific terminology and script checks (rules come from scripts/translation-profiles.mjs)
 const strip = (x) => String(x).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/ς/g, 'σ');
 const everything = { ui, countries, services, posts, guides, pages, head };
 function* leaves(v, trail = '') {
@@ -207,46 +208,38 @@ function* leaves(v, trail = '') {
   else if (Array.isArray(v)) for (let i = 0; i < v.length; i++) yield* leaves(v[i], `${trail}[${i}]`);
   else if (v && typeof v === 'object') for (const [k, x] of Object.entries(v)) yield* leaves(x, trail ? `${trail}.${k}` : k);
 }
-// Terms that describe authorised/regulated activities in the target country. The company must not use
-// them to describe itself or its service. [regex on accent-stripped lower-case text, explanation]
-const BANNED = {
-  it: [
-    [/agenzi[ae] (per il lavoro|di somministrazione|interinal\w*)/, '"agenzia per il lavoro / di somministrazione / interinale" are authorised, regulated activities in Italy (ANPAL register). The company must not describe itself that way.'],
-    [/somministrazione/, '"somministrazione" is a regulated legal term'],
-    [/intermediazione/, '"intermediazione" is a regulated legal term'],
-    [/distacc/, '"distacco" means legal posting of workers (D.Lgs. 136/2016): use "invio", "inserimento" or "impiego"'],
-    [/avviament/, '"avviamento" has a specific labour-law meaning in Italian'],
-  ],
-  el: [
-    [/γραφει\S*\s+ευρεσ/, '"γραφείο ευρέσεως/εύρεσης εργασίας" is a licensed private employment agency in Greece. The company must not describe itself that way.'],
-    [/προσωριν\S*\s+απασχολ/, '"προσωρινή απασχόληση" (temporary work agency) is a regulated activity in Greece'],
-    [/διαμεσολαβ/, '"διαμεσολάβηση" (intermediation) is the regulated employment-intermediation service: use "πρόσληψη", "στρατολόγηση", "επιλογή προσωπικού"'],
-    [/αποσπασ(η|εις|εων|εως)\b|αποσπασμεν/, '"απόσπαση" means legal posting of workers (Directive 96/71, Law 3846/2010): use "αποστολή" or "πρόσληψη"'],
-    [/μετακλησ/, '"μετάκληση" is the legal immigration procedure for third-country workers; do not use unless the English source mentions it'],
-    [/ενοικιασ\S*\s+(εργαζομεν|προσωπικ|εργατ)/, 'leasing of employees is a regulated activity'],
-  ],
-};
-const WARN_TERMS = {
-  el: [[/τοποθετησ(η|εις|εων)/, '"τοποθέτηση" can read as a regulated placement service; prefer "πρόσληψη" or "ένταξη"'], [/ευρεσ\S*\s+εργασι/, '"εύρεση εργασίας" can read as a job-finding agency service']],
-};
-for (const [re, why] of BANNED[lang] || []) for (const [name, data] of Object.entries(everything)) for (const [trail, text] of leaves(data || {})) { if (re.test(strip(text))) err(`terminology (${name}.${trail})`, why); }
-for (const [re, why] of WARN_TERMS[lang] || []) for (const [name, data] of Object.entries(everything)) for (const [trail, text] of leaves(data || {})) { if (re.test(strip(text))) warn(`terminology (${name}.${trail})`, why); }
-if (lang === 'it' && /BMET/.test(flat(EN.PAGE_CONTENT)) && !/BMET/.test(flat(pages || {}))) err('terminology', 'BMET must stay as written');
-
-if (lang === 'el') {
-  const GREEK = /[Α-Ωα-ωΆ-ώ]/;
+const profile = PROFILES[lang];
+if (!profile) warn('profile', `no rules profile for "${lang}": only the generic structural checks ran. Add one to scripts/translation-profiles.mjs (regulated terms, script, punctuation)`);
+else {
+  const NON_LATIN = /[\p{Script=Cyrillic}\p{Script=Greek}\p{Script=Arabic}]/u;
+  const SCRIPT_RE = { cyrillic: /\p{Script=Cyrillic}/u, greek: /\p{Script=Greek}/u };
+  const checks = new Set(profile.checks || []);
   for (const [name, data] of Object.entries(everything)) for (const [trail, text] of leaves(data || {})) {
     const where = `${name}.${trail}`;
-    if (/[\u1F00-\u1FFF]/.test(text)) err(where, 'polytonic Greek characters found: use modern monotonic Greek (one accent mark only)');
-    if (/[A-Za-z]\p{Script=Greek}|\p{Script=Greek}[A-Za-z]/u.test(text.replace(/[^\p{L}\s-]/gu, ' ').split(/[\s-]+/).filter((w) => /\p{Script=Greek}/u.test(w) && /[A-Za-z]/.test(w)).join(' '))) {
-      const bad = (text.match(/\p{L}+/gu) || []).filter((w) => /\p{Script=Greek}/u.test(w) && /[A-Za-z]/.test(w));
-      if (bad.length) err(where, `word mixes Greek and Latin letters (look-alike characters): ${bad.slice(0, 3).join(', ')}`);
+    const plain = strip(text);
+    for (const r of profile.banned || []) if (r.re.test(plain)) err(`terminology (${where})`, `${r.term}: ${r.why}. Rephrase (the company must not describe itself with a regulated term)`);
+    for (const r of profile.warn || []) if (r.re.test(plain)) warn(`terminology (${where})`, `${r.term}: ${r.why}`);
+    if (profile.script === 'latin' && NON_LATIN.test(text)) err(where, `contains ${profile.name} text in a non-Latin script (Cyrillic/Greek/Arabic letters): this language must be written in Latin script only`);
+    if (profile.forbiddenChars && profile.forbiddenChars.test(text)) err(where, profile.forbiddenNote || 'contains characters that do not exist in this language');
+    for (const [re, msg] of profile.wrongDiacritics || []) if (re.test(text)) err(where, msg);
+    const sc = SCRIPT_RE[profile.script];
+    if (sc) {
+      const mixed = (text.match(/\p{L}+/gu) || []).filter((w) => sc.test(w) && /[A-Za-z]/.test(w));
+      if (mixed.length) err(where, `word mixes ${profile.script} and Latin letters (look-alike characters): ${mixed.slice(0, 3).join(', ')}`);
+      if (words(text) >= 4 && !sc.test(text) && !/^(https?:|[\w.+-]+@)/.test(text.trim())) err(where, `long text contains no ${profile.script} letters (untranslated?)`);
     }
-    if (words(text) >= 4 && !GREEK.test(text) && !/^(https?:|[\w.+-]+@)/.test(text.trim())) err(where, 'long text contains no Greek letters (untranslated?)');
-    if (/\?/.test(text) && GREEK.test(text) && !/https?:\/\//.test(text)) warn(where, 'Greek question mark is ";" (not "?")');
-    if (/(^|[\s(«“])'|'($|[\s)»”.,:;])/.test(text) && GREEK.test(text)) warn(where, 'check apostrophe/quote style (use « » or “ ”)');
+    if (checks.has('greek-polytonic') && /[\u1F00-\u1FFF]/.test(text)) err(where, 'polytonic Greek characters found: use modern monotonic Greek (one accent mark only)');
+    if (checks.has('greek-question') && /\?/.test(text) && /\p{Script=Greek}/u.test(text) && !/https?:\/\//.test(text)) warn(where, 'Greek question mark is ";" (not "?")');
+    if (checks.has('spanish-inverted') && !/https?:\/\//.test(text)) {
+      const n = (re) => (text.match(re) || []).length;
+      if (n(/\?/g) > n(/¿/g)) warn(where, 'Spanish questions need the opening mark ¿ (more "?" than "¿")');
+      if (n(/!/g) > n(/¡/g)) warn(where, 'Spanish exclamations need the opening mark ¡ (more "!" than "¡")');
+    }
+    if (checks.has('french-spacing') && /(?<![\s\u00A0\u202F\d\/])[?!;:](?=\s|$)/.test(text.replace(/https?:\/\/\S+/g, ''))) warn(where, 'French typography: put a non-breaking space before : ; ? !');
   }
 }
+if (lang === 'it' && /BMET/.test(flat(EN.PAGE_CONTENT)) && !/BMET/.test(flat(pages || {}))) err('terminology', 'BMET must stay as written');
+
 for (const [name, data] of Object.entries({ ui, countries, services, posts, guides, pages, head })) {
   if (data && /بهويان|Bhuiyan Workforce Ltd\.? \(/.test(flat(data))) warn(`brand (${name})`, 'check how the company name is written');
   if (data && /\u200e|\u200f|\u2066|\u2069/.test(flat(data)) && lang !== 'ar') warn(`format (${name})`, 'contains invisible bidi control characters (only needed for Arabic)');
@@ -257,4 +250,4 @@ const LIMIT = process.argv.includes('--all') ? Infinity : 80; // node scripts/ch
 const show = (list, label) => { if (list.length) { console.log(`\n${label} (${list.length})`); list.slice(0, LIMIT).forEach((l) => console.log('  ' + l)); if (list.length > LIMIT) console.log(`  ... and ${list.length - LIMIT} more (use --all to see everything)`); } };
 show(errors, 'ERRORS'); show(warnings, 'WARNINGS');
 console.log(`\ncheck-translation (${lang}): ${errors.length} error(s), ${warnings.length} warning(s)`);
-process.exit(errors.length ? 1 : 0);
+process.exitCode = errors.length ? 1 : 0; // not process.exit(): it can cut off large piped output
