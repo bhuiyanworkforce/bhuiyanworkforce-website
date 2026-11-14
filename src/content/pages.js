@@ -11,7 +11,7 @@ const en = {
     story: [
       'Bhuiyan Workforce Ltd. was founded with a straightforward mission: to create transparent, ethical pathways for skilled Bangladeshi workers to access legitimate international employment — while giving overseas employers a reliable, fully compliant recruitment partner.',
       "Bangladesh has one of the world's most capable overseas workforces, with millions of citizens working abroad in construction, manufacturing, logistics, and hospitality. Too often, those workers have been exploited by unregulated brokers. We exist to be different.",
-      'Bhuiyan Workforce Ltd. is building verified deployment corridors across 25+ countries across the Gulf, Southeast Asia, and Europe — with every placement designed to be BMET-registered and fully documented.',
+      'Bhuiyan Workforce Ltd. is building verified deployment corridors across 25+ countries in the Middle East, Europe, Asia, and Africa — with every placement designed to be BMET-registered and fully documented.',
     ],
     values: [
       { icon: '⚖️', title: 'Transparent Recruitment', body: 'Workers receive verified, honest job offers in their own language — with clear terms, full documentation, and no hidden fees — before they commit to anything.' },
