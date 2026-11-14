@@ -108,7 +108,7 @@ export default function PrivacyPage() {
             <p>As an international recruitment agency, we necessarily transfer personal data across borders — for example, sharing a worker's documents with an employer in Saudi Arabia or submitting visa applications to European embassies. We do this only where necessary for the recruitment process and in accordance with applicable law.</p>
 
             <h2>12. Governing Law</h2>
-            <p>This Privacy Policy is governed by the laws of Bangladesh, including the Digital Security Act 2018 and any applicable data protection regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.</p>
+            <p>This Privacy Policy is governed by the laws of Bangladesh, including applicable Bangladeshi cyber-security and data protection laws and regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.</p>
 
             <h2>13. Changes to This Policy</h2>
             <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. We will post the updated version on this page with a revised "last updated" date. Continued use of the website after any update constitutes acceptance of the revised policy.</p>
