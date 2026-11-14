@@ -10,6 +10,7 @@ const REGION_KEYS = {
   Gulf: 'cn.r_gulf',
   'Southeast Asia': 'cn.r_sea',
   'South Asia': 'cn.r_sa',
+  'Indian Ocean': 'cn.r_io',
   'Middle East': 'cn.r_me',
   Europe: 'cn.r_eu',
   'Caucasus & Central Asia': 'cn.r_cca',

@@ -14,7 +14,7 @@ const PROCESS_STEPS = [
 const WHY_US = [
   { icon: '🎯', title: 'Direct Talent Access', desc: "Tap into Bangladesh's large, motivated labor pool across all major trade and service sectors." },
   { icon: '✅', title: 'Pre-Screened Workers', desc: 'Every candidate is skills-tested, medically cleared, and document-ready before deployment.' },
-  { icon: '🌍', title: 'Global Reach', desc: 'Active deployment coverage across 25+ countries spanning Middle East, Asia, and Europe.' },
+  { icon: '🌍', title: 'Global Reach', desc: 'Active deployment coverage across 25+ countries spanning the Middle East, Europe, Asia, and Africa.' },
   { icon: '👤', title: 'Dedicated Support', desc: 'Clients receive a dedicated account contact for seamless communication end-to-end.' },
   { icon: '⚡', title: 'Fast Turnaround', desc: 'Streamlined process from requirement submission to worker deployment.' },
 ];
@@ -24,6 +24,7 @@ const DESTINATIONS = [
   { region: 'Asia Pacific (3)', countries: 'Malaysia · Singapore · Maldives' },
   { region: 'Europe (19)', countries: 'Italy · Serbia · Portugal · Greece · Slovakia · Slovenia · Latvia · Cyprus · Estonia · Lithuania · Poland · Czech Republic · Bulgaria · Bosnia and Herzegovina · Hungary · Croatia · Romania · Montenegro · North Macedonia' },
   { region: 'Caucasus (2)', countries: 'Armenia · Georgia' },
+  { region: 'Indian Ocean (2)', countries: 'Seychelles · Mauritius' },
 ];
 
 export default function CapabilitiesPage() {
@@ -65,7 +66,7 @@ export default function CapabilitiesPage() {
         <div className="intro-band">
           <div className="container">
             <p className="intro-text">
-              Connecting Bangladesh's skilled workforce to the world — <strong>25+ countries</strong> across Middle East, Asia &amp; Europe.
+              Connecting Bangladesh's skilled workforce to the world — <strong>25+ countries</strong> across the Middle East, Europe, Asia &amp; Africa.
             </p>
           </div>
         </div>
@@ -80,7 +81,7 @@ export default function CapabilitiesPage() {
               </div>
               <div>
                 <p style={{ color: 'var(--text-body)', lineHeight: 1.8, fontSize: '1rem', marginBottom: 16 }}>
-                  Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Asia, and Europe.
+                  Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Europe, Asia, and Africa.
                 </p>
                 <p style={{ color: 'var(--text-body)', lineHeight: 1.8, fontSize: '1rem', margin: 0 }}>
                   Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. Our BMET recruitment licence is in process — expected October 2026. In the meantime we are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.

@@ -42,7 +42,7 @@ const COUNTRIES = [
   'Poland', 'Romania', 'Serbia', 'Portugal', 'Greece', 'Hungary', 'Croatia',
   'Czech Republic', 'Lithuania', 'Latvia', 'Estonia', 'Bulgaria', 'Cyprus',
   'Slovakia', 'Bosnia and Herzegovina', 'Montenegro', 'Slovenia', 'North Macedonia', 'Italy',
-  'Armenia', 'Georgia', 'Open to Any Country',
+  'Armenia', 'Georgia', 'Seychelles', 'Mauritius', 'Open to Any Country',
 ];
 
 export default function WorkerApplicationPage() {

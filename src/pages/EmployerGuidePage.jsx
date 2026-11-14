@@ -3,7 +3,7 @@ import { Link } from '../i18n/router';
 
 const GUIDE_CONTENTS = [
   { icon: '📋', title: 'Understanding BMET & Emigration Clearance', desc: 'Step-by-step explanation of the Bangladesh Manpower Bureau process every worker must complete.' },
-  { icon: '🌍', title: 'Country-by-Country Visa Requirements', desc: 'Gulf, Europe, and Southeast Asia visa timelines, fees, and documentation requirements at a glance.' },
+  { icon: '🌍', title: 'Country-by-Country Visa Requirements', desc: 'Visa timelines, fees, and documentation requirements for the Middle East, Europe, Asia, and Africa at a glance.' },
   { icon: '⚖️', title: 'Legal Compliance Checklist', desc: 'What every employer must provide to stay compliant with Bangladesh labour export regulations.' },
   { icon: '💼', title: 'Trade Testing & Skills Verification', desc: 'How Bangladeshi workers are trade-tested and what certifications to expect.' },
   { icon: '📄', title: 'Employment Contract Standards', desc: 'What a compliant employment contract must include for each destination country.' },
