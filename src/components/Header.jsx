@@ -50,7 +50,7 @@ export default function Header() {
               <Link to="/blog">{t('nav_blog', lang)}</Link>
             </nav>
 
-            <div className="header-actions" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <div className="header-actions" style={{ alignItems: 'center', gap: 10 }}>
               <LanguageSwitcher />
               <button className="btn btn-primary" onClick={() => scrollTo('contact')}>
                 {t('nav_get_started', lang)}
