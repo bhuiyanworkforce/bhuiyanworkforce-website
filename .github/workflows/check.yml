@@ -11,5 +11,4 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run test:seo
-        continue-on-error: true
       - run: npm run build:static
