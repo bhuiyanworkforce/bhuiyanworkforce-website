@@ -2,17 +2,20 @@
 // Each fallback is recorded (see ./fallbacks.js) and listed at the end of the build.
 
 import { recordFallback } from './fallbacks.js';
-import arCountries from './ar/countries.js';
 import plCountries from './pl/countries.js';
-import arNames from './ar/names.js';
-import arServices from './ar/services.js';
-import arPosts from './ar/posts.js';
-import arGuides from './ar/guides.js';
 import plNames from './pl/names.js';
 
-const COUNTRY_CONTENT = { ar: arCountries, pl: plCountries };
-const COUNTRY_NAMES = { ar: arNames, pl: plNames };
-const ENTITY_CONTENT = { ar: { service: arServices, post: arPosts, guide: arGuides } };
+// Polish content is small and always loaded. Arabic is large: it registers itself through
+// registerContent() from src/i18n/ar-bundle.js, which is loaded on demand in the browser.
+const COUNTRY_CONTENT = { pl: plCountries };
+const COUNTRY_NAMES = { pl: plNames };
+const ENTITY_CONTENT = {};
+
+export function registerContent(lang, { countries, names, service, post, guide }) {
+  COUNTRY_CONTENT[lang] = countries;
+  COUNTRY_NAMES[lang] = names;
+  ENTITY_CONTENT[lang] = { service, post, guide };
+}
 
 const COUNTRY_KEYS = [
   'name', 'region', 'capital', 'currency', 'overview', 'topSectors', 'visaType', 'visaFee',
