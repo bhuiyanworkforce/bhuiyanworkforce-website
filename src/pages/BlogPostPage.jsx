@@ -71,6 +71,13 @@ function renderContent(content) {
         </p>
       );
       pos += 1;
+    } else if (line.startsWith('*') && !line.startsWith('**') && line.endsWith('*')) {
+      elements.push(
+        <p key={key++} style={{ color: 'var(--gray-500)', fontStyle: 'italic', fontSize: '0.88rem', lineHeight: 1.7, marginTop: 24, marginBottom: 16 }}>
+          {line.replace(/^\*|\*$/g, '')}
+        </p>
+      );
+      pos += 1;
     } else if (line.startsWith('- ')) {
       const { element, consumed } = parseBulletList(lines, pos, key++);
       elements.push(element);
