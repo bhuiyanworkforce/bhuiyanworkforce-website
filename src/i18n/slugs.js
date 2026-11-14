@@ -72,6 +72,9 @@ export const ENTITY_SLUGS = {
       armenia: 'armenia',
       montenegro: 'czarnogora',
       georgia: 'gruzja',
+      slovenia: 'slowenia',
+      'north-macedonia': 'macedonia-polnocna',
+      italy: 'wlochy',
     },
     service: {
       construction: 'budownictwo',
