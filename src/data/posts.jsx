@@ -5,6 +5,280 @@ const BMET_EXPLANATION = `The BMET Smart Card is an official identity document i
 
 export const POSTS = [
   {
+    slug: 'poland-new-work-permit-system-2026',
+    icon: '🇵🇱',
+    tag: 'Compliance',
+    date: 'November 2026',
+    title: "Poland's New Work Permit System: What Bangladeshi Workers and Employers Need to Know in 2026",
+    excerpt: "Poland has long been one of Europe's most popular destinations for foreign workers. Since 2025 the rules have changed significantly. If you plan to work in Poland, or you are an employer who wants to hire Bangladeshi workers, understanding the new system is now essential.",
+    content: `
+At Bhuiyan Workforce we follow these changes closely so that our candidates and partners are never caught off guard. Here is a clear overview.
+
+## A New Law Replaced a 20-Year-Old System
+
+On 1 June 2025, an entirely new law on the employment of foreigners came into force in Poland. It replaced the old legislation that had applied for more than two decades. The President signed the law in April 2025, and it is officially known as the Act on the Conditions for Permitting the Employment of Foreign Nationals.
+
+The government's stated aims were to simplify procedures, increase transparency, and close loopholes that allowed the system to be abused.
+
+## Why Did Poland Make These Changes?
+
+Poland wanted tighter control over the employment of foreigners. The previous system had gaps, and the "cash for visas" scandal showed how some intermediaries and shell companies exploited them. The new law is a direct response, including a new ground for refusing a work permit when the employing company exists mainly to help foreigners enter Poland.
+
+## The Main Changes
+
+**1. Fully online applications**
+Work permit applications and employer declarations are now processed entirely online through a dedicated government system. Paper procedures have ended.
+
+**2. The labour market test is gone**
+Employers no longer have to go through the old county-level labour market test. Instead, local authorities may publish lists of occupations or jobs for which work permits will not be issued.
+
+**3. A written employment contract is mandatory**
+Every foreign worker must have a signed written employment contract before starting work, whether they work on a work permit or on an employer declaration. Employers must also give the authorities a copy of the contract.
+
+**4. Stricter checks on employers**
+The authorities may now refuse permits if the employer has not paid social security contributions or advance income tax payments, or if the permit appears to exist on paper only. Employers have new notification duties and must keep employment records for the length of employment plus two years.
+
+**5. Fewer visa types allow work**
+Holders of some visas or residence documents can no longer work legally in Poland, even with a work permit. Foreigners holding Schengen visas issued by other countries generally may not work in Poland unless they hold a residence permit from that country.
+
+**6. Heavier penalties**
+Fines for illegal employment now range from 3,000 to 50,000 PLN per case, and inspection powers have been strengthened.
+
+**7. New fees (from 1 December 2025)**
+Work permit fees were restructured: 200 PLN for permits of up to 3 months and 400 PLN for permits longer than 3 months, with separate fees for seasonal work, declarations and posted workers.
+
+**8. Higher minimum wage**
+Poland raised its national minimum wage from 1 January 2026, and work permits are granted only if the salary offered meets the required minimum.
+
+## What Has Happened Since
+
+The reform has not stopped. In 2026 Poland introduced further changes focused on efficiency and digitalisation, and in July 2026 new amendments were proposed, including additional work permit exemptions and compliance procedures for employers.
+
+Poland also ended visa-free work for citizens of Colombia, Georgia and Venezuela from 15 August 2026, which shows the government is willing to adjust rules by nationality when it sees fit.
+
+The impact shows in the numbers. According to Poland's Ministry of the Interior, about 69,000 new work permits were issued in the first half of 2026, compared with 144,000 in the same period of 2025 and 173,000 in 2024. That is a fall of roughly 50 percent year on year.
+
+## What This Means for Bangladeshi Workers
+
+- **You need two documents.** A work permit (obtained by your Polish employer) and a national type D visa for stays longer than 90 days. A tourist visa or short-stay Schengen visa is not a way to start work.
+- **Get a verified job offer first.** Do not travel to Poland hoping to find work or change your status later.
+- **Beware of fraudulent agents.** As the system tightens and permits become harder to get, false promises of "guaranteed Poland visas" are an increasing danger. Always verify that the employer and the permit are real.
+- **Expect closer scrutiny.** Documents, contracts and salary details are checked more carefully than before.
+
+## What This Means for Employers
+
+- Prepare a compliant written employment contract in advance.
+- Make sure social security and tax payments are fully up to date.
+- Use the online system and meet every notification deadline.
+- Check the worker's visa or residence type before hiring.
+- Plan for longer timelines and keep checking the latest rules, as more changes may follow.
+
+## The Bottom Line
+
+Poland remains open to foreign workers, but it is now a more regulated, digital and selective system. For serious employers and well-prepared workers, the new rules bring clarity and protection. For anyone hoping to get around the rules, they bring real risk.
+
+At **Bhuiyan Workforce** we help candidates and employers handle overseas hiring transparently and in compliance with the rules. Thinking about working in Poland, or hiring from Bangladesh? Contact our team today for guidance on the current requirements.
+
+*Note: Immigration rules change constantly. Always confirm current requirements with the official Polish authorities or a qualified adviser before making any decision.*
+    `,
+  },
+  {
+    slug: 'saudi-arabia-visa-quotas-compliance-2026',
+    icon: '🇸🇦',
+    tag: 'Compliance',
+    date: 'November 2026',
+    title: "Saudi Arabia's Tighter Visa Quotas and Compliance Checks: What Employers Need to Know in 2026",
+    excerpt: "Saudi Arabia remains the single largest destination for Bangladeshi workers, with demand still strong in construction, hospitality, logistics and manufacturing. But 2026 brought clearer eligibility rules, limits on visa allocation and tougher oversight of employers who recruit from abroad. If you plan to hire Bangladeshi workers, here is what the latest official updates and law firm briefings say.",
+    content: `
+## What Changed in 2025-2026
+
+- **Limits on instant work visas.** Through the Qiwa platform, law firm alerts from mid-2026 describe official eligibility criteria and allocation limits for instant work visas. Establishments operating for under two years can reportedly get up to five visas for employees residing outside the Kingdom, while those operating for more than two years can get up to 50. Companies joining the Establishments Program start with two visas. Effective dates were not stated clearly in the sources we reviewed, so confirm them on Qiwa.
+- **Eligibility conditions.** The requirements mentioned include an establishment status in the medium green Nitaqat (Saudisation) band or higher, a valid commercial registration, up-to-date work permits, compliance with the Wage Protection System, and a sufficient recruitment quota.
+- **Record keeping.** Qiwa guidance reported by DLA Piper says employers must deregister non-Saudi employees whose work permits have expired or who are absent beyond the permitted period, after 30 June 2026. The wording on timing is unclear, so check Qiwa directly.
+- **Enforcement.** According to Vialto Partners, the Ministry of Human Resources and Social Development carried out more than 250,000 inspections in the first quarter of 2026 and identified about 168,000 violations, focusing on fake Saudisation, unauthorised recruitment and inaccurate workforce records. Penalties include visa cancellation and suspension of government services. A fine of 10,000 SAR for employing foreign workers without the required permits was also reported in February 2026.
+- **Job titles.** Law firms report closer scrutiny of expatriates' job titles, so the position recorded on the visa should match the actual work.
+
+## Medical Checks and Platforms
+
+Workers must undergo a pre-departure medical examination at a GCC-approved centre. Under the updated Wafid framework (the programme formerly known as GAMCA), results are uploaded to the Wafid platform before visa processing. Employers and recruitment offices use the Qiwa and Musaned platforms for contracts, visas and work permits, and wages should be paid through the Wage Protection System.
+
+## The Bangladesh Side
+
+- Bangladesh sent a record of more than 750,000 workers to Saudi Arabia in 2025, according to Arab News citing the labour office.
+- A general recruitment agreement was signed in October 2025. Reports describe standardised electronic contracts, wage payment through the Wage Protection System, a joint dispute resolution mechanism, health insurance and pre-departure orientation. The Saudi ambassador estimated that 250,000 to 300,000 new jobs would be available to Bangladeshis in 2026.
+- Skilled candidates are tested under the Saudi Skills Verification Programme run by Takamul.
+- Workers must register with BMET and obtain emigration clearance before departure.
+- Reports say a regional conflict that began in late February 2026 slowed recruitment and departures from Bangladesh for several months, so check current processing times.
+
+## What This Means for Employers
+
+- **Check your Nitaqat status and quota first.** A weak Saudisation position may block new visas.
+- **Plan visa numbers.** New establishments should not assume large batches of overseas visas will be available.
+- **Keep your Qiwa records clean.** Remove workers whose permits have expired or who are absent, and make sure job titles are accurate.
+- **Use verified, skills-tested candidates.** Skills certificates and valid medical checks help you avoid delays.
+- **Pay on time and through the system.** Wage Protection System violations can lead to suspended services.
+
+## What This Means for Bangladeshi Workers
+
+- Accept only a written contract that matches the record on Qiwa or Musaned.
+- Do not pay agents far more than the official cost ceiling, and keep your receipts.
+- Complete BMET registration, the skills test and the Wafid medical before you travel.
+- Never travel on a visit visa to look for work.
+
+## The Bottom Line
+
+Saudi Arabia remains open to Bangladeshi labour, but the system now rewards compliant employers with documented paperwork and punishes those who cut corners. Planning ahead on quota, records and paperwork is the safest path.
+
+At **Bhuiyan Workforce** we focus on ethical, compliant recruitment of Bangladeshi workers. If you are a Saudi employer planning to hire, contact our team to discuss your needs and the current procedures.
+
+*Note: Immigration and labour rules change constantly. Always confirm current requirements with the official Saudi authorities or a qualified adviser before making any decision.*
+    `,
+  },
+  {
+    slug: 'uae-wage-emiratisation-rules-2026',
+    icon: '🇦🇪',
+    tag: 'Compliance',
+    date: 'November 2026',
+    title: "UAE Wage and Emiratisation Rules Tighten While Bangladesh Visas Stay Unclear: 2026 Employer Guide",
+    excerpt: "The UAE offers some of the most advanced digital labour services in the Gulf, but 2026 brought tougher compliance duties for private-sector employers. For anyone planning to hire Bangladeshi workers there is also an important caveat: the visa situation for Bangladeshi nationals is unstable, and recent reports point to disruption.",
+    content: `
+## Key Rules for Employers in 2026
+
+- **A tighter Wage Protection System.** A summary by FMC Group of Ministerial Resolution No. 340 of 2026 says that from 1 June 2026, monthly wages fall due by the first day of the following month, the previous grace period has been removed, and an establishment counts as compliant only if at least 85 percent of wages due are paid on time. It also describes graduated enforcement for late payment, from warnings to suspended permits and fines. Treat this as a secondary-source summary and verify with the Ministry of Human Resources and Emiratisation (MOHRE).
+- **Immediate checks.** The same source says MOHRE checks Wage Protection System compliance when processing work visa applications, so payroll problems can delay hiring.
+- **Involuntary Loss of Employment insurance (ILOE).** Failure to subscribe is reported to carry a 400 AED fine, and unpaid premiums may delay permits and renewals.
+- **Worker accommodation.** Ministerial Resolution No. 122 of 2026, reported to take effect on 18 February 2026, sets standards for employers with 50 or more low-wage workers, covering security, CCTV and hygiene, with medical facilities for large compounds.
+- **Emiratisation.** According to law firm summaries, companies with 50 or more employees in specified sectors face a 10 percent target by the end of 2026. The fine cited is 108,000 AED per vacant position per year, and falsifying quota data can bring far heavier penalties. The minimum salary for Emirati citizens in the private sector rose to 6,000 AED per month from 1 January 2026, and non-compliant employers may face suspension of work permits.
+- **Permits.** MOHRE issues work permits for foreign employees, and the UAE has reportedly also widened the range of permit types. Hiring from abroad requires a valid permit before the worker travels.
+
+## The Bangladesh Side
+
+- Bangladeshi media and BMET-linked reports list the UAE among the markets where new recruitment from Bangladesh has long been restricted, citing 2013 as the year of closure. Even so, BMET data shows that about 13,129 Bangladeshi workers went to the UAE between 17 February and 17 August 2026. Reports and official statements have not been consistent on how visas are issued or on what terms.
+- In July 2026 the UAE reportedly began cancelling the visas of many Bangladeshis, including workers who had returned home on leave. The numbers conflict: a list of 985 names was reported as of 3 August, while a Bangladeshi minister later cited about 4,000. Diplomatic efforts were reported to be under way.
+- Pre-departure medical checks follow the Wafid system, and BMET registration and emigration clearance are still required of Bangladeshi workers.
+
+For this reason, employers should not assume there is a routine visa pathway for Bangladeshi labour.
+
+## What This Means for Employers
+
+- **Confirm visa availability before committing.** Ask your recruitment office and MOHRE about the current processing procedures for Bangladeshi nationals.
+- **Fix payroll first.** Pay through the Wage Protection System on time and keep records.
+- **Check that all staff are enrolled in ILOE.**
+- **Review your Emiratisation position** and your Emirati salary levels.
+- **Prepare workers early.** Documented skills and medical checks reduce delays.
+
+## What This Means for Bangladeshi Workers
+
+- Do not pay anyone for a "guaranteed UAE visa" without verifying the permit through official channels.
+- If your visa is cancelled while you are on leave, contact the Bangladesh embassy and BMET and keep all your documents.
+- Never travel on a tourist visa to look for work.
+
+## The Bottom Line
+
+The UAE is a well-regulated, compliance-driven market, but this year it is also an uncertain one for hiring from Bangladesh. Careful checking of visa status and payroll readiness is essential.
+
+At **Bhuiyan Workforce** we support employers with transparent, compliant recruitment, and we will tell you plainly what is possible right now and what is not. Contact our team to discuss your hiring plans.
+
+*Note: Immigration and labour rules change constantly. Always confirm current requirements with the official UAE authorities or a qualified adviser before making any decision.*
+    `,
+  },
+  {
+    slug: 'malaysia-bangladesh-recruitment-reopens-2026',
+    icon: '🇲🇾',
+    tag: 'Destinations',
+    date: 'November 2026',
+    title: "Malaysia Reopens Recruitment From Bangladesh in Stages: What Employers Need to Know in 2026",
+    excerpt: "In 2024 Malaysia restricted the hiring of unskilled Bangladeshi workers. In late 2026, reports point to a phased resumption. For Malaysian employers the opportunity is real, but so are the controls: approved agencies, applications through online systems, and a policy aim of keeping foreign labour to a limited share of the workforce.",
+    content: `
+## What Has Changed
+
+- **Quota reopening (August 2025).** Malaysia reopened its foreign worker visa quota on 19 August 2025. Reports said it covered 13 sub-sectors, including agriculture, plantations, mining, retail, storage, security, restaurants, laundries and cleaning. Construction was limited to government projects, and manufacturing priority went to new MIDA-approved investments. Applications go through official sector bodies rather than individual agents.
+- **Government-level talks (June 2026).** Bangladesh's prime minister asked Malaysia's prime minister to reopen the market. Malaysian leaders spoke of the need for workers but stressed welfare and removing the role of middlemen. The Human Resources Minister said a new direct recruitment system was being developed.
+- **First batch (from late September 2026).** Reports say about 10,000 Bangladeshi workers are expected to arrive initially, that Malaysia will reportedly bear migration costs and airfares, and that applications will be processed through the state-run BOESL. Bangladesh's ministry listed 312 additional "partner" recruitment agencies alongside 25 previously approved ones. It warned the public not to pay any money, undergo medical checks or submit passports before an official announcement.
+
+## What Is Disputed
+
+A Bangladeshi minister said Malaysia would take in 200,000 workers within six months. The Edge reported on 7 September 2026 that Malaysian ministers denied this figure. Employers should treat the 200,000 number as unconfirmed and rely on official statements from Malaysian ministries.
+
+## Key Rules for Employers
+
+- **Malaysians first.** Employers must show that they tried to hire locally.
+- **Workforce cap.** Policy reportedly aims to keep foreign labour at 15 percent of the workforce, falling to 10 percent by 2030 under the 13th Malaysia Plan.
+- **Sector quotas.** Reports say permits for unskilled workers are set according to industry needs and approved by the Ministries of Human Resources and Home Affairs.
+- **FWCMS.** Applications and worker processing run through the Foreign Workers Centralised Management System (FWCMS), now administered by the Ministry of Home Affairs.
+- **Employer-pays principle.** Malaysian policy states that workers should not bear recruitment costs, and the ILO has urged the same.
+
+## What This Means for Employers
+
+- Confirm which approved agency or sector body will handle your application.
+- Prepare evidence of local recruitment efforts, proper accommodation and employment contracts.
+- Do not accept informal "quota" offers or fees from middlemen.
+- Plan for workers to arrive in phases and for possible delays.
+
+## What This Means for Bangladeshi Workers
+
+- Use only agencies announced by Bangladesh's ministry and registered with BMET, with emigration clearance.
+- Do not pay for a job in Malaysia until official announcements are made.
+- Medical checks must be done at approved centres, and reports say the list was under review.
+
+## The Bottom Line
+
+Malaysia is reopening the door to Bangladeshi labour, cautiously and under tighter oversight. Employers who follow the rules and avoid middlemen are best placed to benefit.
+
+**Bhuiyan Workforce** supports ethical, compliant recruitment. If you are a Malaysian employer planning to hire from Bangladesh, contact our team to discuss approved pathways and timelines.
+
+*Note: Immigration and labour rules change frequently. Always confirm current requirements with the official Malaysian authorities or a qualified adviser before making any decision.*
+    `,
+  },
+  {
+    slug: 'czech-republic-employee-card-rules-2026',
+    icon: '🇨🇿',
+    tag: 'Compliance',
+    date: 'November 2026',
+    title: "Czech Republic Employee Card Rules and Monthly Reporting: What Employers Need to Know in 2026",
+    excerpt: "The Czech Republic remains one of Central Europe's busiest labour markets, but hiring non-EU workers has become more regulated and more closely monitored. If you are a Czech employer thinking of hiring Bangladeshi workers, the employee card system, the new digital reporting duties and the heavy fines for mistakes all deserve attention before you start.",
+    content: `
+At Bhuiyan Workforce we follow these developments so that employers can plan with confidence.
+
+## How the System Works
+
+Most non-EU workers who need permission to work enter on a **dual employee card**, which combines a long-term residence permit with a work permit. A **non-dual card** is a residence permit only, for people who already have permission to work. Highly qualified workers can use the **EU Blue Card**, which requires a university degree (or comparable experience), a contract of at least six months and a gross salary of at least 1.5 times the average wage. For 2026, one law firm source puts the Blue Card minimum at 73,823 CZK gross per month from 1 May 2026; confirm the current figure with the authorities.
+
+Applications are filed at a Czech consulate abroad, and processing can take up to 90 days. Since 1 June 2026, new residence permit codes distinguish between the dual card, the card with free access to the labour market, and the card that needs a separate work permit. Existing permits remain valid.
+
+## What Has Changed Recently
+
+- **Unified monthly employer reporting (JMHZ).** A new single report to the Social Security Administration, covering tax, social security and migration data, took effect on 1 January 2026, with reporting starting in practice in April 2026. Employers must register a foreign employee before work begins (and not more than 8 days ahead) and report changes within 8 days. From 1 July 2026, employers must also report when card holders fail to start work or end it early.
+- **Changing jobs.** Card holders may generally change employer at least six months after the decision granting the card, with exceptions such as redundancy-type reasons. The Ministry of the Interior must be notified at least 30 days before the new job starts, and after a job ends the holder has 90 days to find and report a new one. A card holder may not move to an employment agency as the employer.
+- **Minimum wage.** The monthly minimum wage rose to 22,400 CZK from 1 January 2026.
+- **Consular restrictions.** Some Czech embassies have introduced "zero quotas" for employee card applications from citizens of countries outside their jurisdiction. We could not verify a rule specific to Bangladesh, so employers should check with the Czech authorities which mission and procedure apply to Bangladeshi applicants.
+
+## Compliance and Penalties
+
+Fines are heavy. The maximums cited include up to 3,000,000 CZK for unauthorised work and up to 10,000,000 CZK for illegal employment, with smaller fines for missing documents or records. Employers must keep copies of residence documents for the length of employment plus three years. Agencies need an employment mediation permit from the Ministry of Labour, and the user company may face guarantor liability if it knew, or should have known, that the work was illegal. A pending bill on supply-chain liability had not been passed at the time of writing.
+
+## What This Means for Employers
+
+- Check any agency's permit in the public register before signing.
+- Prepare a genuine, compliant contract and a salary no lower than the legal minimum.
+- Build the JMHZ reporting deadlines into your HR procedures.
+- Allow realistic time, as consular processing can be lengthy.
+- Do not rely on workers arriving on a tourist visa or short stay to start work.
+
+## What This Means for Bangladeshi Workers
+
+- Work only under a documented employer offer and a valid employee card, and never pay for "guaranteed" visas.
+- Bangladeshi workers travelling abroad for work should complete BMET registration and the required emigration clearance before departure, using licensed recruitment agencies.
+- Expect careful scrutiny of qualifications, contracts and documents.
+
+## The Bottom Line
+
+The Czech system is open to serious employers, but it rewards preparation and punishes shortcuts. At **Bhuiyan Workforce** we are committed to ethical, compliant recruitment from Bangladesh. If you are planning to hire, contact our team to discuss your needs and the current Czech procedures.
+
+*Note: Immigration and labour rules change frequently. Always confirm current requirements with the official Czech authorities or a qualified adviser before making any decision.*
+    `,
+  },
+  {
     slug: 'romania-work-visa-2026-changes',
     icon: '🛂',
     tag: 'Compliance',
