@@ -1,5 +1,4 @@
 # Pre-rendered pages that have no real content redirect to their index (301).
-/countries/italy  /countries  301
 /employer-guide/armenia  /employer-guide  301
 /employer-guide/bahrain  /employer-guide  301
 /employer-guide/bosnia-herzegovina  /employer-guide  301
