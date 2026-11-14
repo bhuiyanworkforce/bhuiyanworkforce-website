@@ -195,7 +195,7 @@ else {
   for (const k of ['siteName', 'ogImageAlt', 'orgDescription', 'siteDescription']) if (!isStr(h[k])) err(`head.${k}`, 'missing');
   if (h.siteName !== 'Bhuiyan Workforce Ltd.') err('head.siteName', 'must be exactly "Bhuiyan Workforce Ltd."');
   for (const k of ['home', 'countries', 'services', 'blog', 'faq', 'employerGuide']) if (!isStr(h.breadcrumb?.[k])) err(`head.breadcrumb.${k}`, 'missing');
-  if (!Array.isArray(h.areaServed) || h.areaServed.length !== 24) err('head.areaServed', `needs 24 country names (has ${h.areaServed?.length})`);
+  if (!Array.isArray(h.areaServed) || h.areaServed.length !== 31) err('head.areaServed', `needs 31 country names (has ${h.areaServed?.length})`);
   if (!h.notFound?.title) err('head.notFound', 'missing');
   if (h.pages?.home && !/[A-Za-zÀ-ÿ]/.test(h.pages.home.title)) err('head.pages.home', 'title looks empty');
 }

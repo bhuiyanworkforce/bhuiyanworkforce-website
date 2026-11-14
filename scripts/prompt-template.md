@@ -118,12 +118,12 @@ the claim faithfully with neutral wording and mention it in the notes for legal 
 |---|---|
 {{GLOSSARY}}
 
-Country names: translate all 28 country names and the extra ones used in services (Libya, Brunei,
-Seychelles, Mauritius, Japan, South Korea) and Italy (used in `areaServed`) with the standard
+Country names: translate all 31 country names and the extra ones used in services (Libya, Brunei,
+Seychelles, Mauritius, Japan, South Korea) with the standard
 {{NAME}} names (as used by the national foreign ministry and the main encyclopaedias). English list:
 Saudi Arabia, United Arab Emirates, Qatar, Kuwait, Oman, Bahrain, Jordan, Malaysia, Singapore, Maldives,
 Serbia, Portugal, Greece, Romania, Poland, Hungary, Croatia, Czech Republic, Lithuania, Latvia, Estonia,
-Bulgaria, Cyprus, Slovakia, Bosnia and Herzegovina, Armenia, Montenegro, Georgia. Currency names get
+Bulgaria, Cyprus, Slovakia, Bosnia and Herzegovina, Armenia, Montenegro, Georgia, Slovenia, North Macedonia, Italy. Currency names get
 the usual {{NAME}} name with the code in brackets (SAR, AED …), codes unchanged.
 
 Trade and job names: use the standard {{NAME}} job names (welders, steel fixers, carpenters, scaffolders,
@@ -135,7 +135,7 @@ cooks, waiters, security guards …). Keep technical certification names as in E
 - Mirror `ar.js` exactly: `siteName`, `ogImageAlt`, `orgDescription`, `siteDescription`, `breadcrumb`,
   `pages` (home, about, faq, blog, capabilities, employer-guide, privacy, terms, apply, and `countries`
   if the English file has it), `notFound`, `countries[slug]`, `services[slug]`, `posts[slug]`,
-  `guides[slug]`, `areaServed` (24 names, same order as in `en.js`, {{NAME}} country names).
+  `guides[slug]`, `areaServed` (31 names, same order as in `en.js`, {{NAME}} country names).
 - `siteName` must be exactly `Bhuiyan Workforce Ltd.`
 - Every `title` contains `Bhuiyan Workforce Ltd.`, ideally as the suffix after " | ", total ≤ 60 characters
   where possible (long article headlines may run longer; never more than needed).

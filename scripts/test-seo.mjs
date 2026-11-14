@@ -90,7 +90,7 @@ console.log('routes');
 test('page counts', () => {
   const pages = listPages();
   const by = (l) => pages.filter((p) => p.lang === l).length;
-  assert.equal(by('en'), 10 + 25 + 28 + 18 + 3);
+  assert.equal(by('en'), 10 + 25 + 31 + 18 + 3);
   assert.equal(by('ar'), 3 + 25 + 28 + 18 + 3);
   assert.equal(by('pl'), 2);
 });
