@@ -8,6 +8,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import '../src/i18n/ar-bundle.js'; // registers the Arabic content that is loaded on demand in the browser
 import '../src/i18n/pl-bundle.js'; // same for Polish
+import '../src/i18n/ro-bundle.js'; // same for Romanian
 import { buildPath, parsePath, ENTITY_SLUGS, PAGE_SLUGS, SEGMENTS } from '../src/i18n/slugs.js';
 import { LOCALES, REAL_LOCALE_CODES } from '../src/i18n/config.js';
 import {
@@ -80,6 +81,19 @@ test('every country and service has a Polish slug; slugs are unique', () => {
     for (const s of Object.keys(map)) assert.ok(list.includes(s), `pl ${type} map has unknown key ${s}`);
   }
 });
+test('Romanian slugs round-trip, are complete and unique', () => {
+  assert.equal(buildPath('ro', { type: 'page', id: 'home' }), '/ro');
+  assert.equal(buildPath('ro', { type: 'page', id: 'about' }), '/ro/despre-noi');
+  assert.equal(buildPath('ro', { type: 'country', id: 'saudi-arabia' }), '/ro/tari/arabia-saudita');
+  assert.deepEqual(parsePath('/ro/tari/arabia-saudita').route, { type: 'country', id: 'saudi-arabia' });
+  assert.equal(parsePath('/ro/nope').route, null);
+  for (const [type, list] of [['country', COUNTRY_SLUGS], ['service', SERVICE_SLUGS], ['guide', GUIDE_SLUGS]]) {
+    const map = ENTITY_SLUGS.ro[type];
+    for (const s of list) assert.ok(map[s], `ro ${type} slug missing for ${s}`);
+    assert.equal(new Set(Object.values(map)).size, Object.values(map).length, `duplicate ro ${type} slugs`);
+    for (const s of Object.keys(map)) assert.ok(list.includes(s), `ro ${type} map has unknown key ${s}`);
+  }
+});
 test('list-page slugs equal their path segment', () => {
   for (const lang of ['en', 'pl']) {
     assert.equal(PAGE_SLUGS[lang].countries, SEGMENTS[lang].country);
@@ -105,10 +119,10 @@ test('availability and 404 resolution', () => {
 });
 test('hreflang: self, x-default, only real translations', () => {
   const alts = getAlternates({ type: 'country', id: 'saudi-arabia' });
-  assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'x-default']);
+  assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'ro', 'x-default']);
   assert.equal(alts.find((a) => a.hreflang === 'x-default').href, 'https://bhuiyanworkforce.com/countries/saudi-arabia');
   assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }), []);
-  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'ro', 'x-default']);
 });
 test('language switcher links', () => {
   const links = getLanguageLinks({ type: 'page', id: 'privacy' }, 'en');
