@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from '../i18n/router';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
+import Tx from '../i18n/Tx';
+import { tx } from '../i18n/extra.js';
 
 const EMPTY = {
   fullName: '', dateOfBirth: '', nationality: 'Bangladeshi',
@@ -195,7 +197,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
         <div style={{ fontSize: '4rem', marginBottom: 24 }}>✅</div>
         <h1 style={{ marginBottom: 16 }}>{t('apply_success_h1', lang)}</h1>
         <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: 500, margin: '0 auto 32px', lineHeight: 1.7 }}>
-          Thank you, <strong style={{ color: 'var(--gold)' }}>{fields.fullName}</strong>. We have received your application and will review it within 3–5 working days. If shortlisted, our team will contact you directly.
+          <Tx>Thank you,</Tx> <strong style={{ color: 'var(--gold)' }}>{fields.fullName}</strong><Tx>. We have received your application and will review it within 3–5 working days. If shortlisted, our team will contact you directly.</Tx>
         </p>
         <Link to="/" className="btn btn-primary">{t('apply_back_home', lang)}</Link>
       </div>
@@ -226,7 +228,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
               <Link to="/">{t('common_home', lang)}</Link><span>›</span>
               <span style={{ color: 'var(--gold)' }}>{t('nav_apply', lang)}</span>
             </div>
-            <div className="label-tag" style={{ marginBottom: 16 }}>For Workers</div>
+            <div className="label-tag" style={{ marginBottom: 16 }}><Tx>For Workers</Tx></div>
             <h1>{t('apply_hero_h1', lang)}</h1>
             <p>{t('apply_hero_sub', lang)}</p>
           </div>
@@ -270,11 +272,11 @@ The applicant accepted the Privacy Policy and consented to processing of their d
                   <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{t('apply_step1', lang)}</h2>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
                     <div style={{ ...groupStyle, gridColumn: '1 / -1' }}>
-                      <label htmlFor="wa-fullName" style={labelStyle}>Full Name (as in passport) *</label>
-                      <input id="wa-fullName" style={inputStyle} name="fullName" value={fields.fullName} onChange={handleChange} required placeholder="Mohammad Rafiqul Islam" />
+                      <label htmlFor="wa-fullName" style={labelStyle}><Tx>Full Name (as in passport) *</Tx></label>
+                      <input id="wa-fullName" style={inputStyle} name="fullName" value={fields.fullName} onChange={handleChange} required placeholder={tx(lang, "Mohammad Rafiqul Islam")} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-dateOfBirth" style={labelStyle}>Date of Birth *</label>
+                      <label htmlFor="wa-dateOfBirth" style={labelStyle}><Tx>Date of Birth *</Tx></label>
                       <input id="wa-dateOfBirth" style={inputStyle} type="date" name="dateOfBirth" value={fields.dateOfBirth} onChange={handleChange} required />
                     </div>
                     <div style={groupStyle}>
@@ -282,23 +284,23 @@ The applicant accepted the Privacy Policy and consented to processing of their d
                       <input id="wa-nationality" style={inputStyle} name="nationality" value={fields.nationality} onChange={handleChange} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-phone" style={labelStyle}>Phone / WhatsApp *</label>
-                      <input id="wa-phone" style={inputStyle} type="tel" name="phone" value={fields.phone} onChange={handleChange} required placeholder="+880 17XX XXX XXX" />
+                      <label htmlFor="wa-phone" style={labelStyle}><Tx>Phone / WhatsApp *</Tx></label>
+                      <input id="wa-phone" style={inputStyle} type="tel" name="phone" value={fields.phone} onChange={handleChange} required placeholder={tx(lang, "+880 17XX XXX XXX")} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-email" style={labelStyle}>Email Address</label>
+                      <label htmlFor="wa-email" style={labelStyle}><Tx>Email Address</Tx></label>
                       <input id="wa-email" style={inputStyle} type="email" name="email" value={fields.email} onChange={handleChange} placeholder="optional" />
                     </div>
                     <div style={{ ...groupStyle, gridColumn: '1 / -1' }}>
-                      <label htmlFor="wa-address" style={labelStyle}>Home Address (District/Division) *</label>
-                      <input id="wa-address" style={inputStyle} name="address" value={fields.address} onChange={handleChange} required placeholder="e.g. Brahmanbaria, Chittagong Division" />
+                      <label htmlFor="wa-address" style={labelStyle}><Tx>Home Address (District/Division) *</Tx></label>
+                      <input id="wa-address" style={inputStyle} name="address" value={fields.address} onChange={handleChange} required placeholder={tx(lang, "e.g. Brahmanbaria, Chittagong Division")} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-passportNumber" style={labelStyle}>Passport Number</label>
+                      <label htmlFor="wa-passportNumber" style={labelStyle}><Tx>Passport Number</Tx></label>
                       <input id="wa-passportNumber" style={inputStyle} name="passportNumber" value={fields.passportNumber} onChange={handleChange} placeholder="A1234567" />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-passportExpiry" style={labelStyle}>Passport Expiry Date</label>
+                      <label htmlFor="wa-passportExpiry" style={labelStyle}><Tx>Passport Expiry Date</Tx></label>
                       <input id="wa-passportExpiry" style={inputStyle} type="date" name="passportExpiry" value={fields.passportExpiry} onChange={handleChange} />
                     </div>
                   </div>
@@ -317,81 +319,81 @@ The applicant accepted the Privacy Policy and consented to processing of their d
                   <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{t('apply_step2', lang)}</h2>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-tradeCategory" style={labelStyle}>Trade Category *</label>
+                      <label htmlFor="wa-tradeCategory" style={labelStyle}><Tx>Trade Category *</Tx></label>
                       <select id="wa-tradeCategory" style={inputStyle} name="tradeCategory" value={fields.tradeCategory} onChange={handleChange} required>
-                        <option value="">Select category…</option>
-                        {TRADE_CATEGORIES.map(t => <option key={t}>{t}</option>)}
+                        <option value="">{tx(lang, "Select category…")}</option>
+                        {TRADE_CATEGORIES.map(t => <option key={t} value={t}>{tx(lang, t)}</option>)}
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-specificRole" style={labelStyle}>Specific Role / Trade *</label>
-                      <input id="wa-specificRole" style={inputStyle} name="specificRole" value={fields.specificRole} onChange={handleChange} required placeholder="e.g. Mason, Welder, Chef de Partie" />
+                      <label htmlFor="wa-specificRole" style={labelStyle}><Tx>Specific Role / Trade *</Tx></label>
+                      <input id="wa-specificRole" style={inputStyle} name="specificRole" value={fields.specificRole} onChange={handleChange} required placeholder={tx(lang, "e.g. Mason, Welder, Chef de Partie")} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-experienceYears" style={labelStyle}>Years of Experience *</label>
+                      <label htmlFor="wa-experienceYears" style={labelStyle}><Tx>Years of Experience *</Tx></label>
                       <select id="wa-experienceYears" style={inputStyle} name="experienceYears" value={fields.experienceYears} onChange={handleChange} required>
-                        <option value="">Select…</option>
-                        <option>Less than 1 year</option>
-                        <option>1–2 years</option>
-                        <option>3–5 years</option>
-                        <option>6–10 years</option>
-                        <option>10+ years</option>
+                        <option value="">{tx(lang, "Select…")}</option>
+                        <option value="Less than 1 year">{tx(lang, "Less than 1 year")}</option>
+                        <option value="1–2 years">{tx(lang, "1–2 years")}</option>
+                        <option value="3–5 years">{tx(lang, "3–5 years")}</option>
+                        <option value="6–10 years">{tx(lang, "6–10 years")}</option>
+                        <option value="10+ years">{tx(lang, "10+ years")}</option>
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-preferredCountry" style={labelStyle}>Preferred Country *</label>
+                      <label htmlFor="wa-preferredCountry" style={labelStyle}><Tx>Preferred Country *</Tx></label>
                       <select id="wa-preferredCountry" style={inputStyle} name="preferredCountry" value={fields.preferredCountry} onChange={handleChange} required>
-                        <option value="">Select country…</option>
-                        {COUNTRIES.map(c => <option key={c}>{c}</option>)}
+                        <option value="">{tx(lang, "Select country…")}</option>
+                        {COUNTRIES.map(c => <option key={c} value={c}>{tx(lang, c)}</option>)}
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-availableDate" style={labelStyle}>Available From</label>
+                      <label htmlFor="wa-availableDate" style={labelStyle}><Tx>Available From</Tx></label>
                       <input id="wa-availableDate" style={inputStyle} type="date" name="availableDate" value={fields.availableDate} onChange={handleChange} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-education" style={labelStyle}>Education Level</label>
+                      <label htmlFor="wa-education" style={labelStyle}><Tx>Education Level</Tx></label>
                       <select id="wa-education" style={inputStyle} name="education" value={fields.education} onChange={handleChange}>
-                        <option value="">Select…</option>
-                        <option>No formal education</option>
-                        <option>Primary (Class 1–5)</option>
-                        <option>JSC / Class 8</option>
-                        <option>SSC / Class 10</option>
-                        <option>HSC / Class 12</option>
-                        <option>Diploma / Vocational</option>
-                        <option>Bachelor's Degree</option>
-                        <option>Master's Degree or above</option>
+                        <option value="">{tx(lang, "Select…")}</option>
+                        <option value="No formal education">{tx(lang, "No formal education")}</option>
+                        <option value="Primary (Class 1–5)">{tx(lang, "Primary (Class 1–5)")}</option>
+                        <option value="JSC / Class 8">{tx(lang, "JSC / Class 8")}</option>
+                        <option value="SSC / Class 10">{tx(lang, "SSC / Class 10")}</option>
+                        <option value="HSC / Class 12">{tx(lang, "HSC / Class 12")}</option>
+                        <option value="Diploma / Vocational">{tx(lang, "Diploma / Vocational")}</option>
+                        <option value="Bachelor's Degree">{tx(lang, "Bachelor's Degree")}</option>
+                        <option value="Master's Degree or above">{tx(lang, "Master's Degree or above")}</option>
                       </select>
                     </div>
                     <div style={{ ...groupStyle, gridColumn: '1 / -1' }}>
-                      <label htmlFor="wa-languages" style={labelStyle}>Languages Spoken</label>
-                      <input id="wa-languages" style={inputStyle} name="languages" value={fields.languages} onChange={handleChange} placeholder="e.g. Bengali, English (basic), Arabic (basic)" />
+                      <label htmlFor="wa-languages" style={labelStyle}><Tx>Languages Spoken</Tx></label>
+                      <input id="wa-languages" style={inputStyle} name="languages" value={fields.languages} onChange={handleChange} placeholder={tx(lang, "e.g. Bengali, English (basic), Arabic (basic)")} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-hasMedical" style={labelStyle}>Medical Fitness Certificate?</label>
+                      <label htmlFor="wa-hasMedical" style={labelStyle}><Tx>Medical Fitness Certificate?</Tx></label>
                       <select id="wa-hasMedical" style={inputStyle} name="hasMedical" value={fields.hasMedical} onChange={handleChange}>
-                        <option value="">Select…</option>
-                        <option>Yes — valid certificate</option>
-                        <option>No — not yet obtained</option>
-                        <option>Expired — needs renewal</option>
+                        <option value="">{tx(lang, "Select…")}</option>
+                        <option value="Yes — valid certificate">{tx(lang, "Yes — valid certificate")}</option>
+                        <option value="No — not yet obtained">{tx(lang, "No — not yet obtained")}</option>
+                        <option value="Expired — needs renewal">{tx(lang, "Expired — needs renewal")}</option>
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-hasTradeTest" style={labelStyle}>Trade Test Certificate?</label>
+                      <label htmlFor="wa-hasTradeTest" style={labelStyle}><Tx>Trade Test Certificate?</Tx></label>
                       <select id="wa-hasTradeTest" style={inputStyle} name="hasTradeTest" value={fields.hasTradeTest} onChange={handleChange}>
-                        <option value="">Select…</option>
-                        <option>Yes — certified</option>
-                        <option>No — not yet tested</option>
-                        <option>In progress</option>
+                        <option value="">{tx(lang, "Select…")}</option>
+                        <option value="Yes — certified">{tx(lang, "Yes — certified")}</option>
+                        <option value="No — not yet tested">{tx(lang, "No — not yet tested")}</option>
+                        <option value="In progress">{tx(lang, "In progress")}</option>
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-hasBMET" style={labelStyle}>BMET Smart Card?</label>
+                      <label htmlFor="wa-hasBMET" style={labelStyle}><Tx>BMET Smart Card?</Tx></label>
                       <select id="wa-hasBMET" style={inputStyle} name="hasBMET" value={fields.hasBMET} onChange={handleChange}>
-                        <option value="">Select…</option>
-                        <option>Yes — registered</option>
-                        <option>No — not yet registered</option>
-                        <option>In progress</option>
+                        <option value="">{tx(lang, "Select…")}</option>
+                        <option value="Yes — registered">{tx(lang, "Yes — registered")}</option>
+                        <option value="No — not yet registered">{tx(lang, "No — not yet registered")}</option>
+                        <option value="In progress">{tx(lang, "In progress")}</option>
                       </select>
                     </div>
                   </div>
@@ -412,21 +414,21 @@ The applicant accepted the Privacy Policy and consented to processing of their d
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-cvFile" style={labelStyle}>Upload CV / Resume (PDF or Word, max 5MB)</label>
+                      <label htmlFor="wa-cvFile" style={labelStyle}><Tx>Upload CV / Resume (PDF or Word, max 5MB)</Tx></label>
                       <input id="wa-cvFile" type="file" accept=".pdf,.doc,.docx" onChange={handleFile('cvFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.cvFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.cvFile.name}</span>}
                     </div>
 
                     <div style={groupStyle}>
-                      <label htmlFor="wa-passportFile" style={labelStyle}>Upload Passport Copy (PDF or image, max 5MB)</label>
+                      <label htmlFor="wa-passportFile" style={labelStyle}><Tx>Upload Passport Copy (PDF or image, max 5MB)</Tx></label>
                       <input id="wa-passportFile" type="file" accept=".pdf,.jpg,.jpeg,.png" onChange={handleFile('passportFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.passportFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.passportFile.name}</span>}
                     </div>
 
                     <div style={groupStyle}>
-                      <label htmlFor="wa-certFile" style={labelStyle}>Upload Trade/Skills Certificate (optional)</label>
+                      <label htmlFor="wa-certFile" style={labelStyle}><Tx>Upload Trade/Skills Certificate (optional)</Tx></label>
                       <input id="wa-certFile" type="file" accept=".pdf,.jpg,.jpeg,.png" onChange={handleFile('certFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.certFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.certFile.name}</span>}
@@ -439,19 +441,19 @@ The applicant accepted the Privacy Policy and consented to processing of their d
                     )}
 
                     <div style={{ background: 'var(--off-white)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 'var(--radius)', padding: '12px 16px', fontSize: '0.82rem', color: 'var(--gray-500)', display: 'flex', gap: 10 }}>
-                      <span>📎</span>
-                      <span>All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.</span>
+                      <span><Tx>📎</Tx></span>
+                      <span><Tx>All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.</Tx></span>
                     </div>
 
                     <div style={groupStyle}>
-                      <label htmlFor="wa-coverLetter" style={labelStyle}>Additional Information / Cover Letter</label>
+                      <label htmlFor="wa-coverLetter" style={labelStyle}><Tx>Additional Information / Cover Letter</Tx></label>
                       <textarea id="wa-coverLetter" style={{ ...inputStyle, resize: 'vertical' }} rows={5}
                         name="coverLetter" value={fields.coverLetter} onChange={handleChange}
-                        placeholder="Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…" />
+                        placeholder={tx(lang, "Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…")} />
                     </div>
 
                     <div style={{ background: 'var(--off-white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius)', padding: 20, fontSize: '0.82rem', color: 'var(--gray-500)', lineHeight: 1.65 }}>
-                      <strong style={{ color: 'var(--navy)' }}>Important:</strong> By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)' }}>Privacy Policy</a>.
+                      <strong style={{ color: 'var(--navy)' }}><Tx>Important:</Tx></strong> <Tx>By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our</Tx> <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)' }}><Tx>Privacy Policy</Tx></a>.
                     </div>
 
                     <div>
@@ -463,19 +465,19 @@ The applicant accepted the Privacy Policy and consented to processing of their d
                           style={{ marginTop: 4, width: 20, height: 20, flexShrink: 0 }}
                         />
                         <span>
-                          I have read the <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', fontWeight: 600 }}>Privacy Policy</a> and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed. <span className="required">*</span>
+                          <Tx>I have read the</Tx> <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', fontWeight: 600 }}><Tx>Privacy Policy</Tx></a> <Tx>and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed.</Tx> <span className="required">*</span>
                         </span>
                       </label>
                       {consentError && (
                         <div id="wa-consent-error" role="alert" style={{ color: '#e53e3e', fontSize: '0.82rem', marginTop: 8 }}>
-                          Please tick the box above to submit your application.
+                          <Tx>Please tick the box above to submit your application.</Tx>
                         </div>
                       )}
                     </div>
 
                     {error && (
                       <div style={{ color: '#e53e3e', background: '#fff5f5', padding: '12px 16px', borderRadius: 8, border: '1px solid #fed7d7', fontSize: '0.875rem' }}>
-                        Something went wrong. Please call us on <a href="tel:+8801864567912" style={{ color: '#e53e3e', fontWeight: 600 }}>+880 1864 567912</a> or email <a href="mailto:info@bhuiyanworkforce.com" style={{ color: '#e53e3e', fontWeight: 600 }}>info@bhuiyanworkforce.com</a>.
+                        <Tx>Something went wrong. Please call us on</Tx> <a href="tel:+8801864567912" style={{ color: '#e53e3e', fontWeight: 600 }}>+880 1864 567912</a> <Tx>or email</Tx> <a href="mailto:info@bhuiyanworkforce.com" style={{ color: '#e53e3e', fontWeight: 600 }}>info@bhuiyanworkforce.com</a>.
                       </div>
                     )}
                   </div>

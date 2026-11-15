@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from '../i18n/router';
 import { SERVICES } from '../data/services';
+import Tx from '../i18n/Tx';
+import { useLang } from '../i18n/LanguageContext';
+import { localizeService } from '../content/index.js';
 
 const PROCESS_STEPS = [
   { n: '01', title: 'Requirement Intake', desc: 'We collect detailed job descriptions, skill requirements, visa quotas, salary ranges, and deployment timelines from the client employer.' },
@@ -28,6 +31,7 @@ const DESTINATIONS = [
 ];
 
 export default function CapabilitiesPage() {
+  const { lang } = useLang();
   return (
     <>
       {/* Screen-only hero */}
@@ -40,12 +44,12 @@ export default function CapabilitiesPage() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 20 }}>
               <div>
-                <div className="label-tag" style={{ marginBottom: 12 }}>For Employers</div>
-                <h1 style={{ marginBottom: 12 }}>Bhuiyan Workforce Ltd.</h1>
-                <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.7)', margin: 0 }}>Capabilities & Company Overview</p>
+                <div className="label-tag" style={{ marginBottom: 12 }}><Tx>For Employers</Tx></div>
+                <h1 style={{ marginBottom: 12 }}><Tx>Bhuiyan Workforce Ltd.</Tx></h1>
+                <p style={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.7)', margin: 0 }}><Tx>Capabilities & Company Overview</Tx></p>
               </div>
               <button onClick={() => globalThis.print()} className="btn btn-primary" style={{ flexShrink: 0 }}>
-                🖨️ Print / Save as PDF
+                <Tx>🖨️ Print / Save as PDF</Tx>
               </button>
             </div>
           </div>
@@ -54,8 +58,8 @@ export default function CapabilitiesPage() {
 
       {/* PDF Cover Header — print only */}
       <div className="print-cover-header print-only">
-        <div className="print-cover-logo">BHUIYAN WORKFORCE LTD.</div>
-        <div className="print-cover-tagline">Capabilities & Company Overview</div>
+        <div className="print-cover-logo"><Tx>BHUIYAN WORKFORCE LTD.</Tx></div>
+        <div className="print-cover-tagline"><Tx>Capabilities & Company Overview</Tx></div>
         <div className="print-cover-meta">bhuiyanworkforce.com · info@bhuiyanworkforce.com · +880 1864 567912</div>
       </div>
 
@@ -66,7 +70,7 @@ export default function CapabilitiesPage() {
         <div className="intro-band">
           <div className="container">
             <p className="intro-text">
-              Connecting Bangladesh's skilled workforce to the world — <strong>25+ countries</strong> across the Middle East, Europe, Asia &amp; Africa.
+              <Tx>Connecting Bangladesh's skilled workforce to the world —</Tx> <strong><Tx>25+ countries</Tx></strong> <Tx>across the Middle East, Europe, Asia &amp; Africa.</Tx>
             </p>
           </div>
         </div>
@@ -76,15 +80,15 @@ export default function CapabilitiesPage() {
           <div className="container">
             <div className="about-grid">
               <div>
-                <div className="label-tag" style={{ marginBottom: 16 }}>Who We Are</div>
-                <h2 className="section-title">About Bhuiyan Workforce Ltd.</h2>
+                <div className="label-tag" style={{ marginBottom: 16 }}><Tx>Who We Are</Tx></div>
+                <h2 className="section-title"><Tx>About Bhuiyan Workforce Ltd.</Tx></h2>
               </div>
               <div>
                 <p style={{ color: 'var(--text-body)', lineHeight: 1.8, fontSize: '1rem', marginBottom: 16 }}>
-                  Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Europe, Asia, and Africa.
+                  <Tx>Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Europe, Asia, and Africa.</Tx>
                 </p>
                 <p style={{ color: 'var(--text-body)', lineHeight: 1.8, fontSize: '1rem', margin: 0 }}>
-                  Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. Our BMET recruitment licence is in process — expected October 2026. In the meantime we are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.
+                  <Tx>Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. Our BMET recruitment licence is in process — expected October 2026. In the meantime we are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.</Tx>
                 </p>
               </div>
             </div>
@@ -95,12 +99,12 @@ export default function CapabilitiesPage() {
         <section className="section">
           <div className="container">
             <div className="section-header">
-              <div className="label-tag">What We Supply</div>
-              <h2 className="section-title">Worker Categories</h2>
-              <p className="section-subtitle">Skilled, semi-skilled, and specialist workers across all major trade and service sectors.</p>
+              <div className="label-tag"><Tx>What We Supply</Tx></div>
+              <h2 className="section-title"><Tx>Worker Categories</Tx></h2>
+              <p className="section-subtitle"><Tx>Skilled, semi-skilled, and specialist workers across all major trade and service sectors.</Tx></p>
             </div>
             <div className="services-grid">
-              {SERVICES.map(service => (
+              {SERVICES.map(s0 => localizeService(s0, lang)).map(service => (
                 <Link key={service.slug} to={`/services/${service.slug}`} className="service-card-link">
                   <div className="service-card">
                     <div className="service-icon">{service.icon}</div>
@@ -117,14 +121,14 @@ export default function CapabilitiesPage() {
         <section className="destinations-section">
           <div className="container">
             <div className="section-header">
-              <div className="label-tag">Global Reach</div>
-              <h2 className="section-title" style={{ color: 'var(--white)' }}>Deployment Destinations — 25+ Countries</h2>
+              <div className="label-tag"><Tx>Global Reach</Tx></div>
+              <h2 className="section-title" style={{ color: 'var(--white)' }}><Tx>Deployment Destinations — 25+ Countries</Tx></h2>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               {DESTINATIONS.map(d => (
                 <div key={d.region} className="destination-row">
-                  <div className="destination-region">{d.region}</div>
-                  <div className="destination-countries">{d.countries}</div>
+                  <div className="destination-region"><Tx>{d.region}</Tx></div>
+                  <div className="destination-countries"><Tx>{d.countries}</Tx></div>
                 </div>
               ))}
             </div>
@@ -135,17 +139,17 @@ export default function CapabilitiesPage() {
         <section className="section">
           <div className="container">
             <div className="section-header">
-              <div className="label-tag">How It Works</div>
-              <h2 className="section-title">Our Recruitment Process</h2>
-              <p className="section-subtitle">A structured, transparent 6-step process from requirement intake to worker deployment.</p>
+              <div className="label-tag"><Tx>How It Works</Tx></div>
+              <h2 className="section-title"><Tx>Our Recruitment Process</Tx></h2>
+              <p className="section-subtitle"><Tx>A structured, transparent 6-step process from requirement intake to worker deployment.</Tx></p>
             </div>
             <div className="process-grid">
               {PROCESS_STEPS.map(step => (
                 <div key={step.n} className="process-step">
                   <div className="process-number">{step.n}</div>
                   <div>
-                    <h4 className="process-title">{step.title}</h4>
-                    <p className="process-desc">{step.desc}</p>
+                    <h4 className="process-title"><Tx>{step.title}</Tx></h4>
+                    <p className="process-desc"><Tx>{step.desc}</Tx></p>
                   </div>
                 </div>
               ))}
@@ -157,15 +161,15 @@ export default function CapabilitiesPage() {
         <section className="why-section">
           <div className="container">
             <div className="section-header">
-              <div className="label-tag">Our Advantage</div>
-              <h2 className="section-title">Why Choose Bhuiyan Workforce?</h2>
+              <div className="label-tag"><Tx>Our Advantage</Tx></div>
+              <h2 className="section-title"><Tx>Why Choose Bhuiyan Workforce?</Tx></h2>
             </div>
             <div className="why-grid">
               {WHY_US.map(item => (
                 <div key={item.title} className="why-card">
                   <div className="why-icon">{item.icon}</div>
-                  <h4 className="why-title">{item.title}</h4>
-                  <p className="why-desc">{item.desc}</p>
+                  <h4 className="why-title"><Tx>{item.title}</Tx></h4>
+                  <p className="why-desc"><Tx>{item.desc}</Tx></p>
                 </div>
               ))}
             </div>
@@ -184,8 +188,8 @@ export default function CapabilitiesPage() {
                 { label: 'Website', value: 'www.bhuiyanworkforce.com', href: 'https://bhuiyanworkforce.com' },
               ].map(item => (
                 <div key={item.label} className="contact-card">
-                  <div className="contact-label">{item.label}</div>
-                  <a href={item.href} className="contact-value">{item.value}</a>
+                  <div className="contact-label"><Tx>{item.label}</Tx></div>
+                  <a href={item.href} className="contact-value"><Tx>{item.value}</Tx></a>
                 </div>
               ))}
             </div>
@@ -196,7 +200,7 @@ export default function CapabilitiesPage() {
         <div className="no-print" style={{ background: 'var(--off-white)', borderTop: '1px solid var(--gray-100)', padding: '24px 0' }}>
           <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap' }}>
             <p style={{ margin: 0, fontSize: '0.875rem', color: 'var(--gray-500)' }}>
-              Share this capabilities page:{' '}
+              <Tx>Share this capabilities page:</Tx>{' '}
               <strong style={{ color: 'var(--navy)', marginInlineStart: 8 }}>bhuiyanworkforce.com/capabilities</strong>
             </p>
             <div style={{ display: 'flex', gap: 12 }}>
@@ -204,9 +208,9 @@ export default function CapabilitiesPage() {
                 onClick={() => { navigator.clipboard.writeText('https://bhuiyanworkforce.com/capabilities'); alert('Link copied!'); }}
                 className="btn btn-outline"
                 style={{ fontSize: '0.8rem', padding: '8px 16px' }}
-              >📋 Copy Link</button>
+              ><Tx>📋 Copy Link</Tx></button>
               <button onClick={() => globalThis.print()} className="btn btn-primary" style={{ fontSize: '0.8rem', padding: '8px 16px' }}>
-                🖨️ Print / PDF
+                <Tx>🖨️ Print / PDF</Tx>
               </button>
             </div>
           </div>
