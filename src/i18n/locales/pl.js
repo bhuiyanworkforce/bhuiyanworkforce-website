@@ -368,6 +368,41 @@ export default {
       }
     },
     "posts": {
+      "poland-new-work-permit-system-2026": {
+        "title": "Nowe zezwolenia na pracę w Polsce 2026 | Bhuiyan Workforce Ltd.",
+        "description": "Polska zmieniła przepisy o zatrudnianiu cudzoziemców. Co muszą wiedzieć pracownicy z Bangladeszu i pracodawcy: wnioski online, umowy, opłaty i kary.",
+        "name": "Nowy system zezwoleń na pracę w Polsce: co muszą wiedzieć pracownicy z Bangladeszu i pracodawcy w 2026 roku",
+        "headline": "Nowy system zezwoleń na pracę w Polsce: co muszą wiedzieć pracownicy z Bangladeszu i pracodawcy w 2026 roku",
+        "date": "listopad 2026"
+      },
+      "saudi-arabia-visa-quotas-compliance-2026": {
+        "title": "Limity wiz w Arabii Saudyjskiej 2026 | Bhuiyan Workforce Ltd.",
+        "description": "Zaostrzone limity wiz, kontrole zgodności i saudyzacja (Nitaqat). Co muszą wiedzieć pracodawcy, którzy zatrudniają pracowników z Bangladeszu.",
+        "name": "Zaostrzone limity wiz i kontrole zgodności w Arabii Saudyjskiej: co muszą wiedzieć pracodawcy w 2026 roku",
+        "headline": "Zaostrzone limity wiz i kontrole zgodności w Arabii Saudyjskiej: co muszą wiedzieć pracodawcy w 2026 roku",
+        "date": "listopad 2026"
+      },
+      "uae-wage-emiratisation-rules-2026": {
+        "title": "ZEA: płace i emiratyzacja 2026 | Bhuiyan Workforce Ltd.",
+        "description": "Surowsze zasady wypłaty wynagrodzeń i emiratyzacji w ZEA oraz niepewna sytuacja wizowa Bangladeszu. Przewodnik dla pracodawców na 2026 rok.",
+        "name": "ZEA zaostrzają zasady wypłaty wynagrodzeń i emiratyzacji, a wizy dla Bangladeszu pozostają niejasne: przewodnik dla pracodawców 2026",
+        "headline": "ZEA zaostrzają zasady wypłaty wynagrodzeń i emiratyzacji, a wizy dla Bangladeszu pozostają niejasne: przewodnik dla pracodawców 2026",
+        "date": "listopad 2026"
+      },
+      "malaysia-bangladesh-recruitment-reopens-2026": {
+        "title": "Malezja wznawia rekrutację z Bangladeszu | Bhuiyan Workforce Ltd.",
+        "description": "Malezja etapami wznawia rekrutację z Bangladeszu. Zasady, limity i kontrole, które muszą znać pracodawcy w 2026 roku.",
+        "name": "Malezja etapami wznawia rekrutację z Bangladeszu: co muszą wiedzieć pracodawcy w 2026 roku",
+        "headline": "Malezja etapami wznawia rekrutację z Bangladeszu: co muszą wiedzieć pracodawcy w 2026 roku",
+        "date": "listopad 2026"
+      },
+      "czech-republic-employee-card-rules-2026": {
+        "title": "Karty pracownicze w Czechach 2026 | Bhuiyan Workforce Ltd.",
+        "description": "Karty pracownicze, miesięczne raportowanie JMHZ i wysokie kary w Czechach. Co muszą wiedzieć pracodawcy zatrudniający pracowników z Bangladeszu.",
+        "name": "Zasady kart pracowniczych w Czechach i miesięczne raportowanie: co muszą wiedzieć pracodawcy w 2026 roku",
+        "headline": "Zasady kart pracowniczych w Czechach i miesięczne raportowanie: co muszą wiedzieć pracodawcy w 2026 roku",
+        "date": "listopad 2026"
+      },
       "romania-work-visa-2026-changes": {
         "title": "Procedura uzyskania wizy pracowniczej do Rumunii właśnie się zmieniła — co muszą wiedzieć kandydaci z Bangladeszu | Bhuiyan Workforce Ltd.",
         "description": "W sierpniu 2026 Rumunia zniosła dotychczasowy system zezwoleń na pracę i zastąpiła go jednym wnioskiem online. Wyjaśniamy, co się zmieniło, oraz — co równie ważne — prostujemy powszechne błędne przekonanie dotyczące miejsca, w którym kandydaci z Bangladeszu faktycznie składają wnioski wizowe.",
