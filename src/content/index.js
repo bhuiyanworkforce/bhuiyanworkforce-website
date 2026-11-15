@@ -2,13 +2,10 @@
 // Each fallback is recorded (see ./fallbacks.js) and listed at the end of the build.
 
 import { recordFallback } from './fallbacks.js';
-import plCountries from './pl/countries.js';
-import plNames from './pl/names.js';
-
-// Polish content is small and always loaded. Arabic is large: it registers itself through
-// registerContent() from src/i18n/ar-bundle.js, which is loaded on demand in the browser.
-const COUNTRY_CONTENT = { pl: plCountries };
-const COUNTRY_NAMES = { pl: plNames };
+// Arabic and Polish content is large: each registers itself through registerContent() from
+// src/i18n/ar-bundle.js / pl-bundle.js, which are loaded on demand in the browser.
+const COUNTRY_CONTENT = {};
+const COUNTRY_NAMES = {};
 const ENTITY_CONTENT = {};
 
 export function registerContent(lang, { countries, names, service, post, guide }) {
@@ -70,7 +67,8 @@ export function localizePost(base, lang) {
 
 export function localizeGuide(base, lang) {
   if (!base || lang === 'en') return base;
-  const tr = ENTITY_CONTENT[lang]?.guide?.[base.country === 'Saudi Arabia' ? 'saudi-arabia' : base.country === 'UAE' ? 'uae' : 'poland'];
+  const guideKey = base.slug || (base.country === 'Saudi Arabia' ? 'saudi-arabia' : base.country === 'UAE' ? 'uae' : 'poland');
+  const tr = ENTITY_CONTENT[lang]?.guide?.[guideKey];
   if (!tr) { recordFallback('guide', lang, base.country); return base; }
   return tr;
 }
