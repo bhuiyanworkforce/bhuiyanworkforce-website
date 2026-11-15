@@ -46,6 +46,16 @@ export const LOCALES = {
     prefix: '/pl',
     overlay: false,
   },
+  ro: {
+    code: 'ro',
+    flag: '🇷🇴',
+    dir: 'ltr',
+    hreflang: 'ro',
+    ogLocale: 'ro_RO',
+    label: 'Română',
+    prefix: '/ro',
+    overlay: false,
+  },
   bn: {
     code: 'bn',
     flag: '🇧🇩',
