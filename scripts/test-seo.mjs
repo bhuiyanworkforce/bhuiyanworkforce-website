@@ -7,6 +7,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import '../src/i18n/ar-bundle.js'; // registers the Arabic content that is loaded on demand in the browser
+import '../src/i18n/pl-bundle.js'; // same for Polish
 import { buildPath, parsePath, ENTITY_SLUGS, PAGE_SLUGS, SEGMENTS } from '../src/i18n/slugs.js';
 import { LOCALES, REAL_LOCALE_CODES } from '../src/i18n/config.js';
 import {
@@ -92,13 +93,13 @@ test('page counts', () => {
   const by = (l) => pages.filter((p) => p.lang === l).length;
   assert.equal(by('en'), 10 + 25 + 33 + 18 + 3);
   assert.equal(by('ar'), 3 + 25 + 33 + 18 + 3);
-  assert.equal(by('pl'), 2);
+  assert.equal(by('pl'), 3 + 25 + 33 + 13 + 3);
 });
 test('availability and 404 resolution', () => {
   assert.equal(resolvePath('/ar/countries/saudi-arabia').status, 'ok');
   assert.equal(resolvePath('/ar/about').status, 'ok');
   assert.equal(resolvePath('/ar/privacy').status, 'notfound');
-  assert.equal(resolvePath('/pl/o-nas').status, 'notfound');
+  assert.equal(resolvePath('/pl/o-nas').status, 'ok');
   assert.equal(resolvePath('/countries/atlantis').status, 'notfound');
   assert.equal(resolvePath('/').status, 'ok');
 });
@@ -107,7 +108,7 @@ test('hreflang: self, x-default, only real translations', () => {
   assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'x-default']);
   assert.equal(alts.find((a) => a.hreflang === 'x-default').href, 'https://bhuiyanworkforce.com/countries/saudi-arabia');
   assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }), []);
-  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'x-default']);
 });
 test('language switcher links', () => {
   const links = getLanguageLinks({ type: 'page', id: 'privacy' }, 'en');
@@ -197,7 +198,7 @@ test('localizeTo keeps visitors in their language when the page exists there', (
 });
 test('localizeTo falls back to the real English page when there is no translation', () => {
   assert.equal(localizeTo('/privacy', 'ar'), '/privacy');
-  assert.equal(localizeTo('/countries/qatar', 'pl'), '/countries/qatar');
+  assert.equal(localizeTo('/countries/qatar', 'pl'), '/pl/kraje/katar');
   assert.equal(localizeTo('/capabilities.pdf', 'ar'), '/capabilities.pdf');
   assert.equal(localizeTo('/ar/privacy', 'pl'), '/ar/privacy'); // already prefixed
   assert.equal(localizeTo('mailto:a@b.c', 'ar'), 'mailto:a@b.c');

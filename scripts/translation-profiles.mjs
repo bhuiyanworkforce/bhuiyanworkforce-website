@@ -270,7 +270,18 @@ export const PROFILES = {
   },
   // ------------------------------------------------------------------ reference languages (minimal)
   ar: { name: 'Arabic', native: 'العربية', script: 'arabic', banned: [], warn: [], glossary: [], notes: [] },
-  pl: { name: 'Polish', native: 'Polski', script: 'latin', banned: [], warn: [], glossary: [], notes: [] },
+  pl: {
+    name: 'Polish', native: 'Polski', script: 'latin', glossary: [], notes: [],
+    banned: [
+      { re: /oddelegow|delegowan(ie|ia|iu|ych|ymi)\b/, term: '«oddelegowanie / delegowanie pracowników»', why: 'legal posting of workers (different regime in Polish law)' },
+      { re: /agencj\S* pracy (tymczasowej|tymczasowa)|praca tymczasowa przez agencj/, term: '«agencja pracy tymczasowej»', why: 'regulated temporary work agency (KRAZ register)' },
+      { re: /pośrednictw\S* pracy|posrednictw\S* pracy/, term: '«pośrednictwo pracy»', why: 'regulated job-placement service (KRAZ register)' },
+    ],
+    warn: [
+      { re: /agencj\S* zatrudnieni/, term: '«agencja zatrudnienia»', why: 'a regulated KRAZ-registered activity in Poland. Fine when it names a foreign authority (e.g. a national employment agency) or translates the English claim about a partner; never for the company itself' },
+      { re: /agencj\S* pracy/, term: '«agencja pracy»', why: 'regulated term: the company must not describe itself this way' },
+    ],
+  },
 };
 
 export { LATIN_ONLY };

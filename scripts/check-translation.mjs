@@ -97,8 +97,9 @@ else {
 
 // ---- 2. country names + country content
 const names = await importFile(`src/content/${lang}/names.js`);
-const countries = await importFile(`src/content/${lang}/countries.js`);
-const refCountries = await importFile('src/content/ar/countries.js');
+const keyed = (x) => (Array.isArray(x) ? Object.fromEntries(x.map((r) => [r.slug, r])) : x); // accept {slug: record} or [{slug, ...}]
+const countries = keyed(await importFile(`src/content/${lang}/countries.js`));
+const refCountries = keyed(await importFile('src/content/ar/countries.js'));
 for (const c of EN.COUNTRIES) {
   if (!names?.[c.slug] || !isStr(names[c.slug])) err(`names ${c.slug}`, 'missing');
   const tr = countries?.[c.slug];
@@ -142,11 +143,11 @@ for (const e of EN.POSTS) {
     for (const k of Object.keys(a)) if (a[k] !== b[k]) err(`post ${e.slug}`, `markdown "${k}" count: English ${a[k]}, translation ${b[k]} (keep ##, -, 1., ** syntax exactly)`);
   }
   checkText(`post ${e.slug}`, { t: e.title, x: e.excerpt, c: e.content }, { t: tr.title, x: tr.excerpt, c: tr.content });
-  if (lang !== 'ar' && tr.date === e.date && /[A-Za-z]{3,} \d{4}/.test(e.date)) err(`post ${e.slug}`, `date "${e.date}" still in English`);
+  if (tr.date === e.date && /[A-Za-z]{3,} \d{4}/.test(e.date)) err(`post ${e.slug}`, `date "${e.date}" still in English`);
 }
 
 // ---- 5. guides
-const guides = await importFile(`src/content/${lang}/guides.js`);
+const guides = keyed(await importFile(`src/content/${lang}/guides.js`));
 for (const slug of Object.keys(EN.COUNTRY_GUIDES)) {
   const e = EN.COUNTRY_GUIDES[slug], tr = guides?.[slug];
   if (!tr) { err(`guide ${slug}`, 'missing'); continue; }
@@ -236,6 +237,15 @@ else {
       if (n(/!/g) > n(/¡/g)) warn(where, 'Spanish exclamations need the opening mark ¡ (more "!" than "¡")');
     }
     if (checks.has('french-spacing') && /(?<![\s\u00A0\u202F\d\/])[?!;:](?=\s|$)/.test(text.replace(/https?:\/\/\S+/g, ''))) warn(where, 'French typography: put a non-breaking space before : ; ? !');
+  }
+}
+// English-format dates ("August 7, 2026", "March 2026") left inside translated text. German legitimately shares
+// several month names (August, September, November), so it is skipped.
+if (lang !== 'de') {
+  const ENGLISH_DATE = /\b(?:January|February|March|April|May|June|July|August|September|October|November|December) (?:\d{1,2}, )?\d{4}\b/;
+  for (const [name, data] of Object.entries(everything)) for (const [trail, text] of leaves(data || {})) {
+    const m = text.match(ENGLISH_DATE);
+    if (m) err(`${name}.${trail}`, `English date "${m[0]}" left in the text: translate the month and use the correct grammatical form`);
   }
 }
 if (lang === 'it' && /BMET/.test(flat(EN.PAGE_CONTENT)) && !/BMET/.test(flat(pages || {}))) err('terminology', 'BMET must stay as written');

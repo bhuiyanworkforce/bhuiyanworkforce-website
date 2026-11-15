@@ -16,6 +16,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import '../src/i18n/ar-bundle.js'; // registers the Arabic content that is loaded on demand in the browser
+import '../src/i18n/pl-bundle.js'; // same for Polish
 import { listPages } from '../src/routes.js';
 import { getPageHead } from '../src/seo/getPageHead.js';
 import { headToHtml } from '../src/seo/headHtml.js';
