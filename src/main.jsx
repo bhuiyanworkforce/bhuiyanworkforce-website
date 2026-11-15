@@ -28,6 +28,7 @@ async function start() {
   const { lang } = parsePath(globalThis.location.pathname);
   if (lang === 'ar') await import('./i18n/ar-bundle.js');
   else if (lang === 'pl') await import('./i18n/pl-bundle.js');
+  else if (lang === 'ro') await import('./i18n/ro-bundle.js');
 
   if (container.hasChildNodes() && renderedFor === here) {
     ReactDOM.hydrateRoot(container, tree);
