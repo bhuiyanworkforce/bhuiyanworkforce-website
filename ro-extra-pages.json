@@ -491,8 +491,8 @@
   },
   {
     "file": "src/pages/CapabilitiesPage.jsx",
-    "en": "Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. Our BMET recruitment licence is in process — expected October 2026. In the meantime we are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.",
-    "ro": "Construit pe principiile transparenței, fiabilității și recrutării etice, acționăm ca o punte dedicată între cererea globală de muncă și forța de muncă mare, muncitoare și bogată în talente din Bangladesh. Licența noastră de recrutare BMET este în curs de desfășurare – așteptată în octombrie 2026. Între timp, suntem pe deplin operaționali în aprovizionarea candidaților, selectarea și construirea relațiilor cu angajatorii în toate cele 25 de categorii comerciale."
+    "en": "Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. We are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.",
+    "ro": "Construit pe principiile transparenței, fiabilității și recrutării etice, acționăm ca o punte dedicată între cererea globală de muncă și forța de muncă mare, muncitoare și bogată în talente din Bangladesh. Suntem pe deplin operaționali în aprovizionarea candidaților, selectarea și construirea relațiilor cu angajatorii în toate cele 25 de categorii comerciale."
   },
   {
     "file": "src/pages/CapabilitiesPage.jsx",
@@ -1853,5 +1853,10 @@
     "file": "src/components/ContactForm.jsx",
     "en": "Domestic & Household Workers",
     "ro": "Lucrători casnici și casnici"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. only communicates through official channels: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com, and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to",
+    "ro": "Bhuiyan Workforce Ltd. comunică exclusiv prin canale oficiale: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com și numerele de telefon afișate pe acest site. Nu oferim locuri de muncă prin mesaje WhatsApp nesolicitate, mesaje directe pe rețelele sociale sau site-uri neoficiale. Dacă primiți o comunicare suspectă care pretinde că provine de la noi, vă rugăm să o raportați la adresa"
   }
 ]

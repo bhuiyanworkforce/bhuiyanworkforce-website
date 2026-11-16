@@ -1,0 +1,2357 @@
+[
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Home",
+    "bg": "Начало"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Blog",
+    "bg": "Блог"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Insights & Resources",
+    "bg": "Анализи и ресурси"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Practical guidance for employers recruiting overseas workers, and for Bangladeshi workers navigating international employment.",
+    "bg": "Практически насоки за работодатели, които набират работници от чужбина, и за работници от Бангладеш, които се ориентират в международната заетост."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Search articles… e.g. Saudi visa, construction, BMET",
+    "bg": "Търсене на статии… например виза за Саудитска Арабия, строителство, BMET"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "All",
+    "bg": "Всички"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Latest Articles",
+    "bg": "Последни статии"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "From the Bhuiyan Workforce Ltd. Blog",
+    "bg": "От блога на Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Industry news, compliance updates, and practical guides for employers and workers.",
+    "bg": "Новини от бранша, актуализации относно съответствието и практически ръководства за работодатели и работници."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "No articles found",
+    "bg": "Няма намерени статии"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": " for \"",
+    "bg": " за „"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "\"",
+    "bg": "“"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": " in \"",
+    "bg": " в „"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "\"",
+    "bg": "“"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": " — try different keywords or filters.",
+    "bg": " — опитайте с други ключови думи или филтри."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Read article →",
+    "bg": "Прочетете статията →"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Stay Up to Date",
+    "bg": "Бъдете в течение"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Follow us on LinkedIn or WhatsApp for the latest recruitment news, compliance updates, and destination guides.",
+    "bg": "Следете ни в LinkedIn или WhatsApp за най-новите новини за набирането на персонал, актуализации относно съответствието и пътеводители за дестинациите."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Follow on LinkedIn",
+    "bg": "Последвайте ни в LinkedIn"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "WhatsApp Updates",
+    "bg": "Актуализации в WhatsApp"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Home",
+    "bg": "Начало"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Employer's Guide",
+    "bg": "Наръчник за работодатели"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Free Download",
+    "bg": "Безплатно изтегляне"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "The Employer's Complete Guide to Recruiting from Bangladesh",
+    "bg": "Пълно ръководство за работодатели относно наемането на работници от Бангладеш"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Everything international employers need to know — visa requirements, legal compliance, trade testing, mobilisation timelines, and more. Written by our recruitment specialists.",
+    "bg": "Всичко, което международните работодатели трябва да знаят — визови изисквания, правно съответствие, проверка на професионалните умения, графици за организиране на придвижването и още. Подготвено от нашите специалисти по подбор."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "What's Inside",
+    "bg": "Какво включва"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "6 Chapters of Expert Guidance",
+    "bg": "6 глави с експертни насоки"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Understanding BMET & Emigration Clearance",
+    "bg": "Запознаване с BMET и разрешението за емиграция"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Step-by-step explanation of the Bangladesh Manpower Bureau process every worker must complete.",
+    "bg": "Подробно обяснение стъпка по стъпка на процедурата на Бюрото по работна сила на Бангладеш, която всеки работник трябва да премине."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Country-by-Country Visa Requirements",
+    "bg": "Визови изисквания по държави"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Gulf, Europe, and Southeast Asia visa timelines, fees, and documentation requirements at a glance.",
+    "bg": "Обобщение на сроковете за визи, таксите и изискванията за документи за държавите от Персийския залив, Европа и Югоизточна Азия."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Legal Compliance Checklist",
+    "bg": "Контролен списък за правно съответствие"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "What every employer must provide to stay compliant with Bangladesh labour export regulations.",
+    "bg": "Какво трябва да осигури всеки работодател, за да спазва нормативната уредба на Бангладеш за износ на работна сила."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Trade Testing & Skills Verification",
+    "bg": "Проверка на професионалните умения и потвърждаване на квалификацията"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "How Bangladeshi workers are trade-tested and what certifications to expect.",
+    "bg": "Как се проверяват професионалните умения на работниците от Бангладеш и какви сертификати могат да се очакват."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Employment Contract Standards",
+    "bg": "Стандарти за трудови договори"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "What a compliant employment contract must include for each destination country.",
+    "bg": "Какво трябва да включва един трудов договор, за да отговаря на изискванията във всяка държава на местоназначение."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Mobilisation Timeline Guide",
+    "bg": "Ръководство за сроковете за организиране на придвижването"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Realistic timelines from first contact to workers arriving on site — by country and trade category.",
+    "bg": "Реалистични срокове от първия контакт до пристигането на работниците на работното място — по държава и професионална категория."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Guide on Its Way!",
+    "bg": "Ръководството вече е на път към Вас!"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Thank you, ",
+    "bg": "Благодарим Ви, "
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": ". Our team will email the guide to ",
+    "bg": ". Нашият екип ще Ви изпрати ръководството на адрес "
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": " within the next few hours.",
+    "bg": " в рамките на следващите няколко часа."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "In the meantime, explore our ",
+    "bg": "Междувременно разгледайте нашите "
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "country guides",
+    "bg": "ръководства за държавите"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": " for detailed visa and deployment information.",
+    "bg": " за подробна информация относно визите и изпращането на работници."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Free Resource",
+    "bg": "Безплатен ресурс"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Get the Free Guide",
+    "bg": "Получете безплатното ръководство"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Complete the form and we'll email you the guide directly. No spam — ever.",
+    "bg": "Попълнете формуляра и ще Ви изпратим ръководството директно по имейл. Без нежелани съобщения — никога."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Full Name *",
+    "bg": "Пълно име *"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Ahmad Al-Rashid",
+    "bg": "Ahmad Al-Rashid"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Company Name *",
+    "bg": "Име на компанията *"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Al-Rashid Construction LLC",
+    "bg": "Al-Rashid Construction LLC"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Work Email *",
+    "bg": "Служебен имейл *"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "you@company.com",
+    "bg": "you@company.com"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Country of Interest",
+    "bg": "Държава от интерес"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Select destination…",
+    "bg": "Изберете държава на местоназначение…"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Gulf",
+    "bg": "Персийски залив"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Saudi Arabia",
+    "bg": "Саудитска Арабия"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "UAE",
+    "bg": "UAE"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Qatar",
+    "bg": "Катар"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Kuwait",
+    "bg": "Кувейт"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Oman",
+    "bg": "Оман"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Bahrain",
+    "bg": "Бахрейн"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Europe",
+    "bg": "Европа"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Poland",
+    "bg": "Полша"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Romania",
+    "bg": "Румъния"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Portugal",
+    "bg": "Португалия"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Serbia",
+    "bg": "Сърбия"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Germany",
+    "bg": "Германия"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Other Europe",
+    "bg": "Друга държава в Европа"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Southeast Asia",
+    "bg": "Югоизточна Азия"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Malaysia",
+    "bg": "Малайзия"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Singapore",
+    "bg": "Сингапур"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Maldives",
+    "bg": "Малдивите"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Multiple Countries",
+    "bg": "Няколко държави"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Something went wrong. Please email ",
+    "bg": "Възникна грешка. Моля, изпратете имейл на "
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": " directly.",
+    "bg": " директно."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Sending…",
+    "bg": "Изпращане…"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Send Me the Free Guide →",
+    "bg": "Изпратете ми безплатното ръководство →"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "By submitting, you agree to receive occasional recruitment insights from Bhuiyan Workforce. Unsubscribe anytime.",
+    "bg": "С изпращането на формуляра се съгласявате понякога да получавате новини и информация за набирането на персонал от Bhuiyan Workforce. Можете да се отпишете по всяко време."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Home",
+    "bg": "Начало"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities",
+    "bg": "Възможности"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "For Employers",
+    "bg": "За работодатели"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd.",
+    "bg": "Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities & Company Overview",
+    "bg": "Възможности и представяне на компанията"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / Save as PDF",
+    "bg": "🖨️ Печат / Запазване като PDF"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "BHUIYAN WORKFORCE LTD.",
+    "bg": "BHUIYAN WORKFORCE LTD."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities & Company Overview",
+    "bg": "Възможности и представяне на компанията"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Connecting Bangladesh's skilled workforce to the world — ",
+    "bg": "Свързваме квалифицираните работници от Бангладеш със света — "
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Who We Are",
+    "bg": "Кои сме ние"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "About Bhuiyan Workforce Ltd.",
+    "bg": "За Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Asia, and Europe.",
+    "bg": "Bhuiyan Workforce Ltd. е базирана в Бангладеш компания за подбор и износ на работна сила, основана от MD Rezaul Kabir Bhuiyan. Специализираме в намирането, щателния подбор и изпращането на квалифицирани, полуквалифицирани и общи работници при международни работодатели в Близкия изток, Азия и Европа."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. We are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.",
+    "bg": "Изградени върху принципите на прозрачност, надеждност и етичен подбор, ние сме специализираното звено, което свързва световното търсене на работна сила с многобройната, трудолюбива и талантлива работна сила на Бангладеш. Работим пълноценно по намирането и подбора на кандидати и изграждането на отношения с работодатели във всички 25 професионални категории."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "What We Supply",
+    "bg": "Какви работници осигуряваме"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Worker Categories",
+    "bg": "Категории работници"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Skilled, semi-skilled, and specialist workers across all major trade and service sectors.",
+    "bg": "Квалифицирани, полуквалифицирани и специализирани работници във всички основни професионални и обслужващи сектори."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Global Reach",
+    "bg": "Глобален обхват"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Deployment Destinations — 25+ Countries",
+    "bg": "Дестинации за изпращане на работници — над 25 държави"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Europe (15)",
+    "bg": "Европа (15)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Serbia · Portugal · Greece · Slovakia · Latvia · Cyprus · Estonia · Lithuania · Poland · Czech Republic · Bulgaria · Bosnia and Herzegovina · Hungary · Croatia · Romania",
+    "bg": "Сърбия · Португалия · Гърция · Словакия · Латвия · Кипър · Естония · Литва · Полша · Чехия · България · Босна и Херцеговина · Унгария · Хърватия · Румъния"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "How It Works",
+    "bg": "Как протича процесът"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Recruitment Process",
+    "bg": "Нашият процес по подбор"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "A structured, transparent 6-step process from requirement intake to worker deployment.",
+    "bg": "Структуриран и прозрачен процес от 6 стъпки — от получаването на заявката до изпращането на работниците."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "01",
+    "bg": "01"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Requirement Intake",
+    "bg": "Получаване на заявката"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We collect detailed job descriptions, skill requirements, visa quotas, salary ranges, and deployment timelines from the client employer.",
+    "bg": "Получаваме от работодателя подробни описания на длъжностите, изисквания за умения, визови квоти, диапазони на заплащане и срокове за изпращане на работниците."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "02",
+    "bg": "02"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Candidate Sourcing",
+    "bg": "Намиране на кандидати"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We leverage our Bangladesh-wide network of trade professionals, referral partners, and candidate databases to shortlist qualified applicants.",
+    "bg": "Използваме мрежата си от професионалисти от различни занаяти в цял Бангладеш, партньори за препоръки и бази данни с кандидати, за да подберем квалифицирани кандидати."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "03",
+    "bg": "03"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Screening & Testing",
+    "bg": "Подбор и проверка"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate undergoes trade skill tests, structured interviews, and thorough background verification before being presented to the client.",
+    "bg": "Всеки кандидат преминава проверка на професионалните умения, структурирани интервюта и задълбочена проверка на миналото, преди да бъде представен на клиента."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "04",
+    "bg": "04"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Medical Clearance",
+    "bg": "Медицинско освидетелстване"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers complete mandatory medical fitness examinations at government-approved centres to meet destination country health requirements.",
+    "bg": "Работниците преминават задължителни медицински прегледи в одобрени от държавата центрове, за да отговарят на здравните изисквания на държавата по местоназначение."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "05",
+    "bg": "05"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Documentation & Visa",
+    "bg": "Документи и визи"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We manage all documentation: passport validation, visa applications, attestation, BMET clearance, and pre-departure orientation.",
+    "bg": "Ние се грижим за цялата документация: проверка на паспорта, заявления за визи, заверки, разрешение от BMET и инструктаж преди заминаване."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "06",
+    "bg": "06"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Deployment",
+    "bg": "Изпращане на работниците"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers are fully briefed, oriented on destination country norms, and deployed on schedule. Post-arrival follow-up is conducted.",
+    "bg": "Работниците получават пълна информация и се запознават с нормите в държавата по местоназначение, след което заминават по график. След пристигането се осъществява последваща връзка."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Advantage",
+    "bg": "Нашите предимства"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Why Choose Bhuiyan Workforce?",
+    "bg": "Защо да изберете Bhuiyan Workforce?"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Direct Talent Access",
+    "bg": "Пряк достъп до таланти"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Tap into Bangladesh's large, motivated labor pool across all major trade and service sectors.",
+    "bg": "Възползвайте се от многобройната и мотивирана работна сила на Бангладеш във всички основни професионални и обслужващи сектори."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Pre-Screened Workers",
+    "bg": "Предварително подбрани работници"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate is skills-tested, medically cleared, and document-ready before deployment.",
+    "bg": "Преди изпращане всеки кандидат е преминал проверка на уменията, медицинско освидетелстване и подготовка на документите."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Global Reach",
+    "bg": "Глобален обхват"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Active deployment coverage across 25+ countries spanning Middle East, Asia, and Europe.",
+    "bg": "Активно изпращаме работници в над 25 държави в Близкия изток, Азия и Европа."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Dedicated Support",
+    "bg": "Персонално съдействие"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Clients receive a dedicated account contact for seamless communication end-to-end.",
+    "bg": "На клиентите се предоставя специално лице за контакт за безпроблемна комуникация през целия процес."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Fast Turnaround",
+    "bg": "Бързо изпълнение"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Streamlined process from requirement submission to worker deployment.",
+    "bg": "Оптимизиран процес — от подаването на заявката до изпращането на работниците."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Office",
+    "bg": "Офис"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Kawtoli, Brahmanbaria, Bangladesh 3400",
+    "bg": "Kawtoli, Brahmanbaria, Bangladesh 3400"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Partnerships",
+    "bg": "Партньорства"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "General Enquiry",
+    "bg": "Общи запитвания"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Mobile / WhatsApp",
+    "bg": "Мобилен телефон / WhatsApp"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Website",
+    "bg": "Уебсайт"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Share this capabilities page:",
+    "bg": "Споделете тази страница с информация за възможностите ни:"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "📋 Copy Link",
+    "bg": "📋 Копиране на връзката"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Link copied!",
+    "bg": "Връзката е копирана!"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / PDF",
+    "bg": "🖨️ Печат / PDF"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Construction & Engineering",
+    "bg": "Строителство и инженерство"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Oil & Gas",
+    "bg": "Нефт и газ"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Drivers & Transport",
+    "bg": "Шофьори и транспорт"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Chefs & Hospitality",
+    "bg": "Готвачи и хотелиерство и ресторантьорство"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Security Guards",
+    "bg": "Охранители"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Cleaning & Housekeeping",
+    "bg": "Почистване и поддръжка на домакинството"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Farm & Garden",
+    "bg": "Земеделие и градинарство"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Warehouse & Logistics",
+    "bg": "Складова дейност и логистика"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Factory & Manufacturing",
+    "bg": "Фабрично производство"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Retail & Supermarket Staff",
+    "bg": "Персонал в търговията на дребно и супермаркетите"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Painting & Finishing",
+    "bg": "Боядисване и довършителни работи"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "bg": "Армировка и укрепване със стомана"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Scaffolding & Formwork",
+    "bg": "Скеле и кофраж"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "bg": "Озеленяване и поддръжка на терени"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mason & Bricklaying",
+    "bg": "Зидар и зидария"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "bg": "Помощници електротехници и работници по изтегляне на кабели"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Laundry & Linen Services",
+    "bg": "Пране и услуги с бельо"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Food Processing & Packing",
+    "bg": "Преработка и опаковане на храни"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Fishery & Aquaculture",
+    "bg": "Рибарство и аквакултури"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Caregiving & Elderly Support",
+    "bg": "Грижи и подкрепа за възрастни хора"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Other",
+    "bg": "Друго"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Saudi Arabia",
+    "bg": "Саудитска Арабия"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "UAE",
+    "bg": "UAE"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Qatar",
+    "bg": "Катар"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Kuwait",
+    "bg": "Кувейт"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Oman",
+    "bg": "Оман"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bahrain",
+    "bg": "Бахрейн"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Jordan",
+    "bg": "Йордания"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Malaysia",
+    "bg": "Малайзия"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Singapore",
+    "bg": "Сингапур"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Maldives",
+    "bg": "Малдиви"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Poland",
+    "bg": "Полша"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Romania",
+    "bg": "Румъния"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Serbia",
+    "bg": "Сърбия"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Portugal",
+    "bg": "Португалия"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Greece",
+    "bg": "Гърция"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Hungary",
+    "bg": "Унгария"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Croatia",
+    "bg": "Хърватия"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Czech Republic",
+    "bg": "Чехия"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Lithuania",
+    "bg": "Литва"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Latvia",
+    "bg": "Латвия"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Estonia",
+    "bg": "Естония"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bulgaria",
+    "bg": "България"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Cyprus",
+    "bg": "Кипър"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Slovakia",
+    "bg": "Словакия"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bosnia and Herzegovina",
+    "bg": "Босна и Херцеговина"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Open to Any Country",
+    "bg": "Подходяща ми е всяка държава"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Thank you, ",
+    "bg": "Благодарим Ви, "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ". We have received your application and will review it within 3–5 working days. If shortlisted, our team will contact you directly.",
+    "bg": ". Получихме кандидатурата Ви и ще я разгледаме в рамките на 3–5 работни дни. Ако бъдете одобрени за следващ етап, нашият екип ще се свърже директно с Вас."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "For Workers",
+    "bg": "За работници"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Full Name (as in passport) *",
+    "bg": "Пълно име (както е в паспорта) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mohammad Rafiqul Islam",
+    "bg": "Mohammad Rafiqul Islam"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Date of Birth *",
+    "bg": "Дата на раждане *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Nationality",
+    "bg": "Гражданство"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Phone / WhatsApp *",
+    "bg": "Телефон / WhatsApp *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Email Address",
+    "bg": "Имейл адрес"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "optional",
+    "bg": "незадължително"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Home Address (District/Division) *",
+    "bg": "Домашен адрес (район/област) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Brahmanbaria, Chittagong Division",
+    "bg": "напр. Brahmanbaria, Chittagong Division"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Number",
+    "bg": "Номер на паспорт"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "A1234567",
+    "bg": "A1234567"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Expiry Date",
+    "bg": "Дата на изтичане на паспорта"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Category *",
+    "bg": "Професионална категория *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select category…",
+    "bg": "Изберете категория…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Specific Role / Trade *",
+    "bg": "Конкретна длъжност / професия *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Mason, Welder, Chef de Partie",
+    "bg": "напр. зидар, заварчик, Chef de Partie"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Years of Experience *",
+    "bg": "Години професионален опит *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "bg": "Изберете…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Less than 1 year",
+    "bg": "Под 1 година"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "1–2 years",
+    "bg": "1–2 години"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "3–5 years",
+    "bg": "3–5 години"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "6–10 years",
+    "bg": "6–10 години"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "10+ years",
+    "bg": "10+ години"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Preferred Country *",
+    "bg": "Предпочитана държава *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select country…",
+    "bg": "Изберете държава…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Available From",
+    "bg": "Мога да започна от"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Education Level",
+    "bg": "Образователно ниво"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No formal education",
+    "bg": "Без формално образование"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Primary (Class 1–5)",
+    "bg": "Начално образование (1.–5. клас)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "JSC / Class 8",
+    "bg": "JSC / 8. клас"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "SSC / Class 10",
+    "bg": "SSC / 10. клас"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "HSC / Class 12",
+    "bg": "HSC / 12. клас"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Diploma / Vocational",
+    "bg": "Диплома / професионално образование"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bachelor's Degree",
+    "bg": "Бакалавърска степен"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Master's Degree or above",
+    "bg": "Магистърска степен или по-висока"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Languages Spoken",
+    "bg": "Езици, които владеете"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Bengali, English (basic), Arabic (basic)",
+    "bg": "напр. бенгалски, английски (основно ниво), арабски (основно ниво)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Medical Fitness Certificate?",
+    "bg": "Имате ли медицинско свидетелство за годност?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — valid certificate",
+    "bg": "Да — валидно свидетелство"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet obtained",
+    "bg": "Не — все още не съм го получил/а"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Expired — needs renewal",
+    "bg": "Изтекло — необходимо е подновяване"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Test Certificate?",
+    "bg": "Имате ли удостоверение за проверка на професионалните умения?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — certified",
+    "bg": "Да — имам удостоверение"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet tested",
+    "bg": "Не — все още не съм преминал/а проверка"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "In progress",
+    "bg": "В процес на издаване"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "BMET Smart Card?",
+    "bg": "Имате ли смарт карта BMET?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — registered",
+    "bg": "Да — регистриран/а съм"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet registered",
+    "bg": "Не — все още не съм регистриран/а"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload CV / Resume (PDF or Word, max 5MB)",
+    "bg": "Качете CV / автобиография (PDF или Word, максимум 5MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Passport Copy (PDF or image, max 5MB)",
+    "bg": "Качете копие на паспорта (PDF или изображение, максимум 5MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Trade/Skills Certificate (optional)",
+    "bg": "Качете удостоверение за професионални умения (незадължително)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.",
+    "bg": "Всички качени файлове (CV, копие на паспорта, удостоверение) ще бъдат изпратени като прикачени файлове към имейл, за да бъдат прегледани от нашия екип."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Additional Information / Cover Letter",
+    "bg": "Допълнителна информация / мотивационно писмо"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…",
+    "bg": "Разкажете ни за опита си, предишната си работа в чужбина, уменията си и причините да искате да работите в чужбина…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Important:",
+    "bg": "Важно:"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": " By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our ",
+    "bg": " С подаването на тази кандидатура потвърждавате, че цялата предоставена информация е точна. Bhuiyan Workforce Ltd. ще се свърже с кандидатите, одобрени за следващ етап, в рамките на 3–5 работни дни. Подаването на кандидатура не гарантира назначаване. Обработваме данните Ви съгласно нашата "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Privacy Policy",
+    "bg": "Политика за поверителност"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ".",
+    "bg": "."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Something went wrong. Please call us on ",
+    "bg": "Възникна проблем. Моля, обадете ни се на "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "+880 1864 567912",
+    "bg": "+880 1864 567912"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": " or email ",
+    "bg": " или ни пишете на "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ".",
+    "bg": "."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Home",
+    "bg": "Начало"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Privacy Policy",
+    "bg": "Политика за поверителност"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Privacy Policy",
+    "bg": "Политика за поверителност"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "How Bhuiyan Workforce Ltd. collects, uses, and protects your personal information.",
+    "bg": "Как Bhuiyan Workforce Ltd. събира, използва и защитава Вашата лична информация."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Last updated: May 2026",
+    "bg": "Последна актуализация: май 2026 г."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "1. Who We Are",
+    "bg": "1. Кои сме ние"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. (\"we\", \"us\", \"our\") is a Bangladesh-based international manpower recruitment company. Our registered office is in Brahmanbaria, Bangladesh. Our website is bhuiyanworkforce.com.",
+    "bg": "Bhuiyan Workforce Ltd. („ние“, „нас“, „наш“) е международна компания за набиране на работна сила със седалище в Bangladesh. Регистрираният ни офис се намира в Brahmanbaria, Bangladesh. Уебсайтът ни е bhuiyanworkforce.com."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For all privacy-related enquiries, contact us at ",
+    "bg": "За всички запитвания, свързани с поверителността, свържете се с нас на "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "2. Who This Policy Applies To",
+    "bg": "2. За кого се отнася тази политика"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy applies to:",
+    "bg": "Тази политика за поверителност се отнася за:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Employers",
+    "bg": "Работодатели"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — companies and individuals who contact us to source workers",
+    "bg": " — компании и физически лица, които се свързват с нас, за да намерят работници"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates",
+    "bg": "Кандидати за работа"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — individuals who register interest in overseas employment opportunities",
+    "bg": " — физически лица, които заявяват интерес към възможности за работа в чужбина"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Website visitors",
+    "bg": "Посетители на уебсайта"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — anyone who browses bhuiyanworkforce.com",
+    "bg": " — всички, които разглеждат bhuiyanworkforce.com"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "3. Information We Collect",
+    "bg": "3. Информация, която събираме"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We collect information in the following ways:",
+    "bg": "Събираме информация по следните начини:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form submissions",
+    "bg": "Изпратени формуляри за контакт"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — name, company name, email address, and your message",
+    "bg": " — име, име на компанията, имейл адрес и Вашето съобщение"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Direct communications",
+    "bg": "Пряка комуникация"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — emails, WhatsApp messages, and phone calls you initiate with us",
+    "bg": " — имейли, съобщения в WhatsApp и телефонни обаждания, които осъществявате към нас"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate registrations",
+    "bg": "Регистрации на кандидати за работа"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — name, date of birth, nationality, passport details, trade qualifications, work experience, and supporting documents such as certificates and photographs",
+    "bg": " — име, дата на раждане, гражданство, паспортни данни, професионална квалификация, трудов стаж и подкрепящи документи, като удостоверения и снимки"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical data",
+    "bg": "Технически данни"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — IP address, browser type, and pages visited, collected automatically when you use our website",
+    "bg": " — IP адрес, тип браузър и посетени страници, събирани автоматично при използване на нашия уебсайт"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not collect payment information. All financial transactions related to our services are conducted offline.",
+    "bg": "Не събираме информация за плащания. Всички финансови транзакции, свързани с услугите ни, се извършват офлайн."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "4. How We Use Your Information",
+    "bg": "4. Как използваме Вашата информация"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We use the information we collect to:",
+    "bg": "Използваме събраната информация, за да:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Respond to employer enquiries and prepare recruitment proposals",
+    "bg": "Отговаряме на запитвания от работодатели и изготвяме предложения за набиране на персонал"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Match worker candidates with suitable employer opportunities",
+    "bg": "Свързваме кандидатите за работа с подходящи възможности при работодатели"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Process BMET registration, visa applications, medical clearances, and other deployment documentation",
+    "bg": "Обработваме регистрации в BMET, заявления за визи, медицински разрешения и други документи за изпращане на работа"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Communicate with you about the status of an active recruitment or deployment",
+    "bg": "Информираме Ви за състоянието на текущ процес по набиране на персонал или изпращане на работа"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Comply with legal obligations under Bangladeshi law and the laws of destination countries",
+    "bg": "Спазваме правните си задължения съгласно законодателството на Bangladesh и законите на държавите на местоназначение"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Improve our website and services based on usage patterns",
+    "bg": "Подобряваме уебсайта и услугите си въз основа на моделите на използване"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not sell, rent, or trade your personal data to any third party for commercial purposes.",
+    "bg": "Не продаваме, не отдаваме под наем и не предоставяме срещу заплащане личните Ви данни на трети лица за търговски цели."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "5. Data Sharing",
+    "bg": "5. Споделяне на данни"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may share your personal data only in the following circumstances:",
+    "bg": "Може да споделяме личните Ви данни само при следните обстоятелства:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With employers",
+    "bg": "С работодатели"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — worker candidate profiles are shared with prospective employers only after the candidate has been informed and has consented",
+    "bg": " — профилите на кандидатите за работа се споделят с потенциални работодатели само след като кандидатът е бил уведомен и е дал съгласие"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With government authorities",
+    "bg": "С държавни органи"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — BMET, Bangladesh embassies, destination-country immigration authorities, and GAMCA-approved medical centres, as required by law during the deployment process",
+    "bg": " — BMET, посолствата на Bangladesh, имиграционните органи на държавите на местоназначение и медицински центрове, одобрени от GAMCA, когато това се изисква по закон в процеса на изпращане на работа"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With service providers",
+    "bg": "С доставчици на услуги"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — third-party providers who assist us in operating our website and communications, bound by confidentiality obligations",
+    "bg": " — доставчици от трети страни, които ни помагат да поддържаме уебсайта и комуникациите си и са обвързани със задължения за поверителност"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "When required by law",
+    "bg": "Когато това се изисква по закон"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — in response to a lawful request from a court, government authority, or regulatory body in Bangladesh",
+    "bg": " — в отговор на законосъобразно искане от съд, държавен орган или регулаторен орган в Bangladesh"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "6. Cookies and Tracking",
+    "bg": "6. Бисквитки и проследяване"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Our website uses minimal cookies necessary for basic functionality. We do not use advertising cookies or third-party tracking pixels. Technical data such as page visits may be logged by our hosting provider (Cloudflare) for security and performance purposes. You can disable cookies in your browser settings without affecting your ability to use the website.",
+    "bg": "Уебсайтът ни използва минимален брой бисквитки, необходими за основната му функционалност. Не използваме рекламни бисквитки или проследяващи пиксели на трети страни. Технически данни, като посещенията на страници, може да се записват от нашия хостинг доставчик (Cloudflare) с цел сигурност и производителност. Можете да изключите бисквитките в настройките на браузъра си, без това да се отрази на възможността Ви да използвате уебсайта."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "7. Data Retention",
+    "bg": "7. Съхранение на данни"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form enquiries",
+    "bg": "Запитвания чрез формуляра за контакт"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — retained for up to 24 months from the date of submission",
+    "bg": " — съхраняват се до 24 месеца от датата на изпращане"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate profiles",
+    "bg": "Профили на кандидати за работа"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — retained for up to 3 years, or until the candidate requests deletion",
+    "bg": " — съхраняват се до 3 години или до поискване на изтриването им от кандидата"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Deployment documentation",
+    "bg": "Документация за изпращане на работа"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — retained for up to 7 years where required by Bangladeshi law or the laws of the destination country",
+    "bg": " — съхранява се до 7 години, когато това се изисква от законодателството на Bangladesh или от законите на държавата на местоназначение"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical/website logs",
+    "bg": "Технически/уебсайт логове"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — retained for up to 90 days",
+    "bg": " — съхраняват се до 90 дни"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "8. Your Rights",
+    "bg": "8. Вашите права"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "You have the right to:",
+    "bg": "Имате право да:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Access",
+    "bg": "Достъп"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — request a copy of the personal data we hold about you",
+    "bg": " — поискате копие от личните данни, които съхраняваме за Вас"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Correction",
+    "bg": "Коригиране"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — request that inaccurate or incomplete data be corrected",
+    "bg": " — поискате коригирането на неточни или непълни данни"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Deletion",
+    "bg": "Изтриване"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — request that your personal data be deleted, subject to our legal obligations to retain certain records",
+    "bg": " — поискате изтриването на личните Ви данни при спазване на правните ни задължения да съхраняваме определени записи"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Objection",
+    "bg": "Възражение"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — object to our use of your data for any purpose other than legal compliance",
+    "bg": " — възразите срещу използването на данните Ви за цели, различни от спазването на закона"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any of these rights, email us at ",
+    "bg": "За да упражните някое от тези права, изпратете ни имейл на "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We will respond within 30 days.",
+    "bg": ". Ще Ви отговорим в рамките на 30 дни."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "9. GDPR — Additional Rights for EU/EEA Data Subjects",
+    "bg": "9. GDPR — допълнителни права за субекти на данни от ЕС/ЕИП"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "If you are located in the European Union or European Economic Area, the General Data Protection Regulation (GDPR) gives you additional rights beyond those listed in Section 8, and requires us to disclose the following:",
+    "bg": "Ако се намирате в Европейския съюз или Европейското икономическо пространство, Общият регламент относно защитата на данните (GDPR) Ви предоставя допълнителни права извън изброените в раздел 8 и изисква от нас да разкрием следното:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Legal basis for processing",
+    "bg": "Правно основание за обработване"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — we process your data based on your consent (when you submit a contact or application form), our legitimate interest in operating a recruitment business, and, where applicable, the performance of a contract with you or your employer",
+    "bg": " — обработваме данните Ви въз основа на Вашето съгласие (когато изпращате формуляр за контакт или кандидатстване), нашия легитимен интерес да осъществяваме дейност по набиране на персонал и, когато е приложимо, изпълнението на договор с Вас или Вашия работодател"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Data Controller",
+    "bg": "Администратор на данни"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — Bhuiyan Workforce Ltd. is the data controller for personal data submitted through this website",
+    "bg": " — Bhuiyan Workforce Ltd. е администратор на личните данни, изпратени чрез този уебсайт"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to restriction of processing",
+    "bg": "Право на ограничаване на обработването"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — you may request that we limit how we use your data while a dispute about its accuracy or our right to use it is resolved",
+    "bg": " — можете да поискате да ограничим начина, по който използваме данните Ви, докато се разреши спор относно тяхната точност или правото ни да ги използваме"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to data portability",
+    "bg": "Право на преносимост на данните"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — you may request your data in a structured, commonly used, machine-readable format",
+    "bg": " — можете да поискате данните си в структуриран, широко използван и пригоден за машинно четене формат"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to withdraw consent",
+    "bg": "Право на оттегляне на съгласието"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — where processing is based on consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal",
+    "bg": " — когато обработването се основава на съгласие, можете да го оттеглите по всяко време, без това да засяга законосъобразността на обработването, извършено преди оттеглянето"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to lodge a complaint",
+    "bg": "Право на подаване на жалба"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — you have the right to lodge a complaint with the data protection supervisory authority in your EU/EEA country of residence",
+    "bg": " — имате право да подадете жалба до надзорния орган за защита на данните в държавата от ЕС/ЕИП, в която пребивавате"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any GDPR right, email us at ",
+    "bg": "За да упражните което и да е право по GDPR, изпратете ни имейл на "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We aim to respond to GDPR requests within 30 days, consistent with regulatory timelines.",
+    "bg": ". Стремим се да отговаряме на искания по GDPR в рамките на 30 дни, в съответствие със сроковете, предвидени в нормативната уредба."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This section is provided as a good-faith disclosure and does not constitute legal advice. We recommend consulting a qualified data protection professional for guidance specific to your circumstances.",
+    "bg": "Този раздел е предоставен добросъвестно и не представлява правен съвет. Препоръчваме Ви да се консултирате с квалифициран специалист по защита на данните за насоки, съобразени с Вашите обстоятелства."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "10. Data Security",
+    "bg": "10. Сигурност на данните"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We implement appropriate technical and organisational measures to protect your personal data from unauthorised access, loss, or disclosure. These include encrypted email transmission, restricted access to candidate records, and secure cloud storage. No method of transmission over the internet is 100% secure; however, we take all reasonable steps to protect your information.",
+    "bg": "Прилагаме подходящи технически и организационни мерки за защита на личните Ви данни от неоторизиран достъп, загуба или разкриване. Те включват криптирано предаване на имейли, ограничен достъп до досиетата на кандидатите и сигурно съхранение в облак. Нито един метод за предаване на информация по интернет не е 100% сигурен; въпреки това предприемаме всички разумни мерки за защита на Вашата информация."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "11. International Data Transfers",
+    "bg": "11. Международно предаване на данни"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "As an international recruitment agency, we necessarily transfer personal data across borders — for example, sharing a worker's documents with an employer in Saudi Arabia or submitting visa applications to European embassies. We do this only where necessary for the recruitment process and in accordance with applicable law.",
+    "bg": "Като международна агенция за набиране на персонал неизбежно предаваме лични данни през граници — например споделяме документите на работник с работодател в Saudi Arabia или подаваме заявления за визи до европейски посолства. Правим това само когато е необходимо за процеса по набиране на персонал и в съответствие с приложимото законодателство."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "12. Governing Law",
+    "bg": "12. Приложимо право"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy is governed by the laws of Bangladesh, including the Digital Security Act 2018 and any applicable data protection regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.",
+    "bg": "Тази политика за поверителност се урежда от законите на Бангладеш, включително Digital Security Act 2018 и всички приложими разпоредби за защита на данните. Всички спорове, произтичащи от тази политика, са подсъдни на съдилищата на Бангладеш."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "13. Changes to This Policy",
+    "bg": "13. Промени в тази политика"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. We will post the updated version on this page with a revised \"last updated\" date. Continued use of the website after any update constitutes acceptance of the revised policy.",
+    "bg": "Може периодично да актуализираме тази политика за поверителност, за да отразим промени в практиките си или в приложимото законодателство. Ще публикуваме актуализираната версия на тази страница с променена дата на „последна актуализация“. Продължаването на използването на уебсайта след актуализация означава приемане на преразгледаната политика."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "14. Contact",
+    "bg": "14. Контакт"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For any privacy-related questions, requests, or complaints, please contact us:",
+    "bg": "За въпроси, искания или жалби, свързани с поверителността, моля, свържете се с нас:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Email: ",
+    "bg": "Имейл: "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "WhatsApp: ",
+    "bg": "WhatsApp: "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "+880 1864 567912",
+    "bg": "+880 1864 567912"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Home",
+    "bg": "Начало"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Terms of Service",
+    "bg": "Условия за ползване"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Terms of Service",
+    "bg": "Условия за ползване"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "The terms and conditions governing use of the Bhuiyan Workforce Ltd. website and services.",
+    "bg": "Общите условия, уреждащи използването на уебсайта и услугите на Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Last updated: May 2026",
+    "bg": "Последна актуализация: май 2026 г."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "1. Acceptance of Terms",
+    "bg": "1. Приемане на условията"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "By accessing or using the bhuiyanworkforce.com website, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use the website. These terms apply to all visitors, employers, and worker candidates who access our website or engage with our services.",
+    "bg": "С достъпа до уебсайта bhuiyanworkforce.com или използването му Вие се съгласявате да спазвате настоящите Условия за ползване и нашата Политика за поверителност. Ако не сте съгласни с тези условия, моля, не използвайте уебсайта. Тези условия се отнасят за всички посетители, работодатели и кандидати за работа, които осъществяват достъп до уебсайта ни или използват услугите ни."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "2. About Bhuiyan Workforce Ltd.",
+    "bg": "2. За Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based international manpower recruitment company. We connect skilled Bangladeshi workers with employers across 25+ countries in the Gulf, Europe, and Southeast Asia. Our recruitment and deployment services are governed by separate written service agreements between Bhuiyan Workforce Ltd. and the engaging employer.",
+    "bg": "Bhuiyan Workforce Ltd. е базирана в Бангладеш международна компания за набиране на работна сила. Свързваме квалифицирани работници от Бангладеш с работодатели в над 25 държави от Персийския залив, Европа и Югоизточна Азия. Услугите ни по набиране и наемане на персонал се уреждат с отделни писмени договори за услуги между Bhuiyan Workforce Ltd. и работодателя, който ги възлага."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "3. Website Use",
+    "bg": "3. Използване на уебсайта"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may use this website for lawful purposes only. You agree not to:",
+    "bg": "Можете да използвате този уебсайт само за законни цели. Вие се съгласявате да не:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use the website in any way that violates applicable laws or regulations in Bangladesh or your jurisdiction",
+    "bg": "Използвате уебсайта по начин, който нарушава приложимите закони или разпоредби в Бангладеш или във Вашата юрисдикция"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Submit false, misleading, or fraudulent information through any form on the website",
+    "bg": "Предоставяте невярна, подвеждаща или измамна информация чрез която и да е форма на уебсайта"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Impersonate any person, company, or organisation",
+    "bg": "Се представяте за друго лице, компания или организация"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Attempt to gain unauthorised access to any part of the website, our servers, or any connected systems",
+    "bg": "Опитвате да получите неоторизиран достъп до която и да е част от уебсайта, нашите сървъри или свързани системи"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use automated tools, scrapers, or bots to extract content from the website without our written permission",
+    "bg": "Използвате автоматизирани инструменти, скрейпъри или ботове за извличане на съдържание от уебсайта без нашето писмено разрешение"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Transmit unsolicited commercial communications (spam) through any channel on the website",
+    "bg": "Изпращате непоискани търговски съобщения (спам) чрез който и да е канал на уебсайта"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Upload or transmit any content that is harmful, offensive, defamatory, or infringes on the rights of others",
+    "bg": "Качвате или предавате съдържание, което е вредно, обидно, клеветническо или нарушава правата на други лица"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "4. Employer Enquiries",
+    "bg": "4. Запитвания от работодатели"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Employers may submit recruitment enquiries through our contact form, email, or WhatsApp. Submitting an enquiry does not constitute a binding contract or guarantee of service. We will respond to genuine enquiries within 24 hours but reserve the right to decline any enquiry at our sole discretion.",
+    "bg": "Работодателите могат да изпращат запитвания за набиране на персонал чрез формата ни за контакт, по имейл или чрез WhatsApp. Изпращането на запитване не представлява обвързващ договор или гаранция за услуга. Ще отговорим на добросъвестните запитвания в рамките на 24 часа, но си запазваме правото по собствена преценка да откажем всяко запитване."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any formal recruitment engagement will be subject to a separate written service agreement specifying the scope of services, fees, timelines, and obligations of both parties. No recruitment fees or service charges are collected through this website — all payments are handled offline under the terms of that agreement.",
+    "bg": "Всяко официално възлагане на услуги по набиране на персонал ще се извършва въз основа на отделен писмен договор за услуги, в който се посочват обхватът на услугите, таксите, сроковете и задълженията на двете страни. Чрез този уебсайт не се събират такси за набиране на персонал или такси за услуги — всички плащания се извършват извън него съгласно условията на договора."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "5. Worker Candidate Registrations",
+    "bg": "5. Регистрация на кандидати за работа"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Worker candidates who register interest in overseas employment through this website consent to their information being held on our candidate database and, where a suitable opportunity arises, being shared with prospective employers. Registering interest does not guarantee placement or employment. Bhuiyan Workforce Ltd. acts as a recruitment intermediary and is not itself the employer.",
+    "bg": "Кандидатите за работа, които заявяват чрез този уебсайт интерес към работа в чужбина, се съгласяват информацията им да се съхранява в нашата база данни с кандидати и, ако се появи подходяща възможност, да бъде споделяна с потенциални работодатели. Заявяването на интерес не гарантира назначаване или работа. Bhuiyan Workforce Ltd. действа като посредник при набирането на персонал и не е работодател."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Candidates are responsible for ensuring all information and documents submitted are accurate and genuine. Submission of fraudulent documents is a criminal offence under Bangladeshi law and will result in immediate disqualification and may be reported to the relevant authorities.",
+    "bg": "Кандидатите носят отговорност да гарантират, че цялата предоставена информация и всички подадени документи са точни и автентични. Подаването на измамни документи е престъпление съгласно законодателството на Бангладеш и ще доведе до незабавно отстраняване на кандидата, а случаят може да бъде докладван на съответните органи."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "6. Accuracy of Information",
+    "bg": "6. Точност на информацията"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We endeavour to keep all information on this website accurate, current, and complete. However, we make no warranties — express or implied — regarding the accuracy, completeness, or fitness for purpose of any content. Country-specific information including visa types, processing times, salary ranges, and government fees are indicative and subject to change without notice. Employers and candidates should verify all regulatory requirements with the relevant authorities before proceeding.",
+    "bg": "Стремим се да поддържаме цялата информация на този уебсайт точна, актуална и пълна. Не даваме обаче никакви изрични или подразбиращи се гаранции относно точността, пълнотата или пригодността на което и да е съдържание за конкретна цел. Информацията за отделните държави, включително видовете визи, сроковете за обработка, диапазоните на заплатите и държавните такси, е ориентировъчна и може да се промени без предизвестие. Преди да продължат, работодателите и кандидатите следва да проверят всички регулаторни изисквания при съответните органи."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "7. Fees and Payments",
+    "bg": "7. Такси и плащания"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All service fees charged by Bhuiyan Workforce Ltd. are agreed in writing prior to commencement of any recruitment engagement. We do not charge worker candidates any fees in violation of the BMET fee schedule or the laws of the destination country. No payments are processed through this website.",
+    "bg": "Всички такси за услуги, начислявани от Bhuiyan Workforce Ltd., се уговарят писмено преди започването на каквото и да е възлагане на услуги по набиране на персонал. Не начисляваме на кандидатите за работа такси в нарушение на тарифата на BMET или на законите на държавата на местоназначение. Чрез този уебсайт не се обработват плащания."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "8. Limitation of Liability",
+    "bg": "8. Ограничаване на отговорността"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "To the fullest extent permitted by applicable law, Bhuiyan Workforce Ltd. shall not be liable for:",
+    "bg": "В максималната степен, разрешена от приложимото право, Bhuiyan Workforce Ltd. не носи отговорност за:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any indirect, incidental, special, or consequential damages arising from your use of or inability to use this website",
+    "bg": "Каквито и да е непреки, случайни, специални или последващи вреди, произтичащи от използването на този уебсайт от Ваша страна или от невъзможността Ви да го използвате"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any reliance placed on information published on this website",
+    "bg": "Каквото и да е разчитане на информация, публикувана на този уебсайт"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any interruption, suspension, or termination of the website or its services",
+    "bg": "Каквото и да е прекъсване, спиране или прекратяване на работата на уебсайта или на услугите му"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Actions or omissions of employers, workers, government authorities, or other third parties involved in the recruitment and deployment process",
+    "bg": "Действия или бездействия на работодатели, работници, държавни органи или други трети страни, участващи в процеса по набиране и наемане на персонал"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Our total liability to you for any claim arising from these terms or your use of the website shall not exceed BDT 10,000 (ten thousand Bangladeshi Taka).",
+    "bg": "Общата ни отговорност към Вас по каквато и да е претенция, произтичаща от тези условия или от използването на уебсайта от Ваша страна, не надвишава BDT 10,000 (десет хиляди бангладешки таки)."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "9. Intellectual Property",
+    "bg": "9. Интелектуална собственост"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All content on this website — including the Bhuiyan Workforce Ltd. name, logo, text, graphics, page layouts, and data — is the intellectual property of Bhuiyan Workforce Ltd. and is protected under applicable Bangladeshi and international intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content on this website without our prior written permission.",
+    "bg": "Цялото съдържание на този уебсайт — включително името Bhuiyan Workforce Ltd., логото, текстовете, графиките, оформлението на страниците и данните — е интелектуална собственост на Bhuiyan Workforce Ltd. и е защитено съгласно приложимите закони на Бангладеш и международните закони за интелектуална собственост. Нямате право да възпроизвеждате, разпространявате или променяте каквото и да е съдържание на този уебсайт, нито да създавате производни произведения въз основа на него, без предварителното ни писмено разрешение."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may share links to pages on our website and quote brief excerpts for non-commercial informational purposes, provided appropriate attribution is given.",
+    "bg": "Можете да споделяте връзки към страници на нашия уебсайт и да цитирате кратки откъси за нетърговски информационни цели, при условие че посочите надлежно източника."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "10. Third-Party Links and Services",
+    "bg": "10. Връзки и услуги на трети страни"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "This website contains links to third-party platforms including WhatsApp, LinkedIn, and Facebook. These links are provided for convenience only. We are not responsible for the content, privacy practices, or terms of service of any third-party website. Accessing third-party links is at your own risk.",
+    "bg": "Този уебсайт съдържа връзки към платформи на трети страни, включително WhatsApp, LinkedIn и Facebook. Тези връзки са предоставени единствено за удобство. Не носим отговорност за съдържанието, практиките за поверителност или условията за ползване на който и да е уебсайт на трета страна. Достъпът до връзки към трети страни е на Ваш собствен риск."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "11. Anti-Fraud and Impersonation Warning",
+    "bg": "11. Предупреждение срещу измами и представяне за друго лице"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. only communicates through official channels: ",
+    "bg": "Bhuiyan Workforce Ltd. комуникира само чрез официалните канали: "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "info@bhuiyanworkforce.com",
+    "bg": "info@bhuiyanworkforce.com"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": ", ",
+    "bg": ", "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "careers@bhuiyanworkforce.com",
+    "bg": "careers@bhuiyanworkforce.com"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": ", and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to ",
+    "bg": " и телефонните номера, посочени на този уебсайт. Не предлагаме работа чрез непоискани съобщения в WhatsApp, директни съобщения в социалните мрежи или неофициални уебсайтове. Ако получите подозрително съобщение, за което се твърди, че е от нас, моля, докладвайте го незабавно на "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "info@bhuiyanworkforce.com",
+    "bg": "info@bhuiyanworkforce.com"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": " immediately.",
+    "bg": " незабавно."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "12. Governing Law and Jurisdiction",
+    "bg": "12. Приложимо право и юрисдикция"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "bg": "Тези Условия за ползване се уреждат и тълкуват в съответствие със законите на Народна република Бангладеш, включително, но не само, Закона за договорите от 1872 г., Закона за информационните и комуникационните технологии от 2006 г. и Закона за цифровата сигурност от 2018 г. Всеки спор, иск или разногласие, произтичащи от тези условия или свързани с тях или с използването на уебсайта от Ваша страна, попадат под изключителната юрисдикция на компетентните съдилища в Дака, Бангладеш."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "13. Changes to These Terms",
+    "bg": "13. Промени в тези условия"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We reserve the right to update or modify these Terms of Service at any time. Changes will be posted on this page with a revised \"last updated\" date. Continued use of the website following the posting of any changes constitutes your acceptance of the revised terms. We encourage you to review this page periodically.",
+    "bg": "Запазваме си правото по всяко време да актуализираме или изменяме тези Условия за ползване. Промените ще бъдат публикувани на тази страница с актуализирана дата на последна актуализация. Продължаването на използването на уебсайта след публикуването на промени означава, че приемате изменените условия. Насърчаваме Ви периодично да преглеждате тази страница."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "14. Severability",
+    "bg": "14. Делимост"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "If any provision of these Terms of Service is found to be invalid, unlawful, or unenforceable by a court of competent jurisdiction, that provision shall be severed from the remaining terms, which shall continue in full force and effect.",
+    "bg": "Ако компетентен съд установи, че някоя разпоредба от тези Условия за ползване е недействителна, незаконосъобразна или неприложима, тази разпоредба се отделя от останалите условия, които продължават да действат в пълна сила."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "15. Contact",
+    "bg": "15. Контакт"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "For any questions regarding these terms, please contact us:",
+    "bg": "Ако имате въпроси относно тези условия, моля, свържете се с нас:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Email: ",
+    "bg": "Имейл: "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "info@bhuiyanworkforce.com",
+    "bg": "info@bhuiyanworkforce.com"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "WhatsApp: ",
+    "bg": "WhatsApp: "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "+880 1864 567912",
+    "bg": "+880 1864 567912"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Construction & Engineering",
+    "bg": "Строителство и инженерни дейности"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Drivers & Transport",
+    "bg": "Шофьори и транспорт"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Chefs & Hospitality",
+    "bg": "Готвачи и хотелиерство"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Farm & Garden",
+    "bg": "Ферми и градини"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Warehouse & Logistics",
+    "bg": "Складова и логистична дейност"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Factory & Manufacturing",
+    "bg": "Фабрики и производство"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Oil & Gas",
+    "bg": "Нефт и газ"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Security Guards",
+    "bg": "Охранители"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Cleaning & Housekeeping",
+    "bg": "Почистване и камериерски услуги"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Retail & Supermarket Staff",
+    "bg": "Персонал за магазини и супермаркети"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Painting & Finishing",
+    "bg": "Боядисване и довършителни работи"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "bg": "Армировка и монтаж на армировъчна стомана"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Scaffolding & Formwork",
+    "bg": "Скелета и кофражи"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "bg": "Озеленяване и поддръжка на външни площи"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Mason & Bricklaying",
+    "bg": "Зидария и полагане на тухли"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "bg": "Електротехнически помощници и работници по изтегляне на кабели"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Laundry & Linen Services",
+    "bg": "Перални услуги и спално бельо"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Food Processing & Packing",
+    "bg": "Преработка и опаковане на храни"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Fishery & Aquaculture Workers",
+    "bg": "Работници в риболова и аквакултурите"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Caregiving & Elderly Support",
+    "bg": "Полагане на грижи и подкрепа за възрастни хора"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Welding & Fabrication",
+    "bg": "Заваряване и металообработка"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Plumbing & HVAC",
+    "bg": "ВиК, отопление, вентилация и климатизация (HVAC)"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Heavy Equipment Operators",
+    "bg": "Оператори на тежка техника"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Ship & Marine Fabrication",
+    "bg": "Корабостроене и морски конструкции"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Domestic & Household Workers",
+    "bg": "Домашни и битови работници"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Visa timelines, fees, and documentation requirements for the Middle East, Europe, Asia, and Africa at a glance.",
+    "bg": "Обобщение на сроковете за визи, таксите и изискванията за документи в Близкия изток, Европа, Азия и Африка."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Connecting Bangladesh's skilled workforce to the world —",
+    "bg": "Свързваме квалифицираната работна сила на Бангладеш със света —"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "25+ countries",
+    "bg": "над 25 държави"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "across the Middle East, Europe, Asia & Africa.",
+    "bg": "в Близкия изток, Европа, Азия и Африка."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Active deployment coverage across 25+ countries spanning the Middle East, Europe, Asia, and Africa.",
+    "bg": "Активно присъствие в над 25 държави в Близкия изток, Европа, Азия и Африка."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Europe, Asia, and Africa.",
+    "bg": "Bhuiyan Workforce Ltd. е базирана в Бангладеш компания за набиране и износ на работна сила, основана от MD Rezaul Kabir Bhuiyan. Специализираме в намирането, щателния подбор и изпращането на квалифицирани, полуквалифицирани и общи работници за международни работодатели в Близкия изток, Европа, Азия и Африка."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Middle East (7)",
+    "bg": "Близък изток (7)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Saudi Arabia · United Arab Emirates · Qatar · Kuwait · Oman · Bahrain · Jordan",
+    "bg": "Саудитска Арабия · Обединени арабски емирства · Катар · Кувейт · Оман · Бахрейн · Йордания"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Asia Pacific (3)",
+    "bg": "Азиатско-тихоокеански регион (3)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Malaysia · Singapore · Maldives",
+    "bg": "Малайзия · Сингапур · Малдиви"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Europe (19)",
+    "bg": "Европа (19)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Italy · Serbia · Portugal · Greece · Slovakia · Slovenia · Latvia · Cyprus · Estonia · Lithuania · Poland · Czech Republic · Bulgaria · Bosnia and Herzegovina · Hungary · Croatia · Romania · Montenegro · North Macedonia",
+    "bg": "Италия · Сърбия · Португалия · Гърция · Словакия · Словения · Латвия · Кипър · Естония · Литва · Полша · Чехия · България · Босна и Херцеговина · Унгария · Хърватия · Румъния · Черна гора · Северна Македония"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Caucasus (2)",
+    "bg": "Кавказ (2)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Armenia · Georgia",
+    "bg": "Армения · Грузия"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Indian Ocean (2)",
+    "bg": "Индийски океан (2)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Seychelles · Mauritius",
+    "bg": "Сейшели · Мавриций"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Slovenia",
+    "bg": "Словения"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "North Macedonia",
+    "bg": "Северна Македония"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Italy",
+    "bg": "Италия"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Seychelles",
+    "bg": "Сейшели"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mauritius",
+    "bg": "Мавриций"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Last updated: November 2026",
+    "bg": "Последна актуализация: ноември 2026 г."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy is governed by the laws of Bangladesh, including applicable Bangladeshi cyber-security and data protection laws and regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.",
+    "bg": "Тази Политика за поверителност се урежда от законите на Бангладеш, включително приложимото законодателство и нормативните разпоредби на Бангладеш в областта на киберсигурността и защитата на данните. Всички спорове, произтичащи от тази политика, са подсъдни на съдилищата в Бангладеш."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based international manpower recruitment company. We connect skilled Bangladeshi workers with employers across 25+ countries in the Middle East, Europe, Asia, and Africa. Our recruitment and deployment services are governed by separate written service agreements between Bhuiyan Workforce Ltd. and the engaging employer.",
+    "bg": "Bhuiyan Workforce Ltd. е международна компания за набиране на работна сила, базирана в Бангладеш. Свързваме квалифицирани работници от Бангладеш с работодатели в над 25 държави в Близкия изток, Европа, Азия и Африка. Услугите ни по набиране и изпращане на работници се уреждат с отделни писмени споразумения за услуги между Bhuiyan Workforce Ltd. и съответния работодател."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "bg": "Кандидатите за работа подават заявления чрез онлайн формуляр на този уебсайт. Документите, които качвате там, например автобиографията, копие от паспорта и сертификатите Ви, се изпращат по имейл до екипа ни и по пътя преминават през сървърите на нашия доставчик на хостинг услуги (Cloudflare). Преди да изпратите формуляра, трябва да потвърдите, че сте прочели настоящата политика и давате съгласието си за тази обработка. Заедно с кандидатурата Ви съхраняваме запис за момента, в който сте дали съгласието си."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "I have read",
+    "bg": "Прочетох"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "the Privacy Policy",
+    "bg": "Политиката за поверителност"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed.",
+    "bg": "и давам съгласие Bhuiyan Workforce Ltd. да обработва личните ми данни, включително копието на паспорта ми и останалите документи, които качвам, за да оцени кандидатурата ми и да организира подбора. Разбирам, че профилът ми се споделя с работодател едва след предварително уведомяване и получаване на съгласието ми."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Please tick the box above to submit your application.",
+    "bg": "Моля, поставете отметка в полето по-горе, за да изпратите кандидатурата си."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "+880 17XX XXX XXX",
+    "bg": "+880 17XX XXX XXX"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. only communicates through official channels: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com, and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to",
+    "bg": "Bhuiyan Workforce Ltd. комуникира само чрез официалните канали: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com и телефонните номера, посочени на този уебсайт. Не предлагаме работа чрез непоискани съобщения в WhatsApp, директни съобщения в социалните мрежи или неофициални уебсайтове. Ако получите подозрително съобщение, за което се твърди, че е от нас, моля, докладвайте го незабавно на"
+  }
+]
