@@ -18,6 +18,9 @@ import '../src/i18n/mk-bundle.js'; // same for Macedonian
 import '../src/i18n/it-bundle.js'; // same for Italian
 import '../src/i18n/es-bundle.js'; // same for Spanish
 import '../src/i18n/ms-bundle.js'; // same for Malay
+import '../src/i18n/de-bundle.js'; // same for German
+import '../src/i18n/hu-bundle.js'; // same for Hungarian
+import '../src/i18n/pt-bundle.js'; // same for Portuguese
 import '../src/i18n/ro-bundle.js'; // same for Romanian
 import { buildPath, parsePath, ENTITY_SLUGS, PAGE_SLUGS, SEGMENTS } from '../src/i18n/slugs.js';
 import { LOCALES, REAL_LOCALE_CODES } from '../src/i18n/config.js';
@@ -60,8 +63,8 @@ test('Arabic uses English slugs under /ar', () => {
   assert.equal(buildPath('ar', { type: 'page', id: 'home' }), '/ar');
   assert.equal(buildPath('ar', { type: 'country', id: 'saudi-arabia' }), '/ar/countries/saudi-arabia');
 });
-test('Greek, Croatian, Serbian, Bosnian, Macedonian, Spanish and Malay keep English slugs under their prefix', () => {
-  for (const l of ['el', 'hr', 'sr', 'bs', 'mk', 'es', 'ms']) {
+test('Greek, Croatian, Serbian, Bosnian, Macedonian, Spanish, Malay, German, Hungarian and Portuguese keep English slugs under their prefix', () => {
+  for (const l of ['el', 'hr', 'sr', 'bs', 'mk', 'es', 'ms', 'de', 'hu', 'pt']) {
     assert.equal(buildPath(l, { type: 'page', id: 'home' }), `/${l}`);
     assert.equal(buildPath(l, { type: 'country', id: 'saudi-arabia' }), `/${l}/countries/saudi-arabia`);
     assert.deepEqual(parsePath(`/${l}/countries/saudi-arabia`).route, { type: 'country', id: 'saudi-arabia' });
@@ -154,6 +157,7 @@ test('page counts', () => {
   assert.equal(by('it'), 10 + 25 + 33 + 18 + 3);
   assert.equal(by('es'), 10 + 25 + 33 + 18 + 3);
   assert.equal(by('ms'), 8 + 25 + 33); // Malay: no blog index, articles, employer guide or guides yet
+  for (const l of ['de', 'hu', 'pt']) assert.equal(by(l), 8 + 25 + 33 + 3); // home, about, faq, countries index, capabilities, apply, privacy, terms, services, countries, 3 guides; no blog or employer-guide index yet
 });
 test('availability and 404 resolution', () => {
   assert.equal(resolvePath('/ar/countries/saudi-arabia').status, 'ok');
@@ -165,11 +169,11 @@ test('availability and 404 resolution', () => {
 });
 test('hreflang: self, x-default, only real translations', () => {
   const alts = getAlternates({ type: 'country', id: 'saudi-arabia' });
-  assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'x-default']);
+  assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
   assert.equal(alts.find((a) => a.hreflang === 'x-default').href, 'https://bhuiyanworkforce.com/countries/saudi-arabia');
-  assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }).map((a) => a.hreflang), ['en', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'x-default']);
-  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'x-default']);
-  assert.deepEqual(getAlternates({ type: 'country', id: 'slovenia' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }).map((a) => a.hreflang), ['en', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'country', id: 'slovenia' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
 });
 test('language switcher links', () => {
   const links = getLanguageLinks({ type: 'page', id: 'privacy' }, 'en');
@@ -255,9 +259,9 @@ test('every real language has its own capabilities PDF; English keeps the origin
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'public');
   assert.equal(capabilitiesPdf('en'), '/capabilities.pdf');
   assert.equal(capabilitiesPdf('bn'), '/capabilities.pdf'); // overlay language: English sheet
-  // Spanish and Malay have no translated sheet yet: they link to the English PDF. Remove them from this
+  // Spanish, Malay, German, Hungarian and Portuguese have no translated sheet yet: they link to the English PDF. Remove them from this
   // list once public/capabilities-<code>.pdf exists and the code is added to SHEET_LANGS.
-  const NO_SHEET_YET = ['es', 'ms'];
+  const NO_SHEET_YET = ['es', 'ms', 'de', 'hu', 'pt'];
   for (const code of NO_SHEET_YET) assert.equal(capabilitiesPdf(code), '/capabilities.pdf');
   for (const code of REAL_LOCALE_CODES.filter((c) => c !== 'en' && !NO_SHEET_YET.includes(c))) {
     assert.ok(SHEET_LANGS.includes(code), `no capabilities sheet registered for ${code}`);

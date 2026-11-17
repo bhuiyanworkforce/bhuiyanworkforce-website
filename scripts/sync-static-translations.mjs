@@ -12,7 +12,7 @@ import { dirname, resolve } from 'node:path';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, '..');
-const ALL = ['bg', 'el', 'hr', 'sr', 'bs', 'mk', 'it', 'ro', 'es', 'ms'];
+const ALL = ['bg', 'el', 'hr', 'sr', 'bs', 'mk', 'it', 'ro', 'es', 'ms', 'de', 'hu', 'pt'];
 const langs = process.argv.slice(2).length ? process.argv.slice(2) : ALL;
 
 for (const lang of langs) {
