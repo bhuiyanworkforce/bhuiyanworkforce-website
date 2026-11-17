@@ -34,9 +34,9 @@ English is the **source of truth for meaning**.
 | 1 | `src/i18n/locales/{{CODE}}.ui.js` | `src/i18n/locales/ar.ui.js` | `src/i18n/locales/en.ui.js` for keys that exist there; for the ~59 older keys (names without a dot, e.g. `nav_services`) the English is the `en:` value in `src/i18n/translations.jsx` |
 | 2 | `src/i18n/locales/{{CODE}}.js` | `src/i18n/locales/ar.js` | `src/i18n/locales/en.js` + the English data files |
 | 3 | `src/content/{{CODE}}/names.js` | `src/content/ar/names.js` | English country names in `src/data/countries.jsx` |
-| 4 | `src/content/{{CODE}}/countries.js` | `src/content/ar/countries.js` | `src/data/countries.jsx` (all 28 countries) |
+| 4 | `src/content/{{CODE}}/countries.js` | `src/content/ar/countries.js` | `src/data/countries.jsx` (all 33 countries) |
 | 5 | `src/content/{{CODE}}/services.js` | `src/content/ar/services.js` | `src/data/services.jsx` (all 25 services) |
-| 6 | `src/content/{{CODE}}/posts.js` | `src/content/ar/posts.js` | `src/data/posts.jsx` (all 13 articles) |
+| 6 | `src/content/{{CODE}}/posts.js` | `src/content/ar/posts.js` | `src/data/posts.jsx` (all 18 articles) |
 | 7 | `src/content/{{CODE}}/guides.js` | `src/content/ar/guides.js` | `src/data/countryGuides.jsx` (3 guides) |
 | 8 | `src/content/{{CODE}}/pages.js` | the `ar` block inside `src/content/pages.js` | the `en` block inside `src/content/pages.js` (About page and FAQ) |
 | 9 | `TRANSLATION-NOTES.md` | – | your report (see "Final report") |

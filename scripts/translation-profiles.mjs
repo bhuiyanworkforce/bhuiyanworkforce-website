@@ -72,6 +72,23 @@ export const PROFILES = {
     keywords: 'trabajadores de Bangladés, reclutamiento de trabajadores extranjeros, contratación de personal cualificado del extranjero, reclutamiento ético, mano de obra cualificada, BMET',
     notes: ['Use the opening marks ¿ and ¡ wherever Spanish requires them.'],
   },
+  // ------------------------------------------------------------------ Portuguese (Portugal)
+  pt: {
+    name: 'Portuguese', native: 'Português', script: 'latin', variant: 'European Portuguese (Portugal), spelling per the 1990 Orthographic Agreement as used in Portugal; no Brazilian vocabulary or gerund constructions', bangladesh: 'Bangladeche',
+    register: 'the formal third-person address (\"Contacte-nos\", \"Envie-nos os seus requisitos\", \"a sua empresa\"). Never \"tu\", never the Brazilian \"você\".',
+    quotes: '« » (or “ ”)', numbers: 'decimal comma; thousands separator a non-breaking space (2 500 · 0,5)', dates: 'lower-case month names (\"setembro de 2026\")',
+    banned: [
+      { re: /empresas? de trabalho temporario|agencias? de trabalho temporario|\bett\b|trabalho temporario/, term: '«empresa de trabalho temporário (ETT)», «trabalho temporário»', why: 'licensed temporary work agency activity' },
+      { re: /agencias? (privadas? )?de colocacao|agencias? de emprego/, term: '«agência privada de colocação», «agência de emprego»', why: 'licensed private placement agency' },
+      { re: /cedencia (ocasional )?de (trabalhadores|mao.de.obra|pessoal)/, term: '«cedência de trabalhadores / de mão de obra»', why: 'legally restricted outside licensed agencies' },
+      { re: /destacamento|trabalhadores destacados|destacar (trabalhadores|pessoal)/, term: '«destacamento de trabalhadores»', why: 'legal posting of workers' },
+      { re: /intermediacao (laboral|de mao.de.obra|de emprego)|mediacao (laboral|de emprego)/, term: '«intermediação laboral», «mediação de emprego»', why: 'regulated placement / mediation activity' },
+    ],
+    warn: [{ re: /colocacao|intermediacao|mediacao/, term: '«colocação», «intermediação», «mediação»', why: 'reads as a regulated placement or mediation service; prefer «recrutamento», «seleção», «identificação de candidatos»' }],
+    glossary: [['recruitment / ethical recruitment', 'recrutamento / recrutamento ético'], ['workers / skilled / semi-skilled', 'trabalhadores / qualificados / semiqualificados'], ['employer(s)', 'empregador / empregadores (entidades empregadoras)'], ['workforce', 'mão de obra'], ['deployment (workers abroad)', 'envio de trabalhadores (not \"destacamento\")'], ['shortlist', 'pré-seleção de candidatos verificados (lista restrita)'], ['trade test', 'prova prática da profissão'], ['visa / work permit', 'visto / autorização de trabalho'], ['medical clearance', 'certificado de aptidão médica'], ['police clearance', 'certificado de registo criminal'], ['success fee', 'comissão de êxito (success fee)'], ['replacement guarantee', 'garantia de substituição'], ['employment contract', 'contrato de trabalho'], ['compliance', 'conformidade (cumprimento normativo)'], ['the Gulf (GCC)', 'o Golfo / países do Golfo (GCC)'], ['Southeast Asia', 'Sudeste Asiático'], ['Founding Employer Partners', 'empresas parceiras fundadoras'], ['capabilities deck', 'apresentação de capacidades']],
+    keywords: 'trabalhadores do Bangladeche, recrutamento de trabalhadores estrangeiros, recrutamento de mão de obra qualificada no estrangeiro, recrutamento ético, mão de obra qualificada, BMET',
+    notes: ['Portugal is also one of the 33 country pages and Portuguese employers are a likely audience. Translate the Portugal page like every other.', 'European Portuguese vocabulary: «autocarro», «telemóvel», «ecrã», «equipa», «contacto» (not «ônibus», «celular», «tela», «time», «contato»). Keep the silent consonants required by the 1990 Agreement as written in Portugal («direção», «seleção», «aspeto»).', 'Do not use gender-neutral devices («trabalhadores/as», «@», «x»); use standard grammar and neutral nouns where natural («pessoal», «equipas», «candidatos»).']
+  },
   // ------------------------------------------------------------------ French (France)
   fr: {
     name: 'French', native: 'Français', script: 'latin', variant: 'French (France)', bangladesh: 'Bangladesh',
