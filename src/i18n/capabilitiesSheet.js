@@ -5,7 +5,7 @@
 
 import { DEFAULT_LOCALE } from './config.js';
 
-export const SHEET_LANGS = ['ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr', 'bs', 'mk', 'it'];
+export const SHEET_LANGS = ['ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt'];
 
 export function capabilitiesPdf(lang) {
   return SHEET_LANGS.includes(lang) ? `/capabilities-${lang}.pdf` : '/capabilities.pdf';
