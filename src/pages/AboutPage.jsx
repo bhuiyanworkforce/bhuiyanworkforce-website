@@ -4,6 +4,9 @@ import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
 import { pageContent } from '../content/pages';
 
+// The founder's team card links to his page (/founder, translated in every language).
+const FOUNDER_PHOTO = '/team-rezaul.webp';
+
 export default function AboutPage() {
   const { lang, urlLang } = useLang();
   const c = pageContent('about', urlLang);
@@ -78,7 +81,11 @@ export default function AboutPage() {
                     : <span>{m.initials}</span>
                   }
                 </div>
-                <h4><bdi dir="ltr">{m.name}</bdi></h4>
+                <h4>
+                  {m.photo === FOUNDER_PHOTO
+                    ? <Link to="/founder" style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: 3 }}><bdi dir="ltr">{m.name}</bdi></Link>
+                    : <bdi dir="ltr">{m.name}</bdi>}
+                </h4>
                 <p style={{ fontWeight: 600, color: 'var(--gold)', fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 8 }}>{m.role}</p>
                 <p style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }}>{m.body}</p>
               </div>
