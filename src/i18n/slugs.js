@@ -42,7 +42,7 @@ export const PAGE_SLUGS = {
   en: {
     about: 'about', faq: 'faq', blog: 'blog', countries: 'countries',
     capabilities: 'capabilities', 'employer-guide': 'employer-guide',
-    privacy: 'privacy', terms: 'terms', apply: 'apply',
+    privacy: 'privacy', terms: 'terms', apply: 'apply', 'worker-guide': 'worker-guide',
   },
   ar: {},
   bg: {},
