@@ -28,7 +28,14 @@ async function start() {
   const { lang } = parsePath(globalThis.location.pathname);
   if (lang === 'ar') await import('./i18n/ar-bundle.js');
   else if (lang === 'pl') await import('./i18n/pl-bundle.js');
+  else if (lang === 'bg') await import('./i18n/bg-bundle.js');
   else if (lang === 'ro') await import('./i18n/ro-bundle.js');
+  else if (lang === 'el') await import('./i18n/el-bundle.js');
+  else if (lang === 'hr') await import('./i18n/hr-bundle.js');
+  else if (lang === 'sr') await import('./i18n/sr-bundle.js');
+  else if (lang === 'bs') await import('./i18n/bs-bundle.js');
+  else if (lang === 'mk') await import('./i18n/mk-bundle.js');
+  else if (lang === 'it') await import('./i18n/it-bundle.js');
 
   if (container.hasChildNodes() && renderedFor === here) {
     ReactDOM.hydrateRoot(container, tree);
