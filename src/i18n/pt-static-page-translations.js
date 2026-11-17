@@ -1,0 +1,1998 @@
+// Generated from pt-extra-pages.json by scripts/sync-static-translations.mjs.
+export default [
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Home",
+    "pt": "Início"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities",
+    "pt": "Capacidades"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "For Employers",
+    "pt": "Para empregadores"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd.",
+    "pt": "Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities & Company Overview",
+    "pt": "Capacidades e apresentação da empresa"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / Save as PDF",
+    "pt": "🖨️ Imprimir / Guardar como PDF"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "BHUIYAN WORKFORCE LTD.",
+    "pt": "BHUIYAN WORKFORCE LTD."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities & Company Overview",
+    "pt": "Capacidades e apresentação da empresa"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Connecting Bangladesh's skilled workforce to the world —",
+    "pt": "Ligamos a mão de obra qualificada do Bangladeche ao mundo —"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "25+ countries",
+    "pt": "mais de 25 países"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "across the Middle East, Europe, Asia & Africa.",
+    "pt": "no Médio Oriente, na Europa, na Ásia e em África."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Who We Are",
+    "pt": "Quem somos"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "About Bhuiyan Workforce Ltd.",
+    "pt": "Sobre a Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Europe, Asia, and Africa.",
+    "pt": "A Bhuiyan Workforce Ltd. é uma empresa sediada no Bangladeche dedicada ao recrutamento e ao envio de mão de obra para o estrangeiro, fundada por MD Rezaul Kabir Bhuiyan. Especializamo-nos na identificação, na seleção rigorosa e no envio de trabalhadores qualificados, semiqualificados e indiferenciados para empregadores internacionais no Médio Oriente, na Europa, na Ásia e em África."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. We are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.",
+    "pt": "Assente nos princípios da transparência, da fiabilidade e do recrutamento ético, a nossa atuação é a de uma ponte dedicada entre a procura global de mão de obra e a vasta, trabalhadora e talentosa mão de obra do Bangladeche. Estamos plenamente operacionais na identificação de candidatos, na seleção e na construção de relações com empregadores em todas as 25 categorias profissionais."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "What We Supply",
+    "pt": "O que fornecemos"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Worker Categories",
+    "pt": "Categorias de trabalhadores"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Skilled, semi-skilled, and specialist workers across all major trade and service sectors.",
+    "pt": "Trabalhadores qualificados, semiqualificados e especializados em todos os principais setores profissionais e de serviços."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Global Reach",
+    "pt": "Alcance global"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Deployment Destinations — 25+ Countries",
+    "pt": "Destinos de envio — mais de 25 países"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Middle East (7)",
+    "pt": "Médio Oriente (7)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Saudi Arabia · United Arab Emirates · Qatar · Kuwait · Oman · Bahrain · Jordan",
+    "pt": "Arábia Saudita · Emirados Árabes Unidos · Catar · Kuwait · Omã · Barém · Jordânia"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Asia Pacific (3)",
+    "pt": "Ásia-Pacífico (3)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Malaysia · Singapore · Maldives",
+    "pt": "Malásia · Singapura · Maldivas"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Europe (19)",
+    "pt": "Europa (19)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Italy · Serbia · Portugal · Greece · Slovakia · Slovenia · Latvia · Cyprus · Estonia · Lithuania · Poland · Czech Republic · Bulgaria · Bosnia and Herzegovina · Hungary · Croatia · Romania · Montenegro · North Macedonia",
+    "pt": "Itália · Sérvia · Portugal · Grécia · Eslováquia · Eslovénia · Letónia · Chipre · Estónia · Lituânia · Polónia · República Checa · Bulgária · Bósnia e Herzegovina · Hungria · Croácia · Roménia · Montenegro · Macedónia do Norte"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Caucasus (2)",
+    "pt": "Cáucaso (2)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Armenia · Georgia",
+    "pt": "Arménia · Geórgia"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Indian Ocean (2)",
+    "pt": "Oceano Índico (2)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Seychelles · Mauritius",
+    "pt": "Seicheles · Maurícia"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "How It Works",
+    "pt": "Como funciona"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Recruitment Process",
+    "pt": "O nosso processo de recrutamento"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "A structured, transparent 6-step process from requirement intake to worker deployment.",
+    "pt": "Um processo estruturado e transparente em 6 etapas, desde o levantamento dos requisitos até ao envio dos trabalhadores."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Requirement Intake",
+    "pt": "Levantamento de requisitos"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We collect detailed job descriptions, skill requirements, visa quotas, salary ranges, and deployment timelines from the client employer.",
+    "pt": "Recolhemos junto do empregador cliente descrições de funções detalhadas, requisitos de competências, quotas de vistos, intervalos salariais e calendários de envio."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Candidate Sourcing",
+    "pt": "Identificação de candidatos"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We leverage our Bangladesh-wide network of trade professionals, referral partners, and candidate databases to shortlist qualified applicants.",
+    "pt": "Recorremos à nossa rede de profissionais, parceiros de referenciação e bases de dados de candidatos em todo o Bangladeche para elaborar uma lista restrita de candidatos qualificados."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Screening & Testing",
+    "pt": "Seleção e testes"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate undergoes trade skill tests, structured interviews, and thorough background verification before being presented to the client.",
+    "pt": "Todos os candidatos realizam provas práticas da profissão, entrevistas estruturadas e uma verificação rigorosa de antecedentes antes de serem apresentados ao cliente."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Medical Clearance",
+    "pt": "Aptidão médica"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers complete mandatory medical fitness examinations at government-approved centres to meet destination country health requirements.",
+    "pt": "Os trabalhadores realizam os exames médicos obrigatórios em centros aprovados pelo Estado, de modo a cumprir os requisitos de saúde do país de destino."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Documentation & Visa",
+    "pt": "Documentação e visto"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We manage all documentation: passport validation, visa applications, attestation, BMET clearance, and pre-departure orientation.",
+    "pt": "Tratamos de toda a documentação: validação do passaporte, pedidos de visto, certificação, autorização do BMET e preparação antes da partida."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Deployment",
+    "pt": "Envio"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers are fully briefed, oriented on destination country norms, and deployed on schedule. Post-arrival follow-up is conducted.",
+    "pt": "Os trabalhadores recebem toda a informação, são preparados quanto aos costumes do país de destino e são enviados dentro do calendário previsto. Após a chegada, é feito um acompanhamento."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Advantage",
+    "pt": "A nossa vantagem"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Why Choose Bhuiyan Workforce?",
+    "pt": "Porquê escolher a Bhuiyan Workforce?"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Direct Talent Access",
+    "pt": "Acesso direto a talento"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Tap into Bangladesh's large, motivated labor pool across all major trade and service sectors.",
+    "pt": "Aceda à vasta e motivada mão de obra do Bangladeche em todos os principais setores profissionais e de serviços."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Pre-Screened Workers",
+    "pt": "Trabalhadores pré-selecionados"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate is skills-tested, medically cleared, and document-ready before deployment.",
+    "pt": "Todos os candidatos têm as competências testadas, a aptidão médica comprovada e a documentação pronta antes do envio."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Global Reach",
+    "pt": "Alcance global"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Active deployment coverage across 25+ countries spanning the Middle East, Europe, Asia, and Africa.",
+    "pt": "Cobertura ativa em mais de 25 países do Médio Oriente, da Europa, da Ásia e de África."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Dedicated Support",
+    "pt": "Apoio dedicado"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Clients receive a dedicated account contact for seamless communication end-to-end.",
+    "pt": "Os clientes dispõem de um contacto dedicado para uma comunicação fluida do início ao fim."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Fast Turnaround",
+    "pt": "Resposta rápida"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Streamlined process from requirement submission to worker deployment.",
+    "pt": "Processo simplificado, desde a apresentação do pedido até ao envio dos trabalhadores."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Office",
+    "pt": "Escritório"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Kawtoli, Brahmanbaria, Bangladesh 3400",
+    "pt": "Kawtoli, Brahmanbaria, Bangladeche 3400"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Partnerships",
+    "pt": "Parcerias"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "General Enquiry",
+    "pt": "Pedidos de informação gerais"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Mobile / WhatsApp",
+    "pt": "Telemóvel / WhatsApp"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "+880 1864 567912",
+    "pt": "+880 1864 567912"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Website",
+    "pt": "Sítio Web"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Share this capabilities page:",
+    "pt": "Partilhe esta página de capacidades:"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "📋 Copy Link",
+    "pt": "📋 Copiar ligação"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / PDF",
+    "pt": "🖨️ Imprimir / PDF"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Link copied!",
+    "pt": "Ligação copiada!"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ": please upload a ",
+    "pt": ": carregue um ficheiro em formato "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": " file.",
+    "pt": "."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": " is larger than 5 MB. Please choose a smaller file.",
+    "pt": " excede 5 MB. Escolha um ficheiro mais pequeno."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Your files together are over 12 MB. Please choose smaller files or compress the images.",
+    "pt": "Os seus ficheiros, em conjunto, excedem 12 MB. Escolha ficheiros mais pequenos ou comprima as imagens."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Application Submitted!",
+    "pt": "Candidatura enviada!"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Thank you,",
+    "pt": "Obrigado,"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ". We have received your application and will review it within 3–5 working days. If shortlisted, our team will contact you directly.",
+    "pt": ". Recebemos a sua candidatura e iremos analisá-la no prazo de 3 a 5 dias úteis. Se for pré-selecionado, a nossa equipa contactá-lo-á diretamente."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Back to Home →",
+    "pt": "Voltar ao início →"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Home",
+    "pt": "Início"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Apply for Work",
+    "pt": "Candidatar-se a trabalho"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "For Workers",
+    "pt": "Para trabalhadores"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Apply for International Employment",
+    "pt": "Candidatura a emprego internacional"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Complete the form below to register your interest in overseas employment.",
+    "pt": "Preencha o formulário abaixo para manifestar o seu interesse em trabalhar no estrangeiro."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Personal Details",
+    "pt": "Dados pessoais"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Professional Info",
+    "pt": "Informação profissional"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Documents & Submit",
+    "pt": "Documentos e envio"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Personal Details",
+    "pt": "Dados pessoais"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Full Name (as in passport) *",
+    "pt": "Nome completo (como no passaporte) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mohammad Rafiqul Islam",
+    "pt": "Mohammad Rafiqul Islam"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Date of Birth *",
+    "pt": "Data de nascimento *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Nationality",
+    "pt": "Nacionalidade"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bangladeshi",
+    "pt": "Bangladechiana"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Phone / WhatsApp *",
+    "pt": "Telefone / WhatsApp *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "+880 17XX XXX XXX",
+    "pt": "+880 17XX XXX XXX"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Email Address",
+    "pt": "Endereço de correio eletrónico"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "optional",
+    "pt": "opcional"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Home Address (District/Division) *",
+    "pt": "Morada (distrito/divisão) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Brahmanbaria, Chittagong Division",
+    "pt": "p. ex., Brahmanbaria, divisão de Chittagong"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Number",
+    "pt": "Número do passaporte"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "A1234567",
+    "pt": "A1234567"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Expiry Date",
+    "pt": "Data de validade do passaporte"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Professional Info",
+    "pt": "Informação profissional"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Category *",
+    "pt": "Categoria profissional *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select category…",
+    "pt": "Selecione a categoria…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Construction & Engineering",
+    "pt": "Construção e engenharia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Oil & Gas",
+    "pt": "Petróleo e gás"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Drivers & Transport",
+    "pt": "Condutores e transportes"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Chefs & Hospitality",
+    "pt": "Cozinheiros e hotelaria"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Security Guards",
+    "pt": "Guardas de segurança"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Cleaning & Housekeeping",
+    "pt": "Limpeza e governança"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Farm & Garden",
+    "pt": "Agricultura e jardinagem"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Warehouse & Logistics",
+    "pt": "Armazém e logística"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Factory & Manufacturing",
+    "pt": "Fábrica e produção industrial"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Retail & Supermarket Staff",
+    "pt": "Pessoal de comércio e supermercado"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Painting & Finishing",
+    "pt": "Pintura e acabamentos"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "pt": "Montagem de ferro e armaduras"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Scaffolding & Formwork",
+    "pt": "Andaimes e cofragens"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "pt": "Paisagismo e manutenção de espaços verdes"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mason & Bricklaying",
+    "pt": "Pedreiro e assentamento de tijolo"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "pt": "Ajudantes de eletricista e passadores de cabos"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Laundry & Linen Services",
+    "pt": "Lavandaria e serviços de roupa de cama"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Food Processing & Packing",
+    "pt": "Transformação e embalamento de alimentos"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Fishery & Aquaculture",
+    "pt": "Pesca e aquacultura"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Caregiving & Elderly Support",
+    "pt": "Prestação de cuidados e apoio a idosos"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Other",
+    "pt": "Outra"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Specific Role / Trade *",
+    "pt": "Função / profissão específica *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Mason, Welder, Chef de Partie",
+    "pt": "p. ex., pedreiro, soldador, chefe de partida"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Years of Experience *",
+    "pt": "Anos de experiência *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "pt": "Selecione…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Less than 1 year",
+    "pt": "Menos de 1 ano"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "1–2 years",
+    "pt": "1 a 2 anos"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "3–5 years",
+    "pt": "3 a 5 anos"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "6–10 years",
+    "pt": "6 a 10 anos"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "10+ years",
+    "pt": "Mais de 10 anos"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Preferred Country *",
+    "pt": "País preferido *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select country…",
+    "pt": "Selecione o país…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Saudi Arabia",
+    "pt": "Arábia Saudita"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "UAE",
+    "pt": "Emirados Árabes Unidos"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Qatar",
+    "pt": "Catar"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Kuwait",
+    "pt": "Kuwait"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Oman",
+    "pt": "Omã"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bahrain",
+    "pt": "Barém"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Jordan",
+    "pt": "Jordânia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Malaysia",
+    "pt": "Malásia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Singapore",
+    "pt": "Singapura"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Maldives",
+    "pt": "Maldivas"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Poland",
+    "pt": "Polónia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Romania",
+    "pt": "Roménia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Serbia",
+    "pt": "Sérvia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Portugal",
+    "pt": "Portugal"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Greece",
+    "pt": "Grécia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Hungary",
+    "pt": "Hungria"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Croatia",
+    "pt": "Croácia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Czech Republic",
+    "pt": "República Checa"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Lithuania",
+    "pt": "Lituânia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Latvia",
+    "pt": "Letónia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Estonia",
+    "pt": "Estónia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bulgaria",
+    "pt": "Bulgária"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Cyprus",
+    "pt": "Chipre"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Slovakia",
+    "pt": "Eslováquia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bosnia and Herzegovina",
+    "pt": "Bósnia e Herzegovina"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Montenegro",
+    "pt": "Montenegro"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Slovenia",
+    "pt": "Eslovénia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "North Macedonia",
+    "pt": "Macedónia do Norte"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Italy",
+    "pt": "Itália"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Armenia",
+    "pt": "Arménia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Georgia",
+    "pt": "Geórgia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Seychelles",
+    "pt": "Seicheles"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mauritius",
+    "pt": "Maurícia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Open to Any Country",
+    "pt": "Disponível para qualquer país"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Available From",
+    "pt": "Disponível a partir de"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Education Level",
+    "pt": "Nível de escolaridade"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "pt": "Selecione…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No formal education",
+    "pt": "Sem escolaridade formal"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Primary (Class 1–5)",
+    "pt": "Ensino primário (1.º a 5.º ano)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "JSC / Class 8",
+    "pt": "JSC / 8.º ano"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "SSC / Class 10",
+    "pt": "SSC / 10.º ano"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "HSC / Class 12",
+    "pt": "HSC / 12.º ano"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Diploma / Vocational",
+    "pt": "Diploma / formação profissional"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bachelor's Degree",
+    "pt": "Licenciatura"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Master's Degree or above",
+    "pt": "Mestrado ou superior"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Languages Spoken",
+    "pt": "Línguas faladas"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Bengali, English (basic), Arabic (basic)",
+    "pt": "p. ex., bengali, inglês (básico), árabe (básico)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Medical Fitness Certificate?",
+    "pt": "Certificado de aptidão médica?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "pt": "Selecione…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — valid certificate",
+    "pt": "Sim — certificado válido"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet obtained",
+    "pt": "Não — ainda não obtido"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Expired — needs renewal",
+    "pt": "Caducado — requer renovação"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Test Certificate?",
+    "pt": "Certificado de prova prática da profissão?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "pt": "Selecione…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — certified",
+    "pt": "Sim — certificado"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet tested",
+    "pt": "Não — ainda sem prova prestada"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "In progress",
+    "pt": "Em curso"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "BMET Smart Card?",
+    "pt": "Cartão inteligente do BMET?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "pt": "Selecione…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — registered",
+    "pt": "Sim — registado"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet registered",
+    "pt": "Não — ainda não registado"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "In progress",
+    "pt": "Em curso"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "← Back",
+    "pt": "← Voltar"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Documents & Submit",
+    "pt": "Documentos e envio"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Documents & Submit",
+    "pt": "Documentos e envio"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload CV / Resume (PDF or Word, max 5MB)",
+    "pt": "Carregar CV / currículo (PDF ou Word, máx. 5 MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Passport Copy (PDF or image, max 5MB)",
+    "pt": "Carregar cópia do passaporte (PDF ou imagem, máx. 5 MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Trade/Skills Certificate (optional)",
+    "pt": "Carregar certificado profissional / de competências (opcional)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.",
+    "pt": "Todos os ficheiros carregados (CV, cópia do passaporte, certificado) serão enviados como anexos de correio eletrónico para análise da nossa equipa."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Additional Information / Cover Letter",
+    "pt": "Informação adicional / carta de apresentação"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…",
+    "pt": "Fale-nos da sua experiência, de anteriores empregos no estrangeiro, das suas competências e do motivo pelo qual quer trabalhar no estrangeiro…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Important:",
+    "pt": "Importante:"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our",
+    "pt": "Ao enviar esta candidatura, confirma que todas as informações fornecidas são exatas. A Bhuiyan Workforce Ltd. contactará os candidatos pré-selecionados no prazo de 3 a 5 dias úteis. O envio da candidatura não garante a obtenção de emprego. Tratamos os seus dados em conformidade com a nossa"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Privacy Policy",
+    "pt": "Política de Privacidade"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ".",
+    "pt": "."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "I have read the",
+    "pt": "Li a"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Privacy Policy",
+    "pt": "Política de Privacidade"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed.",
+    "pt": "e consinto que a Bhuiyan Workforce Ltd. trate os meus dados pessoais, incluindo a cópia do meu passaporte e os restantes documentos que carrego, para avaliar a minha candidatura e organizar o recrutamento. Compreendo que o meu perfil só é partilhado com um empregador depois de ter sido informado e de ter dado o meu acordo."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Please tick the box above to submit your application.",
+    "pt": "Assinale a caixa acima para enviar a sua candidatura."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Something went wrong. Please call us on",
+    "pt": "Ocorreu um erro. Ligue-nos para o número"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "or email",
+    "pt": "ou escreva para"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ".",
+    "pt": "."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "← Back",
+    "pt": "← Voltar"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Submitting…",
+    "pt": "A enviar…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Submit Application →",
+    "pt": "Enviar candidatura →"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Home",
+    "pt": "Início"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Privacy Policy",
+    "pt": "Política de Privacidade"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Privacy Policy",
+    "pt": "Política de Privacidade"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "How Bhuiyan Workforce Ltd. collects, uses, and protects your personal information.",
+    "pt": "Como a Bhuiyan Workforce Ltd. recolhe, utiliza e protege as suas informações pessoais."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Last updated: November 2026",
+    "pt": "Última atualização: novembro de 2026"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "1. Who We Are",
+    "pt": "1. Quem somos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. (\"we\", \"us\", \"our\") is a Bangladesh-based international manpower recruitment company. Our registered office is in Brahmanbaria, Bangladesh. Our website is bhuiyanworkforce.com.",
+    "pt": "A Bhuiyan Workforce Ltd. («nós», «nos», «nosso») é uma empresa internacional de recrutamento de mão de obra sediada no Bangladeche. A nossa sede social fica em Brahmanbaria, Bangladeche. O nosso sítio Web é bhuiyanworkforce.com."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For all privacy-related enquiries, contact us at",
+    "pt": "Para todas as questões relacionadas com privacidade, contacte-nos através de"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ".",
+    "pt": "."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "2. Who This Policy Applies To",
+    "pt": "2. A quem se aplica esta política"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy applies to:",
+    "pt": "Esta Política de Privacidade aplica-se a:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Employers",
+    "pt": "Empregadores"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— companies and individuals who contact us to source workers",
+    "pt": "— empresas e particulares que nos contactam para identificar trabalhadores"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates",
+    "pt": "Candidatos a trabalhador"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— individuals who register interest in overseas employment opportunities",
+    "pt": "— pessoas que manifestam interesse em oportunidades de emprego no estrangeiro"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Website visitors",
+    "pt": "Visitantes do sítio Web"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— anyone who browses bhuiyanworkforce.com",
+    "pt": "— qualquer pessoa que navegue em bhuiyanworkforce.com"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "3. Information We Collect",
+    "pt": "3. Informações que recolhemos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We collect information in the following ways:",
+    "pt": "Recolhemos informações das seguintes formas:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form submissions",
+    "pt": "Envio do formulário de contacto"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— name, company name, email address, and your message",
+    "pt": "— nome, nome da empresa, endereço de correio eletrónico e a sua mensagem"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Direct communications",
+    "pt": "Comunicações diretas"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— emails, WhatsApp messages, and phone calls you initiate with us",
+    "pt": "— mensagens de correio eletrónico, mensagens de WhatsApp e chamadas telefónicas que inicie connosco"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate registrations",
+    "pt": "Registos de candidatos a trabalhador"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— name, date of birth, nationality, passport details, trade qualifications, work experience, and supporting documents such as certificates and photographs",
+    "pt": "— nome, data de nascimento, nacionalidade, dados do passaporte, qualificações profissionais, experiência de trabalho e documentos de apoio, como certificados e fotografias"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical data",
+    "pt": "Dados técnicos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— IP address, browser type, and pages visited, collected automatically when you use our website",
+    "pt": "— endereço IP, tipo de navegador e páginas visitadas, recolhidos automaticamente quando utiliza o nosso sítio Web"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "pt": "Os candidatos a trabalhador candidatam-se através de um formulário em linha neste sítio Web. Os documentos que aí carregar, como o CV, a cópia do passaporte e os certificados, são enviados por correio eletrónico à nossa equipa e passam, no percurso, pelos servidores do nosso fornecedor de alojamento (Cloudflare). Antes de poder enviar o formulário, é-lhe pedido que confirme que leu esta política e que consente neste tratamento, e guardamos o registo do momento em que deu esse consentimento juntamente com a sua candidatura."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not collect payment information. All financial transactions related to our services are conducted offline.",
+    "pt": "Não recolhemos dados de pagamento. Todas as transações financeiras relacionadas com os nossos serviços são realizadas fora de linha."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "4. How We Use Your Information",
+    "pt": "4. Como utilizamos as suas informações"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We use the information we collect to:",
+    "pt": "Utilizamos as informações que recolhemos para:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Respond to employer enquiries and prepare recruitment proposals",
+    "pt": "Responder a pedidos de empregadores e preparar propostas de recrutamento"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Match worker candidates with suitable employer opportunities",
+    "pt": "Associar candidatos a trabalhador a oportunidades adequadas junto de empregadores"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Process BMET registration, visa applications, medical clearances, and other deployment documentation",
+    "pt": "Tratar do registo no BMET, dos pedidos de visto, das avaliações de aptidão médica e de outra documentação de envio"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Communicate with you about the status of an active recruitment or deployment",
+    "pt": "Comunicar consigo sobre o estado de um processo de recrutamento ou de envio em curso"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Comply with legal obligations under Bangladeshi law and the laws of destination countries",
+    "pt": "Cumprir obrigações legais ao abrigo da lei do Bangladeche e das leis dos países de destino"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Improve our website and services based on usage patterns",
+    "pt": "Melhorar o nosso sítio Web e os nossos serviços com base nos padrões de utilização"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not sell, rent, or trade your personal data to any third party for commercial purposes.",
+    "pt": "Não vendemos, alugamos nem trocamos os seus dados pessoais com terceiros para fins comerciais."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "5. Data Sharing",
+    "pt": "5. Partilha de dados"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may share your personal data only in the following circumstances:",
+    "pt": "Só poderemos partilhar os seus dados pessoais nas seguintes circunstâncias:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With employers",
+    "pt": "Com empregadores"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— worker candidate profiles are shared with prospective employers only after the candidate has been informed and has consented",
+    "pt": "— os perfis dos candidatos só são partilhados com potenciais empregadores depois de o candidato ter sido informado e ter dado o seu consentimento"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With government authorities",
+    "pt": "Com autoridades públicas"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— BMET, Bangladesh embassies, destination-country immigration authorities, and GAMCA-approved medical centres, as required by law during the deployment process",
+    "pt": "— o BMET, as embaixadas do Bangladeche, as autoridades de imigração dos países de destino e os centros médicos aprovados pela GAMCA, conforme exigido por lei durante o processo de envio"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With service providers",
+    "pt": "Com prestadores de serviços"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— third-party providers who assist us in operating our website and communications, bound by confidentiality obligations",
+    "pt": "— terceiros que nos ajudam a gerir o nosso sítio Web e as nossas comunicações, vinculados por obrigações de confidencialidade"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "When required by law",
+    "pt": "Quando a lei o exigir"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— in response to a lawful request from a court, government authority, or regulatory body in Bangladesh",
+    "pt": "— em resposta a um pedido legítimo de um tribunal, de uma autoridade pública ou de um organismo regulador do Bangladeche"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "6. Cookies and Tracking",
+    "pt": "6. Cookies e rastreio"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Our website uses minimal cookies necessary for basic functionality. We do not use advertising cookies or third-party tracking pixels. Technical data such as page visits may be logged by our hosting provider (Cloudflare) for security and performance purposes. You can disable cookies in your browser settings without affecting your ability to use the website.",
+    "pt": "O nosso sítio Web utiliza o mínimo de cookies necessários ao seu funcionamento básico. Não utilizamos cookies publicitários nem pixéis de rastreio de terceiros. Dados técnicos, como as visitas a páginas, podem ser registados pelo nosso fornecedor de alojamento (Cloudflare) por razões de segurança e desempenho. Pode desativar os cookies nas definições do seu navegador sem afetar a utilização do sítio Web."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "7. Data Retention",
+    "pt": "7. Conservação de dados"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form enquiries",
+    "pt": "Pedidos através do formulário de contacto"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 24 months from the date of submission",
+    "pt": "— conservados durante um máximo de 24 meses a contar da data de envio"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate profiles",
+    "pt": "Perfis de candidatos a trabalhador"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 3 years, or until the candidate requests deletion",
+    "pt": "— conservados durante um máximo de 3 anos, ou até o candidato solicitar a eliminação"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Deployment documentation",
+    "pt": "Documentação de envio"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 7 years where required by Bangladeshi law or the laws of the destination country",
+    "pt": "— conservada durante um máximo de 7 anos, quando exigido pela lei do Bangladeche ou pela lei do país de destino"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical/website logs",
+    "pt": "Registos técnicos / do sítio Web"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 90 days",
+    "pt": "— conservados durante um máximo de 90 dias"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "8. Your Rights",
+    "pt": "8. Os seus direitos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "You have the right to:",
+    "pt": "Tem o direito de:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Access",
+    "pt": "Acesso"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— request a copy of the personal data we hold about you",
+    "pt": "— solicitar uma cópia dos dados pessoais que detemos sobre si"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Correction",
+    "pt": "Retificação"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— request that inaccurate or incomplete data be corrected",
+    "pt": "— solicitar a correção de dados inexatos ou incompletos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Deletion",
+    "pt": "Apagamento"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— request that your personal data be deleted, subject to our legal obligations to retain certain records",
+    "pt": "— solicitar o apagamento dos seus dados pessoais, sem prejuízo das nossas obrigações legais de conservar determinados registos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Objection",
+    "pt": "Oposição"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— object to our use of your data for any purpose other than legal compliance",
+    "pt": "— opor-se à utilização dos seus dados para qualquer fim que não seja o cumprimento de obrigações legais"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any of these rights, email us at",
+    "pt": "Para exercer qualquer um destes direitos, escreva-nos para"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We will respond within 30 days.",
+    "pt": ". Responderemos no prazo de 30 dias."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "9. GDPR — Additional Rights for EU/EEA Data Subjects",
+    "pt": "9. RGPD — Direitos adicionais para titulares de dados da UE/EEE"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "If you are located in the European Union or European Economic Area, the General Data Protection Regulation (GDPR) gives you additional rights beyond those listed in Section 8, and requires us to disclose the following:",
+    "pt": "Se se encontrar na União Europeia ou no Espaço Económico Europeu, o Regulamento Geral sobre a Proteção de Dados (RGPD) confere-lhe direitos adicionais para além dos indicados na Secção 8 e obriga-nos a divulgar o seguinte:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Legal basis for processing",
+    "pt": "Fundamento jurídico do tratamento"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— we process your data based on your consent (when you submit a contact or application form), our legitimate interest in operating a recruitment business, and, where applicable, the performance of a contract with you or your employer",
+    "pt": "— tratamos os seus dados com base no seu consentimento (quando envia um formulário de contacto ou de candidatura), no nosso interesse legítimo em gerir uma atividade de recrutamento e, quando aplicável, na execução de um contrato consigo ou com o seu empregador"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Data Controller",
+    "pt": "Responsável pelo tratamento"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— Bhuiyan Workforce Ltd. is the data controller for personal data submitted through this website",
+    "pt": "— a Bhuiyan Workforce Ltd. é a responsável pelo tratamento dos dados pessoais enviados através deste sítio Web"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to restriction of processing",
+    "pt": "Direito à limitação do tratamento"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— you may request that we limit how we use your data while a dispute about its accuracy or our right to use it is resolved",
+    "pt": "— pode solicitar que limitemos a forma como utilizamos os seus dados enquanto se resolve um litígio sobre a sua exatidão ou sobre o nosso direito de os utilizar"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to data portability",
+    "pt": "Direito à portabilidade dos dados"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— you may request your data in a structured, commonly used, machine-readable format",
+    "pt": "— pode solicitar os seus dados num formato estruturado, de uso corrente e de leitura automática"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to withdraw consent",
+    "pt": "Direito de retirar o consentimento"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— where processing is based on consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal",
+    "pt": "— quando o tratamento se baseia no consentimento, pode retirá-lo a qualquer momento, sem comprometer a licitude do tratamento efetuado antes dessa retirada"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to lodge a complaint",
+    "pt": "Direito de apresentar reclamação"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— you have the right to lodge a complaint with the data protection supervisory authority in your EU/EEA country of residence",
+    "pt": "— tem o direito de apresentar reclamação junto da autoridade de controlo da proteção de dados do seu país de residência na UE/EEE"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any GDPR right, email us at",
+    "pt": "Para exercer qualquer direito ao abrigo do RGPD, escreva-nos para"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We aim to respond to GDPR requests within 30 days, consistent with regulatory timelines.",
+    "pt": ". Procuramos responder aos pedidos ao abrigo do RGPD no prazo de 30 dias, em conformidade com os prazos regulamentares."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This section is provided as a good-faith disclosure and does not constitute legal advice. We recommend consulting a qualified data protection professional for guidance specific to your circumstances.",
+    "pt": "Esta secção é prestada de boa-fé e não constitui aconselhamento jurídico. Recomendamos que consulte um profissional qualificado em proteção de dados para obter orientação adequada à sua situação."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "10. Data Security",
+    "pt": "10. Segurança dos dados"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We implement appropriate technical and organisational measures to protect your personal data from unauthorised access, loss, or disclosure. These include encrypted email transmission, restricted access to candidate records, and secure cloud storage. No method of transmission over the internet is 100% secure; however, we take all reasonable steps to protect your information.",
+    "pt": "Aplicamos medidas técnicas e organizativas adequadas para proteger os seus dados pessoais contra acesso não autorizado, perda ou divulgação. Estas incluem a transmissão de correio eletrónico cifrada, o acesso restrito aos registos dos candidatos e o armazenamento seguro na nuvem. Nenhum método de transmissão pela Internet é 100 % seguro; contudo, tomamos todas as medidas razoáveis para proteger as suas informações."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "11. International Data Transfers",
+    "pt": "11. Transferências internacionais de dados"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "As an international recruitment agency, we necessarily transfer personal data across borders — for example, sharing a worker's documents with an employer in Saudi Arabia or submitting visa applications to European embassies. We do this only where necessary for the recruitment process and in accordance with applicable law.",
+    "pt": "Sendo uma empresa de recrutamento internacional, transferimos necessariamente dados pessoais através de fronteiras — por exemplo, ao partilhar os documentos de um trabalhador com um empregador na Arábia Saudita ou ao apresentar pedidos de visto em embaixadas europeias. Fazemo-lo apenas quando necessário para o processo de recrutamento e em conformidade com a lei aplicável."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "12. Governing Law",
+    "pt": "12. Lei aplicável"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy is governed by the laws of Bangladesh, including applicable Bangladeshi cyber-security and data protection laws and regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.",
+    "pt": "Esta Política de Privacidade rege-se pela lei do Bangladeche, incluindo as leis e os regulamentos bangladechianos aplicáveis em matéria de cibersegurança e proteção de dados. Quaisquer litígios decorrentes desta política ficam sujeitos à jurisdição dos tribunais do Bangladeche."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "13. Changes to This Policy",
+    "pt": "13. Alterações a esta política"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. We will post the updated version on this page with a revised \"last updated\" date. Continued use of the website after any update constitutes acceptance of the revised policy.",
+    "pt": "Podemos atualizar esta Política de Privacidade periodicamente, para refletir alterações nas nossas práticas ou na legislação aplicável. Publicaremos a versão atualizada nesta página, com uma data de «última atualização» revista. A utilização continuada do sítio Web após qualquer atualização constitui aceitação da política revista."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "14. Contact",
+    "pt": "14. Contacto"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For any privacy-related questions, requests, or complaints, please contact us:",
+    "pt": "Para quaisquer questões, pedidos ou reclamações relacionados com privacidade, contacte-nos:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Email:",
+    "pt": "Correio eletrónico:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "WhatsApp:",
+    "pt": "WhatsApp:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Home",
+    "pt": "Início"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Terms of Service",
+    "pt": "Termos de Serviço"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Terms of Service",
+    "pt": "Termos de Serviço"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "The terms and conditions governing use of the Bhuiyan Workforce Ltd. website and services.",
+    "pt": "Os termos e condições que regem a utilização do sítio Web e dos serviços da Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Last updated: May 2026",
+    "pt": "Última atualização: maio de 2026"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "1. Acceptance of Terms",
+    "pt": "1. Aceitação dos termos"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "By accessing or using the bhuiyanworkforce.com website, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use the website. These terms apply to all visitors, employers, and worker candidates who access our website or engage with our services.",
+    "pt": "Ao aceder ou utilizar o sítio Web bhuiyanworkforce.com, concorda em ficar vinculado a estes Termos de Serviço e à nossa Política de Privacidade. Se não concordar com estes termos, não utilize o sítio Web. Estes termos aplicam-se a todos os visitantes, empregadores e candidatos a trabalhador que acedam ao nosso sítio Web ou recorram aos nossos serviços."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "2. About Bhuiyan Workforce Ltd.",
+    "pt": "2. Sobre a Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based international manpower recruitment company. We connect skilled Bangladeshi workers with employers across 25+ countries in the Middle East, Europe, Asia, and Africa. Our recruitment and deployment services are governed by separate written service agreements between Bhuiyan Workforce Ltd. and the engaging employer.",
+    "pt": "A Bhuiyan Workforce Ltd. é uma empresa internacional de recrutamento de mão de obra sediada no Bangladeche. Colocamos trabalhadores qualificados do Bangladeche em contacto com empregadores de mais de 25 países do Médio Oriente, da Europa, da Ásia e de África. Os nossos serviços de recrutamento e de envio regem-se por contratos de prestação de serviços escritos e separados entre a Bhuiyan Workforce Ltd. e o empregador contratante."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "3. Website Use",
+    "pt": "3. Utilização do sítio Web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may use this website for lawful purposes only. You agree not to:",
+    "pt": "Só pode utilizar este sítio Web para fins lícitos. Compromete-se a não:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use the website in any way that violates applicable laws or regulations in Bangladesh or your jurisdiction",
+    "pt": "Utilizar o sítio Web de qualquer forma que viole a legislação ou os regulamentos aplicáveis no Bangladeche ou na sua jurisdição"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Submit false, misleading, or fraudulent information through any form on the website",
+    "pt": "Enviar informações falsas, enganosas ou fraudulentas através de qualquer formulário do sítio Web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Impersonate any person, company, or organisation",
+    "pt": "Fazer-se passar por qualquer pessoa, empresa ou organização"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Attempt to gain unauthorised access to any part of the website, our servers, or any connected systems",
+    "pt": "Tentar obter acesso não autorizado a qualquer parte do sítio Web, dos nossos servidores ou de sistemas a eles ligados"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use automated tools, scrapers, or bots to extract content from the website without our written permission",
+    "pt": "Utilizar ferramentas automatizadas, programas de extração ou robôs para obter conteúdos do sítio Web sem a nossa autorização por escrito"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Transmit unsolicited commercial communications (spam) through any channel on the website",
+    "pt": "Transmitir comunicações comerciais não solicitadas (spam) através de qualquer canal do sítio Web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Upload or transmit any content that is harmful, offensive, defamatory, or infringes on the rights of others",
+    "pt": "Carregar ou transmitir quaisquer conteúdos prejudiciais, ofensivos, difamatórios ou que violem os direitos de terceiros"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "4. Employer Enquiries",
+    "pt": "4. Pedidos de empregadores"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Employers may submit recruitment enquiries through our contact form, email, or WhatsApp. Submitting an enquiry does not constitute a binding contract or guarantee of service. We will respond to genuine enquiries within 24 hours but reserve the right to decline any enquiry at our sole discretion.",
+    "pt": "Os empregadores podem enviar pedidos de recrutamento através do nosso formulário de contacto, por correio eletrónico ou por WhatsApp. O envio de um pedido não constitui um contrato vinculativo nem uma garantia de serviço. Responderemos a pedidos genuínos no prazo de 24 horas, mas reservamo-nos o direito de recusar qualquer pedido, a nosso critério exclusivo."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any formal recruitment engagement will be subject to a separate written service agreement specifying the scope of services, fees, timelines, and obligations of both parties. No recruitment fees or service charges are collected through this website — all payments are handled offline under the terms of that agreement.",
+    "pt": "Qualquer contratação formal de recrutamento ficará sujeita a um contrato de prestação de serviços escrito e separado, que especifique o âmbito dos serviços, os honorários, os prazos e as obrigações de ambas as partes. Não são cobrados, através deste sítio Web, quaisquer honorários de recrutamento ou encargos de serviço — todos os pagamentos são tratados fora de linha, nos termos desse contrato."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "5. Worker Candidate Registrations",
+    "pt": "5. Registos de candidatos a trabalhador"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Worker candidates who register interest in overseas employment through this website consent to their information being held on our candidate database and, where a suitable opportunity arises, being shared with prospective employers. Registering interest does not guarantee placement or employment. Bhuiyan Workforce Ltd. acts as a recruitment intermediary and is not itself the employer.",
+    "pt": "Os candidatos que, através deste sítio Web, manifestem interesse em trabalhar no estrangeiro consentem que as suas informações sejam conservadas na nossa base de dados de candidatos e, quando surgir uma oportunidade adequada, partilhadas com potenciais empregadores. Manifestar interesse não garante a obtenção de um emprego. A Bhuiyan Workforce Ltd. apoia empregadores e candidatos no recrutamento e não é, ela própria, a entidade empregadora."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Candidates are responsible for ensuring all information and documents submitted are accurate and genuine. Submission of fraudulent documents is a criminal offence under Bangladeshi law and will result in immediate disqualification and may be reported to the relevant authorities.",
+    "pt": "Os candidatos são responsáveis por garantir que todas as informações e documentos apresentados são exatos e genuínos. A apresentação de documentos fraudulentos constitui crime ao abrigo da lei do Bangladeche, implica a desqualificação imediata e pode ser comunicada às autoridades competentes."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "6. Accuracy of Information",
+    "pt": "6. Exatidão das informações"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We endeavour to keep all information on this website accurate, current, and complete. However, we make no warranties — express or implied — regarding the accuracy, completeness, or fitness for purpose of any content. Country-specific information including visa types, processing times, salary ranges, and government fees are indicative and subject to change without notice. Employers and candidates should verify all regulatory requirements with the relevant authorities before proceeding.",
+    "pt": "Esforçamo-nos por manter todas as informações deste sítio Web exatas, atuais e completas. No entanto, não damos quaisquer garantias — expressas ou implícitas — quanto à exatidão, integralidade ou adequação a um fim específico de qualquer conteúdo. As informações específicas de cada país, incluindo tipos de visto, prazos de tramitação, intervalos salariais e taxas governamentais, são indicativas e podem ser alteradas sem aviso prévio. Os empregadores e os candidatos devem verificar todos os requisitos regulamentares junto das autoridades competentes antes de avançarem."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "7. Fees and Payments",
+    "pt": "7. Honorários e pagamentos"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All service fees charged by Bhuiyan Workforce Ltd. are agreed in writing prior to commencement of any recruitment engagement. We do not charge worker candidates any fees in violation of the BMET fee schedule or the laws of the destination country. No payments are processed through this website.",
+    "pt": "Todos os honorários de serviço cobrados pela Bhuiyan Workforce Ltd. são acordados por escrito antes do início de qualquer contratação de recrutamento. Não cobramos aos candidatos quaisquer taxas em violação da tabela de taxas do BMET ou da lei do país de destino. Não são processados pagamentos através deste sítio Web."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "8. Limitation of Liability",
+    "pt": "8. Limitação de responsabilidade"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "To the fullest extent permitted by applicable law, Bhuiyan Workforce Ltd. shall not be liable for:",
+    "pt": "Na máxima medida permitida pela lei aplicável, a Bhuiyan Workforce Ltd. não será responsável por:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any indirect, incidental, special, or consequential damages arising from your use of or inability to use this website",
+    "pt": "Quaisquer danos indiretos, acidentais, especiais ou consequentes decorrentes da utilização ou da impossibilidade de utilizar este sítio Web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any reliance placed on information published on this website",
+    "pt": "Qualquer confiança depositada nas informações publicadas neste sítio Web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any interruption, suspension, or termination of the website or its services",
+    "pt": "Qualquer interrupção, suspensão ou cessação do sítio Web ou dos seus serviços"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Actions or omissions of employers, workers, government authorities, or other third parties involved in the recruitment and deployment process",
+    "pt": "Atos ou omissões de empregadores, trabalhadores, autoridades públicas ou outros terceiros envolvidos no processo de recrutamento e de envio"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Our total liability to you for any claim arising from these terms or your use of the website shall not exceed BDT 10,000 (ten thousand Bangladeshi Taka).",
+    "pt": "A nossa responsabilidade total perante si por qualquer reclamação decorrente destes termos ou da sua utilização do sítio Web não excederá 10 000 BDT (dez mil takas do Bangladeche)."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "9. Intellectual Property",
+    "pt": "9. Propriedade intelectual"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All content on this website — including the Bhuiyan Workforce Ltd. name, logo, text, graphics, page layouts, and data — is the intellectual property of Bhuiyan Workforce Ltd. and is protected under applicable Bangladeshi and international intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content on this website without our prior written permission.",
+    "pt": "Todos os conteúdos deste sítio Web — incluindo o nome e o logótipo da Bhuiyan Workforce Ltd., textos, gráficos, esquemas de página e dados — são propriedade intelectual da Bhuiyan Workforce Ltd. e estão protegidos pela legislação bangladechiana e internacional aplicável em matéria de propriedade intelectual. Não pode reproduzir, distribuir, modificar nem criar obras derivadas de quaisquer conteúdos deste sítio Web sem a nossa autorização prévia por escrito."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may share links to pages on our website and quote brief excerpts for non-commercial informational purposes, provided appropriate attribution is given.",
+    "pt": "Pode partilhar ligações para páginas do nosso sítio Web e citar breves excertos para fins informativos não comerciais, desde que seja feita a devida atribuição."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "10. Third-Party Links and Services",
+    "pt": "10. Ligações e serviços de terceiros"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "This website contains links to third-party platforms including WhatsApp, LinkedIn, and Facebook. These links are provided for convenience only. We are not responsible for the content, privacy practices, or terms of service of any third-party website. Accessing third-party links is at your own risk.",
+    "pt": "Este sítio Web contém ligações para plataformas de terceiros, incluindo o WhatsApp, o LinkedIn e o Facebook. Estas ligações são disponibilizadas apenas por conveniência. Não somos responsáveis pelo conteúdo, pelas práticas de privacidade ou pelos termos de serviço de qualquer sítio Web de terceiros. O acesso a ligações de terceiros é da sua inteira responsabilidade."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "11. Anti-Fraud and Impersonation Warning",
+    "pt": "11. Aviso contra fraude e usurpação de identidade"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. only communicates through official channels: ",
+    "pt": "A Bhuiyan Workforce Ltd. comunica apenas através de canais oficiais: "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": ", ",
+    "pt": ", "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": ", and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to ",
+    "pt": "e os números de telefone indicados neste sítio Web. Não oferecemos emprego através de mensagens de WhatsApp não solicitadas, mensagens diretas em redes sociais ou sítios Web não oficiais. Se receber uma comunicação suspeita que alegue provir de nós, comunique-o de imediato para "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "immediately.",
+    "pt": "."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "12. Governing Law and Jurisdiction",
+    "pt": "12. Lei aplicável e jurisdição"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "pt": "Estes Termos de Serviço regem-se e são interpretados de acordo com as leis da República Popular do Bangladeche, incluindo, entre outras, a Lei dos Contratos de 1872 (Contract Act 1872), a Lei das Tecnologias da Informação e Comunicação de 2006 (Information and Communication Technology Act 2006) e a Lei da Segurança Digital de 2018 (Digital Security Act 2018). Qualquer litígio, reclamação ou controvérsia decorrente destes termos ou da sua utilização do sítio Web ou com eles relacionado ficará sujeito à jurisdição exclusiva dos tribunais competentes de Daca, Bangladeche."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "13. Changes to These Terms",
+    "pt": "13. Alterações a estes termos"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We reserve the right to update or modify these Terms of Service at any time. Changes will be posted on this page with a revised \"last updated\" date. Continued use of the website following the posting of any changes constitutes your acceptance of the revised terms. We encourage you to review this page periodically.",
+    "pt": "Reservamo-nos o direito de atualizar ou modificar estes Termos de Serviço a qualquer momento. As alterações serão publicadas nesta página, com uma data de «última atualização» revista. A utilização continuada do sítio Web após a publicação de quaisquer alterações constitui a sua aceitação dos termos revistos. Recomendamos que consulte esta página periodicamente."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "14. Severability",
+    "pt": "14. Separabilidade"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "If any provision of these Terms of Service is found to be invalid, unlawful, or unenforceable by a court of competent jurisdiction, that provision shall be severed from the remaining terms, which shall continue in full force and effect.",
+    "pt": "Se qualquer disposição destes Termos de Serviço for considerada inválida, ilícita ou inexequível por um tribunal competente, essa disposição será separada dos restantes termos, que continuarão em pleno vigor e efeito."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "15. Contact",
+    "pt": "15. Contacto"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "For any questions regarding these terms, please contact us:",
+    "pt": "Para quaisquer questões sobre estes termos, contacte-nos:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Email:",
+    "pt": "Correio eletrónico:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "WhatsApp:",
+    "pt": "WhatsApp:"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Construction & Engineering",
+    "pt": "Construção e engenharia"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Drivers & Transport",
+    "pt": "Condutores e transportes"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Chefs & Hospitality",
+    "pt": "Cozinheiros e hotelaria"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Farm & Garden",
+    "pt": "Agricultura e jardinagem"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Warehouse & Logistics",
+    "pt": "Armazém e logística"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Factory & Manufacturing",
+    "pt": "Fábrica e produção industrial"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Oil & Gas",
+    "pt": "Petróleo e gás"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Security Guards",
+    "pt": "Guardas de segurança"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Cleaning & Housekeeping",
+    "pt": "Limpeza e governança"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Retail & Supermarket Staff",
+    "pt": "Pessoal de comércio e supermercado"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Painting & Finishing",
+    "pt": "Pintura e acabamentos"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "pt": "Montagem de ferro e armaduras"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Scaffolding & Formwork",
+    "pt": "Andaimes e cofragens"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "pt": "Paisagismo e manutenção de espaços verdes"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Mason & Bricklaying",
+    "pt": "Pedreiro e assentamento de tijolo"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "pt": "Ajudantes de eletricista e passadores de cabos"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Laundry & Linen Services",
+    "pt": "Lavandaria e serviços de roupa de cama"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Food Processing & Packing",
+    "pt": "Transformação e embalamento de alimentos"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Fishery & Aquaculture Workers",
+    "pt": "Trabalhadores de pesca e aquacultura"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Caregiving & Elderly Support",
+    "pt": "Prestação de cuidados e apoio a idosos"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Welding & Fabrication",
+    "pt": "Soldadura e construção metálica"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Plumbing & HVAC",
+    "pt": "Canalização e AVAC"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Heavy Equipment Operators",
+    "pt": "Operadores de equipamento pesado"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Ship & Marine Fabrication",
+    "pt": "Construção naval e metálica marítima"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Domestic & Household Workers",
+    "pt": "Pessoal doméstico e de apoio ao lar"
+  }
+];
