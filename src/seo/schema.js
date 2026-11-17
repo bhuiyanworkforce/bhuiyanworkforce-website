@@ -77,7 +77,7 @@ export function organizationSchema(locale, lang) {
     ],
     email: 'info@bhuiyanworkforce.com',
     telephone: '+880-1864-567912',
-    sameAs: ['https://linkedin.com/company/bhuiyan-workforce', 'https://www.facebook.com/share/1GjrNbPYvf/'],
+    sameAs: ['https://www.linkedin.com/company/bhuiyan-workforce-ltd/', 'https://www.facebook.com/share/1GjrNbPYvf/'],
     areaServed: h.areaServed.map((name) => ({ '@type': 'Country', name })),
     employee: PEOPLE.map((p) => ({
       '@type': 'Person',
