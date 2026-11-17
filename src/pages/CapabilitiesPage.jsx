@@ -4,6 +4,7 @@ import { SERVICES } from '../data/services';
 import Tx from '../i18n/Tx';
 import { useLang } from '../i18n/LanguageContext';
 import { localizeService } from '../content/index.js';
+import { StaticPageLocalizer } from '../i18n/staticPageText.js';
 
 const PROCESS_STEPS = [
   { n: '01', title: 'Requirement Intake', desc: 'We collect detailed job descriptions, skill requirements, visa quotas, salary ranges, and deployment timelines from the client employer.' },
@@ -33,7 +34,7 @@ const DESTINATIONS = [
 export default function CapabilitiesPage() {
   const { lang } = useLang();
   return (
-    <>
+    <StaticPageLocalizer locale={lang} file="src/pages/CapabilitiesPage.jsx">
       {/* Screen-only hero */}
       <div className="page-hero no-print" style={{ padding: '80px 0 60px' }}>
         <div className="container">
@@ -88,7 +89,7 @@ export default function CapabilitiesPage() {
                   <Tx>Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Europe, Asia, and Africa.</Tx>
                 </p>
                 <p style={{ color: 'var(--text-body)', lineHeight: 1.8, fontSize: '1rem', margin: 0 }}>
-                  <Tx>Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. Our BMET recruitment licence is in process — expected October 2026. In the meantime we are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.</Tx>
+                  <Tx>Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. We are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.</Tx>
                 </p>
               </div>
             </div>
@@ -460,6 +461,6 @@ export default function CapabilitiesPage() {
           .contact-footer-section { page-break-before: avoid; }
         }
       `}</style>
-    </>
+    </StaticPageLocalizer>
   );
 }

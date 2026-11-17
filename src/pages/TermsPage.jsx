@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from '../i18n/router';
+import { useLang } from '../i18n/LanguageContext';
 import Tx from '../i18n/Tx';
+import { StaticPageLocalizer } from '../i18n/staticPageText.js';
 
 export default function TermsPage() {
+  const { lang } = useLang();
   return (
-    <>
+    <StaticPageLocalizer locale={lang} file="src/pages/TermsPage.jsx">
       <div className="page-hero">
         <div className="container">
           <div className="page-hero-inner">
@@ -95,6 +98,6 @@ export default function TermsPage() {
           </div>
         </div>
       </section>
-    </>
+    </StaticPageLocalizer>
   );
 }

@@ -4,6 +4,7 @@ import { COUNTRIES, COUNTRY_REGIONS } from '../data/countries';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
 import { localizeCountry } from '../content';
+import { StaticPageLocalizer } from '../i18n/staticPageText.js';
 
 // English region value (used for filtering) -> UI string key.
 const REGION_KEYS = {
@@ -28,7 +29,7 @@ export default function CountriesPage() {
     .map(base => localizeCountry(base, urlLang));
 
   return (
-    <>
+    <StaticPageLocalizer locale={lang} file="src/pages/CountriesPage.jsx">
       {/* Hero */}
       <div className="page-hero">
         <div className="container">
@@ -134,6 +135,6 @@ export default function CountriesPage() {
           </div>
         </div>
       </section>
-    </>
+    </StaticPageLocalizer>
   );
 }

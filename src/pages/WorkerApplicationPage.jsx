@@ -4,6 +4,7 @@ import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
 import Tx from '../i18n/Tx';
 import { tx } from '../i18n/extra.js';
+import { StaticPageLocalizer } from '../i18n/staticPageText.js';
 
 const EMPTY = {
   fullName: '', dateOfBirth: '', nationality: 'Bangladeshi',
@@ -77,12 +78,13 @@ export default function WorkerApplicationPage() {
 
     const ext = file.name.includes('.') ? file.name.split('.').pop().toLowerCase() : '';
     if (!FILE_EXTENSIONS[field].includes(ext)) {
-      setFileError(`${file.name}: please upload a ${FILE_EXTENSIONS[field].join(', ').toUpperCase()} file.`);
+      const types = FILE_EXTENSIONS[field].map((type) => type.toUpperCase()).join(', ');
+      setFileError(t('apply.file_type_error', lang, { file: file.name, types }));
       e.target.value = '';
       return;
     }
     if (file.size > MAX_FILE_BYTES) {
-      setFileError(`${file.name} is larger than 5 MB. Please choose a smaller file.`);
+      setFileError(t('apply.file_size_error', lang, { file: file.name }));
       e.target.value = '';
       return;
     }
@@ -90,7 +92,7 @@ export default function WorkerApplicationPage() {
       .filter(k => k !== field)
       .reduce((sum, k) => sum + (fields[k] ? fields[k].size : 0), 0);
     if (others + file.size > MAX_TOTAL_BYTES) {
-      setFileError('Your files together are over 12 MB. Please choose smaller files or compress the images.');
+      setFileError(t('apply.total_size_error', lang));
       e.target.value = '';
       return;
     }
@@ -192,6 +194,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
   };
 
   if (submitted) return (
+    <StaticPageLocalizer locale={lang} file="src/pages/WorkerApplicationPage.jsx">
     <div className="page-hero" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center' }}>
       <div className="container" style={{ textAlign: 'center' }}>
         <div style={{ fontSize: '4rem', marginBottom: 24 }}>✅</div>
@@ -202,6 +205,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
         <Link to="/" className="btn btn-primary">{t('apply_back_home', lang)}</Link>
       </div>
     </div>
+    </StaticPageLocalizer>
   );
 
   const inputStyle = {
@@ -220,7 +224,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
   const steps = [t('apply_step1', lang), t('apply_step2', lang), t('apply_step3', lang)];
 
   return (
-    <>
+    <StaticPageLocalizer locale={lang} file="src/pages/WorkerApplicationPage.jsx">
       <div className="page-hero">
         <div className="container">
           <div className="page-hero-inner">
@@ -465,7 +469,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
                           style={{ marginTop: 4, width: 20, height: 20, flexShrink: 0 }}
                         />
                         <span>
-                          <Tx>I have read the</Tx> <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', fontWeight: 600 }}><Tx>Privacy Policy</Tx></a> <Tx>and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed.</Tx> <span className="required">*</span>
+                          <Tx>I have read</Tx> <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', fontWeight: 600 }}><Tx>the Privacy Policy</Tx></a> <Tx>and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed.</Tx> <span className="required">*</span>
                         </span>
                       </label>
                       {consentError && (
@@ -494,6 +498,6 @@ The applicant accepted the Privacy Policy and consented to processing of their d
           </form>
         </div>
       </section>
-    </>
+    </StaticPageLocalizer>
   );
 }

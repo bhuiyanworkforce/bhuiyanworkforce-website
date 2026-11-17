@@ -5,6 +5,7 @@ import { useLang } from '../i18n/LanguageContext';
 import { localizePost } from '../content/index.js';
 import Tx from '../i18n/Tx';
 import { tx } from '../i18n/extra.js';
+import { StaticPageLocalizer } from '../i18n/staticPageText.js';
 
 export default function BlogPage() {
   const { lang } = useLang();
@@ -21,7 +22,7 @@ export default function BlogPage() {
   );
 
   return (
-    <>
+    <StaticPageLocalizer locale={lang} file="src/pages/BlogPage.jsx">
       <div className="page-hero">
         <div className="container">
           <div className="page-hero-inner">
@@ -124,6 +125,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-    </>
+    </StaticPageLocalizer>
   );
 }

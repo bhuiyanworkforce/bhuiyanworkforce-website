@@ -3,6 +3,7 @@ import { Link } from '../i18n/router';
 import Tx from '../i18n/Tx';
 import { useLang } from '../i18n/LanguageContext';
 import { tx } from '../i18n/extra.js';
+import { StaticPageLocalizer } from '../i18n/staticPageText.js';
 
 const GUIDE_CONTENTS = [
   { icon: '📋', title: 'Understanding BMET & Emigration Clearance', desc: 'Step-by-step explanation of the Bangladesh Manpower Bureau process every worker must complete.' },
@@ -47,7 +48,7 @@ export default function EmployerGuidePage() {
   };
 
   return (
-    <>
+    <StaticPageLocalizer locale={lang} file="src/pages/EmployerGuidePage.jsx">
       <div className="page-hero">
         <div className="container">
           <div className="page-hero-inner">
@@ -177,6 +178,6 @@ export default function EmployerGuidePage() {
           </div>
         </div>
       </section>
-    </>
+    </StaticPageLocalizer>
   );
 }
