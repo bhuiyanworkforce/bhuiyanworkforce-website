@@ -8,6 +8,13 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import '../src/i18n/ar-bundle.js'; // registers the Arabic content that is loaded on demand in the browser
 import '../src/i18n/pl-bundle.js'; // same for Polish
+import '../src/i18n/bg-bundle.js'; // same for Bulgarian
+import '../src/i18n/el-bundle.js'; // same for Greek
+import '../src/i18n/hr-bundle.js'; // same for Croatian
+import '../src/i18n/sr-bundle.js'; // same for Serbian
+import '../src/i18n/bs-bundle.js'; // same for Bosnian
+import '../src/i18n/mk-bundle.js'; // same for Macedonian
+import '../src/i18n/it-bundle.js'; // same for Italian
 import '../src/i18n/ro-bundle.js'; // same for Romanian
 import { buildPath, parsePath, ENTITY_SLUGS, PAGE_SLUGS, SEGMENTS } from '../src/i18n/slugs.js';
 import { LOCALES, REAL_LOCALE_CODES } from '../src/i18n/config.js';
@@ -48,6 +55,31 @@ test('English paths', () => {
 test('Arabic uses English slugs under /ar', () => {
   assert.equal(buildPath('ar', { type: 'page', id: 'home' }), '/ar');
   assert.equal(buildPath('ar', { type: 'country', id: 'saudi-arabia' }), '/ar/countries/saudi-arabia');
+});
+test('Greek, Croatian, Serbian, Bosnian and Macedonian keep English slugs under their prefix', () => {
+  for (const l of ['el', 'hr', 'sr', 'bs', 'mk']) {
+    assert.equal(buildPath(l, { type: 'page', id: 'home' }), `/${l}`);
+    assert.equal(buildPath(l, { type: 'country', id: 'saudi-arabia' }), `/${l}/countries/saudi-arabia`);
+    assert.deepEqual(parsePath(`/${l}/countries/saudi-arabia`).route, { type: 'country', id: 'saudi-arabia' });
+  }
+});
+test('Italian slugs round-trip, are complete and unique', () => {
+  assert.equal(buildPath('it', { type: 'page', id: 'home' }), '/it');
+  assert.equal(buildPath('it', { type: 'page', id: 'about' }), '/it/chi-siamo');
+  assert.equal(buildPath('it', { type: 'country', id: 'saudi-arabia' }), '/it/paesi/arabia-saudita');
+  assert.deepEqual(parsePath('/it/paesi/arabia-saudita').route, { type: 'country', id: 'saudi-arabia' });
+  assert.equal(parsePath('/it/nope').route, null);
+  for (const [type, list] of [['country', COUNTRY_SLUGS], ['service', SERVICE_SLUGS], ['guide', GUIDE_SLUGS]]) {
+    const map = ENTITY_SLUGS.it[type];
+    for (const s of list) assert.ok(map[s], `it ${type} slug missing for ${s}`);
+    assert.equal(new Set(Object.values(map)).size, Object.values(map).length, `duplicate it ${type} slugs`);
+    for (const s of Object.keys(map)) assert.ok(list.includes(s), `it ${type} map has unknown key ${s}`);
+  }
+});
+test('Bulgarian keeps English slugs under /bg', () => {
+  assert.equal(buildPath('bg', { type: 'page', id: 'home' }), '/bg');
+  assert.equal(buildPath('bg', { type: 'page', id: 'about' }), '/bg/about');
+  assert.equal(buildPath('bg', { type: 'country', id: 'saudi-arabia' }), '/bg/countries/saudi-arabia');
 });
 test('Polish translated slugs', () => {
   assert.equal(buildPath('pl', { type: 'page', id: 'home' }), '/pl');
@@ -108,6 +140,14 @@ test('page counts', () => {
   assert.equal(by('en'), 10 + 25 + 33 + 18 + 3);
   assert.equal(by('ar'), 3 + 25 + 33 + 18 + 3);
   assert.equal(by('pl'), 3 + 25 + 33 + 18 + 3);
+  assert.equal(by('bg'), 10 + 25 + 33 + 18 + 3);
+  assert.equal(by('ro'), 10 + 25 + 33 + 18 + 3);
+    assert.equal(by('el'), 10 + 25 + 33 + 18 + 3);
+  assert.equal(by('hr'), 10 + 25 + 33 + 18 + 3);
+  assert.equal(by('sr'), 10 + 25 + 33 + 18 + 3);
+  assert.equal(by('bs'), 10 + 25 + 33 + 18 + 3);
+  assert.equal(by('mk'), 10 + 25 + 33 + 18 + 3);
+  assert.equal(by('it'), 10 + 25 + 33 + 18 + 3);
 });
 test('availability and 404 resolution', () => {
   assert.equal(resolvePath('/ar/countries/saudi-arabia').status, 'ok');
@@ -119,10 +159,11 @@ test('availability and 404 resolution', () => {
 });
 test('hreflang: self, x-default, only real translations', () => {
   const alts = getAlternates({ type: 'country', id: 'saudi-arabia' });
-  assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'ro', 'x-default']);
+  assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'x-default']);
   assert.equal(alts.find((a) => a.hreflang === 'x-default').href, 'https://bhuiyanworkforce.com/countries/saudi-arabia');
-  assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }), []);
-  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'ro', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }).map((a) => a.hreflang), ['en', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'country', id: 'slovenia' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'x-default']);
 });
 test('language switcher links', () => {
   const links = getLanguageLinks({ type: 'page', id: 'privacy' }, 'en');

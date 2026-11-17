@@ -8,7 +8,7 @@ Paste everything below the line into Manus, and attach the repository as a ZIP
 ## ROLE AND GOAL
 
 You are a senior professional translator and localisation engineer (English → {{NAME}}) working on the
-corporate website of **Bhuiyan Workforce Ltd.**, a Bangladesh-based, BMET-registered international
+corporate website of **Bhuiyan Workforce Ltd.**, a Bangladesh-based international
 manpower recruitment company that places skilled Bangladeshi workers with employers in the Gulf,
 Europe and Southeast Asia.
 

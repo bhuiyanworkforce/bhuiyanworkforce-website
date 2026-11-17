@@ -10,6 +10,13 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import '../src/i18n/ar-bundle.js'; // registers the Arabic content that is loaded on demand in the browser
 import '../src/i18n/pl-bundle.js'; // same for Polish
+import '../src/i18n/bg-bundle.js'; // same for Bulgarian
+import '../src/i18n/el-bundle.js'; // same for Greek
+import '../src/i18n/hr-bundle.js'; // same for Croatian
+import '../src/i18n/sr-bundle.js'; // same for Serbian
+import '../src/i18n/bs-bundle.js'; // same for Bosnian
+import '../src/i18n/mk-bundle.js'; // same for Macedonian
+import '../src/i18n/it-bundle.js'; // same for Italian
 import '../src/i18n/ro-bundle.js'; // same for Romanian
 import { listPages, getLanguageLinks, SERVICE_SLUGS, COUNTRY_SLUGS, POST_SLUGS, GUIDE_SLUGS } from '../src/routes.js';
 import { getPageHead } from '../src/seo/getPageHead.js';
