@@ -144,20 +144,20 @@ console.log('routes');
 test('page counts', () => {
   const pages = listPages();
   const by = (l) => pages.filter((p) => p.lang === l).length;
-  assert.equal(by('en'), 11 + 25 + 33 + 18 + 3);
-  assert.equal(by('ar'), 3 + 25 + 33 + 18 + 3);
-  assert.equal(by('pl'), 3 + 25 + 33 + 18 + 3);
-  assert.equal(by('bg'), 10 + 25 + 33 + 18 + 3);
-  assert.equal(by('ro'), 10 + 25 + 33 + 18 + 3);
-    assert.equal(by('el'), 10 + 25 + 33 + 18 + 3);
-  assert.equal(by('hr'), 10 + 25 + 33 + 18 + 3);
-  assert.equal(by('sr'), 10 + 25 + 33 + 18 + 3);
-  assert.equal(by('bs'), 10 + 25 + 33 + 18 + 3);
-  assert.equal(by('mk'), 10 + 25 + 33 + 18 + 3);
-  assert.equal(by('it'), 10 + 25 + 33 + 18 + 3);
-  assert.equal(by('es'), 10 + 25 + 33 + 18 + 3);
-  assert.equal(by('ms'), 8 + 25 + 33); // Malay: no blog index, articles, employer guide or guides yet
-  for (const l of ['de', 'hu', 'pt']) assert.equal(by(l), 8 + 25 + 33 + 3); // home, about, faq, countries index, capabilities, apply, privacy, terms, services, countries, 3 guides; no blog or employer-guide index yet
+  assert.equal(by('en'), 12 + 25 + 33 + 18 + 3);
+  assert.equal(by('ar'), 4 + 25 + 33 + 18 + 3);
+  assert.equal(by('pl'), 4 + 25 + 33 + 18 + 3);
+  assert.equal(by('bg'), 11 + 25 + 33 + 18 + 3);
+  assert.equal(by('ro'), 11 + 25 + 33 + 18 + 3);
+    assert.equal(by('el'), 11 + 25 + 33 + 18 + 3);
+  assert.equal(by('hr'), 11 + 25 + 33 + 18 + 3);
+  assert.equal(by('sr'), 11 + 25 + 33 + 18 + 3);
+  assert.equal(by('bs'), 11 + 25 + 33 + 18 + 3);
+  assert.equal(by('mk'), 11 + 25 + 33 + 18 + 3);
+  assert.equal(by('it'), 11 + 25 + 33 + 18 + 3);
+  assert.equal(by('es'), 11 + 25 + 33 + 18 + 3);
+  assert.equal(by('ms'), 9 + 25 + 33); // Malay: no blog index, articles, employer guide or guides yet
+  for (const l of ['de', 'hu', 'pt']) assert.equal(by(l), 9 + 25 + 33 + 3); // home, about, faq, countries index, capabilities, apply, privacy, terms, founder, services, countries, 3 guides; no blog or employer-guide index yet
 });
 test('availability and 404 resolution', () => {
   assert.equal(resolvePath('/ar/countries/saudi-arabia').status, 'ok');
