@@ -1,11 +1,69 @@
 import React, { useState } from 'react';
 import { Link, useParams, Navigate } from '../i18n/router';
-import { getCountryGuide } from '../data/countryGuides';
+import { getCountryGuide, COUNTRY_GUIDES } from '../data/countryGuides';
 import { getCountry } from '../data/countries';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
 import { countryName } from '../content/index.js';
 import { localizeGuide } from '../content/index.js';
+
+// Each guide is shown in the language it was written in; this is the label for that language.
+const GUIDE_LANG_NAMES = {
+  en: 'English', ar: 'العربية', bs: 'Bosanski', bg: 'Български', hr: 'Hrvatski', el: 'Ελληνικά',
+  cs: 'Čeština', et: 'Eesti', hu: 'Magyar', it: 'Italiano', lv: 'Latviešu', lt: 'Lietuvių',
+  ms: 'Bahasa Melayu', sr: 'Srpski', mk: 'Македонски', pl: 'Polski', pt: 'Português',
+  ro: 'Română', sk: 'Slovenčina', sl: 'Slovenščina',
+};
+
+// Inline: **bold** and bare https:// links. Everything else is plain text (React escapes it).
+function inline(text, key) {
+  return text.split(/(\*\*[^*]+\*\*|https?:\/\/[^\s)<]+)/g).map((part, i) => {
+    if (!part) return null;
+    if (part.length > 4 && part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={`${key}-${i}`}>{part.slice(2, -2)}</strong>;
+    }
+    if (/^https?:\/\//.test(part)) {
+      const [, url, tail] = part.match(/^(.*?)([.,;:]*)$/);
+      return (
+        <React.Fragment key={`${key}-${i}`}>
+          <a href={url} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', wordBreak: 'break-all' }}>{url}</a>{tail}
+        </React.Fragment>
+      );
+    }
+    return part;
+  });
+}
+
+// Guide text is simple Markdown: paragraphs, "- " bullets, "1. " numbered steps.
+function RichText({ text, id }) {
+  const blocks = [];
+  let list = null;
+  text.split('\n').forEach((raw) => {
+    const line = raw.trim();
+    if (!line) { list = null; return; }
+    const ul = line.match(/^[-•]\s+(.*)$/);
+    const ol = line.match(/^(\d+)[.)]\s+(.*)$/);
+    if (ul || ol) {
+      const type = ul ? 'ul' : 'ol';
+      if (!list || list.type !== type) { list = { type, start: ol ? Number(ol[1]) : 1, items: [] }; blocks.push(list); }
+      list.items.push(ul ? ul[1] : ol[2]);
+      return;
+    }
+    list = null;
+    blocks.push({ type: 'p', text: line });
+  });
+  const body = { color: 'var(--text-body)', lineHeight: 1.8 };
+  return blocks.map((b, i) => {
+    const key = `${id}-${i}`;
+    if (b.type === 'p') return <p key={key} style={{ ...body, marginBottom: 8 }}>{inline(b.text, key)}</p>;
+    const Tag = b.type;
+    return (
+      <Tag key={key} start={b.type === 'ol' ? b.start : undefined} style={{ ...body, margin: '0 0 12px', paddingInlineStart: 24 }}>
+        {b.items.map((it, j) => <li key={`${key}-${j}`} style={{ marginBottom: 6 }}>{inline(it, `${key}-${j}`)}</li>)}
+      </Tag>
+    );
+  });
+}
 
 export default function CountryGuidePage() {
   const { slug } = useParams();
@@ -59,7 +117,7 @@ export default function CountryGuidePage() {
                 <h1 style={{ margin: 0 }}>{tr('gd.h1', { country: guide.country })}</h1>
               </div>
             </div>
-            <p>{guide.intro}</p>
+            <p lang={guide.lang} dir={guide.dir}>{guide.intro}</p>
           </div>
         </div>
       </div>
@@ -70,20 +128,40 @@ export default function CountryGuidePage() {
 
             {/* Guide Content */}
             <div>
-              {guide.sections.map((section, i) => (
-                <div key={section.title} style={{ marginBottom: 40, paddingBottom: 40, borderBottom: i < guide.sections.length - 1 ? '1px solid var(--gray-100)' : 'none' }}>
-                  <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', fontSize: '1.3rem', marginBottom: 16 }}>
-                    {section.title}
-                  </h2>
-                  {section.content.split('\n').map((line, j) => (
-                    line.trim() ? (
-                      <p key={`line-${i}-${j}`} style={{ color: 'var(--text-body)', lineHeight: 1.8, marginBottom: 8 }}>
-                        {line}
-                      </p>
-                    ) : null
-                  ))}
+              {guide.restricted && (
+                <div role="note" lang="en" dir="ltr" style={{ background: '#fff7e6', border: '1px solid #f0c36d', borderInlineStart: '4px solid #d9822b', borderRadius: 'var(--radius)', padding: '16px 20px', marginBottom: 28 }}>
+                  <div style={{ fontWeight: 700, color: '#8a4b08', marginBottom: 6 }}>Currently restricted: confirm before you spend any money</div>
+                  <p style={{ margin: 0, color: '#5c3a0a', lineHeight: 1.6, fontSize: '0.9rem' }}>
+                    {guide.status.charAt(0).toUpperCase() + guide.status.slice(1)}{/[.!?]$/.test(guide.status) ? '' : '.'} Read section 1 of the guide first.
+                  </p>
                 </div>
-              ))}
+              )}
+
+              {guide.lang !== 'en' && guide.summary?.length > 0 && (
+                <details open lang="en" dir="ltr" style={{ background: 'var(--off-white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius)', padding: '14px 20px', marginBottom: 32 }}>
+                  <summary style={{ cursor: 'pointer', fontWeight: 700, color: 'var(--navy)' }}>English summary</summary>
+                  <ul style={{ color: 'var(--text-body)', lineHeight: 1.7, margin: '12px 0 8px', paddingInlineStart: 20, fontSize: '0.92rem' }}>
+                    {guide.summary.map((s, k) => <li key={`sum-${k}`} style={{ marginBottom: 4 }}>{s}</li>)}
+                  </ul>
+                  <p style={{ margin: 0, color: 'var(--gray-500)', fontSize: '0.8rem' }}>
+                    The full guide below is published in {GUIDE_LANG_NAMES[guide.lang] || guide.lang}.
+                  </p>
+                </details>
+              )}
+
+              <div lang={guide.lang} dir={guide.dir}>
+                {guide.sections.map((section, i) => (
+                  <div key={`sec-${i}`} style={{ marginBottom: 40, paddingBottom: 40, borderBottom: i < guide.sections.length - 1 ? '1px solid var(--gray-100)' : 'none' }}>
+                    <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', fontSize: '1.3rem', marginBottom: 16 }}>
+                      {section.title}
+                    </h2>
+                    <RichText text={section.content} id={`s${i}`} />
+                  </div>
+                ))}
+                {guide.disclaimer && (
+                  <p style={{ color: 'var(--gray-500)', fontSize: '0.85rem', fontStyle: 'italic', lineHeight: 1.7, marginBottom: 24 }}>{guide.disclaimer}</p>
+                )}
+              </div>
 
               {country && (
                 <div style={{ background: 'var(--off-white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius-lg)', padding: 28, marginTop: 16 }}>
@@ -158,9 +236,9 @@ export default function CountryGuidePage() {
                 )}
               </div>
 
-              <div style={{ marginTop: 20, background: 'var(--off-white)', borderRadius: 'var(--radius)', padding: 20, border: '1px solid var(--gray-100)' }}>
+              <div style={{ marginTop: 20, background: 'var(--off-white)', borderRadius: 'var(--radius)', padding: 20, border: '1px solid var(--gray-100)', maxHeight: 340, overflowY: 'auto' }}>
                 <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--gray-500)', marginBottom: 12 }}>{tr('gd.other_guides')}</div>
-                {Object.entries({ 'saudi-arabia': ['🇸🇦', 'Saudi Arabia'], 'uae': ['🇦🇪', 'UAE'], 'poland': ['🇵🇱', 'Poland'] })
+                {Object.entries(COUNTRY_GUIDES).map(([s, g]) => [s, [g.flag, g.country]])
                   .filter(([s]) => s !== slug)
                   .map(([s, [flag, en]]) => (
                     <Link key={s} to={`/employer-guide/${s}`} style={{ display: 'block', color: 'var(--gold)', fontSize: '0.85rem', padding: '6px 0', textDecoration: 'none', borderBottom: '1px solid var(--gray-100)' }}>
