@@ -1994,5 +1994,150 @@ export default [
     "file": "src/components/ContactForm.jsx",
     "en": "Domestic & Household Workers",
     "pt": "Pessoal doméstico e de apoio ao lar"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Home",
+    "pt": "Início"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder",
+    "pt": "Fundador"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO of Bhuiyan Workforce Ltd., a Bangladesh-based international recruitment company built on transparency.",
+    "pt": "Fundador e diretor executivo da Bhuiyan Workforce Ltd., uma empresa de recrutamento internacional sediada no Bangladeche e assente na transparência."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "MD Rezaul Kabir Bhuiyan, Founder and CEO of Bhuiyan Workforce Ltd.",
+    "pt": "MD Rezaul Kabir Bhuiyan, fundador e diretor executivo da Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Role",
+    "pt": "Função"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Education",
+    "pt": "Formação"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Before the company",
+    "pt": "Antes da empresa"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Languages",
+    "pt": "Idiomas"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO, Bhuiyan Workforce Ltd.",
+    "pt": "Fundador e diretor executivo, Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Computer Science and Technology, Jiangnan University, China (2022), first in his department",
+    "pt": "Informática e Tecnologia, Jiangnan University, China (2022), o primeiro do seu departamento"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "ICT and Physics teacher",
+    "pt": "Professor de TIC e Física"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Bengali, English, Hindi, Chinese",
+    "pt": "Bengali, inglês, hindi, chinês"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Workers get honest job offers and a contract explained in Bengali before they commit to anything.",
+    "pt": "Os trabalhadores recebem ofertas de emprego honestas e um contrato explicado em bengali antes de se comprometerem com o que quer que seja."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Every cost is itemised and written down before money changes hands. No hidden fees.",
+    "pt": "Todos os custos são discriminados e registados por escrito antes de haver qualquer pagamento. Sem taxas ocultas."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Skills are tested, not assumed, so employers receive the workers they were promised.",
+    "pt": "As competências são testadas, não presumidas, para que os empregadores recebam os trabalhadores que lhes foram prometidos."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "We follow up after deployment, because a placement does not end at the airport.",
+    "pt": "Acompanhamos os trabalhadores depois do envio, porque enviar um trabalhador para o estrangeiro não termina no aeroporto."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Why he started this company",
+    "pt": "Porque fundou esta empresa"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan watched people in his community overpay unregulated brokers when they tried to find work abroad. He started Bhuiyan Workforce Ltd. to offer the opposite: ethical, transparent placement, where the worker knows the terms and the cost, and the employer knows exactly who is coming.",
+    "pt": "O Sr. Bhuiyan via pessoas da sua comunidade pagarem a mais a agentes não regulamentados quando tentavam encontrar trabalho no estrangeiro. Fundou a Bhuiyan Workforce Ltd. para oferecer o contrário: um recrutamento ético e transparente, em que o trabalhador conhece as condições e o custo e o empregador sabe exatamente quem vai chegar."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "The company is a registered limited company in Bangladesh. Its job is to connect pre-screened Bangladeshi workers with employers in Europe, the Gulf and Southeast Asia.",
+    "pt": "A empresa é uma sociedade limitada registada no Bangladeche. A sua missão é ligar trabalhadores bangladechianos pré-selecionados a empregadores na Europa, no Golfo e no Sudeste Asiático."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Background",
+    "pt": "Percurso"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan studied Computer Science and Technology at Jiangnan University in China and graduated in 2022, ranked first in his department. Before founding the company he taught ICT and Physics.",
+    "pt": "O Sr. Bhuiyan estudou Informática e Tecnologia na Jiangnan University, na China, e licenciou-se em 2022, em primeiro lugar no seu departamento. Antes de fundar a empresa, foi professor de TIC e Física."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "He speaks Bengali, English, Hindi and Chinese, which helps when talking to employers and partners directly.",
+    "pt": "Fala bengali, inglês, hindi e chinês, o que facilita o contacto direto com empregadores e parceiros."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
+    "pt": "Atualmente, dirige as parcerias e o desenvolvimento de negócio da empresa no Golfo, na Europa e na Ásia. Concebeu e desenvolveu também, ele próprio, o sítio Web da empresa e o seu sistema interno de gestão de mão de obra, de modo que os processos dos candidatos, os documentos e os envios ficam registados num só local."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "What the company stands for",
+    "pt": "Os valores da empresa"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Get in touch",
+    "pt": "Contacte-nos"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Employers and partners can write to Mr. Bhuiyan directly at",
+    "pt": "Os empregadores e parceiros podem escrever diretamente ao Sr. Bhuiyan para"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "or on WhatsApp at",
+    "pt": "ou contactá-lo por WhatsApp através do"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "About the company",
+    "pt": "Sobre a empresa"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "See our capabilities",
+    "pt": "Conheça as nossas capacidades"
   }
 ];

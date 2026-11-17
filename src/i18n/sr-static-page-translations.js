@@ -1859,5 +1859,150 @@ export default [
     "file": "src/pages/TermsPage.jsx",
     "en": "Bhuiyan Workforce Ltd. only communicates through official channels: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com, and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to",
     "sr": "Bhuiyan Workforce Ltd. komunicira isključivo putem zvaničnih kanala: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com i telefonskih brojeva navedenih na ovom veb-sajtu. Ne nudimo poslove putem neželjenih poruka na WhatsApp-u, direktnih poruka na društvenim mrežama niti nezvaničnih veb-sajtova. Ako primite sumnjivu poruku koja navodno potiče od nas, molimo Vas da je prijavite na adresu"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Home",
+    "sr": "Početna"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder",
+    "sr": "Osnivač"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO of Bhuiyan Workforce Ltd., a Bangladesh-based international recruitment company built on transparency.",
+    "sr": "Osnivač i izvršni direktor kompanije Bhuiyan Workforce Ltd., međunarodne kompanije za regrutaciju radnika sa sedištem u Bangladešu, izgrađene na transparentnosti."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "MD Rezaul Kabir Bhuiyan, Founder and CEO of Bhuiyan Workforce Ltd.",
+    "sr": "MD Rezaul Kabir Bhuiyan, osnivač i izvršni direktor kompanije Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Role",
+    "sr": "Uloga"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Education",
+    "sr": "Obrazovanje"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Before the company",
+    "sr": "Pre kompanije"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Languages",
+    "sr": "Jezici"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO, Bhuiyan Workforce Ltd.",
+    "sr": "Osnivač i izvršni direktor, Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Computer Science and Technology, Jiangnan University, China (2022), first in his department",
+    "sr": "Računarstvo i tehnologija, Univerzitet Jiangnan, Kina (2022), prvi na svom odseku"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "ICT and Physics teacher",
+    "sr": "Nastavnik informatike i fizike"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Bengali, English, Hindi, Chinese",
+    "sr": "Bengalski, engleski, hindi, kineski"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Workers get honest job offers and a contract explained in Bengali before they commit to anything.",
+    "sr": "Radnici dobijaju poštene ponude za posao i ugovor objašnjen na bengalskom pre nego što se na bilo šta obavežu."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Every cost is itemised and written down before money changes hands. No hidden fees.",
+    "sr": "Svaki trošak je razrađen i zapisan pre nego što novac promeni vlasnika. Bez skrivenih naknada."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Skills are tested, not assumed, so employers receive the workers they were promised.",
+    "sr": "Veštine se proveravaju, a ne pretpostavljaju, kako bi poslodavci dobili radnike koji su im obećani."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "We follow up after deployment, because a placement does not end at the airport.",
+    "sr": "Pratimo radnike i nakon slanja, jer slanje radnika u inostranstvo ne završava na aerodromu."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Why he started this company",
+    "sr": "Zašto je osnovao ovu kompaniju"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan watched people in his community overpay unregulated brokers when they tried to find work abroad. He started Bhuiyan Workforce Ltd. to offer the opposite: ethical, transparent placement, where the worker knows the terms and the cost, and the employer knows exactly who is coming.",
+    "sr": "G. Bhuiyan je gledao kako ljudi iz njegove zajednice preplaćuju neregulisane agente kada traže posao u inostranstvu. Osnovao je Bhuiyan Workforce Ltd. da bi ponudio suprotno: etičnu, transparentnu regrutaciju radnika u kojoj radnik zna uslove i troškove, a poslodavac tačno zna ko dolazi."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "The company is a registered limited company in Bangladesh. Its job is to connect pre-screened Bangladeshi workers with employers in Europe, the Gulf and Southeast Asia.",
+    "sr": "Kompanija je registrovano društvo sa ograničenom odgovornošću u Bangladešu. Njen posao je da povezuje unapred proverene radnike iz Bangladeša sa poslodavcima u Evropi, zemljama Zaliva i jugoistočnoj Aziji."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Background",
+    "sr": "Profesionalni put"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan studied Computer Science and Technology at Jiangnan University in China and graduated in 2022, ranked first in his department. Before founding the company he taught ICT and Physics.",
+    "sr": "G. Bhuiyan je studirao računarstvo i tehnologiju na Univerzitetu Jiangnan u Kini i diplomirao 2022. kao prvi na svom odseku. Pre osnivanja kompanije predavao je informatiku i fiziku."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "He speaks Bengali, English, Hindi and Chinese, which helps when talking to employers and partners directly.",
+    "sr": "Govori bengalski, engleski, hindi i kineski, što pomaže u direktnom razgovoru sa poslodavcima i partnerima."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
+    "sr": "Danas vodi partnerstva i razvoj poslovanja kompanije u zemljama Zaliva, Evropi i Aziji. Takođe je sam osmislio i izradio veb-sajt kompanije i njen interni sistem za upravljanje radnom snagom, tako da se evidencija kandidata, dokumenti i slanja radnika prate na jednom mestu."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "What the company stands for",
+    "sr": "Za šta se kompanija zalaže"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Get in touch",
+    "sr": "Kontaktirajte nas"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Employers and partners can write to Mr. Bhuiyan directly at",
+    "sr": "Poslodavci i partneri mogu direktno da pišu g. Bhuiyanu na adresu"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "or on WhatsApp at",
+    "sr": "ili preko WhatsApp-a na broj"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "About the company",
+    "sr": "O kompaniji"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "See our capabilities",
+    "sr": "Pogledajte naše mogućnosti"
   }
 ];

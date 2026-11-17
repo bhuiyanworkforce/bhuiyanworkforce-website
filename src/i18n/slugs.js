@@ -42,7 +42,7 @@ export const PAGE_SLUGS = {
   en: {
     about: 'about', faq: 'faq', blog: 'blog', countries: 'countries',
     capabilities: 'capabilities', 'employer-guide': 'employer-guide',
-    privacy: 'privacy', terms: 'terms', apply: 'apply', 'worker-guide': 'worker-guide',
+    privacy: 'privacy', terms: 'terms', apply: 'apply', 'worker-guide': 'worker-guide', founder: 'founder',
   },
   ar: {},
   bg: {},
@@ -59,17 +59,17 @@ export const PAGE_SLUGS = {
   pl: {
     about: 'o-nas', faq: 'faq', blog: 'blog', countries: 'kraje',
     capabilities: 'mozliwosci', 'employer-guide': 'przewodnik-dla-pracodawcow',
-    privacy: 'polityka-prywatnosci', terms: 'regulamin', apply: 'aplikuj',
+    privacy: 'polityka-prywatnosci', terms: 'regulamin', apply: 'aplikuj', founder: 'zalozyciel',
   },
   ro: {
     about: 'despre-noi', faq: 'intrebari-frecvente', blog: 'blog', countries: 'tari',
     capabilities: 'capabilitati', 'employer-guide': 'ghid-pentru-angajatori',
-    privacy: 'politica-de-confidentialitate', terms: 'termeni-si-conditii', apply: 'aplica',
+    privacy: 'politica-de-confidentialitate', terms: 'termeni-si-conditii', apply: 'aplica', founder: 'fondator',
   },
   it: {
     about: 'chi-siamo', faq: 'domande-frequenti', blog: 'blog', countries: 'paesi',
     capabilities: 'competenze', 'employer-guide': 'guida-per-i-datori-di-lavoro',
-    privacy: 'informativa-sulla-privacy', terms: 'termini-e-condizioni', apply: 'candidati',
+    privacy: 'informativa-sulla-privacy', terms: 'termini-e-condizioni', apply: 'candidati', founder: 'fondatore',
   },
 };
 

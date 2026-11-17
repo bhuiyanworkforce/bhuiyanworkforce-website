@@ -23,6 +23,8 @@ import { registerUi } from './uiTables.js';
 import { registerPageContent } from '../content/pages.js';
 import { registerContent } from '../content/index.js';
 import { markLangLoaded } from './lazyLangs.js';
+import { registerStaticPageTranslations } from './staticPageText.js';
+import plExtraPages from './pl-static-page-translations.js';
 
 registerLocale('pl', plLocale);
 registerUi('pl', plUi);
@@ -35,4 +37,6 @@ registerContent('pl', {
   post: plPosts,
   guide: plGuides,
 });
+// Hard-coded page strings (currently the Founder page) are matched by English text; see pl-extra-pages.json.
+registerStaticPageTranslations('pl', plExtraPages);
 markLangLoaded('pl');

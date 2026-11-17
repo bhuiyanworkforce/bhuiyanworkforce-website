@@ -1994,5 +1994,150 @@ export default [
     "file": "src/components/ContactForm.jsx",
     "en": "Domestic & Household Workers",
     "ms": "Pekerja Domestik dan Isi Rumah"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Home",
+    "ms": "Laman Utama"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder",
+    "ms": "Pengasas"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO of Bhuiyan Workforce Ltd., a Bangladesh-based international recruitment company built on transparency.",
+    "ms": "Pengasas & Ketua Pegawai Eksekutif Bhuiyan Workforce Ltd., sebuah syarikat perekrutan antarabangsa yang berpangkalan di Bangladesh dan dibina atas dasar ketelusan."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "MD Rezaul Kabir Bhuiyan, Founder and CEO of Bhuiyan Workforce Ltd.",
+    "ms": "MD Rezaul Kabir Bhuiyan, Pengasas dan Ketua Pegawai Eksekutif Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Role",
+    "ms": "Jawatan"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Education",
+    "ms": "Pendidikan"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Before the company",
+    "ms": "Sebelum syarikat"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Languages",
+    "ms": "Bahasa"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO, Bhuiyan Workforce Ltd.",
+    "ms": "Pengasas & Ketua Pegawai Eksekutif, Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Computer Science and Technology, Jiangnan University, China (2022), first in his department",
+    "ms": "Sains Komputer dan Teknologi, Jiangnan University, China (2022), pelajar pertama dalam jabatannya"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "ICT and Physics teacher",
+    "ms": "Guru ICT dan Fizik"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Bengali, English, Hindi, Chinese",
+    "ms": "Bengali, Inggeris, Hindi, Cina"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Workers get honest job offers and a contract explained in Bengali before they commit to anything.",
+    "ms": "Pekerja menerima tawaran kerja yang jujur dan kontrak yang dijelaskan dalam bahasa Bengali sebelum mereka terikat dengan apa-apa."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Every cost is itemised and written down before money changes hands. No hidden fees.",
+    "ms": "Setiap kos dirincikan dan ditulis sebelum wang bertukar tangan. Tiada caj tersembunyi."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Skills are tested, not assumed, so employers receive the workers they were promised.",
+    "ms": "Kemahiran diuji, bukan diandaikan, supaya majikan menerima pekerja yang dijanjikan kepada mereka."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "We follow up after deployment, because a placement does not end at the airport.",
+    "ms": "Kami membuat susulan selepas penghantaran pekerja, kerana penghantaran seorang pekerja ke luar negara tidak berakhir di lapangan terbang."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Why he started this company",
+    "ms": "Mengapa beliau menubuhkan syarikat ini"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan watched people in his community overpay unregulated brokers when they tried to find work abroad. He started Bhuiyan Workforce Ltd. to offer the opposite: ethical, transparent placement, where the worker knows the terms and the cost, and the employer knows exactly who is coming.",
+    "ms": "Encik Bhuiyan melihat orang dalam komunitinya membayar terlalu banyak kepada ejen yang tidak dikawal selia apabila mereka cuba mencari kerja di luar negara. Beliau menubuhkan Bhuiyan Workforce Ltd. untuk menawarkan sebaliknya: perekrutan yang beretika dan telus, yang mana pekerja mengetahui syarat dan kos, dan majikan tahu dengan tepat siapa yang akan tiba."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "The company is a registered limited company in Bangladesh. Its job is to connect pre-screened Bangladeshi workers with employers in Europe, the Gulf and Southeast Asia.",
+    "ms": "Syarikat ini ialah syarikat sendirian berhad yang berdaftar di Bangladesh. Tugasnya ialah menghubungkan pekerja Bangladesh yang telah disaring terlebih dahulu dengan majikan di Eropah, Teluk dan Asia Tenggara."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Background",
+    "ms": "Latar belakang"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan studied Computer Science and Technology at Jiangnan University in China and graduated in 2022, ranked first in his department. Before founding the company he taught ICT and Physics.",
+    "ms": "Encik Bhuiyan belajar Sains Komputer dan Teknologi di Jiangnan University, China, dan menamatkan pengajian pada 2022 sebagai pelajar pertama dalam jabatannya. Sebelum menubuhkan syarikat, beliau mengajar ICT dan Fizik."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "He speaks Bengali, English, Hindi and Chinese, which helps when talking to employers and partners directly.",
+    "ms": "Beliau bertutur dalam bahasa Bengali, Inggeris, Hindi dan Cina, yang membantu apabila berbincang terus dengan majikan dan rakan kongsi."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
+    "ms": "Kini beliau mengetuai perkongsian dan pembangunan perniagaan syarikat di Teluk, Eropah dan Asia. Beliau juga mereka bentuk dan membina sendiri laman web syarikat serta sistem pengurusan tenaga kerja dalamannya, supaya rekod calon, dokumen dan penghantaran pekerja dijejaki di satu tempat."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "What the company stands for",
+    "ms": "Prinsip syarikat"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Get in touch",
+    "ms": "Hubungi kami"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Employers and partners can write to Mr. Bhuiyan directly at",
+    "ms": "Majikan dan rakan kongsi boleh menulis terus kepada Encik Bhuiyan di"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "or on WhatsApp at",
+    "ms": "atau melalui WhatsApp di"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "About the company",
+    "ms": "Mengenai syarikat"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "See our capabilities",
+    "ms": "Lihat keupayaan kami"
   }
 ];

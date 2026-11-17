@@ -1,6 +1,6 @@
 import React from 'react';
 
-// These page strings are loaded with each language's locale bundle (bg, el, hr, sr, bs), not shipped in
+// These page strings are loaded with each language's locale bundle (ar, pl, bg, el, hr, sr, bs, ...), not shipped in
 // the default English client bundle. Each row is { file, en, <lang code> }. Only exact static text and safe text
 // attributes are translated; URLs, form values, identifiers, and user data stay
 // untouched.

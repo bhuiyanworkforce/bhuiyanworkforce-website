@@ -22,6 +22,8 @@ import { registerUi } from './uiTables.js';
 import { registerPageContent } from '../content/pages.js';
 import { registerContent } from '../content/index.js';
 import { markLangLoaded } from './lazyLangs.js';
+import { registerStaticPageTranslations } from './staticPageText.js';
+import arExtraPages from './ar-static-page-translations.js';
 
 registerLocale('ar', arLocale);
 registerUi('ar', arUi);
@@ -33,4 +35,6 @@ registerContent('ar', {
   post: arPosts,
   guide: arGuides,
 });
+// Hard-coded page strings (currently the Founder page) are matched by English text; see ar-extra-pages.json.
+registerStaticPageTranslations('ar', arExtraPages);
 markLangLoaded('ar');
