@@ -1,0 +1,1998 @@
+// Generated from ms-extra-pages.json by scripts/sync-static-translations.mjs.
+export default [
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Home",
+    "ms": "Laman Utama"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities",
+    "ms": "Keupayaan"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "For Employers",
+    "ms": "Untuk Majikan"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd.",
+    "ms": "Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities & Company Overview",
+    "ms": "Keupayaan & Gambaran Keseluruhan Syarikat"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / Save as PDF",
+    "ms": "🖨️ Cetak / Simpan sebagai PDF"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "BHUIYAN WORKFORCE LTD.",
+    "ms": "BHUIYAN WORKFORCE LTD."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities & Company Overview",
+    "ms": "Keupayaan & Gambaran Keseluruhan Syarikat"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Connecting Bangladesh's skilled workforce to the world —",
+    "ms": "Menghubungkan tenaga kerja mahir Bangladesh ke seluruh dunia —"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "25+ countries",
+    "ms": "25+ negara"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "across the Middle East, Europe, Asia & Africa.",
+    "ms": "merentasi Timur Tengah, Eropah, Asia & Afrika."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Who We Are",
+    "ms": "Siapa Kami"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "About Bhuiyan Workforce Ltd.",
+    "ms": "Tentang Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Europe, Asia, and Africa.",
+    "ms": "Bhuiyan Workforce Ltd. ialah syarikat perekrutan dan eksport tenaga kerja yang berpangkalan di Bangladesh, diasaskan oleh MD Rezaul Kabir Bhuiyan. Kami mengkhusus dalam mencari, menyaring secara teliti dan menghantar pekerja mahir, separa mahir dan am kepada majikan antarabangsa di Timur Tengah, Eropah, Asia dan Afrika."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. We are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.",
+    "ms": "Berlandaskan prinsip ketelusan, kebolehpercayaan dan perekrutan beretika, kami berperanan sebagai jambatan khusus antara permintaan tenaga kerja global dengan tenaga kerja Bangladesh yang besar, tekun dan kaya bakat. Kami beroperasi sepenuhnya dalam pencarian calon, penyaringan dan pembinaan hubungan majikan merentasi kesemua 25 kategori pekerjaan."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "What We Supply",
+    "ms": "Apa yang Kami Bekalkan"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Worker Categories",
+    "ms": "Kategori Pekerja"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Skilled, semi-skilled, and specialist workers across all major trade and service sectors.",
+    "ms": "Pekerja mahir, separa mahir dan pakar merentasi semua sektor pekerjaan dan perkhidmatan utama."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Global Reach",
+    "ms": "Jangkauan Global"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Deployment Destinations — 25+ Countries",
+    "ms": "Destinasi Penghantaran — 25+ Negara"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Middle East (7)",
+    "ms": "Timur Tengah (7)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Saudi Arabia · United Arab Emirates · Qatar · Kuwait · Oman · Bahrain · Jordan",
+    "ms": "Arab Saudi · Emiriah Arab Bersatu · Qatar · Kuwait · Oman · Bahrain · Jordan"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Asia Pacific (3)",
+    "ms": "Asia Pasifik (3)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Malaysia · Singapore · Maldives",
+    "ms": "Malaysia · Singapura · Maldives"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Europe (19)",
+    "ms": "Eropah (19)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Italy · Serbia · Portugal · Greece · Slovakia · Slovenia · Latvia · Cyprus · Estonia · Lithuania · Poland · Czech Republic · Bulgaria · Bosnia and Herzegovina · Hungary · Croatia · Romania · Montenegro · North Macedonia",
+    "ms": "Itali · Serbia · Portugal · Yunani · Slovakia · Slovenia · Latvia · Cyprus · Estonia · Lithuania · Poland · Republik Czech · Bulgaria · Bosnia dan Herzegovina · Hungary · Croatia · Romania · Montenegro · Macedonia Utara"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Caucasus (2)",
+    "ms": "Caucasus (2)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Armenia · Georgia",
+    "ms": "Armenia · Georgia"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Indian Ocean (2)",
+    "ms": "Lautan Hindi (2)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Seychelles · Mauritius",
+    "ms": "Seychelles · Mauritius"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "How It Works",
+    "ms": "Cara Ia Berfungsi"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Recruitment Process",
+    "ms": "Proses Perekrutan Kami"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "A structured, transparent 6-step process from requirement intake to worker deployment.",
+    "ms": "Proses 6 langkah yang tersusun dan telus, daripada penerimaan keperluan hingga penghantaran pekerja."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Requirement Intake",
+    "ms": "Penerimaan Keperluan"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We collect detailed job descriptions, skill requirements, visa quotas, salary ranges, and deployment timelines from the client employer.",
+    "ms": "Kami mengumpulkan butiran terperinci skop kerja, keperluan kemahiran, kuota visa, julat gaji dan jadual penghantaran daripada majikan pelanggan."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Candidate Sourcing",
+    "ms": "Pencarian Calon"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We leverage our Bangladesh-wide network of trade professionals, referral partners, and candidate databases to shortlist qualified applicants.",
+    "ms": "Kami memanfaatkan rangkaian pekerja mahir, rakan perujuk dan pangkalan data calon kami di seluruh Bangladesh untuk menyenaraipendekkan pemohon yang layak."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Screening & Testing",
+    "ms": "Penyaringan & Ujian"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate undergoes trade skill tests, structured interviews, and thorough background verification before being presented to the client.",
+    "ms": "Setiap calon menjalani ujian kemahiran, temu duga berstruktur dan pengesahan latar belakang yang menyeluruh sebelum dikemukakan kepada pelanggan."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Medical Clearance",
+    "ms": "Pemeriksaan Perubatan"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers complete mandatory medical fitness examinations at government-approved centres to meet destination country health requirements.",
+    "ms": "Pekerja menjalani pemeriksaan kecergasan perubatan wajib di pusat yang diluluskan kerajaan bagi memenuhi keperluan kesihatan negara destinasi."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Documentation & Visa",
+    "ms": "Dokumentasi & Visa"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We manage all documentation: passport validation, visa applications, attestation, BMET clearance, and pre-departure orientation.",
+    "ms": "Kami menguruskan semua dokumentasi: pengesahan pasport, permohonan visa, pengesahan dokumen (attestation), kelulusan BMET dan orientasi sebelum berlepas."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Deployment",
+    "ms": "Penghantaran"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers are fully briefed, oriented on destination country norms, and deployed on schedule. Post-arrival follow-up is conducted.",
+    "ms": "Pekerja diberi taklimat penuh, diberi orientasi tentang norma negara destinasi dan dihantar mengikut jadual. Susulan selepas ketibaan dilaksanakan."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Advantage",
+    "ms": "Kelebihan Kami"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Why Choose Bhuiyan Workforce?",
+    "ms": "Mengapa Memilih Bhuiyan Workforce?"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Direct Talent Access",
+    "ms": "Akses Terus kepada Bakat"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Tap into Bangladesh's large, motivated labor pool across all major trade and service sectors.",
+    "ms": "Manfaatkan kumpulan tenaga kerja Bangladesh yang besar dan bermotivasi merentasi semua sektor pekerjaan dan perkhidmatan utama."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Pre-Screened Workers",
+    "ms": "Pekerja Disaring Awal"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate is skills-tested, medically cleared, and document-ready before deployment.",
+    "ms": "Setiap calon diuji kemahirannya, disahkan sihat dari segi perubatan dan siap dokumen sebelum dihantar."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Global Reach",
+    "ms": "Jangkauan Global"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Active deployment coverage across 25+ countries spanning the Middle East, Europe, Asia, and Africa.",
+    "ms": "Liputan penghantaran aktif di 25+ negara merentasi Timur Tengah, Eropah, Asia dan Afrika."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Dedicated Support",
+    "ms": "Sokongan Khusus"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Clients receive a dedicated account contact for seamless communication end-to-end.",
+    "ms": "Pelanggan menerima seorang wakil akaun khusus untuk komunikasi yang lancar dari awal hingga akhir."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Fast Turnaround",
+    "ms": "Perjalanan Pantas"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Streamlined process from requirement submission to worker deployment.",
+    "ms": "Proses yang diperkemas daripada penyerahan keperluan hingga penghantaran pekerja."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Office",
+    "ms": "Pejabat"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Kawtoli, Brahmanbaria, Bangladesh 3400",
+    "ms": "Kawtoli, Brahmanbaria, Bangladesh 3400"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Partnerships",
+    "ms": "Perkongsian"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "General Enquiry",
+    "ms": "Pertanyaan Umum"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Mobile / WhatsApp",
+    "ms": "Mudah Alih / WhatsApp"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "+880 1864 567912",
+    "ms": "+880 1864 567912"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Website",
+    "ms": "Laman Web"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Share this capabilities page:",
+    "ms": "Kongsi halaman keupayaan ini:"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "📋 Copy Link",
+    "ms": "📋 Salin Pautan"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / PDF",
+    "ms": "🖨️ Cetak / PDF"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Link copied!",
+    "ms": "Pautan disalin!"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ": please upload a ",
+    "ms": ": sila muat naik fail "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": " file.",
+    "ms": "."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": " is larger than 5 MB. Please choose a smaller file.",
+    "ms": " melebihi 5 MB. Sila pilih fail yang lebih kecil."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Your files together are over 12 MB. Please choose smaller files or compress the images.",
+    "ms": "Jumlah fail anda melebihi 12 MB. Sila pilih fail yang lebih kecil atau mampatkan imej."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Application Submitted!",
+    "ms": "Permohonan Dihantar!"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Thank you,",
+    "ms": "Terima kasih,"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ". We have received your application and will review it within 3–5 working days. If shortlisted, our team will contact you directly.",
+    "ms": ". Kami telah menerima permohonan anda dan akan menyemaknya dalam tempoh 3–5 hari bekerja. Jika disenaraipendekkan, pasukan kami akan menghubungi anda secara terus."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Back to Home →",
+    "ms": "Kembali ke Laman Utama →"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Home",
+    "ms": "Laman Utama"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Apply for Work",
+    "ms": "Mohon Kerja"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "For Workers",
+    "ms": "Untuk Pekerja"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Apply for International Employment",
+    "ms": "Mohon Pekerjaan Antarabangsa"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Complete the form below to register your interest in overseas employment.",
+    "ms": "Lengkapkan borang di bawah untuk mendaftarkan minat anda terhadap pekerjaan di luar negara."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Personal Details",
+    "ms": "Butiran Peribadi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Professional Info",
+    "ms": "Maklumat Profesional"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Documents & Submit",
+    "ms": "Dokumen & Hantar"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Personal Details",
+    "ms": "Butiran Peribadi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Full Name (as in passport) *",
+    "ms": "Nama Penuh (seperti dalam pasport) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mohammad Rafiqul Islam",
+    "ms": "Mohammad Rafiqul Islam"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Date of Birth *",
+    "ms": "Tarikh Lahir *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Nationality",
+    "ms": "Warganegara"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bangladeshi",
+    "ms": "Bangladesh"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Phone / WhatsApp *",
+    "ms": "Telefon / WhatsApp *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "+880 17XX XXX XXX",
+    "ms": "+880 17XX XXX XXX"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Email Address",
+    "ms": "Alamat E-mel"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "optional",
+    "ms": "pilihan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Home Address (District/Division) *",
+    "ms": "Alamat Rumah (Daerah/Bahagian) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Brahmanbaria, Chittagong Division",
+    "ms": "cth. Brahmanbaria, Bahagian Chittagong"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Number",
+    "ms": "Nombor Pasport"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "A1234567",
+    "ms": "A1234567"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Expiry Date",
+    "ms": "Tarikh Tamat Tempoh Pasport"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Professional Info",
+    "ms": "Maklumat Profesional"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Category *",
+    "ms": "Kategori Pekerjaan *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select category…",
+    "ms": "Pilih kategori…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Construction & Engineering",
+    "ms": "Pembinaan dan Kejuruteraan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Oil & Gas",
+    "ms": "Minyak dan Gas"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Drivers & Transport",
+    "ms": "Pemandu dan Pengangkutan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Chefs & Hospitality",
+    "ms": "Chef dan Hospitaliti"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Security Guards",
+    "ms": "Pengawal Keselamatan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Cleaning & Housekeeping",
+    "ms": "Pembersihan dan Pengemasan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Farm & Garden",
+    "ms": "Ladang dan Taman"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Warehouse & Logistics",
+    "ms": "Gudang dan Logistik"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Factory & Manufacturing",
+    "ms": "Kilang dan Pembuatan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Retail & Supermarket Staff",
+    "ms": "Kakitangan Peruncitan dan Pasar Raya"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Painting & Finishing",
+    "ms": "Mengecat dan Kemasan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "ms": "Pemasangan Tetulang Besi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Scaffolding & Formwork",
+    "ms": "Perancah dan Acuan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "ms": "Landskap dan Penyelenggaraan Kawasan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mason & Bricklaying",
+    "ms": "Kerja Batu dan Bata"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "ms": "Pembantu Elektrik dan Penarik Kabel"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Laundry & Linen Services",
+    "ms": "Perkhidmatan Dobi dan Linen"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Food Processing & Packing",
+    "ms": "Pemprosesan dan Pembungkusan Makanan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Fishery & Aquaculture",
+    "ms": "Pekerja Perikanan dan Akuakultur"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Caregiving & Elderly Support",
+    "ms": "Penjagaan dan Sokongan Warga Emas"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Other",
+    "ms": "Lain-lain"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Specific Role / Trade *",
+    "ms": "Peranan / Pekerjaan Khusus *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Mason, Welder, Chef de Partie",
+    "ms": "cth. Tukang Batu, Pengimpal, Chef de Partie"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Years of Experience *",
+    "ms": "Tahun Pengalaman *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "ms": "Pilih…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Less than 1 year",
+    "ms": "Kurang daripada 1 tahun"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "1–2 years",
+    "ms": "1–2 tahun"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "3–5 years",
+    "ms": "3–5 tahun"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "6–10 years",
+    "ms": "6–10 tahun"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "10+ years",
+    "ms": "Lebih 10 tahun"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Preferred Country *",
+    "ms": "Negara Pilihan *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select country…",
+    "ms": "Pilih negara…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Saudi Arabia",
+    "ms": "Arab Saudi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "UAE",
+    "ms": "UAE"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Qatar",
+    "ms": "Qatar"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Kuwait",
+    "ms": "Kuwait"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Oman",
+    "ms": "Oman"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bahrain",
+    "ms": "Bahrain"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Jordan",
+    "ms": "Jordan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Malaysia",
+    "ms": "Malaysia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Singapore",
+    "ms": "Singapura"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Maldives",
+    "ms": "Maldives"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Poland",
+    "ms": "Poland"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Romania",
+    "ms": "Romania"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Serbia",
+    "ms": "Serbia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Portugal",
+    "ms": "Portugal"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Greece",
+    "ms": "Yunani"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Hungary",
+    "ms": "Hungary"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Croatia",
+    "ms": "Croatia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Czech Republic",
+    "ms": "Republik Czech"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Lithuania",
+    "ms": "Lithuania"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Latvia",
+    "ms": "Latvia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Estonia",
+    "ms": "Estonia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bulgaria",
+    "ms": "Bulgaria"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Cyprus",
+    "ms": "Cyprus"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Slovakia",
+    "ms": "Slovakia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bosnia and Herzegovina",
+    "ms": "Bosnia dan Herzegovina"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Montenegro",
+    "ms": "Montenegro"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Slovenia",
+    "ms": "Slovenia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "North Macedonia",
+    "ms": "Macedonia Utara"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Italy",
+    "ms": "Itali"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Armenia",
+    "ms": "Armenia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Georgia",
+    "ms": "Georgia"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Seychelles",
+    "ms": "Seychelles"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mauritius",
+    "ms": "Mauritius"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Open to Any Country",
+    "ms": "Terbuka kepada Mana-mana Negara"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Available From",
+    "ms": "Boleh Bermula Dari"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Education Level",
+    "ms": "Tahap Pendidikan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "ms": "Pilih…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No formal education",
+    "ms": "Tiada pendidikan formal"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Primary (Class 1–5)",
+    "ms": "Rendah (Darjah 1–5)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "JSC / Class 8",
+    "ms": "JSC / Kelas 8"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "SSC / Class 10",
+    "ms": "SSC / Kelas 10"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "HSC / Class 12",
+    "ms": "HSC / Kelas 12"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Diploma / Vocational",
+    "ms": "Diploma / Vokasional"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bachelor's Degree",
+    "ms": "Ijazah Sarjana Muda"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Master's Degree or above",
+    "ms": "Ijazah Sarjana atau lebih tinggi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Languages Spoken",
+    "ms": "Bahasa yang Dituturkan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Bengali, English (basic), Arabic (basic)",
+    "ms": "cth. Bengali, Inggeris (asas), Arab (asas)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Medical Fitness Certificate?",
+    "ms": "Perakuan Kecergasan Perubatan?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "ms": "Pilih…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — valid certificate",
+    "ms": "Ya — perakuan sah"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet obtained",
+    "ms": "Tidak — belum diperoleh"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Expired — needs renewal",
+    "ms": "Tamat tempoh — perlu diperbaharui"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Test Certificate?",
+    "ms": "Perakuan Ujian Kemahiran?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "ms": "Pilih…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — certified",
+    "ms": "Ya — telah diperakui"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet tested",
+    "ms": "Tidak — belum diuji"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "In progress",
+    "ms": "Dalam proses"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "BMET Smart Card?",
+    "ms": "Kad Pintar BMET?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "ms": "Pilih…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — registered",
+    "ms": "Ya — telah didaftarkan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet registered",
+    "ms": "Tidak — belum didaftarkan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "In progress",
+    "ms": "Dalam proses"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "← Back",
+    "ms": "← Kembali"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Documents & Submit",
+    "ms": "Dokumen & Hantar"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Documents & Submit",
+    "ms": "Dokumen & Hantar"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload CV / Resume (PDF or Word, max 5MB)",
+    "ms": "Muat Naik CV / Resume (PDF atau Word, maks. 5MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Passport Copy (PDF or image, max 5MB)",
+    "ms": "Muat Naik Salinan Pasport (PDF atau imej, maks. 5MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Trade/Skills Certificate (optional)",
+    "ms": "Muat Naik Sijil Kemahiran/Pekerjaan (pilihan)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.",
+    "ms": "Semua fail yang dimuat naik (CV, salinan pasport, sijil) akan dihantar sebagai lampiran e-mel untuk disemak oleh pasukan kami."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Additional Information / Cover Letter",
+    "ms": "Maklumat Tambahan / Surat Iringan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…",
+    "ms": "Ceritakan kepada kami tentang pengalaman anda, pekerjaan terdahulu di luar negara, kemahiran, dan sebab anda ingin bekerja di luar negara…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Important:",
+    "ms": "Penting:"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our",
+    "ms": "Dengan menghantar permohonan ini, anda mengesahkan bahawa semua maklumat yang diberikan adalah tepat. Bhuiyan Workforce Ltd. akan menghubungi calon yang disenaraipendekkan dalam tempoh 3–5 hari bekerja. Penghantaran permohonan tidak menjamin penempatan. Kami mengendalikan data anda mengikut"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Privacy Policy",
+    "ms": "Dasar Privasi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ".",
+    "ms": "kami."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "I have read the",
+    "ms": "Saya telah membaca"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Privacy Policy",
+    "ms": "Dasar Privasi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed.",
+    "ms": "dan saya bersetuju Bhuiyan Workforce Ltd. memproses data peribadi saya, termasuk salinan pasport dan dokumen lain yang saya muat naik, untuk menilai permohonan saya dan mengatur perekrutan. Saya faham bahawa profil saya hanya dikongsi dengan majikan selepas saya dimaklumkan dan bersetuju."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Please tick the box above to submit your application.",
+    "ms": "Sila tandakan kotak di atas untuk menghantar permohonan anda."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Something went wrong. Please call us on",
+    "ms": "Berlaku ralat. Sila hubungi kami di"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "or email",
+    "ms": "atau e-mel"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ".",
+    "ms": "."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "← Back",
+    "ms": "← Kembali"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Submitting…",
+    "ms": "Sedang menghantar…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Submit Application →",
+    "ms": "Hantar Permohonan →"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Home",
+    "ms": "Laman Utama"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Privacy Policy",
+    "ms": "Dasar Privasi"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Privacy Policy",
+    "ms": "Dasar Privasi"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "How Bhuiyan Workforce Ltd. collects, uses, and protects your personal information.",
+    "ms": "Cara Bhuiyan Workforce Ltd. mengumpul, menggunakan dan melindungi maklumat peribadi anda."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Last updated: November 2026",
+    "ms": "Kemas kini terakhir: November 2026"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "1. Who We Are",
+    "ms": "1. Siapa Kami"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. (\"we\", \"us\", \"our\") is a Bangladesh-based international manpower recruitment company. Our registered office is in Brahmanbaria, Bangladesh. Our website is bhuiyanworkforce.com.",
+    "ms": "Bhuiyan Workforce Ltd. (“kami”, “kita” atau “milik kami”) ialah syarikat perekrutan tenaga kerja antarabangsa yang berpangkalan di Bangladesh. Pejabat berdaftar kami terletak di Brahmanbaria, Bangladesh. Laman web kami ialah bhuiyanworkforce.com."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For all privacy-related enquiries, contact us at",
+    "ms": "Untuk semua pertanyaan berkaitan privasi, hubungi kami di"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ".",
+    "ms": "."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "2. Who This Policy Applies To",
+    "ms": "2. Kepada Siapa Dasar Ini Terpakai"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy applies to:",
+    "ms": "Dasar Privasi ini terpakai kepada:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Employers",
+    "ms": "Majikan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— companies and individuals who contact us to source workers",
+    "ms": "— syarikat dan individu yang menghubungi kami untuk mendapatkan pekerja"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates",
+    "ms": "Calon pekerja"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— individuals who register interest in overseas employment opportunities",
+    "ms": "— individu yang mendaftarkan minat terhadap peluang pekerjaan di luar negara"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Website visitors",
+    "ms": "Pelawat laman web"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— anyone who browses bhuiyanworkforce.com",
+    "ms": "— sesiapa sahaja yang melayari bhuiyanworkforce.com"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "3. Information We Collect",
+    "ms": "3. Maklumat yang Kami Kumpulkan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We collect information in the following ways:",
+    "ms": "Kami mengumpul maklumat melalui cara berikut:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form submissions",
+    "ms": "Penghantaran borang hubungan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— name, company name, email address, and your message",
+    "ms": "— nama, nama syarikat, alamat e-mel dan mesej anda"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Direct communications",
+    "ms": "Komunikasi terus"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— emails, WhatsApp messages, and phone calls you initiate with us",
+    "ms": "— e-mel, mesej WhatsApp dan panggilan telefon yang anda mulakan dengan kami"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate registrations",
+    "ms": "Pendaftaran calon pekerja"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— name, date of birth, nationality, passport details, trade qualifications, work experience, and supporting documents such as certificates and photographs",
+    "ms": "— nama, tarikh lahir, kewarganegaraan, butiran pasport, kelayakan pekerjaan, pengalaman kerja dan dokumen sokongan seperti sijil dan gambar"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical data",
+    "ms": "Data teknikal"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— IP address, browser type, and pages visited, collected automatically when you use our website",
+    "ms": "— alamat IP, jenis pelayar dan halaman yang dilawati, dikumpulkan secara automatik apabila anda menggunakan laman web kami"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "ms": "Calon pekerja memohon melalui borang dalam talian di laman web ini. Dokumen yang anda muat naik di sana, seperti CV, salinan pasport dan sijil, dihantar kepada pasukan kami melalui e-mel dan melalui pelayan penyedia pengehosan kami (Cloudflare) dalam perjalanannya. Sebelum anda boleh menghantar borang, anda diminta mengesahkan bahawa anda telah membaca dasar ini dan bersetuju dengan pemprosesan ini, dan kami menyimpan rekod masa persetujuan itu diberikan bersama permohonan anda."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not collect payment information. All financial transactions related to our services are conducted offline.",
+    "ms": "Kami tidak mengumpul maklumat pembayaran. Semua transaksi kewangan berkaitan perkhidmatan kami dijalankan secara luar talian."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "4. How We Use Your Information",
+    "ms": "4. Cara Kami Menggunakan Maklumat Anda"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We use the information we collect to:",
+    "ms": "Kami menggunakan maklumat yang dikumpulkan untuk:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Respond to employer enquiries and prepare recruitment proposals",
+    "ms": "Membalas pertanyaan majikan dan menyediakan cadangan perekrutan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Match worker candidates with suitable employer opportunities",
+    "ms": "Memadankan calon pekerja dengan peluang majikan yang sesuai"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Process BMET registration, visa applications, medical clearances, and other deployment documentation",
+    "ms": "Memproses pendaftaran BMET, permohonan visa, pemeriksaan perubatan dan dokumentasi penghantaran yang lain"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Communicate with you about the status of an active recruitment or deployment",
+    "ms": "Berhubung dengan anda mengenai status perekrutan atau penghantaran yang sedang berjalan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Comply with legal obligations under Bangladeshi law and the laws of destination countries",
+    "ms": "Mematuhi kewajipan undang-undang di bawah undang-undang Bangladesh dan undang-undang negara destinasi"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Improve our website and services based on usage patterns",
+    "ms": "Menambah baik laman web dan perkhidmatan kami berdasarkan corak penggunaan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not sell, rent, or trade your personal data to any third party for commercial purposes.",
+    "ms": "Kami tidak menjual, menyewakan atau memperdagangkan data peribadi anda kepada mana-mana pihak ketiga untuk tujuan komersial."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "5. Data Sharing",
+    "ms": "5. Perkongsian Data"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may share your personal data only in the following circumstances:",
+    "ms": "Kami hanya boleh berkongsi data peribadi anda dalam keadaan berikut:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With employers",
+    "ms": "Dengan majikan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— worker candidate profiles are shared with prospective employers only after the candidate has been informed and has consented",
+    "ms": "— profil calon pekerja dikongsi dengan bakal majikan hanya selepas calon dimaklumkan dan memberikan persetujuan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With government authorities",
+    "ms": "Dengan pihak berkuasa kerajaan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— BMET, Bangladesh embassies, destination-country immigration authorities, and GAMCA-approved medical centres, as required by law during the deployment process",
+    "ms": "— BMET, kedutaan Bangladesh, pihak berkuasa imigresen negara destinasi dan pusat perubatan yang diluluskan GAMCA, seperti yang dikehendaki undang-undang semasa proses penghantaran"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With service providers",
+    "ms": "Dengan penyedia perkhidmatan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— third-party providers who assist us in operating our website and communications, bound by confidentiality obligations",
+    "ms": "— penyedia pihak ketiga yang membantu kami mengendalikan laman web dan komunikasi kami, terikat dengan kewajipan kerahsiaan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "When required by law",
+    "ms": "Apabila dikehendaki oleh undang-undang"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— in response to a lawful request from a court, government authority, or regulatory body in Bangladesh",
+    "ms": "— sebagai tindak balas kepada permintaan sah daripada mahkamah, pihak berkuasa kerajaan atau badan kawal selia di Bangladesh"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "6. Cookies and Tracking",
+    "ms": "6. Kuki dan Penjejakan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Our website uses minimal cookies necessary for basic functionality. We do not use advertising cookies or third-party tracking pixels. Technical data such as page visits may be logged by our hosting provider (Cloudflare) for security and performance purposes. You can disable cookies in your browser settings without affecting your ability to use the website.",
+    "ms": "Laman web kami menggunakan kuki minimum yang diperlukan untuk fungsi asas. Kami tidak menggunakan kuki pengiklanan atau piksel penjejakan pihak ketiga. Data teknikal seperti lawatan halaman mungkin direkodkan oleh penyedia pengehosan kami (Cloudflare) untuk tujuan keselamatan dan prestasi. Anda boleh melumpuhkan kuki dalam tetapan pelayar anda tanpa menjejaskan keupayaan anda menggunakan laman web ini."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "7. Data Retention",
+    "ms": "7. Pengekalan Data"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form enquiries",
+    "ms": "Pertanyaan borang hubungan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 24 months from the date of submission",
+    "ms": "— disimpan sehingga 24 bulan dari tarikh penghantaran"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate profiles",
+    "ms": "Profil calon pekerja"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 3 years, or until the candidate requests deletion",
+    "ms": "— disimpan sehingga 3 tahun, atau sehingga calon meminta pemadaman"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Deployment documentation",
+    "ms": "Dokumentasi penghantaran"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 7 years where required by Bangladeshi law or the laws of the destination country",
+    "ms": "— disimpan sehingga 7 tahun apabila dikehendaki oleh undang-undang Bangladesh atau undang-undang negara destinasi"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical/website logs",
+    "ms": "Log teknikal/laman web"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 90 days",
+    "ms": "— disimpan sehingga 90 hari"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "8. Your Rights",
+    "ms": "8. Hak Anda"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "You have the right to:",
+    "ms": "Anda berhak untuk:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Access",
+    "ms": "Akses"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— request a copy of the personal data we hold about you",
+    "ms": "— meminta salinan data peribadi yang kami simpan tentang anda"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Correction",
+    "ms": "Pembetulan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— request that inaccurate or incomplete data be corrected",
+    "ms": "— meminta supaya data yang tidak tepat atau tidak lengkap dibetulkan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Deletion",
+    "ms": "Pemadaman"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— request that your personal data be deleted, subject to our legal obligations to retain certain records",
+    "ms": "— meminta supaya data peribadi anda dipadamkan, tertakluk kepada kewajipan undang-undang kami untuk menyimpan rekod tertentu"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Objection",
+    "ms": "Bantahan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— object to our use of your data for any purpose other than legal compliance",
+    "ms": "— membantah penggunaan data anda untuk sebarang tujuan selain pematuhan undang-undang"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any of these rights, email us at",
+    "ms": "Untuk menggunakan mana-mana hak ini, e-mel kami di"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We will respond within 30 days.",
+    "ms": ". Kami akan membalas dalam tempoh 30 hari."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "9. GDPR — Additional Rights for EU/EEA Data Subjects",
+    "ms": "9. GDPR — Hak Tambahan untuk Subjek Data EU/EEA"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "If you are located in the European Union or European Economic Area, the General Data Protection Regulation (GDPR) gives you additional rights beyond those listed in Section 8, and requires us to disclose the following:",
+    "ms": "Jika anda berada di Kesatuan Eropah atau Kawasan Ekonomi Eropah, Peraturan Perlindungan Data Am (GDPR) memberikan anda hak tambahan selain yang disenaraikan dalam Bahagian 8, dan menghendaki kami mendedahkan perkara berikut:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Legal basis for processing",
+    "ms": "Asas undang-undang pemprosesan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— we process your data based on your consent (when you submit a contact or application form), our legitimate interest in operating a recruitment business, and, where applicable, the performance of a contract with you or your employer",
+    "ms": "— kami memproses data anda berdasarkan persetujuan anda (apabila anda menghantar borang hubungan atau permohonan), kepentingan sah kami dalam mengendalikan perniagaan perekrutan, dan, jika berkenaan, pelaksanaan kontrak dengan anda atau majikan anda"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Data Controller",
+    "ms": "Pengawal Data"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— Bhuiyan Workforce Ltd. is the data controller for personal data submitted through this website",
+    "ms": "— Bhuiyan Workforce Ltd. ialah pengawal data bagi data peribadi yang dihantar melalui laman web ini"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to restriction of processing",
+    "ms": "Hak untuk menyekat pemprosesan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— you may request that we limit how we use your data while a dispute about its accuracy or our right to use it is resolved",
+    "ms": "— anda boleh meminta kami menghadkan cara kami menggunakan data anda semasa pertikaian mengenai ketepatannya atau hak kami menggunakannya diselesaikan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to data portability",
+    "ms": "Hak kepada kebolehpindahan data"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— you may request your data in a structured, commonly used, machine-readable format",
+    "ms": "— anda boleh meminta data anda dalam format berstruktur, lazim digunakan dan boleh dibaca mesin"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to withdraw consent",
+    "ms": "Hak untuk menarik balik persetujuan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— where processing is based on consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal",
+    "ms": "— apabila pemprosesan berdasarkan persetujuan, anda boleh menariknya balik pada bila-bila masa tanpa menjejaskan kesahihan pemprosesan yang dilakukan sebelum penarikan balik"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to lodge a complaint",
+    "ms": "Hak untuk membuat aduan"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— you have the right to lodge a complaint with the data protection supervisory authority in your EU/EEA country of residence",
+    "ms": "— anda berhak membuat aduan kepada pihak berkuasa penyelia perlindungan data di negara EU/EEA tempat anda menetap"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any GDPR right, email us at",
+    "ms": "Untuk menggunakan mana-mana hak GDPR, e-mel kami di"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We aim to respond to GDPR requests within 30 days, consistent with regulatory timelines.",
+    "ms": ". Kami berusaha membalas permintaan GDPR dalam tempoh 30 hari, selaras dengan garis masa kawal selia."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This section is provided as a good-faith disclosure and does not constitute legal advice. We recommend consulting a qualified data protection professional for guidance specific to your circumstances.",
+    "ms": "Bahagian ini disediakan sebagai pendedahan suci hati dan bukan nasihat undang-undang. Kami mengesyorkan anda berunding dengan profesional perlindungan data yang berkelayakan untuk panduan khusus kepada keadaan anda."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "10. Data Security",
+    "ms": "10. Keselamatan Data"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We implement appropriate technical and organisational measures to protect your personal data from unauthorised access, loss, or disclosure. These include encrypted email transmission, restricted access to candidate records, and secure cloud storage. No method of transmission over the internet is 100% secure; however, we take all reasonable steps to protect your information.",
+    "ms": "Kami melaksanakan langkah teknikal dan organisasi yang sesuai untuk melindungi data peribadi anda daripada akses tanpa kebenaran, kehilangan atau pendedahan. Langkah ini termasuk penghantaran e-mel yang disulitkan, akses terhad kepada rekod calon dan penyimpanan awan yang selamat. Tiada kaedah penghantaran melalui internet yang 100% selamat; namun, kami mengambil semua langkah yang munasabah untuk melindungi maklumat anda."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "11. International Data Transfers",
+    "ms": "11. Pemindahan Data Antarabangsa"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "As an international recruitment agency, we necessarily transfer personal data across borders — for example, sharing a worker's documents with an employer in Saudi Arabia or submitting visa applications to European embassies. We do this only where necessary for the recruitment process and in accordance with applicable law.",
+    "ms": "Sebagai syarikat perekrutan antarabangsa, kami semestinya memindahkan data peribadi merentasi sempadan — contohnya, berkongsi dokumen pekerja dengan majikan di Arab Saudi atau menghantar permohonan visa kepada kedutaan Eropah. Kami berbuat demikian hanya apabila perlu untuk proses perekrutan dan selaras dengan undang-undang yang terpakai."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "12. Governing Law",
+    "ms": "12. Undang-undang Terpakai"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy is governed by the laws of Bangladesh, including applicable Bangladeshi cyber-security and data protection laws and regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.",
+    "ms": "Dasar Privasi ini ditadbir oleh undang-undang Bangladesh, termasuk undang-undang dan peraturan keselamatan siber serta perlindungan data Bangladesh yang terpakai. Sebarang pertikaian yang timbul daripada dasar ini tertakluk kepada bidang kuasa mahkamah Bangladesh."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "13. Changes to This Policy",
+    "ms": "13. Perubahan kepada Dasar Ini"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. We will post the updated version on this page with a revised \"last updated\" date. Continued use of the website after any update constitutes acceptance of the revised policy.",
+    "ms": "Kami boleh mengemas kini Dasar Privasi ini dari semasa ke semasa untuk mencerminkan perubahan dalam amalan kami atau undang-undang yang terpakai. Kami akan menyiarkan versi terkini di halaman ini dengan tarikh “kemas kini terakhir” yang disemak. Penggunaan laman web yang berterusan selepas sebarang kemas kini bermakna anda menerima dasar yang telah disemak."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "14. Contact",
+    "ms": "14. Hubungi Kami"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For any privacy-related questions, requests, or complaints, please contact us:",
+    "ms": "Untuk sebarang soalan, permintaan atau aduan berkaitan privasi, sila hubungi kami:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Email:",
+    "ms": "E-mel:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "WhatsApp:",
+    "ms": "WhatsApp:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Home",
+    "ms": "Laman Utama"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Terms of Service",
+    "ms": "Terma Perkhidmatan"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Terms of Service",
+    "ms": "Terma Perkhidmatan"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "The terms and conditions governing use of the Bhuiyan Workforce Ltd. website and services.",
+    "ms": "Terma dan syarat yang mengawal penggunaan laman web dan perkhidmatan Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Last updated: May 2026",
+    "ms": "Kemas kini terakhir: Mei 2026"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "1. Acceptance of Terms",
+    "ms": "1. Penerimaan Terma"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "By accessing or using the bhuiyanworkforce.com website, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use the website. These terms apply to all visitors, employers, and worker candidates who access our website or engage with our services.",
+    "ms": "Dengan mengakses atau menggunakan laman web bhuiyanworkforce.com, anda bersetuju untuk terikat dengan Terma Perkhidmatan ini dan Dasar Privasi kami. Jika anda tidak bersetuju dengan terma ini, sila jangan gunakan laman web ini. Terma ini terpakai kepada semua pelawat, majikan dan calon pekerja yang mengakses laman web kami atau menggunakan perkhidmatan kami."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "2. About Bhuiyan Workforce Ltd.",
+    "ms": "2. Tentang Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based international manpower recruitment company. We connect skilled Bangladeshi workers with employers across 25+ countries in the Middle East, Europe, Asia, and Africa. Our recruitment and deployment services are governed by separate written service agreements between Bhuiyan Workforce Ltd. and the engaging employer.",
+    "ms": "Bhuiyan Workforce Ltd. ialah syarikat perekrutan tenaga kerja antarabangsa yang berpangkalan di Bangladesh. Kami menghubungkan pekerja Bangladesh yang mahir dengan majikan di 25+ negara di Timur Tengah, Eropah, Asia dan Afrika. Perkhidmatan perekrutan dan penghantaran kami ditadbir oleh perjanjian perkhidmatan bertulis yang berasingan antara Bhuiyan Workforce Ltd. dengan majikan yang melantik kami."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "3. Website Use",
+    "ms": "3. Penggunaan Laman Web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may use this website for lawful purposes only. You agree not to:",
+    "ms": "Anda hanya boleh menggunakan laman web ini untuk tujuan yang sah. Anda bersetuju untuk tidak:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use the website in any way that violates applicable laws or regulations in Bangladesh or your jurisdiction",
+    "ms": "Menggunakan laman web dengan cara yang melanggar undang-undang atau peraturan yang terpakai di Bangladesh atau bidang kuasa anda"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Submit false, misleading, or fraudulent information through any form on the website",
+    "ms": "Menghantar maklumat palsu, mengelirukan atau menipu melalui mana-mana borang di laman web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Impersonate any person, company, or organisation",
+    "ms": "Menyamar sebagai mana-mana orang, syarikat atau organisasi"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Attempt to gain unauthorised access to any part of the website, our servers, or any connected systems",
+    "ms": "Cuba mendapatkan akses tanpa kebenaran kepada mana-mana bahagian laman web, pelayan kami atau sistem yang bersambung"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use automated tools, scrapers, or bots to extract content from the website without our written permission",
+    "ms": "Menggunakan alat automatik, pengikis web (scraper) atau bot untuk mengekstrak kandungan laman web tanpa kebenaran bertulis kami"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Transmit unsolicited commercial communications (spam) through any channel on the website",
+    "ms": "Menghantar komunikasi komersial yang tidak diminta (spam) melalui mana-mana saluran di laman web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Upload or transmit any content that is harmful, offensive, defamatory, or infringes on the rights of others",
+    "ms": "Memuat naik atau menghantar sebarang kandungan yang berbahaya, menyinggung, memfitnah atau melanggar hak orang lain"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "4. Employer Enquiries",
+    "ms": "4. Pertanyaan Majikan"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Employers may submit recruitment enquiries through our contact form, email, or WhatsApp. Submitting an enquiry does not constitute a binding contract or guarantee of service. We will respond to genuine enquiries within 24 hours but reserve the right to decline any enquiry at our sole discretion.",
+    "ms": "Majikan boleh menghantar pertanyaan perekrutan melalui borang hubungan, e-mel atau WhatsApp kami. Menghantar pertanyaan tidak membentuk kontrak yang mengikat atau jaminan perkhidmatan. Kami akan membalas pertanyaan yang tulen dalam tempoh 24 jam tetapi berhak menolak sebarang pertanyaan mengikut budi bicara kami sendiri."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any formal recruitment engagement will be subject to a separate written service agreement specifying the scope of services, fees, timelines, and obligations of both parties. No recruitment fees or service charges are collected through this website — all payments are handled offline under the terms of that agreement.",
+    "ms": "Sebarang pelantikan perekrutan secara rasmi tertakluk kepada perjanjian perkhidmatan bertulis yang berasingan yang menyatakan skop perkhidmatan, yuran, garis masa dan kewajipan kedua-dua pihak. Tiada yuran perekrutan atau caj perkhidmatan dikutip melalui laman web ini — semua pembayaran dikendalikan secara luar talian mengikut terma perjanjian tersebut."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "5. Worker Candidate Registrations",
+    "ms": "5. Pendaftaran Calon Pekerja"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Worker candidates who register interest in overseas employment through this website consent to their information being held on our candidate database and, where a suitable opportunity arises, being shared with prospective employers. Registering interest does not guarantee placement or employment. Bhuiyan Workforce Ltd. acts as a recruitment intermediary and is not itself the employer.",
+    "ms": "Calon pekerja yang mendaftarkan minat terhadap pekerjaan di luar negara melalui laman web ini bersetuju maklumat mereka disimpan dalam pangkalan data calon kami dan, apabila peluang yang sesuai timbul, dikongsi dengan bakal majikan. Pendaftaran minat tidak menjamin penempatan atau pekerjaan. Bhuiyan Workforce Ltd. bertindak sebagai pengantara perekrutan dan bukan majikan itu sendiri."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Candidates are responsible for ensuring all information and documents submitted are accurate and genuine. Submission of fraudulent documents is a criminal offence under Bangladeshi law and will result in immediate disqualification and may be reported to the relevant authorities.",
+    "ms": "Calon bertanggungjawab memastikan semua maklumat dan dokumen yang dihantar adalah tepat dan tulen. Penghantaran dokumen palsu ialah kesalahan jenayah di bawah undang-undang Bangladesh dan akan mengakibatkan hilang kelayakan serta-merta serta boleh dilaporkan kepada pihak berkuasa berkaitan."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "6. Accuracy of Information",
+    "ms": "6. Ketepatan Maklumat"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We endeavour to keep all information on this website accurate, current, and complete. However, we make no warranties — express or implied — regarding the accuracy, completeness, or fitness for purpose of any content. Country-specific information including visa types, processing times, salary ranges, and government fees are indicative and subject to change without notice. Employers and candidates should verify all regulatory requirements with the relevant authorities before proceeding.",
+    "ms": "Kami berusaha memastikan semua maklumat di laman web ini tepat, terkini dan lengkap. Namun, kami tidak memberikan sebarang jaminan — nyata atau tersirat — mengenai ketepatan, kelengkapan atau kesesuaian untuk sesuatu tujuan bagi sebarang kandungan. Maklumat khusus negara termasuk jenis visa, tempoh pemprosesan, julat gaji dan yuran kerajaan adalah sebagai panduan dan tertakluk kepada perubahan tanpa notis. Majikan dan calon hendaklah mengesahkan semua keperluan kawal selia dengan pihak berkuasa berkaitan sebelum meneruskan."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "7. Fees and Payments",
+    "ms": "7. Yuran dan Pembayaran"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All service fees charged by Bhuiyan Workforce Ltd. are agreed in writing prior to commencement of any recruitment engagement. We do not charge worker candidates any fees in violation of the BMET fee schedule or the laws of the destination country. No payments are processed through this website.",
+    "ms": "Semua yuran perkhidmatan yang dikenakan oleh Bhuiyan Workforce Ltd. dipersetujui secara bertulis sebelum sebarang pelantikan perekrutan bermula. Kami tidak mengenakan sebarang yuran kepada calon pekerja yang melanggar jadual yuran BMET atau undang-undang negara destinasi. Tiada pembayaran diproses melalui laman web ini."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "8. Limitation of Liability",
+    "ms": "8. Had Liabiliti"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "To the fullest extent permitted by applicable law, Bhuiyan Workforce Ltd. shall not be liable for:",
+    "ms": "Setakat yang dibenarkan sepenuhnya oleh undang-undang yang terpakai, Bhuiyan Workforce Ltd. tidak akan bertanggungjawab atas:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any indirect, incidental, special, or consequential damages arising from your use of or inability to use this website",
+    "ms": "Sebarang kerosakan tidak langsung, sampingan, khas atau berbangkit yang timbul daripada penggunaan atau ketidakupayaan menggunakan laman web ini"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any reliance placed on information published on this website",
+    "ms": "Sebarang pergantungan terhadap maklumat yang diterbitkan di laman web ini"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any interruption, suspension, or termination of the website or its services",
+    "ms": "Sebarang gangguan, penggantungan atau penamatan laman web atau perkhidmatannya"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Actions or omissions of employers, workers, government authorities, or other third parties involved in the recruitment and deployment process",
+    "ms": "Tindakan atau ketinggalan tindakan majikan, pekerja, pihak berkuasa kerajaan atau pihak ketiga lain yang terlibat dalam proses perekrutan dan penghantaran"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Our total liability to you for any claim arising from these terms or your use of the website shall not exceed BDT 10,000 (ten thousand Bangladeshi Taka).",
+    "ms": "Jumlah liabiliti kami kepada anda bagi sebarang tuntutan yang timbul daripada terma ini atau penggunaan laman web anda tidak akan melebihi BDT 10,000 (sepuluh ribu Taka Bangladesh)."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "9. Intellectual Property",
+    "ms": "9. Harta Intelek"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All content on this website — including the Bhuiyan Workforce Ltd. name, logo, text, graphics, page layouts, and data — is the intellectual property of Bhuiyan Workforce Ltd. and is protected under applicable Bangladeshi and international intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content on this website without our prior written permission.",
+    "ms": "Semua kandungan di laman web ini — termasuk nama Bhuiyan Workforce Ltd., logo, teks, grafik, susun atur halaman dan data — ialah harta intelek Bhuiyan Workforce Ltd. dan dilindungi di bawah undang-undang harta intelek Bangladesh dan antarabangsa yang terpakai. Anda tidak boleh menghasilkan semula, mengedar, mengubah suai atau mencipta karya terbitan daripada sebarang kandungan di laman web ini tanpa kebenaran bertulis kami terlebih dahulu."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may share links to pages on our website and quote brief excerpts for non-commercial informational purposes, provided appropriate attribution is given.",
+    "ms": "Anda boleh berkongsi pautan ke halaman laman web kami dan memetik petikan ringkas untuk tujuan maklumat bukan komersial, dengan syarat penghargaan yang sewajarnya diberikan."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "10. Third-Party Links and Services",
+    "ms": "10. Pautan dan Perkhidmatan Pihak Ketiga"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "This website contains links to third-party platforms including WhatsApp, LinkedIn, and Facebook. These links are provided for convenience only. We are not responsible for the content, privacy practices, or terms of service of any third-party website. Accessing third-party links is at your own risk.",
+    "ms": "Laman web ini mengandungi pautan ke platform pihak ketiga termasuk WhatsApp, LinkedIn dan Facebook. Pautan ini disediakan untuk kemudahan sahaja. Kami tidak bertanggungjawab atas kandungan, amalan privasi atau terma perkhidmatan mana-mana laman web pihak ketiga. Mengakses pautan pihak ketiga adalah atas risiko anda sendiri."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "11. Anti-Fraud and Impersonation Warning",
+    "ms": "11. Amaran Antipenipuan dan Penyamaran"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. only communicates through official channels: ",
+    "ms": "Bhuiyan Workforce Ltd. hanya berkomunikasi melalui saluran rasmi: "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": ", ",
+    "ms": ", "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": ", and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to ",
+    "ms": ", dan nombor telefon yang disenaraikan di laman web ini. Kami tidak menawarkan pekerjaan melalui mesej WhatsApp yang tidak diminta, mesej terus media sosial atau laman web tidak rasmi. Jika anda menerima komunikasi mencurigakan yang mendakwa datang daripada kami, sila laporkan kepada "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "immediately.",
+    "ms": "dengan segera."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "12. Governing Law and Jurisdiction",
+    "ms": "12. Undang-undang Terpakai dan Bidang Kuasa"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "ms": "Terma Perkhidmatan ini ditadbir oleh dan ditafsirkan mengikut undang-undang Republik Rakyat Bangladesh, termasuk tetapi tidak terhad kepada Contract Act 1872, Information and Communication Technology Act 2006 dan Digital Security Act 2018. Sebarang pertikaian, tuntutan atau kontroversi yang timbul daripada atau berkaitan dengan terma ini atau penggunaan laman web anda tertakluk kepada bidang kuasa eksklusif mahkamah yang berwibawa di Dhaka, Bangladesh."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "13. Changes to These Terms",
+    "ms": "13. Perubahan kepada Terma Ini"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We reserve the right to update or modify these Terms of Service at any time. Changes will be posted on this page with a revised \"last updated\" date. Continued use of the website following the posting of any changes constitutes your acceptance of the revised terms. We encourage you to review this page periodically.",
+    "ms": "Kami berhak mengemas kini atau mengubah suai Terma Perkhidmatan ini pada bila-bila masa. Perubahan akan disiarkan di halaman ini dengan tarikh “kemas kini terakhir” yang disemak. Penggunaan laman web yang berterusan selepas penyiaran sebarang perubahan bermakna anda menerima terma yang telah disemak. Kami menggalakkan anda menyemak halaman ini dari semasa ke semasa."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "14. Severability",
+    "ms": "14. Kebolehasingan"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "If any provision of these Terms of Service is found to be invalid, unlawful, or unenforceable by a court of competent jurisdiction, that provision shall be severed from the remaining terms, which shall continue in full force and effect.",
+    "ms": "Jika mana-mana peruntukan Terma Perkhidmatan ini didapati tidak sah, menyalahi undang-undang atau tidak boleh dikuatkuasakan oleh mahkamah yang berbidang kuasa, peruntukan itu hendaklah diasingkan daripada terma yang selebihnya, yang akan terus berkuat kuasa sepenuhnya."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "15. Contact",
+    "ms": "15. Hubungi Kami"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "For any questions regarding these terms, please contact us:",
+    "ms": "Untuk sebarang soalan mengenai terma ini, sila hubungi kami:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Email:",
+    "ms": "E-mel:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "WhatsApp:",
+    "ms": "WhatsApp:"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Construction & Engineering",
+    "ms": "Pembinaan dan Kejuruteraan"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Drivers & Transport",
+    "ms": "Pemandu dan Pengangkutan"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Chefs & Hospitality",
+    "ms": "Chef dan Hospitaliti"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Farm & Garden",
+    "ms": "Ladang dan Taman"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Warehouse & Logistics",
+    "ms": "Gudang dan Logistik"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Factory & Manufacturing",
+    "ms": "Kilang dan Pembuatan"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Oil & Gas",
+    "ms": "Minyak dan Gas"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Security Guards",
+    "ms": "Pengawal Keselamatan"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Cleaning & Housekeeping",
+    "ms": "Pembersihan dan Pengemasan"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Retail & Supermarket Staff",
+    "ms": "Kakitangan Peruncitan dan Pasar Raya"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Painting & Finishing",
+    "ms": "Mengecat dan Kemasan"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "ms": "Pemasangan Tetulang Besi"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Scaffolding & Formwork",
+    "ms": "Perancah dan Acuan"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "ms": "Landskap dan Penyelenggaraan Kawasan"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Mason & Bricklaying",
+    "ms": "Kerja Batu dan Bata"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "ms": "Pembantu Elektrik dan Penarik Kabel"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Laundry & Linen Services",
+    "ms": "Perkhidmatan Dobi dan Linen"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Food Processing & Packing",
+    "ms": "Pemprosesan dan Pembungkusan Makanan"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Fishery & Aquaculture Workers",
+    "ms": "Pekerja Perikanan dan Akuakultur"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Caregiving & Elderly Support",
+    "ms": "Penjagaan dan Sokongan Warga Emas"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Welding & Fabrication",
+    "ms": "Kimpalan dan Fabrikasi"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Plumbing & HVAC",
+    "ms": "Paip dan HVAC"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Heavy Equipment Operators",
+    "ms": "Operator Peralatan Berat"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Ship & Marine Fabrication",
+    "ms": "Fabrikasi Kapal dan Marin"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Domestic & Household Workers",
+    "ms": "Pekerja Domestik dan Isi Rumah"
+  }
+];

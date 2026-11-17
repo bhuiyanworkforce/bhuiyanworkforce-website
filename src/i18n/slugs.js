@@ -8,7 +8,7 @@
 //   type 'post'    id: post slug in English
 //   type 'guide'   id: country slug in English
 //
-// Arabic, Bulgarian, Greek, Croatian, Serbian, Bosnian and Macedonian use the English slugs, so they have no entries here:
+// Arabic, Bulgarian, Greek, Croatian, Serbian, Bosnian, Macedonian, Spanish and Malay use the English slugs, so they have no entries here:
 // anything missing from a locale falls back to the English slug. Polish, Romanian and Italian have translated
 // Latin slugs. A locale only needs entries for what it translates differently.
 //
@@ -27,6 +27,8 @@ export const SEGMENTS = {
   sr: {},
   bs: {},
   mk: {},
+  es: {},
+  ms: {},
   pl: { country: 'kraje', service: 'uslugi', post: 'blog', guide: 'przewodnik-dla-pracodawcow' },
   ro: { country: 'tari', service: 'servicii', post: 'blog', guide: 'ghid-pentru-angajatori' },
   it: { country: 'paesi', service: 'servizi', post: 'blog', guide: 'guida-per-i-datori-di-lavoro' },
@@ -46,6 +48,8 @@ export const PAGE_SLUGS = {
   sr: {},
   bs: {},
   mk: {},
+  es: {},
+  ms: {},
   pl: {
     about: 'o-nas', faq: 'faq', blog: 'blog', countries: 'kraje',
     capabilities: 'mozliwosci', 'employer-guide': 'przewodnik-dla-pracodawcow',
@@ -72,6 +76,8 @@ export const ENTITY_SLUGS = {
   sr: {},
   bs: {},
   mk: {},
+  es: {},
+  ms: {},
   pl: {
     country: {
       'saudi-arabia': 'arabia-saudyjska',
