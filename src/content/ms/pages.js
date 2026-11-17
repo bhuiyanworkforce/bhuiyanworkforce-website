@@ -14,7 +14,7 @@ export default {
       { icon: "🌍", title: "Pengetahuan tentang Negara Destinasi", body: "Pemahaman tentang undang-undang buruh tempatan, kategori visa dan konteks budaya di setiap negara destinasi mengurangkan kerumitan dan kelewatan." },
       { icon: "📣", title: "Ketelusan", body: "Majikan menerima garis masa yang jelas, penilaian jujur tentang ketersediaan calon dan pecahan kos terperinci sepenuhnya sebelum membuat sebarang komitmen." },
     ],
-    teamIntro: "Pasukan kami menggabungkan kepakaran perekrutan, pengetahuan imigresen dan pemahaman mendalam tentang sektor merentasi keenam-enam kategori perkhidmatan.",
+    teamIntro: "Pasukan kami menggabungkan kepakaran perekrutan, pengetahuan imigresen dan pemahaman mendalam tentang sektor merentasi kesemua 25 kategori perkhidmatan.",
     team: [
       { photo: "/team-rezaul.webp", name: "MD Rezaul Kabir Bhuiyan", role: "Pengasas & Ketua Pegawai Eksekutif", body: "Graduan Sains Komputer dari Jiangnan University, China, dengan kepakaran dalam pembangunan perniagaan antarabangsa dan teknologi. Beliau menerajui semua perkongsian strategik dan pembangunan perniagaan di pasaran Teluk, Eropah dan Asia." },
       { photo: "/team-asraful.webp", name: "Asraful Kabir Bhuiyan", role: "Pengurus Pembangunan Perniagaan", body: "Beliau mengurus hubungan dengan majikan dan peluasan pasaran baharu di pasaran Teluk, Eropah dan Asia." },
