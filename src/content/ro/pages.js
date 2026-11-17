@@ -39,7 +39,7 @@ export default {
         "body": "Angajatorii primesc termene clare, evaluări oneste privind disponibilitatea candidaților și o defalcare completă a costurilor înainte de a se angaja la orice."
       }
     ],
-    "teamIntro": "Echipa noastră combină expertiza în recrutare, cunoștințele în materie de imigrare și înțelegerea profundă a sectorului în toate cele șase categorii de servicii.",
+    "teamIntro": "Echipa noastră combină expertiza în recrutare, cunoștințele în materie de imigrare și înțelegerea profundă a sectorului în toate cele 25 de categorii de servicii.",
     "team": [
       {
         "photo": "/team-rezaul.webp",
