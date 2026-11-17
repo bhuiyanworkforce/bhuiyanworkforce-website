@@ -4,6 +4,7 @@ import { getCountry } from '../data/countries';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
 import { localizeCountry } from '../content';
+import { getCountryGuide } from '../data/countryGuides';
 
 export default function CountryPage() {
   const { slug } = useParams();
@@ -12,6 +13,7 @@ export default function CountryPage() {
   const tr = (key, vars) => t(key, lang, vars);
 
   if (!country) return <Navigate to="/countries" replace />;
+  const guide = getCountryGuide(slug);
 
   return (
     <>
@@ -54,6 +56,22 @@ export default function CountryPage() {
           </div>
         </div>
       </section>
+
+      {/* Employer guide for this country */}
+      {guide && (
+        <section style={{ background: 'var(--off-white)', padding: '28px 0', borderBottom: '1px solid var(--gray-100)' }}>
+          <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 20, flexWrap: 'wrap' }}>
+            <div>
+              <div style={{ fontWeight: 700, color: 'var(--navy)', fontSize: '1.05rem' }}>{guide.flag} Employer guide: {guide.country}</div>
+              <div style={{ color: 'var(--gray-500)', fontSize: '0.88rem', marginTop: 4 }}>
+                Permits, costs, timelines and what to check before you hire.
+                {guide.lang !== 'en' && ' Written in the local language, with an English summary.'}
+              </div>
+            </div>
+            <Link to={`/employer-guide/${slug}`} className="btn btn-navy">Read the guide {arrow}</Link>
+          </div>
+        </section>
+      )}
 
       <section className="section">
         <div className="container">
