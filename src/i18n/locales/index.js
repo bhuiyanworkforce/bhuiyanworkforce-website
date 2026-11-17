@@ -11,6 +11,9 @@ import { MK_TRANSLATED } from './mk.translated.js';
 import { IT_TRANSLATED } from './it.translated.js';
 import { ES_TRANSLATED } from './es.translated.js';
 import { MS_TRANSLATED } from './ms.translated.js';
+import { DE_TRANSLATED } from './de.translated.js';
+import { HU_TRANSLATED } from './hu.translated.js';
+import { PT_TRANSLATED } from './pt.translated.js';
 import { BG_TRANSLATED } from './bg.translated.js';
 
 // Arabic, Polish and Bulgarian start as just their route lists. The full locale (head/SEO strings) replaces them
@@ -29,6 +32,9 @@ export const LOCALE_DATA = {
   it: { code: 'it', translated: IT_TRANSLATED },
   es: { code: 'es', translated: ES_TRANSLATED },
   ms: { code: 'ms', translated: MS_TRANSLATED },
+  de: { code: 'de', translated: DE_TRANSLATED },
+  hu: { code: 'hu', translated: HU_TRANSLATED },
+  pt: { code: 'pt', translated: PT_TRANSLATED },
 };
 
 export function registerLocale(code, data) {
