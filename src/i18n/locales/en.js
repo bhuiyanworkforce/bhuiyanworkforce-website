@@ -55,6 +55,11 @@ export default {
         title: 'Apply for Work Abroad — Bhuiyan Workforce Ltd.',
         description: 'Register your interest in overseas employment with Bhuiyan Workforce Ltd.',
       },
+      'worker-guide': {
+        title: 'Worker Guide (বাংলা) — Bhuiyan Workforce Ltd.',
+        description:
+          'Guide for Bangladeshi workers: how overseas recruitment works, what it should cost and what you must never pay. বিদেশে কাজের সঠিক প্রক্রিয়া, খরচ ও সতর্কতা।',
+      },
       capabilities: {
         title: 'Capabilities — Bhuiyan Workforce Ltd.',
         description: 'Our full capabilities, worker categories, and deployment destinations.',
