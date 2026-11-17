@@ -127,6 +127,9 @@ for (const e of EN.SERVICES) {
 }
 
 // ---- 4. posts (markdown-ish content)
+// These languages deliberately have no translated articles: their article links open the English article.
+// Missing posts are not errors for them; any post they DO include is still fully checked.
+const ENGLISH_ONLY_POSTS = new Set(['de', 'hu', 'ms', 'pt']);
 const posts = await importFile(`src/content/${lang}/posts.js`);
 const md = (s) => ({
   h2: (s.match(/^## /gm) || []).length, h3: (s.match(/^### /gm) || []).length, bullets: (s.match(/^\s*- /gm) || []).length,
@@ -135,7 +138,7 @@ const md = (s) => ({
 });
 for (const e of EN.POSTS) {
   const tr = Array.isArray(posts) ? posts.find((x) => x.slug === e.slug) : null;
-  if (!tr) { err(`post ${e.slug}`, 'missing'); continue; }
+  if (!tr) { if (!ENGLISH_ONLY_POSTS.has(lang)) err(`post ${e.slug}`, 'missing'); continue; }
   for (const k of ['icon', 'tag', 'date', 'title', 'excerpt', 'content']) if (!isStr(tr[k])) err(`post ${e.slug}`, `missing "${k}"`);
   if (tr.icon !== e.icon) err(`post ${e.slug}`, 'icon changed');
   if (isStr(tr.content)) {
@@ -191,7 +194,7 @@ else {
   }
   for (const c of EN.COUNTRIES) seo(`head.countries.${c.slug}`, h.countries?.[c.slug]);
   for (const s of EN.SERVICES) seo(`head.services.${s.slug}`, h.services?.[s.slug]);
-  for (const p of EN.POSTS) seo(`head.posts.${p.slug}`, h.posts?.[p.slug]);
+  for (const p of EN.POSTS) { if (ENGLISH_ONLY_POSTS.has(lang) && !(Array.isArray(posts) && posts.some((x) => x.slug === p.slug))) continue; seo(`head.posts.${p.slug}`, h.posts?.[p.slug]); }
   for (const g of Object.keys(EN.COUNTRY_GUIDES)) seo(`head.guides.${g}`, h.guides?.[g]);
   for (const k of ['siteName', 'ogImageAlt', 'orgDescription', 'siteDescription']) if (!isStr(h[k])) err(`head.${k}`, 'missing');
   if (h.siteName !== 'Bhuiyan Workforce Ltd.') err('head.siteName', 'must be exactly "Bhuiyan Workforce Ltd."');
