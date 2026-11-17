@@ -11,6 +11,8 @@ import './i18n/sr-bundle.js';
 import './i18n/bs-bundle.js';
 import './i18n/mk-bundle.js';
 import './i18n/it-bundle.js';
+import './i18n/es-bundle.js';
+import './i18n/ms-bundle.js';
 import App from './App';
 import { contentData } from './seo/data.js';
 import { getFallbackReport, clearFallbacks } from './content/fallbacks.js';
