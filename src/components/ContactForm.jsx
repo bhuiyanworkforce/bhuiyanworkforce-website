@@ -3,6 +3,7 @@ import { SERVICES } from '../data/services';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
 import { tx } from '../i18n/extra.js';
+import { StaticPageLocalizer, hasStaticPageTranslations } from '../i18n/staticPageText.js';
 
 const EMPTY = { name: '', company: '', email: '', service: '', serviceOther: '', message: '', attachment: null, hp_phone: '' };
 
@@ -98,14 +99,17 @@ export default function ContactForm() {
   };
 
   if (submitted) return (
+    <StaticPageLocalizer locale={lang} file="src/components/ContactForm.jsx">
     <div className="form-success">
       <div className="form-success-icon">✓</div>
       <h3>{tr('cf.success_title')}</h3>
       <p>{tr('cf.success_text')}</p>
     </div>
+    </StaticPageLocalizer>
   );
 
   return (
+    <StaticPageLocalizer locale={lang} file="src/components/ContactForm.jsx">
     <form onSubmit={handleSubmit} noValidate>
       {/* Honeypot field — hidden from real users, catches basic spam bots */}
       <input
@@ -151,7 +155,7 @@ export default function ContactForm() {
           {/* option values stay English: they are sent to the Worker as the service label */}
           <option value="">{tr('cf.service_ph')}</option>
           <option value="Founding Employer Partner Programme">{tr('cf.founding')}</option>
-          {SERVICES.map(s => <option key={s.slug} value={s.name}>{tx(lang, s.name)}</option>)}
+          {SERVICES.map(s => <option key={s.slug} value={s.name}>{hasStaticPageTranslations(lang, 'src/components/ContactForm.jsx') ? s.name : tx(lang, s.name)}</option>)}
           <option value="Other">{tr('cf.other')}</option>
         </select>
       </div>
@@ -202,5 +206,6 @@ export default function ContactForm() {
         </button>
       </div>
     </form>
+    </StaticPageLocalizer>
   );
 }
