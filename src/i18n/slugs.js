@@ -299,6 +299,12 @@ export const ENTITY_SLUGS = {
   },
 };
 
+// Every country has an employer guide, so a language's guide slugs are its country slugs
+// (this also covers the original saudi-arabia / uae / poland entries, which were identical).
+for (const l of Object.keys(ENTITY_SLUGS)) {
+  if (ENTITY_SLUGS[l].country && ENTITY_SLUGS[l].guide) ENTITY_SLUGS[l].guide = { ...ENTITY_SLUGS[l].country };
+}
+
 const PAGE_IDS_WITH_PATH = Object.keys(PAGE_SLUGS.en);
 const ENTITY_TYPES = ['country', 'service', 'post', 'guide'];
 
