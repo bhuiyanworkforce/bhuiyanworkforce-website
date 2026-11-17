@@ -8,8 +8,8 @@
 //   type 'post'    id: post slug in English
 //   type 'guide'   id: country slug in English
 //
-// Arabic uses the English (Latin) slugs, so it has no entries here: anything
-// missing from a locale falls back to the English slug. Polish has translated
+// Arabic, Bulgarian, Greek, Croatian, Serbian, Bosnian and Macedonian use the English slugs, so they have no entries here:
+// anything missing from a locale falls back to the English slug. Polish, Romanian and Italian have translated
 // Latin slugs. A locale only needs entries for what it translates differently.
 //
 // This file contains no page lists and no availability information; see
@@ -21,8 +21,15 @@ import { LOCALES, DEFAULT_LOCALE, isRealLocale } from './config.js';
 export const SEGMENTS = {
   en: { country: 'countries', service: 'services', post: 'blog', guide: 'employer-guide' },
   ar: {},
+  bg: {},
+  el: {},
+  hr: {},
+  sr: {},
+  bs: {},
+  mk: {},
   pl: { country: 'kraje', service: 'uslugi', post: 'blog', guide: 'przewodnik-dla-pracodawcow' },
   ro: { country: 'tari', service: 'servicii', post: 'blog', guide: 'ghid-pentru-angajatori' },
+  it: { country: 'paesi', service: 'servizi', post: 'blog', guide: 'guida-per-i-datori-di-lavoro' },
 };
 
 // Slugs of static pages (home is always the empty path).
@@ -33,6 +40,12 @@ export const PAGE_SLUGS = {
     privacy: 'privacy', terms: 'terms', apply: 'apply',
   },
   ar: {},
+  bg: {},
+  el: {},
+  hr: {},
+  sr: {},
+  bs: {},
+  mk: {},
   pl: {
     about: 'o-nas', faq: 'faq', blog: 'blog', countries: 'kraje',
     capabilities: 'mozliwosci', 'employer-guide': 'przewodnik-dla-pracodawcow',
@@ -43,11 +56,22 @@ export const PAGE_SLUGS = {
     capabilities: 'capabilitati', 'employer-guide': 'ghid-pentru-angajatori',
     privacy: 'politica-de-confidentialitate', terms: 'termeni-si-conditii', apply: 'aplica',
   },
+  it: {
+    about: 'chi-siamo', faq: 'domande-frequenti', blog: 'blog', countries: 'paesi',
+    capabilities: 'competenze', 'employer-guide': 'guida-per-i-datori-di-lavoro',
+    privacy: 'informativa-sulla-privacy', terms: 'termini-e-condizioni', apply: 'candidati',
+  },
 };
 
 // Entity slugs per locale. Keys are the English slugs.
 export const ENTITY_SLUGS = {
   ar: {},
+  bg: {},
+  el: {},
+  hr: {},
+  sr: {},
+  bs: {},
+  mk: {},
   pl: {
     country: {
       'saudi-arabia': 'arabia-saudyjska',
@@ -185,6 +209,76 @@ export const ENTITY_SLUGS = {
     guide: {
       'saudi-arabia': 'arabia-saudita',
       uae: 'emiratele-arabe-unite',
+      poland: 'polonia',
+    },
+  },
+  it: {
+    country: {
+      'saudi-arabia': 'arabia-saudita',
+      uae: 'emirati-arabi-uniti',
+      qatar: 'qatar',
+      kuwait: 'kuwait',
+      oman: 'oman',
+      bahrain: 'bahrein',
+      jordan: 'giordania',
+      malaysia: 'malesia',
+      singapore: 'singapore',
+      maldives: 'maldive',
+      serbia: 'serbia',
+      portugal: 'portogallo',
+      greece: 'grecia',
+      romania: 'romania',
+      poland: 'polonia',
+      hungary: 'ungheria',
+      croatia: 'croazia',
+      'czech-republic': 'repubblica-ceca',
+      lithuania: 'lituania',
+      latvia: 'lettonia',
+      estonia: 'estonia',
+      bulgaria: 'bulgaria',
+      cyprus: 'cipro',
+      slovakia: 'slovacchia',
+      'bosnia-herzegovina': 'bosnia-erzegovina',
+      armenia: 'armenia',
+      montenegro: 'montenegro',
+      georgia: 'georgia',
+      slovenia: 'slovenia',
+      'north-macedonia': 'macedonia-del-nord',
+      italy: 'italia',
+      seychelles: 'seychelles',
+      mauritius: 'mauritius',
+    },
+    service: {
+      construction: 'edilizia-e-ingegneria',
+      drivers: 'autisti-e-trasporti',
+      hospitality: 'cuochi-e-ospitalita',
+      'farm-garden': 'agricoltura-e-giardinaggio',
+      warehouse: 'logistica-e-magazzino',
+      factory: 'fabbriche-e-produzione',
+      'oil-gas': 'petrolio-e-gas',
+      security: 'addetti-alla-sicurezza',
+      cleaning: 'pulizie-e-housekeeping',
+      retail: 'personale-per-negozi',
+      'painting-finishing': 'pittura-e-finiture',
+      'steel-fixing': 'armature-e-posa-del-ferro',
+      'scaffolding-formwork': 'ponteggi-e-casseforme',
+      'landscaping-groundskeeping': 'manutenzione-del-verde',
+      'masonry-bricklaying': 'muratura-e-posa-di-mattoni',
+      'electrical-helpers': 'aiutanti-elettricisti',
+      'laundry-linen': 'lavanderia-e-biancheria',
+      'food-processing': 'lavorazione-alimentare',
+      'fishery-aquaculture': 'pesca-e-acquacoltura',
+      caregiving: 'assistenza-agli-anziani',
+      'welding-fabrication': 'saldatura-e-lavorazione-metalli',
+      'plumbing-hvac': 'idraulica-e-hvac',
+      'heavy-equipment': 'mezzi-pesanti',
+      'marine-fabrication': 'costruzione-navale',
+      'domestic-household': 'lavoratori-domestici',
+    },
+    post: {},
+    guide: {
+      'saudi-arabia': 'arabia-saudita',
+      uae: 'emirati-arabi-uniti',
       poland: 'polonia',
     },
   },

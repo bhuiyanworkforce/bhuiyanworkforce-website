@@ -18,7 +18,7 @@ const norm = (s) => String(s).replace(/\s+/g, ' ').trim();
 
 export function tx(lang, en) {
   if (lang === 'en' || typeof en !== 'string') return en;
-  if (!/[A-Za-z]{2}/.test(en) || /@|^https?:/.test(en)) return en; // emails, phones, URLs stay as written
+  if (!/[A-Za-z]{2}/.test(en) || /@|^(?:https?:\/\/|www\.)/i.test(en)) return en; // emails, phones, URLs stay as written
   const table = TABLES[lang];
   if (!table) return en;
   const hit = table[en] ?? table[norm(en)];

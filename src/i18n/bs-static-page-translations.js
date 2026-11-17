@@ -1,0 +1,2208 @@
+// Generated from bs-extra-pages.json by scripts/sync-static-translations.mjs.
+export default [
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Home",
+    "bs": "Početna"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Blog",
+    "bs": "Blog"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Insights & Resources",
+    "bs": "Uvidi i resursi"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Practical guidance for employers recruiting overseas workers, and for Bangladeshi workers navigating international employment.",
+    "bs": "Praktični savjeti za poslodavce koji regrutuju radnike iz inostranstva i za radnike iz Bangladeša koji se snalaze u međunarodnom zapošljavanju."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Search articles… e.g. Saudi visa, construction, BMET",
+    "bs": "Pretražite članke… npr. viza za Saudijsku Arabiju, građevinarstvo, BMET"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "All",
+    "bs": "Sve"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Latest Articles",
+    "bs": "Najnoviji članci"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "From the Bhuiyan Workforce Ltd. Blog",
+    "bs": "S bloga kompanije Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Industry news, compliance updates, and practical guides for employers and workers.",
+    "bs": "Vijesti iz industrije, novosti o usklađenosti i praktični vodiči za poslodavce i radnike."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "No articles found",
+    "bs": "Nema pronađenih članaka"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": " for \"",
+    "bs": " za „"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "\"",
+    "bs": "“"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": " in \"",
+    "bs": " u kategoriji „"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "\"",
+    "bs": "“"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": " — try different keywords or filters.",
+    "bs": " — pokušajte s drugim ključnim riječima ili filterima."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Read article →",
+    "bs": "Pročitajte članak →"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Stay Up to Date",
+    "bs": "Budite u toku"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Follow us on LinkedIn or WhatsApp for the latest recruitment news, compliance updates, and destination guides.",
+    "bs": "Pratite nas na LinkedInu ili WhatsAppu za najnovije vijesti o regrutaciji, novosti o usklađenosti i vodiče za zemlje odredišta."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Follow on LinkedIn",
+    "bs": "Pratite nas na LinkedInu"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "WhatsApp Updates",
+    "bs": "Novosti na WhatsAppu"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Home",
+    "bs": "Početna"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Employer's Guide",
+    "bs": "Vodič za poslodavce"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Free Download",
+    "bs": "Besplatno preuzimanje"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "The Employer's Complete Guide to Recruiting from Bangladesh",
+    "bs": "Kompletan vodič za poslodavce o regrutaciji radnika iz Bangladeša"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Everything international employers need to know — visa requirements, legal compliance, trade testing, mobilisation timelines, and more. Written by our recruitment specialists.",
+    "bs": "Sve što međunarodni poslodavci trebaju znati — uslovi za vize, zakonska usklađenost, praktični stručni testovi, rokovi mobilizacije i još mnogo toga. Pripremili su naši stručnjaci za regrutaciju."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "What's Inside",
+    "bs": "Šta sadrži vodič"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "6 Chapters of Expert Guidance",
+    "bs": "6 poglavlja stručnih savjeta"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Understanding BMET & Emigration Clearance",
+    "bs": "Razumijevanje BMET-a i odobrenja za iseljavanje"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Step-by-step explanation of the Bangladesh Manpower Bureau process every worker must complete.",
+    "bs": "Objašnjenje korak po korak postupka koji svaki radnik mora proći pred Biroom za radnu snagu Bangladeša."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Country-by-Country Visa Requirements",
+    "bs": "Uslovi za vize prema zemljama"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Gulf, Europe, and Southeast Asia visa timelines, fees, and documentation requirements at a glance.",
+    "bs": "Pregled rokova, naknada i dokumentacije za vize za zemlje Zaljeva, Evropu i jugoistočnu Aziju."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Legal Compliance Checklist",
+    "bs": "Kontrolna lista zakonske usklađenosti"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "What every employer must provide to stay compliant with Bangladesh labour export regulations.",
+    "bs": "Šta svaki poslodavac mora osigurati radi usklađenosti s propisima Bangladeša o izvozu radne snage."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Trade Testing & Skills Verification",
+    "bs": "Stručni testovi i provjera vještina"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "How Bangladeshi workers are trade-tested and what certifications to expect.",
+    "bs": "Kako se provode praktični stručni testovi radnika iz Bangladeša i koje certifikate možete očekivati."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Employment Contract Standards",
+    "bs": "Standardi ugovora o radu"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "What a compliant employment contract must include for each destination country.",
+    "bs": "Šta ugovor o radu mora sadržavati radi usklađenosti sa zahtjevima svake zemlje odredišta."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Mobilisation Timeline Guide",
+    "bs": "Vodič kroz rokove mobilizacije"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Realistic timelines from first contact to workers arriving on site — by country and trade category.",
+    "bs": "Realni rokovi od prvog kontakta do dolaska radnika na lokaciju — prema zemlji i kategoriji zanimanja."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Guide on Its Way!",
+    "bs": "Vodič je na putu!"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Thank you, ",
+    "bs": "Hvala Vam, "
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": ". Our team will email the guide to ",
+    "bs": ". Naš tim će Vam poslati vodič na adresu "
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": " within the next few hours.",
+    "bs": " u narednih nekoliko sati."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "In the meantime, explore our ",
+    "bs": "U međuvremenu pogledajte naše "
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "country guides",
+    "bs": "vodiče za zemlje"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": " for detailed visa and deployment information.",
+    "bs": " za detaljne informacije o vizama i slanju radnika."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Free Resource",
+    "bs": "Besplatan resurs"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Get the Free Guide",
+    "bs": "Preuzmite besplatni vodič"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Complete the form and we'll email you the guide directly. No spam — ever.",
+    "bs": "Popunite obrazac i poslat ćemo Vam vodič direktno e-poštom. Bez neželjenih poruka — nikada."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Full Name *",
+    "bs": "Ime i prezime *"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Ahmad Al-Rashid",
+    "bs": "Ahmad Al-Rashid"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Company Name *",
+    "bs": "Naziv kompanije *"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Al-Rashid Construction LLC",
+    "bs": "Al-Rashid Construction LLC"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Work Email *",
+    "bs": "Poslovna e-mail adresa *"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Country of Interest",
+    "bs": "Zemlja od interesa"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Select destination…",
+    "bs": "Odaberite odredište…"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Gulf",
+    "bs": "Zaljev"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Saudi Arabia",
+    "bs": "Saudijska Arabija"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "UAE",
+    "bs": "UAE"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Qatar",
+    "bs": "Katar"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Kuwait",
+    "bs": "Kuvajt"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Oman",
+    "bs": "Oman"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Bahrain",
+    "bs": "Bahrein"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Europe",
+    "bs": "Evropa"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Poland",
+    "bs": "Poljska"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Romania",
+    "bs": "Rumunija"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Portugal",
+    "bs": "Portugal"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Serbia",
+    "bs": "Srbija"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Germany",
+    "bs": "Njemačka"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Other Europe",
+    "bs": "Ostale zemlje Evrope"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Southeast Asia",
+    "bs": "Jugoistočna Azija"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Malaysia",
+    "bs": "Malezija"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Singapore",
+    "bs": "Singapur"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Maldives",
+    "bs": "Maldivi"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Multiple Countries",
+    "bs": "Više zemalja"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Something went wrong. Please email ",
+    "bs": "Došlo je do greške. Molimo Vas da pošaljete e-mail na "
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": " directly.",
+    "bs": "."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Sending…",
+    "bs": "Slanje…"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Send Me the Free Guide →",
+    "bs": "Pošaljite mi besplatni vodič →"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "By submitting, you agree to receive occasional recruitment insights from Bhuiyan Workforce. Unsubscribe anytime.",
+    "bs": "Slanjem obrasca pristajete da povremeno primate informacije o regrutaciji od kompanije Bhuiyan Workforce. Odjavu možete izvršiti u bilo kojem trenutku."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Home",
+    "bs": "Početna"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities",
+    "bs": "Mogućnosti"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "For Employers",
+    "bs": "Za poslodavce"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities & Company Overview",
+    "bs": "Mogućnosti i pregled kompanije"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / Save as PDF",
+    "bs": "🖨️ Štampaj / Sačuvaj kao PDF"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities & Company Overview",
+    "bs": "Mogućnosti i pregled kompanije"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Connecting Bangladesh's skilled workforce to the world — ",
+    "bs": "Povezujemo kvalificiranu radnu snagu Bangladeša sa svijetom — "
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "25+ countries",
+    "bs": "25+ zemalja"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": " across Middle East, Asia & Europe.",
+    "bs": " širom Bliskog istoka, Azije i Evrope."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Who We Are",
+    "bs": "Ko smo mi"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "About Bhuiyan Workforce Ltd.",
+    "bs": "O kompaniji Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Asia, and Europe.",
+    "bs": "Bhuiyan Workforce Ltd. je kompanija sa sjedištem u Bangladešu, osnovana na čelu s MD Rezaul Kabir Bhuiyanom, koja se bavi regrutacijom i izvozom radne snage. Specijalizirani smo za pronalaženje, temeljitu provjeru i slanje kvalificiranih, polukvalificiranih i općih radnika međunarodnim poslodavcima širom Bliskog istoka, Azije i Evrope."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. We are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.",
+    "bs": "Naš rad počiva na transparentnosti, pouzdanosti i etičkoj regrutaciji. Povezujemo globalnu potražnju za radnom snagom s brojnim, vrijednim i talentiranim radnicima iz Bangladeša. U potpunosti obavljamo pronalaženje i provjeru kandidata te razvijamo odnose s poslodavcima u svih 25 kategorija zanimanja."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "What We Supply",
+    "bs": "Koga angažujemo"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Worker Categories",
+    "bs": "Kategorije radnika"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Skilled, semi-skilled, and specialist workers across all major trade and service sectors.",
+    "bs": "Kvalificirani, polukvalificirani i specijalizirani radnici za sve glavne sektore zanimanja i usluga."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Global Reach",
+    "bs": "Globalni domet"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Deployment Destinations — 25+ Countries",
+    "bs": "Zemlje odredišta — 25+ zemalja"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "How It Works",
+    "bs": "Kako funkcioniše"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Recruitment Process",
+    "bs": "Naš postupak regrutacije"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "A structured, transparent 6-step process from requirement intake to worker deployment.",
+    "bs": "Strukturiran i transparentan postupak u 6 koraka, od prijema zahtjeva do slanja radnika."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Requirement Intake",
+    "bs": "Prijem zahtjeva"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We collect detailed job descriptions, skill requirements, visa quotas, salary ranges, and deployment timelines from the client employer.",
+    "bs": "Od poslodavca prikupljamo detaljne opise radnih mjesta, potrebne vještine, kvote za vize, raspone plata i rokove slanja radnika."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Candidate Sourcing",
+    "bs": "Pronalaženje kandidata"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We leverage our Bangladesh-wide network of trade professionals, referral partners, and candidate databases to shortlist qualified applicants.",
+    "bs": "Koristimo svoju mrežu stručnjaka, preporučilaca i baza kandidata širom Bangladeša kako bismo sastavili užu listu provjerenih kandidata."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Screening & Testing",
+    "bs": "Provjera i testiranje"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate undergoes trade skill tests, structured interviews, and thorough background verification before being presented to the client.",
+    "bs": "Prije predstavljanja poslodavcu svaki kandidat prolazi praktične stručne testove, strukturirane razgovore i temeljitu provjeru prošlosti."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Medical Clearance",
+    "bs": "Ljekarsko uvjerenje o sposobnosti"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers complete mandatory medical fitness examinations at government-approved centres to meet destination country health requirements.",
+    "bs": "Radnici obavljaju obavezne ljekarske preglede u centrima koje je odobrila vlada kako bi ispunili zdravstvene uslove zemlje odredišta."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Documentation & Visa",
+    "bs": "Dokumentacija i viza"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We manage all documentation: passport validation, visa applications, attestation, BMET clearance, and pre-departure orientation.",
+    "bs": "Upravljamo svom dokumentacijom: provjerom pasoša, zahtjevima za vize, ovjerama, odobrenjem BMET-a i pripremom prije odlaska."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Deployment",
+    "bs": "Slanje radnika"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers are fully briefed, oriented on destination country norms, and deployed on schedule. Post-arrival follow-up is conducted.",
+    "bs": "Radnici dobijaju sve potrebne informacije i upoznaju se s pravilima zemlje odredišta, a zatim odlaze prema planu. Nakon dolaska prati se njihova situacija."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Advantage",
+    "bs": "Naše prednosti"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Why Choose Bhuiyan Workforce?",
+    "bs": "Zašto odabrati Bhuiyan Workforce?"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Direct Talent Access",
+    "bs": "Direktan pristup talentima"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Tap into Bangladesh's large, motivated labor pool across all major trade and service sectors.",
+    "bs": "Iskoristite pristup brojnim i motiviranim radnicima iz Bangladeša u svim glavnim sektorima zanimanja i usluga."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Pre-Screened Workers",
+    "bs": "Prethodno provjereni radnici"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate is skills-tested, medically cleared, and document-ready before deployment.",
+    "bs": "Prije odlaska svaki kandidat prolazi provjeru vještina i ljekarski pregled, a njegova dokumentacija je spremna."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Global Reach",
+    "bs": "Globalni domet"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Active deployment coverage across 25+ countries spanning Middle East, Asia, and Europe.",
+    "bs": "Aktivno šaljemo radnike u više od 25 zemalja Bliskog istoka, Azije i Evrope."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Dedicated Support",
+    "bs": "Namjenska podrška"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Clients receive a dedicated account contact for seamless communication end-to-end.",
+    "bs": "Klijentima je na raspolaganju kontakt osoba za jednostavnu komunikaciju tokom cijelog postupka."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Fast Turnaround",
+    "bs": "Brza obrada"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Streamlined process from requirement submission to worker deployment.",
+    "bs": "Pojednostavljen postupak od podnošenja zahtjeva do slanja radnika."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Office",
+    "bs": "Ured"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Partnerships",
+    "bs": "Partnerstva"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "General Enquiry",
+    "bs": "Opći upiti"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Mobile / WhatsApp",
+    "bs": "Mobitel / WhatsApp"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Website",
+    "bs": "Web-stranica"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Share this capabilities page:",
+    "bs": "Podijelite ovu stranicu o mogućnostima:"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "📋 Copy Link",
+    "bs": "📋 Kopiraj poveznicu"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Link copied!",
+    "bs": "Poveznica je kopirana!"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / PDF",
+    "bs": "🖨️ Štampaj / PDF"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Middle East (7)",
+    "bs": "Bliski istok (7)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Saudi Arabia · United Arab Emirates · Qatar · Kuwait · Oman · Bahrain · Jordan",
+    "bs": "Saudijska Arabija · Ujedinjeni Arapski Emirati · Katar · Kuvajt · Oman · Bahrein · Jordan"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Asia Pacific (3)",
+    "bs": "Azijsko-pacifička regija (3)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Malaysia · Singapore · Maldives",
+    "bs": "Malezija · Singapur · Maldivi"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Europe (15)",
+    "bs": "Evropa (15)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Serbia · Portugal · Greece · Slovakia · Latvia · Cyprus · Estonia · Lithuania · Poland · Czech Republic · Bulgaria · Bosnia and Herzegovina · Hungary · Croatia · Romania",
+    "bs": "Srbija · Portugal · Grčka · Slovačka · Latvija · Kipar · Estonija · Litvanija · Poljska · Češka · Bugarska · Bosna i Hercegovina · Mađarska · Hrvatska · Rumunija"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": " · +880 1864 567912",
+    "bs": " · +880 1864 567912"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Kawtoli, Brahmanbaria, Bangladesh 3400",
+    "bs": "Kawtoli, Brahmanbaria, Bangladesh 3400"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "+880 1864 567912",
+    "bs": "+880 1864 567912"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "BHUIYAN WORKFORCE LTD.",
+    "bs": "BHUIYAN WORKFORCE LTD."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bangladeshi",
+    "bs": "Bangladešanin/ka"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "File too large — max 5MB",
+    "bs": "Datoteka je prevelika — najviše 5 MB"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Thank you, ",
+    "bs": "Hvala Vam, "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ". We have received your application and will review it within 3–5 working days. If shortlisted, our team will contact you directly.",
+    "bs": ". Primili smo Vašu prijavu i pregledat ćemo je u roku od 3–5 radnih dana. Ako uđete u uži izbor, naš tim će Vas direktno kontaktirati."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "For Workers",
+    "bs": "Za radnike"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Full Name (as in passport) *",
+    "bs": "Ime i prezime (kao u pasošu) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mohammad Rafiqul Islam",
+    "bs": "Mohammad Rafiqul Islam"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Date of Birth *",
+    "bs": "Datum rođenja *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Nationality",
+    "bs": "Državljanstvo"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Phone / WhatsApp *",
+    "bs": "Telefon / WhatsApp *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Email Address",
+    "bs": "E-mail adresa"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "optional",
+    "bs": "nije obavezno"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Home Address (District/Division) *",
+    "bs": "Kućna adresa (okrug/divizija) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Brahmanbaria, Chittagong Division",
+    "bs": "npr. Brahmanbaria, divizija Chittagong"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Number",
+    "bs": "Broj pasoša"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Expiry Date",
+    "bs": "Datum isteka pasoša"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Category *",
+    "bs": "Kategorija zanimanja *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select category…",
+    "bs": "Odaberite kategoriju…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Specific Role / Trade *",
+    "bs": "Konkretno radno mjesto / zanimanje *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Mason, Welder, Chef de Partie",
+    "bs": "npr. zidar, zavarivač, kuhar odjela"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Years of Experience *",
+    "bs": "Godine iskustva *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "bs": "Odaberite…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Less than 1 year",
+    "bs": "Manje od 1 godine"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "1–2 years",
+    "bs": "1–2 godine"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "3–5 years",
+    "bs": "3–5 godina"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "6–10 years",
+    "bs": "6–10 godina"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "10+ years",
+    "bs": "10 ili više godina"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Preferred Country *",
+    "bs": "Željena zemlja *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select country…",
+    "bs": "Odaberite zemlju…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Available From",
+    "bs": "Dostupan od"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Education Level",
+    "bs": "Stepen obrazovanja"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No formal education",
+    "bs": "Bez formalnog obrazovanja"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Primary (Class 1–5)",
+    "bs": "Osnovno obrazovanje (razredi 1–5)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "JSC / Class 8",
+    "bs": "JSC / 8. razred"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "SSC / Class 10",
+    "bs": "SSC / 10. razred"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "HSC / Class 12",
+    "bs": "HSC / 12. razred"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Diploma / Vocational",
+    "bs": "Diploma / stručno obrazovanje"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bachelor's Degree",
+    "bs": "Diploma prvog ciklusa studija"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Master's Degree or above",
+    "bs": "Magistarska diploma ili viši stepen obrazovanja"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Languages Spoken",
+    "bs": "Jezici koje govorite"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Bengali, English (basic), Arabic (basic)",
+    "bs": "npr. bengalski, engleski (osnovno), arapski (osnovno)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Medical Fitness Certificate?",
+    "bs": "Ljekarsko uvjerenje o sposobnosti?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — valid certificate",
+    "bs": "Da — važeće uvjerenje"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet obtained",
+    "bs": "Ne — još nije pribavljeno"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Expired — needs renewal",
+    "bs": "Isteklo — potrebno je obnoviti"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Test Certificate?",
+    "bs": "Uvjerenje o praktičnom stručnom testu?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — certified",
+    "bs": "Da — imam certifikat"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet tested",
+    "bs": "Ne — još nisam testiran"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "In progress",
+    "bs": "U toku"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "BMET Smart Card?",
+    "bs": "BMET Smart Card?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — registered",
+    "bs": "Da — registrovan/a"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet registered",
+    "bs": "Ne — još nisam registrovan/a"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload CV / Resume (PDF or Word, max 5MB)",
+    "bs": "Otpremite CV / biografiju (PDF ili Word, najviše 5 MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Passport Copy (PDF or image, max 5MB)",
+    "bs": "Otpremite kopiju pasoša (PDF ili slika, najviše 5 MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Trade/Skills Certificate (optional)",
+    "bs": "Otpremite uvjerenje o zanimanju/vještinama (nije obavezno)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.",
+    "bs": "Sve otpremljene datoteke (CV, kopija pasoša i uvjerenje) bit će poslane kao prilozi e-pošte našem timu na pregled."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Additional Information / Cover Letter",
+    "bs": "Dodatne informacije / propratno pismo"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…",
+    "bs": "Opišite nam svoje iskustvo, prethodni rad u inostranstvu, vještine i razloge zbog kojih želite raditi u inostranstvu…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Important:",
+    "bs": "Važno:"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our ",
+    "bs": "Slanjem ove prijave potvrđujete da su svi navedeni podaci tačni. Bhuiyan Workforce Ltd. kontaktirat će kandidate koji uđu u uži izbor u roku od 3–5 radnih dana. Podnošenje prijave ne garantuje zaposlenje. Vaše podatke obrađujemo u skladu s našom "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Privacy Policy",
+    "bs": "Politikom privatnosti"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ".",
+    "bs": "."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Something went wrong. Please call us on ",
+    "bs": "Došlo je do greške. Molimo Vas da nas nazovete na "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": " or email ",
+    "bs": " ili pošaljete e-mail na "
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ".",
+    "bs": "."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Construction & Engineering",
+    "bs": "Građevinarstvo i inženjerstvo"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Oil & Gas",
+    "bs": "Nafta i plin"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Drivers & Transport",
+    "bs": "Vozači i transport"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Chefs & Hospitality",
+    "bs": "Kuhari i ugostiteljstvo"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Security Guards",
+    "bs": "Zaštitari"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Cleaning & Housekeeping",
+    "bs": "Čišćenje i održavanje"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Farm & Garden",
+    "bs": "Poljoprivreda i vrtlarstvo"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Warehouse & Logistics",
+    "bs": "Skladištenje i logistika"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Factory & Manufacturing",
+    "bs": "Fabrike i proizvodnja"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Retail & Supermarket Staff",
+    "bs": "Maloprodaja i osoblje supermarketa"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Painting & Finishing",
+    "bs": "Farbanje i završni radovi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "bs": "Armirački radovi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Scaffolding & Formwork",
+    "bs": "Skele i oplata"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "bs": "Uređenje i održavanje zelenih površina"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mason & Bricklaying",
+    "bs": "Zidari i zidanje opekom"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "bs": "Elektromonteri pomoćnici i radnici za provlačenje kablova"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Laundry & Linen Services",
+    "bs": "Praonica i usluge s rubljem"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Food Processing & Packing",
+    "bs": "Prerada i pakovanje hrane"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Fishery & Aquaculture",
+    "bs": "Ribarstvo i akvakultura"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Caregiving & Elderly Support",
+    "bs": "Njega i podrška starijim osobama"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Other",
+    "bs": "Ostalo"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Saudi Arabia",
+    "bs": "Saudijska Arabija"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "UAE",
+    "bs": "UAE"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Qatar",
+    "bs": "Katar"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Kuwait",
+    "bs": "Kuvajt"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Oman",
+    "bs": "Oman"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bahrain",
+    "bs": "Bahrein"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Jordan",
+    "bs": "Jordan"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Malaysia",
+    "bs": "Malezija"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Singapore",
+    "bs": "Singapur"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Maldives",
+    "bs": "Maldivi"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Poland",
+    "bs": "Poljska"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Romania",
+    "bs": "Rumunija"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Serbia",
+    "bs": "Srbija"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Portugal",
+    "bs": "Portugal"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Greece",
+    "bs": "Grčka"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Hungary",
+    "bs": "Mađarska"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Croatia",
+    "bs": "Hrvatska"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Czech Republic",
+    "bs": "Češka"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Lithuania",
+    "bs": "Litvanija"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Latvia",
+    "bs": "Latvija"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Estonia",
+    "bs": "Estonija"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bulgaria",
+    "bs": "Bugarska"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Cyprus",
+    "bs": "Kipar"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Slovakia",
+    "bs": "Slovačka"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bosnia and Herzegovina",
+    "bs": "Bosna i Hercegovina"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Open to Any Country",
+    "bs": "Otvoren/a sam za bilo koju zemlju"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "A1234567",
+    "bs": "A1234567"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "+880 17XX XXX XXX",
+    "bs": "+880 17XX XXX XXX"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Home",
+    "bs": "Početna"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Privacy Policy",
+    "bs": "Politika privatnosti"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "How Bhuiyan Workforce Ltd. collects, uses, and protects your personal information.",
+    "bs": "Kako Bhuiyan Workforce Ltd. prikuplja, koristi i štiti Vaše lične podatke."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Last updated: May 2026",
+    "bs": "Posljednje ažuriranje: maj 2026"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "1. Who We Are",
+    "bs": "1. Ko smo mi"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. (\"we\", \"us\", \"our\") is a Bangladesh-based international manpower recruitment company. Our registered office is in Brahmanbaria, Bangladesh. Our website is bhuiyanworkforce.com.",
+    "bs": "Bhuiyan Workforce Ltd. („mi“, „nas“, „naš“) međunarodna je kompanija za regrutaciju radnika sa sjedištem u Bangladešu. Naša registrovana kancelarija nalazi se u Brahmanbariji, Bangladeš. Naša web-stranica je bhuiyanworkforce.com."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For all privacy-related enquiries, contact us at ",
+    "bs": "Za sve upite u vezi s privatnošću kontaktirajte nas na "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ".",
+    "bs": "."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "2. Who This Policy Applies To",
+    "bs": "2. Na koga se ova politika odnosi"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy applies to:",
+    "bs": "Ova Politika privatnosti odnosi se na:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Employers",
+    "bs": "Poslodavce"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — companies and individuals who contact us to source workers",
+    "bs": " — kompanije i pojedince koji nas kontaktiraju radi pronalaženja radnika"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates",
+    "bs": "Kandidate za radna mjesta"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — individuals who register interest in overseas employment opportunities",
+    "bs": " — pojedince koji iskažu interes za mogućnosti rada u inostranstvu"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Website visitors",
+    "bs": "Posjetioce web-stranice"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — anyone who browses bhuiyanworkforce.com",
+    "bs": " — sve koji pregledaju bhuiyanworkforce.com"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "3. Information We Collect",
+    "bs": "3. Podaci koje prikupljamo"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We collect information in the following ways:",
+    "bs": "Podatke prikupljamo na sljedeće načine:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form submissions",
+    "bs": "Podaci uneseni u kontaktni obrazac"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — name, company name, email address, and your message",
+    "bs": " — ime, naziv kompanije, e-mail adresa i Vaša poruka"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Direct communications",
+    "bs": "Direktna komunikacija"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — emails, WhatsApp messages, and phone calls you initiate with us",
+    "bs": " — e-mailovi, WhatsApp poruke i telefonski pozivi koje Vi pokrenete"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate registrations",
+    "bs": "Registracije kandidata za radna mjesta"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — name, date of birth, nationality, passport details, trade qualifications, work experience, and supporting documents such as certificates and photographs",
+    "bs": " — ime, datum rođenja, državljanstvo, podaci iz pasoša, stručne kvalifikacije, radno iskustvo i prateća dokumentacija kao što su uvjerenja i fotografije"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical data",
+    "bs": "Tehnički podaci"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — IP address, browser type, and pages visited, collected automatically when you use our website",
+    "bs": " — IP adresa, vrsta preglednika i posjećene stranice, koji se automatski prikupljaju dok koristite našu web-stranicu"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not collect payment information. All financial transactions related to our services are conducted offline.",
+    "bs": "Ne prikupljamo podatke o plaćanju. Sve finansijske transakcije povezane s našim uslugama obavljaju se van mreže."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "4. How We Use Your Information",
+    "bs": "4. Kako koristimo Vaše podatke"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We use the information we collect to:",
+    "bs": "Podatke koje prikupimo koristimo za:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Respond to employer enquiries and prepare recruitment proposals",
+    "bs": "Odgovaranje na upite poslodavaca i pripremu prijedloga za regrutaciju"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Match worker candidates with suitable employer opportunities",
+    "bs": "Povezivanje kandidata s odgovarajućim mogućnostima kod poslodavaca"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Process BMET registration, visa applications, medical clearances, and other deployment documentation",
+    "bs": "Obradu registracije pri BMET-u, zahtjeva za vize, ljekarskih uvjerenja o sposobnosti i druge dokumentacije za slanje radnika"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Communicate with you about the status of an active recruitment or deployment",
+    "bs": "Obavještavanje o statusu aktivne regrutacije ili slanja radnika"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Comply with legal obligations under Bangladeshi law and the laws of destination countries",
+    "bs": "Ispunjavanje zakonskih obaveza prema zakonima Bangladeša i zemalja odredišta"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Improve our website and services based on usage patterns",
+    "bs": "Unapređenje naše web-stranice i usluga na osnovu načina korištenja"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not sell, rent, or trade your personal data to any third party for commercial purposes.",
+    "bs": "Vaše lične podatke ne prodajemo, ne iznajmljujemo niti ustupamo trećim stranama u komercijalne svrhe."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "5. Data Sharing",
+    "bs": "5. Dijeljenje podataka"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may share your personal data only in the following circumstances:",
+    "bs": "Vaše lične podatke možemo dijeliti samo u sljedećim okolnostima:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With employers",
+    "bs": "S poslodavcima"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — worker candidate profiles are shared with prospective employers only after the candidate has been informed and has consented",
+    "bs": " — profile kandidata dijelimo s potencijalnim poslodavcima tek nakon što je kandidat obaviješten i dao saglasnost"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With government authorities",
+    "bs": "S državnim organima"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — BMET, Bangladesh embassies, destination-country immigration authorities, and GAMCA-approved medical centres, as required by law during the deployment process",
+    "bs": " — s BMET-om, ambasadama Bangladeša, imigracionim organima zemalja odredišta i medicinskim centrima koje je odobrio GAMCA, kako zakon nalaže tokom postupka slanja radnika"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With service providers",
+    "bs": "S pružaocima usluga"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — third-party providers who assist us in operating our website and communications, bound by confidentiality obligations",
+    "bs": " — s trećim stranama koje nam pomažu u radu web-stranice i komunikacijama, a koje su obavezane na povjerljivost"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "When required by law",
+    "bs": "Kada to zakon nalaže"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — in response to a lawful request from a court, government authority, or regulatory body in Bangladesh",
+    "bs": " — kao odgovor na zakonit zahtjev suda, državnog organa ili regulatornog tijela u Bangladešu"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "6. Cookies and Tracking",
+    "bs": "6. Kolačići i praćenje"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Our website uses minimal cookies necessary for basic functionality. We do not use advertising cookies or third-party tracking pixels. Technical data such as page visits may be logged by our hosting provider (Cloudflare) for security and performance purposes. You can disable cookies in your browser settings without affecting your ability to use the website.",
+    "bs": "Naša web-stranica koristi minimalan broj kolačića potrebnih za osnovno funkcionisanje. Ne koristimo kolačiće za oglašavanje niti piksele za praćenje trećih strana. Naš pružalac usluga hostinga (Cloudflare) može bilježiti tehničke podatke, kao što su posjete stranicama, u svrhu sigurnosti i boljeg rada. Kolačiće možete onemogućiti u postavkama preglednika, a da to ne utiče na mogućnost korištenja web-stranice."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "7. Data Retention",
+    "bs": "7. Čuvanje podataka"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form enquiries",
+    "bs": "Upiti iz kontaktnih obrazaca"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — retained for up to 24 months from the date of submission",
+    "bs": " — čuvaju se do 24 mjeseca od datuma slanja"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate profiles",
+    "bs": "Profili kandidata za radna mjesta"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — retained for up to 3 years, or until the candidate requests deletion",
+    "bs": " — čuvaju se do 3 godine ili dok kandidat ne zatraži njihovo brisanje"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Deployment documentation",
+    "bs": "Dokumentacija o slanju radnika"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — retained for up to 7 years where required by Bangladeshi law or the laws of the destination country",
+    "bs": " — čuva se do 7 godina kada to nalažu zakoni Bangladeša ili zemlje odredišta"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical/website logs",
+    "bs": "Tehnički zapisi / zapisi web-stranice"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — retained for up to 90 days",
+    "bs": " — čuvaju se do 90 dana"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "8. Your Rights",
+    "bs": "8. Vaša prava"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "You have the right to:",
+    "bs": "Imate pravo da:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Access",
+    "bs": "Pristupite podacima"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — request a copy of the personal data we hold about you",
+    "bs": " — zatražite kopiju ličnih podataka koje čuvamo o Vama"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Correction",
+    "bs": "Ispravite podatke"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — request that inaccurate or incomplete data be corrected",
+    "bs": " — zatražite ispravku netačnih ili nepotpunih podataka"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Deletion",
+    "bs": "Zatražite brisanje"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — request that your personal data be deleted, subject to our legal obligations to retain certain records",
+    "bs": " — zatražite brisanje svojih ličnih podataka, u skladu s našim zakonskim obavezama čuvanja određenih evidencija"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Objection",
+    "bs": "Uložite prigovor"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — object to our use of your data for any purpose other than legal compliance",
+    "bs": " — uložite prigovor na korištenje Vaših podataka u bilo koju svrhu osim ispunjavanja zakonskih obaveza"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any of these rights, email us at ",
+    "bs": "Da biste ostvarili bilo koje od ovih prava, pošaljite nam e-mail na "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We will respond within 30 days.",
+    "bs": ". Odgovorit ćemo u roku od 30 dana."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "9. GDPR — Additional Rights for EU/EEA Data Subjects",
+    "bs": "9. GDPR — dodatna prava lica na koja se odnose podaci u EU/EEA"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "If you are located in the European Union or European Economic Area, the General Data Protection Regulation (GDPR) gives you additional rights beyond those listed in Section 8, and requires us to disclose the following:",
+    "bs": "Ako se nalazite u Evropskoj uniji ili Evropskom ekonomskom prostoru, Opća uredba o zaštiti podataka (GDPR) daje Vam dodatna prava pored onih navedenih u odjeljku 8 i nalaže nam da objavimo sljedeće informacije:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Legal basis for processing",
+    "bs": "Pravni osnov obrade"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — we process your data based on your consent (when you submit a contact or application form), our legitimate interest in operating a recruitment business, and, where applicable, the performance of a contract with you or your employer",
+    "bs": " — Vaše podatke obrađujemo na osnovu Vaše saglasnosti (kada pošaljete kontaktni obrazac ili prijavu), našeg legitimnog interesa za obavljanje djelatnosti regrutacije i, gdje je primjenjivo, izvršavanja ugovora s Vama ili Vašim poslodavcem"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Data Controller",
+    "bs": "Rukovalac podacima"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — Bhuiyan Workforce Ltd. is the data controller for personal data submitted through this website",
+    "bs": " — Bhuiyan Workforce Ltd. je rukovalac ličnim podacima dostavljenim putem ove web-stranice"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to restriction of processing",
+    "bs": "Pravo na ograničenje obrade"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — you may request that we limit how we use your data while a dispute about its accuracy or our right to use it is resolved",
+    "bs": " — možete zatražiti da ograničimo način korištenja Vaših podataka dok se ne riješi spor o njihovoj tačnosti ili našem pravu da ih koristimo"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to data portability",
+    "bs": "Pravo na prenosivost podataka"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — you may request your data in a structured, commonly used, machine-readable format",
+    "bs": " — možete zatražiti svoje podatke u strukturiranom, uobičajeno korištenom i mašinski čitljivom formatu"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to withdraw consent",
+    "bs": "Pravo na povlačenje saglasnosti"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — where processing is based on consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal",
+    "bs": " — ako se obrada zasniva na saglasnosti, možete je povući u bilo kojem trenutku, bez uticaja na zakonitost obrade obavljene prije povlačenja"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to lodge a complaint",
+    "bs": "Pravo na podnošenje pritužbe"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": " — you have the right to lodge a complaint with the data protection supervisory authority in your EU/EEA country of residence",
+    "bs": " — imate pravo podnijeti pritužbu nadzornom organu za zaštitu podataka u svojoj zemlji prebivališta u EU/EEA"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any GDPR right, email us at ",
+    "bs": "Da biste ostvarili bilo koje pravo prema GDPR-u, pošaljite nam e-mail na "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We aim to respond to GDPR requests within 30 days, consistent with regulatory timelines.",
+    "bs": ". Nastojimo odgovoriti na zahtjeve prema GDPR-u u roku od 30 dana, u skladu s regulatornim rokovima."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This section is provided as a good-faith disclosure and does not constitute legal advice. We recommend consulting a qualified data protection professional for guidance specific to your circumstances.",
+    "bs": "Ovaj odjeljak pruža se u dobroj vjeri radi informisanja i ne predstavlja pravni savjet. Preporučujemo da se za savjet prilagođen Vašim okolnostima obratite kvalificiranom stručnjaku za zaštitu podataka."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "10. Data Security",
+    "bs": "10. Sigurnost podataka"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We implement appropriate technical and organisational measures to protect your personal data from unauthorised access, loss, or disclosure. These include encrypted email transmission, restricted access to candidate records, and secure cloud storage. No method of transmission over the internet is 100% secure; however, we take all reasonable steps to protect your information.",
+    "bs": "Primjenjujemo odgovarajuće tehničke i organizacijske mjere kako bismo zaštitili Vaše lične podatke od neovlaštenog pristupa, gubitka ili otkrivanja. Te mjere uključuju šifrirani prijenos e-pošte, ograničen pristup evidencijama kandidata i sigurno čuvanje u oblaku. Nijedan način prijenosa putem interneta nije 100% siguran; ipak, preduzimamo sve razumne korake da zaštitimo Vaše podatke."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "11. International Data Transfers",
+    "bs": "11. Međunarodni prijenos podataka"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "As an international recruitment agency, we necessarily transfer personal data across borders — for example, sharing a worker's documents with an employer in Saudi Arabia or submitting visa applications to European embassies. We do this only where necessary for the recruitment process and in accordance with applicable law.",
+    "bs": "Kao međunarodna kompanija za regrutaciju radnika, nužno prenosimo lične podatke preko granica — na primjer, dijelimo dokumente radnika s poslodavcem u Saudijskoj Arabiji ili podnosimo zahtjeve za vize evropskim ambasadama. To činimo samo kada je potrebno za postupak regrutacije i u skladu s primjenjivim zakonom."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "12. Governing Law",
+    "bs": "12. Mjerodavno pravo"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy is governed by the laws of Bangladesh, including the Digital Security Act 2018 and any applicable data protection regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.",
+    "bs": "Na ovu Politiku privatnosti primjenjuju se zakoni Bangladeša, uključujući Zakon o digitalnoj sigurnosti iz 2018. godine i sve primjenjive propise o zaštiti podataka. Svi sporovi koji proizađu iz ove politike podliježu nadležnosti sudova Bangladeša."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "13. Changes to This Policy",
+    "bs": "13. Izmjene ove politike"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. We will post the updated version on this page with a revised \"last updated\" date. Continued use of the website after any update constitutes acceptance of the revised policy.",
+    "bs": "Povremeno možemo ažurirati ovu Politiku privatnosti kako bismo odrazili promjene u našoj praksi ili primjenjivom zakonu. Ažuriranu verziju objavit ćemo na ovoj stranici s izmijenjenim datumom „posljednjeg ažuriranja“. Nastavak korištenja web-stranice nakon ažuriranja znači da prihvatate izmijenjenu politiku."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "14. Contact",
+    "bs": "14. Kontakt"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For any privacy-related questions, requests, or complaints, please contact us:",
+    "bs": "Za sva pitanja, zahtjeve ili pritužbe u vezi s privatnošću kontaktirajte nas:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Email: ",
+    "bs": "E-mail: "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "WhatsApp: ",
+    "bs": "WhatsApp: "
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "+880 1864 567912",
+    "bs": "+880 1864 567912"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Home",
+    "bs": "Početna"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Terms of Service",
+    "bs": "Uslovi korištenja"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "The terms and conditions governing use of the Bhuiyan Workforce Ltd. website and services.",
+    "bs": "Uslovi koji uređuju korištenje web-stranice i usluga kompanije Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Last updated: May 2026",
+    "bs": "Posljednje ažuriranje: maj 2026"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "1. Acceptance of Terms",
+    "bs": "1. Prihvatanje uslova"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "By accessing or using the bhuiyanworkforce.com website, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use the website. These terms apply to all visitors, employers, and worker candidates who access our website or engage with our services.",
+    "bs": "Pristupanjem web-stranici bhuiyanworkforce.com ili njenim korištenjem prihvatate ove Uslove korištenja i našu Politiku privatnosti. Ako se ne slažete s ovim uslovima, nemojte koristiti web-stranicu. Ovi uslovi odnose se na sve posjetioce, poslodavce i kandidate za radna mjesta koji pristupaju našoj web-stranici ili koriste naše usluge."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "2. About Bhuiyan Workforce Ltd.",
+    "bs": "2. O kompaniji Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based international manpower recruitment company. We connect skilled Bangladeshi workers with employers across 25+ countries in the Gulf, Europe, and Southeast Asia. Our recruitment and deployment services are governed by separate written service agreements between Bhuiyan Workforce Ltd. and the engaging employer.",
+    "bs": "Bhuiyan Workforce Ltd. međunarodna je kompanija za regrutaciju radnika sa sjedištem u Bangladešu. Povezujemo kvalificirane radnike iz Bangladeša s poslodavcima u 25+ zemalja Zaljeva, Evrope i jugoistočne Azije. Naše usluge regrutacije i slanja radnika uređuju zasebni pisani ugovori o uslugama između kompanije Bhuiyan Workforce Ltd. i poslodavca koji ih angažuje."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "3. Website Use",
+    "bs": "3. Korištenje web-stranice"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may use this website for lawful purposes only. You agree not to:",
+    "bs": "Ovu web-stranicu smijete koristiti samo u zakonite svrhe. Saglasni ste da nećete:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use the website in any way that violates applicable laws or regulations in Bangladesh or your jurisdiction",
+    "bs": "Koristiti web-stranicu na način koji krši primjenjive zakone ili propise Bangladeša ili Vaše jurisdikcije"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Submit false, misleading, or fraudulent information through any form on the website",
+    "bs": "Putem bilo kojeg obrasca na web-stranici slati lažne, obmanjujuće ili prevarne informacije"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Impersonate any person, company, or organisation",
+    "bs": "Lažno se predstavljati kao bilo koja osoba, kompanija ili organizacija"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Attempt to gain unauthorised access to any part of the website, our servers, or any connected systems",
+    "bs": "Pokušati ostvariti neovlašten pristup bilo kojem dijelu web-stranice, našim serverima ili povezanim sistemima"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use automated tools, scrapers, or bots to extract content from the website without our written permission",
+    "bs": "Bez naše pisane dozvole koristiti automatizirane alate, programe za prikupljanje podataka ili botove za preuzimanje sadržaja s web-stranice"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Transmit unsolicited commercial communications (spam) through any channel on the website",
+    "bs": "Putem bilo kojeg kanala na web-stranici slati neželjene komercijalne poruke (spam)"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Upload or transmit any content that is harmful, offensive, defamatory, or infringes on the rights of others",
+    "bs": "Otpremljivati ili slati sadržaj koji je štetan, uvredljiv, klevetnički ili krši prava drugih"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "4. Employer Enquiries",
+    "bs": "4. Upiti poslodavaca"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Employers may submit recruitment enquiries through our contact form, email, or WhatsApp. Submitting an enquiry does not constitute a binding contract or guarantee of service. We will respond to genuine enquiries within 24 hours but reserve the right to decline any enquiry at our sole discretion.",
+    "bs": "Poslodavci mogu poslati upite o regrutaciji putem našeg kontaktnog obrasca, e-pošte ili WhatsAppa. Slanje upita ne predstavlja obavezujući ugovor niti garanciju pružanja usluge. Na valjane upite odgovorit ćemo u roku od 24 sata, ali zadržavamo pravo da odbijemo bilo koji upit prema vlastitom nahođenju."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any formal recruitment engagement will be subject to a separate written service agreement specifying the scope of services, fees, timelines, and obligations of both parties. No recruitment fees or service charges are collected through this website — all payments are handled offline under the terms of that agreement.",
+    "bs": "Svaki formalni angažman u vezi s regrutacijom uređuje se posebnim pisanim ugovorom o uslugama, u kojem se navode obim usluga, naknade, rokovi i obaveze obje strane. Putem ove web-stranice ne naplaćuju se naknade za regrutaciju niti troškovi usluga — sva plaćanja obavljaju se van mreže u skladu s tim ugovorom."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "5. Worker Candidate Registrations",
+    "bs": "5. Registracije kandidata za radna mjesta"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Worker candidates who register interest in overseas employment through this website consent to their information being held on our candidate database and, where a suitable opportunity arises, being shared with prospective employers. Registering interest does not guarantee placement or employment. Bhuiyan Workforce Ltd. acts as a recruitment intermediary and is not itself the employer.",
+    "bs": "Kandidati koji putem ove web-stranice iskažu interes za rad u inostranstvu saglasni su da se njihovi podaci čuvaju u našoj bazi kandidata i, kada se pojavi odgovarajuća prilika, dijele s potencijalnim poslodavcima. Iskazivanje interesa ne garantuje zaposlenje. Bhuiyan Workforce Ltd. učestvuje u procesu regrutacije, ali sama nije poslodavac."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Candidates are responsible for ensuring all information and documents submitted are accurate and genuine. Submission of fraudulent documents is a criminal offence under Bangladeshi law and will result in immediate disqualification and may be reported to the relevant authorities.",
+    "bs": "Kandidati su odgovorni za tačnost i vjerodostojnost svih dostavljenih podataka i dokumenata. Dostavljanje lažnih dokumenata krivično je djelo prema zakonima Bangladeša te će rezultirati trenutnom diskvalifikacijom i može biti prijavljeno nadležnim organima."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "6. Accuracy of Information",
+    "bs": "6. Tačnost informacija"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We endeavour to keep all information on this website accurate, current, and complete. However, we make no warranties — express or implied — regarding the accuracy, completeness, or fitness for purpose of any content. Country-specific information including visa types, processing times, salary ranges, and government fees are indicative and subject to change without notice. Employers and candidates should verify all regulatory requirements with the relevant authorities before proceeding.",
+    "bs": "Nastojimo održavati sve informacije na ovoj web-stranici tačnim, ažurnim i potpunim. Međutim, ne dajemo izričite niti podrazumijevane garancije u pogledu tačnosti, potpunosti ili prikladnosti bilo kojeg sadržaja za određenu svrhu. Informacije za pojedine zemlje, uključujući vrste viza, rokove obrade, raspone plata i državne naknade, služe samo kao indikacija i mogu se promijeniti bez prethodne najave. Poslodavci i kandidati trebaju prije nastavka provjeriti sve regulatorne zahtjeve kod nadležnih organa."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "7. Fees and Payments",
+    "bs": "7. Naknade i plaćanja"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All service fees charged by Bhuiyan Workforce Ltd. are agreed in writing prior to commencement of any recruitment engagement. We do not charge worker candidates any fees in violation of the BMET fee schedule or the laws of the destination country. No payments are processed through this website.",
+    "bs": "Sve naknade za usluge koje naplaćuje Bhuiyan Workforce Ltd. ugovaraju se u pisanom obliku prije početka angažmana u vezi s regrutacijom. Kandidatima ne naplaćujemo naknade koje bi bile protivne cjenovniku BMET-a ili zakonima zemlje odredišta. Plaćanja se ne obrađuju putem ove web-stranice."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "8. Limitation of Liability",
+    "bs": "8. Ograničenje odgovornosti"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "To the fullest extent permitted by applicable law, Bhuiyan Workforce Ltd. shall not be liable for:",
+    "bs": "U najvećoj mjeri dopuštenoj primjenjivim zakonom, Bhuiyan Workforce Ltd. ne snosi odgovornost za:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any indirect, incidental, special, or consequential damages arising from your use of or inability to use this website",
+    "bs": "Bilo kakvu posrednu, slučajnu, posebnu ili posljedičnu štetu nastalu korištenjem ove web-stranice ili nemogućnošću njenog korištenja"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any reliance placed on information published on this website",
+    "bs": "Oslanjanje na informacije objavljene na ovoj web-stranici"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any interruption, suspension, or termination of the website or its services",
+    "bs": "Bilo kakav prekid, obustavu ili prestanak rada web-stranice ili njenih usluga"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Actions or omissions of employers, workers, government authorities, or other third parties involved in the recruitment and deployment process",
+    "bs": "Radnje ili propuste poslodavaca, radnika, državnih organa ili drugih trećih strana uključenih u postupak regrutacije i slanja radnika"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Our total liability to you for any claim arising from these terms or your use of the website shall not exceed BDT 10,000 (ten thousand Bangladeshi Taka).",
+    "bs": "Naša ukupna odgovornost prema Vama za bilo koji zahtjev koji proizlazi iz ovih uslova ili Vašeg korištenja web-stranice ne prelazi 10.000 BDT (deset hiljada bangladeških taka)."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "9. Intellectual Property",
+    "bs": "9. Intelektualno vlasništvo"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All content on this website — including the Bhuiyan Workforce Ltd. name, logo, text, graphics, page layouts, and data — is the intellectual property of Bhuiyan Workforce Ltd. and is protected under applicable Bangladeshi and international intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content on this website without our prior written permission.",
+    "bs": "Sav sadržaj na ovoj web-stranici — uključujući naziv Bhuiyan Workforce Ltd., logotip, tekst, grafiku, raspored stranica i podatke — intelektualno je vlasništvo kompanije Bhuiyan Workforce Ltd. i zaštićen je primjenjivim bangladeškim i međunarodnim zakonima o intelektualnom vlasništvu. Bez naše prethodne pisane dozvole ne smijete reproducirati, distribuirati niti mijenjati sadržaj ove web-stranice, niti od njega stvarati izvedena djela."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may share links to pages on our website and quote brief excerpts for non-commercial informational purposes, provided appropriate attribution is given.",
+    "bs": "Možete dijeliti poveznice na stranice naše web-stranice i citirati kratke odlomke u nekomercijalne informativne svrhe, uz navođenje odgovarajućeg izvora."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "10. Third-Party Links and Services",
+    "bs": "10. Poveznice i usluge trećih strana"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "This website contains links to third-party platforms including WhatsApp, LinkedIn, and Facebook. These links are provided for convenience only. We are not responsible for the content, privacy practices, or terms of service of any third-party website. Accessing third-party links is at your own risk.",
+    "bs": "Ova web-stranica sadrži poveznice na platforme trećih strana, uključujući WhatsApp, LinkedIn i Facebook. Te poveznice navedene su isključivo radi praktičnosti. Ne odgovaramo za sadržaj, praksu zaštite privatnosti ni uslove korištenja bilo koje web-stranice treće strane. Poveznicama trećih strana pristupate na vlastitu odgovornost."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "11. Anti-Fraud and Impersonation Warning",
+    "bs": "11. Upozorenje na prevare i lažno predstavljanje"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. only communicates through official channels: ",
+    "bs": "Bhuiyan Workforce Ltd. komunicira isključivo putem službenih kanala: "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": ", and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to ",
+    "bs": " te telefonskih brojeva navedenih na ovoj web-stranici. Ne nudimo poslove putem neželjenih WhatsApp poruka, direktnih poruka na društvenim mrežama niti neslužbenih web-stranica. Ako primite sumnjivu poruku koja navodno dolazi od nas, odmah je prijavite na "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": " immediately.",
+    "bs": "."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "12. Governing Law and Jurisdiction",
+    "bs": "12. Mjerodavno pravo i nadležnost"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "bs": "Ovi Uslovi korištenja uređuju se i tumače u skladu sa zakonima Narodne Republike Bangladeš, uključujući, ali ne ograničavajući se na Zakon o ugovorima iz 1872. godine, Zakon o informacijskoj i komunikacijskoj tehnologiji iz 2006. godine te Zakon o digitalnoj sigurnosti iz 2018. godine. Za sve sporove, zahtjeve ili nesuglasice koji proizlaze iz ovih uslova ili Vašeg korištenja web-stranice isključivo su nadležni sudovi u Daki, Bangladeš."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "13. Changes to These Terms",
+    "bs": "13. Izmjene ovih uslova"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We reserve the right to update or modify these Terms of Service at any time. Changes will be posted on this page with a revised \"last updated\" date. Continued use of the website following the posting of any changes constitutes your acceptance of the revised terms. We encourage you to review this page periodically.",
+    "bs": "Zadržavamo pravo da u bilo kojem trenutku ažuriramo ili izmijenimo ove Uslove korištenja. Izmjene će biti objavljene na ovoj stranici uz izmijenjeni datum „posljednjeg ažuriranja“. Nastavak korištenja web-stranice nakon objave izmjena znači da prihvatate izmijenjene uslove. Preporučujemo da povremeno pregledate ovu stranicu."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "14. Severability",
+    "bs": "14. Odvojivost odredbi"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "If any provision of these Terms of Service is found to be invalid, unlawful, or unenforceable by a court of competent jurisdiction, that provision shall be severed from the remaining terms, which shall continue in full force and effect.",
+    "bs": "Ako sud nadležne jurisdikcije utvrdi da je neka odredba ovih Uslova korištenja nevažeća, nezakonita ili neprovediva, ta odredba će se odvojiti od preostalih uslova, koji će ostati na snazi u punom obimu."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "15. Contact",
+    "bs": "15. Kontakt"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "For any questions regarding these terms, please contact us:",
+    "bs": "Za sva pitanja u vezi s ovim uslovima kontaktirajte nas:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Email: ",
+    "bs": "E-mail: "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "WhatsApp: ",
+    "bs": "WhatsApp: "
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "+880 1864 567912",
+    "bs": "+880 1864 567912"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Construction & Engineering",
+    "bs": "Građevinarstvo i inženjerstvo"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Drivers & Transport",
+    "bs": "Vozači i transport"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Chefs & Hospitality",
+    "bs": "Kuhari i ugostiteljstvo"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Farm & Garden",
+    "bs": "Poljoprivreda i vrtlarstvo"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Warehouse & Logistics",
+    "bs": "Skladištenje i logistika"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Factory & Manufacturing",
+    "bs": "Fabrike i proizvodnja"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Oil & Gas",
+    "bs": "Nafta i plin"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Security Guards",
+    "bs": "Zaštitari"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Cleaning & Housekeeping",
+    "bs": "Čišćenje i održavanje"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Retail & Supermarket Staff",
+    "bs": "Maloprodaja i osoblje supermarketa"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Painting & Finishing",
+    "bs": "Farbanje i završni radovi"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "bs": "Armirački radovi"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Scaffolding & Formwork",
+    "bs": "Skele i oplata"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "bs": "Uređenje i održavanje zelenih površina"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Mason & Bricklaying",
+    "bs": "Zidari i zidanje opekom"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "bs": "Elektromonteri pomoćnici i radnici za provlačenje kablova"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Laundry & Linen Services",
+    "bs": "Praonica i usluge s rubljem"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Food Processing & Packing",
+    "bs": "Prerada i pakovanje hrane"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Fishery & Aquaculture Workers",
+    "bs": "Radnici u ribarstvu i akvakulturi"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Caregiving & Elderly Support",
+    "bs": "Njega i podrška starijim osobama"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Welding & Fabrication",
+    "bs": "Zavarivanje i izrada metalnih konstrukcija"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Plumbing & HVAC",
+    "bs": "Vodoinstalaterski radovi i HVAC"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Heavy Equipment Operators",
+    "bs": "Rukovaoci teškom mehanizacijom"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Ship & Marine Fabrication",
+    "bs": "Brodogradnja i pomorska izrada"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Domestic & Household Workers",
+    "bs": "Kućni radnici"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Last updated: November 2026",
+    "bs": "Posljednje ažuriranje: novembar 2026"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "bs": "Kandidati za rad prijavljuju se putem online obrasca na ovoj web-stranici. Dokumenti koje tamo učitate, kao što su Vaš CV, kopija pasoša i certifikati, šalju se našem timu e-poštom i na tom putu prolaze kroz servere našeg pružaoca usluga hostinga (Cloudflare). Prije nego što pošaljete obrazac, od Vas se traži da potvrdite da ste pročitali ovu politiku i da pristajete na ovu obradu, a mi zajedno s Vašom prijavom čuvamo evidenciju o vremenu kada ste dali tu saglasnost."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy is governed by the laws of Bangladesh, including applicable Bangladeshi cyber-security and data protection laws and regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.",
+    "bs": "Na ovu Politiku privatnosti primjenjuju se zakoni Bangladeša, uključujući primjenjive bangladeške zakone i propise o kibernetičkoj sigurnosti i zaštiti podataka. Svi sporovi koji proizađu iz ove politike podliježu nadležnosti sudova Bangladeša."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based international manpower recruitment company. We connect skilled Bangladeshi workers with employers across 25+ countries in the Middle East, Europe, Asia, and Africa. Our recruitment and deployment services are governed by separate written service agreements between Bhuiyan Workforce Ltd. and the engaging employer.",
+    "bs": "Bhuiyan Workforce Ltd. međunarodna je kompanija za regrutaciju radnika sa sjedištem u Bangladešu. Povezujemo kvalificirane radnike iz Bangladeša s poslodavcima u 25+ zemalja na Bliskom istoku, u Evropi, Aziji i Africi. Naše usluge regrutacije i slanja radnika uređuju zasebni pisani ugovori o uslugama između kompanije Bhuiyan Workforce Ltd. i poslodavca koji angažuje radnike."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. only communicates through official channels: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com, and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to",
+    "bs": "Bhuiyan Workforce Ltd. komunicira isključivo putem službenih kanala: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com te telefonskih brojeva navedenih na ovoj web-stranici. Ne nudimo poslove putem neželjenih WhatsApp poruka, direktnih poruka na društvenim mrežama niti neslužbenih web-stranica. Ako primite sumnjivu poruku koja navodno dolazi od nas, odmah je prijavite na"
+  }
+];

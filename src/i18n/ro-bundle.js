@@ -24,12 +24,25 @@ import { registerUi } from './uiTables.js';
 import { registerPageContent } from '../content/pages.js';
 import { registerContent } from '../content/index.js';
 import { registerExtra } from './extra.js';
+import { registerStaticPageTranslations } from './staticPageText.js';
+import roStaticPages from './ro-static-page-translations.js';
 import { markLangLoaded } from './lazyLangs.js';
 
 registerLocale('ro', roLocale);
 registerUi('ro', roUi);
 registerPageContent('ro', roPages);
-registerExtra('ro', roExtra);
+// Raw JSX text on the legal, guide, capabilities and form pages is translated by the static localizer.
+// ContactForm rows are left out: its service names are translated through <Tx> (extra.js).
+registerStaticPageTranslations('ro', roStaticPages, { skipFiles: ['src/components/ContactForm.jsx'] });
+// Fill gaps in the <Tx> table from the delivered JSON (same English text, whitespace-normalised) so that
+// entries split differently in extra.js (leading dash, trailing space) still resolve.
+const roExtraFull = { ...roExtra };
+for (const row of roStaticPages) {
+  if (row.file === 'src/components/ContactForm.jsx') continue;
+  const key = row.en.replace(/\s+/g, ' ').trim();
+  if (key && roExtraFull[key] === undefined) roExtraFull[key] = row.ro.trim();
+}
+registerExtra('ro', roExtraFull);
 registerContent('ro', {
   // Romanian countries ship as an object keyed by slug (Polish ships an array of records).
   countries: Array.isArray(roCountries) ? Object.fromEntries(roCountries.map((c) => [c.slug, c])) : roCountries,

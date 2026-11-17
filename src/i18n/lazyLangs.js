@@ -1,11 +1,11 @@
 // Languages whose bulky content is loaded on demand instead of shipping in the main bundle.
-// Arabic, Polish and Romanian (countries, services, posts, guides, UI strings, head strings).
+// Every real language except English (countries, services, posts, guides, UI strings, head strings).
 // src/i18n/<lang>-bundle.js holds all of it and calls markLangLoaded('<lang>') when it has registered.
 //
 // - Browser: src/main.jsx loads the bundle before rendering when the URL is under /ar.
 // - Static build and tests: entry-server.jsx and the scripts import it directly.
 
-export const LAZY_LANGS = ['ar', 'pl', 'ro'];
+export const LAZY_LANGS = ['ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr', 'bs', 'mk', 'it'];
 
 const loaded = new Set();
 

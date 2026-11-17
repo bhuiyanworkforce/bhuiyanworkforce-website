@@ -1,0 +1,1863 @@
+// Generated from ro-extra-pages.json by scripts/sync-static-translations.mjs.
+export default [
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Insights & Resources",
+    "ro": "Perspective și resurse"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Practical guidance for employers recruiting overseas workers, and for Bangladeshi workers navigating international employment.",
+    "ro": "Îndrumări practice pentru angajatorii care recrutează lucrători în străinătate și pentru lucrătorii din Bangladesh care navighează în locurile de muncă internaționale."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Search articles… e.g. Saudi visa, construction, BMET",
+    "ro": "Căutați articole... de ex. Viză saudită, construcție, BMET"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Latest Articles",
+    "ro": "Ultimele articole"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "From the Bhuiyan Workforce Ltd. Blog",
+    "ro": "De pe blogul Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Industry news, compliance updates, and practical guides for employers and workers.",
+    "ro": "Știri din industrie, actualizări de conformitate și ghiduri practice pentru angajatori și lucrători."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "No articles found",
+    "ro": "Nu s-au găsit articole"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "— try different keywords or filters.",
+    "ro": "— încercați diferite cuvinte cheie sau filtre."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Read article →",
+    "ro": "Citește articolul →"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Stay Up to Date",
+    "ro": "Rămâneți la curent"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Follow us on LinkedIn or WhatsApp for the latest recruitment news, compliance updates, and destination guides.",
+    "ro": "Urmărește-ne pe LinkedIn sau WhatsApp pentru cele mai recente știri despre recrutare, actualizări de conformitate și ghiduri de destinație."
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "Follow on LinkedIn",
+    "ro": "Urmărește pe LinkedIn"
+  },
+  {
+    "file": "src/pages/BlogPage.jsx",
+    "en": "WhatsApp Updates",
+    "ro": "Actualizări WhatsApp"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Understanding BMET & Emigration Clearance",
+    "ro": "Înțelegerea BMET și autorizarea emigrației"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Step-by-step explanation of the Bangladesh Manpower Bureau process every worker must complete.",
+    "ro": "Explicație pas cu pas a procesului Bangladesh Manpower Bureau pe care fiecare muncitor trebuie să îl completeze."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Country-by-Country Visa Requirements",
+    "ro": "Cerințe de viză pentru fiecare țară"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Visa timelines, fees, and documentation requirements for the Middle East, Europe, Asia, and Africa at a glance.",
+    "ro": "Termenele vizelor, taxele și cerințele de documentare pentru Orientul Mijlociu, Europa, Asia și Africa dintr-o privire."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Legal Compliance Checklist",
+    "ro": "Lista de verificare a conformității legale"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "What every employer must provide to stay compliant with Bangladesh labour export regulations.",
+    "ro": "Ce trebuie să furnizeze fiecare angajator pentru a respecta reglementările de export de forță de muncă din Bangladesh."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Trade Testing & Skills Verification",
+    "ro": "Testarea comerțului și verificarea abilităților"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "How Bangladeshi workers are trade-tested and what certifications to expect.",
+    "ro": "Cum sunt testați lucrătorii din Bangladesh și la ce certificări să vă așteptați."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Employment Contract Standards",
+    "ro": "Standardele contractelor de muncă"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "What a compliant employment contract must include for each destination country.",
+    "ro": "Ce trebuie să includă un contract de muncă conform pentru fiecare țară de destinație."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Mobilisation Timeline Guide",
+    "ro": "Ghidul cronologic al mobilizării"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Realistic timelines from first contact to workers arriving on site — by country and trade category.",
+    "ro": "Cronologie realiste de la primul contact până la lucrătorii care sosesc la fața locului – în funcție de țară și categorie comercială."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Not specified",
+    "ro": "Nu este specificat"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Employer's Guide",
+    "ro": "Ghidul angajatorului"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Free Download",
+    "ro": "Descărcare gratuită"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "The Employer's Complete Guide to Recruiting from Bangladesh",
+    "ro": "Ghidul complet al angajatorului pentru recrutarea din Bangladesh"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Everything international employers need to know — visa requirements, legal compliance, trade testing, mobilisation timelines, and more. Written by our recruitment specialists.",
+    "ro": "Tot ce trebuie să știe angajatorii internaționali — cerințele de viză, conformitatea legală, testarea comerțului, termenele de mobilizare și multe altele. Scrisă de specialiștii noștri în recrutare."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "What's Inside",
+    "ro": "Ce este înăuntru"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "6 Chapters of Expert Guidance",
+    "ro": "6 capitole ale îndrumării experților"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Guide on Its Way!",
+    "ro": "Ghid pe drumul său!"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Thank you,",
+    "ro": "multumesc,"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": ". Our team will email the guide to",
+    "ro": ". Echipa noastră va trimite ghidul prin e-mail către"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "within the next few hours.",
+    "ro": "în următoarele câteva ore."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "In the meantime, explore our",
+    "ro": "Între timp, explorați-ne"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "country guides",
+    "ro": "ghiduri de țară"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "for detailed visa and deployment information.",
+    "ro": "pentru informații detaliate despre viză și desfășurare."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Free Resource",
+    "ro": "Resursă gratuită"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Get the Free Guide",
+    "ro": "Obțineți Ghidul gratuit"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Complete the form and we'll email you the guide directly. No spam — ever.",
+    "ro": "Completați formularul și vă vom trimite direct ghidul prin e-mail. Fără spam - vreodată."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Full Name *",
+    "ro": "Numele complet *"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Ahmad Al-Rashid",
+    "ro": "Ahmad Al-Rashid"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Company Name *",
+    "ro": "Numele companiei *"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Al-Rashid Construction LLC",
+    "ro": "Al-Rashid Construction LLC"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Work Email *",
+    "ro": "Email de serviciu *"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Country of Interest",
+    "ro": "Țara de interes"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Select destination…",
+    "ro": "Selectați destinația..."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Saudi Arabia",
+    "ro": "Arabia Saudită"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Other Europe",
+    "ro": "Alta Europa"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Southeast Asia",
+    "ro": "Asia de Sud-Est"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Multiple Countries",
+    "ro": "Mai multe țări"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "Something went wrong. Please email",
+    "ro": "Ceva a mers prost. Vă rugăm să trimiteți un e-mail"
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "directly.",
+    "ro": "direct."
+  },
+  {
+    "file": "src/pages/EmployerGuidePage.jsx",
+    "en": "By submitting, you agree to receive occasional recruitment insights from Bhuiyan Workforce. Unsubscribe anytime.",
+    "ro": "Prin trimitere, sunteți de acord să primiți ocazional informații despre recrutare de la Bhuiyan Workforce. Dezabonați-vă oricând."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Requirement Intake",
+    "ro": "Aportul necesar"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We collect detailed job descriptions, skill requirements, visa quotas, salary ranges, and deployment timelines from the client employer.",
+    "ro": "Colectăm descrieri detaliate ale posturilor, cerințe de competențe, cote de viză, intervale de salariu și termene de implementare de la angajatorul client."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Candidate Sourcing",
+    "ro": "Aprovizionarea candidaților"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We leverage our Bangladesh-wide network of trade professionals, referral partners, and candidate databases to shortlist qualified applicants.",
+    "ro": "Utilizăm rețeaua noastră din Bangladesh de profesioniști în comerț, parteneri de recomandare și baze de date de candidați pentru a selecta candidați calificați."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Screening & Testing",
+    "ro": "Screening și testare"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate undergoes trade skill tests, structured interviews, and thorough background verification before being presented to the client.",
+    "ro": "Fiecare candidat este supus unor teste de abilități comerciale, interviuri structurate și o verificare aprofundată a antecedentelor înainte de a fi prezentat clientului."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Medical Clearance",
+    "ro": "Autorizația medicală"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers complete mandatory medical fitness examinations at government-approved centres to meet destination country health requirements.",
+    "ro": "Lucrătorii efectuează examene medicale obligatorii la centrele aprobate de guvern pentru a îndeplini cerințele de sănătate ale țării de destinație."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Documentation & Visa",
+    "ro": "Documentatie & Viza"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "We manage all documentation: passport validation, visa applications, attestation, BMET clearance, and pre-departure orientation.",
+    "ro": "Gestionăm toată documentația: validarea pașaportului, cererile de viză, atestarea, autorizarea BMET și orientarea înainte de plecare."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Workers are fully briefed, oriented on destination country norms, and deployed on schedule. Post-arrival follow-up is conducted.",
+    "ro": "Lucrătorii sunt informați pe deplin, sunt orientați pe normele țării de destinație și sunt desfășurați conform programului. Urmărirea după sosire este efectuată. Pos"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Direct Talent Access",
+    "ro": "Acces direct la talent"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Tap into Bangladesh's large, motivated labor pool across all major trade and service sectors.",
+    "ro": "Accesați fondul mare de forță de muncă motivată din Bangladesh în toate sectoarele majore de comerț și servicii."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Pre-Screened Workers",
+    "ro": "Lucrători pre-evaluați"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Every candidate is skills-tested, medically cleared, and document-ready before deployment.",
+    "ro": "Fiecare candidat este testat din punct de vedere medical, este autorizat din punct de vedere medical și este pregătit pentru documente înainte de implementare."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Global Reach",
+    "ro": "Acoperire globală"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Active deployment coverage across 25+ countries spanning the Middle East, Europe, Asia, and Africa.",
+    "ro": "Acoperire activă de implementare în peste 25 de țări din Orientul Mijlociu, Europa, Asia și Africa."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Dedicated Support",
+    "ro": "Suport dedicat"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Clients receive a dedicated account contact for seamless communication end-to-end.",
+    "ro": "Clienții primesc un contact de cont dedicat pentru o comunicare fără întreruperi de la capăt la capăt."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Fast Turnaround",
+    "ro": "Întoarcere rapidă"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Streamlined process from requirement submission to worker deployment.",
+    "ro": "Proces simplificat de la transmiterea cerințelor până la implementarea lucrătorilor."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Middle East (7)",
+    "ro": "Orientul Mijlociu (7)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Saudi Arabia · United Arab Emirates · Qatar · Kuwait · Oman · Bahrain · Jordan",
+    "ro": "Arabia Saudită · Emiratele Arabe Unite · Qatar · Kuweit · Oman · Bahrain · Iordania"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Asia Pacific (3)",
+    "ro": "Asia Pacific (3)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Malaysia · Singapore · Maldives",
+    "ro": "Malaezia · Singapore · Maldive"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Europe (19)",
+    "ro": "Europa (19)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Italy · Serbia · Portugal · Greece · Slovakia · Slovenia · Latvia · Cyprus · Estonia · Lithuania · Poland · Czech Republic · Bulgaria · Bosnia and Herzegovina · Hungary · Croatia · Romania · Montenegro · North Macedonia",
+    "ro": "Italia · Serbia · Portugalia · Grecia · Slovacia · Slovenia · Letonia · Cipru · Estonia · Lituania · Polonia · Cehia · Bulgaria · Bosnia si Hertegovina · Ungaria · Croatia · Romania · Muntenegru · Macedonia de Nord"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Caucasus (2)",
+    "ro": "Caucaz (2)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Armenia · Georgia",
+    "ro": "Armenia · Georgia"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Indian Ocean (2)",
+    "ro": "Oceanul Indian (2)"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Seychelles · Mauritius",
+    "ro": "Seychelles · Mauritius"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "For Employers",
+    "ro": "Pentru Angajatori"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd.",
+    "ro": "Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Capabilities & Company Overview",
+    "ro": "Capabilități și prezentare generală a companiei"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / Save as PDF",
+    "ro": "🖨️ Imprimați/Salvați ca PDF"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "BHUIYAN WORKFORCE LTD.",
+    "ro": "BHUIYAN WORKFORCE LTD."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Connecting Bangladesh's skilled workforce to the world —",
+    "ro": "Conectarea forței de muncă calificate din Bangladesh cu lumea —"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "25+ countries",
+    "ro": "Peste 25 de țări"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "across the Middle East, Europe, Asia & Africa.",
+    "ro": "în Orientul Mijlociu, Europa, Asia și Africa."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Who We Are",
+    "ro": "Cine suntem"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "About Bhuiyan Workforce Ltd.",
+    "ro": "Despre Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based manpower recruitment and export company founded by MD Rezaul Kabir Bhuiyan. We specialise in sourcing, rigorously screening, and deploying skilled, semi-skilled, and general workers to international employers across the Middle East, Europe, Asia, and Africa.",
+    "ro": "Bhuiyan Workforce Ltd. este o companie de recrutare și export de forță de muncă din Bangladesh, fondată de MD Rezaul Kabir Bhuiyan. Suntem specializați în aprovizionarea, verificarea riguroasă și desfășurarea lucrătorilor calificați, semicalificați și generali către angajatori internaționali din Orientul Mijlociu, Europa, Asia și Africa."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Built on the principles of transparency, reliability, and ethical recruitment, we act as a dedicated bridge between global labour demand and Bangladesh's large, hardworking, and talent-rich workforce. We are fully operational in candidate sourcing, screening, and employer relationship-building across all 25 trade categories.",
+    "ro": "Construit pe principiile transparenței, fiabilității și recrutării etice, acționăm ca o punte dedicată între cererea globală de muncă și forța de muncă mare, muncitoare și bogată în talente din Bangladesh. Suntem pe deplin operaționali în aprovizionarea candidaților, selectarea și construirea relațiilor cu angajatorii în toate cele 25 de categorii comerciale."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "What We Supply",
+    "ro": "Ce furnizăm"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Worker Categories",
+    "ro": "Categorii de muncitori"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Skilled, semi-skilled, and specialist workers across all major trade and service sectors.",
+    "ro": "Lucrători calificați, semicalificați și specialiști din toate sectoarele majore de comerț și servicii."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Deployment Destinations — 25+ Countries",
+    "ro": "Destinații de implementare — 25+ țări"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "How It Works",
+    "ro": "Cum funcționează"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Recruitment Process",
+    "ro": "Procesul nostru de recrutare"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "A structured, transparent 6-step process from requirement intake to worker deployment.",
+    "ro": "Un proces structurat și transparent în 6 pași, de la preluarea cerințelor până la implementarea lucrătorilor."
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Our Advantage",
+    "ro": "Avantajul nostru"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Why Choose Bhuiyan Workforce?",
+    "ro": "De ce să alegeți forța de muncă Bhuiyan? Bhuiyan Workforce"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Kawtoli, Brahmanbaria, Bangladesh 3400",
+    "ro": "Kawtoli, Brahmanbaria, Bangladesh 3400"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "General Enquiry",
+    "ro": "Întrebare generală"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Mobile / WhatsApp",
+    "ro": "Mobil / WhatsApp"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "Share this capabilities page:",
+    "ro": "Partajați această pagină de capabilități:"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "📋 Copy Link",
+    "ro": "📋 Copiați linkul"
+  },
+  {
+    "file": "src/pages/CapabilitiesPage.jsx",
+    "en": "🖨️ Print / PDF",
+    "ro": "🖨️ Imprimați / PDF"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Construction & Engineering",
+    "ro": "Construcții și inginerie"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Oil & Gas",
+    "ro": "Petrol și gaze"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Drivers & Transport",
+    "ro": "Șoferi și transport"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Chefs & Hospitality",
+    "ro": "Bucătari și ospitalitate"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Security Guards",
+    "ro": "Gărzi de securitate"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Cleaning & Housekeeping",
+    "ro": "Curățenie și menaj"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Farm & Garden",
+    "ro": "Fermă și grădină"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Warehouse & Logistics",
+    "ro": "Depozit și logistică"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Factory & Manufacturing",
+    "ro": "Fabrică și producție"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Retail & Supermarket Staff",
+    "ro": "Personal de retail și supermarket"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Painting & Finishing",
+    "ro": "Vopsire și finisare"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "ro": "Fixare și armare din oțel"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Scaffolding & Formwork",
+    "ro": "Schele și cofraje"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "ro": "Amenajarea teritoriului și îngrijirea terenului"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mason & Bricklaying",
+    "ro": "Zidari si zidari"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "ro": "Ajutoare electrice și extractoare de cabluri"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Laundry & Linen Services",
+    "ro": "Servicii de spălătorie și lenjerie"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Food Processing & Packing",
+    "ro": "Prelucrarea și ambalarea alimentelor"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Fishery & Aquaculture",
+    "ro": "Pescuit și acvacultură"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Caregiving & Elderly Support",
+    "ro": "Îngrijire și sprijin pentru bătrâni"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Saudi Arabia",
+    "ro": "Arabia Saudită"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Czech Republic",
+    "ro": "Republica Cehă"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bosnia and Herzegovina",
+    "ro": "Bosnia și Herțegovina"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "North Macedonia",
+    "ro": "Macedonia de Nord"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Open to Any Country",
+    "ro": "Deschis oricărei țări"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Thank you,",
+    "ro": "multumesc,"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": ". We have received your application and will review it within 3–5 working days. If shortlisted, our team will contact you directly.",
+    "ro": ". Am primit cererea dvs. și o vom examina în termen de 3-5 zile lucrătoare. Dacă sunteți pe lista scurtă, echipa noastră vă va contacta direct."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "For Workers",
+    "ro": "Pentru Muncitori"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Full Name (as in passport) *",
+    "ro": "Nume complet (ca în pașaport) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Mohammad Rafiqul Islam",
+    "ro": "Muhammad Rafiqul Islam"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Date of Birth *",
+    "ro": "Data nașterii *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Phone / WhatsApp *",
+    "ro": "Telefon / WhatsApp *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "+880 17XX XXX XXX",
+    "ro": "+880 17XX XXX XXX"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Email Address",
+    "ro": "Adresa de e-mail"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Home Address (District/Division) *",
+    "ro": "Adresa de domiciliu (sector/diviziune) *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Brahmanbaria, Chittagong Division",
+    "ro": "de ex. Brahmanbaria, Divizia Chittagong"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Number",
+    "ro": "Numărul pașaportului"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Passport Expiry Date",
+    "ro": "Data de expirare a pașaportului"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Category *",
+    "ro": "Categoria comercială *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select category…",
+    "ro": "Selectați categoria..."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Specific Role / Trade *",
+    "ro": "Rol specific / comerț *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Mason, Welder, Chef de Partie",
+    "ro": "de ex. Zidar, sudor, lider de partid"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Years of Experience *",
+    "ro": "Ani de experienta*"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select…",
+    "ro": "Selecta…"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Less than 1 year",
+    "ro": "Mai puțin de 1 an"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "1–2 years",
+    "ro": "1–2 ani"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "3–5 years",
+    "ro": "3–5 ani"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "6–10 years",
+    "ro": "6–10 ani"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "10+ years",
+    "ro": "10+ ani"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Preferred Country *",
+    "ro": "Țara preferată *"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Select country…",
+    "ro": "Selectați țara..."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Available From",
+    "ro": "Disponibil de la"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Education Level",
+    "ro": "Nivel de educație"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No formal education",
+    "ro": "Fără educație formală"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Primary (Class 1–5)",
+    "ro": "Primar (clasa 1–5)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "JSC / Class 8",
+    "ro": "SA / Clasa 8"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "SSC / Class 10",
+    "ro": "SSC / Clasa 10"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "HSC / Class 12",
+    "ro": "HSC / Clasa 12"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Diploma / Vocational",
+    "ro": "Diploma / Vocational"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Bachelor's Degree",
+    "ro": "Diplomă de licență"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Master's Degree or above",
+    "ro": "Master sau superioare"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Languages Spoken",
+    "ro": "Limbi vorbite"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "e.g. Bengali, English (basic), Arabic (basic)",
+    "ro": "de ex. Bengali, engleză (de bază), arabă (de bază)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Medical Fitness Certificate?",
+    "ro": "Certificat de fitness medical?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — valid certificate",
+    "ro": "Da — certificat valabil"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet obtained",
+    "ro": "Nu - nu a fost încă obținut"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Expired — needs renewal",
+    "ro": "Expirat - necesită reînnoire"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Trade Test Certificate?",
+    "ro": "Certificat de testare comercială?"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — certified",
+    "ro": "Da - certificat"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet tested",
+    "ro": "Nu, nu a fost încă testat"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "In progress",
+    "ro": "În curs"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "BMET Smart Card?",
+    "ro": "Card inteligent BMET? Smart Card"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Yes — registered",
+    "ro": "Da — înregistrat"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "No — not yet registered",
+    "ro": "Nu - nu este încă înregistrat"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload CV / Resume (PDF or Word, max 5MB)",
+    "ro": "Încărcați CV / CV (PDF sau Word, max 5MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Passport Copy (PDF or image, max 5MB)",
+    "ro": "Încărcați o copie a pașaportului (PDF sau imagine, max 5MB)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Upload Trade/Skills Certificate (optional)",
+    "ro": "Încărcați certificatul de comerț/de competențe (opțional)"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "📎",
+    "ro": "📎"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.",
+    "ro": "Toate fișierele încărcate (CV, copie a pașaportului, certificat) vor fi trimise ca atașamente la e-mail pentru ca echipa noastră să le examineze."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Additional Information / Cover Letter",
+    "ro": "Informații suplimentare/Scrisoare de intenție"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…",
+    "ro": "Spune-ne despre experiența ta, angajarea anterioară în străinătate, abilitățile și de ce vrei să lucrezi în străinătate..."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Important:",
+    "ro": "Important:"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our",
+    "ro": "Prin trimiterea acestei cereri, confirmați că toate informațiile furnizate sunt corecte. Bhuiyan Workforce Ltd. va contacta candidații pe lista scurtă în termen de 3-5 zile lucrătoare. Trimiterea nu garantează plasarea. Tratăm datele dumneavoastră în conformitate cu noastre"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Privacy Policy",
+    "ro": "Politica de confidențialitate"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "I have read the",
+    "ro": "Am citit"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed.",
+    "ro": "și sunt de acord ca Bhuiyan Workforce Ltd. să-mi prelucreze datele personale, inclusiv copia pașaportului și celelalte documente pe care le încarc, pentru a-mi evalua cererea și a aranja recrutarea. Înțeleg că profilul meu este partajat unui angajator numai după ce am fost informat și am fost de acord."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Please tick the box above to submit your application.",
+    "ro": "Vă rugăm să bifați caseta de mai sus pentru a vă trimite cererea."
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "Something went wrong. Please call us on",
+    "ro": "Ceva a mers prost. Vă rugăm să ne sunați"
+  },
+  {
+    "file": "src/pages/WorkerApplicationPage.jsx",
+    "en": "or email",
+    "ro": "sau e-mail"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Privacy Policy",
+    "ro": "Politica de confidențialitate"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "How Bhuiyan Workforce Ltd. collects, uses, and protects your personal information.",
+    "ro": "Cum Bhuiyan Workforce Ltd. colectează, utilizează și vă protejează informațiile personale."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Last updated: November 2026",
+    "ro": "Ultima actualizare: noiembrie 2026"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "1. Who We Are",
+    "ro": "1. Cine suntem"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. (\"we\", \"us\", \"our\") is a Bangladesh-based international manpower recruitment company. Our registered office is in Brahmanbaria, Bangladesh. Our website is bhuiyanworkforce.com.",
+    "ro": "Bhuiyan Workforce Ltd. (\"noi\", \"noi\", \"nostru\") este o companie internațională de recrutare a forței de muncă din Bangladesh. Sediul nostru social este în Brahmanbaria, Bangladesh. Site-ul nostru este bhuiyanworkforce.com."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For all privacy-related enquiries, contact us at",
+    "ro": "Pentru toate întrebările legate de confidențialitate, contactați-ne la adresa"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "2. Who This Policy Applies To",
+    "ro": "2. Cui se aplică această politică"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy applies to:",
+    "ro": "Această politică de confidențialitate se aplică pentru:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— companies and individuals who contact us to source workers",
+    "ro": "— companii și persoane fizice care ne contactează pentru a obține lucrători"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates",
+    "ro": "Candidați muncitori"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— individuals who register interest in overseas employment opportunities",
+    "ro": "— persoanele care înregistrează interes pentru oportunitățile de angajare în străinătate"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Website visitors",
+    "ro": "Vizitatorii site-ului"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— anyone who browses bhuiyanworkforce.com",
+    "ro": "— oricine navighează pe bhuiyanworkforce.com"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "3. Information We Collect",
+    "ro": "3. Informațiile pe care le colectăm"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We collect information in the following ways:",
+    "ro": "Colectăm informații în următoarele moduri:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form submissions",
+    "ro": "Trimiterea formularelor de contact"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— name, company name, email address, and your message",
+    "ro": "— numele, numele companiei, adresa de e-mail și mesajul dvs"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Direct communications",
+    "ro": "Comunicații directe"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— emails, WhatsApp messages, and phone calls you initiate with us",
+    "ro": "— e-mailuri, mesaje WhatsApp și apeluri telefonice pe care le inițiați cu noi"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate registrations",
+    "ro": "Înregistrări candidați lucrători"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— name, date of birth, nationality, passport details, trade qualifications, work experience, and supporting documents such as certificates and photographs",
+    "ro": "— numele, data nașterii, naționalitatea, detaliile pașaportului, calificările profesionale, experiența de muncă și documentele justificative, cum ar fi certificate și fotografii"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical data",
+    "ro": "Date tehnice"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— IP address, browser type, and pages visited, collected automatically when you use our website",
+    "ro": "— Adresa IP, tipul de browser și paginile vizitate, colectate automat atunci când utilizați site-ul nostru web"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "ro": "Candidații lucrători aplică printr-un formular online de pe acest site web. Documentele pe care le încărcați acolo, cum ar fi CV-ul, copia pașaportului și certificatele, sunt trimise echipei noastre prin e-mail și trec prin serverele furnizorului nostru de găzduire (Cloudflare) pe drum. Înainte de a putea trimite formularul, vi se cere să confirmați că ați citit această politică și sunteți de acord cu această prelucrare, iar noi păstrăm o evidență a timpului în care ați dat acel consimțământ împreună cu cererea dumneavoastră."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not collect payment information. All financial transactions related to our services are conducted offline.",
+    "ro": "Nu colectăm informații de plată. Toate tranzacțiile financiare legate de serviciile noastre sunt efectuate offline."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "4. How We Use Your Information",
+    "ro": "4. Cum folosim informațiile dvs"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We use the information we collect to:",
+    "ro": "Folosim informațiile pe care le colectăm pentru:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Respond to employer enquiries and prepare recruitment proposals",
+    "ro": "Răspunde la întrebările angajatorilor și pregătește propuneri de recrutare pos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Match worker candidates with suitable employer opportunities",
+    "ro": "Potriviți candidații angajați cu oportunități adecvate de angajator"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Process BMET registration, visa applications, medical clearances, and other deployment documentation",
+    "ro": "Procesați înregistrarea BMET, cererile de viză, autorizațiile medicale și alte documente de desfășurare"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Communicate with you about the status of an active recruitment or deployment",
+    "ro": "Comunicați cu dvs. despre starea unei recrutări sau a unei implementări active"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Comply with legal obligations under Bangladeshi law and the laws of destination countries",
+    "ro": "Respectați obligațiile legale în conformitate cu legislația din Bangladesh și legile țărilor de destinație"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Improve our website and services based on usage patterns",
+    "ro": "Îmbunătățiți site-ul și serviciile noastre pe baza tiparelor de utilizare"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We do not sell, rent, or trade your personal data to any third party for commercial purposes.",
+    "ro": "Nu vindem, închiriem sau comercializăm datele dumneavoastră cu caracter personal unei terțe părți în scopuri comerciale. pos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "5. Data Sharing",
+    "ro": "5. Partajarea datelor"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may share your personal data only in the following circumstances:",
+    "ro": "Putem partaja datele dumneavoastră cu caracter personal numai în următoarele circumstanțe:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With employers",
+    "ro": "Cu angajatorii"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— worker candidate profiles are shared with prospective employers only after the candidate has been informed and has consented",
+    "ro": "— profilurile candidaților lucrători sunt partajate cu potențialii angajatori numai după ce candidatul a fost informat și și-a dat consimțământul"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With government authorities",
+    "ro": "Cu autoritățile guvernamentale"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— BMET, Bangladesh embassies, destination-country immigration authorities, and GAMCA-approved medical centres, as required by law during the deployment process",
+    "ro": "— BMET, ambasadele Bangladesh, autoritățile de imigrare din țara de destinație și centre medicale aprobate de GAMCA, conform cerințelor legii în timpul procesului de desfășurare"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "With service providers",
+    "ro": "Cu furnizorii de servicii"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— third-party providers who assist us in operating our website and communications, bound by confidentiality obligations",
+    "ro": "— furnizori terți care ne asistă în operarea site-ului nostru web și a comunicărilor, obligați de obligații de confidențialitate"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "When required by law",
+    "ro": "Când este cerut de lege"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— in response to a lawful request from a court, government authority, or regulatory body in Bangladesh",
+    "ro": "— ca răspuns la o solicitare legală din partea unei instanțe, a unei autorități guvernamentale sau a unui organism de reglementare din Bangladesh"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "6. Cookies and Tracking",
+    "ro": "6. Cookie-uri și urmărire"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Our website uses minimal cookies necessary for basic functionality. We do not use advertising cookies or third-party tracking pixels. Technical data such as page visits may be logged by our hosting provider (Cloudflare) for security and performance purposes. You can disable cookies in your browser settings without affecting your ability to use the website.",
+    "ro": "Site-ul nostru web folosește cookie-uri minime necesare pentru funcționalitatea de bază. Nu folosim cookie-uri publicitare sau pixeli de urmărire de la terți. Datele tehnice, cum ar fi vizitele pe pagină, pot fi înregistrate de furnizorul nostru de găzduire (Cloudflare) din motive de securitate și performanță. Puteți dezactiva cookie-urile din setările browserului dvs. fără a vă afecta capacitatea de a utiliza site-ul web. pos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "7. Data Retention",
+    "ro": "7. Păstrarea datelor"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Contact form enquiries",
+    "ro": "Întrebări din formularul de contact"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 24 months from the date of submission",
+    "ro": "— păstrate până la 24 de luni de la data depunerii"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Worker candidate profiles",
+    "ro": "Profiluri candidați lucrători"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 3 years, or until the candidate requests deletion",
+    "ro": "— păstrat până la 3 ani, sau până când candidatul solicită ștergerea"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Deployment documentation",
+    "ro": "Documentația de implementare"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 7 years where required by Bangladeshi law or the laws of the destination country",
+    "ro": "— păstrate până la 7 ani, în cazul în care legea bangladeshă sau legile țării de destinație"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Technical/website logs",
+    "ro": "Jurnalele tehnice/site-ului web"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— retained for up to 90 days",
+    "ro": "— păstrat până la 90 de zile"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "8. Your Rights",
+    "ro": "8. Drepturile tale"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "You have the right to:",
+    "ro": "Ai dreptul de a:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— request a copy of the personal data we hold about you",
+    "ro": "— solicitați o copie a datelor personale pe care le deținem despre dumneavoastră"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— request that inaccurate or incomplete data be corrected",
+    "ro": "— să solicite corectarea datelor inexacte sau incomplete"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— request that your personal data be deleted, subject to our legal obligations to retain certain records",
+    "ro": "— solicitați ca datele dumneavoastră cu caracter personal să fie șterse, sub rezerva obligațiilor noastre legale de a păstra anumite înregistrări"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— object to our use of your data for any purpose other than legal compliance",
+    "ro": "— opuneți utilizării de către noi a datelor dumneavoastră în orice alt scop decât respectarea legii pos"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any of these rights, email us at",
+    "ro": "Pentru a vă exercita oricare dintre aceste drepturi, trimiteți-ne un e-mail la"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We will respond within 30 days.",
+    "ro": ". Vom răspunde în termen de 30 de zile."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "9. GDPR — Additional Rights for EU/EEA Data Subjects",
+    "ro": "9. GDPR – Drepturi suplimentare pentru persoanele vizate din UE/SEE"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "If you are located in the European Union or European Economic Area, the General Data Protection Regulation (GDPR) gives you additional rights beyond those listed in Section 8, and requires us to disclose the following:",
+    "ro": "Dacă vă aflați în Uniunea Europeană sau în Spațiul Economic European, Regulamentul general privind protecția datelor (GDPR) vă oferă drepturi suplimentare în afara celor enumerate în Secțiunea 8 și ne solicită să dezvăluim următoarele:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Legal basis for processing",
+    "ro": "Temei juridic pentru prelucrare"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— we process your data based on your consent (when you submit a contact or application form), our legitimate interest in operating a recruitment business, and, where applicable, the performance of a contract with you or your employer",
+    "ro": "— prelucrăm datele dumneavoastră pe baza consimțământului dumneavoastră (când trimiteți un formular de contact sau de cerere), interesul nostru legitim de a opera o afacere de recrutare și, dacă este cazul, îndeplinirea unui contract cu dumneavoastră sau cu angajatorul dumneavoastră"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Data Controller",
+    "ro": "Controlor de date"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— Bhuiyan Workforce Ltd. is the data controller for personal data submitted through this website",
+    "ro": "— Bhuiyan Workforce Ltd. este operatorul de date pentru datele personale transmise prin intermediul acestui site web"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to restriction of processing",
+    "ro": "Dreptul la restricționarea prelucrării"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— you may request that we limit how we use your data while a dispute about its accuracy or our right to use it is resolved",
+    "ro": "— puteți solicita să limităm modul în care vă folosim datele în timp ce se rezolvă o dispută cu privire la acuratețea sau dreptul nostru de a le folosi"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to data portability",
+    "ro": "Dreptul la portabilitatea datelor"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— you may request your data in a structured, commonly used, machine-readable format",
+    "ro": "— puteți solicita datele dumneavoastră într-un format structurat, utilizat în mod obișnuit, care poate fi citit de mașină"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to withdraw consent",
+    "ro": "Dreptul de a retrage consimțământul"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— where processing is based on consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal",
+    "ro": "— în cazul în care prelucrarea se bazează pe consimțământ, îl puteți retrage în orice moment, fără a afecta legalitatea prelucrării efectuate înainte de retragere"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Right to lodge a complaint",
+    "ro": "Dreptul de a depune o plângere"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "— you have the right to lodge a complaint with the data protection supervisory authority in your EU/EEA country of residence",
+    "ro": "— aveți dreptul de a depune o plângere la autoritatea de supraveghere a protecției datelor din țara dvs. de reședință din UE/SEE"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "To exercise any GDPR right, email us at",
+    "ro": "Pentru a vă exercita orice drept GDPR, trimiteți-ne un e-mail la"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": ". We aim to respond to GDPR requests within 30 days, consistent with regulatory timelines.",
+    "ro": ". Ne propunem să răspundem solicitărilor GDPR în termen de 30 de zile, în conformitate cu termenele de reglementare."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This section is provided as a good-faith disclosure and does not constitute legal advice. We recommend consulting a qualified data protection professional for guidance specific to your circumstances.",
+    "ro": "Această secțiune este oferită ca o dezvăluire de bună-credință și nu constituie consultanță juridică. Vă recomandăm să consultați un profesionist calificat în protecția datelor pentru îndrumări specifice circumstanțelor dumneavoastră."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "10. Data Security",
+    "ro": "10. Securitatea datelor"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We implement appropriate technical and organisational measures to protect your personal data from unauthorised access, loss, or disclosure. These include encrypted email transmission, restricted access to candidate records, and secure cloud storage. No method of transmission over the internet is 100% secure; however, we take all reasonable steps to protect your information.",
+    "ro": "Implementăm măsuri tehnice și organizatorice adecvate pentru a vă proteja datele personale împotriva accesului, pierderii sau dezvăluirii neautorizate. Acestea includ transmisia de e-mail criptată, accesul restricționat la înregistrările candidaților și stocarea securizată în cloud. Nicio metodă de transmitere prin internet nu este 100% sigură; cu toate acestea, luăm toate măsurile rezonabile pentru a vă proteja informațiile."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "11. International Data Transfers",
+    "ro": "11. Transferuri internaționale de date"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "As an international recruitment agency, we necessarily transfer personal data across borders — for example, sharing a worker's documents with an employer in Saudi Arabia or submitting visa applications to European embassies. We do this only where necessary for the recruitment process and in accordance with applicable law.",
+    "ro": "În calitate de agenție internațională de recrutare, transferăm în mod necesar date cu caracter personal peste granițe - de exemplu, partajarea documentelor unui lucrător cu un angajator din Arabia Saudită sau depunerea cererilor de viză la ambasadele europene. Facem acest lucru numai acolo unde este necesar pentru procesul de recrutare și în conformitate cu legislația în vigoare."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "12. Governing Law",
+    "ro": "12. Legea aplicabilă"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "This Privacy Policy is governed by the laws of Bangladesh, including applicable Bangladeshi cyber-security and data protection laws and regulations. Any disputes arising from this policy shall be subject to the jurisdiction of the courts of Bangladesh.",
+    "ro": "Această politică de confidențialitate este guvernată de legile din Bangladesh, inclusiv de legile și reglementările din Bangladesh privind securitatea cibernetică și protecția datelor. Orice dispută care decurge din această politică va fi supusă jurisdicției instanțelor din Bangladesh."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "13. Changes to This Policy",
+    "ro": "13. Modificări ale acestei politici"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. We will post the updated version on this page with a revised \"last updated\" date. Continued use of the website after any update constitutes acceptance of the revised policy.",
+    "ro": "Putem actualiza această Politică de confidențialitate din când în când pentru a reflecta schimbările în practicile noastre sau în legea aplicabilă. Vom posta versiunea actualizată pe această pagină cu o dată revizuită pentru „ultima actualizare”. Utilizarea continuă a site-ului web după orice actualizare constituie acceptarea politicii revizuite."
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "14. Contact",
+    "ro": "14. Contact"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "For any privacy-related questions, requests, or complaints, please contact us:",
+    "ro": "Pentru orice întrebări, solicitări sau reclamații legate de confidențialitate, vă rugăm să ne contactați:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "Email:",
+    "ro": "E-mail:"
+  },
+  {
+    "file": "src/pages/PrivacyPage.jsx",
+    "en": "WhatsApp:",
+    "ro": "WhatsApp:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Terms of Service",
+    "ro": "Termeni și condiții"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "The terms and conditions governing use of the Bhuiyan Workforce Ltd. website and services.",
+    "ro": "Termenii și condițiile care guvernează utilizarea site-ului web și a serviciilor Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Last updated: May 2026",
+    "ro": "Ultima actualizare: mai 2026"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "1. Acceptance of Terms",
+    "ro": "1. Acceptarea Termenilor"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "By accessing or using the bhuiyanworkforce.com website, you agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use the website. These terms apply to all visitors, employers, and worker candidates who access our website or engage with our services.",
+    "ro": "Accesând sau utilizând site-ul web bhuiyanworkforce.com, sunteți de acord să respectați acești Termeni și condiții și Politica noastră de confidențialitate. Dacă nu sunteți de acord cu acești termeni, vă rugăm să nu utilizați site-ul web. Acești termeni se aplică tuturor vizitatorilor, angajatorilor și candidaților angajați care accesează site-ul nostru web sau se implică în serviciile noastre."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "2. About Bhuiyan Workforce Ltd.",
+    "ro": "2. Despre Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. is a Bangladesh-based international manpower recruitment company. We connect skilled Bangladeshi workers with employers across 25+ countries in the Middle East, Europe, Asia, and Africa. Our recruitment and deployment services are governed by separate written service agreements between Bhuiyan Workforce Ltd. and the engaging employer.",
+    "ro": "Bhuiyan Workforce Ltd. este o companie internațională de recrutare a forței de muncă cu sediul în Bangladesh. Conectăm muncitori calificați din Bangladesh cu angajatori din peste 25 de țări din Orientul Mijlociu, Europa, Asia și Africa. Serviciile noastre de recrutare și desfășurare sunt guvernate de acorduri separate de servicii scrise între Bhuiyan Workforce Ltd. și angajatorul implicat."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "3. Website Use",
+    "ro": "3. Utilizarea site-ului web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may use this website for lawful purposes only. You agree not to:",
+    "ro": "Puteți utiliza acest site numai în scopuri legale. Sunteți de acord să nu: pos"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use the website in any way that violates applicable laws or regulations in Bangladesh or your jurisdiction",
+    "ro": "Utilizați site-ul în orice mod care încalcă legile sau reglementările aplicabile în Bangladesh sau în jurisdicția dvs"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Submit false, misleading, or fraudulent information through any form on the website",
+    "ro": "Trimiteți informații false, înșelătoare sau frauduloase prin orice formular de pe site"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Impersonate any person, company, or organisation",
+    "ro": "Uzurpare identitatea oricărei persoane, companie sau organizație"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Attempt to gain unauthorised access to any part of the website, our servers, or any connected systems",
+    "ro": "Încercați să obțineți acces neautorizat la orice parte a site-ului web, la serverele noastre sau la orice sistem conectat"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Use automated tools, scrapers, or bots to extract content from the website without our written permission",
+    "ro": "Utilizați instrumente automate, scrapers sau roboți pentru a extrage conținut de pe site fără permisiunea noastră scrisă"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Transmit unsolicited commercial communications (spam) through any channel on the website",
+    "ro": "Transmite comunicări comerciale nesolicitate (spam) prin orice canal de pe site"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Upload or transmit any content that is harmful, offensive, defamatory, or infringes on the rights of others",
+    "ro": "Încărcați sau transmiteți orice conținut care este dăunător, ofensator, defăimător sau care încalcă drepturile altora"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "4. Employer Enquiries",
+    "ro": "4. Întrebări ale angajatorului"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Employers may submit recruitment enquiries through our contact form, email, or WhatsApp. Submitting an enquiry does not constitute a binding contract or guarantee of service. We will respond to genuine enquiries within 24 hours but reserve the right to decline any enquiry at our sole discretion.",
+    "ro": "Angajatorii pot trimite întrebări de recrutare prin formularul nostru de contact, e-mail sau WhatsApp. Trimiterea unei cereri nu constituie un contract obligatoriu sau o garanție a serviciului. Vom răspunde la întrebările reale în termen de 24 de ore, dar ne rezervăm dreptul de a refuza orice întrebare la discreția noastră."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any formal recruitment engagement will be subject to a separate written service agreement specifying the scope of services, fees, timelines, and obligations of both parties. No recruitment fees or service charges are collected through this website — all payments are handled offline under the terms of that agreement.",
+    "ro": "Orice angajament formal de recrutare va face obiectul unui contract de servicii scris separat, care specifică domeniul de aplicare al serviciilor, taxele, termenele și obligațiile ambelor părți. Nu se percep taxe de recrutare sau comisioane de servicii prin intermediul acestui site web - toate plățile sunt gestionate offline în conformitate cu termenii acordului respectiv."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "5. Worker Candidate Registrations",
+    "ro": "5. Înregistrări candidați lucrători"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Worker candidates who register interest in overseas employment through this website consent to their information being held on our candidate database and, where a suitable opportunity arises, being shared with prospective employers. Registering interest does not guarantee placement or employment. Bhuiyan Workforce Ltd. acts as a recruitment intermediary and is not itself the employer.",
+    "ro": "Candidații lucrători care înregistrează interes pentru angajarea în străinătate prin intermediul acestui site web sunt de acord ca informațiile lor să fie păstrate în baza noastră de date de candidați și, atunci când apare o oportunitate potrivită, să fie partajate cu potențialii angajatori. Înregistrarea interesului nu garantează plasarea sau angajarea. Bhuiyan Workforce Ltd. acționează ca intermediar de recrutare și nu este el însuși angajatorul."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Candidates are responsible for ensuring all information and documents submitted are accurate and genuine. Submission of fraudulent documents is a criminal offence under Bangladeshi law and will result in immediate disqualification and may be reported to the relevant authorities.",
+    "ro": "Candidații sunt responsabili pentru a se asigura că toate informațiile și documentele transmise sunt exacte și autentice. Prezentarea documentelor frauduloase este o infracțiune conform legislației din Bangladesh și va duce la descalificarea imediată și poate fi raportată autorităților competente."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "6. Accuracy of Information",
+    "ro": "6. Acuratețea informațiilor"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We endeavour to keep all information on this website accurate, current, and complete. However, we make no warranties — express or implied — regarding the accuracy, completeness, or fitness for purpose of any content. Country-specific information including visa types, processing times, salary ranges, and government fees are indicative and subject to change without notice. Employers and candidates should verify all regulatory requirements with the relevant authorities before proceeding.",
+    "ro": "Ne străduim să păstrăm toate informațiile de pe acest site web exacte, actuale și complete. Cu toate acestea, nu oferim nicio garanție – expresă sau implicită – cu privire la acuratețea, completitudinea sau adecvarea în scopul scopului oricărui conținut. Informațiile specifice țării, inclusiv tipurile de vize, timpii de procesare, intervalele de salarii și taxele guvernamentale sunt orientative și pot fi modificate fără notificare. Angajatorii și candidații ar trebui să verifice toate cerințele de reglementare cu autoritățile relevante înainte de a continua. pos"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "7. Fees and Payments",
+    "ro": "7. Taxe și plăți"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All service fees charged by Bhuiyan Workforce Ltd. are agreed in writing prior to commencement of any recruitment engagement. We do not charge worker candidates any fees in violation of the BMET fee schedule or the laws of the destination country. No payments are processed through this website.",
+    "ro": "Toate taxele de servicii percepute de Bhuiyan Workforce Ltd. sunt convenite în scris înainte de începerea oricărei angajamente de recrutare. Nu percepem candidaților lucrători nicio taxă care încalcă tarifele BMET sau legile țării de destinație. Nu sunt procesate plăți prin acest site web."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "8. Limitation of Liability",
+    "ro": "8. Limitarea răspunderii"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "To the fullest extent permitted by applicable law, Bhuiyan Workforce Ltd. shall not be liable for:",
+    "ro": "În măsura permisă de legea aplicabilă, Bhuiyan Workforce Ltd. nu va fi responsabilă pentru:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any indirect, incidental, special, or consequential damages arising from your use of or inability to use this website",
+    "ro": "Orice daune indirecte, incidentale, speciale sau consecutive care decurg din utilizarea sau incapacitatea dvs. de a utiliza acest site"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any reliance placed on information published on this website",
+    "ro": "Orice încredere pusă pe informațiile publicate pe acest site web"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Any interruption, suspension, or termination of the website or its services",
+    "ro": "Orice întrerupere, suspendare sau încetare a site-ului web sau a serviciilor sale"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Actions or omissions of employers, workers, government authorities, or other third parties involved in the recruitment and deployment process",
+    "ro": "Acțiuni sau omisiuni ale angajatorilor, lucrătorilor, autorităților guvernamentale sau ale altor terțe părți implicate în procesul de recrutare și desfășurare"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Our total liability to you for any claim arising from these terms or your use of the website shall not exceed BDT 10,000 (ten thousand Bangladeshi Taka).",
+    "ro": "Răspunderea noastră totală față de dvs. pentru orice pretenție care decurge din acești termeni sau din utilizarea de către dvs. a site-ului web nu va depăși 10.000 BDT (zece mii de Bangladeshi Taka)."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "9. Intellectual Property",
+    "ro": "9. Proprietatea intelectuală"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "All content on this website — including the Bhuiyan Workforce Ltd. name, logo, text, graphics, page layouts, and data — is the intellectual property of Bhuiyan Workforce Ltd. and is protected under applicable Bangladeshi and international intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content on this website without our prior written permission.",
+    "ro": "Tot conținutul de pe acest site web – inclusiv numele Bhuiyan Workforce Ltd., sigla, textul, grafica, aspectul paginilor și datele – este proprietatea intelectuală a Bhuiyan Workforce Ltd. și este protejat de legile aplicabile de proprietate intelectuală din Bangladesh și internaționale. Nu puteți reproduce, distribui, modifica sau crea lucrări derivate din orice conținut de pe acest site fără permisiunea noastră prealabilă în scris."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "You may share links to pages on our website and quote brief excerpts for non-commercial informational purposes, provided appropriate attribution is given.",
+    "ro": "Puteți partaja link-uri către pagini de pe site-ul nostru web și puteți cita scurte extrase în scopuri informaționale necomerciale, cu condiția să se acorde o atribuire adecvată. pos"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "10. Third-Party Links and Services",
+    "ro": "10. Link-uri și servicii terță parte"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "This website contains links to third-party platforms including WhatsApp, LinkedIn, and Facebook. These links are provided for convenience only. We are not responsible for the content, privacy practices, or terms of service of any third-party website. Accessing third-party links is at your own risk.",
+    "ro": "Acest site web conține link-uri către platforme terțe, inclusiv WhatsApp, LinkedIn și Facebook. Aceste link-uri sunt furnizate doar pentru comoditate. Nu suntem responsabili pentru conținutul, practicile de confidențialitate sau termenii și condițiile oricărui site web terță parte. Accesarea link-urilor de la terți se face pe propriul risc."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "11. Anti-Fraud and Impersonation Warning",
+    "ro": "11. Avertisment antifraudă și uzurpare a identității"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "immediately.",
+    "ro": "imediat."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "12. Governing Law and Jurisdiction",
+    "ro": "12. Legea aplicabilă și jurisdicția"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "ro": "Acești Termeni și condiții sunt guvernați și interpretați în conformitate cu legile Republicii Populare Bangladesh, inclusiv, dar fără a se limita la Contract Act 1872, Information and Communication Technology Act 2006 și Digital Security Act 2018. Orice dispută, pretenție sau controversă care decurge din sau este legată de acești termeni sau de utilizarea de către dvs. a site-ului web competent al D, va fi supusă jurisdicției exclusive a Banghalades."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "13. Changes to These Terms",
+    "ro": "13. Modificări ale acestor Termeni"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "We reserve the right to update or modify these Terms of Service at any time. Changes will be posted on this page with a revised \"last updated\" date. Continued use of the website following the posting of any changes constitutes your acceptance of the revised terms. We encourage you to review this page periodically.",
+    "ro": "Ne rezervăm dreptul de a actualiza sau modifica acești Termeni și condiții în orice moment. Modificările vor fi postate pe această pagină cu o dată revizuită de „ultima actualizare”. Utilizarea în continuare a site-ului web după postarea oricăror modificări constituie acceptarea dvs. a termenilor revizuiți. Vă încurajăm să revizuiți periodic această pagină."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "14. Severability",
+    "ro": "14. Separabilitate"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "If any provision of these Terms of Service is found to be invalid, unlawful, or unenforceable by a court of competent jurisdiction, that provision shall be severed from the remaining terms, which shall continue in full force and effect.",
+    "ro": "Dacă orice prevedere a acestor Termeni și condiții este considerată invalidă, ilegală sau inaplicabilă de către o instanță de jurisdicție competentă, acea prevedere va fi separată de termenii rămași, care vor continua în vigoare și efect."
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "15. Contact",
+    "ro": "15. Contact"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "For any questions regarding these terms, please contact us:",
+    "ro": "Pentru orice întrebări legate de acești termeni, vă rugăm să ne contactați:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Email:",
+    "ro": "E-mail:"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "WhatsApp:",
+    "ro": "WhatsApp:"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Founding Employer Partner Programme",
+    "ro": "Programul de parteneriat angajator fondator"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Construction & Engineering",
+    "ro": "Construcții și inginerie"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Drivers & Transport",
+    "ro": "Șoferi și transport"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Chefs & Hospitality",
+    "ro": "Bucătari și ospitalitate"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Farm & Garden",
+    "ro": "Fermă și grădină"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Warehouse & Logistics",
+    "ro": "Depozit și logistică"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Factory & Manufacturing",
+    "ro": "Fabrică și producție"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Oil & Gas",
+    "ro": "Petrol și gaze"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Security Guards",
+    "ro": "Gărzi de securitate"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Cleaning & Housekeeping",
+    "ro": "Curățenie și menaj"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Retail & Supermarket Staff",
+    "ro": "Personal de retail și supermarket"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Painting & Finishing",
+    "ro": "Vopsire și finisare"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Steel Fixing & Reinforcement",
+    "ro": "Fixare și armare din oțel"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Scaffolding & Formwork",
+    "ro": "Schele și cofraje"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Landscaping & Groundskeeping",
+    "ro": "Amenajarea teritoriului și îngrijirea terenului"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Mason & Bricklaying",
+    "ro": "Zidari si zidari"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Electrical Helpers & Cable Pullers",
+    "ro": "Ajutoare electrice și extractoare de cabluri"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Laundry & Linen Services",
+    "ro": "Servicii de spălătorie și lenjerie"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Food Processing & Packing",
+    "ro": "Prelucrarea și ambalarea alimentelor"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Fishery & Aquaculture Workers",
+    "ro": "Lucrători din pescuit și acvacultură"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Caregiving & Elderly Support",
+    "ro": "Îngrijire și sprijin pentru bătrâni"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Welding & Fabrication",
+    "ro": "Sudare & Fabricare"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Plumbing & HVAC",
+    "ro": "Instalatii sanitare si HVAC"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Heavy Equipment Operators",
+    "ro": "Operatori de echipamente grele"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Ship & Marine Fabrication",
+    "ro": "Fabricare navală și navală"
+  },
+  {
+    "file": "src/components/ContactForm.jsx",
+    "en": "Domestic & Household Workers",
+    "ro": "Lucrători casnici și casnici"
+  },
+  {
+    "file": "src/pages/TermsPage.jsx",
+    "en": "Bhuiyan Workforce Ltd. only communicates through official channels: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com, and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to",
+    "ro": "Bhuiyan Workforce Ltd. comunică exclusiv prin canale oficiale: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com și numerele de telefon afișate pe acest site. Nu oferim locuri de muncă prin mesaje WhatsApp nesolicitate, mesaje directe pe rețelele sociale sau site-uri neoficiale. Dacă primiți o comunicare suspectă care pretinde că provine de la noi, vă rugăm să o raportați la adresa"
+  }
+];

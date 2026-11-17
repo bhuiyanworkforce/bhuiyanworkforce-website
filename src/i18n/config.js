@@ -1,7 +1,7 @@
 // Single source of truth for languages.
 //
 // Real languages (overlay: false) get their own URL prefix, static HTML, hreflang
-// and sitemap entries. Overlay languages (bn, it) only swap UI strings in place
+// and sitemap entries. Overlay languages (bn) only swap UI strings in place
 // on the English URL after hydration: no URL change, no hreflang, no canonical.
 //
 // Adding a real language later needs: one entry here, one locale file in
@@ -46,6 +46,16 @@ export const LOCALES = {
     prefix: '/pl',
     overlay: false,
   },
+  bg: {
+    code: 'bg',
+    flag: '🇧🇬',
+    dir: 'ltr',
+    hreflang: 'bg',
+    ogLocale: 'bg_BG',
+    label: 'Български',
+    prefix: '/bg',
+    overlay: false,
+  },
   ro: {
     code: 'ro',
     flag: '🇷🇴',
@@ -56,15 +66,55 @@ export const LOCALES = {
     prefix: '/ro',
     overlay: false,
   },
-  bn: {
-    code: 'bn',
-    flag: '🇧🇩',
+  el: {
+    code: 'el',
+    flag: '🇬🇷',
     dir: 'ltr',
-    hreflang: 'bn',
-    ogLocale: 'bn_BD',
-    label: 'বাংলা',
-    prefix: '',
-    overlay: true,
+    hreflang: 'el',
+    ogLocale: 'el_GR',
+    label: 'Ελληνικά',
+    prefix: '/el',
+    overlay: false,
+  },
+  hr: {
+    code: 'hr',
+    flag: '🇭🇷',
+    dir: 'ltr',
+    hreflang: 'hr',
+    ogLocale: 'hr_HR',
+    label: 'Hrvatski',
+    prefix: '/hr',
+    overlay: false,
+  },
+  sr: {
+    code: 'sr',
+    flag: '🇷🇸',
+    dir: 'ltr',
+    hreflang: 'sr-Latn',
+    ogLocale: 'sr_RS',
+    label: 'Srpski',
+    prefix: '/sr',
+    overlay: false,
+  },
+  bs: {
+    code: 'bs',
+    flag: '🇧🇦',
+    dir: 'ltr',
+    hreflang: 'bs',
+    ogLocale: 'bs_BA',
+    label: 'Bosanski',
+    prefix: '/bs',
+    overlay: false,
+  },
+  mk: {
+    code: 'mk',
+    flag: '🇲🇰',
+    dir: 'ltr',
+    hreflang: 'mk',
+    ogLocale: 'mk_MK',
+    label: 'Македонски',
+    prefix: '/mk',
+    overlay: false,
   },
   it: {
     code: 'it',
@@ -73,6 +123,16 @@ export const LOCALES = {
     hreflang: 'it',
     ogLocale: 'it_IT',
     label: 'Italiano',
+    prefix: '/it',
+    overlay: false,
+  },
+  bn: {
+    code: 'bn',
+    flag: '🇧🇩',
+    dir: 'ltr',
+    hreflang: 'bn',
+    ogLocale: 'bn_BD',
+    label: 'বাংলা',
     prefix: '',
     overlay: true,
   },
