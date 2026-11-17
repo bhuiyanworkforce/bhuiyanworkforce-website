@@ -14,7 +14,7 @@ export default {
       { icon: "🌍", title: "Conoscenza dei Paesi di destinazione", body: "Conoscere le norme locali sul lavoro, le categorie di visto e il contesto culturale di ogni destinazione riduce gli ostacoli e i ritardi." },
       { icon: "📣", title: "Trasparenza", body: "Prima di assumere qualsiasi impegno, i datori di lavoro ricevono tempistiche chiare, valutazioni realistiche sulla disponibilità dei candidati e un dettaglio completo dei costi." },
     ],
-    teamIntro: "Il nostro team combina competenze nel reclutamento, conoscenza delle procedure migratorie e una profonda comprensione dei settori in tutte e sei le categorie di servizio.",
+    teamIntro: "Il nostro team combina competenze nel reclutamento, conoscenza delle procedure migratorie e una profonda comprensione dei settori in tutte le 25 categorie di servizio.",
     team: [
       { photo: "/team-rezaul.webp", name: "MD Rezaul Kabir Bhuiyan", role: "Fondatore e CEO", body: "Laureato in informatica presso la Jiangnan University (Cina), con competenze nello sviluppo del business internazionale e nella tecnologia. Guida tutte le partnership strategiche e lo sviluppo commerciale nei mercati del Golfo, europei e asiatici." },
       { photo: "/team-asraful.webp", name: "Asraful Kabir Bhuiyan", role: "Responsabile dello sviluppo commerciale", body: "Gestisce i rapporti con i datori di lavoro e l’espansione in nuovi mercati del Golfo, europei e asiatici." },
