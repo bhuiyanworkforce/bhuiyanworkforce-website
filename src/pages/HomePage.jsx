@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { Link } from '../i18n/router';
-import ContactForm from '../components/ContactForm';
+import ContactTabs from '../components/ContactTabs';
 const WorldMap = lazy(() => import('../components/WorldMap'));
 import { SERVICES } from '../data/services';
 import { COUNTRIES } from '../data/countries';
@@ -661,7 +661,7 @@ export default function HomePage() {
             </div>
 
             {/* Real ContactForm — keeps Cloudflare Worker endpoint, file upload, validation */}
-            <ContactForm />
+            <ContactTabs />
           </div>
         </div>
       </section>
