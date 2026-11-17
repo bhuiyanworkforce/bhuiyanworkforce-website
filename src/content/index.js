@@ -65,10 +65,8 @@ export function localizePost(base, lang) {
   return { ...base, ...tr };
 }
 
-export function localizeGuide(base, lang) {
-  if (!base || lang === 'en') return base;
-  const guideKey = base.slug || (base.country === 'Saudi Arabia' ? 'saudi-arabia' : base.country === 'UAE' ? 'uae' : 'poland');
-  const tr = ENTITY_CONTENT[lang]?.guide?.[guideKey];
-  if (!tr) { recordFallback('guide', lang, base.country); return base; }
-  return tr;
+// Guides are single-language (each is written in its destination's language and carries its own
+// `lang`/`dir`), so every site language shows the same text.
+export function localizeGuide(base) {
+  return base;
 }
