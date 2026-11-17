@@ -232,6 +232,9 @@ export default {
   "cf.file_big": "Plik jest zbyt duży. Maksymalny rozmiar to 5 MB.",
   "cf.send": "Wyślij wiadomość →",
   "cf.sending": "Wysyłanie…",
+  "apply.file_type_error": "{file}: prześlij plik jednego z tych typów: {types}.",
+  "apply.file_size_error": "{file} jest większy niż 5 MB. Wybierz mniejszy plik.",
+  "apply.total_size_error": "Łączny rozmiar plików przekracza 12 MB. Wybierz mniejsze pliki lub skompresuj zdjęcia.",
   // Chrome of the service, blog-post and employer-guide pages. NEEDS NATIVE-SPEAKER REVIEW.
   "sv.ready_title": "Gotowi do zatrudnienia?",
   "sv.ready_text": "Podaj liczbę pracowników, wymagane zawody, kraj docelowy i termin. Odpowiemy w ciągu 24 godzin.",
