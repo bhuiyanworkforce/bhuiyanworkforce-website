@@ -14,7 +14,7 @@ export default {
       { icon: '🌍', title: 'Poznavanje odredišta', body: 'Poznavanje lokalnog radnog zakonodavstva, kategorija viza i kulturnog konteksta na svakom odredištu smanjuje komplikacije i kašnjenja.' },
       { icon: '📣', title: 'Transparentnost', body: 'Poslodavci dobijaju jasne rokove, iskrenu procjenu dostupnosti kandidata i potpuno raščlanjen prikaz troškova prije nego što se na bilo šta obavežu.' },
     ],
-    teamIntro: 'Naš tim objedinjuje stručnost u regrutaciji radnika, poznavanje imigracijskih propisa i dubinsko razumijevanje sektora u svih šest kategorija usluga.',
+    teamIntro: 'Naš tim objedinjuje stručnost u regrutaciji radnika, poznavanje imigracijskih propisa i dubinsko razumijevanje sektora u svih 25 kategorija usluga.',
     team: [
       { photo: '/team-rezaul.webp', name: 'MD Rezaul Kabir Bhuiyan', role: 'Osnivač i izvršni direktor', body: 'Diplomirao je računarske nauke na Univerzitetu Jiangnan u Kini te ima stručnost u međunarodnom razvoju poslovanja i tehnologiji. Vodi sva strateška partnerstva i razvoj poslovanja na tržištima Zaljeva, Evrope i Azije.' },
       { photo: '/team-asraful.webp', name: 'Asraful Kabir Bhuiyan', role: 'Menadžer za razvoj poslovanja', body: 'Razvija odnose s poslodavcima i širi poslovanje na nova tržišta Zaljeva, Evrope i Azije.' },
