@@ -1,7 +1,7 @@
 // Which routes have complete Greek content. The list is loaded before the larger Greek bundle.
 // "page:privacy" and "page:terms" are listed; the legal texts are with the lawyer for proofing (Nov 2026).
 export const EL_TRANSLATED = [
-  'page:home', 'country:slovenia', 'country:north-macedonia', 'country:italy', 'country:seychelles', 'country:mauritius', 'post:poland-new-work-permit-system-2026', 'post:saudi-arabia-visa-quotas-compliance-2026', 'post:uae-wage-emiratisation-rules-2026', 'post:malaysia-bangladesh-recruitment-reopens-2026', 'post:czech-republic-employee-card-rules-2026',   'page:about', 'page:faq', 'page:blog', 'page:countries', 'page:capabilities',
+  'page:home', 'page:founder', 'country:slovenia', 'country:north-macedonia', 'country:italy', 'country:seychelles', 'country:mauritius', 'post:poland-new-work-permit-system-2026', 'post:saudi-arabia-visa-quotas-compliance-2026', 'post:uae-wage-emiratisation-rules-2026', 'post:malaysia-bangladesh-recruitment-reopens-2026', 'post:czech-republic-employee-card-rules-2026',   'page:about', 'page:faq', 'page:blog', 'page:countries', 'page:capabilities',
   'page:employer-guide', 'page:privacy', 'page:terms', 'page:apply', 'country:saudi-arabia', 'country:uae', 'country:qatar',
   'country:kuwait', 'country:oman', 'country:bahrain', 'country:jordan', 'country:malaysia',
   'country:singapore', 'country:maldives', 'country:serbia', 'country:portugal', 'country:greece',

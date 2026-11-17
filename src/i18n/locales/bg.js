@@ -21,6 +21,10 @@ export default {
       employerGuide: "Ръководство за работодатели",
     },
     pages: {
+      "founder": {
+        "title": "Основател | Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan, основател и главен изпълнителен директор на Bhuiyan Workforce Ltd.: професионален път, причини за създаването на компанията и принципи."
+      },
       home: {
         title: "Набиране на персонал от Бангладеш | Bhuiyan Workforce Ltd.",
         description:

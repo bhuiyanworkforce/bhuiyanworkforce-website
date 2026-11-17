@@ -1,6 +1,6 @@
 // Which routes have complete Bulgarian content. The list is loaded before the larger Bulgarian bundle.
 export const BG_TRANSLATED = [
-  'page:home', 'page:about', 'page:faq', 'page:blog', 'page:countries', 'page:capabilities',
+  'page:home', 'page:founder', 'page:about', 'page:faq', 'page:blog', 'page:countries', 'page:capabilities',
   'page:employer-guide', 'page:privacy', 'page:terms', 'page:apply',
   'country:saudi-arabia', 'country:uae', 'country:qatar', 'country:kuwait', 'country:oman',
   'country:bahrain', 'country:jordan', 'country:malaysia', 'country:singapore', 'country:maldives',

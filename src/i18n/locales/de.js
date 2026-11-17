@@ -18,6 +18,10 @@ export default {
       "employerGuide": "Leitfaden für Arbeitgeber"
     },
     "pages": {
+      "founder": {
+        "title": "Gründer | Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan, Gründer und CEO von Bhuiyan Workforce Ltd.: sein Werdegang, warum er das Unternehmen gründete und welche Grundsätze es leiten."
+      },
       "home": {
         "title": "Ethische Rekrutierung aus Bangladesch | Bhuiyan Workforce Ltd.",
         "description": "Bhuiyan Workforce Ltd. verbindet Arbeitgeber in mehr als 25 Ländern mit qualifizierten Arbeitskräften aus Bangladesch. Ethisch, transparent und BMET-konform.",

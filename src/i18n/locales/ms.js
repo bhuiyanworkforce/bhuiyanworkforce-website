@@ -22,6 +22,10 @@ export default {
       employerGuide: "Panduan Majikan",
     },
     pages: {
+      "founder": {
+        "title": "Pengasas | Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan, Pengasas & Ketua Pegawai Eksekutif Bhuiyan Workforce Ltd.: latar belakangnya, sebab beliau menubuhkan syarikat dan prinsip kerjanya."
+      },
       home: {
         title: "Perekrutan Beretika dari Bangladesh | Bhuiyan Workforce Ltd.",
         description:

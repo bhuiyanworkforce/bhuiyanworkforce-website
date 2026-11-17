@@ -2,7 +2,7 @@
 // language switcher always know the answer without loading the Arabic bundle.
 // Add a route here when its Arabic content is added.
 export const AR_TRANSLATED = [
-    'page:home', 'page:about', 'page:faq',
+    'page:home', 'page:founder', 'page:about', 'page:faq',
     'country:saudi-arabia',
     'country:uae',
     'country:qatar',

@@ -30,6 +30,10 @@ export default {
       employerGuide: 'دليل صاحب العمل',
     },
     pages: {
+      "founder": {
+        "title": "المؤسس | Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan، المؤسس والرئيس التنفيذي لشركة Bhuiyan Workforce Ltd.: خلفيته، ولماذا أسّس الشركة، والمبادئ التي تعمل بها."
+      },
       home: {
         title: 'استقدام عمالة بنغلاديشية ماهرة | Bhuiyan Workforce Ltd.',
         description:

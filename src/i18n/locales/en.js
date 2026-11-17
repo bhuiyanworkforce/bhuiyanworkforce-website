@@ -26,6 +26,10 @@ export default {
       employerGuide: "Employer's Guide",
     },
     pages: {
+      "founder": {
+        "title": "Founder — Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan, founder and CEO of Bhuiyan Workforce Ltd.: his background, why he started the company and the principles it works by."
+      },
       home: {
         title: 'Bhuiyan Workforce Ltd. — Ethical Global Recruitment from Bangladesh',
         description:

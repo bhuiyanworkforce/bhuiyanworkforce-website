@@ -16,6 +16,10 @@ export default {
       "employerGuide": "Οδηγός εργοδοτών"
     },
     "pages": {
+      "founder": {
+        "title": "Ιδρυτής | Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan, ιδρυτής και διευθύνων σύμβουλος της Bhuiyan Workforce Ltd.: το υπόβαθρό του, γιατί ίδρυσε την εταιρεία και οι αρχές της."
+      },
       "home": {
         "title": "Δεοντολογική στρατολόγηση προσωπικού | Bhuiyan Workforce Ltd.",
         "description": "Η Bhuiyan Workforce Ltd. συνδέει ειδικευμένους εργαζομένους από το Μπανγκλαντές με εργοδότες σε 25+ χώρες, με διαφάνεια, δεοντολογία και συμμόρφωση με το BMET.",

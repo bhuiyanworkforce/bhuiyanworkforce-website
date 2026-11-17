@@ -17,6 +17,10 @@ export default {
       employerGuide: "Vodič za poslodavce"
     },
     pages: {
+      "founder": {
+        "title": "Osnivač | Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan, osnivač i izvršni direktor kompanije Bhuiyan Workforce Ltd.: njegov put, zašto je osnovao kompaniju i načela kojima se vodi."
+      },
       home: {
         title: "Etička regrutacija iz Bangladeša | Bhuiyan Workforce Ltd.",
         description: "Bhuiyan Workforce Ltd. povezuje kvalifikovane radnike iz Bangladeša sa poslodavcima u više od 25 zemalja. Etička i transparentna regrutacija uz BMET usklađenost.",

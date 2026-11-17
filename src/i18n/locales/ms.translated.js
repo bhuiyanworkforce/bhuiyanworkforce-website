@@ -1,7 +1,7 @@
 // Which routes have complete Malay content. Blog articles, the blog index and the employer guide pages are not
 // translated yet, so they stay English-only.
 export const MS_TRANSLATED = [
-  'page:home', 'country:saudi-arabia', 'country:uae', 'country:qatar', 'country:kuwait', 'country:oman',
+  'page:home', 'page:founder', 'country:saudi-arabia', 'country:uae', 'country:qatar', 'country:kuwait', 'country:oman',
   'country:bahrain', 'country:jordan', 'country:malaysia', 'country:singapore', 'country:maldives', 'country:serbia',
   'country:portugal', 'country:greece', 'country:romania', 'country:poland', 'country:hungary', 'country:croatia',
   'country:czech-republic', 'country:lithuania', 'country:latvia', 'country:estonia', 'country:bulgaria', 'country:cyprus',

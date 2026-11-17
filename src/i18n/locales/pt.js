@@ -11,6 +11,10 @@ export default {
     siteDescription: "Recrutamento ético no Bangladeche, ligando trabalhadores qualificados a empregadores em mais de 25 países.",
     breadcrumb: { home: "Início", countries: "Países", services: "Serviços", blog: "Blogue", faq: "Perguntas frequentes", employerGuide: "Guia do empregador" },
     pages: {
+      "founder": {
+        "title": "Fundador | Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan, fundador e diretor executivo da Bhuiyan Workforce Ltd.: o seu percurso, porque criou a empresa e os princípios que a orientam."
+      },
       home: { title: "Recrutamento ético no Bangladeche | Bhuiyan Workforce Ltd.", description: "A Bhuiyan Workforce Ltd. liga empregadores em mais de 25 países a trabalhadores qualificados do Bangladeche, com recrutamento ético, conformidade com a BMET e transparência.", ogDescription: "Trabalhadores qualificados do Bangladeche para empregadores em mais de 25 países do Médio Oriente, Europa, Ásia e África. Conformidade com a BMET e transparência.", keywords: "recrutamento de trabalhadores do Bangladeche, recrutamento ético, trabalhadores qualificados, empregadores, mão de obra, conformidade BMET" },
       countries: { title: "Países de destino | Bhuiyan Workforce Ltd.", description: "Informações sobre o envio de trabalhadores do Bangladeche para mais de 25 países do Médio Oriente, Europa, Ásia e África." },
       blog: { title: "Blogue | Bhuiyan Workforce Ltd.", description: "Perspetivas sobre emprego no estrangeiro, recrutamento ético, mercados de mão de obra do Golfo e tendências laborais europeias." },

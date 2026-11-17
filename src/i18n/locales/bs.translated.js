@@ -1,7 +1,7 @@
 // Which routes have complete Bosnian content. The list is loaded before the larger Bosnian bundle.
 // "page:privacy" and "page:terms" are listed; the legal texts are with the lawyer for proofing (Nov 2026).
 export const BS_TRANSLATED = [
-  'page:home', 'page:about', 'page:faq', 'page:blog', 'page:countries', 'page:capabilities',
+  'page:home', 'page:founder', 'page:about', 'page:faq', 'page:blog', 'page:countries', 'page:capabilities',
   'page:employer-guide', 'page:privacy', 'page:terms', 'page:apply', 'country:saudi-arabia', 'country:uae', 'country:qatar',
   'country:kuwait', 'country:oman', 'country:bahrain', 'country:jordan', 'country:malaysia',
   'country:singapore', 'country:maldives', 'country:serbia', 'country:portugal', 'country:greece',

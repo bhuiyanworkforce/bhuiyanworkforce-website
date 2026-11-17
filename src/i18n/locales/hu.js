@@ -79,6 +79,10 @@ export default {
     siteDescription: "Etikus nemzetközi toborzás Bangladesből: képzett munkavállalókat kapcsolunk össze több mint 25 ország munkáltatóival.",
     breadcrumb: { home: "Kezdőlap", countries: "Országok", services: "Szolgáltatások", blog: "Blog", faq: "GYIK", employerGuide: "Munkáltatói útmutató" },
     pages: {
+      "founder": {
+        "title": "Alapító | Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan, a Bhuiyan Workforce Ltd. alapítója és vezérigazgatója: szakmai háttere, a vállalat alapításának oka és működési elvei."
+      },
       home: { title: "Etikus nemzetközi toborzás Bangladesből | Bhuiyan Workforce Ltd.", description: "A Bhuiyan Workforce Ltd. képzett bangladesi munkavállalókat kapcsol össze több mint 25 ország munkáltatóival. Etikus, BMET-kompatibilis és átlátható toborzás.", ogDescription: "Képzett bangladesi munkavállalókat kapcsolunk össze több mint 25 ország munkáltatóival a Közel-Keleten, Európában, Ázsiában és Afrikában. BMET-kompatibilis, átlátható folyamat.", keywords: "bangladesi munkavállalók, külföldi munkavállalók toborzása, képzett munkaerő külföldről, etikus toborzás, szakképzett munkaerő, BMET" },
       countries: { title: "Célországaink | Bhuiyan Workforce Ltd.", description: "Ismerje meg a bangladesi munkavállalók több mint 25 közel-keleti, európai, ázsiai és afrikai országban történő munkába állításának részleteit." },
       blog: { title: "Szakmai cikkek | Bhuiyan Workforce Ltd.", description: "Tájékozódjon a külföldi munkavállalásról, az etikus toborzásról, az Öböl menti munkaerőpiacokról és az európai munkaerőpiaci trendekről." },

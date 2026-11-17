@@ -17,6 +17,10 @@ export default {
       "employerGuide": "Ghidul angajatorului"
     },
     "pages": {
+      "founder": {
+        "title": "Fondator | Bhuiyan Workforce Ltd.",
+        "description": "MD Rezaul Kabir Bhuiyan, fondator și CEO al Bhuiyan Workforce Ltd.: parcursul său, motivul pentru care a înființat compania și principiile ei."
+      },
       "home": {
         "title": "Bhuiyan Workforce Ltd. — Recrutare globală etică din Bangladesh",
         "description": "Bhuiyan Workforce Ltd. conectează muncitori calificați din Bangladesh cu angajatori din peste 25 de țări. Recrutare globală etică, conformă BMET, transparentă.",

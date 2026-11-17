@@ -2,7 +2,7 @@
 // all 25 service pages and the three country employer guides. Not translated yet, so they stay English-only: the blog
 // index and its 18 articles, and the employer-guide index. Add each route key here when its translation is delivered.
 export const PT_TRANSLATED = [
-  'page:home', 'page:about', 'page:faq', 'page:countries', 'page:capabilities', 'page:apply', 'page:privacy', 'page:terms',
+  'page:home', 'page:founder', 'page:about', 'page:faq', 'page:countries', 'page:capabilities', 'page:apply', 'page:privacy', 'page:terms',
   'country:saudi-arabia', 'country:uae', 'country:qatar', 'country:kuwait',
   'country:oman', 'country:bahrain', 'country:jordan', 'country:malaysia',
   'country:singapore', 'country:maldives', 'country:serbia', 'country:portugal',
