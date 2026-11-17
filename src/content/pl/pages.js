@@ -40,7 +40,7 @@ export default {
         "body": "Pracodawcy otrzymują jasne harmonogramy, rzetelne oceny dostępności kandydatów i szczegółowe zestawienie wszystkich kosztów, zanim podejmą jakiekolwiek zobowiązanie."
       }
     ],
-    "teamIntro": "Nasz zespół łączy doświadczenie w rekrutacji, wiedzę dotyczącą imigracji i dogłębną znajomość branż we wszystkich sześciu kategoriach usług.",
+    "teamIntro": "Nasz zespół łączy doświadczenie w rekrutacji, wiedzę dotyczącą imigracji i dogłębną znajomość branż we wszystkich 25 kategoriach usług.",
     "team": [
       {
         "photo": "/team-rezaul.webp",
