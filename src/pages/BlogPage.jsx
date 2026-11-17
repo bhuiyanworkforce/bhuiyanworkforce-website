@@ -119,7 +119,7 @@ export default function BlogPage() {
               <Tx>Follow us on LinkedIn or WhatsApp for the latest recruitment news, compliance updates, and destination guides.</Tx>
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="https://linkedin.com/company/bhuiyan-workforce" target="_blank" rel="noopener noreferrer" className="btn btn-navy"><Tx>Follow on LinkedIn</Tx></a>
+              <a href="https://www.linkedin.com/company/bhuiyan-workforce-ltd/" target="_blank" rel="noopener noreferrer" className="btn btn-navy"><Tx>Follow on LinkedIn</Tx></a>
               <a href="https://wa.me/8801864567912" target="_blank" rel="noopener noreferrer" className="btn btn-outline"><Tx>WhatsApp Updates</Tx></a>
             </div>
           </div>
