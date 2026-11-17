@@ -17,6 +17,8 @@ import '../src/i18n/sr-bundle.js'; // same for Serbian
 import '../src/i18n/bs-bundle.js'; // same for Bosnian
 import '../src/i18n/mk-bundle.js'; // same for Macedonian
 import '../src/i18n/it-bundle.js'; // same for Italian
+import '../src/i18n/es-bundle.js'; // same for Spanish
+import '../src/i18n/ms-bundle.js'; // same for Malay
 import '../src/i18n/ro-bundle.js'; // same for Romanian
 import { listPages, getLanguageLinks, SERVICE_SLUGS, COUNTRY_SLUGS, POST_SLUGS, GUIDE_SLUGS } from '../src/routes.js';
 import { getPageHead } from '../src/seo/getPageHead.js';
