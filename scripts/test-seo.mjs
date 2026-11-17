@@ -3,6 +3,7 @@
 // Entity content (data files) is bundled with esbuild when available so the
 // slug lists in src/routes.js can be checked against src/data/*.jsx.
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
@@ -26,6 +27,7 @@ import { getPageHead } from '../src/seo/getPageHead.js';
 import { headToHtml } from '../src/seo/headHtml.js';
 import { buildSitemap } from '../src/seo/sitemap.js';
 import { localizeTo } from '../src/i18n/localize.js';
+import { capabilitiesPdf, SHEET_LANGS } from '../src/i18n/capabilitiesSheet.js';
 import { headTags } from '../src/seo/headHtml.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -243,6 +245,22 @@ test('headToHtml escapes and keeps JSON-LD script-safe', () => {
   assert.ok(!html.includes('</script><b>'));
 });
 
+
+console.log('capabilities sheets');
+test('every real language has its own capabilities PDF; English keeps the original URL', () => {
+  const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'public');
+  assert.equal(capabilitiesPdf('en'), '/capabilities.pdf');
+  assert.equal(capabilitiesPdf('bn'), '/capabilities.pdf'); // overlay language: English sheet
+  for (const code of REAL_LOCALE_CODES.filter((c) => c !== 'en')) {
+    assert.ok(SHEET_LANGS.includes(code), `no capabilities sheet registered for ${code}`);
+    assert.equal(capabilitiesPdf(code), `/capabilities-${code}.pdf`);
+  }
+  for (const f of ['capabilities.pdf', ...SHEET_LANGS.map((c) => `capabilities-${c}.pdf`)]) {
+    const file = path.join(root, f);
+    assert.ok(fs.existsSync(file), `missing public/${f}`);
+    assert.equal(fs.readFileSync(file).subarray(0, 5).toString(), '%PDF-', `${f} is not a PDF`);
+  }
+});
 
 console.log('links');
 test('localizeTo keeps visitors in their language when the page exists there', () => {
