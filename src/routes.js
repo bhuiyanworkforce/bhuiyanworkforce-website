@@ -14,7 +14,7 @@ import { LOCALE_DATA } from './i18n/locales/index.js';
 
 export const PAGE_IDS = [
   'home', 'about', 'faq', 'blog', 'countries', 'capabilities',
-  'employer-guide', 'privacy', 'terms', 'apply',
+  'employer-guide', 'privacy', 'terms', 'apply', 'worker-guide',
 ];
 
 // Pages that must not be indexed (served, but noindex and left out of the sitemap).

@@ -15,6 +15,7 @@ import CountryPage from './pages/CountryPage';
 import EmployerGuidePage from './pages/EmployerGuidePage';
 import WorkerApplicationPage from './pages/WorkerApplicationPage';
 import CapabilitiesPage from './pages/CapabilitiesPage';
+import WorkerGuidePage from './pages/WorkerGuidePage';
 import CountryGuidePage from './pages/CountryGuidePage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
@@ -33,6 +34,7 @@ const PAGE_COMPONENTS = {
   privacy: PrivacyPage,
   terms: TermsPage,
   apply: WorkerApplicationPage,
+  'worker-guide': WorkerGuidePage,
 };
 
 const ENTITY_COMPONENTS = {
