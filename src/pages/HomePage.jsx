@@ -7,6 +7,7 @@ import { COUNTRIES } from '../data/countries';
 import { useLang } from '../i18n/LanguageContext';
 import { countryName, localizeService } from '../content';
 import { t } from '../i18n/translations';
+import { capabilitiesPdf, capabilitiesPdfName } from '../i18n/capabilitiesSheet';
 
 const go = (id) => {
   const el = document.getElementById(id);
@@ -198,8 +199,8 @@ export default function HomePage() {
 
               <div className="hero-left-item">
                 <a
-                  href="/capabilities.pdf"
-                  download="Bhuiyan_Workforce_Capabilities.pdf"
+                  href={capabilitiesPdf(urlLang)}
+                  download={capabilitiesPdfName(urlLang)}
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: '0.85rem', color: 'var(--gold-light)', fontWeight: 600, textDecoration: 'none' }}
                 >
                   📄 {tr('h.download_pdf')}
@@ -317,8 +318,8 @@ export default function HomePage() {
               </div>
             </div>
             <a
-              href="/capabilities.pdf"
-              download="Bhuiyan_Workforce_Capabilities.pdf"
+              href={capabilitiesPdf(urlLang)}
+              download={capabilitiesPdfName(urlLang)}
               className="btn btn-primary"
               style={{ flexShrink: 0 }}
             >
