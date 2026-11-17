@@ -259,11 +259,7 @@ test('every real language has its own capabilities PDF; English keeps the origin
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'public');
   assert.equal(capabilitiesPdf('en'), '/capabilities.pdf');
   assert.equal(capabilitiesPdf('bn'), '/capabilities.pdf'); // overlay language: English sheet
-  // Spanish, Malay, German, Hungarian and Portuguese have no translated sheet yet: they link to the English PDF. Remove them from this
-  // list once public/capabilities-<code>.pdf exists and the code is added to SHEET_LANGS.
-  const NO_SHEET_YET = ['es', 'ms', 'de', 'hu', 'pt'];
-  for (const code of NO_SHEET_YET) assert.equal(capabilitiesPdf(code), '/capabilities.pdf');
-  for (const code of REAL_LOCALE_CODES.filter((c) => c !== 'en' && !NO_SHEET_YET.includes(c))) {
+  for (const code of REAL_LOCALE_CODES.filter((c) => c !== 'en')) {
     assert.ok(SHEET_LANGS.includes(code), `no capabilities sheet registered for ${code}`);
     assert.equal(capabilitiesPdf(code), `/capabilities-${code}.pdf`);
   }
