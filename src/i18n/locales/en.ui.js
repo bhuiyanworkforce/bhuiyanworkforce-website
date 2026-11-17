@@ -170,6 +170,9 @@ export default {
   "cf.file_big": "File is too large. Maximum size is 5MB.",
   "cf.send": "Send Message →",
   "cf.sending": "Sending…",
+  "apply.file_type_error": "{file}: please upload a file of one of these types: {types}.",
+  "apply.file_size_error": "{file} is larger than 5 MB. Please choose a smaller file.",
+  "apply.total_size_error": "Your files together are over 12 MB. Please choose smaller files or compress the images.",
   // Chrome of the service, blog-post and employer-guide pages.
   "sv.ready_title": "Ready to Hire?",
   "sv.ready_text": "Tell us your worker count, required trades, destination country, and timeline. We'll respond within 24 hours.",

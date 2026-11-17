@@ -1,0 +1,26 @@
+// Which routes have complete Croatian content. The list is loaded before the larger Croatian bundle.
+// "page:privacy" and "page:terms" are listed; the legal texts are with the lawyer for proofing (Nov 2026).
+export const HR_TRANSLATED = [
+  'page:home', 'country:slovenia', 'country:north-macedonia', 'country:italy', 'country:seychelles', 'country:mauritius', 'post:poland-new-work-permit-system-2026', 'post:saudi-arabia-visa-quotas-compliance-2026', 'post:uae-wage-emiratisation-rules-2026', 'post:malaysia-bangladesh-recruitment-reopens-2026', 'post:czech-republic-employee-card-rules-2026',  'page:about', 'page:faq', 'page:blog', 'page:countries', 'page:capabilities',
+  'page:employer-guide', 'page:privacy', 'page:terms', 'page:apply', 'country:saudi-arabia', 'country:uae', 'country:qatar',
+  'country:kuwait', 'country:oman', 'country:bahrain', 'country:jordan', 'country:malaysia',
+  'country:singapore', 'country:maldives', 'country:serbia', 'country:portugal', 'country:greece',
+  'country:romania', 'country:poland', 'country:hungary', 'country:croatia', 'country:czech-republic',
+  'country:lithuania', 'country:latvia', 'country:estonia', 'country:bulgaria', 'country:cyprus',
+  'country:slovakia', 'country:bosnia-herzegovina', 'country:armenia', 'country:montenegro',
+  'country:georgia', 'service:construction', 'service:drivers', 'service:hospitality',
+  'service:farm-garden', 'service:warehouse', 'service:factory', 'service:oil-gas', 'service:security',
+  'service:cleaning', 'service:retail', 'service:painting-finishing', 'service:steel-fixing',
+  'service:scaffolding-formwork', 'service:landscaping-groundskeeping', 'service:masonry-bricklaying',
+  'service:electrical-helpers', 'service:laundry-linen', 'service:food-processing',
+  'service:fishery-aquaculture', 'service:caregiving', 'service:welding-fabrication',
+  'service:plumbing-hvac', 'service:heavy-equipment', 'service:marine-fabrication',
+  'service:domestic-household', 'post:romania-work-visa-2026-changes',
+  'post:armenia-georgia-opportunity', 'post:georgia-work-permit-law-explained',
+  'post:montenegro-construction-hospitality-opportunity', 'post:certified-welders-gulf-construction',
+  'post:hvac-ac-technician-gulf-demand', 'post:gamca-wafid-medical-guide',
+  'post:gulf-construction-bangladesh', 'post:bmet-smart-card-explained',
+  'post:malaysia-vs-gulf-comparison', 'post:spot-legitimate-recruitment-agency',
+  'post:eastern-europe-factory-workers', 'post:remittance-economy-bangladesh', 'guide:saudi-arabia',
+  'guide:uae', 'guide:poland',
+];

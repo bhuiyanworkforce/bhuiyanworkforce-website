@@ -3,14 +3,28 @@ import en from './en.js';
 import { AR_TRANSLATED } from './ar.translated.js';
 import { PL_TRANSLATED } from './pl.translated.js';
 import { RO_TRANSLATED } from './ro.translated.js';
+import { EL_TRANSLATED } from './el.translated.js';
+import { HR_TRANSLATED } from './hr.translated.js';
+import { SR_TRANSLATED } from './sr.translated.js';
+import { BS_TRANSLATED } from './bs.translated.js';
+import { MK_TRANSLATED } from './mk.translated.js';
+import { IT_TRANSLATED } from './it.translated.js';
+import { BG_TRANSLATED } from './bg.translated.js';
 
-// Arabic and Polish start as just their route lists. The full locale (head/SEO strings) replaces them
+// Arabic, Polish and Bulgarian start as just their route lists. The full locale (head/SEO strings) replaces them
 // through registerLocale() from src/i18n/ar-bundle.js / pl-bundle.js, loaded on demand in the browser.
 export const LOCALE_DATA = {
   en,
   ar: { code: 'ar', translated: AR_TRANSLATED },
   pl: { code: 'pl', translated: PL_TRANSLATED },
+  bg: { code: 'bg', translated: BG_TRANSLATED },
   ro: { code: 'ro', translated: RO_TRANSLATED },
+  el: { code: 'el', translated: EL_TRANSLATED },
+  hr: { code: 'hr', translated: HR_TRANSLATED },
+  sr: { code: 'sr', translated: SR_TRANSLATED },
+  bs: { code: 'bs', translated: BS_TRANSLATED },
+  mk: { code: 'mk', translated: MK_TRANSLATED },
+  it: { code: 'it', translated: IT_TRANSLATED },
 };
 
 export function registerLocale(code, data) {
