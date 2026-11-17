@@ -47,8 +47,9 @@ export const POST_SLUGS = [
   'eastern-europe-factory-workers', 'remittance-economy-bangladesh',
 ];
 
-// Only these three guides have content in the data file.
-export const GUIDE_SLUGS = ['saudi-arabia', 'uae', 'poland'];
+// One employer guide per destination country. Each is published in its own language
+// (see src/data/guidesData.js), so there are no per-language translations of guides.
+export const GUIDE_SLUGS = [...COUNTRY_SLUGS];
 
 const LISTS = {
   page: PAGE_IDS,
