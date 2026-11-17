@@ -1993,5 +1993,150 @@
     "file": "src/components/ContactForm.jsx",
     "en": "Domestic & Household Workers",
     "hu": "Háztartási és otthoni munkavállalók"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Home",
+    "hu": "Kezdőlap"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder",
+    "hu": "Alapító"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO of Bhuiyan Workforce Ltd., a Bangladesh-based international recruitment company built on transparency.",
+    "hu": "A Bhuiyan Workforce Ltd. alapítója és vezérigazgatója, amely bangladesi székhelyű, az átláthatóságra épülő nemzetközi toborzással foglalkozó vállalat."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "MD Rezaul Kabir Bhuiyan, Founder and CEO of Bhuiyan Workforce Ltd.",
+    "hu": "MD Rezaul Kabir Bhuiyan, a Bhuiyan Workforce Ltd. alapítója és vezérigazgatója"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Role",
+    "hu": "Beosztás"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Education",
+    "hu": "Tanulmányok"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Before the company",
+    "hu": "A vállalat előtt"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Languages",
+    "hu": "Nyelvek"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO, Bhuiyan Workforce Ltd.",
+    "hu": "Alapító és vezérigazgató, Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Computer Science and Technology, Jiangnan University, China (2022), first in his department",
+    "hu": "Számítástechnika és technológia, Jiangnan Egyetem, Kína (2022), tanszékének első helyezettje"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "ICT and Physics teacher",
+    "hu": "Informatika- és fizikatanár"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Bengali, English, Hindi, Chinese",
+    "hu": "Bengáli, angol, hindi, kínai"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Workers get honest job offers and a contract explained in Bengali before they commit to anything.",
+    "hu": "A munkavállalók őszinte állásajánlatot és bengáliul elmagyarázott szerződést kapnak, mielőtt bármire elkötelezik magukat."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Every cost is itemised and written down before money changes hands. No hidden fees.",
+    "hu": "Minden költség tételesen szerepel és írásban rögzített, mielőtt pénz cserélne gazdát. Rejtett díjak nélkül."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Skills are tested, not assumed, so employers receive the workers they were promised.",
+    "hu": "A készségeket ellenőrizzük, nem pedig feltételezzük, így a munkáltatók valóban azokat a munkavállalókat kapják, akiket ígértek nekik."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "We follow up after deployment, because a placement does not end at the airport.",
+    "hu": "A kiutazás után is nyomon követjük a munkavállalókat, mert a külföldi munkába állítás nem ér véget a repülőtéren."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Why he started this company",
+    "hu": "Miért alapította a vállalatot"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan watched people in his community overpay unregulated brokers when they tried to find work abroad. He started Bhuiyan Workforce Ltd. to offer the opposite: ethical, transparent placement, where the worker knows the terms and the cost, and the employer knows exactly who is coming.",
+    "hu": "Bhuiyan úr látta, hogy környezetének emberei túl sokat fizetnek szabályozatlan ügynököknek, amikor külföldön próbálnak munkát találni. Azért alapította a Bhuiyan Workforce Ltd.-t, hogy az ellenkezőjét kínálja: etikus, átlátható toborzást, ahol a munkavállaló ismeri a feltételeket és a költségeket, a munkáltató pedig pontosan tudja, ki érkezik."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "The company is a registered limited company in Bangladesh. Its job is to connect pre-screened Bangladeshi workers with employers in Europe, the Gulf and Southeast Asia.",
+    "hu": "A vállalat Bangladesben bejegyzett korlátolt felelősségű társaság. Feladata, hogy előzetesen átvizsgált bangladesi munkavállalókat kapcsoljon össze európai, Öböl-menti és délkelet-ázsiai munkáltatókkal."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Background",
+    "hu": "Szakmai háttér"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan studied Computer Science and Technology at Jiangnan University in China and graduated in 2022, ranked first in his department. Before founding the company he taught ICT and Physics.",
+    "hu": "Bhuiyan úr számítástechnikát és technológiát tanult a kínai Jiangnan Egyetemen, és 2022-ben végzett, tanszékének első helyezettjeként. A vállalat alapítása előtt informatikát és fizikát tanított."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "He speaks Bengali, English, Hindi and Chinese, which helps when talking to employers and partners directly.",
+    "hu": "Beszél bengáliul, angolul, hindiül és kínaiul, ami segít a munkáltatókkal és partnerekkel folytatott közvetlen beszélgetésekben."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
+    "hu": "Ma ő vezeti a vállalat partnerségeit és üzletfejlesztését az Öböl-menti országokban, Európában és Ázsiában. A vállalat weboldalát és belső munkaerő-kezelő rendszerét is ő tervezte és építette, így a jelöltek nyilvántartása, a dokumentumok és a külföldi munkába állítások egy helyen követhetők nyomon."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "What the company stands for",
+    "hu": "Amit a vállalat képvisel"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Get in touch",
+    "hu": "Kapcsolatfelvétel"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Employers and partners can write to Mr. Bhuiyan directly at",
+    "hu": "A munkáltatók és partnerek közvetlenül írhatnak Bhuiyan úrnak a következő e-mail-címen:"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "or on WhatsApp at",
+    "hu": "vagy WhatsAppon a következő számon:"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "About the company",
+    "hu": "A vállalatról"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "See our capabilities",
+    "hu": "Tekintse meg szakmai kompetenciáinkat"
   }
 ]

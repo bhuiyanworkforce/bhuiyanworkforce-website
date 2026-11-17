@@ -1858,5 +1858,150 @@
     "file": "src/pages/TermsPage.jsx",
     "en": "Bhuiyan Workforce Ltd. only communicates through official channels: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com, and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to",
     "ro": "Bhuiyan Workforce Ltd. comunică exclusiv prin canale oficiale: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com și numerele de telefon afișate pe acest site. Nu oferim locuri de muncă prin mesaje WhatsApp nesolicitate, mesaje directe pe rețelele sociale sau site-uri neoficiale. Dacă primiți o comunicare suspectă care pretinde că provine de la noi, vă rugăm să o raportați la adresa"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Home",
+    "ro": "Acasă"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder",
+    "ro": "Fondator"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO of Bhuiyan Workforce Ltd., a Bangladesh-based international recruitment company built on transparency.",
+    "ro": "Fondator și CEO al Bhuiyan Workforce Ltd., o companie internațională de recrutare cu sediul în Bangladesh, construită pe transparență."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "MD Rezaul Kabir Bhuiyan, Founder and CEO of Bhuiyan Workforce Ltd.",
+    "ro": "MD Rezaul Kabir Bhuiyan, fondator și CEO al Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Role",
+    "ro": "Funcție"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Education",
+    "ro": "Studii"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Before the company",
+    "ro": "Înainte de companie"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Languages",
+    "ro": "Limbi vorbite"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO, Bhuiyan Workforce Ltd.",
+    "ro": "Fondator și CEO, Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Computer Science and Technology, Jiangnan University, China (2022), first in his department",
+    "ro": "Informatică și Tehnologie, Universitatea Jiangnan, China (2022), primul din departamentul său"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "ICT and Physics teacher",
+    "ro": "Profesor de informatică și fizică"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Bengali, English, Hindi, Chinese",
+    "ro": "Bengaleză, engleză, hindi, chineză"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Workers get honest job offers and a contract explained in Bengali before they commit to anything.",
+    "ro": "Lucrătorii primesc oferte de muncă oneste și un contract explicat în limba bengaleză înainte de a se angaja la ceva."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Every cost is itemised and written down before money changes hands. No hidden fees.",
+    "ro": "Fiecare cost este detaliat și consemnat în scris înainte să se schimbe bani. Fără taxe ascunse."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Skills are tested, not assumed, so employers receive the workers they were promised.",
+    "ro": "Competențele sunt testate, nu presupuse, astfel încât angajatorii să primească lucrătorii care li s-au promis."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "We follow up after deployment, because a placement does not end at the airport.",
+    "ro": "Menținem legătura și după trimitere, pentru că trimiterea unui lucrător în străinătate nu se termină la aeroport."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Why he started this company",
+    "ro": "De ce a înființat această companie"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan watched people in his community overpay unregulated brokers when they tried to find work abroad. He started Bhuiyan Workforce Ltd. to offer the opposite: ethical, transparent placement, where the worker knows the terms and the cost, and the employer knows exactly who is coming.",
+    "ro": "Domnul Bhuiyan vedea cum oameni din comunitatea sa plăteau prea mult unor agenți nereglementați atunci când încercau să găsească de lucru în străinătate. A înființat Bhuiyan Workforce Ltd. pentru a oferi opusul: o recrutare etică și transparentă, în care lucrătorul cunoaște condițiile și costurile, iar angajatorul știe exact cine vine."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "The company is a registered limited company in Bangladesh. Its job is to connect pre-screened Bangladeshi workers with employers in Europe, the Gulf and Southeast Asia.",
+    "ro": "Compania este o societate cu răspundere limitată înregistrată în Bangladesh. Rolul ei este să pună în legătură lucrători bangladeshi preselectați cu angajatori din Europa, din Golf și din Asia de Sud-Est."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Background",
+    "ro": "Parcurs"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan studied Computer Science and Technology at Jiangnan University in China and graduated in 2022, ranked first in his department. Before founding the company he taught ICT and Physics.",
+    "ro": "Domnul Bhuiyan a studiat Informatică și Tehnologie la Universitatea Jiangnan din China și a absolvit în 2022, clasat pe primul loc în departamentul său. Înainte de a înființa compania, a predat informatică și fizică."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "He speaks Bengali, English, Hindi and Chinese, which helps when talking to employers and partners directly.",
+    "ro": "Vorbește bengaleza, engleza, hindi și chineza, ceea ce ajută la discuțiile directe cu angajatorii și partenerii."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
+    "ro": "Astăzi conduce parteneriatele și dezvoltarea afacerii companiei în Golf, Europa și Asia. De asemenea, a conceput și a construit singur site-ul companiei și sistemul intern de gestionare a forței de muncă, astfel încât dosarele candidaților, documentele și trimiterile să fie urmărite într-un singur loc."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "What the company stands for",
+    "ro": "Principiile companiei"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Get in touch",
+    "ro": "Contactați-ne"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Employers and partners can write to Mr. Bhuiyan directly at",
+    "ro": "Angajatorii și partenerii îi pot scrie direct domnului Bhuiyan la adresa"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "or on WhatsApp at",
+    "ro": "sau pe WhatsApp la numărul"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "About the company",
+    "ro": "Despre companie"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "See our capabilities",
+    "ro": "Descoperiți capabilitățile noastre"
   }
 ]

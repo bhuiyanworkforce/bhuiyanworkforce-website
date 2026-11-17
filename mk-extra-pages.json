@@ -2388,5 +2388,150 @@
     "file": "src/pages/WorkerApplicationPage.jsx",
     "en": "Passport Expiry Date",
     "mk": "Датум на истекување на пасошот"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Home",
+    "mk": "Почетна"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder",
+    "mk": "Основач"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO of Bhuiyan Workforce Ltd., a Bangladesh-based international recruitment company built on transparency.",
+    "mk": "Основач и извршен директор на Bhuiyan Workforce Ltd., меѓународна компанија за регрутирање работници со седиште во Бангладеш, изградена врз транспарентност."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "MD Rezaul Kabir Bhuiyan, Founder and CEO of Bhuiyan Workforce Ltd.",
+    "mk": "MD Rezaul Kabir Bhuiyan, основач и извршен директор на Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Role",
+    "mk": "Улога"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Education",
+    "mk": "Образование"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Before the company",
+    "mk": "Пред компанијата"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Languages",
+    "mk": "Јазици"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Founder & CEO, Bhuiyan Workforce Ltd.",
+    "mk": "Основач и извршен директор, Bhuiyan Workforce Ltd."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Computer Science and Technology, Jiangnan University, China (2022), first in his department",
+    "mk": "Компјутерски науки и технологија, Jiangnan University, Кина (2022), прв на својот оддел"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "ICT and Physics teacher",
+    "mk": "Наставник по информатика и физика"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Bengali, English, Hindi, Chinese",
+    "mk": "Бенгалски, англиски, хинди, кинески"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Workers get honest job offers and a contract explained in Bengali before they commit to anything.",
+    "mk": "Работниците добиваат искрени понуди за работа и договор објаснет на бенгалски пред да се обврзат на што било."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Every cost is itemised and written down before money changes hands. No hidden fees.",
+    "mk": "Секој трошок е разработен и запишан пред да се разменат пари. Без скриени такси."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Skills are tested, not assumed, so employers receive the workers they were promised.",
+    "mk": "Вештините се проверуваат, а не се претпоставуваат, за работодавачите да ги добијат работниците што им биле ветени."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "We follow up after deployment, because a placement does not end at the airport.",
+    "mk": "Ги следиме работниците и по испраќањето, бидејќи испраќањето работник во странство не завршува на аеродромот."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Why he started this company",
+    "mk": "Зошто ја основал оваа компанија"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan watched people in his community overpay unregulated brokers when they tried to find work abroad. He started Bhuiyan Workforce Ltd. to offer the opposite: ethical, transparent placement, where the worker knows the terms and the cost, and the employer knows exactly who is coming.",
+    "mk": "Г-дин Bhuiyan гледал како луѓе од неговата заедница преплаќаат нерегулирани агенти кога се обидуваат да најдат работа во странство. Ја основал Bhuiyan Workforce Ltd. за да понуди спротивно: етичко и транспарентно регрутирање, во кое работникот ги знае условите и трошоците, а работодавачот точно знае кој доаѓа."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "The company is a registered limited company in Bangladesh. Its job is to connect pre-screened Bangladeshi workers with employers in Europe, the Gulf and Southeast Asia.",
+    "mk": "Компанијата е регистрирано друштво со ограничена одговорност во Бангладеш. Нејзина задача е да ги поврзува однапред проверените работници од Бангладеш со работодавачи во Европа, земјите од Заливот и Југоисточна Азија."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Background",
+    "mk": "Професионален пат"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Mr. Bhuiyan studied Computer Science and Technology at Jiangnan University in China and graduated in 2022, ranked first in his department. Before founding the company he taught ICT and Physics.",
+    "mk": "Г-дин Bhuiyan студирал компјутерски науки и технологија на Jiangnan University во Кина и дипломирал во 2022 година како прв во својот оддел. Пред да ја основа компанијата, предавал информатика и физика."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "He speaks Bengali, English, Hindi and Chinese, which helps when talking to employers and partners directly.",
+    "mk": "Зборува бенгалски, англиски, хинди и кинески, што помага во директниот разговор со работодавачите и партнерите."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
+    "mk": "Денес ги води партнерствата и развојот на бизнисот на компанијата во земјите од Заливот, Европа и Азија. Тој и самиот ја дизајнирал и изградил веб-страницата на компанијата и нејзиниот внатрешен систем за управување со работната сила, така што досиејата на кандидатите, документите и испраќањата на работници се следат на едно место."
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "What the company stands for",
+    "mk": "За што се залага компанијата"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Get in touch",
+    "mk": "Контактирајте нè"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "Employers and partners can write to Mr. Bhuiyan directly at",
+    "mk": "Работодавачите и партнерите можат директно да му пишуваат на г-дин Bhuiyan на"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "or on WhatsApp at",
+    "mk": "или преку WhatsApp на бројот"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "About the company",
+    "mk": "За компанијата"
+  },
+  {
+    "file": "src/pages/FounderPage.jsx",
+    "en": "See our capabilities",
+    "mk": "Погледнете ги нашите можности"
   }
 ]
