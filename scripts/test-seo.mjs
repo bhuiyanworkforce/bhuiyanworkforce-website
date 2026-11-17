@@ -144,7 +144,7 @@ console.log('routes');
 test('page counts', () => {
   const pages = listPages();
   const by = (l) => pages.filter((p) => p.lang === l).length;
-  assert.equal(by('en'), 12 + 25 + 33 + 18 + 3);
+  assert.equal(by('en'), 12 + 25 + 33 + 18 + 33);
   assert.equal(by('ar'), 4 + 25 + 33 + 18 + 3);
   assert.equal(by('pl'), 4 + 25 + 33 + 18 + 3);
   assert.equal(by('bg'), 11 + 25 + 33 + 18 + 3);

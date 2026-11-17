@@ -151,7 +151,9 @@ for (const e of EN.POSTS) {
 
 // ---- 5. guides
 const guides = keyed(await importFile(`src/content/${lang}/guides.js`));
-for (const slug of Object.keys(EN.COUNTRY_GUIDES)) {
+// Only the original three guides have translations; the rest are single-language (src/data/guidesData.js).
+const TRANSLATED_GUIDES = ['saudi-arabia', 'uae', 'poland'];
+for (const slug of TRANSLATED_GUIDES) {
   const e = EN.COUNTRY_GUIDES[slug], tr = guides?.[slug];
   if (!tr) { err(`guide ${slug}`, 'missing'); continue; }
   if (tr.flag !== e.flag) err(`guide ${slug}`, 'flag changed');
@@ -195,7 +197,7 @@ else {
   for (const c of EN.COUNTRIES) seo(`head.countries.${c.slug}`, h.countries?.[c.slug]);
   for (const s of EN.SERVICES) seo(`head.services.${s.slug}`, h.services?.[s.slug]);
   for (const p of EN.POSTS) { if (ENGLISH_ONLY_POSTS.has(lang) && !(Array.isArray(posts) && posts.some((x) => x.slug === p.slug))) continue; seo(`head.posts.${p.slug}`, h.posts?.[p.slug]); }
-  for (const g of Object.keys(EN.COUNTRY_GUIDES)) seo(`head.guides.${g}`, h.guides?.[g]);
+  for (const g of TRANSLATED_GUIDES) seo(`head.guides.${g}`, h.guides?.[g]);
   for (const k of ['siteName', 'ogImageAlt', 'orgDescription', 'siteDescription']) if (!isStr(h[k])) err(`head.${k}`, 'missing');
   if (h.siteName !== 'Bhuiyan Workforce Ltd.') err('head.siteName', 'must be exactly "Bhuiyan Workforce Ltd."');
   for (const k of ['home', 'countries', 'services', 'blog', 'faq', 'employerGuide']) if (!isStr(h.breadcrumb?.[k])) err(`head.breadcrumb.${k}`, 'missing');
