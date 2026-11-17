@@ -21,7 +21,7 @@ const en = {
       { icon: '🌍', title: 'Destination Knowledge', body: 'Understanding local labour law, visa categories, and cultural context at each destination reduces friction and delays.' },
       { icon: '📣', title: 'Transparency', body: 'Employers receive clear timelines, honest candidate availability assessments, and a fully itemised cost breakdown before committing to anything.' },
     ],
-    teamIntro: 'Our team combines recruitment expertise, immigration knowledge, and deep sector understanding across all six service categories.',
+    teamIntro: 'Our team combines recruitment expertise, immigration knowledge, and deep sector understanding across all 25 service categories.',
     team: [
       { photo: '/team-rezaul.webp', name: 'MD Rezaul Kabir Bhuiyan', role: 'Founder & CEO', body: 'Computer Science graduate (Jiangnan University, China) with expertise in international business development and technology. Leads all strategic partnerships and business development across Gulf, European, and Asian markets.' },
       { photo: '/team-asraful.webp', name: 'Asraful Kabir Bhuiyan', role: 'Business Development Manager', body: 'Drives employer relationships and new market expansion across Gulf, European, and Asian markets.' },
