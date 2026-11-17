@@ -46,3 +46,13 @@ The BMET licence claim ("licence in process — expected October 2026") and the 
 - About page says "six service categories" while the site lists 25 (flagged by every translator).
 - Partner "licensed / government-registered" claims need verification before launch.
 - Run `npm install && npm run build:static` locally before deploying.
+
+## Spanish and Malay added (Nov 17 update 6)
+- **Spanish (`/es`)**: full language, 89 pages (same as English). Part A (incl. all 18 articles) plus Part B (`es-extra-pages.json`, 477 rows) wired like Macedonian: own bundle, English slugs, hreflang `es`, sitemap, tests. `node scripts/check-translation.mjs es --all`: 0 errors, 0 warnings.
+- Fixes to the delivered Spanish: added the 3 `apply.*` upload-error strings; removed the "BMET licence in process — expected October 2026" sentence from the Capabilities row of `es-extra-pages.json` (the claim was already removed from English and every other language).
+- **Malay (`/ms`)**: 66 pages: home, about, FAQ, countries index, capabilities, apply, privacy, terms, 33 country pages, 25 service pages. Part B for those pages is in `ms-extra-pages.json` (399 rows: apply 151, capabilities 68, privacy 100, terms 55, contact-form service names 25); no fallbacks to English in the build report. Not published yet (stay English-only; links to them go to the English page): blog index and 18 articles (skipped on request), employer guide and its 3 country guides (to be added later).
+  - `check-translation ms --all` still reports 39 errors, all the missing blog content (18 articles, 18 SEO overrides, blog index entry).
+  - To finish Malay: translate `posts.js` and the BlogPage and EmployerGuidePage rows of Part B, append the rows to `ms-extra-pages.json`, run `node scripts/sync-static-translations.mjs ms`, then add `page:blog`, `page:employer-guide`, `guide:*` and `post:*` to `MS_TRANSLATED` and `post: msPosts` in `ms-bundle.js`.
+  - Malay Part B (including Privacy and Terms) is machine-translated and not lawyer-proofed. The Terms page keeps the source's "Last updated: May 2026".
+- No capabilities PDF for es or ms: both link to the English `/capabilities.pdf` until `public/capabilities-<code>.pdf` exists (test-seo lists them in `NO_SHEET_YET`).
+- Result: `npm run build:static` 1116/1116 pages, `verify-pages` OK, `test:seo` all pass. Spanish and Malay are machine-translated and not native-reviewed; Privacy/Terms (Spanish) are not lawyer-proofed.
