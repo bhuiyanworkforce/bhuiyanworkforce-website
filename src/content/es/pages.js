@@ -39,7 +39,7 @@ export default {
         "body": "Los empleadores reciben plazos claros, evaluaciones honestas de la disponibilidad de candidatos y un desglose detallado de los costes antes de comprometerse."
       }
     ],
-    "teamIntro": "Nuestro equipo combina experiencia en reclutamiento, conocimientos sobre inmigración y un profundo conocimiento sectorial en las seis categorías de servicios.",
+    "teamIntro": "Nuestro equipo combina experiencia en reclutamiento, conocimientos sobre inmigración y un profundo conocimiento sectorial en las 25 categorías de servicios.",
     "team": [
       {
         "photo": "/team-rezaul.webp",
