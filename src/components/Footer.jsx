@@ -25,7 +25,7 @@ export default function Footer() {
               📍 <bdi dir="ltr">Kawtoli, Brahmanbaria, Bangladesh 3400</bdi>
             </div>
             <div className="social-links" style={{ marginTop: 20 }}>
-              <a href="https://linkedin.com/company/bhuiyan-workforce" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+              <a href="https://www.linkedin.com/company/bhuiyan-workforce-ltd/" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
               <a href="https://www.facebook.com/share/1GjrNbPYvf/" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
               <a href="https://wa.me/8801864567912" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">W</a>
             </div>
