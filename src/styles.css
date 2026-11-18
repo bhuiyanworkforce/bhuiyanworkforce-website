@@ -537,3 +537,33 @@ html, body { max-width: 100%; overflow-x: clip; }
   .header-lang-mobile .lang-label { display: none; }
   .header-logo svg { max-width: 150px; height: auto; }
 }
+
+/* ── Audience actions (Request Workers / Apply for Work) ───── */
+a.btn { text-decoration: none; display: inline-block; }
+.header-apply { padding: 10px 20px; font-size: 0.88rem; }
+@media (max-width: 1320px) {
+  .header-nav { gap: 22px; }
+  .header-nav a, .header-nav button { font-size: 0.85rem; }
+}
+
+/* ── Keyboard focus: visible on both navy and white backgrounds ── */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(15, 39, 68, 0.55);
+}
+
+/* ── Reduced motion: no looping effects, content never hidden by animation ── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-left-item, .hero-right-anim { opacity: 1 !important; transform: none !important; }
+  .hero-streak-line { display: none !important; }
+  .hero-scroll { animation: none !important; }
+  .cta-band { animation: none !important; }
+}
