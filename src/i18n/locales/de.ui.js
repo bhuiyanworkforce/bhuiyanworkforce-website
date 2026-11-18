@@ -76,7 +76,7 @@ export default {
   "h.r5_them": "Die Dokumentationspraxis ist unterschiedlich und oft informell",
   "h.slots_label": "Verfügbare Plätze",
   "h.fb1": "Priorisierte Einsatzplanung — Sie stehen an erster Stelle",
-  "h.fb2": "Garantierte Shortlist innerhalb von 7 Werktagen",
+  "h.fb2": "Shortlist innerhalb von 7 Werktagen",
   "h.fb3": "Direkter Kontakt zum Gründer bei Ihrer ersten Rekrutierung",
   "h.fb4": "Unverbindlich — reservieren Sie Ihren Platz und prüfen Sie das Angebot, wenn Sie bereit sind",
   "h.cta_title": "Möchten Sie Ihre offenen Stellen besetzen?",

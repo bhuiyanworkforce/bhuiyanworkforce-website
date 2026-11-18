@@ -76,7 +76,7 @@ export default {
   "h.r5_them": "Practicile de documentare variază și sunt adesea informale",
   "h.slots_label": "Sloturi disponibile",
   "h.fb1": "Mobilizarea prioritară — primul în coadă",
-  "h.fb2": "Lista scurtă garantată în 7 zile lucrătoare",
+  "h.fb2": "Lista scurtă în 7 zile lucrătoare",
   "h.fb3": "Linie directă către fondator pentru prima dvs. plasare",
   "h.fb4": "Fără obligație — rezervă-ți slotul, revizuiește-l când ești gata",
   "h.cta_title": "Sunteți gata să vă ocupați posturile vacante?",

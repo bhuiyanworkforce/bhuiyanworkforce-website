@@ -76,7 +76,7 @@ export default {
   "h.r5_them": "Amalan dokumentasi berbeza-beza dan sering tidak formal",
   "h.slots_label": "Slot tersedia",
   "h.fb1": "Keutamaan mobilisasi — giliran terawal",
-  "h.fb2": "Senarai pendek calon dijamin dalam masa 7 hari bekerja",
+  "h.fb2": "Senarai pendek calon dalam masa 7 hari bekerja",
   "h.fb3": "Hubungan terus dengan pengasas untuk proses perekrutan pertama pihak anda",
   "h.fb4": "Tiada komitmen — tempah slot dan semak apabila bersedia",
   "h.cta_title": "Bersedia mengisi kekosongan jawatan pihak anda?",

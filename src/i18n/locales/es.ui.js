@@ -76,7 +76,7 @@ export default {
   "h.r5_them": "Las prácticas de documentación varían y suelen ser informales",
   "h.slots_label": "Plazas disponibles",
   "h.fb1": "Movilización prioritaria: primeros en la lista",
-  "h.fb2": "Preselección de candidatos verificados (lista corta) garantizada en un plazo de 7 días laborables",
+  "h.fb2": "Preselección de candidatos verificados (lista corta) en un plazo de 7 días laborables",
   "h.fb3": "Contacto directo con el fundador para su primera contratación",
   "h.fb4": "Sin compromiso: reserven su plaza y revísenla cuando estén preparados",
   "h.cta_title": "¿Listos para cubrir sus vacantes?",

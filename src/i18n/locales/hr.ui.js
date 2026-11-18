@@ -76,7 +76,7 @@ export default {
   "h.r5_them": "Prakse vođenja dokumentacije razlikuju se i često su neformalne",
   "h.slots_label": "Dostupna mjesta",
   "h.fb1": "Prioritetna priprema — prvi ste na redu",
-  "h.fb2": "Zajamčena uža lista provjerenih kandidata u roku od 7 radnih dana",
+  "h.fb2": "Uža lista provjerenih kandidata u roku od 7 radnih dana",
   "h.fb3": "Izravan kontakt s osnivačem pri Vašem prvom zapošljavanju",
   "h.fb4": "Bez obveze — rezervirajte mjesto i pregledajte ponudu kada budete spremni",
   "h.cta_title": "Želite li popuniti slobodna radna mjesta?",

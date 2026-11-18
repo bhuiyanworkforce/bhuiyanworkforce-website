@@ -76,7 +76,7 @@ export default {
   "h.r5_them": "Documentation practices vary and are often informal",
   "h.slots_label": "Slots Available",
   "h.fb1": "Priority mobilisation — first in the queue",
-  "h.fb2": "Guaranteed shortlist within 7 working days",
+  "h.fb2": "Shortlist within 7 working days",
   "h.fb3": "Direct line to the founder for your first placement",
   "h.fb4": "No obligation — reserve your slot, review when ready",
   "h.cta_title": "Ready to Fill Your Vacancies?",

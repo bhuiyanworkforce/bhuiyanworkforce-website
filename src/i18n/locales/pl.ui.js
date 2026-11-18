@@ -78,7 +78,7 @@ export default {
   "h.r5_them": "Praktyki dokumentacyjne bywają różne i często nieformalne",
   "h.slots_label": "Dostępne miejsca",
   "h.fb1": "Priorytet w mobilizacji — pierwsi w kolejce",
-  "h.fb2": "Gwarantowana krótka lista w ciągu 7 dni roboczych",
+  "h.fb2": "Krótka lista w ciągu 7 dni roboczych",
   "h.fb3": "Bezpośredni kontakt z założycielem przy pierwszym zatrudnieniu",
   "h.fb4": "Bez zobowiązań — zarezerwuj miejsce i przeanalizuj ofertę, kiedy będziesz gotowy",
   "h.cta_title": "Gotowi obsadzić wakaty?",

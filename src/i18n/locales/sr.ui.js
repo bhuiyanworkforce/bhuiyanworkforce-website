@@ -76,7 +76,7 @@ export default {
   "h.r5_them": "Praksa dokumentovanja se razlikuje i često je neformalna",
   "h.slots_label": "Dostupna mesta",
   "h.fb1": "Prioritetno slanje — prvi ste na redu",
-  "h.fb2": "Garantovana uža lista u roku od 7 radnih dana",
+  "h.fb2": "Uža lista u roku od 7 radnih dana",
   "h.fb3": "Direktna veza sa osnivačem za Vaše prvo angažovanje",
   "h.fb4": "Bez obaveze — rezervišite mesto i pregledajte ponudu kada budete spremni",
   "h.cta_title": "Spremni da popunite upražnjena radna mesta?",

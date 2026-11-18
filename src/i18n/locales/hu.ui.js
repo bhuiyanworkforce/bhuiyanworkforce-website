@@ -76,7 +76,7 @@ export default {
   "h.r5_them": "A dokumentációs gyakorlat változó, és gyakran nem hivatalos",
   "h.slots_label": "Elérhető helyek",
   "h.fb1": "Elsőbbségi munkába állítás — Önök kerülnek a sor elejére",
-  "h.fb2": "Garantált jelöltlista 7 munkanapon belül",
+  "h.fb2": "Jelöltlista 7 munkanapon belül",
   "h.fb3": "Közvetlen kapcsolat az alapítóval az első munkavállalóik elhelyezéséhez",
   "h.fb4": "Kötelezettség nélkül — foglalják le helyüket, és tekintsék át, amikor készen állnak",
   "h.cta_title": "Szeretnék betölteni az üres álláshelyeket?",

@@ -78,7 +78,7 @@ export default {
   "h.r5_them": "Le prassi documentali variano e spesso sono informali",
   "h.slots_label": "Posti disponibili",
   "h.fb1": "Priorità nella mobilitazione — in cima alla lista",
-  "h.fb2": "Shortlist garantita entro 7 giorni lavorativi",
+  "h.fb2": "Shortlist entro 7 giorni lavorativi",
   "h.fb3": "Contatto diretto con il fondatore per il vostro primo inserimento",
   "h.fb4": "Nessun obbligo: riservate il posto e valutate quando siete pronti",
   "h.cta_title": "Siete pronti a coprire le vostre posizioni vacanti?",

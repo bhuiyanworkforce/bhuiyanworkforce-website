@@ -76,7 +76,7 @@ export default {
   "h.r5_them": "As práticas de documentação variam e são frequentemente informais",
   "h.slots_label": "Vagas disponíveis",
   "h.fb1": "Prioridade no recrutamento — no início da fila",
-  "h.fb2": "Pré-seleção de candidatos verificados garantida no prazo de 7 dias úteis",
+  "h.fb2": "Pré-seleção de candidatos verificados no prazo de 7 dias úteis",
   "h.fb3": "Contacto direto com o fundador no primeiro recrutamento",
   "h.fb4": "Sem compromisso — reserve a sua vaga e analise a proposta quando quiser",
   "h.cta_title": "Está pronto para preencher as suas vagas?",
