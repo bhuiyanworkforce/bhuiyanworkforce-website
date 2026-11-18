@@ -72,7 +72,8 @@ export default function CountryGuidePage() {
   const tr = (key, vars) => t(key, lang, vars);
   const country = getCountry(slug);
   const [submitted, setSubmitted] = useState(false);
-  const [fields, setFields]  = useState({ name: '', company: '', email: '' });
+  const [fields, setFields]  = useState({ name: '', company: '', email: '', message: '' });
+  const [msgError, setMsgError] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(false);
 
@@ -80,6 +81,10 @@ export default function CountryGuidePage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const msg = fields.message.trim();
+    if (!msg) { setMsgError(tr('cf.err_msg_req')); return; }
+    if (msg.length < 20) { setMsgError(tr('cf.err_msg_short')); return; }
+    setMsgError('');
     setSubmitting(true);
     setError(false);
     try {
@@ -90,7 +95,7 @@ export default function CountryGuidePage() {
           name: fields.name, email: fields.email,
           company: fields.company,
           service: `Country Guide Request — ${guide.country}`,
-          message: `Requested the employer guide for ${guide.country}.`,
+          message: msg,
           formType: 'country_guide',
         }),
       });
@@ -222,6 +227,16 @@ export default function CountryGuidePage() {
                           onChange={e => setFields(p => ({ ...p, email: e.target.value }))}
                           style={{ width: '100%', padding: '11px 14px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.07)', color: 'var(--white)', fontSize: '0.875rem', outline: 'none', boxSizing: 'border-box' }}
                         />
+                      </div>
+                      <div>
+                        <label htmlFor="cg-message" style={{ display: 'block', fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>{tr('cf.message')}</label>
+                        <textarea id="cg-message" rows={4} required placeholder={tr('cf.message_ph')}
+                          value={fields.message}
+                          onChange={e => setFields(p => ({ ...p, message: e.target.value }))}
+                          aria-invalid={msgError ? 'true' : undefined}
+                          style={{ width: '100%', padding: '11px 14px', borderRadius: 8, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.07)', color: 'var(--white)', fontSize: '0.875rem', outline: 'none', boxSizing: 'border-box', resize: 'vertical', fontFamily: 'inherit' }}
+                        />
+                        {msgError && <span role="alert" style={{ color: '#fc8181', fontSize: '0.8rem' }}>{msgError}</span>}
                       </div>
                       {error && (
                         <div role="alert" style={{ color: '#e53e3e', fontSize: '0.85rem' }}>
