@@ -110,11 +110,11 @@ export default {
         "items": [
           {
             "q": "¿Con qué rapidez pueden proporcionar trabajadores?",
-            "a": "Para la mayoría de las categorías profesionales, podemos presentar una preselección de candidatos verificados en un plazo de 7 días laborables. Una vez que el empleador haya seleccionado a los candidatos, el proceso completo de documentación y visado suele tardar entre 4 y 8 semanas, según el país de destino. En países con procedimientos de visado simplificados (por ejemplo, Malasia, UAE), los plazos suelen ser más breves."
+            "a": "Para la mayoría de las categorías profesionales, podemos presentar una preselección de candidatos verificados en un plazo de 7 días laborables. Una vez que el empleador haya seleccionado a los candidatos, el proceso completo de documentación y visado suele tardar entre 4 y 8 semanas, según el país de destino. En países con procedimientos de visado simplificados (por ejemplo, Malasia, UAE), los plazos suelen ser más breves. Los 7 días laborables se cuentan desde el día en que recibimos los requisitos completos del puesto (oficio, número de trabajadores, destino, salario y condiciones). Si faltan datos, el plazo empieza cuando los recibamos."
           },
           {
             "q": "¿Cuál es el tamaño mínimo de pedido?",
-            "a": "Nos encargamos tanto de envíos de menor tamaño (5–10 trabajadores) como de movilizaciones a gran escala (más de 200 trabajadores). No hay un pedido mínimo. No obstante, para solicitudes muy pequeñas, podemos agrupar su necesidad con el envío de trabajadores para otro empleador con el fin de gestionar los costes de forma eficiente; siempre se lo comunicaremos con transparencia."
+            "a": "Gestionamos tanto envíos pequeños (5–10 trabajadores) como movilizaciones a gran escala (más de 200 trabajadores). No hay pedido mínimo. Para necesidades muy pequeñas, podemos agrupar los envíos con otros empleadores que vayan al mismo destino para gestionar los costes de viaje y tramitación. Esto no modifica su contrato ni las condiciones de los trabajadores, y se lo comunicaremos antes de hacerlo."
           },
           {
             "q": "¿Se encargan de toda la documentación?",
