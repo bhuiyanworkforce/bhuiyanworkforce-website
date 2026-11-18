@@ -110,11 +110,11 @@ export default {
         "items": [
           {
             "q": "Cât de repede puteți furniza muncitori?",
-            "a": "Pentru majoritatea categoriilor comerciale, putem prezenta o listă scurtă verificată în termen de 7 zile lucrătoare. După selectarea angajatorului, procesul complet de documentare și viză durează de obicei 4-8 săptămâni, în funcție de țara de destinație. Pentru țările cu proceduri de viză simplificate (de exemplu, Malaezia, Emiratele Arabe Unite), termenele sunt adesea mai rapide."
+            "a": "Pentru majoritatea categoriilor comerciale, putem prezenta o listă scurtă verificată în termen de 7 zile lucrătoare. După selectarea angajatorului, procesul complet de documentare și viză durează de obicei 4-8 săptămâni, în funcție de țara de destinație. Pentru țările cu proceduri de viză simplificate (de exemplu, Malaezia, Emiratele Arabe Unite), termenele sunt adesea mai rapide. Cele 7 zile lucrătoare se numără din ziua în care primim cerințele complete ale postului (meserie, numărul de lucrători, destinație, salariu și condiții). Dacă lipsesc date, numărătoarea începe odată ce le primim."
           },
           {
             "q": "Care este dimensiunea minimă a comenzii tale?",
-            "a": "Ne ocupăm atât de mici implementări (5-10 lucrători) cât și de mobilizări la scară largă (200+ lucrători). Nu există o comandă minimă. Cu toate acestea, pentru plasamente foarte mici, este posibil să combinăm cerințele dvs. cu desfășurarea unui alt angajator pentru a gestiona costurile în mod eficient - vom fi întotdeauna transparenți în acest sens."
+            "a": "Ne ocupăm atât de mici grupuri (5-10 lucrători), cât și de mobilizări la scară largă (peste 200 de lucrători). Nu există o comandă minimă. Pentru cerințe foarte mici, putem grupa trimiterea cu alți angajatori către aceeași destinație, pentru a gestiona costurile de călătorie și de procesare. Acest lucru nu modifică contractul dvs. sau condițiile lucrătorilor, și vă vom anunța înainte să o facem."
           },
           {
             "q": "Te ocupi de toată documentația?",
