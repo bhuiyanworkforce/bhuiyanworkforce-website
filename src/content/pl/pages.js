@@ -111,11 +111,11 @@ export default {
         "items": [
           {
             "q": "Jak szybko możecie zapewnić pracowników?",
-            "a": "W przypadku większości kategorii zawodowych możemy przedstawić zweryfikowaną krótką listę kandydatów w ciągu 7 dni roboczych. Po dokonaniu wyboru przez pracodawcę cały proces przygotowania dokumentacji i uzyskania wiz trwa zazwyczaj 4–8 tygodni, w zależności od kraju docelowego. W przypadku krajów z uproszczonymi procedurami wizowymi (np. Malezja, UAE) terminy są często krótsze."
+            "a": "W przypadku większości kategorii zawodowych możemy przedstawić zweryfikowaną krótką listę kandydatów w ciągu 7 dni roboczych. Po dokonaniu wyboru przez pracodawcę cały proces przygotowania dokumentacji i uzyskania wiz trwa zazwyczaj 4–8 tygodni, w zależności od kraju docelowego. W przypadku krajów z uproszczonymi procedurami wizowymi (np. Malezja, UAE) terminy są często krótsze. 7 dni roboczych liczy się od dnia, w którym otrzymamy Twoje kompletne wymagania dotyczące stanowisk (zawód, liczba pracowników, kraj docelowy, wynagrodzenie i warunki). Jeśli brakuje danych, odliczanie rozpoczyna się po ich otrzymaniu."
           },
           {
             "q": "Jaka jest minimalna wielkość zamówienia?",
-            "a": "Obsługujemy zarówno relokacje małych grup (5–10 pracowników), jak i mobilizacje na dużą skalę (200+ pracowników). Nie ma minimalnej wielkości zamówienia. Jednak w przypadku zatrudniania bardzo małych grup możemy połączyć Twoje zapotrzebowanie z relokacją pracowników dla innego pracodawcy, aby efektywnie zarządzać kosztami — zawsze będziemy o tym informować w sposób przejrzysty."
+            "a": "Obsługujemy zarówno małe grupy (5–10 pracowników), jak i mobilizacje na dużą skalę (200+ pracowników). Nie ma minimalnej wielkości zamówienia. W przypadku bardzo małych zapotrzebowań możemy łączyć wyjazdy z pracownikami innych pracodawców do tego samego kraju, aby kontrolować koszty podróży i formalności. Nie zmienia to Twojej umowy ani warunków pracowników, a poinformujemy Cię o tym, zanim to zrobimy."
           },
           {
             "q": "Czy zajmujecie się całą dokumentacją?",
