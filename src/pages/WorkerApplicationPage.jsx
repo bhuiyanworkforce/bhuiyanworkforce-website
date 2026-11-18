@@ -274,7 +274,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
               {step === 1 && (
                 <div>
                   <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{t('apply_step1', lang)}</h2>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 20 }}>
                     <div style={{ ...groupStyle, gridColumn: '1 / -1' }}>
                       <label htmlFor="wa-fullName" style={labelStyle}><Tx>Full Name (as in passport) *</Tx></label>
                       <input id="wa-fullName" style={inputStyle} name="fullName" value={fields.fullName} onChange={handleChange} required placeholder={tx(lang, "Mohammad Rafiqul Islam")} />
@@ -299,14 +299,6 @@ The applicant accepted the Privacy Policy and consented to processing of their d
                       <label htmlFor="wa-address" style={labelStyle}><Tx>Home Address (District/Division) *</Tx></label>
                       <input id="wa-address" style={inputStyle} name="address" value={fields.address} onChange={handleChange} required placeholder={tx(lang, "e.g. Brahmanbaria, Chittagong Division")} />
                     </div>
-                    <div style={groupStyle}>
-                      <label htmlFor="wa-passportNumber" style={labelStyle}><Tx>Passport Number</Tx></label>
-                      <input id="wa-passportNumber" style={inputStyle} name="passportNumber" value={fields.passportNumber} onChange={handleChange} placeholder="A1234567" />
-                    </div>
-                    <div style={groupStyle}>
-                      <label htmlFor="wa-passportExpiry" style={labelStyle}><Tx>Passport Expiry Date</Tx></label>
-                      <input id="wa-passportExpiry" style={inputStyle} type="date" name="passportExpiry" value={fields.passportExpiry} onChange={handleChange} />
-                    </div>
                   </div>
                   <div style={{ marginTop: 32, display: 'flex', justifyContent: 'flex-end' }}>
                     <button type="button" className="btn btn-primary" onClick={() => setStep(2)}
@@ -321,7 +313,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
               {step === 2 && (
                 <div>
                   <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{t('apply_step2', lang)}</h2>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 20 }}>
                     <div style={groupStyle}>
                       <label htmlFor="wa-tradeCategory" style={labelStyle}><Tx>Trade Category *</Tx></label>
                       <select id="wa-tradeCategory" style={inputStyle} name="tradeCategory" value={fields.tradeCategory} onChange={handleChange} required>
@@ -422,6 +414,17 @@ The applicant accepted the Privacy Policy and consented to processing of their d
                       <input id="wa-cvFile" type="file" accept=".pdf,.doc,.docx" onChange={handleFile('cvFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.cvFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.cvFile.name}</span>}
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
+                    <div style={groupStyle}>
+                      <label htmlFor="wa-passportNumber" style={labelStyle}><Tx>Passport Number</Tx></label>
+                      <input id="wa-passportNumber" style={inputStyle} name="passportNumber" value={fields.passportNumber} onChange={handleChange} placeholder="A1234567" />
+                    </div>
+                    <div style={groupStyle}>
+                      <label htmlFor="wa-passportExpiry" style={labelStyle}><Tx>Passport Expiry Date</Tx></label>
+                      <input id="wa-passportExpiry" style={inputStyle} type="date" name="passportExpiry" value={fields.passportExpiry} onChange={handleChange} />
+                    </div>
                     </div>
 
                     <div style={groupStyle}>

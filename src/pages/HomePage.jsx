@@ -17,7 +17,7 @@ const go = (id) => {
 
 const FOUNDING_SLOTS_REMAINING = 10;
 
-const mapPlaceholderStyle = { height: 500, background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' };
+const mapPlaceholderStyle = { height: 260, background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' };
 
 // Deterministic pseudo-random value in [0, 1) from integers only, so the server-rendered HTML and
 // the browser render the same positions (Math.random() would cause a hydration mismatch).
@@ -192,9 +192,9 @@ export default function HomePage() {
                 <button className="btn btn-primary" onClick={() => go('contact')}>
                   {t('home_find_workers', lang)}
                 </button>
-                <button className="btn btn-secondary" onClick={() => go('services')}>
-                  {t('home_our_services', lang)}
-                </button>
+                <Link to="/apply" className="btn btn-secondary">
+                  {t('nav_apply', lang)}
+                </Link>
               </div>
 
               <div className="hero-left-item">
