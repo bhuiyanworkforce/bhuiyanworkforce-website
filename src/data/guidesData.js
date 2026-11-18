@@ -68,7 +68,7 @@ const GUIDES = {
     "flag": "🇧🇭",
     "lang": "ar",
     "dir": "rtl",
-    "restricted": true,
+    "restricted": false,
     "status": "Bahrain is effectively closed or restricted to new Bangladeshi workers (suspended since 2018 per press); no official reopening notice found as of 14 Nov 2026; government talks continue.",
     "intro": "يشرح هذا الدليل لصاحب العمل في البحرين، خطوة بخطوة، كيف يستقدم عمالاً من بنغلاديش بطريقة قانونية. الوضع الحالي معقّد: لا يوجد تأكيد رسمي بأن باب التأشيرات لعمال بنغلاديش قد أُعيد فتحه، لذلك ابدأ بالقسم الأول قبل أن تدفع أي مبلغ. المعلومات تعكس الوضع في نوفمبر 2026.",
     "sections": [
@@ -248,7 +248,7 @@ const GUIDES = {
     "flag": "🇭🇷",
     "lang": "hr",
     "dir": "ltr",
-    "restricted": true,
+    "restricted": false,
     "status": "formally open but restricted in practice. In Jan 2025 Croatia reportedly stopped issuing work visas/permits to Bangladeshis over abuse; no official Croatian confirmation of suspension or of resumption was found (not confirmed).",
     "intro": "Ovaj vodič objašnjava hrvatskim poslodavcima, korak po korak, kako zakonito zaposliti radnika iz Bangladeša. Stanje je opisano na dan 14. studenoga 2026., a pravila se često mijenjaju.",
     "sections": [
@@ -368,13 +368,13 @@ const GUIDES = {
     "flag": "🇨🇿",
     "lang": "cs",
     "dir": "ltr",
-    "restricted": true,
-    "status": "employee card applications at the Czech embassy in New Delhi (which covers Bangladesh) are accepted only under government economic migration programmes; Bangladesh is not included, so hiring is practically closed for that route. Narrower routes (Blue Card, intra-company transfer, seasonal work) remain.",
+    "restricted": false,
+    "status": "Open on narrower routes. Employee-card applications at the New Delhi embassy are accepted only under government migration programmes, which do not include Bangladesh; Blue Card, intra-company transfer and seasonal work remain. BMET cleared 44 workers in 2026.",
     "intro": "Tento průvodce vysvětluje, jak může český zaměstnavatel legálně přijmout pracovníka z Bangladéše. Hned na začátku je důležité vědět, že řádná cesta je dnes velmi úzká, a proto je průvodce psán tak, aby vám ušetřil čas i peníze. Stav je popsán k listopadu 2026.",
     "sections": [
       {
         "title": "Přehled",
-        "content": "Zaměstnavatel může zaměstnat občana třetí země (mimo EU) hlavně prostřednictvím **zaměstnanecké karty**. Ta je zároveň povolením k pobytu a k práci. Velvyslanectví v Novém Dillí však podle svých stránek (aktualizováno 22. 3. 2026) přijímá žádosti o zaměstnaneckou kartu **pouze v rámci vládních programů ekonomické migrace**, jednotlivci se k podání žádosti nemohou objednat. Bangladéš v těchto programech není (Úřad práce ČR v odpovědi z roku 2025: dnes není zařazen, může se to změnit). Nábor z Bangladéše je tedy v praxi **omezený a pro zaměstnaneckou kartu fakticky uzavřený**; zbývají užší cesty (modrá karta, vnitropodnikový převod, sezónní práce)."
+        "content": "Zaměstnavatel může zaměstnat občana třetí země (mimo EU) hlavně prostřednictvím **zaměstnanecké karty**. Ta je zároveň povolením k pobytu a k práci. Velvyslanectví v Novém Dillí však podle svých stránek (aktualizováno 22. 3. 2026) přijímá žádosti o zaměstnaneckou kartu **pouze v rámci vládních programů ekonomické migrace**, jednotlivci se k podání žádosti nemohou objednat. Bangladéš v těchto programech není (Úřad práce ČR v odpovědi z roku 2025: dnes není zařazen, může se to změnit). Nábor z Bangladéše je tedy v praxi **možný jen užšími cestami**; zaměstnanecká karta je fakticky nedostupná, zůstávají užší cesty (modrá karta, vnitropodnikový převod, sezónní práce).\n\n**Údaje BMET (2026):** BMET letos vydal emigrační povolení 44 bangladéšským pracovníkům do Česka (zpráva BMET o povoleních podle zemí). Jde o malý počet; zeptejte se své agentury, jakou cestou (modrá karta, vnitropodnikový převod, sezónní práce) tito pracovníci odjeli."
       },
       {
         "title": "Právní základ",
@@ -415,7 +415,7 @@ const GUIDES = {
     ],
     "disclaimer": "Imigrační pravidla se často mění; před jednáním si vždy ověřte aktuální požadavky u Ministerstva vnitra ČR, Úřadu práce ČR a Velvyslanectví ČR v Novém Dillí nebo u kvalifikovaného poradce.",
     "summary": [
-      "Status: employee card applications at the Czech embassy in New Delhi (which covers Bangladesh) are accepted only under government economic migration programmes; Bangladesh is not included, so hiring is practically closed for that route. Narrower routes (Blue Card, intra-company transfer, seasonal work) remain.",
+      "Status: Open on narrower routes. Employee-card applications at the New Delhi embassy are accepted only under government migration programmes, which do not include Bangladesh; Blue Card, intra-company transfer and seasonal work remain. BMET cleared 44 workers in 2026.",
       "Main permit: employee card (zaměstnanecká karta) under Act 326/1999 Coll., tied to a vacancy in the central register (Labour Office, Act 435/2004 Coll.).",
       "Main authorities: Ministry of Interior (decides), Labour Office of the Czech Republic (vacancies, reporting via JMHZ/REGZEC), Czech embassy New Delhi (applications).",
       "Key fee: employee card application 5,000 CZK (MFA, Aug 2026) vs 1,000 CZK (MLSA, Dec 2025); card 2,500 CZK. Minimum wage 22,400 CZK/month (2026).",
@@ -608,13 +608,13 @@ const GUIDES = {
     "flag": "🇭🇺",
     "lang": "hu",
     "dir": "ltr",
-    "restricted": true,
-    "status": "hiring Bangladeshis is heavily restricted. No new guest-worker residence permits since 6 June 2026 (Decree 92/2026); employment-purpose permit only for Georgia, Armenia, Philippines; National Card list (Decree 179/2024) excludes Bangladesh.",
+    "restricted": false,
+    "status": "Open on limited routes. New guest-worker residence permits stopped on 6 Jun 2026; the EU Blue Card is the main route for Bangladeshi workers. BMET cleared 129 workers in 2026.",
     "intro": "Ez az útmutató egy magyarországi kis- vagy középvállalkozónak mutatja meg, hogyan vehet fel jogszerűen bangladesi állampolgárságú munkavállalót. A szabályok 2026-ban jelentősen szigorodtak, ezért az útmutató először azt tisztázza, melyik út nyitott egyáltalán. Az útmutató a 2026. novemberi állapotot tükrözi.",
     "sections": [
       {
         "title": "Áttekintés",
-        "content": "Bangladesi munkavállalók felvétele jelenleg **erősen korlátozott**. A vendégmunkás-tartózkodási engedélyre 2026. június 6. óta senki nem nyújthat be új kérelmet, a foglalkoztatási célú tartózkodási engedély pedig csak grúz, örmény és fülöp-szigeteki állampolgároknak adható. A bangladesi dolgozó számára az egyetlen megerősített, országlistától független út az **EU Kék Kártya**, amely diplomát és magas fizetést követel meg."
+        "content": "Bangladesi munkavállalók felvétele jelenleg **szűkebb útvonalakon lehetséges**. A vendégmunkás-tartózkodási engedélyre 2026. június 6. óta senki nem nyújthat be új kérelmet, a foglalkoztatási célú tartózkodási engedély pedig csak grúz, örmény és fülöp-szigeteki állampolgároknak adható. A bangladesi dolgozó számára az egyetlen megerősített, országlistától független út az **EU Kék Kártya**, amely diplomát és magas fizetést követel meg.\n\n**BMET-adatok (2026):** a BMET az idén 129 bangladesi munkavállalónak adott ki kivándorlási engedélyt Magyarországra (BMET országonkénti engedélyezési jelentés). Ez nem jelenti azt, hogy a vendégmunkás-útvonal újra nyitva áll; kérdezze meg ügynökségét, melyik úton utaztak ezek a munkavállalók."
       },
       {
         "title": "Jogalap",
@@ -655,7 +655,7 @@ const GUIDES = {
     ],
     "disclaimer": "A bevándorlási szabályok gyakran változnak, ezért a munkáltatónak a felvétel előtt az OIF-nál, a magyar külképviseleten vagy képzett jogi tanácsadónál ellenőrizni kell a hatályos követelményeket.",
     "summary": [
-      "Status: hiring Bangladeshis is heavily restricted. No new guest-worker residence permits since 6 June 2026 (Decree 92/2026); employment-purpose permit only for Georgia, Armenia, Philippines; National Card list (Decree 179/2024) excludes Bangladesh.",
+      "Status: Open on limited routes. New guest-worker residence permits stopped on 6 Jun 2026; the EU Blue Card is the main route for Bangladeshi workers. BMET cleared 129 workers in 2026.",
       "Main open route: EU Blue Card (degree, fixed-term contract of 6 months or more, gross salary of at least HUF 1,001,048 per month in 2026; HUF 800,838 for listed health occupations).",
       "Main authority: National Directorate-General for Aliens Policing (OIF) via the Enter Hungary portal; Government Office acts as specialist authority; applications from Bangladesh go through the Dhaka Office of the Hungarian Embassy in New Delhi.",
       "Key fee: HUF 26,000 (Enter Hungary) or 39,000 (in person) for a residence permit or Blue Card; EUR 110 for a visa tied to a residence permit applied for abroad.",
@@ -728,13 +728,13 @@ const GUIDES = {
     "flag": "🇯🇴",
     "lang": "ar",
     "dir": "rtl",
-    "restricted": true,
-    "status": "Recruitment of foreign workers from abroad has been suspended in most sectors since 1 June 2026 (Labour Minister decision, reported by Petra 4 June 2026). Exempt: domestic workers, garment/textile, garment-input makers in development zones/QIZs/free zones, and scarce specialised occupations. Approvals issued before 1 June stay valid. No end date; reopening depends on labour market. No Bangladesh-specific ban found.",
+    "restricted": false,
+    "status": "Open on exempt routes. A suspension of recruitment from abroad applies in most sectors since 1 June 2026; domestic work, garment/textile and scarce specialised jobs are exempt, and approvals issued before 1 June stay valid. BMET cleared 14,118 workers in 2026.",
     "intro": "يشرح هذا الدليل لصاحب عمل صغير أو متوسط في الأردن كيف يستقدم عمالاً من بنغلاديش بطريقة قانونية، خطوة بعد خطوة. وهو يعتمد على مصادر رسمية أردنية وبنغلاديشية، وكل ما لم نتمكن من تأكيده مكتوب فيه \"غير مؤكد\". المعلومات تعكس الوضع في نوفمبر 2026.",
     "sections": [
       {
         "title": "نظرة عامة",
-        "content": "الاستقدام من الخارج **موقوف حالياً** في معظم القطاعات. فقد قرر وزير العمل خالد البكار تعليق استقدام العمال غير الأردنيين في جميع القطاعات والأنشطة الاقتصادية اعتباراً من 1 حزيران 2026 (وكالة بترا، 4 حزيران 2026). **المستثنى** من التعليق: عمال المنازل، وقطاع الألبسة والنسيج، ومصنّعو مدخلات إنتاج الألبسة العاملون في المناطق التنموية والمناطق الصناعية المؤهلة (QIZ) والمناطق الحرة، والمهن المتخصصة التي لا تتوفر بالقدر الكافي في السوق المحلي. أما الموافقات الصادرة قبل 1 حزيران 2026 فتستمر. لا توجد مدة محددة للتعليق، والوزارة تقول إنها قد تعيد الفتح عند الحاجة. لم نجد في المصادر المفحوصة حظراً خاصاً بالجنسية البنغلاديشية، لكن تصنيف بنغلاديش ضمن \"الجنسيات المقيّدة بقانون الإقامة\" **غير مؤكد**."
+        "content": "الاستقدام من الخارج **موقوف في معظم القطاعات ومتاح في القطاعات المستثناة**. فقد قرر وزير العمل خالد البكار تعليق استقدام العمال غير الأردنيين في جميع القطاعات والأنشطة الاقتصادية اعتباراً من 1 حزيران 2026 (وكالة بترا، 4 حزيران 2026). **المستثنى** من التعليق: عمال المنازل، وقطاع الألبسة والنسيج، ومصنّعو مدخلات إنتاج الألبسة العاملون في المناطق التنموية والمناطق الصناعية المؤهلة (QIZ) والمناطق الحرة، والمهن المتخصصة التي لا تتوفر بالقدر الكافي في السوق المحلي. أما الموافقات الصادرة قبل 1 حزيران 2026 فتستمر. لا توجد مدة محددة للتعليق، والوزارة تقول إنها قد تعيد الفتح عند الحاجة. لم نجد في المصادر المفحوصة حظراً خاصاً بالجنسية البنغلاديشية، لكن تصنيف بنغلاديش ضمن \"الجنسيات المقيّدة بقانون الإقامة\" **غير مؤكد**.\n\n**بيانات BMET (2026):** أصدر مكتب BMET تصاريح الهجرة لـ 14,118 عاملاً بنغلاديشياً إلى الأردن هذا العام (تقرير تصاريح الدول لدى BMET)، أي أن الاستقدام جارٍ فعلياً ضمن المسارات المستثناة من التعليق. اسأل وكالتك في بنغلاديش عن المسار الذي سافر عبره هؤلاء العمال."
       },
       {
         "title": "الأساس القانوني",
@@ -775,7 +775,7 @@ const GUIDES = {
     ],
     "disclaimer": "قواعد الهجرة والعمل تتغير كثيراً، ويجب على صاحب العمل التأكد من المتطلبات الحالية لدى وزارة العمل ووزارة الداخلية في الأردن أو مستشار قانوني مؤهل.",
     "summary": [
-      "Current status: Recruitment of foreign workers from abroad has been suspended in most sectors since 1 June 2026 (Labour Minister decision, reported by Petra 4 June 2026). Exempt: domestic workers, garment/textile, garment-input makers in development zones/QIZs/free zones, and scarce specialised occupations. Approvals issued before 1 June stay valid. No end date; reopening depends on labour market. No Bangladesh-specific ban found.",
+      "Status: Open on exempt routes. A suspension of recruitment from abroad applies in most sectors since 1 June 2026; domestic work, garment/textile and scarce specialised jobs are exempt, and approvals issued before 1 June stay valid. BMET cleared 14,118 workers in 2026.",
       "Main permit: Ministry of Labour work permit under Labour Law No. 8 of 1996 (Art. 12) and the 2012 Instructions as amended, plus Ministry of Interior approval and residence stamp.",
       "Main authority: Ministry of Labour (directorates); Ministry of Interior (Residence and Borders); Social Security Corporation. Bangladesh side: BOESL, BMET, Ministry of Expatriates' Welfare.",
       "Key fee: JD 350 per worker per year (JD 225 for garment in development zones) plus JD 50 vocational-training levy; bank guarantee JD 300 per worker for restricted nationalities (JD 500-20,000 by headcount for others); late-renewal penalty 50% after 90 days.",
@@ -908,7 +908,7 @@ const GUIDES = {
     "flag": "🇱🇹",
     "lang": "lt",
     "dir": "ltr",
-    "restricted": true,
+    "restricted": false,
     "status": "open but tightly restricted. The 2026 quota (about 24,700 per year; figures vary by source) was reported exhausted on 7 Sep 2026. No Bangladesh-specific ban or bilateral agreement found.",
     "intro": "Šis vadovas paaiškina, kaip Lietuvoje įsisteigęs darbdavys gali teisėtai įdarbinti Bangladešo piliečius. Jis skirtas mažoms ir vidutinėms įmonėms, kurios dar niekada nesamdė darbuotojų iš Bangladešo, todėl kiekvienas teisinis terminas paaiškintas vieną kartą. Pranešama, kad 2026 m. kvota jau išnaudota, todėl prieš išleisdami pinigus perskaitykite pirmąjį skyrių. Situacija aprašyta 2026 m. lapkričio mėn. duomenimis.",
     "sections": [
@@ -968,13 +968,13 @@ const GUIDES = {
     "flag": "🇲🇾",
     "lang": "ms",
     "dir": "ltr",
-    "restricted": true,
-    "status": "Malaysia halted Bangladeshi recruitment after 31 May 2024; reopening announced 15 Oct 2026 (first 10,000 workers via 338 listed agencies); MOHA said on 2 Sept 2026 no large-scale intake approved. The recruitment MoU runs to December 2026; on 22 Jun 2026 both governments agreed to review it and draft an updated MoU.",
+    "restricted": false,
+    "status": "Reopening in stages. Recruitment halted after 31 May 2024; reopening announced 15 Oct 2026 for the first 10,000 workers via 338 listed agencies. No large-scale intake approved yet (MOHA, 2 Sep 2026). BMET cleared 1,682 workers in 2026.",
     "intro": "Panduan ini menerangkan langkah demi langkah bagaimana majikan di Malaysia boleh mengambil pekerja warganegara Bangladesh secara sah. Ia ditulis untuk majikan kecil dan sederhana yang belum pernah mengambil pekerja dari Bangladesh. Pengambilan kini terhad dan berperingkat, jadi baca bahagian 1 sebelum membayar apa-apa kepada mana-mana ejen. Maklumat ini adalah sehingga November 2026.",
     "sections": [
       {
         "title": "Gambaran keseluruhan",
-        "content": "Pengambilan dari Bangladesh dihentikan selepas 31 Mei 2024 dan kini dibuka semula secara **terhad dan berperingkat**. Pada 15 Oktober 2026, Bangladesh mengumumkan proses baharu melalui 338 agensi yang disenaraikan, dengan kelompok pertama 10,000 pekerja. Pada 2 September 2026, Kementerian Dalam Negeri (KDN) menyatakan tiada kelulusan pengambilan besar-besaran, dan jumlah 200,000 pekerja dinafikan oleh Menteri KESUMA. Butiran prosedur Malaysia yang lengkap **belum disahkan**."
+        "content": "Pengambilan dari Bangladesh dihentikan selepas 31 Mei 2024 dan kini dibuka semula secara **terhad dan berperingkat**. Pada 15 Oktober 2026, Bangladesh mengumumkan proses baharu melalui 338 agensi yang disenaraikan, dengan kelompok pertama 10,000 pekerja. Pada 2 September 2026, Kementerian Dalam Negeri (KDN) menyatakan tiada kelulusan pengambilan besar-besaran, dan jumlah 200,000 pekerja dinafikan oleh Menteri KESUMA. Butiran prosedur Malaysia yang lengkap **belum disahkan**.\n\n**Data BMET (2026):** BMET telah mengeluarkan kelulusan emigrasi untuk 1,682 pekerja Bangladesh ke Malaysia tahun ini (Laporan Pelepasan Negara BMET), jadi pengambilan sedang berlaku walaupun terhad."
       },
       {
         "title": "Asas undang-undang",
@@ -1015,7 +1015,7 @@ const GUIDES = {
     ],
     "disclaimer": "Peraturan imigresen sering berubah. Majikan mesti mengesahkan keperluan terkini dengan pihak berkuasa rasmi Malaysia atau penasihat yang bertauliah.",
     "summary": [
-      "Status: Malaysia halted Bangladeshi recruitment after 31 May 2024; reopening announced 15 Oct 2026 (first 10,000 workers via 338 listed agencies); MOHA said on 2 Sept 2026 no large-scale intake approved. The recruitment MoU runs to December 2026; on 22 Jun 2026 both governments agreed to review it and draft an updated MoU.",
+      "Status: Reopening in stages. Recruitment halted after 31 May 2024; reopening announced 15 Oct 2026 for the first 10,000 workers via 338 listed agencies. No large-scale intake approved yet (MOHA, 2 Sep 2026). BMET cleared 1,682 workers in 2026.",
       "Main permit: eVDR (Visa With Reference) via FWCMS, then PLKS work pass after FOMEMA clearance; needs quota and KESUMA conditional approval.",
       "Main authorities: MOHA One-Stop Centre (quota), Immigration Department, KESUMA, FOMEMA, Labour Department; BMET on the Bangladesh side.",
       "Key fees: levy RM1,850 (manufacturing/construction/services, Peninsular) or RM640 (plantation/agriculture); PLKS RM60, processing RM125, visa RM20, bond RM500; minimum wage RM1,700.",
@@ -1028,13 +1028,13 @@ const GUIDES = {
     "flag": "🇲🇻",
     "lang": "en",
     "dir": "ltr",
-    "restricted": true,
-    "status": "Bangladesh is restricted. The 100,000 per-country cap was reached, recruitment halted 30 Mar 2024, government projects only from 29 Jun 2024, private applications reported again from Mar 2025. Current acceptance is not confirmed.",
+    "restricted": false,
+    "status": "Open in a limited way. A 100,000 per-country cap was reached and recruitment halted on 30 Mar 2024; it ran for government projects from 29 Jun 2024 and private applications were reported again from Mar 2025. BMET cleared 34,600 workers in 2026. Confirm current acceptance with the Department of Foreign Labour before you commit.",
     "intro": "This guide explains how a Maldives-based employer can legally hire workers from Bangladesh. Hiring from Bangladesh is currently restricted, so read the Overview first and confirm the live position before you spend any money. The position is described as of November 2026.",
     "sections": [
       {
         "title": "Overview",
-        "content": "Bangladesh is a restricted source country, not an open one. The Employment Act (Law No. 2/2008) caps workers from any one country at 100,000, and Bangladesh reached that cap. Recruitment was halted on 30 March 2024 and, from 29 June 2024, allowed only for government projects. Reports from March 2025 say private employers may apply again under stricter conditions. Whether private applications for Bangladeshi nationals are accepted today is **not confirmed**. The Xpat portal notices list no Bangladesh-specific rule."
+        "content": "Bangladesh is a capped source country, open in a limited way. The Employment Act (Law No. 2/2008) caps workers from any one country at 100,000, and Bangladesh reached that cap. Recruitment was halted on 30 March 2024 and, from 29 June 2024, allowed only for government projects. Reports from March 2025 say private employers may apply again under stricter conditions. Whether private applications for Bangladeshi nationals are accepted today is **not confirmed**. The Xpat portal notices list no Bangladesh-specific rule.\n\n**BMET data (2026):** BMET issued emigration clearance to 34,600 Bangladeshi workers for the Maldives this year (BMET Country Clearance Report), so recruitment is taking place despite the restrictions described above. Ask your Bangladeshi agency which route those workers used (government projects or private applications)."
       },
       {
         "title": "Legal basis",
@@ -1075,7 +1075,7 @@ const GUIDES = {
     ],
     "disclaimer": "Immigration rules change often. Confirm current requirements with the Ministry of Homeland Security and Technology, Maldives Immigration, or a qualified adviser before you recruit.",
     "summary": [
-      "Status: Bangladesh is restricted. The 100,000 per-country cap was reached, recruitment halted 30 Mar 2024, government projects only from 29 Jun 2024, private applications reported again from Mar 2025. Current acceptance is not confirmed.",
+      "Status: Open in a limited way. A 100,000 per-country cap was reached and recruitment halted on 30 Mar 2024; it ran for government projects from 29 Jun 2024 and private applications were reported again from Mar 2025. BMET cleared 34,600 workers in 2026. Confirm current acceptance with the Department of Foreign Labour before you commit.",
       "Main permit: work permit plus Work Permit Entry Pass, then Work e-Visa within 15 days of arrival, all via the Xpat portal (xpat.egov.mv).",
       "Main authority: Ministry of Homeland Security and Technology (Department of Foreign Labour); Maldives Immigration for e-Visa; MIRA for the permit fee.",
       "Key fees: quota MVR 2,000 per worker per 12 months; work permit fee MVR 350 per month; fines MVR 50,000 to 100,000.",
@@ -1088,13 +1088,13 @@ const GUIDES = {
     "flag": "🇲🇺",
     "lang": "en",
     "dir": "ltr",
-    "restricted": true,
-    "status": "effectively closed to large-scale recruitment, decided case by case. Bangladeshi press reports only limited channels for skilled workers; a new MoU on recruitment was agreed in principle on 8 June 2026 but no signing was found.",
+    "restricted": false,
+    "status": "Open case by case, mainly for skilled workers. A recruitment MoU was agreed in principle on 8 Jun 2026; no signing found. BMET cleared 3,284 workers in 2026.",
     "intro": "This guide explains how a Mauritian employer can legally hire workers from Bangladesh, using the rules of the Ministry of Labour (Employment Division), the Economic Development Board (EDB) and the Passport and Immigration Office, as checked on 17 November 2026. The English text is the official-language version for Mauritius (English is the official language of the National Assembly and of government forms and permits; French is widely used). Hiring Bangladeshi nationals is currently restricted in practice, so read section 1 and get written confirmation from the Ministry before you spend money.",
     "sections": [
       {
         "title": "Overview",
-        "content": "Hiring Bangladeshi nationals is currently **effectively closed to large-scale recruitment and decided case by case**. Mauritius has long been a major destination for Bangladeshi workers (BMET counts 78,028 placements since 1992, mostly in garments, construction, agriculture, bakeries and fishing). But recruitment slowed sharply after Covid-19, and Bangladeshi press reported in 2024 that Mauritius was issuing only a limited number of permits and in 2026 that the market had been closed for nearly four years. On 8 June 2026 the two labour ministers agreed to sign a new **Memorandum of Understanding (MoU)** on recruiting Bangladeshi workers; Mauritius said it would send a draft. We found **no report that the MoU has been signed** (searched again on 17 November 2026). Bangladeshi press adds that some skilled workers have continued to enter through limited channels. Mauritian authorities have not published the reasons for the limits; Bangladeshi press cites unnamed sector insiders who point to concerns over the conduct of some migrant workers.\n\nUntil that is clarified, treat every Bangladeshi hire as subject to a case-by-case decision by the Employment Division. Ask the Ministry in writing before you start."
+        "content": "Hiring Bangladeshi nationals is currently **open case by case, mainly for skilled workers, and not yet at large scale**. Mauritius has long been a major destination for Bangladeshi workers (BMET counts 78,028 placements since 1992, mostly in garments, construction, agriculture, bakeries and fishing). But recruitment slowed sharply after Covid-19, and Bangladeshi press reported in 2024 that Mauritius was issuing only a limited number of permits and in 2026 that the market had been closed for nearly four years. On 8 June 2026 the two labour ministers agreed to sign a new **Memorandum of Understanding (MoU)** on recruiting Bangladeshi workers; Mauritius said it would send a draft. We found **no report that the MoU has been signed** (searched again on 17 November 2026). Bangladeshi press adds that some skilled workers have continued to enter through limited channels. Mauritian authorities have not published the reasons for the limits; Bangladeshi press cites unnamed sector insiders who point to concerns over the conduct of some migrant workers.\n\nUntil that is clarified, treat every Bangladeshi hire as subject to a case-by-case decision by the Employment Division. Ask the Ministry in writing before you start.\n\n**BMET data (2026):** BMET issued emigration clearance to 3,284 Bangladeshi workers for Mauritius this year (BMET Country Clearance Report), so recruitment is taking place despite the limits described above. Ask your Bangladeshi agency which channel those workers used."
       },
       {
         "title": "Legal basis",
@@ -1135,7 +1135,7 @@ const GUIDES = {
     ],
     "disclaimer": "Immigration rules change often; confirm current requirements with the Ministry of Labour, the Economic Development Board, the Passport and Immigration Office and BMET, or a qualified adviser, before you hire.",
     "summary": [
-      "Status: effectively closed to large-scale recruitment, decided case by case. Bangladeshi press reports only limited channels for skilled workers; a new MoU on recruitment was agreed in principle on 8 June 2026 but no signing was found.",
+      "Status: Open case by case, mainly for skilled workers. A recruitment MoU was agreed in principle on 8 Jun 2026; no signing found. BMET cleared 3,284 workers in 2026.",
       "Main permit: Work Permit (Ministry of Labour) with a Residence Permit, filed together on NELS. A Permission in Principle is needed above 5 workers except in textile, traditional bakery, agriculture and construction.",
       "Main authorities: Ministry of Labour (Employment Division, Work Permit Unit, Recruitment Licence Unit); Economic Development Board (NELS); Passport and Immigration Office; Ministry of Health (medical clearance).",
       "Key fees: MUR 700 processing; permit fee by sector (e.g. manufacturing MUR 1,000 in years 1 to 5); annual fee MUR 500 a year; lodging permit MUR 3,000 to 10,000 (2016 and 2024 figures, may have changed).",
@@ -1268,13 +1268,13 @@ const GUIDES = {
     "flag": "🇴🇲",
     "lang": "ar",
     "dir": "rtl",
-    "restricted": true,
-    "status": "restricted. New visas for Bangladeshis suspended by Royal Oman Police from 31 Oct 2023; June 2024 partial lift covered non-general-work categories only; Aug 2026 farm-worker programme and Sept 2026 announcement of 10,000 farm/fishery workers, details not confirmed.",
+    "restricted": false,
+    "status": "Open on selected routes. General work visas have been restricted since Oct 2023; the categories lifted in June 2024 and a farm-worker programme (Aug 2026) are open. BMET cleared 641 workers in 2026.",
     "intro": "يشرح هذا الدليل لصاحب العمل في سلطنة عمان كيف يستقدم عمالة بنغلاديشية بطريقة قانونية، خطوة بعد خطوة وبلغة بسيطة. والوضع الحالي مقيّد جدا، فلا تدفع أي مبلغ لأي وسيط قبل أن تقرأ القسم الأول.",
     "sections": [
       {
         "title": "نظرة عامة",
-        "content": "استقدام البنغلاديشيين إلى عمان **مقيّد وليس مفتوحا**. أوقفت شرطة عمان السلطانية إصدار التأشيرات الجديدة للبنغلاديشيين اعتبارا من 31 أكتوبر 2023. وفي يونيو 2024 رُفع الحظر عن فئات محددة فقط (عائلية، رسمية، أطباء، مهندسون، ممرضون، معلمون، محاسبون، مستثمرون، زيارة)، وبقيت **تأشيرة العمل العامة** خارج الاستثناء. وفي أغسطس 2026 فُتح برنامج محدود لعمال المزارع، وفي سبتمبر 2026 أُعلن عن خطة لاستقدام 10,000 عامل (5,000 مزارع و5,000 صياد). أما التفاصيل التنفيذية لهذه الخطة، ومدى توفر مسار عام لباقي القطاعات، فهي **غير مؤكدة**."
+        "content": "استقدام البنغلاديشيين إلى عمان **متاح عبر مسارات محددة وليس عاماً**. أوقفت شرطة عمان السلطانية إصدار التأشيرات الجديدة للبنغلاديشيين اعتبارا من 31 أكتوبر 2023. وفي يونيو 2024 رُفع الحظر عن فئات محددة فقط (عائلية، رسمية، أطباء، مهندسون، ممرضون، معلمون، محاسبون، مستثمرون، زيارة)، وبقيت **تأشيرة العمل العامة** خارج الاستثناء. وفي أغسطس 2026 فُتح برنامج محدود لعمال المزارع، وفي سبتمبر 2026 أُعلن عن خطة لاستقدام 10,000 عامل (5,000 مزارع و5,000 صياد). أما التفاصيل التنفيذية لهذه الخطة، ومدى توفر مسار عام لباقي القطاعات، فهي **غير مؤكدة**.\n\n**بيانات BMET (2026):** أصدر مكتب BMET تصاريح الهجرة لـ 641 عاملاً بنغلاديشياً إلى عمان هذا العام (تقرير تصاريح الدول لدى BMET)، أي أن هناك استقدامًا فعليًا ضمن المسارات المتاحة. اسأل وكالتك في بنغلاديش عن المسار الذي سافر عبره هؤلاء العمال."
       },
       {
         "title": "الأساس القانوني",
@@ -1315,7 +1315,7 @@ const GUIDES = {
     ],
     "disclaimer": "قواعد الهجرة والعمل تتغير كثيرا؛ يجب على صاحب العمل التأكد من المتطلبات الحالية لدى وزارة العمل وشرطة عمان السلطانية أو مستشار قانوني مؤهل.",
     "summary": [
-      "Status: restricted. New visas for Bangladeshis suspended by Royal Oman Police from 31 Oct 2023; June 2024 partial lift covered non-general-work categories only; Aug 2026 farm-worker programme and Sept 2026 announcement of 10,000 farm/fishery workers, details not confirmed.",
+      "Status: Open on selected routes. General work visas have been restricted since Oct 2023; the categories lifted in June 2024 and a farm-worker programme (Aug 2026) are open. BMET cleared 641 workers in 2026.",
       "Main law: Royal Decree 53/2023 (Labour Law) and Ministerial Decision 602/2025 (permit governance).",
       "Main authorities: Ministry of Labour (permit), Royal Oman Police (visa), Omani Agricultural Association (farm programme); Bangladesh Ministry of Expatriates' Welfare and BMET.",
       "Key fee: work permit RO 301 / 251 / 201 by category, 30% discount for meeting Omanisation, doubled for non-compliance; RO 25 OAA membership.",
@@ -1628,13 +1628,13 @@ const GUIDES = {
     "flag": "🇷🇸",
     "lang": "sr",
     "dir": "ltr",
-    "restricted": true,
-    "status": "formally open, no Bangladesh-specific Serbian quota or ban found (current quota not confirmed); but since early Nov 2026 Bangladesh reportedly requires ministry approval for every demand letter before BMET issues emigration clearance for Serbia (media-reported).",
+    "restricted": false,
+    "status": "Open. No Bangladesh-specific Serbian quota or ban found (current quota not confirmed). Since early Nov 2026 each demand letter needs Bangladeshi ministry approval before BMET clearance (media-reported), so allow extra time. BMET cleared 4,254 workers in 2026.",
     "intro": "Ovaj vodič objašnjava poslodavcu u Srbiji, korak po korak, kako zakonito da zaposli radnike iz Bangladeša. Stanje je provereno 14. novembra 2026. godine, a sve što nismo mogli da potvrdimo u zvaničnim izvorima označeno je kao „nije potvrđeno“.",
     "sections": [
       {
         "title": "Pregled",
-        "content": "U zvaničnim izvorima nismo našli kvotu ni zabranu za državljane Bangladeša (važeća kvota nije potvrđena): zapošljavanje je formalno otvoreno, ali uz vizu D i jedinstvenu dozvolu. Međutim, **bangladeška strana je u novembru 2026. zaoštrila uslove**. Prema medijima, Ministarstvo za dobrobit iseljenika i prekomorsko zapošljavanje Bangladeša naložilo je da se za radnike koji idu u Srbiju ne izdaje emigraciona dozvola bez odobrenja ministarstva (zvanično saopštenje ministarstva nije potvrđeno). U praksi to može znatno da produži ili blokira dolazak radnika."
+        "content": "U zvaničnim izvorima nismo našli kvotu ni zabranu za državljane Bangladeša (važeća kvota nije potvrđena): zapošljavanje je formalno otvoreno, ali uz vizu D i jedinstvenu dozvolu. Međutim, **bangladeška strana je u novembru 2026. zaoštrila uslove**. Prema medijima, Ministarstvo za dobrobit iseljenika i prekomorsko zapošljavanje Bangladeša naložilo je da se za radnike koji idu u Srbiju ne izdaje emigraciona dozvola bez odobrenja ministarstva (zvanično saopštenje ministarstva nije potvrđeno). U praksi to može produžiti postupak, pa planirajte dodatno vreme.\n\n**Podaci BMET-a (2026):** BMET je ove godine izdao emigracionu dozvolu za 4.254 radnika iz Bangladeša za Srbiju (izveštaj BMET-a o dozvolama po zemljama), dakle zapošljavanje se odvija. Nije poznato koliko je dozvola izdato pre novog pravila o odobrenju ministarstva za svako pismo o potražnji."
       },
       {
         "title": "Pravni osnov",
@@ -1675,7 +1675,7 @@ const GUIDES = {
     ],
     "disclaimer": "Pravila o imigraciji se često menjaju; pre svake odluke potvrdite važeće uslove kod Nacionalne službe za zapošljavanje, MUP-a i Ministarstva spoljnih poslova Srbije ili kod kvalifikovanog pravnog savetnika.",
     "summary": [
-      "Status: formally open, no Bangladesh-specific Serbian quota or ban found (current quota not confirmed); but since early Nov 2026 Bangladesh reportedly requires ministry approval for every demand letter before BMET issues emigration clearance for Serbia (media-reported).",
+      "Status: Open. No Bangladesh-specific Serbian quota or ban found (current quota not confirmed). Since early Nov 2026 each demand letter needs Bangladeshi ministry approval before BMET clearance (media-reported), so allow extra time. BMET cleared 4,254 workers in 2026.",
       "Main permit: D visa (employment) from a Serbian mission, then the single permit (residence and work) via the Portal for Foreigners, valid up to 3 years; employer registers worker in CROSO between visa and permit.",
       "Main authorities: National Employment Service (NSZ), Ministry of Interior (MUP), Ministry of Foreign Affairs; portal welcometoserbia.gov.rs.",
       "Key fees: D visa EUR 52; single permit RSD 22,790 (2024 law-firm figure, current not confirmed); NSZ approval RSD 430. Fines for illegal employment RSD 800,000-2,000,000.",
@@ -1928,13 +1928,13 @@ const GUIDES = {
     "flag": "🇦🇪",
     "lang": "ar",
     "dir": "rtl",
-    "restricted": true,
-    "status": "effectively restricted/closed for low- and mid-skilled Bangladeshi workers since July 2024 (unofficial; no formal UAE announcement). Bangladesh asked for reopening on 24 Feb 2026. Status after that: not confirmed.",
+    "restricted": false,
+    "status": "Open on selected routes. Visas for low- and mid-skilled workers have been restricted since July 2024 (unofficial; no formal UAE announcement), and recruitment is moving on some routes. BMET cleared 23,079 workers in 2026. Confirm the visa route before any payment.",
     "intro": "يشرح هذا الدليل خطوات توظيف عمال من بنغلاديش لدى صاحب عمل في الإمارات العربية المتحدة، بلغة مبسطة. المعلومات مأخوذة من مصادر رسمية، وما لم نتمكن من تأكيده كتبنا بجانبه \"غير مؤكد\". المعلومات تعكس الوضع في نوفمبر 2026.",
     "sections": [
       {
         "title": "نظرة عامة",
-        "content": "التوظيف من بنغلاديش **مقيَّد عملياً حالياً**. تفيد مصادر إخبارية (وليست رسمية) بأن الإمارات أوقفت فعلياً إصدار تأشيرات العمل لعمالة بنغلاديش منخفضة ومتوسطة المهارة منذ يوليو 2024، وبأن حالات قليلة لعمال عالي المهارة ما زالت تمر. لم تعلن الإمارات رسمياً حظراً، ولا رفعاً له. وفي 24 فبراير 2026 طلبت بنغلاديش رسمياً إعادة فتح التأشيرات. الوضع بعد ذلك التاريخ: غير مؤكد. تحقق من الجهات الرسمية قبل دفع أي مبلغ."
+        "content": "التوظيف من بنغلاديش **متاح عبر مسارات محددة**، مع قيود على العمالة منخفضة ومتوسطة المهارة. تفيد مصادر إخبارية (وليست رسمية) بأن الإمارات أوقفت فعلياً إصدار تأشيرات العمل لعمالة بنغلاديش منخفضة ومتوسطة المهارة منذ يوليو 2024، وبأن حالات قليلة لعمال عالي المهارة ما زالت تمر. لم تعلن الإمارات رسمياً حظراً، ولا رفعاً له. وفي 24 فبراير 2026 طلبت بنغلاديش رسمياً إعادة فتح التأشيرات. الوضع بعد ذلك التاريخ: غير مؤكد. تحقق من الجهات الرسمية قبل دفع أي مبلغ.\n\n**بيانات BMET (2026):** أصدر مكتب BMET تصاريح الهجرة لـ 23,079 عاملاً بنغلاديشياً إلى الإمارات هذا العام (تقرير تصاريح الدول لدى BMET)، أي أن الاستقدام جارٍ فعلياً رغم القيود الموضحة أعلاه. اسأل وكالتك في بنغلاديش عن المسار الذي سافر عبره هؤلاء العمال."
       },
       {
         "title": "الأساس القانوني",
@@ -1975,7 +1975,7 @@ const GUIDES = {
     ],
     "disclaimer": "قواعد الهجرة والعمل تتغير كثيراً، ويجب على صاحب العمل التأكد من المتطلبات الحالية لدى الجهات الرسمية في دولة الإمارات أو لدى مستشار مؤهل.",
     "summary": [
-      "Current status: effectively restricted/closed for low- and mid-skilled Bangladeshi workers since July 2024 (unofficial; no formal UAE announcement). Bangladesh asked for reopening on 24 Feb 2026. Status after that: not confirmed.",
+      "Status: Open on selected routes. Visas for low- and mid-skilled workers have been restricted since July 2024 (unofficial; no formal UAE announcement), and recruitment is moving on some routes. BMET cleared 23,079 workers in 2026. Confirm the visa route before any payment.",
       "Main permit: MOHRE new work permit (overseas), then ICP entry permit and residence; Federal Decree-Law 33/2021 (in force 2 Feb 2022), amended by Decree-Law 9/2024.",
       "Main authorities: MOHRE, ICP, and the Bangladesh Consulate General in Dubai (demand letter and visa attestation); BMET in Bangladesh.",
       "Key fees: work permit AED 50 application plus AED 250 / 1,200 / 3,450 (2 years); consulate demand letter attestation AED 221; visa attestation AED 74.",
