@@ -52,8 +52,9 @@ export default function Header() {
 
             <div className="header-actions" style={{ alignItems: 'center', gap: 10 }}>
               <LanguageSwitcher />
+              <Link to="/apply" className="btn btn-secondary header-apply">{t('nav_apply', lang)}</Link>
               <button className="btn btn-primary" onClick={() => scrollTo('contact')}>
-                {t('nav_get_started', lang)}
+                {t('sv.request', lang)}
               </button>
             </div>
 
@@ -85,7 +86,7 @@ export default function Header() {
         <Link to="/faq">{t('nav_faq', lang)}</Link>
         <Link to="/blog">{t('nav_blog', lang)}</Link>
         <button className="btn btn-primary" onClick={() => scrollTo('contact')} style={{ fontSize: '1rem', padding: '16px 40px' }}>
-          {t('nav_get_started', lang)}
+          {t('sv.request', lang)}
         </button>
       </nav>
     </>
