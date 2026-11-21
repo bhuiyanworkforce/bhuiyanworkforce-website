@@ -11,15 +11,15 @@ const en = {
     story: [
       'Bhuiyan Workforce Ltd. was founded with a straightforward mission: to create transparent, ethical pathways for skilled Bangladeshi workers to access legitimate international employment — while giving overseas employers a reliable, fully compliant recruitment partner.',
       "Bangladesh has one of the world's most capable overseas workforces, with millions of citizens working abroad in construction, manufacturing, logistics, and hospitality. Too often, those workers have been exploited by unregulated brokers. We exist to be different.",
-      'Bhuiyan Workforce Ltd. is building verified deployment corridors across 25+ countries in the Middle East, Europe, Asia, and Africa — with every placement designed to be BMET-registered and fully documented.',
+      'Bhuiyan Workforce Ltd. is building verified deployment corridors across 25+ countries in the Middle East, Europe, Asia, and Africa — with every placement registered with BMET and fully documented.',
     ],
     values: [
-      { icon: '⚖️', title: 'Transparent Recruitment', body: 'Workers receive verified, honest job offers in their own language — with clear terms, full documentation, and no hidden fees — before they commit to anything.' },
-      { icon: '🏛️', title: 'Regulatory Compliance', body: 'Every placement is registered with BMET. Every worker has passed a GAMCA medical. We maintain complete documentation for every deployment.' },
+      { icon: '⚖️', title: 'Transparency for Workers', body: 'Workers receive verified, honest job offers in their own language — with clear terms, full documentation, and no hidden fees — before they commit to anything.' },
+      { icon: '🏛️', title: 'Regulatory Compliance', body: 'Every placement is registered with BMET. Every worker bound for the GCC passes a GAMCA medical. We maintain complete documentation for every deployment.' },
       { icon: '🔍', title: 'Skills Verification', body: 'Practical trade tests and independent reference checks ensure you receive workers with the skills they claim.' },
       { icon: '🤝', title: 'Long-Term Relationships', body: 'We measure success not by transaction volume but by how many employers return for their next requirement.' },
       { icon: '🌍', title: 'Destination Knowledge', body: 'Understanding local labour law, visa categories, and cultural context at each destination reduces friction and delays.' },
-      { icon: '📣', title: 'Transparency', body: 'Employers receive clear timelines, honest candidate availability assessments, and a fully itemised cost breakdown before committing to anything.' },
+      { icon: '📣', title: 'Transparency for Employers', body: 'Employers receive clear timelines, honest candidate availability assessments, and a fully itemised cost breakdown before committing to anything.' },
     ],
     teamIntro: 'Our team combines recruitment expertise, immigration knowledge, and deep sector understanding across all 25 service categories.',
     team: [
@@ -56,9 +56,9 @@ const en = {
         items: [
           { q: 'How quickly can you supply workers?', a: 'For most trade categories, we can present a verified shortlist within 7 working days of receiving your complete job requirements (trade, number of workers, destination, salary and conditions). If details are missing, the count starts once we have them. After employer selection, the full documentation and visa process typically takes 4–8 weeks depending on the destination country. For countries with streamlined visa procedures (e.g. Malaysia, UAE), timelines are often faster.' },
           { q: 'What is your minimum order size?', a: "We handle both small deployments (5–10 workers) and large-scale mobilisations (200+ workers). There is no minimum order. For very small requirements, we may group deployments with other employers going to the same destination to manage travel and processing costs. This does not change your contract or your workers' terms, and we will tell you before we do it." },
-          { q: 'Do you handle all the documentation?', a: 'Yes. We manage BMET registration, Bureau of Manpower clearance, GAMCA medical examinations for Gulf destinations, police clearance certificates, passport validity checks, and the visa application process. You provide a valid demand letter and employment contract; we handle the rest.' },
+          { q: 'Do you handle all the documentation?', a: 'Yes. We manage BMET registration and emigration clearance (Smart Card), GAMCA medical examinations for Gulf destinations, police clearance certificates, passport validity checks, and the visa application process. You provide a valid demand letter and employment contract; we handle the rest.' },
           { q: 'What if a worker underperforms or leaves early?', a: 'We offer a replacement guarantee for workers who leave within the first 90 days for reasons attributable to misrepresentation on their CV or skills test. We will work with you to replace the worker as quickly as possible at no additional placement fee.' },
-          { q: 'What countries do you serve?', a: 'We currently deploy to 25+ countries: Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain, Jordan, Malaysia, Singapore, Maldives, Serbia, Portugal, Greece, Romania, Poland, Hungary, Croatia, Czech Republic, Lithuania, Latvia, Estonia, Bulgaria, Cyprus, Slovakia, Bosnia and Herzegovina, Armenia, Montenegro, Georgia, Slovenia, North Macedonia, and Italy. If your destination is not on this list, please contact us — we may still be able to help.' },
+          { q: 'What countries do you serve?', a: 'We currently deploy to 25+ countries: Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain, Jordan, Malaysia, Singapore, Maldives, Serbia, Portugal, Greece, Romania, Poland, Hungary, Croatia, Czech Republic, Lithuania, Latvia, Estonia, Bulgaria, Cyprus, Slovakia, Bosnia and Herzegovina, Armenia, Montenegro, Georgia, Slovenia, North Macedonia, Italy, Seychelles, and Mauritius. If your destination is not on this list, please contact us — we may still be able to help.' },
           { q: 'What are your fees?', a: 'Our fees vary based on worker category, numbers, and destination country. We provide a fully itemised cost breakdown before you commit to anything. We operate on a success-fee model — you pay only after workers are confirmed for deployment.' },
         ],
       },
@@ -74,7 +74,7 @@ const en = {
       {
         category: 'Compliance & Credentials',
         items: [
-          { q: 'What is GAMCA and why is it required?', a: "GAMCA (Gulf Approved Medical Centre Association) medical testing is a mandatory health clearance required by all GCC countries before a worker's visa can be processed. It screens for communicable diseases and general fitness for work. We coordinate GAMCA appointments for all workers going to Gulf destinations." },
+          { q: 'What is GAMCA and why is it required?', a: "GAMCA (GCC Approved Medical Centers Association) medical testing is a mandatory health clearance required by all GCC countries before a worker's visa can be processed. It screens for communicable diseases and general fitness for work. We coordinate GAMCA appointments for all workers going to Gulf destinations." },
         ],
       },
     ],
