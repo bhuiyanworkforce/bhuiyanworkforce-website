@@ -15,7 +15,7 @@ export default {
       "Produzione manifatturiera",
       "Supporto sanitario"
     ],
-    "visaType": "Visto di lavoro (Iqama)",
+    "visaType": "Visto di lavoro (Iqama rilasciata dopo l’arrivo)",
     "visaFee": "SAR 500–800 (circa USD 135–215) — a carico del datore di lavoro",
     "processingTime": "4–8 settimane",
     "process": [
