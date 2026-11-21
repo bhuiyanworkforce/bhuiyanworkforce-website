@@ -1,77 +1,169 @@
-// Conteúdo português das páginas About e FAQ.
-
+// Romanian About and FAQ content.
 export default {
-  about: {
-    imgAlt: 'Ilustração das rotas de envio do Bangladeche para países parceiros',
-    story: [
-      'A Bhuiyan Workforce Ltd. foi fundada com uma missão clara: criar vias transparentes e éticas para que trabalhadores qualificados do Bangladeche acedam a oportunidades legítimas de emprego internacional, proporcionando simultaneamente aos empregadores no estrangeiro um parceiro de recrutamento fiável e plenamente conforme.',
-      'O Bangladeche dispõe de uma das mais competentes forças de trabalho no estrangeiro do mundo, com milhões de cidadãos a trabalhar fora do país nos setores da construção, indústria transformadora, logística e hotelaria. Demasiadas vezes, estes trabalhadores foram explorados por intermediários não regulamentados. Existimos para fazer diferente.',
-      'A Bhuiyan Workforce Ltd. está a criar rotas de envio verificadas para mais de 25 países do Médio Oriente, Europa, Ásia e África, com cada processo de recrutamento concebido para ser registado junto da BMET e integralmente documentado.',
+  "about": {
+    "imgAlt": "Ilustrație a coridoarelor de desfășurare din Bangladesh către țările partenere",
+    "story": [
+      "Bhuiyan Workforce Ltd. a fost înființată cu o misiune simplă: să creeze căi transparente și etice pentru ca lucrătorii calificați din Bangladesh să aibă acces la locuri de muncă internaționale legitime - oferind în același timp angajatorilor de peste mări un partener de recrutare de încredere și pe deplin conform.",
+      "Bangladesh are una dintre cele mai capabile forțe de muncă de peste mări din lume, cu milioane de cetățeni care lucrează în străinătate în construcții, producție, logistică și ospitalitate. Prea des, acei lucrători au fost exploatați de brokerii nereglementați. Existam pentru a fi diferiti.",
+      "Bhuiyan Workforce Ltd. construiește coridoare de implementare verificate în peste 25 de țări din Orientul Mijlociu, Europa, Asia și Africa, fiecare plasare fiind înregistrată la BMET și documentată complet."
     ],
-    values: [
-      { icon: '⚖️', title: 'Recrutamento transparente', body: 'Os trabalhadores recebem ofertas de emprego verificadas e honestas na sua própria língua, com condições claras, documentação completa e sem custos ocultos, antes de assumirem qualquer compromisso.' },
-      { icon: '🏛️', title: 'Conformidade regulamentar', body: 'Cada processo de recrutamento é registado junto da BMET. Cada trabalhador foi aprovado num exame médico GAMCA. Mantemos documentação completa de cada envio de trabalhadores.' },
-      { icon: '🔍', title: 'Verificação de competências', body: 'A prova prática da profissão e a verificação independente de referências asseguram que recebe trabalhadores com as competências que afirmam possuir.' },
-      { icon: '🤝', title: 'Relações duradouras', body: 'Avaliamos o sucesso não pelo volume de transações, mas pelo número de empregadores que regressam quando têm uma nova necessidade.' },
-      { icon: '🌍', title: 'Conhecimento dos destinos', body: 'Conhecer a legislação laboral local, as categorias de visto e o contexto cultural de cada destino reduz os entraves e os atrasos.' },
-      { icon: '📣', title: 'Transparência', body: 'Os empregadores recebem prazos claros, avaliações honestas da disponibilidade de candidatos e uma discriminação completa dos custos antes de assumirem qualquer compromisso.' },
+    "values": [
+      {
+        "icon": "⚖️",
+        "title": "Transparență pentru lucrători",
+        "body": "Lucrătorii primesc oferte de locuri de muncă verificate și oneste în propria lor limbă - cu termeni clari, documentație completă și fără taxe ascunse - înainte de a se angaja la ceva."
+      },
+      {
+        "icon": "🏛️",
+        "title": "Conformitatea cu reglementările",
+        "body": "Fiecare plasament este înregistrat la BMET. Fiecare muncitor care pleacă în țările GCC trece un control medical GAMCA. Menținem documentația completă pentru fiecare implementare."
+      },
+      {
+        "icon": "🔍",
+        "title": "Verificarea aptitudinilor",
+        "body": "Testele practice și verificările independente ale referințelor vă asigură că primiți lucrători cu abilitățile pe care le revendică."
+      },
+      {
+        "icon": "🤝",
+        "title": "Relații pe termen lung",
+        "body": "Măsurăm succesul nu după volumul tranzacțiilor, ci după câți angajatori revin pentru următoarea lor cerință."
+      },
+      {
+        "icon": "🌍",
+        "title": "Cunoașterea Destinației",
+        "body": "Înțelegerea legislației locale a muncii, a categoriilor de vize și a contextului cultural la fiecare destinație reduce fricțiunile și întârzierile."
+      },
+      {
+        "icon": "📣",
+        "title": "Transparență pentru angajatori",
+        "body": "Angajatorii primesc termene clare, evaluări oneste privind disponibilitatea candidaților și o defalcare completă a costurilor înainte de a se angaja la orice."
+      }
     ],
-    teamIntro: 'A nossa equipa reúne experiência em recrutamento, conhecimento de imigração e um profundo conhecimento dos setores nas 25 categorias de serviço.',
-    team: [
-      { photo: '/team-rezaul.webp', name: 'MD Rezaul Kabir Bhuiyan', role: 'Fundador e diretor executivo', body: 'Licenciado em Ciências Informáticas pela Jiangnan University (China), com experiência em desenvolvimento de negócios internacionais e tecnologia. Lidera todas as parcerias estratégicas e o desenvolvimento de negócios nos mercados do Golfo, da Europa e da Ásia.' },
-      { photo: '/team-asraful.webp', name: 'Asraful Kabir Bhuiyan', role: 'Diretor de desenvolvimento de negócios', body: 'Impulsiona as relações com os empregadores e a expansão para novos mercados no Golfo, na Europa e na Ásia.' },
-      { photo: '/team-kishor.webp', name: 'Kishor Kumar', role: 'Diretor de conformidade e documentação', body: 'Assegura que cada envio de trabalhadores cumpre os requisitos da BMET, da GAMCA e os requisitos legais do país de destino. Especialista em documentação de emprego no estrangeiro.' },
-      { photo: null, initials: 'AB', name: 'Akhi Begum', role: 'Diretora de operações', body: 'Supervisiona as operações quotidianas de recrutamento e o tratamento das candidaturas, assegurando que cada envio de trabalhadores cumpre as normas de conformidade.' },
+    "teamIntro": "Echipa noastră combină expertiza în recrutare, cunoștințele în materie de imigrare și înțelegerea profundă a sectorului în toate cele 25 de categorii de servicii.",
+    "team": [
+      {
+        "photo": "/team-rezaul.webp",
+        "name": "MD Rezaul Kabir Bhuiyan",
+        "role": "Fondator și CEO",
+        "body": "Absolvent în informatică (Universitatea Jiangnan, China) cu experiență în dezvoltarea afacerilor internaționale și tehnologie. Conduce toate parteneriatele strategice și dezvoltarea afacerilor pe piețele din Golf, europene și asiatice."
+      },
+      {
+        "photo": "/team-asraful.webp",
+        "name": "Asraful Kabir Bhuiyan",
+        "role": "Manager Dezvoltare Afaceri",
+        "body": "Stimulează relațiile cu angajatorii și extinderea noii piețe pe piețele din Golf, europene și asiatice."
+      },
+      {
+        "photo": "/team-kishor.webp",
+        "name": "Kishor Kumar",
+        "role": "Manager conformitate și documentație",
+        "body": "Se asigură că fiecare implementare îndeplinește cerințele legale BMET, GAMCA și țara de destinație. Expert în documentație de angajare în străinătate."
+      },
+      {
+        "photo": null,
+        "initials": "AB",
+        "name": "Akhi Begum",
+        "role": "Șeful operațiunilor",
+        "body": "Supraveghează operațiunile de recrutare de zi cu zi, procesarea candidaților și se asigură că fiecare implementare respectă standardele de conformitate."
+      }
     ],
-    partnersTag: 'Parceiros regionais',
-    partnersTitle: 'A nossa rede de parceiros regionais',
-    partnersSub: 'A Bhuiyan Workforce Ltd. trabalha com uma rede de parceiros de recrutamento licenciados no Golfo e na Europa. Os nossos parceiros dispõem de licenças governamentais válidas nos respetivos países e mantêm relações verificadas com empregadores de vários setores.',
-    partners: [
-      { flag: '🇵🇱', region: 'Parceiro licenciado na UE', country: 'Polónia', body: 'Entidade de recrutamento registada junto das autoridades. Autorizada a recrutar trabalhadores na Polónia e, de forma mais ampla, na União Europeia.' },
-      { flag: '🇦🇪', region: 'Parceiro licenciado no Golfo', country: 'UAE', body: 'Entidade de recrutamento licenciada, sediada no Dubai, com redes ativas de empregadores nos países do Golfo (GCC).' },
-      { flag: '🇷🇴', region: 'Parceiro licenciado na UE', country: 'Roménia', body: 'Entidade de recrutamento autorizada, com relações verificadas com empregadores na Roménia e na Europa de Leste em geral.' },
+    "partnersTag": "Parteneri regionali",
+    "partnersTitle": "Rețeaua noastră regională de parteneri",
+    "partnersSub": "Bhuiyan Workforce Ltd. lucrează cu o rețea de agenții de recrutare și angajare licențiate din Golf și din Europa. Partenerii noștri dețin licențe valide emise de guvern în țările lor respective și operează relații de angajatori verificate în mai multe industrii.",
+    "partners": [
+      {
+        "flag": "🇵🇱",
+        "region": "Partener cu licență UE",
+        "country": "Polonia",
+        "body": "partener regional pentru recrutare inregistrata de guvern. Autorizat să plaseze lucrători în Polonia și în întreaga Uniune Europeană."
+      },
+      {
+        "flag": "🇦🇪",
+        "region": "Partener licențiat Gulf",
+        "country": "Emiratele Arabe Unite",
+        "body": "Agenție de recrutare autorizată care operează din Dubai cu rețele active de angajatori în regiunea GCC."
+      },
+      {
+        "flag": "🇷🇴",
+        "region": "Partener cu licență UE",
+        "country": "România",
+        "body": "partener regional pentru recrutare autorizata cu relatii de angajator verificate in Romania si in Europa de Est."
+      }
     ],
-    ctaTitle: 'Trabalhe connosco',
-    ctaDesc: 'Teremos todo o gosto em conversar sobre as suas necessidades de mão de obra, sem qualquer compromisso.',
-    ctaBtn: 'Contacte-nos →',
+    "ctaTitle": "Lucrați cu noi",
+    "ctaDesc": "Suntem întotdeauna bucuroși să discutăm despre cerințele dvs. de forță de muncă - fără obligații.",
+    "ctaBtn": "Luați legătura →"
   },
-  faq: {
-    ui: {
-      searchPlaceholder: 'Pesquisar perguntas… por exemplo, visto da Arábia Saudita, custos, documentos',
-      noResultsBefore: 'Não foram encontrados resultados para "',
-      noResultsAfter: '" — experimente outras palavras-chave.',
-      stillTitle: 'Ainda tem dúvidas?',
-      stillDesc: 'Empregadores: contacte-nos por correio eletrónico ou WhatsApp. Trabalhadores: utilize os contactos específicos abaixo.',
-      forEmployers: 'Para empregadores',
-      forWorkers: 'Para trabalhadores',
+  "faq": {
+    "ui": {
+      "searchPlaceholder": "Întrebări de căutare... de ex. Viză saudită, taxe, documente",
+      "noResultsBefore": "Nu s-au găsit rezultate pentru \"",
+      "noResultsAfter": "\" — încercați diferite cuvinte cheie.",
+      "stillTitle": "Mai aveți întrebări?",
+      "stillDesc": "Angajatorii: contactați-ne prin e-mail sau WhatsApp. Lucrători: utilizați contactele dedicate de mai jos.",
+      "forEmployers": "Pentru Angajatori",
+      "forWorkers": "Pentru Muncitori"
     },
-    categories: [
+    "categories": [
       {
-        category: 'Para empregadores',
-        items: [
-          { q: 'Com que rapidez conseguem enviar trabalhadores?', a: 'Na maioria das categorias profissionais, podemos apresentar uma pré-seleção de candidatos verificados no prazo de 7 dias úteis. Após a seleção pelo empregador, o processo completo de documentação e visto demora, normalmente, entre 4 e 8 semanas, consoante o país de destino. Nos países com procedimentos de visto simplificados (por exemplo, Malásia e UAE), os prazos são frequentemente mais curtos. Os 7 dias úteis contam a partir do dia em que recebermos os requisitos completos da vaga (ofício, número de trabalhadores, destino, salário e condições). Se faltarem dados, a contagem começa quando os recebermos.' },
-          { q: 'Qual é a dimensão mínima de um pedido?', a: 'Tratamos tanto de pequenos envios (5–10 trabalhadores) como de mobilizações em grande escala (mais de 200 trabalhadores). Não há pedido mínimo. Para necessidades muito pequenas, podemos agrupar os envios com outros empregadores para o mesmo destino, para gerir os custos de viagem e de processamento. Isto não altera o seu contrato nem as condições dos trabalhadores, e informaremos antes de o fazer.' },
-          { q: 'Tratam de toda a documentação?', a: 'Sim. Tratamos do registo na BMET, da autorização do Bureau of Manpower, dos exames médicos GAMCA para destinos do Golfo, dos certificados de registo criminal, da verificação da validade dos passaportes e do processo de pedido de visto. O empregador fornece uma carta de pedido de mão de obra válida e o contrato de trabalho; tratamos do restante.' },
-          { q: 'E se um trabalhador tiver um desempenho insuficiente ou sair antes do tempo?', a: 'Oferecemos uma garantia de substituição para trabalhadores que saiam durante os primeiros 90 dias por motivos relacionados com informações falsas no currículo ou na prova prática da profissão. Trabalharemos consigo para substituir o trabalhador o mais rapidamente possível, sem qualquer comissão de êxito adicional.' },
-          { q: 'Que países abrangem?', a: 'Atualmente enviamos trabalhadores para mais de 25 países: Arábia Saudita, UAE, Qatar, Kuwait, Omã, Barém, Jordânia, Malásia, Singapura, Maldivas, Sérvia, Portugal, Grécia, Roménia, Polónia, Hungria, Croácia, República Checa, Lituânia, Letónia, Estónia, Bulgária, Chipre, Eslováquia, Bósnia e Herzegovina, Arménia, Montenegro, Geórgia, Eslovénia, Macedónia do Norte e Itália. Se o seu destino não constar desta lista, contacte-nos — poderemos ainda assim ajudar.' },
-          { q: 'Quais são os vossos custos?', a: 'Os nossos custos variam consoante a categoria e o número de trabalhadores e o país de destino. Apresentamos uma discriminação completa dos custos antes de assumir qualquer compromisso. Trabalhamos com um modelo de comissão de êxito — só paga depois de os trabalhadores confirmarem o envio.' },
-        ],
+        "category": "Pentru Angajatori",
+        "items": [
+          {
+            "q": "Cât de repede puteți furniza muncitori?",
+            "a": "Pentru majoritatea categoriilor comerciale, putem prezenta o listă scurtă verificată în termen de 7 zile lucrătoare. După selectarea angajatorului, procesul complet de documentare și viză durează de obicei 4-8 săptămâni, în funcție de țara de destinație. Pentru țările cu proceduri de viză simplificate (de exemplu, Malaezia, Emiratele Arabe Unite), termenele sunt adesea mai rapide. Cele 7 zile lucrătoare se numără din ziua în care primim cerințele complete ale postului (meserie, numărul de lucrători, destinație, salariu și condiții). Dacă lipsesc date, numărătoarea începe odată ce le primim."
+          },
+          {
+            "q": "Care este dimensiunea minimă a comenzii tale?",
+            "a": "Ne ocupăm atât de mici grupuri (5-10 lucrători), cât și de mobilizări la scară largă (peste 200 de lucrători). Nu există o comandă minimă. Pentru cerințe foarte mici, putem grupa trimiterea cu alți angajatori către aceeași destinație, pentru a gestiona costurile de călătorie și de procesare. Acest lucru nu modifică contractul dvs. sau condițiile lucrătorilor, și vă vom anunța înainte să o facem."
+          },
+          {
+            "q": "Te ocupi de toată documentația?",
+            "a": "Da. Gestionăm înregistrarea BMET, autorizarea de emigrare (Smart Card), examinările medicale GAMCA pentru destinațiile din Golf, certificatele de autorizare a poliției, verificările valabilității pașapoartelor și procesul de solicitare a vizei. Furnizați o scrisoare de cerere valabilă și un contract de muncă; de restul ne ocupam noi."
+          },
+          {
+            "q": "Ce se întâmplă dacă un lucrător are performanțe slabe sau pleacă devreme?",
+            "a": "Oferim o garanție de înlocuire pentru lucrătorii care pleacă în primele 90 de zile din motive imputabile unei denaturări în CV-ul sau testul de aptitudini. Vom lucra cu dumneavoastră pentru a înlocui lucrătorul cât mai repede posibil, fără taxă suplimentară de plasare."
+          },
+          {
+            "q": "Ce țări deserviți?",
+            "a": "În prezent, implementăm în peste 25 de țări: Arabia Saudită, Emiratele Arabe Unite, Qatar, Kuweit, Oman, Bahrain, Iordania, Malaezia, Singapore, Maldive, Serbia, Portugalia, Grecia, România, Polonia, Ungaria, Croația, Republica Cehă, Lituania, Letonia, Estonia, Bulgaria, Cipru, Slovacia, Bosnia și Herțegovina, Armenia, Muntenegru, Georgia, Slovenia, Macedonia de Nord, Italia, Seychelles și Mauritius. Dacă destinația dvs. nu se află pe această listă, vă rugăm să ne contactați - este posibil să vă putem ajuta în continuare."
+          },
+          {
+            "q": "Care sunt taxele tale?",
+            "a": "Taxele noastre variază în funcție de categoria lucrătorilor, numere și țara de destinație. Vă oferim o defalcare completă a costurilor înainte de a vă angaja la ceva. Funcționăm pe un model de taxă de succes - plătiți numai după ce angajații sunt confirmați pentru implementare."
+          }
+        ]
       },
       {
-        category: 'Para trabalhadores',
-        items: [
-          { q: 'Os trabalhadores pagam uma comissão de recrutamento?', a: 'Os custos variam consoante o pacote de serviços e o país de destino. Contacte-nos diretamente para conversarmos sobre a sua situação e lhe apresentarmos uma discriminação clara dos custos aplicáveis.' },
-          { q: 'Como posso manifestar o meu interesse enquanto trabalhador?', a: `Contacte-nos por WhatsApp (+880 1978 356710) ou por correio eletrónico (careers@bhuiyanworkforce.com), indicando a sua profissão, os anos de experiência e uma cópia de quaisquer certificados profissionais relevantes. Adicioná-lo-emos à nossa base de dados de candidatos e entraremos em contacto quando surgir uma oportunidade adequada.` },
-          { q: 'De que documentos vou precisar?', a: 'Passaporte válido do Bangladeche (com pelo menos 12 meses de validade restante), cartão de identificação nacional, certificados profissionais (se aplicável), cartas de referência de empregadores anteriores e cartão inteligente da BMET (podemos ajudar a obtê-lo). Para destinos do Golfo, terá também de ser aprovado num exame médico GAMCA.' },
-          { q: 'Receberei um contrato antes de viajar?', a: 'Sim. Receberá um contrato de trabalho verificado em bengali antes de aceitar viajar. O documento indicará claramente o cargo, o salário, o horário de trabalho, as condições de alojamento e a duração do contrato. Nunca viaje apenas com base numa promessa verbal.' },
-        ],
+        "category": "Pentru Muncitori",
+        "items": [
+          {
+            "q": "Lucrătorii plătesc o taxă de recrutare?",
+            "a": "Taxele variază în funcție de pachetul de servicii și de țara de destinație. Vă rugăm să ne contactați direct pentru a discuta situația dvs. și pentru a obține o defalcare clară a costurilor aplicabile."
+          },
+          {
+            "q": "Cum îmi înregistrez interesul ca lucrător?",
+            "a": "Contactați-ne prin WhatsApp (+880 1978 356710) sau prin e-mail (careers@bhuiyanworkforce.com) cu categoria dvs. comercială, anii de experiență și o copie a oricăror certificate comerciale relevante. Vă vom adăuga în baza noastră de date de candidați și vă vom contacta atunci când apare o oportunitate de potrivire."
+          },
+          {
+            "q": "De ce documente voi avea nevoie?",
+            "a": "Un pașaport valid din Bangladesh (minim 12 luni rămase), carte de identitate națională, certificate comerciale (dacă este cazul), scrisori de referință anterioare de angajare și un card inteligent BMET (vă putem ajuta să obțineți acest lucru). Pentru destinațiile din Golf, va trebui să treceți și un examen medical GAMCA."
+          },
+          {
+            "q": "Voi primi un contract înainte de a călători?",
+            "a": "Da. Veți primi un contract de muncă verificat în bengaleză înainte de a fi de acord să călătoriți. Acesta va indica în mod clar titlul postului, salariul, programul de lucru, aranjamentele de cazare și durata contractului. Nu călătoriți niciodată doar pe baza unei promisiuni verbale."
+          }
+        ]
       },
       {
-        category: 'Conformidade e credenciais',
-        items: [
-          { q: 'O que é a GAMCA e por que motivo é exigida?', a: 'O exame médico GAMCA (Gulf Approved Medical Centre Association) é uma avaliação de saúde obrigatória, exigida por todos os países do Golfo (GCC) antes de o visto de um trabalhador poder ser processado. Deteta doenças transmissíveis e avalia a aptidão geral para o trabalho. Coordenamos as marcações GAMCA de todos os trabalhadores com destino aos países do Golfo.' },
-        ],
-      },
-    ],
-  },
+        "category": "Conformitate și acreditări",
+        "items": [
+          {
+            "q": "Ce este GAMCA și de ce este necesar?",
+            "a": "Testarea medicală GAMCA (GCC Approved Medical Centers Association) este o autorizație medicală obligatorie cerută de toate țările GCC înainte ca viza de lucrător să poată fi procesată. Evaluează bolile transmisibile și aptitudinea generală pentru muncă. Coordonăm programările GAMCA pentru toți lucrătorii care merg în destinații din Golf."
+          }
+        ]
+      }
+    ]
+  }
 };
