@@ -21,7 +21,7 @@ export default {
   "h.badge_shortlist": "dana do uže liste provjerenih kandidata",
   "h.stat_ethical": "Etično",
   "h.limited": "Ograničeno",
-  "h.slots_remaining": "Preostalo mjesta: {n}",
+  "h.slots_remaining": "Ograničen broj mjesta",
   "h.founding_perks": "Prioritetna priprema · Izravan kontakt s osnivačem · Bez obveze",
   "h.deck_tag": "Za poslodavce",
   "h.deck_title": "Preuzmite naš pregled kapaciteta",

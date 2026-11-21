@@ -21,7 +21,7 @@ export default {
   "h.badge_shortlist": "Tage bis zur Shortlist",
   "h.stat_ethical": "Ethisch",
   "h.limited": "Begrenzt",
-  "h.slots_remaining": "Noch {n} Plätze verfügbar",
+  "h.slots_remaining": "Begrenzte Plätze",
   "h.founding_perks": "Priorisierte Einsatzplanung · Direkter Kontakt zum Gründer · Unverbindlich",
   "h.deck_tag": "Für Arbeitgeber",
   "h.deck_title": "Unsere Unternehmenspräsentation herunterladen",

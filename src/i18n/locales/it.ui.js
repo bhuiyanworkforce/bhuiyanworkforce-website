@@ -23,7 +23,7 @@ export default {
   "h.badge_shortlist": "Giorni per la shortlist",
   "h.stat_ethical": "Etico",
   "h.limited": "Limitato",
-  "h.slots_remaining": "{n} posti disponibili",
+  "h.slots_remaining": "Posti limitati",
   "h.founding_perks": "Priorità nella mobilitazione · Contatto diretto con il fondatore · Nessun obbligo",
   "h.deck_tag": "Per i datori di lavoro",
   "h.deck_title": "Scaricate la nostra presentazione delle competenze",

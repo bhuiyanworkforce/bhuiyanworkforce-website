@@ -21,7 +21,7 @@ export default {
   "h.badge_shortlist": "Hari untuk senarai pendek calon",
   "h.stat_ethical": "Beretika",
   "h.limited": "Terhad",
-  "h.slots_remaining": "{n} slot masih tersedia",
+  "h.slots_remaining": "Slot terhad",
   "h.founding_perks": "Keutamaan dalam mobilisasi · Akses terus kepada pengasas · Tiada komitmen",
   "h.deck_tag": "Untuk majikan",
   "h.deck_title": "Muat turun pembentangan keupayaan syarikat kami",

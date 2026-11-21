@@ -23,7 +23,7 @@ export default {
   "h.badge_shortlist": "dni na krótką listę",
   "h.stat_ethical": "Etycznie",
   "h.limited": "Ograniczona oferta",
-  "h.slots_remaining": "pozostało {n} miejsc",
+  "h.slots_remaining": "Liczba miejsc ograniczona",
   "h.founding_perks": "Priorytet w mobilizacji · Bezpośredni kontakt z założycielem · Bez zobowiązań",
   "h.deck_tag": "Dla pracodawców",
   "h.deck_title": "Pobierz prezentację naszych możliwości",

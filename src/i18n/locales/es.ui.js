@@ -21,7 +21,7 @@ export default {
   "h.badge_shortlist": "Días para la preselección de candidatos verificados (lista corta)",
   "h.stat_ethical": "Ético",
   "h.limited": "Limitado",
-  "h.slots_remaining": "Quedan {n} plazas",
+  "h.slots_remaining": "Plazas limitadas",
   "h.founding_perks": "Movilización prioritaria · Acceso directo al fundador · Sin compromiso",
   "h.deck_tag": "Para empleadores",
   "h.deck_title": "Descargue nuestra presentación de capacidades",

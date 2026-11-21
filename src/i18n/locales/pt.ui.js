@@ -21,7 +21,7 @@ export default {
   "h.badge_shortlist": "Dias para pré-seleção de candidatos verificados",
   "h.stat_ethical": "Ético",
   "h.limited": "Limitado",
-  "h.slots_remaining": "{n} vagas disponíveis",
+  "h.slots_remaining": "Vagas limitadas",
   "h.founding_perks": "Prioridade no recrutamento · Contacto direto com o fundador · Sem compromisso",
   "h.deck_tag": "Para empregadores",
   "h.deck_title": "Descarregue a nossa apresentação de capacidades",

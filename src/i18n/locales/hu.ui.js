@@ -21,7 +21,7 @@ export default {
   "h.badge_shortlist": "nap a jelöltek szűkített listájáig",
   "h.stat_ethical": "Etikus",
   "h.limited": "Korlátozott",
-  "h.slots_remaining": "Még {n} hely áll rendelkezésre",
+  "h.slots_remaining": "Korlátozott számú hely",
   "h.founding_perks": "Elsőbbségi munkába állítás · Közvetlen kapcsolat az alapítóval · Kötelezettség nélkül",
   "h.deck_tag": "Munkáltatóknak",
   "h.deck_title": "Cégbemutató prezentációnk letöltése",

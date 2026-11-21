@@ -21,7 +21,7 @@ export default {
   "h.badge_shortlist": "Lista scurtă de zile",
   "h.stat_ethical": "Etic",
   "h.limited": "Limitat",
-  "h.slots_remaining": "{n} locuri rămase",
+  "h.slots_remaining": "Locuri limitate",
   "h.founding_perks": "Mobilizare prioritară · Acces direct fondator · Fără obligație",
   "h.deck_tag": "Pentru Angajatori",
   "h.deck_title": "Descărcați pachetul nostru de capabilități",

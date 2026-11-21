@@ -23,7 +23,7 @@ export default {
   "h.badge_shortlist": "أيام للقائمة المختصرة",
   "h.stat_ethical": "أخلاقي",
   "h.limited": "محدود",
-  "h.slots_remaining": "{n} أماكن متبقية",
+  "h.slots_remaining": "أماكن محدودة",
   "h.founding_perks": "أولوية في التعبئة · تواصل مباشر مع المؤسس · دون أي التزام",
   "h.deck_tag": "لأصحاب العمل",
   "h.deck_title": "حمّل عرض إمكاناتنا",

@@ -21,7 +21,7 @@ export default {
   "h.badge_shortlist": "Dana za užu listu",
   "h.stat_ethical": "Etički",
   "h.limited": "Ograničeno",
-  "h.slots_remaining": "Preostalo mesta: {n}",
+  "h.slots_remaining": "Ograničen broj mesta",
   "h.founding_perks": "Prioritetno slanje · Direktan pristup osnivaču · Bez obaveze",
   "h.deck_tag": "Za poslodavce",
   "h.deck_title": "Preuzmite našu prezentaciju mogućnosti",

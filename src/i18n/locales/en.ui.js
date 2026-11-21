@@ -21,7 +21,7 @@ export default {
   "h.badge_shortlist": "Day Shortlist",
   "h.stat_ethical": "Ethical",
   "h.limited": "Limited",
-  "h.slots_remaining": "{n} slots remaining",
+  "h.slots_remaining": "Limited places",
   "h.founding_perks": "Priority mobilisation · Direct founder access · No obligation",
   "h.deck_tag": "For Employers",
   "h.deck_title": "Download Our Capabilities Deck",
