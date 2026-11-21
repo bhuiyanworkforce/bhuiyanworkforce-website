@@ -5,15 +5,15 @@ export default {
     story: [
       "Bhuiyan Workforce Ltd. osnovan je sa jasnom misijom: da kvalifikovanim radnicima iz Bangladeša omogući transparentne i etičke puteve do legitimnog međunarodnog zaposlenja, a poslodavcima u inostranstvu pouzdanog i potpuno usklađenog partnera za regrutaciju.",
       "Bangladeš ima jednu od najsposobnijih radnih snaga u inostranstvu, sa milionima građana koji rade van zemlje u građevinarstvu, proizvodnji, logistici i ugostiteljstvu. Prečesto su ti radnici bili izloženi iskorišćavanju od strane neregulisanih posrednika. Mi postojimo da bismo radili drugačije.",
-      "Bhuiyan Workforce Ltd. gradi proverene koridore za slanje radnika u više od 25 zemalja širom Bliskog istoka, Evrope, Azije i Afrike, pri čemu je svako angažovanje osmišljeno tako da bude registrovano kod BMET-a i potpuno dokumentovano.",
+      "Bhuiyan Workforce Ltd. gradi proverene koridore za slanje radnika u više od 25 zemalja širom Bliskog istoka, Evrope, Azije i Afrike, pri čemu je svako angažovanje registrovano kod BMET-a i potpuno dokumentovano.",
     ],
     values: [
-      { icon: "⚖️", title: "Transparentna regrutacija", body: "Radnici dobijaju proverene i iskrene ponude za posao na svom jeziku, sa jasnim uslovima, kompletnom dokumentacijom i bez skrivenih naknada, pre nego što se na bilo šta obavežu." },
-      { icon: "🏛️", title: "Usklađenost sa propisima", body: "Svako angažovanje registrovano je kod BMET-a. Svaki radnik je prošao GAMCA lekarski pregled. Vodimo kompletnu dokumentaciju za svako slanje radnika." },
+      { icon: "⚖️", title: "Transparentnost za radnike", body: "Radnici dobijaju proverene i iskrene ponude za posao na svom jeziku, sa jasnim uslovima, kompletnom dokumentacijom i bez skrivenih naknada, pre nego što se na bilo šta obavežu." },
+      { icon: "🏛️", title: "Usklađenost sa propisima", body: "Svako angažovanje registrovano je kod BMET-a. Svaki radnik koji ide u zemlje GCC-a prolazi GAMCA lekarski pregled. Vodimo kompletnu dokumentaciju za svako slanje radnika." },
       { icon: "🔍", title: "Provera veština", body: "Praktični stručni testovi i nezavisne provere preporuka osiguravaju da dobijete radnike sa veštinama koje navode." },
       { icon: "🤝", title: "Dugoročni odnosi", body: "Uspeh ne merimo obimom transakcija, već brojem poslodavaca koji nam se vraćaju sa svojim sledećim potrebama." },
       { icon: "🌍", title: "Poznavanje odredišta", body: "Razumevanje lokalnog radnog prava, kategorija viza i kulturnog konteksta na svakom odredištu smanjuje prepreke i kašnjenja." },
-      { icon: "📣", title: "Transparentnost", body: "Poslodavci dobijaju jasne rokove, iskrenu procenu dostupnosti kandidata i potpuno raščlanjen pregled troškova pre nego što se na bilo šta obavežu." },
+      { icon: "📣", title: "Transparentnost za poslodavce", body: "Poslodavci dobijaju jasne rokove, iskrenu procenu dostupnosti kandidata i potpuno raščlanjen pregled troškova pre nego što se na bilo šta obavežu." },
     ],
     teamIntro: "Naš tim objedinjuje stručnost u regrutaciji, poznavanje imigracionih postupaka i duboko razumevanje sektora u svih 25 kategorija usluga.",
     team: [
@@ -50,9 +50,9 @@ export default {
         items: [
           { q: "Koliko brzo možete da obezbedite radnike?", a: "Za većinu stručnih kategorija možemo da predstavimo proverenu užu listu kandidata u roku od 7 radnih dana. Nakon izbora poslodavca, kompletna dokumentacija i postupak za vizu obično traju 4–8 nedelja, u zavisnosti od zemlje odredišta. U zemljama sa pojednostavljenim postupkom za vizu, kao što su Malezija i UAE, rokovi su često kraći. Sedam radnih dana računa se od dana kada primimo Vaše potpune zahteve za radna mesta (zanimanje, broj radnika, odredište, plata i uslovi). Ako podaci nedostaju, odbrojavanje počinje kada ih primimo." },
           { q: "Koja je Vaša minimalna veličina porudžbine?", a: "Radimo i sa malim grupama (5–10 radnika) i sa velikim mobilizacijama (200+ radnika). Nema minimalne veličine porudžbine. Kod veoma malih zahteva možemo da grupišemo upućivanje sa drugim poslodavcima za isto odredište kako bismo upravljali troškovima putovanja i obrade. To ne menja Vaš ugovor niti uslove radnika, a o tome ćemo Vas obavestiti pre nego što to učinimo." },
-          { q: "Da li vodite računa o celokupnoj dokumentaciji?", a: "Da. Vodimo registraciju kod BMET-a, odobrenje Bureau of Manpower, GAMCA lekarske preglede za odredišta u Zalivu, uverenja o nekažnjavanju, provere važenja pasoša i postupak podnošenja zahteva za vizu. Vi obezbeđujete važeće pismo o potrebi za radnicima i ugovor o radu, a mi vodimo računa o svemu ostalom." },
+          { q: "Da li vodite računa o celokupnoj dokumentaciji?", a: "Da. Vodimo registraciju kod BMET-a, emigraciono odobrenje (Smart Card), GAMCA lekarske preglede za odredišta u Zalivu, uverenja o nekažnjavanju, provere važenja pasoša i postupak podnošenja zahteva za vizu. Vi obezbeđujete važeće pismo o potrebi za radnicima i ugovor o radu, a mi vodimo računa o svemu ostalom." },
           { q: "Šta ako radnik ne ostvaruje očekivani učinak ili ode prerano?", a: "Nudimo garanciju zamene za radnike koji odu tokom prvih 90 dana iz razloga koji se mogu pripisati netačnim podacima u biografiji ili na testu veština. Radićemo sa Vama na tome da radnika zamenimo što je brže moguće, bez dodatne naknade za angažovanje." },
-          { q: "U kojim zemljama pružate usluge?", a: "Trenutno šaljemo radnike u više od 25 zemalja: Saudijsku Arabiju, UAE, Katar, Kuvajt, Oman, Bahrein, Jordan, Maleziju, Singapur, Maldive, Srbiju, Portugal, Grčku, Rumuniju, Poljsku, Mađarsku, Hrvatsku, Češku Republiku, Litvaniju, Letoniju, Estoniju, Bugarsku, Kipar, Slovačku, Bosnu i Hercegovinu, Jermeniju, Crnu Goru, Gruziju, Sloveniju, Severnu Makedoniju i Italiju. Ako Vaše odredište nije na ovoj listi, kontaktirajte nas — možda ipak možemo da pomognemo." },
+          { q: "U kojim zemljama pružate usluge?", a: "Trenutno šaljemo radnike u više od 25 zemalja: Saudijsku Arabiju, UAE, Katar, Kuvajt, Oman, Bahrein, Jordan, Maleziju, Singapur, Maldive, Srbiju, Portugal, Grčku, Rumuniju, Poljsku, Mađarsku, Hrvatsku, Češku Republiku, Litvaniju, Letoniju, Estoniju, Bugarsku, Kipar, Slovačku, Bosnu i Hercegovinu, Jermeniju, Crnu Goru, Gruziju, Sloveniju, Severnu Makedoniju, Italiju, Sejšele i Mauricijus. Ako Vaše odredište nije na ovoj listi, kontaktirajte nas — možda ipak možemo da pomognemo." },
           { q: "Kolike su Vaše naknade?", a: "Naše naknade zavise od kategorije radnika, broja radnika i zemlje odredišta. Pre nego što se na bilo šta obavežete, dostavljamo potpuno raščlanjen pregled troškova. Radimo po modelu naknade za uspeh (success fee) — plaćate tek kada radnici budu potvrđeni za slanje." },
         ],
       },
@@ -68,7 +68,7 @@ export default {
       {
         category: "Usklađenost i akreditacije",
         items: [
-          { q: "Šta je GAMCA i zašto je potreban?", a: "GAMCA (Gulf Approved Medical Centre Association) medicinsko testiranje je obavezna zdravstvena provera koju zahtevaju sve zemlje GCC-a pre nego što viza za radnika može da bude obrađena. Proveravaju se zarazne bolesti i opšta radna sposobnost. Koordiniramo GAMCA termine za sve radnike koji odlaze na odredišta u Zalivu." },
+          { q: "Šta je GAMCA i zašto je potreban?", a: "GAMCA (GCC Approved Medical Centers Association) medicinsko testiranje je obavezna zdravstvena provera koju zahtevaju sve zemlje GCC-a pre nego što viza za radnika može da bude obrađena. Proveravaju se zarazne bolesti i opšta radna sposobnost. Koordiniramo GAMCA termine za sve radnike koji odlaze na odredišta u Zalivu." },
         ],
       },
     ],
