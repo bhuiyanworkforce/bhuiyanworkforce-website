@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "build:static": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/generate-pages.mjs && node scripts/verify-pages.mjs",
     "verify:static": "node scripts/verify-pages.mjs",
-    "test:seo": "node scripts/test-seo.mjs"
+    "test:seo": "node scripts/test-seo.mjs",
+    "sync:worker-guard": "node scripts/sync-worker-guard.mjs",
+    "test:worker": "node scripts/sync-worker-guard.mjs --check && node worker/contact-form-guard.test.mjs && node worker/contact-form-worker.test.mjs"
   },
   "dependencies": {
     "react": "^18.2.0",

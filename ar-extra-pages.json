@@ -111,8 +111,8 @@
   },
   {
     "file": "src/pages/FounderPage.jsx",
-    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
-    "ar": "يقود اليوم شراكات الشركة وتطوير أعمالها في الخليج وأوروبا وآسيا. كما صمّم بنفسه موقع الشركة ونظامها الداخلي لإدارة القوى العاملة وبناهما، بحيث تُتابَع سجلات المرشحين والمستندات وعمليات الإيفاد في مكان واحد."
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also led the development of the company’s website and its internal workforce-management system, so candidate records, documents and deployments are tracked in one place.",
+    "ar": "يقود اليوم شراكات الشركة وتطوير أعمالها في الخليج وأوروبا وآسيا. كما قاد تطوير موقع الشركة ونظامها الداخلي لإدارة القوى العاملة، بحيث تُتابَع سجلات المرشحين والمستندات وعمليات الإيفاد في مكان واحد."
   },
   {
     "file": "src/pages/FounderPage.jsx",

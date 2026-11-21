@@ -1581,8 +1581,8 @@
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
-    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
-    "mk": "Кандидатите за работа се пријавуваат преку онлајн-формулар на оваа веб-страница. Документите што ги прикачувате таму, како Вашата биографија, копија од пасошот и уверенијата, се испраќаат по е-пошта до нашиот тим и на пат минуваат низ серверите на нашиот давател на хостинг (Cloudflare). Пред да можете да го поднесете формуларот, од Вас се бара да потврдите дека сте ја прочитале оваа политика и давате согласност за оваа обработка, а ние ја чуваме евиденцијата за времето кога сте ја дале согласноста заедно со Вашата пријава."
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) and our email delivery provider's servers (Resend) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "mk": "Кандидатите за работа се пријавуваат преку онлајн-формулар на оваа веб-страница. Документите што ги прикачувате таму, како Вашата биографија, копија од пасошот и уверенијата, се испраќаат по е-пошта до нашиот тим и на пат минуваат низ серверите на нашиот давател на хостинг (Cloudflare) и на нашиот давател на услуги за испорака на е-пошта (Resend). Пред да можете да го поднесете формуларот, од Вас се бара да потврдите дека сте ја прочитале оваа политика и давате согласност за оваа обработка, а ние ја чуваме евиденцијата за времето кога сте ја дале согласноста заедно со Вашата пријава."
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
@@ -1991,8 +1991,8 @@
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "Last updated: May 2026",
-    "mk": "Последно ажурирање: мај 2026"
+    "en": "Last updated: November 2026",
+    "mk": "Последно ажурирање: ноември 2026"
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -2196,8 +2196,8 @@
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
-    "mk": "Овие Услови за користење се уредуваат и толкуваат согласно законите на Народна Република Бангладеш, вклучувајќи ги, но не ограничувајќи се на, Законот за договори од 1872 година, Законот за информатичка и комуникациска технологија од 2006 година и Законот за дигитална безбедност од 2018 година. Секој спор, побарување или несогласување што произлегува од овие услови или е поврзано со нив, или со Вашето користење на веб-страницата, ќе биде предмет на исклучива надлежност на надлежните судови во Дака, Бангладеш."
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the cyber security legislation in force from time to time. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "mk": "Овие Услови за користење се уредуваат и толкуваат согласно законите на Народна Република Бангладеш, вклучувајќи ги, но не ограничувајќи се на, Законот за договори од 1872 година, Законот за информатичка и комуникациска технологија од 2006 година и законодавството за сајбер безбедност што е во сила. Секој спор, побарување или несогласување што произлегува од овие услови или е поврзано со нив, или со Вашето користење на веб-страницата, ќе биде предмет на исклучива надлежност на надлежните судови во Дака, Бангладеш."
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -2501,8 +2501,8 @@
   },
   {
     "file": "src/pages/FounderPage.jsx",
-    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
-    "mk": "Денес ги води партнерствата и развојот на бизнисот на компанијата во земјите од Заливот, Европа и Азија. Тој и самиот ја дизајнирал и изградил веб-страницата на компанијата и нејзиниот внатрешен систем за управување со работната сила, така што досиејата на кандидатите, документите и испраќањата на работници се следат на едно место."
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also led the development of the company’s website and its internal workforce-management system, so candidate records, documents and deployments are tracked in one place.",
+    "mk": "Денес ги води партнерствата и развојот на бизнисот на компанијата во земјите од Заливот, Европа и Азија. Тој го водел и развојот на веб-страницата на компанијата и на нејзиниот внатрешен систем за управување со работната сила, така што досиејата на кандидатите, документите и испраќањата на работници се следат на едно место."
   },
   {
     "file": "src/pages/FounderPage.jsx",

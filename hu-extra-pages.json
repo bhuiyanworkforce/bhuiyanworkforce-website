@@ -1231,8 +1231,8 @@
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
-    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
-    "hu": "A munkavállalói jelöltek a weboldalon található online űrlapon keresztül jelentkeznek. Az ott feltöltött dokumentumokat, például az önéletrajzot, az útlevélmásolatot és a bizonyítványokat e-mailben továbbítjuk csapatunknak, és útközben áthaladnak tárhelyszolgáltatónk (Cloudflare) szerverein. Az űrlap beküldése előtt meg kell erősítenie, hogy elolvasta ezt az irányelvet, és hozzájárul ehhez az adatkezeléshez; a hozzájárulás időpontját a jelentkezésével együtt megőrizzük."
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) and our email delivery provider's servers (Resend) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "hu": "A munkavállalói jelöltek a weboldalon található online űrlapon keresztül jelentkeznek. Az ott feltöltött dokumentumokat, például az önéletrajzot, az útlevélmásolatot és a bizonyítványokat e-mailben továbbítjuk csapatunknak, és útközben áthaladnak tárhelyszolgáltatónk (Cloudflare) és e-mail-kézbesítési szolgáltatónk (Resend) szerverein. Az űrlap beküldése előtt meg kell erősítenie, hogy elolvasta ezt az irányelvet, és hozzájárul ehhez az adatkezeléshez; a hozzájárulás időpontját a jelentkezésével együtt megőrizzük."
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
@@ -1616,8 +1616,8 @@
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "Last updated: May 2026",
-    "hu": "Utolsó frissítés: 2026. május"
+    "en": "Last updated: November 2026",
+    "hu": "Utolsó frissítés: 2026. november"
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -1826,8 +1826,8 @@
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
-    "hu": "Jelen Általános szerződési feltételekre a Banglades Népköztársaság joga az irányadó, és azokat annak megfelelően kell értelmezni, ideértve – korlátozás nélkül – az 1872. évi szerződési törvényt (Contract Act 1872), a 2006. évi információs és kommunikációs technológiai törvényt (Information and Communication Technology Act 2006) és a 2018. évi digitális biztonsági törvényt (Digital Security Act 2018). A jelen feltételekből vagy a weboldal használatából eredő vagy azokkal kapcsolatos minden vitára, követelésre vagy jogvitára a bangladesi Dhaka illetékes bíróságainak kizárólagos joghatósága vonatkozik."
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the cyber security legislation in force from time to time. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "hu": "Jelen Általános szerződési feltételekre a Banglades Népköztársaság joga az irányadó, és azokat annak megfelelően kell értelmezni, ideértve – korlátozás nélkül – az 1872. évi szerződési törvényt (Contract Act 1872), a 2006. évi információs és kommunikációs technológiai törvényt (Information and Communication Technology Act 2006) és a mindenkor hatályos kiberbiztonsági jogszabályokat. A jelen feltételekből vagy a weboldal használatából eredő vagy azokkal kapcsolatos minden vitára, követelésre vagy jogvitára a bangladesi Dhaka illetékes bíróságainak kizárólagos joghatósága vonatkozik."
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -2106,8 +2106,8 @@
   },
   {
     "file": "src/pages/FounderPage.jsx",
-    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
-    "hu": "Ma ő vezeti a vállalat partnerségeit és üzletfejlesztését az Öböl-menti országokban, Európában és Ázsiában. A vállalat weboldalát és belső munkaerő-kezelő rendszerét is ő tervezte és építette, így a jelöltek nyilvántartása, a dokumentumok és a külföldi munkába állítások egy helyen követhetők nyomon."
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also led the development of the company’s website and its internal workforce-management system, so candidate records, documents and deployments are tracked in one place.",
+    "hu": "Ma ő vezeti a vállalat partnerségeit és üzletfejlesztését az Öböl-menti országokban, Európában és Ázsiában. A vállalat weboldalának és belső munkaerő-kezelő rendszerének fejlesztését is ő vezette, így a jelöltek nyilvántartása, a dokumentumok és a külföldi munkába állítások egy helyen követhetők nyomon."
   },
   {
     "file": "src/pages/FounderPage.jsx",
