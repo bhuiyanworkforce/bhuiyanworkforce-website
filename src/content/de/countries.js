@@ -16,7 +16,7 @@ export default {
       "Fertigung",
       "Unterstützende Tätigkeiten im Gesundheitswesen"
     ],
-    "visaType": "Arbeitsvisum (Iqama)",
+    "visaType": "Arbeitsvisum (Iqama wird nach der Ankunft ausgestellt)",
     "visaFee": "SAR 500–800 (ca. USD 135–215) — vom Arbeitgeber bezahlt",
     "processingTime": "4–8 Wochen",
     "process": [
