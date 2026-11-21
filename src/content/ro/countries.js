@@ -16,7 +16,7 @@ export default {
       "Fabricarea",
       "Asistență medicală"
     ],
-    "visaType": "Viza de angajare (Iqama)",
+    "visaType": "Viza de angajare (Iqama eliberată după sosire)",
     "visaFee": "500–800 SAR (aproximativ 135–215 USD) – plătite de angajator",
     "processingTime": "4–8 săptămâni",
     "process": [

@@ -5,18 +5,18 @@ export default {
     "story": [
       "Bhuiyan Workforce Ltd. a fost înființată cu o misiune simplă: să creeze căi transparente și etice pentru ca lucrătorii calificați din Bangladesh să aibă acces la locuri de muncă internaționale legitime - oferind în același timp angajatorilor de peste mări un partener de recrutare de încredere și pe deplin conform.",
       "Bangladesh are una dintre cele mai capabile forțe de muncă de peste mări din lume, cu milioane de cetățeni care lucrează în străinătate în construcții, producție, logistică și ospitalitate. Prea des, acei lucrători au fost exploatați de brokerii nereglementați. Existam pentru a fi diferiti.",
-      "Bhuiyan Workforce Ltd. construiește coridoare de implementare verificate în peste 25 de țări din Orientul Mijlociu, Europa, Asia și Africa, fiecare plasare fiind concepută pentru a fi înregistrată BMET și documentată complet."
+      "Bhuiyan Workforce Ltd. construiește coridoare de implementare verificate în peste 25 de țări din Orientul Mijlociu, Europa, Asia și Africa, fiecare plasare fiind înregistrată la BMET și documentată complet."
     ],
     "values": [
       {
         "icon": "⚖️",
-        "title": "Recrutare transparentă",
+        "title": "Transparență pentru lucrători",
         "body": "Lucrătorii primesc oferte de locuri de muncă verificate și oneste în propria lor limbă - cu termeni clari, documentație completă și fără taxe ascunse - înainte de a se angaja la ceva."
       },
       {
         "icon": "🏛️",
         "title": "Conformitatea cu reglementările",
-        "body": "Fiecare plasament este înregistrat la BMET. Fiecare muncitor a trecut un GAMCA medical. Menținem documentația completă pentru fiecare implementare."
+        "body": "Fiecare plasament este înregistrat la BMET. Fiecare muncitor care pleacă în țările GCC trece un control medical GAMCA. Menținem documentația completă pentru fiecare implementare."
       },
       {
         "icon": "🔍",
@@ -35,7 +35,7 @@ export default {
       },
       {
         "icon": "📣",
-        "title": "Transparență",
+        "title": "Transparență pentru angajatori",
         "body": "Angajatorii primesc termene clare, evaluări oneste privind disponibilitatea candidaților și o defalcare completă a costurilor înainte de a se angaja la orice."
       }
     ],
@@ -118,7 +118,7 @@ export default {
           },
           {
             "q": "Te ocupi de toată documentația?",
-            "a": "Da. Gestionăm înregistrarea BMET, autorizarea Biroului de forță de muncă, examinările medicale GAMCA pentru destinațiile din Golf, certificatele de autorizare a poliției, verificările valabilității pașapoartelor și procesul de solicitare a vizei. Furnizați o scrisoare de cerere valabilă și un contract de muncă; de restul ne ocupam noi."
+            "a": "Da. Gestionăm înregistrarea BMET, autorizarea de emigrare (Smart Card), examinările medicale GAMCA pentru destinațiile din Golf, certificatele de autorizare a poliției, verificările valabilității pașapoartelor și procesul de solicitare a vizei. Furnizați o scrisoare de cerere valabilă și un contract de muncă; de restul ne ocupam noi."
           },
           {
             "q": "Ce se întâmplă dacă un lucrător are performanțe slabe sau pleacă devreme?",
@@ -126,7 +126,7 @@ export default {
           },
           {
             "q": "Ce țări deserviți?",
-            "a": "În prezent, implementăm în peste 25 de țări: Arabia Saudită, Emiratele Arabe Unite, Qatar, Kuweit, Oman, Bahrain, Iordania, Malaezia, Singapore, Maldive, Serbia, Portugalia, Grecia, România, Polonia, Ungaria, Croația, Republica Cehă, Lituania, Letonia, Estonia, Bulgaria, Cipru, Slovacia, Macedonia de Nord, Bosnia și Herțegovina, Italia, Bosnia și Herțegovina, Muntenegru, Italia, Bosnia și Herțegovina. Dacă destinația dvs. nu se află pe această listă, vă rugăm să ne contactați - este posibil să vă putem ajuta în continuare."
+            "a": "În prezent, implementăm în peste 25 de țări: Arabia Saudită, Emiratele Arabe Unite, Qatar, Kuweit, Oman, Bahrain, Iordania, Malaezia, Singapore, Maldive, Serbia, Portugalia, Grecia, România, Polonia, Ungaria, Croația, Republica Cehă, Lituania, Letonia, Estonia, Bulgaria, Cipru, Slovacia, Bosnia și Herțegovina, Armenia, Muntenegru, Georgia, Slovenia, Macedonia de Nord, Italia, Seychelles și Mauritius. Dacă destinația dvs. nu se află pe această listă, vă rugăm să ne contactați - este posibil să vă putem ajuta în continuare."
           },
           {
             "q": "Care sunt taxele tale?",
@@ -160,7 +160,7 @@ export default {
         "items": [
           {
             "q": "Ce este GAMCA și de ce este necesar?",
-            "a": "Testarea medicală GAMCA (Gulf Approved Medical Center Association) este o autorizație medicală obligatorie cerută de toate țările GCC înainte ca viza de lucrător să poată fi procesată. Evaluează bolile transmisibile și aptitudinea generală pentru muncă. Coordonăm programările GAMCA pentru toți lucrătorii care merg în destinații din Golf."
+            "a": "Testarea medicală GAMCA (GCC Approved Medical Centers Association) este o autorizație medicală obligatorie cerută de toate țările GCC înainte ca viza de lucrător să poată fi procesată. Evaluează bolile transmisibile și aptitudinea generală pentru muncă. Coordonăm programările GAMCA pentru toți lucrătorii care merg în destinații din Golf."
           }
         ]
       }
