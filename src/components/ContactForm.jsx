@@ -185,7 +185,7 @@ export default function ContactForm() {
         <input
           id="f-attachment"
           type="file"
-          accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+          accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.webp,.heic,.heif"
           onChange={e => {
             const file = e.target.files[0];
             if (file && file.size > 5 * 1024 * 1024) {
