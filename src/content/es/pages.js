@@ -5,18 +5,18 @@ export default {
     "story": [
       "Bhuiyan Workforce Ltd. se fundó con una misión clara: crear vías transparentes y éticas para que los trabajadores cualificados de Bangladés accedan a empleos legítimos en el extranjero, y ofrecer a los empleadores internacionales un socio de reclutamiento fiable y plenamente comprometido con el cumplimiento normativo.",
       "Bangladés cuenta con una de las manos de obra más capacitadas del mundo para trabajar en el extranjero, con millones de ciudadanos empleados en la construcción, la fabricación, la logística y la hostelería. Con demasiada frecuencia, esos trabajadores han sido explotados por intermediarios no regulados. Existimos para ofrecer una alternativa.",
-      "Bhuiyan Workforce Ltd. está creando corredores de envío de trabajadores verificados en más de 25 países de Oriente Medio, Europa, Asia y África, con el objetivo de que cada contratación esté registrada en BMET y plenamente documentada."
+      "Bhuiyan Workforce Ltd. está creando corredores de envío de trabajadores verificados en más de 25 países de Oriente Medio, Europa, Asia y África, con cada contratación registrada en BMET y plenamente documentada."
     ],
     "values": [
       {
         "icon": "⚖️",
-        "title": "Reclutamiento transparente",
+        "title": "Transparencia para los trabajadores",
         "body": "Los trabajadores reciben ofertas de empleo verificadas y honestas en su propio idioma, con condiciones claras, documentación completa y sin cargos ocultos, antes de comprometerse."
       },
       {
         "icon": "🏛️",
         "title": "Cumplimiento normativo",
-        "body": "Cada proceso de contratación se registra en BMET. Todos los trabajadores han superado un reconocimiento médico GAMCA. Mantenemos la documentación completa de cada envío de trabajadores."
+        "body": "Cada proceso de contratación se registra en BMET. Todos los trabajadores con destino a los países del CCG superan un reconocimiento médico GAMCA. Mantenemos la documentación completa de cada envío de trabajadores."
       },
       {
         "icon": "🔍",
@@ -35,7 +35,7 @@ export default {
       },
       {
         "icon": "📣",
-        "title": "Transparencia",
+        "title": "Transparencia para los empleadores",
         "body": "Los empleadores reciben plazos claros, evaluaciones honestas de la disponibilidad de candidatos y un desglose detallado de los costes antes de comprometerse."
       }
     ],
@@ -118,7 +118,7 @@ export default {
           },
           {
             "q": "¿Se encargan de toda la documentación?",
-            "a": "Sí. Gestionamos el registro en BMET, la autorización de la Oficina de Mano de Obra, los reconocimientos médicos de GAMCA para destinos del Golfo, los certificados de antecedentes penales, las comprobaciones de validez del pasaporte y el proceso de solicitud del visado. Usted aporta una carta de demanda válida y el contrato de trabajo; nosotros nos encargamos del resto."
+            "a": "Sí. Gestionamos el registro en BMET, la autorización de emigración (Smart Card), los reconocimientos médicos de GAMCA para destinos del Golfo, los certificados de antecedentes penales, las comprobaciones de validez del pasaporte y el proceso de solicitud del visado. Usted aporta una carta de demanda válida y el contrato de trabajo; nosotros nos encargamos del resto."
           },
           {
             "q": "¿Qué ocurre si un trabajador no rinde lo esperado o se marcha antes de tiempo?",
@@ -126,7 +126,7 @@ export default {
           },
           {
             "q": "¿En qué países prestan sus servicios?",
-            "a": "Actualmente enviamos trabajadores a más de 25 países: Arabia Saudí, UAE, Catar, Kuwait, Omán, Baréin, Jordania, Malasia, Singapur, Maldivas, Serbia, Portugal, Grecia, Rumanía, Polonia, Hungría, Croacia, República Checa, Lituania, Letonia, Estonia, Bulgaria, Chipre, Eslovaquia, Bosnia y Herzegovina, Armenia, Montenegro, Georgia, Eslovenia, Macedonia del Norte e Italia. Si su destino no figura en esta lista, póngase en contacto con nosotros: quizá podamos ayudarle."
+            "a": "Actualmente enviamos trabajadores a más de 25 países: Arabia Saudí, UAE, Catar, Kuwait, Omán, Baréin, Jordania, Malasia, Singapur, Maldivas, Serbia, Portugal, Grecia, Rumanía, Polonia, Hungría, Croacia, República Checa, Lituania, Letonia, Estonia, Bulgaria, Chipre, Eslovaquia, Bosnia y Herzegovina, Armenia, Montenegro, Georgia, Eslovenia, Macedonia del Norte, Italia, Seychelles y Mauricio. Si su destino no figura en esta lista, póngase en contacto con nosotros: quizá podamos ayudarle."
           },
           {
             "q": "¿Cuáles son sus tarifas?",
@@ -160,7 +160,7 @@ export default {
         "items": [
           {
             "q": "¿Qué es GAMCA y por qué es obligatorio?",
-            "a": "Las pruebas médicas de GAMCA (Asociación de Centros Médicos Aprobados del Golfo) son un requisito sanitario obligatorio de todos los países del GCC antes de tramitar el visado de un trabajador. Sirven para detectar enfermedades transmisibles y evaluar la aptitud general para trabajar. Coordinamos las citas de GAMCA para todos los trabajadores que se dirigen a destinos del Golfo."
+            "a": "Las pruebas médicas de GAMCA (GCC Approved Medical Centers Association) son un requisito sanitario obligatorio de todos los países del GCC antes de tramitar el visado de un trabajador. Sirven para detectar enfermedades transmisibles y evaluar la aptitud general para trabajar. Coordinamos las citas de GAMCA para todos los trabajadores que se dirigen a destinos del Golfo."
           }
         ]
       }
