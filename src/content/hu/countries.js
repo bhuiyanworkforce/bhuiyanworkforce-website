@@ -16,7 +16,7 @@ export default {
       "Gyártás",
       "Egészségügyi támogató tevékenységek"
     ],
-    "visaType": "Munkavállalási vízum (Iqama)",
+    "visaType": "Munkavállalási vízum (az Iqamát az érkezés után állítják ki)",
     "visaFee": "SAR 500–800 (kb. USD 135–215) — a munkáltató fizeti",
     "processingTime": "4–8 hét",
     "process": [
