@@ -1757,8 +1757,8 @@ export default [
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
-    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
-    "it": "I candidati lavoratori presentano la propria candidatura tramite un modulo online su questo sito web. I documenti caricati, come il CV, la copia del passaporto e i certificati, vengono inviati via e-mail al nostro team e transitano sui server del nostro fornitore di hosting (Cloudflare). Prima di inviare il modulo, vi viene chiesto di confermare di aver letto questa informativa e di acconsentire a tale trattamento; conserviamo, insieme alla candidatura, la registrazione dell’ora in cui avete prestato il consenso."
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) and our email delivery provider's servers (Resend) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "it": "I candidati lavoratori presentano la propria candidatura tramite un modulo online su questo sito web. I documenti caricati, come il CV, la copia del passaporto e i certificati, vengono inviati via e-mail al nostro team e transitano sui server del nostro fornitore di hosting (Cloudflare) e del nostro fornitore del servizio di invio e-mail (Resend). Prima di inviare il modulo, vi viene chiesto di confermare di aver letto questa informativa e di acconsentire a tale trattamento; conserviamo, insieme alla candidatura, la registrazione dell’ora in cui avete prestato il consenso."
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
@@ -2147,8 +2147,8 @@ export default [
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "Last updated: May 2026",
-    "it": "Ultimo aggiornamento: maggio 2026"
+    "en": "Last updated: November 2026",
+    "it": "Ultimo aggiornamento: novembre 2026"
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -2367,8 +2367,8 @@ export default [
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
-    "it": "Le presenti Condizioni di servizio sono disciplinate e interpretate in conformità alle leggi della Repubblica Popolare del Bangladesh, inclusi, a titolo esemplificativo ma non esaustivo, il Contract Act 1872, l’Information and Communication Technology Act 2006 e il Digital Security Act 2018. Qualsiasi controversia, reclamo o contestazione derivante da o relativa ai presenti termini o all’uso del sito sarà soggetta alla giurisdizione esclusiva dei tribunali competenti di Dhaka, Bangladesh."
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the cyber security legislation in force from time to time. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "it": "Le presenti Condizioni di servizio sono disciplinate e interpretate in conformità alle leggi della Repubblica Popolare del Bangladesh, inclusi, a titolo esemplificativo ma non esaustivo, il Contract Act 1872, l’Information and Communication Technology Act 2006 e la normativa sulla sicurezza informatica di volta in volta in vigore. Qualsiasi controversia, reclamo o contestazione derivante da o relativa ai presenti termini o all’uso del sito sarà soggetta alla giurisdizione esclusiva dei tribunali competenti di Dhaka, Bangladesh."
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -2842,8 +2842,8 @@ export default [
   },
   {
     "file": "src/pages/FounderPage.jsx",
-    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
-    "it": "Oggi guida le partnership e lo sviluppo del business dell’azienda nel Golfo, in Europa e in Asia. Ha inoltre progettato e realizzato di persona il sito web dell’azienda e il suo sistema interno di gestione della forza lavoro, così che schede dei candidati, documenti e invii siano tracciati in un unico posto."
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also led the development of the company’s website and its internal workforce-management system, so candidate records, documents and deployments are tracked in one place.",
+    "it": "Oggi guida le partnership e lo sviluppo del business dell’azienda nel Golfo, in Europa e in Asia. Ha inoltre guidato lo sviluppo del sito web dell’azienda e del suo sistema interno di gestione della forza lavoro, così che schede dei candidati, documenti e invii siano tracciati in un unico luogo."
   },
   {
     "file": "src/pages/FounderPage.jsx",

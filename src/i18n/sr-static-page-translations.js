@@ -1132,8 +1132,8 @@ export default [
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
-    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
-    "sr": "Kandidati za radna mesta prijavljuju se putem onlajn formulara na ovoj veb-stranici. Dokumenta koja tamo otpremite, kao što su Vaš CV, kopija pasoša i sertifikati, šalju se našem timu imejlom i na putu prolaze kroz servere našeg provajdera hostinga (Cloudflare). Pre nego što pošaljete formular, od Vas se traži da potvrdite da ste pročitali ovu politiku i da pristajete na ovu obradu; zajedno sa prijavom čuvamo evidenciju vremena kada ste dali tu saglasnost."
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) and our email delivery provider's servers (Resend) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "sr": "Kandidati za radna mesta prijavljuju se putem onlajn formulara na ovoj veb-stranici. Dokumenta koja tamo otpremite, kao što su Vaš CV, kopija pasoša i sertifikati, šalju se našem timu imejlom i na putu prolaze kroz servere našeg provajdera hostinga (Cloudflare) i našeg provajdera za isporuku imejlova (Resend). Pre nego što pošaljete formular, od Vas se traži da potvrdite da ste pročitali ovu politiku i da pristajete na ovu obradu; zajedno sa prijavom čuvamo evidenciju vremena kada ste dali tu saglasnost."
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
@@ -1487,8 +1487,8 @@ export default [
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "Last updated: May 2026",
-    "sr": "Poslednje ažuriranje: maj 2026."
+    "en": "Last updated: November 2026",
+    "sr": "Poslednje ažuriranje: novembar 2026."
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -1682,8 +1682,8 @@ export default [
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
-    "sr": "Ovi Uslovi korišćenja uređeni su zakonima Narodne Republike Bangladeš i tumače se u skladu sa njima, uključujući, ali ne ograničavajući se na Zakon o ugovorima iz 1872. godine, Zakon o informacionim i komunikacionim tehnologijama iz 2006. godine i Zakon o digitalnoj bezbednosti iz 2018. godine. Za svaki spor, zahtev ili neslaganje koji proistekne iz ovih uslova ili Vašeg korišćenja veb-sajta, odnosno koji je sa njima povezan, isključivo su nadležni nadležni sudovi u Daki, Bangladeš."
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the cyber security legislation in force from time to time. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "sr": "Ovi Uslovi korišćenja uređeni su zakonima Narodne Republike Bangladeš i tumače se u skladu sa njima, uključujući, ali ne ograničavajući se na Zakon o ugovorima iz 1872. godine, Zakon o informacionim i komunikacionim tehnologijama iz 2006. godine i propise o sajber bezbednosti koji su na snazi. godine. Za svaki spor, zahtev ili neslaganje koji proistekne iz ovih uslova ili Vašeg korišćenja veb-sajta, odnosno koji je sa njima povezan, isključivo su nadležni nadležni sudovi u Daki, Bangladeš."
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -1972,8 +1972,8 @@ export default [
   },
   {
     "file": "src/pages/FounderPage.jsx",
-    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
-    "sr": "Danas vodi partnerstva i razvoj poslovanja kompanije u zemljama Zaliva, Evropi i Aziji. Takođe je sam osmislio i izradio veb-sajt kompanije i njen interni sistem za upravljanje radnom snagom, tako da se evidencija kandidata, dokumenti i slanja radnika prate na jednom mestu."
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also led the development of the company’s website and its internal workforce-management system, so candidate records, documents and deployments are tracked in one place.",
+    "sr": "Danas vodi partnerstva i razvoj poslovanja kompanije u zemljama Zaliva, Evropi i Aziji. Takođe je vodio razvoj veb-sajta kompanije i njenog internog sistema za upravljanje radnom snagom, tako da se evidencija kandidata, dokumenti i slanja radnika prate na jednom mestu."
   },
   {
     "file": "src/pages/FounderPage.jsx",

@@ -1367,8 +1367,8 @@ export default [
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
-    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
-    "el": "Οι υποψήφιοι εργαζόμενοι υποβάλλουν αίτηση μέσω ηλεκτρονικής φόρμας σε αυτόν τον ιστότοπο. Τα έγγραφα που ανεβάζετε στη φόρμα, όπως το βιογραφικό σας, το αντίγραφο του διαβατηρίου σας και τα πιστοποιητικά σας, αποστέλλονται στην ομάδα μας μέσω ηλεκτρονικού ταχυδρομείου και, κατά τη διαβίβασή τους, περνούν από τους διακομιστές του παρόχου φιλοξενίας μας (Cloudflare). Πριν μπορέσετε να υποβάλετε τη φόρμα, σας ζητείται να επιβεβαιώσετε ότι έχετε διαβάσει αυτή την πολιτική και ότι συναινείτε σε αυτή την επεξεργασία. Μαζί με την αίτησή σας τηρούμε αρχείο της χρονικής στιγμής κατά την οποία δώσατε τη συγκατάθεσή σας."
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) and our email delivery provider's servers (Resend) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "el": "Οι υποψήφιοι εργαζόμενοι υποβάλλουν αίτηση μέσω ηλεκτρονικής φόρμας σε αυτόν τον ιστότοπο. Τα έγγραφα που ανεβάζετε στη φόρμα, όπως το βιογραφικό σας, το αντίγραφο του διαβατηρίου σας και τα πιστοποιητικά σας, αποστέλλονται στην ομάδα μας μέσω ηλεκτρονικού ταχυδρομείου και, κατά τη διαβίβασή τους, περνούν από τους διακομιστές του παρόχου φιλοξενίας μας (Cloudflare) και του παρόχου υπηρεσιών ηλεκτρονικού ταχυδρομείου μας (Resend). Πριν μπορέσετε να υποβάλετε τη φόρμα, σας ζητείται να επιβεβαιώσετε ότι έχετε διαβάσει αυτή την πολιτική και ότι συναινείτε σε αυτή την επεξεργασία. Μαζί με την αίτησή σας τηρούμε αρχείο της χρονικής στιγμής κατά την οποία δώσατε τη συγκατάθεσή σας."
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
@@ -1747,8 +1747,8 @@ export default [
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "Last updated: May 2026",
-    "el": "Τελευταία ενημέρωση: Μάιος 2026"
+    "en": "Last updated: November 2026",
+    "el": "Τελευταία ενημέρωση: Νοέμβριος 2026"
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -1957,8 +1957,8 @@ export default [
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
-    "el": "Οι παρόντες Όροι Χρήσης διέπονται από τη νομοθεσία της Λαϊκής Δημοκρατίας του Μπανγκλαντές και ερμηνεύονται σύμφωνα με αυτήν, συμπεριλαμβανομένων, ενδεικτικά και όχι περιοριστικά, του Νόμου περί Συμβάσεων του 1872, του Νόμου περί Τεχνολογίας Πληροφοριών και Επικοινωνιών του 2006 και του Νόμου περί Ψηφιακής Ασφάλειας του 2018. Κάθε διαφορά, αξίωση ή διένεξη που προκύπτει από τους παρόντες όρους ή τη χρήση του ιστοτόπου από εσάς ή σχετίζεται με αυτά υπάγεται στην αποκλειστική δικαιοδοσία των αρμόδιων δικαστηρίων της Ντάκα, στο Μπανγκλαντές."
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the cyber security legislation in force from time to time. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "el": "Οι παρόντες Όροι Χρήσης διέπονται από τη νομοθεσία της Λαϊκής Δημοκρατίας του Μπανγκλαντές και ερμηνεύονται σύμφωνα με αυτήν, συμπεριλαμβανομένων, ενδεικτικά και όχι περιοριστικά, του Νόμου περί Συμβάσεων του 1872, του Νόμου περί Τεχνολογίας Πληροφοριών και Επικοινωνιών του 2006 και της εκάστοτε ισχύουσας νομοθεσίας περί κυβερνοασφάλειας. Κάθε διαφορά, αξίωση ή διένεξη που προκύπτει από τους παρόντες όρους ή τη χρήση του ιστοτόπου από εσάς ή σχετίζεται με αυτά υπάγεται στην αποκλειστική δικαιοδοσία των αρμόδιων δικαστηρίων της Ντάκα, στο Μπανγκλαντές."
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -2257,8 +2257,8 @@ export default [
   },
   {
     "file": "src/pages/FounderPage.jsx",
-    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
-    "el": "Σήμερα ηγείται των συνεργασιών και της επιχειρηματικής ανάπτυξης της εταιρείας στις χώρες του Κόλπου, στην Ευρώπη και στην Ασία. Σχεδίασε και δημιούργησε ο ίδιος τον ιστότοπο της εταιρείας και το εσωτερικό της σύστημα διαχείρισης εργατικού δυναμικού, ώστε οι φάκελοι υποψηφίων, τα έγγραφα και οι αποστολές να παρακολουθούνται σε ένα σημείο."
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also led the development of the company’s website and its internal workforce-management system, so candidate records, documents and deployments are tracked in one place.",
+    "el": "Σήμερα ηγείται των συνεργασιών και της επιχειρηματικής ανάπτυξης της εταιρείας στις χώρες του Κόλπου, στην Ευρώπη και στην Ασία. Ηγήθηκε επίσης της ανάπτυξης του ιστότοπου της εταιρείας και του εσωτερικού της συστήματος διαχείρισης εργατικού δυναμικού, ώστε οι φάκελοι υποψηφίων, τα έγγραφα και οι αποστολές να παρακολουθούνται σε ένα σημείο."
   },
   {
     "file": "src/pages/FounderPage.jsx",

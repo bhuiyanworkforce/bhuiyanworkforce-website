@@ -1612,8 +1612,8 @@ export default [
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
-    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
-    "hr": "Kandidati za radna mjesta prijavljuju se putem mrežnog obrasca na ovoj web-stranici. Dokumenti koje ondje učitate, kao što su Vaš životopis, preslika putovnice i svjedodžbe, šalju se našem timu e-poštom i pritom prolaze kroz poslužitelje našeg pružatelja usluge hostinga (Cloudflare). Prije slanja obrasca od Vas se traži da potvrdite kako ste pročitali ova pravila i pristajete na takvu obradu; uz prijavu bilježimo vrijeme davanja Vaše privole."
+    "en": "Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) and our email delivery provider's servers (Resend) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.",
+    "hr": "Kandidati za radna mjesta prijavljuju se putem mrežnog obrasca na ovoj web-stranici. Dokumenti koje ondje učitate, kao što su Vaš životopis, preslika putovnice i svjedodžbe, šalju se našem timu e-poštom i pritom prolaze kroz poslužitelje našeg pružatelja usluge hostinga (Cloudflare) i našeg pružatelja usluge isporuke e-pošte (Resend). Prije slanja obrasca od Vas se traži da potvrdite kako ste pročitali ova pravila i pristajete na takvu obradu; uz prijavu bilježimo vrijeme davanja Vaše privole."
   },
   {
     "file": "src/pages/PrivacyPage.jsx",
@@ -2002,8 +2002,8 @@ export default [
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "Last updated: May 2026",
-    "hr": "Posljednje ažurirano: svibanj 2026"
+    "en": "Last updated: November 2026",
+    "hr": "Posljednje ažurirano: studeni 2026"
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -2212,8 +2212,8 @@ export default [
   },
   {
     "file": "src/pages/TermsPage.jsx",
-    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
-    "hr": "Ovi Uvjeti korištenja uređeni su zakonima Narodne Republike Bangladeša i tumače se u skladu s njima, uključujući, ali ne ograničavajući se na Contract Act 1872, Information and Communication Technology Act 2006 i Digital Security Act 2018. Svaki spor, zahtjev ili prijepor koji proizlazi iz ovih uvjeta ili Vašeg korištenja web-mjesta, ili je s time povezan, podliježe isključivoj nadležnosti nadležnih sudova u Dhaki, Bangladešu."
+    "en": "These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the cyber security legislation in force from time to time. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.",
+    "hr": "Ovi Uvjeti korištenja uređeni su zakonima Narodne Republike Bangladeša i tumače se u skladu s njima, uključujući, ali ne ograničavajući se na Contract Act 1872, Information and Communication Technology Act 2006 i zakonodavstvo o kibernetičkoj sigurnosti koje je na snazi. Svaki spor, zahtjev ili prijepor koji proizlazi iz ovih uvjeta ili Vašeg korištenja web-mjesta, ili je s time povezan, podliježe isključivoj nadležnosti nadležnih sudova u Dhaki, Bangladešu."
   },
   {
     "file": "src/pages/TermsPage.jsx",
@@ -2522,8 +2522,8 @@ export default [
   },
   {
     "file": "src/pages/FounderPage.jsx",
-    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also designed and built the company’s website and its internal workforce-management system himself, so candidate records, documents and deployments are tracked in one place.",
-    "hr": "Danas vodi partnerstva i razvoj poslovanja tvrtke u zemljama Zaljeva, Europi i Aziji. Također je sam osmislio i izradio web-mjesto tvrtke i njezin interni sustav za upravljanje radnom snagom, tako da se evidencija kandidata, dokumenti i slanja radnika prate na jednom mjestu."
+    "en": "Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also led the development of the company’s website and its internal workforce-management system, so candidate records, documents and deployments are tracked in one place.",
+    "hr": "Danas vodi partnerstva i razvoj poslovanja tvrtke u zemljama Zaljeva, Europi i Aziji. Također je vodio razvoj web-mjesta tvrtke i njezina internog sustava za upravljanje radnom snagom, tako da se evidencija kandidata, dokumenti i slanja radnika prate na jednom mjestu."
   },
   {
     "file": "src/pages/FounderPage.jsx",
