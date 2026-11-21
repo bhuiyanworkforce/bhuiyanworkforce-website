@@ -67,9 +67,17 @@ const GUARD_FILE_TYPES = {
   jpg: { type: 'image/jpeg', magic: [[0xff, 0xd8, 0xff]] },
   jpeg: { type: 'image/jpeg', magic: [[0xff, 0xd8, 0xff]] },
   png: { type: 'image/png', magic: [[0x89, 0x50, 0x4e, 0x47]] },
+  webp: { type: 'image/webp', magic: [[0x52, 0x49, 0x46, 0x46]], test: (h) => h.slice(8, 12) === 'WEBP' },
+  heic: { type: 'image/heic', magic: [[]], test: (h) => guardIsHeif(h) },
+  heif: { type: 'image/heif', magic: [[]], test: (h) => guardIsHeif(h) },
   docx: { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', magic: [[0x50, 0x4b, 0x03, 0x04]] },
   doc: { type: 'application/msword', magic: [[0xd0, 0xcf, 0x11, 0xe0]] },
 };
+
+// Phone photos are often HEIC/HEIF: an "ftyp" box at byte 4 followed by a HEIF brand.
+function guardIsHeif(h) {
+  return h.slice(4, 8) === 'ftyp' && /^(heic|heix|hevc|hevx|heim|heis|mif1|msf1)/.test(h.slice(8, 12));
+}
 
 const guardHits = new Map(); // ip -> [timestamps], used only by the fallback limiter
 
@@ -134,7 +142,7 @@ function guardCheckFile(file) {
   const dot = rawName.lastIndexOf('.');
   const ext = dot > 0 ? rawName.slice(dot + 1).toLowerCase() : '';
   const rule = GUARD_FILE_TYPES[ext];
-  if (!rule) return { error: 'File type not allowed. Use PDF, JPG, PNG, DOC or DOCX.' };
+  if (!rule) return { error: 'File type not allowed. Use PDF, JPG, PNG, WebP, HEIC, DOC or DOCX.' };
 
   const content = file.content;
   if (typeof content !== 'string' || content.length < 8) return { error: 'Invalid file content' };
@@ -145,11 +153,14 @@ function guardCheckFile(file) {
 
   let head;
   try {
-    head = atob(content.slice(0, 16));
+    head = atob(content.slice(0, 1368)); // first ~1 KB
   } catch {
     return { error: 'Invalid file encoding' };
   }
-  const matches = rule.magic.some((sig) => sig.every((b, i) => head.charCodeAt(i) === b));
+  // PDF files may start with a few stray bytes, so the marker may appear within the first KB.
+  const matches = ext === 'pdf'
+    ? head.includes('%PDF')
+    : rule.magic.some((sig) => sig.every((b, i) => head.charCodeAt(i) === b)) && (!rule.test || rule.test(head));
   if (!matches) return { error: 'File content does not match its type' };
 
   const base = rawName.slice(0, dot).replace(/[\\/:*?"<>|]+/g, '_').replace(/^\.+/, '').slice(0, 80) || 'file';
