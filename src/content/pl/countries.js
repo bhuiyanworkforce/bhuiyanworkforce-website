@@ -17,7 +17,7 @@ export default [
       "Produkcja",
       "Wsparcie opieki zdrowotnej"
     ],
-    "visaType": "Wiza pracownicza (Iqama)",
+    "visaType": "Wiza pracownicza (Iqama wydawana po przyjeździe)",
     "visaFee": "SAR 500–800 (ok. USD 135–215) — opłaca pracodawca",
     "processingTime": "4–8 tygodni",
     "process": [

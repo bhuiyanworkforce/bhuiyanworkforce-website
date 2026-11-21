@@ -6,18 +6,18 @@ export default {
     "story": [
       "Bhuiyan Workforce Ltd. powstała z jasno określoną misją: tworzyć przejrzyste, etyczne ścieżki dostępu do legalnego zatrudnienia za granicą dla wykwalifikowanych pracowników z Bangladeszu — jednocześnie zapewniając zagranicznym pracodawcom niezawodnego partnera w rekrutacji, działającego w pełnej zgodności z przepisami.",
       "Bangladesz dysponuje jedną z najbardziej kompetentnych grup pracowników zatrudnionych za granicą na świecie. Miliony jego obywateli pracują za granicą w budownictwie, produkcji, logistyce i hotelarstwie. Zbyt często pracownicy ci byli wykorzystywani przez pośredników działających poza nadzorem regulacyjnym. Istniejemy po to, by działać inaczej.",
-      "Bhuiyan Workforce Ltd. buduje zweryfikowane szlaki relokacji pracowników do 25+ krajów na Bliskim Wschodzie, w Europie, Azji i Afryce — przy czym każdy proces zatrudnienia jest zaplanowany tak, aby był zarejestrowany w BMET i w pełni udokumentowany."
+      "Bhuiyan Workforce Ltd. buduje zweryfikowane szlaki relokacji pracowników do 25+ krajów na Bliskim Wschodzie, w Europie, Azji i Afryce — przy czym każdy proces zatrudnienia jest zarejestrowany w BMET i w pełni udokumentowany."
     ],
     "values": [
       {
         "icon": "⚖️",
-        "title": "Przejrzysta rekrutacja",
+        "title": "Przejrzystość dla pracowników",
         "body": "Pracownicy otrzymują zweryfikowane, rzetelne oferty pracy w swoim języku — z jasnymi warunkami, pełną dokumentacją i bez ukrytych opłat — zanim podejmą jakiekolwiek zobowiązanie."
       },
       {
         "icon": "🏛️",
         "title": "Zgodność z przepisami",
-        "body": "Każdy proces zatrudnienia jest zarejestrowany w BMET. Każdy pracownik przeszedł badanie lekarskie GAMCA z wynikiem pozytywnym. Prowadzimy kompletną dokumentację każdej relokacji pracowników."
+        "body": "Każdy proces zatrudnienia jest zarejestrowany w BMET. Każdy pracownik kierowany do krajów GCC przechodzi badanie lekarskie GAMCA. Prowadzimy kompletną dokumentację każdej relokacji pracowników."
       },
       {
         "icon": "🔍",
@@ -36,7 +36,7 @@ export default {
       },
       {
         "icon": "📣",
-        "title": "Przejrzystość",
+        "title": "Przejrzystość dla pracodawców",
         "body": "Pracodawcy otrzymują jasne harmonogramy, rzetelne oceny dostępności kandydatów i szczegółowe zestawienie wszystkich kosztów, zanim podejmą jakiekolwiek zobowiązanie."
       }
     ],
@@ -119,7 +119,7 @@ export default {
           },
           {
             "q": "Czy zajmujecie się całą dokumentacją?",
-            "a": "Tak. Zajmujemy się rejestracją w BMET, uzyskaniem zgody Biura ds. Zasobów Pracowniczych, badaniami lekarskimi GAMCA dla krajów regionu Zatoki Perskiej, zaświadczeniami o niekaralności, weryfikacją ważności paszportów i procesem składania wniosków wizowych. Ty dostarczasz ważne pismo określające zapotrzebowanie na pracowników oraz umowę o pracę; my zajmujemy się resztą."
+            "a": "Tak. Zajmujemy się rejestracją w BMET, uzyskaniem zgody emigracyjnej (Smart Card), badaniami lekarskimi GAMCA dla krajów regionu Zatoki Perskiej, zaświadczeniami o niekaralności, weryfikacją ważności paszportów i procesem składania wniosków wizowych. Ty dostarczasz ważne pismo określające zapotrzebowanie na pracowników oraz umowę o pracę; my zajmujemy się resztą."
           },
           {
             "q": "Co się stanie, jeśli pracownik nie spełnia oczekiwań lub odejdzie wcześniej?",
@@ -161,7 +161,7 @@ export default {
         "items": [
           {
             "q": "Czym jest GAMCA i dlaczego jest wymagane?",
-            "a": "Badanie lekarskie GAMCA (Stowarzyszenie Zatwierdzonych Ośrodków Medycznych Regionu Zatoki Perskiej) jest obowiązkowym badaniem potwierdzającym stan zdrowia, wymaganym przez wszystkie kraje GCC przed rozpoczęciem rozpatrywania wizy pracownika. Obejmuje badania w kierunku chorób zakaźnych oraz ocenę ogólnej zdolności do pracy. Koordynujemy terminy badań GAMCA dla wszystkich pracowników wyjeżdżających do krajów regionu Zatoki Perskiej."
+            "a": "Badanie lekarskie GAMCA (GCC Approved Medical Centers Association) jest obowiązkowym badaniem potwierdzającym stan zdrowia, wymaganym przez wszystkie kraje GCC przed rozpoczęciem rozpatrywania wizy pracownika. Obejmuje badania w kierunku chorób zakaźnych oraz ocenę ogólnej zdolności do pracy. Koordynujemy terminy badań GAMCA dla wszystkich pracowników wyjeżdżających do krajów regionu Zatoki Perskiej."
           }
         ]
       }
