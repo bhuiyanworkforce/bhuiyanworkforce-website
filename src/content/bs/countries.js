@@ -16,7 +16,7 @@ export default {
       "Proizvodnja",
       "Podrška u zdravstvenoj zaštiti"
     ],
-    "visaType": "Radna viza (Iqama)",
+    "visaType": "Radna viza (Iqama se izdaje nakon dolaska)",
     "visaFee": "SAR 500–800 (oko USD 135–215) — plaća poslodavac",
     "processingTime": "4–8 sedmica",
     "process": [
