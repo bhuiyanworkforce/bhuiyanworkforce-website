@@ -41,7 +41,7 @@ export const COUNTRIES = [
     language: 'Arabic',
     overview: `Saudi Arabia is the single largest employer of Bangladeshi overseas workers and a cornerstone of the Gulf labour market. The Kingdom is undergoing a massive economic transformation under Vision 2030, driving enormous demand for skilled and semi-skilled workers across construction, infrastructure, hospitality, and manufacturing. With a Bangladeshi community of over 2 million workers already established, the support networks and community infrastructure are well developed.`,
     topSectors: ['Construction & Infrastructure', 'Cleaning & Facilities', 'Driving & Transport', 'Hospitality & Catering', 'Manufacturing', 'Healthcare Support'],
-    visaType: 'Employment Visa (Iqama)',
+    visaType: 'Employment Visa (Iqama issued after arrival)',
     visaFee: 'SAR 500–800 (approx. USD 135–215) — paid by employer',
     processingTime: '4–8 weeks',
     process: [

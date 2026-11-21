@@ -661,7 +661,7 @@ Bangladesh has over 40 years of experience supplying construction labour to the 
 
 Before recruiting from Bangladesh, Gulf employers should be aware of a few key requirements:
 
-**GAMCA Medical Clearance** is mandatory for all GCC-bound workers. Candidates must pass a health screening at a Gulf-Approved Medical Centre Association facility before their visa can be processed.
+**GAMCA Medical Clearance** is mandatory for all GCC-bound workers. Candidates must pass a health screening at a GCC Approved Medical Centers Association facility before their visa can be processed.
 
 **Demand Letter & Employment Contract** must be provided by the employer before the recruitment agency can begin processing. The contract must clearly state salary, working hours, accommodation, and contract duration — and must be attested by the relevant embassy.
 
@@ -736,7 +736,7 @@ Malaysia and the Gulf Cooperation Council (GCC) countries — Saudi Arabia, UAE,
 ## Visa & Documentation
 
 **Gulf Countries:**
-- Require GAMCA medical clearance (Gulf-Approved Medical Centre Association)
+- Require GAMCA medical clearance (GCC Approved Medical Centers Association)
 - Visa processing typically takes 4–8 weeks
 - Work visas are employer-sponsored and tied to a specific company
 - Workers must have an attested employment contract before departure
