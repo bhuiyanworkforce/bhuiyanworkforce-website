@@ -48,7 +48,7 @@ export default function PrivacyPage() {
               <li><strong><Tx>Worker candidate registrations</Tx></strong> <Tx>— name, date of birth, nationality, passport details, trade qualifications, work experience, and supporting documents such as certificates and photographs</Tx></li>
               <li><strong><Tx>Technical data</Tx></strong> <Tx>— IP address, browser type, and pages visited, collected automatically when you use our website</Tx></li>
             </ul>
-            <p><Tx>Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.</Tx></p>
+            <p><Tx>Worker candidates apply through an online form on this website. Documents you upload there, such as your CV, passport copy and certificates, are sent to our team by email and pass through our hosting provider's servers (Cloudflare) and our email delivery provider's servers (Resend) on the way. Before you can submit the form you are asked to confirm that you have read this policy and consent to this processing, and we keep a record of the time you gave that consent together with your application.</Tx></p>
             <p><Tx>We do not collect payment information. All financial transactions related to our services are conducted offline.</Tx></p>
 
             <h2><Tx>4. How We Use Your Information</Tx></h2>

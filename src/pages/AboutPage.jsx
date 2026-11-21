@@ -75,7 +75,7 @@ export default function AboutPage() {
           <div className="team-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
             {c.team.map(m => (
               <div className="team-card" key={m.name}>
-                <div className="team-avatar">
+                <div className={`team-avatar${m.photo ? '' : ' team-avatar-initials'}`}>
                   {m.photo
                     ? <img src={m.photo} alt={m.name} loading="lazy" decoding="async" />
                     : <span>{m.initials}</span>

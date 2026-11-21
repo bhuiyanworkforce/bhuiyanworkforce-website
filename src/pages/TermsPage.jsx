@@ -25,7 +25,7 @@ export default function TermsPage() {
         <div className="container">
           <div style={{ maxWidth: 760, margin: '0 auto' }} className="prose">
             <p style={{ color: 'var(--gray-500)', marginBottom: 32, fontSize: '0.875rem' }}>
-              <Tx>Last updated: May 2026</Tx>
+              <Tx>Last updated: November 2026</Tx>
             </p>
 
             <h2><Tx>1. Acceptance of Terms</Tx></h2>
@@ -81,7 +81,7 @@ export default function TermsPage() {
             <p>Bhuiyan Workforce Ltd. only communicates through official channels: info@bhuiyanworkforce.com, careers@bhuiyanworkforce.com, and the phone numbers listed on this website. We do not offer jobs via unsolicited WhatsApp messages, social media direct messages, or unofficial websites. If you receive a suspicious communication claiming to be from us, please report it to <a href="mailto:info@bhuiyanworkforce.com" style={{ color: 'var(--navy)', fontWeight: 600 }}>info@bhuiyanworkforce.com</a> <Tx>immediately.</Tx></p>
 
             <h2><Tx>12. Governing Law and Jurisdiction</Tx></h2>
-            <p><Tx>These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the Digital Security Act 2018. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.</Tx></p>
+            <p><Tx>These Terms of Service are governed by and construed in accordance with the laws of the People's Republic of Bangladesh, including but not limited to the Contract Act 1872, the Information and Communication Technology Act 2006, and the cyber security legislation in force from time to time. Any dispute, claim, or controversy arising out of or relating to these terms or your use of the website shall be subject to the exclusive jurisdiction of the competent courts of Dhaka, Bangladesh.</Tx></p>
 
             <h2><Tx>13. Changes to These Terms</Tx></h2>
             <p><Tx>We reserve the right to update or modify these Terms of Service at any time. Changes will be posted on this page with a revised "last updated" date. Continued use of the website following the posting of any changes constitutes your acceptance of the revised terms. We encourage you to review this page periodically.</Tx></p>

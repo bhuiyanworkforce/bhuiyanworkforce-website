@@ -429,14 +429,14 @@ The applicant accepted the Privacy Policy and consented to processing of their d
 
                     <div style={groupStyle}>
                       <label htmlFor="wa-passportFile" style={labelStyle}><Tx>Upload Passport Copy (PDF or image, max 5MB)</Tx></label>
-                      <input id="wa-passportFile" type="file" accept=".pdf,.jpg,.jpeg,.png" onChange={handleFile('passportFile')}
+                      <input id="wa-passportFile" type="file" accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.heif" onChange={handleFile('passportFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.passportFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.passportFile.name}</span>}
                     </div>
 
                     <div style={groupStyle}>
                       <label htmlFor="wa-certFile" style={labelStyle}><Tx>Upload Trade/Skills Certificate (optional)</Tx></label>
-                      <input id="wa-certFile" type="file" accept=".pdf,.jpg,.jpeg,.png" onChange={handleFile('certFile')}
+                      <input id="wa-certFile" type="file" accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.heif" onChange={handleFile('certFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.certFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.certFile.name}</span>}
                     </div>

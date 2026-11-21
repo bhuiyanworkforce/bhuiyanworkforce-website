@@ -26,12 +26,10 @@ export default function CountryPage() {
               <Link to="/countries">{tr('nav_countries')}</Link><span>›</span>
               <span style={{ color: 'var(--gold)' }}>{country.name}</span>
             </div>
+            <div className="label-tag" style={{ marginBottom: 12 }}>{country.region}</div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 16 }}>
-              <span style={{ fontSize: '3rem' }}>{country.flag}</span>
-              <div>
-                <div className="label-tag" style={{ marginBottom: 6 }}>{country.region}</div>
-                <h1 style={{ margin: 0 }}>{country.h1 || tr('c.working_in', { name: country.name })}</h1>
-              </div>
+              <span style={{ fontSize: '3rem', lineHeight: 1 }}>{country.flag}</span>
+              <h1 style={{ margin: 0 }}>{country.h1 || tr('c.working_in', { name: country.name })}</h1>
             </div>
             <p>{country.overview}</p>
           </div>

@@ -15,7 +15,6 @@ const go = (id) => {
   else globalThis.location.href = '/#' + id;
 };
 
-const FOUNDING_SLOTS_REMAINING = 10;
 
 const mapPlaceholderStyle = { height: 260, background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' };
 
@@ -90,11 +89,12 @@ function ParticleField() {
         .bw-stat-glass .num { font-family: var(--font-display); font-size: 1.8rem; font-weight: 900; color: var(--gold); line-height: 1; }
         .bw-stat-glass .lbl { font-size: 0.62rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.5); margin-top: 6px; }
         .bw-hero-img-card {
-          border-radius: 20px; overflow: hidden;
+          border-radius: 20px;
           border: 1px solid rgba(201,168,76,0.2);
           box-shadow: 0 32px 80px rgba(0,0,0,0.5);
           animation: imageFloat 6s ease-in-out infinite;
         }
+        .bw-hero-img-clip { position: relative; border-radius: 19px; overflow: hidden; }
         .bw-badge-tr {
           position: absolute; top: -16px; inset-inline-end: -16px;
           background: linear-gradient(135deg, var(--gold), var(--gold-light));
@@ -211,6 +211,7 @@ export default function HomePage() {
             {/* Right */}
             <div className="bw-hero-right hero-right-anim" style={{ position: 'relative' }}>
               <div className="bw-hero-img-card" style={{ position: 'relative' }}>
+                <div className="bw-hero-img-clip">
                 <img
                   src="/hero-image.svg"
                   alt={tr('h.hero_alt')}
@@ -224,13 +225,14 @@ export default function HomePage() {
                   position: 'absolute', inset: 0,
                   background: 'linear-gradient(to top, rgba(8,25,46,0.85) 0%, transparent 50%)',
                 }} />
-                <div style={{ position: 'absolute', bottom: 20, insetInlineStart: 20 }}>
+                <div style={{ position: 'absolute', bottom: 20, insetInlineStart: 128, insetInlineEnd: 20 }}>
                   <div style={{ fontFamily: 'monospace', fontSize: '0.65rem', color: 'var(--gold)', letterSpacing: '0.08em' }}>
                     {tr('h.hero_verified')}
                   </div>
                   <div style={{ fontFamily: 'monospace', fontSize: '0.62rem', color: 'rgba(255,255,255,0.5)', marginTop: 4 }}>
                     {tr('h.hero_destinations')}
                   </div>
+                </div>
                 </div>
                 <div className="bw-badge-tr">
                   <div className="num">24h</div>
@@ -250,7 +252,7 @@ export default function HomePage() {
                   { num: '100%', lbl: tr('h.stat_ethical') },
                 ].map(s => (
                   <div className="bw-stat-glass" key={s.lbl}>
-                    <div className="num">{s.num}</div>
+                    <div className="num"><bdi dir="ltr">{s.num}</bdi></div>
                     <div className="lbl">{s.lbl}</div>
                   </div>
                 ))}
@@ -269,7 +271,7 @@ export default function HomePage() {
               <span className="bw-limited-badge">{tr('h.limited')}</span>
               <div>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.05rem', fontWeight: 700, color: 'var(--navy)' }}>
-                  {t('founding_tag', lang)} — {tr('h.slots_remaining', { n: FOUNDING_SLOTS_REMAINING })}
+                  {t('founding_tag', lang)} — {tr('h.slots_remaining')}
                 </div>
                 <div style={{ fontSize: '0.8rem', color: 'rgba(15,39,68,0.7)', marginTop: 2 }}>
                   {tr('h.founding_perks')}
@@ -282,24 +284,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-      {/* ── STATS BAND ───────────────────────────────────────────────────────── */}
-      <section className="stats-band" aria-label={tr('h.stats_aria')}>
-        <div className="container">
-          <div className="stats-grid">
-            {[
-              { num: '25+', label: t('home_stats_countries', lang) },
-              { num: '25',  label: t('home_stats_sectors', lang) },
-              { num: '24h', label: t('home_stats_response', lang) },
-            ].map(s => (
-              <div className="stat-item" key={s.label}>
-                <span className="stat-num">{s.num}</span>
-                <span className="stat-label">{s.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── CAPABILITIES DECK CTA ────────────────────────────────────────────── */}
       <section style={{ background: 'var(--navy)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '32px 0' }}>
@@ -457,7 +441,7 @@ export default function HomePage() {
                   { num: '25',  lbl: t('home_stats_sectors', lang) },
                 ].map(s => (
                   <div className="why-image-stat" key={s.lbl}>
-                    <div className="num">{s.num}</div>
+                    <div className="num"><bdi dir="ltr">{s.num}</bdi></div>
                     <div className="lbl">{s.lbl}</div>
                   </div>
                 ))}
@@ -554,11 +538,8 @@ export default function HomePage() {
                   <div style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--gold)', marginBottom: 8 }}>
                     {tr('h.slots_label')}
                   </div>
-                  <div style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--navy)', lineHeight: 1, fontFamily: 'var(--font-display)' }}>
-                    {FOUNDING_SLOTS_REMAINING}
-                  </div>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--gray-500)', marginTop: 4 }}>
-                    {t('founding_slots', lang)}
+                  <div style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--navy)', lineHeight: 1.15, fontFamily: 'var(--font-display)' }}>
+                    {tr('h.slots_remaining')}
                   </div>
                 </div>
                 <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(201,168,76,0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.75rem', flexShrink: 0 }}>

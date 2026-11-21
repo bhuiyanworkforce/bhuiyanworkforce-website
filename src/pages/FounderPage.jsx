@@ -95,7 +95,7 @@ export default function FounderPage() {
         </p>
         <p style={{ ...body, marginBottom: 0 }}>
           Today he leads the company’s partnerships and business development across the Gulf, Europe and Asia. He also
-          designed and built the company’s website and its internal workforce-management system himself, so candidate
+          led the development of the company’s website and its internal workforce-management system, so candidate
           records, documents and deployments are tracked in one place.
         </p>
       </Block>
@@ -114,11 +114,11 @@ export default function FounderPage() {
       <Block title="Get in touch">
         <p style={body}>
           Employers and partners can write to Mr. Bhuiyan directly at{' '}
-          <a href="mailto:rezaul@bhuiyanworkforce.com"><bdi dir="ltr">rezaul@bhuiyanworkforce.com</bdi></a> or on WhatsApp at{' '}
+          <a href="mailto:Rezaul@bhuiyanworkforce.com"><bdi dir="ltr">Rezaul@bhuiyanworkforce.com</bdi></a> or on WhatsApp at{' '}
           <a href="https://wa.me/8801864567912" target="_blank" rel="noopener noreferrer"><bdi dir="ltr">+880 1864 567912</bdi></a>.
         </p>
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 20 }}>
-          <Link to="/about" className="btn btn-secondary">About the company</Link>
+          <Link to="/about" className="btn btn-outline">About the company</Link>
           <Link to="/capabilities" className="btn btn-primary">See our capabilities</Link>
         </div>
       </Block>
