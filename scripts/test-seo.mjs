@@ -22,6 +22,7 @@ import '../src/i18n/de-bundle.js'; // same for German
 import '../src/i18n/hu-bundle.js'; // same for Hungarian
 import '../src/i18n/pt-bundle.js'; // same for Portuguese
 import '../src/i18n/bn-bundle.js'; // same for Bengali
+import { COUNTRIES_BN, SERVICES_BN } from '../src/content/bn/workerTopics.js';
 import '../src/i18n/ro-bundle.js'; // same for Romanian
 import { buildPath, parsePath, ENTITY_SLUGS, PAGE_SLUGS, SEGMENTS } from '../src/i18n/slugs.js';
 import { LOCALES, REAL_LOCALE_CODES } from '../src/i18n/config.js';
@@ -158,7 +159,7 @@ test('page counts', () => {
   assert.equal(by('it'), 11 + 25 + 33 + 18 + 3);
   assert.equal(by('es'), 11 + 25 + 33 + 18 + 3);
   assert.equal(by('ms'), 9 + 25 + 33); // Malay: no blog index, articles, employer guide or guides yet
-  assert.equal(by('bn'), 3); // Bengali worker section: home, FAQ, worker guide
+  assert.equal(by('bn'), 3 + 33 + 25); // Bengali worker section: home, FAQ, worker guide, every country and every service
   for (const l of ['de', 'hu', 'pt']) assert.equal(by(l), 9 + 25 + 33 + 3); // home, about, faq, countries index, capabilities, apply, privacy, terms, founder, services, countries, 3 guides; no blog or employer-guide index yet
 });
 test('availability and 404 resolution', () => {
@@ -171,11 +172,11 @@ test('availability and 404 resolution', () => {
 });
 test('hreflang: self, x-default, only real translations', () => {
   const alts = getAlternates({ type: 'country', id: 'saudi-arabia' });
-  assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
+  assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'bn', 'x-default']);
   assert.equal(alts.find((a) => a.hreflang === 'x-default').href, 'https://bhuiyanworkforce.com/countries/saudi-arabia');
   assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }).map((a) => a.hreflang), ['en', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
   assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
-  assert.deepEqual(getAlternates({ type: 'country', id: 'slovenia' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'country', id: 'slovenia' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'bn', 'x-default']);
 });
 test('Bengali worker section: own URLs, hreflang pairs, no stray alternates', () => {
   assert.equal(buildPath('bn', { type: 'page', id: 'home' }), '/bn');
@@ -185,13 +186,15 @@ test('Bengali worker section: own URLs, hreflang pairs, no stray alternates', ()
   assert.equal(resolvePath('/bn/worker-guide').status, 'ok');
   assert.equal(resolvePath('/bn/faq').status, 'ok');
   assert.equal(resolvePath('/bn/about').status, 'notfound'); // employer pages are English-only
-  assert.equal(resolvePath('/bn/countries/qatar').status, 'notfound');
+  assert.equal(resolvePath('/bn/countries/qatar').status, 'ok');
+  assert.equal(resolvePath('/bn/services/drivers').status, 'ok');
+  assert.equal(resolvePath('/bn/countries').status, 'notfound'); // no Bengali countries index
   const guide = getAlternates({ type: 'page', id: 'worker-guide' });
   assert.deepEqual(guide.map((a) => a.hreflang), ['en', 'bn', 'x-default']);
   assert.equal(guide.find((a) => a.hreflang === 'bn').href, 'https://bhuiyanworkforce.com/bn/worker-guide');
   assert.deepEqual(getAlternates({ type: 'page', id: 'faq' }).map((a) => a.hreflang).slice(-2), ['bn', 'x-default']);
   assert.ok(getAlternates({ type: 'page', id: 'home' }).some((a) => a.hreflang === 'bn' && a.href === 'https://bhuiyanworkforce.com/bn'));
-  assert.equal(getAlternates({ type: 'country', id: 'qatar' }).some((a) => a.hreflang === 'bn'), false);
+  assert.equal(getAlternates({ type: 'country', id: 'qatar' }).some((a) => a.hreflang === 'bn' && a.href === 'https://bhuiyanworkforce.com/bn/countries/qatar'), true);
 });
 test('Bengali heads: Bengali title and description, own canonical, bn_BD, Noto Sans Bengali, valid JSON-LD', () => {
   for (const id of ['home', 'faq', 'worker-guide']) {
@@ -219,6 +222,27 @@ test('Bengali pages avoid licence, visa-guarantee and cost claims in head text',
     const text = [h.title, h.description, h.keywords || ''].join(' ');
     assert.ok(!/ভিসা\s*(নিশ্চিত|গ্যারান্টি)|লাইসেন্সপ্রাপ্ত\s*এজেন্সি|BMET\s*registered/i.test(text), `${id}: risky claim in head`);
   }
+});
+test('Bengali country and service heads: unique Bengali titles, valid schema, safe wording', () => {
+  const titles = new Set();
+  const descs = new Set();
+  const check = (route, id) => {
+    const h = getPageHead(route, 'bn', {});
+    assert.ok(/[\u0980-\u09FF]/.test(h.title) && /[\u0980-\u09FF]/.test(h.description), `${id}: not Bengali`);
+    assert.equal(h.canonical, `https://bhuiyanworkforce.com/bn/${route.type === 'country' ? 'countries' : 'services'}/${route.id}`);
+    assert.ok(!titles.has(h.title), `${id}: duplicate title`);
+    assert.ok(!descs.has(h.description), `${id}: duplicate description`);
+    titles.add(h.title); descs.add(h.description);
+    const text = [h.title, h.description, h.keywords || ''].join(' ');
+    assert.ok(!/ভিসা\s*(নিশ্চিত|গ্যারান্টি|রেডি)|লাইসেন্সপ্রাপ্ত|ভুয়া|প্রতারণা|ভিসা বাণিজ্য/.test(text), `${id}: risky wording`);
+    assert.ok(h.alternates.some((a) => a.hreflang === 'bn'), `${id}: no bn alternate`);
+    const crumb = h.jsonld.find((j) => j['@type'] === 'BreadcrumbList');
+    assert.ok(crumb && !crumb.itemListElement.some((i) => /\/bn\/countries$/.test(i.item)), `${id}: breadcrumb points to a missing page`);
+    for (const j of h.jsonld) JSON.parse(JSON.stringify(j));
+  };
+  for (const slug of Object.keys(COUNTRIES_BN)) check({ type: 'country', id: slug }, `country ${slug}`);
+  for (const slug of Object.keys(SERVICES_BN)) check({ type: 'service', id: slug }, `service ${slug}`);
+  assert.equal(titles.size, 58);
 });
 test('language switcher links', () => {
   const links = getLanguageLinks({ type: 'page', id: 'privacy' }, 'en');
