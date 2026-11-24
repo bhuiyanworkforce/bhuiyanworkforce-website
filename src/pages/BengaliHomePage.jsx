@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from '../i18n/router';
+import { COUNTRIES_BN, SERVICES_BN, REGION_BN } from '../content/bn/workerTopics.js';
 
 // Bengali landing page (/bn) for Bangladeshi workers searching in Bangla. It is deliberately
 // informational: it makes no job, visa, cost or licence promise. Specific facts (partner agency
@@ -14,22 +15,6 @@ const PROMISES = [
   ['স্বচ্ছ খরচ ও রসিদ', 'টাকা নেওয়ার আগে সব খরচের বিস্তারিত লিখিত তালিকা দেওয়া হবে। কোনো লুকানো ফি থাকবে না এবং প্রতিটি টাকার রসিদ দেওয়া হবে।'],
   ['যাচাই ও দক্ষতা পরীক্ষা', 'আপনার তথ্য, অভিজ্ঞতা ও কাজের দক্ষতা যাচাই করা হয়। প্রয়োজনে হাতে-কলমে ট্রেড টেস্ট নেওয়া হয়।'],
   ['প্রশিক্ষণ ও খোঁজখবর', 'রওনা হওয়ার আগে গন্তব্য দেশের আইন, সংস্কৃতি ও আপনার অধিকার সম্পর্কে ব্রিফিং দেওয়া হবে। বিদেশে পৌঁছানোর পরেও খোঁজখবর নেওয়া হবে।'],
-];
-
-const TRADES = [
-  'নির্মাণ ও ইঞ্জিনিয়ারিং', 'ওয়েল্ডিং ও ফেব্রিকেশন', 'প্লাম্বিং ও এইচভিএসি', 'ইলেকট্রিক্যাল হেল্পার',
-  'রাজমিস্ত্রি ও ইট গাঁথা', 'স্টিল ফিক্সিং', 'স্ক্যাফোল্ডিং ও ফর্মওয়ার্ক', 'পেইন্টিং ও ফিনিশিং',
-  'হেভি ইকুইপমেন্ট অপারেটর', 'ড্রাইভার ও পরিবহন', 'শেফ ও হসপিটালিটি', 'কারখানা ও উৎপাদন',
-  'ওয়্যারহাউস ও লজিস্টিকস', 'খাদ্য প্রক্রিয়াজাতকরণ', 'কৃষি ও বাগান', 'ল্যান্ডস্কেপিং',
-  'নিরাপত্তা প্রহরী', 'ক্লিনিং ও হাউসকিপিং', 'রিটেইল ও সুপারশপ', 'কেয়ারগিভিং',
-  'লন্ড্রি ও লিনেন', 'তেল ও গ্যাস', 'মৎস্য ও অ্যাকুয়াকালচার', 'জাহাজ ও মেরিন ফেব্রিকেশন', 'গৃহকর্মী',
-];
-
-const REGIONS = [
-  ['মধ্যপ্রাচ্য', 'সৌদি আরব, সংযুক্ত আরব আমিরাত, কাতার, ওমান এবং আরও কয়েকটি দেশ'],
-  ['ইউরোপ', 'পোল্যান্ড, রোমানিয়া, পর্তুগাল, গ্রিস, বুলগেরিয়া এবং আরও কয়েকটি দেশ'],
-  ['এশিয়া', 'মালয়েশিয়া, সিঙ্গাপুর, মালদ্বীপ, আর্মেনিয়া, জর্জিয়া'],
-  ['আফ্রিকা', 'মরিশাস, সেশেলস'],
 ];
 
 const STEPS = [
@@ -102,10 +87,12 @@ export default function BengaliHomePage() {
         </p>
       </Section>
 
-      <Section title="যেসব পেশায় নিয়োগকর্তাদের সঙ্গে কাজ করি">
+      <Section title="যেসব পেশায় নিয়োগকর্তাদের সঙ্গে কাজ করি" id="services">
         <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-          {TRADES.map((t) => (
-            <li key={t} style={{ padding: '8px 14px', borderRadius: 999, border: '1px solid var(--gray-200, #e5e7eb)', background: 'var(--white, #fff)', fontSize: '0.92rem' }}>{t}</li>
+          {Object.entries(SERVICES_BN).map(([slug, s]) => (
+            <li key={slug}>
+              <Link to={`/services/${slug}`} style={{ display: 'inline-block', padding: '8px 14px', borderRadius: 999, border: '1px solid var(--gray-200, #e5e7eb)', background: 'var(--white, #fff)', fontSize: '0.92rem' }}>{s.name}</Link>
+            </li>
           ))}
         </ul>
         <p style={{ marginTop: 16, fontSize: '0.9rem', lineHeight: 1.7, color: 'var(--gray-500)' }}>
@@ -113,18 +100,27 @@ export default function BengaliHomePage() {
         </p>
       </Section>
 
-      <Section title="কোন অঞ্চলের নিয়োগকর্তাদের সঙ্গে যোগাযোগ" tint>
-        <dl style={{ margin: 0, display: 'grid', gap: 14 }}>
-          {REGIONS.map(([region, countries]) => (
-            <div key={region}>
-              <dt style={{ fontWeight: 700, color: 'var(--navy, #0f2347)' }}>{region}</dt>
-              <dd style={{ margin: '2px 0 0', lineHeight: 1.7, color: 'var(--text-body)' }}>{countries}</dd>
-            </div>
-          ))}
-        </dl>
+      <Section title="কোন দেশের নিয়োগকর্তাদের সঙ্গে যোগাযোগ" tint id="countries">
+        <div style={{ display: 'grid', gap: 18 }}>
+          {Object.entries(REGION_BN).map(([region, label]) => {
+            const list = Object.entries(COUNTRIES_BN).filter(([, c]) => c.region === region);
+            if (!list.length) return null;
+            return (
+              <div key={region}>
+                <h3 style={{ margin: '0 0 8px', fontSize: '1.05rem', color: 'var(--navy, #0f2347)' }}>{label}</h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+                  {list.map(([slug, c]) => (
+                    <li key={slug}>
+                      <Link to={`/countries/${slug}`} style={{ display: 'inline-block', padding: '8px 14px', borderRadius: 999, border: '1px solid var(--gray-200, #e5e7eb)', background: 'var(--white, #fff)', fontSize: '0.92rem' }}>{c.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
         <p style={{ marginTop: 16, fontSize: '0.9rem', lineHeight: 1.7, color: 'var(--gray-500)' }}>
           কোন দেশে কখন সরকারি অনুমোদন চালু আছে তা সময়ের সঙ্গে বদলায়। আবেদনের সময় আমরা সর্বশেষ অবস্থা জানিয়ে দেব।
-          দেশভিত্তিক বিস্তারিত তথ্য <Link to="/countries">ইংরেজিতে দেখুন</Link>।
         </p>
       </Section>
 
