@@ -5,7 +5,7 @@
 // - Browser: src/main.jsx loads the bundle before rendering when the URL is under /ar.
 // - Static build and tests: entry-server.jsx and the scripts import it directly.
 
-export const LAZY_LANGS = ['ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt'];
+export const LAZY_LANGS = ['ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'bn'];
 
 const loaded = new Set();
 

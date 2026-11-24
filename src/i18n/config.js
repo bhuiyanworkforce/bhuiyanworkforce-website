@@ -1,8 +1,9 @@
 // Single source of truth for languages.
 //
 // Real languages (overlay: false) get their own URL prefix, static HTML, hreflang
-// and sitemap entries. Overlay languages (bn) only swap UI strings in place
-// on the English URL after hydration: no URL change, no hreflang, no canonical.
+// and sitemap entries. Overlay languages only swap UI strings in place on the English URL
+// after hydration: no URL change, no hreflang, no canonical. There are none at the moment
+// (Bengali became a real language under /bn, like Italian before it).
 //
 // Adding a real language later needs: one entry here, one locale file in
 // ./locales/, one entry per map in ./slugs.js and one line in ./locales/index.js.
@@ -183,8 +184,12 @@ export const LOCALES = {
     hreflang: 'bn',
     ogLocale: 'bn_BD',
     label: 'বাংলা',
-    prefix: '',
-    overlay: true,
+    prefix: '/bn',
+    overlay: false,
+    // Worker-facing section only (home, FAQ, worker guide). Fonts load like Arabic: fonts.googleapis.com
+    // and fonts.gstatic.com are already allowed by the CSP in public/_headers.
+    fontsHref:
+      'https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap',
   },
 };
 

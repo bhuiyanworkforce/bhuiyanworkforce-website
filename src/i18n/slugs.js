@@ -32,6 +32,7 @@ export const SEGMENTS = {
   de: {},
   hu: {},
   pt: {},
+  bn: {},
   pl: { country: 'kraje', service: 'uslugi', post: 'blog', guide: 'przewodnik-dla-pracodawcow' },
   ro: { country: 'tari', service: 'servicii', post: 'blog', guide: 'ghid-pentru-angajatori' },
   it: { country: 'paesi', service: 'servizi', post: 'blog', guide: 'guida-per-i-datori-di-lavoro' },
@@ -56,6 +57,7 @@ export const PAGE_SLUGS = {
   de: {},
   hu: {},
   pt: {},
+  bn: {},
   pl: {
     about: 'o-nas', faq: 'faq', blog: 'blog', countries: 'kraje',
     capabilities: 'mozliwosci', 'employer-guide': 'przewodnik-dla-pracodawcow',
@@ -87,6 +89,7 @@ export const ENTITY_SLUGS = {
   de: {},
   hu: {},
   pt: {},
+  bn: {},
   pl: {
     country: {
       'saudi-arabia': 'arabia-saudyjska',
