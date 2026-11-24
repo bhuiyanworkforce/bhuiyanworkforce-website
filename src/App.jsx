@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import BengaliHomePage from './pages/BengaliHomePage';
+import { BengaliCountryPage, BengaliServicePage } from './pages/BengaliTopicPages';
 import AboutPage from './pages/AboutPage';
 import FAQPage from './pages/FAQPage';
 import BlogPage from './pages/BlogPage';
@@ -46,9 +47,18 @@ const PAGE_COMPONENTS = {
   founder: FounderPage,
 };
 
+function CountryRoute() {
+  const { urlLang } = useLang();
+  return urlLang === 'bn' ? <BengaliCountryPage /> : <CountryPage />;
+}
+function ServiceRoute() {
+  const { urlLang } = useLang();
+  return urlLang === 'bn' ? <BengaliServicePage /> : <ServicePage />;
+}
+
 const ENTITY_COMPONENTS = {
-  country: CountryPage,
-  service: ServicePage,
+  country: CountryRoute,
+  service: ServiceRoute,
   post: BlogPostPage,
   guide: CountryGuidePage,
 };
