@@ -79,6 +79,8 @@ function breadcrumbFor(route, lang, locale, meta) {
     // There is no /services index page; the services list lives on the homepage.
     service: { name: b.services, route: { type: 'page', id: 'home' }, hash: '#services' },
   }[route.type];
+  // Bengali has no countries index page: its country list lives on the Bengali homepage.
+  if (lang === 'bn' && route.type === 'country') { parents.route = { type: 'page', id: 'home' }; parents.hash = '#countries'; }
   const parentUrl = absoluteUrl(lang, parents.route) + (parents.hash || '');
   return [home, { name: parents.name, url: parentUrl }, here(meta.name || meta.headline)];
 }
