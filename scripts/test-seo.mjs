@@ -252,6 +252,8 @@ test('language switcher links', () => {
   const ok = getLanguageLinks({ type: 'country', id: 'saudi-arabia' }, 'en');
   assert.equal(ok.find((l) => l.code === 'pl').href, '/pl/kraje/arabia-saudyjska');
   assert.equal(ok.find((l) => l.code === 'pl').fallback, false);
+  // Dropdown order: English, Bangla, Arabic, then the rest as set in SWITCHER_ORDER.
+  assert.deepEqual(ok.map((l) => l.code), ['en', 'bn', 'ar', 'pl', 'el', 'ro', 'es', 'it', 'sr', 'bs', 'pt', 'hr', 'bg', 'de', 'mk', 'hu', 'ms']);
 });
 
 console.log('slug lists vs data files');
