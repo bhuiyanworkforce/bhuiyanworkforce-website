@@ -15,6 +15,7 @@ import { DE_TRANSLATED } from './de.translated.js';
 import { HU_TRANSLATED } from './hu.translated.js';
 import { PT_TRANSLATED } from './pt.translated.js';
 import { BG_TRANSLATED } from './bg.translated.js';
+import { BN_TRANSLATED } from './bn.translated.js';
 
 // Arabic, Polish and Bulgarian start as just their route lists. The full locale (head/SEO strings) replaces them
 // through registerLocale() from src/i18n/ar-bundle.js / pl-bundle.js, loaded on demand in the browser.
@@ -35,6 +36,7 @@ export const LOCALE_DATA = {
   de: { code: 'de', translated: DE_TRANSLATED },
   hu: { code: 'hu', translated: HU_TRANSLATED },
   pt: { code: 'pt', translated: PT_TRANSLATED },
+  bn: { code: 'bn', translated: BN_TRANSLATED },
 };
 
 export function registerLocale(code, data) {

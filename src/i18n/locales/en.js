@@ -37,7 +37,7 @@ export default {
         ogDescription:
           'Connecting skilled Bangladeshi workers with employers across 25+ countries. Middle East, Europe, Asia & Africa. BMET-compliant and transparent.',
         keywords:
-          'hire skilled construction workers from Bangladesh, ethical recruitment agency for Saudi Arabia, manpower supply Bangladesh to Europe, BMET registered recruitment agency Bangladesh, Bangladesh to Gulf workers, overseas employment agency Dhaka, manpower export Bangladesh 2026, recruit Bangladeshi workers Poland Romania, construction workers Gulf countries Bangladesh',
+          'hire skilled construction workers from Bangladesh, ethical recruitment agency for Saudi Arabia, manpower supply Bangladesh to Europe, Bangladesh to Gulf workers, overseas employment agency Dhaka, manpower export Bangladesh 2026, recruit Bangladeshi workers Poland Romania, construction workers Gulf countries Bangladesh',
       },
       countries: {
         title: 'Countries We Deploy To — Bhuiyan Workforce Ltd.',
@@ -60,9 +60,9 @@ export default {
         description: 'Register your interest in overseas employment with Bhuiyan Workforce Ltd.',
       },
       'worker-guide': {
-        title: 'Worker Guide (বাংলা) — Bhuiyan Workforce Ltd.',
+        title: 'Worker Guide: Working Abroad from Bangladesh — Bhuiyan Workforce Ltd.',
         description:
-          'Guide for Bangladeshi workers: how overseas recruitment works, what it should cost and what you must never pay. বিদেশে কাজের সঠিক প্রক্রিয়া, খরচ ও সতর্কতা।',
+          'Guide for Bangladeshi workers: how overseas recruitment works, step by step, what it should cost, what you must never pay and how to check that an agency is genuine.',
       },
       capabilities: {
         title: 'Capabilities — Bhuiyan Workforce Ltd.',
