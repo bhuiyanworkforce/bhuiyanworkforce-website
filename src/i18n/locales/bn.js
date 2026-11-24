@@ -1,4 +1,4 @@
-// Bengali head/SEO strings. Bengali pages: home (worker landing), FAQ and worker guide.
+// Bengali head/SEO strings. Bengali pages: home (worker landing), short About, FAQ and worker guide.
 // Wording avoids any licence, visa or placement promise. NEEDS NATIVE-SPEAKER REVIEW before launch.
 import en from './en.js';
 import { bnCountryHeads, bnServiceHeads } from '../../content/bn/topicHeads.js';
@@ -32,6 +32,13 @@ export default {
           'বিদেশে কাজের আগে জানুন: সঠিক প্রক্রিয়া, খরচ, ভিসা, বিএমইটি ও মেডিকেল। লিখিত চুক্তি ও রসিদ ছাড়া টাকা দেবেন না।',
         keywords:
           'বিদেশে কাজ, বিদেশে চাকরি, বিদেশে কাজের প্রক্রিয়া, বিদেশে যাওয়ার খরচ, ওয়ার্ক ভিসা, ওয়ার্ক পারমিট, বিএমইটি রেজিস্ট্রেশন, জিএএমসিএ মেডিকেল, এজেন্সির লাইসেন্স যাচাই, জনশক্তি রপ্তানি, রিক্রুটিং এজেন্সি, ড্রাইভার, কনস্ট্রাকশন, কৃষি শ্রমিক, ব্রাহ্মণবাড়িয়া, Bhuiyan Workforce',
+      },
+      about: {
+        title: 'আমাদের পরিচয় — Bhuiyan Workforce Ltd.',
+        description:
+          'Bhuiyan Workforce Ltd. ব্রাহ্মণবাড়িয়াভিত্তিক জনশক্তি নিয়োগ প্রতিষ্ঠান। আমরা কীভাবে কাজ করি, কী করি না এবং কর্মীরা কীভাবে যোগাযোগ বা অভিযোগ জানাবেন।',
+        keywords:
+          'Bhuiyan Workforce পরিচয়, জনশক্তি নিয়োগ প্রতিষ্ঠান ব্রাহ্মণবাড়িয়া, বিদেশে কাজ, স্বচ্ছ নিয়োগ, লিখিত চুক্তি, রিক্রুটিং এজেন্সি যোগাযোগ',
       },
       faq: {
         title: 'বিদেশে কাজ নিয়ে সাধারণ প্রশ্ন ও উত্তর — Bhuiyan Workforce Ltd.',
