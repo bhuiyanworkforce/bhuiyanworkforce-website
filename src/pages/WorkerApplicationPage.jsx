@@ -6,6 +6,104 @@ import Tx from '../i18n/Tx';
 import { tx } from '../i18n/extra.js';
 import { StaticPageLocalizer } from '../i18n/staticPageText.js';
 
+
+// ── Bangla support ──────────────────────────────────────────────────────────────
+// English visitors (most applicants are from Bangladesh) see every label with its Bangla meaning.
+// Submitted values stay English so the recruitment team reads one consistent format.
+// NEEDS NATIVE-SPEAKER REVIEW.
+const BN_FONT = "'Noto Sans Bengali','Nirmala UI','Kalpurush','Siyam Rupali','Shonar Bangla',system-ui,sans-serif";
+const BN = {
+  'For Workers': 'শ্রমিকদের জন্য',
+  'Full Name (as in passport) *': 'পুরো নাম (পাসপোর্ট অনুযায়ী) *',
+  'Date of Birth *': 'জন্ম তারিখ *',
+  'Nationality': 'জাতীয়তা',
+  'Phone / WhatsApp *': 'ফোন / হোয়াটসঅ্যাপ নম্বর *',
+  'Email Address': 'ইমেইল ঠিকানা',
+  'Home Address (District/Division) *': 'বাড়ির ঠিকানা (জেলা/বিভাগ) *',
+  'Trade Category *': 'পেশার ধরন *',
+  'Specific Role / Trade *': 'নির্দিষ্ট পেশা / কাজ *',
+  'Years of Experience *': 'কত বছরের অভিজ্ঞতা *',
+  'Preferred Country *': 'পছন্দের দেশ *',
+  'Available From': 'কবে থেকে যেতে পারবেন',
+  'Education Level': 'শিক্ষাগত যোগ্যতা',
+  'Languages Spoken': 'যেসব ভাষা জানেন',
+  'Medical Fitness Certificate?': 'মেডিকেল ফিটনেস সনদ আছে কি?',
+  'Trade Test Certificate?': 'ট্রেড টেস্ট সনদ আছে কি?',
+  'BMET Smart Card?': 'বিএমইটি স্মার্ট কার্ড আছে কি?',
+  'Upload CV / Resume (PDF or Word, max 5MB)': 'সিভি আপলোড করুন (PDF বা Word, সর্বোচ্চ ৫ এমবি)',
+  'Passport Number': 'পাসপোর্ট নম্বর',
+  'Passport Expiry Date': 'পাসপোর্টের মেয়াদ শেষের তারিখ',
+  'Upload Passport Copy (PDF or image, max 5MB)': 'পাসপোর্টের কপি আপলোড করুন (PDF বা ছবি, সর্বোচ্চ ৫ এমবি)',
+  'Upload Trade/Skills Certificate (optional)': 'পেশাগত/দক্ষতার সনদ আপলোড করুন (ঐচ্ছিক)',
+  'Additional Information / Cover Letter': 'অতিরিক্ত তথ্য / আবেদনপত্র',
+  'Select category…': 'পেশার ধরন বাছাই করুন…',
+  'Select…': 'বাছাই করুন…',
+  'Select country…': 'দেশ বাছাই করুন…',
+  'Less than 1 year': '১ বছরের কম', '1–2 years': '১–২ বছর', '3–5 years': '৩–৫ বছর', '6–10 years': '৬–১০ বছর', '10+ years': '১০+ বছর',
+  'No formal education': 'প্রাতিষ্ঠানিক শিক্ষা নেই', 'Primary (Class 1–5)': 'প্রাথমিক (১ম–৫ম শ্রেণি)',
+  'JSC / Class 8': 'জেএসসি / ৮ম শ্রেণি', 'SSC / Class 10': 'এসএসসি / ১০ম শ্রেণি', 'HSC / Class 12': 'এইচএসসি / ১২শ শ্রেণি',
+  'Diploma / Vocational': 'ডিপ্লোমা / কারিগরি', "Bachelor's Degree": 'স্নাতক ডিগ্রি', "Master's Degree or above": 'স্নাতকোত্তর বা তার ঊর্ধ্বে',
+  'Yes — valid certificate': 'হ্যাঁ — বৈধ সনদ আছে', 'No — not yet obtained': 'না — এখনো করা হয়নি', 'Expired — needs renewal': 'মেয়াদ শেষ — নবায়ন দরকার',
+  'Yes — certified': 'হ্যাঁ — সনদ আছে', 'No — not yet tested': 'না — এখনো পরীক্ষা দেননি', 'In progress': 'প্রক্রিয়াধীন',
+  'Yes — registered': 'হ্যাঁ — নিবন্ধিত', 'No — not yet registered': 'না — এখনো নিবন্ধন হয়নি',
+  'e.g. Brahmanbaria, Chittagong Division': 'যেমন: ব্রাহ্মণবাড়িয়া, চট্টগ্রাম বিভাগ',
+  'e.g. Mason, Welder, Chef de Partie': 'যেমন: রাজমিস্ত্রি, ওয়েল্ডার, শেফ',
+  'e.g. Bengali, English (basic), Arabic (basic)': 'যেমন: বাংলা, ইংরেজি (প্রাথমিক), আরবি (প্রাথমিক)',
+  'Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…': 'আপনার অভিজ্ঞতা, আগে বিদেশে কাজ করে থাকলে তার বিবরণ, দক্ষতা এবং কেন বিদেশে কাজ করতে চান তা লিখুন…',
+  'optional': 'ঐচ্ছিক',
+  // trade categories
+  'Construction & Engineering': 'নির্মাণ ও ইঞ্জিনিয়ারিং', 'Oil & Gas': 'তেল ও গ্যাস', 'Drivers & Transport': 'ড্রাইভার ও পরিবহন',
+  'Chefs & Hospitality': 'শেফ ও হসপিটালিটি', 'Security Guards': 'নিরাপত্তা প্রহরী', 'Cleaning & Housekeeping': 'ক্লিনিং ও হাউসকিপিং',
+  'Farm & Garden': 'কৃষি ও বাগান', 'Warehouse & Logistics': 'ওয়্যারহাউস ও লজিস্টিকস', 'Factory & Manufacturing': 'কারখানা ও উৎপাদন',
+  'Retail & Supermarket Staff': 'রিটেইল ও সুপারশপ কর্মী', 'Painting & Finishing': 'পেইন্টিং ও ফিনিশিং',
+  'Steel Fixing & Reinforcement': 'স্টিল ফিক্সিং ও রড বাঁধা', 'Scaffolding & Formwork': 'স্ক্যাফোল্ডিং ও ফর্মওয়ার্ক',
+  'Landscaping & Groundskeeping': 'ল্যান্ডস্কেপিং ও গ্রাউন্ডস কিপিং', 'Mason & Bricklaying': 'রাজমিস্ত্রি ও ইট গাঁথা',
+  'Electrical Helpers & Cable Pullers': 'ইলেকট্রিক্যাল হেল্পার ও ক্যাবল পুলার', 'Laundry & Linen Services': 'লন্ড্রি ও লিনেন সেবা',
+  'Food Processing & Packing': 'খাদ্য প্রক্রিয়াজাতকরণ ও প্যাকিং', 'Fishery & Aquaculture': 'মৎস্য ও অ্যাকুয়াকালচার',
+  'Caregiving & Elderly Support': 'কেয়ারগিভিং ও বয়স্ক সেবা', 'Other': 'অন্যান্য',
+  // countries
+  'Saudi Arabia': 'সৌদি আরব', 'UAE': 'সংযুক্ত আরব আমিরাত', 'Qatar': 'কাতার', 'Kuwait': 'কুয়েত', 'Oman': 'ওমান', 'Bahrain': 'বাহরাইন',
+  'Jordan': 'জর্ডান', 'Malaysia': 'মালয়েশিয়া', 'Singapore': 'সিঙ্গাপুর', 'Maldives': 'মালদ্বীপ', 'Poland': 'পোল্যান্ড',
+  'Romania': 'রোমানিয়া', 'Serbia': 'সার্বিয়া', 'Portugal': 'পর্তুগাল', 'Greece': 'গ্রিস', 'Hungary': 'হাঙ্গেরি', 'Croatia': 'ক্রোয়েশিয়া',
+  'Czech Republic': 'চেক প্রজাতন্ত্র', 'Lithuania': 'লিথুয়ানিয়া', 'Latvia': 'লাতভিয়া', 'Estonia': 'এস্তোনিয়া', 'Bulgaria': 'বুলগেরিয়া',
+  'Cyprus': 'সাইপ্রাস', 'Slovakia': 'স্লোভাকিয়া', 'Bosnia and Herzegovina': 'বসনিয়া ও হার্জেগোভিনা', 'Montenegro': 'মন্টিনেগ্রো',
+  'Slovenia': 'স্লোভেনিয়া', 'North Macedonia': 'উত্তর মেসিডোনিয়া', 'Italy': 'ইতালি', 'Armenia': 'আর্মেনিয়া', 'Georgia': 'জর্জিয়া',
+  'Seychelles': 'সেশেলস', 'Mauritius': 'মরিশাস', 'Open to Any Country': 'যেকোনো দেশ',
+};
+// Same keys as src/i18n/translations.jsx; the Bangla is shown beside the English.
+const BN_T = {
+  apply_hero_h1: 'বিদেশে কাজের সুযোগের জন্য আবেদন করুন',
+  apply_hero_sub: 'বিদেশে চাকরির আগ্রহ জানাতে নিচের ফর্মটি পূরণ করুন। আমরা যোগাযোগ করব।',
+  apply_step1: 'ব্যক্তিগত তথ্য', apply_step2: 'পেশাগত তথ্য', apply_step3: 'কাগজপত্র ও জমা দিন',
+  apply_submit: 'আবেদন জমা দিন →', apply_submitting: 'পাঠানো হচ্ছে…',
+  apply_success_h1: 'আবেদন সফলভাবে জমা হয়েছে!', apply_back_home: 'প্রথম পাতায় ফিরুন →',
+  common_back: '← পেছনে যান',
+};
+
+// "English / বাংলা" for option text and placeholders (plain strings).
+const bi = (lang, en) => (lang === 'en' && BN[en] ? `${en} / ${BN[en]}` : tx(lang, en));
+// Label text: English, with the Bangla meaning on a second line for English visitors.
+function Bi({ children, block }) {
+  const { lang } = useLang();
+  const text = typeof children === 'string' ? children : null;
+  if (lang === 'en' && text && BN[text]) {
+    return (
+      <>
+        {text}
+        <span lang="bn" style={{ display: block ? 'block' : 'inline', fontFamily: BN_FONT, textTransform: 'none', letterSpacing: 0, fontWeight: 500, fontSize: '0.88rem', marginTop: block ? 2 : 0 }}>
+          {block ? '' : ' / '}{BN[text]}
+        </span>
+      </>
+    );
+  }
+  return <Tx>{children}</Tx>;
+}
+// A Bangla-only paragraph shown under longer English text for English visitors.
+function BnNote({ lang, children, style }) {
+  if (lang !== 'en') return null;
+  return <p lang="bn" style={{ margin: '8px 0 0', fontFamily: BN_FONT, lineHeight: 1.8, ...style }}>{children}</p>;
+}
+
 const EMPTY = {
   fullName: '', dateOfBirth: '', nationality: 'Bangladeshi',
   phone: '', email: '', address: '',
@@ -67,6 +165,7 @@ export default function WorkerApplicationPage() {
   const [consentError, setConsentError] = useState(false);
   const [fileError, setFileError] = useState('');
   const { lang }                    = useLang();
+  const tk = (key) => (lang === 'en' ? `${t(key, 'en')} / ${BN_T[key]}` : t(key, lang));
 
   const handleChange = ({ target: { name, value } }) =>
     setFields(p => ({ ...p, [name]: value }));
@@ -198,11 +297,12 @@ The applicant accepted the Privacy Policy and consented to processing of their d
     <div className="page-hero" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center' }}>
       <div className="container" style={{ textAlign: 'center' }}>
         <div style={{ fontSize: '4rem', marginBottom: 24 }}>✅</div>
-        <h1 style={{ marginBottom: 16 }}>{t('apply_success_h1', lang)}</h1>
+        <h1 style={{ marginBottom: 16 }}>{tk('apply_success_h1')}</h1>
         <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: 500, margin: '0 auto 32px', lineHeight: 1.7 }}>
           <Tx>Thank you,</Tx> <strong style={{ color: 'var(--gold)' }}>{fields.fullName}</strong><Tx>. We have received your application and will review it within 3–5 working days. If shortlisted, our team will contact you directly.</Tx>
         </p>
-        <Link to="/" className="btn btn-primary">{t('apply_back_home', lang)}</Link>
+        <BnNote lang={lang} style={{ color: 'rgba(255,255,255,0.7)', maxWidth: 500, margin: '-16px auto 32px' }}>ধন্যবাদ, {fields.fullName}। আপনার আবেদন আমরা পেয়েছি এবং ৩–৫ কর্মদিবসের মধ্যে দেখব। বাছাই হলে আমাদের দল সরাসরি যোগাযোগ করবে।</BnNote>
+        <Link to="/" className="btn btn-primary">{tk('apply_back_home')}</Link>
       </div>
     </div>
     </StaticPageLocalizer>
@@ -221,7 +321,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
   };
   const groupStyle = { display: 'flex', flexDirection: 'column', gap: 6 };
 
-  const steps = [t('apply_step1', lang), t('apply_step2', lang), t('apply_step3', lang)];
+  const steps = [tk('apply_step1'), tk('apply_step2'), tk('apply_step3')];
 
   return (
     <StaticPageLocalizer locale={lang} file="src/pages/WorkerApplicationPage.jsx">
@@ -232,9 +332,10 @@ The applicant accepted the Privacy Policy and consented to processing of their d
               <Link to="/">{t('common_home', lang)}</Link><span>›</span>
               <span style={{ color: 'var(--gold)' }}>{t('nav_apply', lang)}</span>
             </div>
-            <div className="label-tag" style={{ marginBottom: 16 }}><Tx>For Workers</Tx></div>
-            <h1>{t('apply_hero_h1', lang)}</h1>
-            <p>{t('apply_hero_sub', lang)}</p>
+            <div className="label-tag" style={{ marginBottom: 16 }}><Bi>For Workers</Bi></div>
+            <h1>{tk('apply_hero_h1')}</h1>
+            <p>{tk('apply_hero_sub')}</p>
+            <BnNote lang={lang} style={{ color: 'rgba(255,255,255,0.8)', maxWidth: 640 }}>প্রতিটি প্রশ্নের সঙ্গে বাংলা অর্থ দেওয়া আছে। নাম ও পাসপোর্টের তথ্য পাসপোর্ট অনুযায়ী ইংরেজিতে লিখুন; অন্য বিবরণ বাংলায় লিখলেও চলবে।</BnNote>
           </div>
         </div>
       </div>
@@ -273,37 +374,37 @@ The applicant accepted the Privacy Policy and consented to processing of their d
               {/* Step 1: Personal */}
               {step === 1 && (
                 <div>
-                  <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{t('apply_step1', lang)}</h2>
+                  <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{tk('apply_step1')}</h2>
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 20 }}>
                     <div style={{ ...groupStyle, gridColumn: '1 / -1' }}>
-                      <label htmlFor="wa-fullName" style={labelStyle}><Tx>Full Name (as in passport) *</Tx></label>
-                      <input id="wa-fullName" style={inputStyle} name="fullName" value={fields.fullName} onChange={handleChange} required placeholder={tx(lang, "Mohammad Rafiqul Islam")} />
+                      <label htmlFor="wa-fullName" style={labelStyle}><Bi block>Full Name (as in passport) *</Bi></label>
+                      <input id="wa-fullName" style={inputStyle} name="fullName" value={fields.fullName} onChange={handleChange} required placeholder={bi(lang, "Mohammad Rafiqul Islam")} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-dateOfBirth" style={labelStyle}><Tx>Date of Birth *</Tx></label>
+                      <label htmlFor="wa-dateOfBirth" style={labelStyle}><Bi block>Date of Birth *</Bi></label>
                       <input id="wa-dateOfBirth" style={inputStyle} type="date" name="dateOfBirth" value={fields.dateOfBirth} onChange={handleChange} required />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-nationality" style={labelStyle}>Nationality</label>
+                      <label htmlFor="wa-nationality" style={labelStyle}><Bi block>Nationality</Bi></label>
                       <input id="wa-nationality" style={inputStyle} name="nationality" value={fields.nationality} onChange={handleChange} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-phone" style={labelStyle}><Tx>Phone / WhatsApp *</Tx></label>
-                      <input id="wa-phone" style={inputStyle} type="tel" name="phone" value={fields.phone} onChange={handleChange} required placeholder={tx(lang, "+880 17XX XXX XXX")} />
+                      <label htmlFor="wa-phone" style={labelStyle}><Bi block>Phone / WhatsApp *</Bi></label>
+                      <input id="wa-phone" style={inputStyle} type="tel" name="phone" value={fields.phone} onChange={handleChange} required placeholder={bi(lang, "+880 17XX XXX XXX")} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-email" style={labelStyle}><Tx>Email Address</Tx></label>
-                      <input id="wa-email" style={inputStyle} type="email" name="email" value={fields.email} onChange={handleChange} placeholder="optional" />
+                      <label htmlFor="wa-email" style={labelStyle}><Bi block>Email Address</Bi></label>
+                      <input id="wa-email" style={inputStyle} type="email" name="email" value={fields.email} onChange={handleChange} placeholder={bi(lang, "optional")} />
                     </div>
                     <div style={{ ...groupStyle, gridColumn: '1 / -1' }}>
-                      <label htmlFor="wa-address" style={labelStyle}><Tx>Home Address (District/Division) *</Tx></label>
-                      <input id="wa-address" style={inputStyle} name="address" value={fields.address} onChange={handleChange} required placeholder={tx(lang, "e.g. Brahmanbaria, Chittagong Division")} />
+                      <label htmlFor="wa-address" style={labelStyle}><Bi block>Home Address (District/Division) *</Bi></label>
+                      <input id="wa-address" style={inputStyle} name="address" value={fields.address} onChange={handleChange} required placeholder={bi(lang, "e.g. Brahmanbaria, Chittagong Division")} />
                     </div>
                   </div>
                   <div style={{ marginTop: 32, display: 'flex', justifyContent: 'flex-end' }}>
                     <button type="button" className="btn btn-primary" onClick={() => setStep(2)}
                       disabled={!fields.fullName || !fields.dateOfBirth || !fields.phone || !fields.address}>
-                      {t('apply_step2', lang)} →
+                      {tk('apply_step2')} →
                     </button>
                   </div>
                 </div>
@@ -312,92 +413,92 @@ The applicant accepted the Privacy Policy and consented to processing of their d
               {/* Step 2: Professional */}
               {step === 2 && (
                 <div>
-                  <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{t('apply_step2', lang)}</h2>
+                  <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{tk('apply_step2')}</h2>
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 20 }}>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-tradeCategory" style={labelStyle}><Tx>Trade Category *</Tx></label>
+                      <label htmlFor="wa-tradeCategory" style={labelStyle}><Bi block>Trade Category *</Bi></label>
                       <select id="wa-tradeCategory" style={inputStyle} name="tradeCategory" value={fields.tradeCategory} onChange={handleChange} required>
-                        <option value="">{tx(lang, "Select category…")}</option>
-                        {TRADE_CATEGORIES.map(t => <option key={t} value={t}>{tx(lang, t)}</option>)}
+                        <option value="">{bi(lang, "Select category…")}</option>
+                        {TRADE_CATEGORIES.map(t => <option key={t} value={t}>{bi(lang, t)}</option>)}
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-specificRole" style={labelStyle}><Tx>Specific Role / Trade *</Tx></label>
-                      <input id="wa-specificRole" style={inputStyle} name="specificRole" value={fields.specificRole} onChange={handleChange} required placeholder={tx(lang, "e.g. Mason, Welder, Chef de Partie")} />
+                      <label htmlFor="wa-specificRole" style={labelStyle}><Bi block>Specific Role / Trade *</Bi></label>
+                      <input id="wa-specificRole" style={inputStyle} name="specificRole" value={fields.specificRole} onChange={handleChange} required placeholder={bi(lang, "e.g. Mason, Welder, Chef de Partie")} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-experienceYears" style={labelStyle}><Tx>Years of Experience *</Tx></label>
+                      <label htmlFor="wa-experienceYears" style={labelStyle}><Bi block>Years of Experience *</Bi></label>
                       <select id="wa-experienceYears" style={inputStyle} name="experienceYears" value={fields.experienceYears} onChange={handleChange} required>
-                        <option value="">{tx(lang, "Select…")}</option>
-                        <option value="Less than 1 year">{tx(lang, "Less than 1 year")}</option>
-                        <option value="1–2 years">{tx(lang, "1–2 years")}</option>
-                        <option value="3–5 years">{tx(lang, "3–5 years")}</option>
-                        <option value="6–10 years">{tx(lang, "6–10 years")}</option>
-                        <option value="10+ years">{tx(lang, "10+ years")}</option>
+                        <option value="">{bi(lang, "Select…")}</option>
+                        <option value="Less than 1 year">{bi(lang, "Less than 1 year")}</option>
+                        <option value="1–2 years">{bi(lang, "1–2 years")}</option>
+                        <option value="3–5 years">{bi(lang, "3–5 years")}</option>
+                        <option value="6–10 years">{bi(lang, "6–10 years")}</option>
+                        <option value="10+ years">{bi(lang, "10+ years")}</option>
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-preferredCountry" style={labelStyle}><Tx>Preferred Country *</Tx></label>
+                      <label htmlFor="wa-preferredCountry" style={labelStyle}><Bi block>Preferred Country *</Bi></label>
                       <select id="wa-preferredCountry" style={inputStyle} name="preferredCountry" value={fields.preferredCountry} onChange={handleChange} required>
-                        <option value="">{tx(lang, "Select country…")}</option>
-                        {COUNTRIES.map(c => <option key={c} value={c}>{tx(lang, c)}</option>)}
+                        <option value="">{bi(lang, "Select country…")}</option>
+                        {COUNTRIES.map(c => <option key={c} value={c}>{bi(lang, c)}</option>)}
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-availableDate" style={labelStyle}><Tx>Available From</Tx></label>
+                      <label htmlFor="wa-availableDate" style={labelStyle}><Bi block>Available From</Bi></label>
                       <input id="wa-availableDate" style={inputStyle} type="date" name="availableDate" value={fields.availableDate} onChange={handleChange} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-education" style={labelStyle}><Tx>Education Level</Tx></label>
+                      <label htmlFor="wa-education" style={labelStyle}><Bi block>Education Level</Bi></label>
                       <select id="wa-education" style={inputStyle} name="education" value={fields.education} onChange={handleChange}>
-                        <option value="">{tx(lang, "Select…")}</option>
-                        <option value="No formal education">{tx(lang, "No formal education")}</option>
-                        <option value="Primary (Class 1–5)">{tx(lang, "Primary (Class 1–5)")}</option>
-                        <option value="JSC / Class 8">{tx(lang, "JSC / Class 8")}</option>
-                        <option value="SSC / Class 10">{tx(lang, "SSC / Class 10")}</option>
-                        <option value="HSC / Class 12">{tx(lang, "HSC / Class 12")}</option>
-                        <option value="Diploma / Vocational">{tx(lang, "Diploma / Vocational")}</option>
-                        <option value="Bachelor's Degree">{tx(lang, "Bachelor's Degree")}</option>
-                        <option value="Master's Degree or above">{tx(lang, "Master's Degree or above")}</option>
+                        <option value="">{bi(lang, "Select…")}</option>
+                        <option value="No formal education">{bi(lang, "No formal education")}</option>
+                        <option value="Primary (Class 1–5)">{bi(lang, "Primary (Class 1–5)")}</option>
+                        <option value="JSC / Class 8">{bi(lang, "JSC / Class 8")}</option>
+                        <option value="SSC / Class 10">{bi(lang, "SSC / Class 10")}</option>
+                        <option value="HSC / Class 12">{bi(lang, "HSC / Class 12")}</option>
+                        <option value="Diploma / Vocational">{bi(lang, "Diploma / Vocational")}</option>
+                        <option value="Bachelor's Degree">{bi(lang, "Bachelor's Degree")}</option>
+                        <option value="Master's Degree or above">{bi(lang, "Master's Degree or above")}</option>
                       </select>
                     </div>
                     <div style={{ ...groupStyle, gridColumn: '1 / -1' }}>
-                      <label htmlFor="wa-languages" style={labelStyle}><Tx>Languages Spoken</Tx></label>
-                      <input id="wa-languages" style={inputStyle} name="languages" value={fields.languages} onChange={handleChange} placeholder={tx(lang, "e.g. Bengali, English (basic), Arabic (basic)")} />
+                      <label htmlFor="wa-languages" style={labelStyle}><Bi block>Languages Spoken</Bi></label>
+                      <input id="wa-languages" style={inputStyle} name="languages" value={fields.languages} onChange={handleChange} placeholder={bi(lang, "e.g. Bengali, English (basic), Arabic (basic)")} />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-hasMedical" style={labelStyle}><Tx>Medical Fitness Certificate?</Tx></label>
+                      <label htmlFor="wa-hasMedical" style={labelStyle}><Bi block>Medical Fitness Certificate?</Bi></label>
                       <select id="wa-hasMedical" style={inputStyle} name="hasMedical" value={fields.hasMedical} onChange={handleChange}>
-                        <option value="">{tx(lang, "Select…")}</option>
-                        <option value="Yes — valid certificate">{tx(lang, "Yes — valid certificate")}</option>
-                        <option value="No — not yet obtained">{tx(lang, "No — not yet obtained")}</option>
-                        <option value="Expired — needs renewal">{tx(lang, "Expired — needs renewal")}</option>
+                        <option value="">{bi(lang, "Select…")}</option>
+                        <option value="Yes — valid certificate">{bi(lang, "Yes — valid certificate")}</option>
+                        <option value="No — not yet obtained">{bi(lang, "No — not yet obtained")}</option>
+                        <option value="Expired — needs renewal">{bi(lang, "Expired — needs renewal")}</option>
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-hasTradeTest" style={labelStyle}><Tx>Trade Test Certificate?</Tx></label>
+                      <label htmlFor="wa-hasTradeTest" style={labelStyle}><Bi block>Trade Test Certificate?</Bi></label>
                       <select id="wa-hasTradeTest" style={inputStyle} name="hasTradeTest" value={fields.hasTradeTest} onChange={handleChange}>
-                        <option value="">{tx(lang, "Select…")}</option>
-                        <option value="Yes — certified">{tx(lang, "Yes — certified")}</option>
-                        <option value="No — not yet tested">{tx(lang, "No — not yet tested")}</option>
-                        <option value="In progress">{tx(lang, "In progress")}</option>
+                        <option value="">{bi(lang, "Select…")}</option>
+                        <option value="Yes — certified">{bi(lang, "Yes — certified")}</option>
+                        <option value="No — not yet tested">{bi(lang, "No — not yet tested")}</option>
+                        <option value="In progress">{bi(lang, "In progress")}</option>
                       </select>
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-hasBMET" style={labelStyle}><Tx>BMET Smart Card?</Tx></label>
+                      <label htmlFor="wa-hasBMET" style={labelStyle}><Bi block>BMET Smart Card?</Bi></label>
                       <select id="wa-hasBMET" style={inputStyle} name="hasBMET" value={fields.hasBMET} onChange={handleChange}>
-                        <option value="">{tx(lang, "Select…")}</option>
-                        <option value="Yes — registered">{tx(lang, "Yes — registered")}</option>
-                        <option value="No — not yet registered">{tx(lang, "No — not yet registered")}</option>
-                        <option value="In progress">{tx(lang, "In progress")}</option>
+                        <option value="">{bi(lang, "Select…")}</option>
+                        <option value="Yes — registered">{bi(lang, "Yes — registered")}</option>
+                        <option value="No — not yet registered">{bi(lang, "No — not yet registered")}</option>
+                        <option value="In progress">{bi(lang, "In progress")}</option>
                       </select>
                     </div>
                   </div>
                   <div style={{ marginTop: 32, display: 'flex', justifyContent: 'space-between' }}>
-                    <button type="button" className="btn btn-outline" onClick={() => setStep(1)}>{t('common_back', lang)}</button>
+                    <button type="button" className="btn btn-outline" onClick={() => setStep(1)}>{tk('common_back')}</button>
                     <button type="button" className="btn btn-primary" onClick={() => setStep(3)}
                       disabled={!fields.tradeCategory || !fields.specificRole || !fields.experienceYears || !fields.preferredCountry}>
-                      {t('apply_step3', lang)} →
+                      {tk('apply_step3')} →
                     </button>
                   </div>
                 </div>
@@ -406,11 +507,11 @@ The applicant accepted the Privacy Policy and consented to processing of their d
               {/* Step 3: Documents & Submit */}
               {step === 3 && (
                 <div>
-                  <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{t('apply_step3', lang)}</h2>
+                  <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--navy)', marginBottom: 32 }}>{tk('apply_step3')}</h2>
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-cvFile" style={labelStyle}><Tx>Upload CV / Resume (PDF or Word, max 5MB)</Tx></label>
+                      <label htmlFor="wa-cvFile" style={labelStyle}><Bi block>Upload CV / Resume (PDF or Word, max 5MB)</Bi></label>
                       <input id="wa-cvFile" type="file" accept=".pdf,.doc,.docx" onChange={handleFile('cvFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.cvFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.cvFile.name}</span>}
@@ -418,24 +519,24 @@ The applicant accepted the Privacy Policy and consented to processing of their d
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-passportNumber" style={labelStyle}><Tx>Passport Number</Tx></label>
+                      <label htmlFor="wa-passportNumber" style={labelStyle}><Bi block>Passport Number</Bi></label>
                       <input id="wa-passportNumber" style={inputStyle} name="passportNumber" value={fields.passportNumber} onChange={handleChange} placeholder="A1234567" />
                     </div>
                     <div style={groupStyle}>
-                      <label htmlFor="wa-passportExpiry" style={labelStyle}><Tx>Passport Expiry Date</Tx></label>
+                      <label htmlFor="wa-passportExpiry" style={labelStyle}><Bi block>Passport Expiry Date</Bi></label>
                       <input id="wa-passportExpiry" style={inputStyle} type="date" name="passportExpiry" value={fields.passportExpiry} onChange={handleChange} />
                     </div>
                     </div>
 
                     <div style={groupStyle}>
-                      <label htmlFor="wa-passportFile" style={labelStyle}><Tx>Upload Passport Copy (PDF or image, max 5MB)</Tx></label>
+                      <label htmlFor="wa-passportFile" style={labelStyle}><Bi block>Upload Passport Copy (PDF or image, max 5MB)</Bi></label>
                       <input id="wa-passportFile" type="file" accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.heif" onChange={handleFile('passportFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.passportFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.passportFile.name}</span>}
                     </div>
 
                     <div style={groupStyle}>
-                      <label htmlFor="wa-certFile" style={labelStyle}><Tx>Upload Trade/Skills Certificate (optional)</Tx></label>
+                      <label htmlFor="wa-certFile" style={labelStyle}><Bi block>Upload Trade/Skills Certificate (optional)</Bi></label>
                       <input id="wa-certFile" type="file" accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.heif" onChange={handleFile('certFile')}
                         style={{ fontSize: '0.875rem', color: 'var(--gray-500)' }} />
                       {fields.certFile && <span style={{ color: 'var(--gold)', fontSize: '0.8rem' }}>✓ {fields.certFile.name}</span>}
@@ -449,18 +550,19 @@ The applicant accepted the Privacy Policy and consented to processing of their d
 
                     <div style={{ background: 'var(--off-white)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 'var(--radius)', padding: '12px 16px', fontSize: '0.82rem', color: 'var(--gray-500)', display: 'flex', gap: 10 }}>
                       <span><Tx>📎</Tx></span>
-                      <span><Tx>All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.</Tx></span>
+                      <span><Tx>All uploaded files (CV, passport copy, certificate) will be sent as email attachments for our team to review.</Tx><BnNote lang={lang} style={{ margin: '4px 0 0' }}>আপনার আপলোড করা সব ফাইল (সিভি, পাসপোর্টের কপি, সনদ) আমাদের দল দেখার জন্য ইমেইলে পাঠানো হবে।</BnNote></span>
                     </div>
 
                     <div style={groupStyle}>
-                      <label htmlFor="wa-coverLetter" style={labelStyle}><Tx>Additional Information / Cover Letter</Tx></label>
+                      <label htmlFor="wa-coverLetter" style={labelStyle}><Bi block>Additional Information / Cover Letter</Bi></label>
                       <textarea id="wa-coverLetter" style={{ ...inputStyle, resize: 'vertical' }} rows={5}
                         name="coverLetter" value={fields.coverLetter} onChange={handleChange}
-                        placeholder={tx(lang, "Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…")} />
+                        placeholder={bi(lang, "Tell us about your experience, previous overseas employment, skills, and why you want to work abroad…")} />
                     </div>
 
                     <div style={{ background: 'var(--off-white)', border: '1px solid var(--gray-100)', borderRadius: 'var(--radius)', padding: 20, fontSize: '0.82rem', color: 'var(--gray-500)', lineHeight: 1.65 }}>
                       <strong style={{ color: 'var(--navy)' }}><Tx>Important:</Tx></strong> <Tx>By submitting this application, you confirm that all information provided is accurate. Bhuiyan Workforce Ltd. will contact shortlisted candidates within 3–5 working days. Submission does not guarantee placement. We handle your data in accordance with our</Tx> <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)' }}><Tx>Privacy Policy</Tx></a>.
+                      <BnNote lang={lang} style={{ fontSize: '0.82rem' }}><strong>গুরুত্বপূর্ণ:</strong> আবেদন জমা দিয়ে আপনি নিশ্চিত করছেন যে দেওয়া সব তথ্য সঠিক। বাছাই হলে ৩–৫ কর্মদিবসের মধ্যে আমরা যোগাযোগ করব। আবেদন জমা দিলেই চাকরির নিশ্চয়তা হয় না। আপনার তথ্য আমরা গোপনীয়তা নীতি অনুযায়ী সংরক্ষণ করি।</BnNote>
                     </div>
 
                     <div>
@@ -473,26 +575,28 @@ The applicant accepted the Privacy Policy and consented to processing of their d
                         />
                         <span>
                           <Tx>I have read</Tx> <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', fontWeight: 600 }}><Tx>the Privacy Policy</Tx></a> <Tx>and I consent to Bhuiyan Workforce Ltd. processing my personal data, including my passport copy and the other documents I upload, to assess my application and arrange recruitment. I understand that my profile is shared with an employer only after I have been informed and have agreed.</Tx> <span className="required">*</span>
+                          <BnNote lang={lang} style={{ fontSize: '0.85rem' }}>আমি গোপনীয়তা নীতি পড়েছি এবং আবেদন যাচাই ও নিয়োগের জন্য আমার পাসপোর্টের কপিসহ ব্যক্তিগত তথ্য ও আপলোড করা কাগজপত্র প্রক্রিয়া করতে Bhuiyan Workforce Ltd.-কে সম্মতি দিচ্ছি। আমাকে জানিয়ে আমার সম্মতি নেওয়ার পরই আমার প্রোফাইল কোনো নিয়োগকর্তাকে দেখানো হবে।</BnNote>
                         </span>
                       </label>
                       {consentError && (
                         <div id="wa-consent-error" role="alert" style={{ color: '#e53e3e', fontSize: '0.82rem', marginTop: 8 }}>
-                          <Tx>Please tick the box above to submit your application.</Tx>
+                          <Tx>Please tick the box above to submit your application.</Tx>{lang === 'en' && <span lang="bn" style={{ fontFamily: BN_FONT }}> / আবেদন জমা দিতে উপরের বক্সে টিক দিন।</span>}
                         </div>
                       )}
                     </div>
 
                     {error && (
                       <div style={{ color: '#e53e3e', background: '#fff5f5', padding: '12px 16px', borderRadius: 8, border: '1px solid #fed7d7', fontSize: '0.875rem' }}>
-                        <Tx>Something went wrong. Please call us on</Tx> <a href="tel:+8801864567912" style={{ color: '#e53e3e', fontWeight: 600 }}>+880 1864 567912</a> <Tx>or email</Tx> <a href="mailto:info@bhuiyanworkforce.com" style={{ color: '#e53e3e', fontWeight: 600 }}>info@bhuiyanworkforce.com</a>.
+                        <Tx>Something went wrong. Please call us on</Tx> <a href="tel:+8801978356710" style={{ color: '#e53e3e', fontWeight: 600 }}>+880 1978 356710</a> <Tx>or email</Tx> <a href="mailto:careers@bhuiyanworkforce.com" style={{ color: '#e53e3e', fontWeight: 600 }}>careers@bhuiyanworkforce.com</a>.
+                        <BnNote lang={lang} style={{ color: '#e53e3e', fontSize: '0.875rem' }}>কিছু একটা সমস্যা হয়েছে। অনুগ্রহ করে ফোন করুন অথবা ইমেইল করুন।</BnNote>
                       </div>
                     )}
                   </div>
 
                   <div style={{ marginTop: 32, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <button type="button" className="btn btn-outline" onClick={() => setStep(2)}>{t('common_back', lang)}</button>
+                    <button type="button" className="btn btn-outline" onClick={() => setStep(2)}>{tk('common_back')}</button>
                     <button type="submit" className="btn btn-primary" disabled={submitting} style={{ minWidth: 180 }}>
-                      {submitting ? t('apply_submitting', lang) : t('apply_submit', lang)}
+                      {submitting ? tk('apply_submitting') : tk('apply_submit')}
                     </button>
                   </div>
                 </div>
