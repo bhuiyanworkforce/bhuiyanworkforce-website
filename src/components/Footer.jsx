@@ -51,6 +51,7 @@ export default function Footer() {
               <li><button onClick={goContact}>{tr('ft.contact')}</button></li>
               <li><Link to="/faq">{tr('nav_faq')}</Link></li>
               <li><Link to="/worker-guide"><span lang="bn">শ্রমিক নির্দেশিকা</span> · Worker guide</Link></li>
+              {lang !== 'bn' && <li><a href="/bn" hrefLang="bn" lang="bn">বাংলায় দেখুন (শ্রমিকদের জন্য)</a></li>}
               <li><Link to="/blog">{tr('nav_blog')}</Link></li>
               <li><Link to="/countries">{tr('nav_countries')}</Link></li>
               <li><Link to="/privacy">{tr('ft.privacy')}</Link></li>

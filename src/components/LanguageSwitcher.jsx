@@ -104,9 +104,11 @@ export default function LanguageSwitcher() {
           </RRLink>
         ))}
 
-        <div style={{ ...groupLabel, marginTop: 4, borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: 10 }}>
-          {t('lang.overlay', lang)}
-        </div>
+        {OVERLAY_LANGUAGES.length > 0 && (
+          <div style={{ ...groupLabel, marginTop: 4, borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: 10 }}>
+            {t('lang.overlay', lang)}
+          </div>
+        )}
         {OVERLAY_LANGUAGES.map((l) => (
           <button
             key={l.code}

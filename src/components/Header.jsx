@@ -12,6 +12,7 @@ export default function Header() {
   const navigate = useNavigate();
   const { lang, route, status } = useLang();
   const isHome = status === 'ok' && route.type === 'page' && route.id === 'home';
+  const isBn = lang === 'bn';
 
   useEffect(() => {
     const onScroll = () => setScrolled(globalThis.scrollY > 50);
@@ -41,13 +42,24 @@ export default function Header() {
             </Link>
 
             <nav className="header-nav" aria-label={t('a11y.main_nav', lang)}>
-              <button onClick={() => scrollTo('services')}>{t('nav_services', lang)}</button>
-              <Link to="/countries">{t('nav_countries', lang)}</Link>
-              <Link to="/capabilities">{t('nav_capabilities', lang)}</Link>
-              <Link to="/about">{t('nav_about', lang)}</Link>
-              <button onClick={() => scrollTo('why-us')}>{t('nav_why_us', lang)}</button>
-              <Link to="/faq">{t('nav_faq', lang)}</Link>
-              <Link to="/blog">{t('nav_blog', lang)}</Link>
+              {isBn ? (
+                <>
+                  <Link to="/worker-guide">{t('nav_worker_guide', lang)}</Link>
+                  <Link to="/faq">{t('nav_faq', lang)}</Link>
+                  <Link to="/countries">{t('nav_countries', lang)}</Link>
+                  <Link to="/about">{t('nav_about', lang)}</Link>
+                </>
+              ) : (
+                <>
+                  <button onClick={() => scrollTo('services')}>{t('nav_services', lang)}</button>
+                  <Link to="/countries">{t('nav_countries', lang)}</Link>
+                  <Link to="/capabilities">{t('nav_capabilities', lang)}</Link>
+                  <Link to="/about">{t('nav_about', lang)}</Link>
+                  <button onClick={() => scrollTo('why-us')}>{t('nav_why_us', lang)}</button>
+                  <Link to="/faq">{t('nav_faq', lang)}</Link>
+                  <Link to="/blog">{t('nav_blog', lang)}</Link>
+                </>
+              )}
             </nav>
 
             <div className="header-actions" style={{ alignItems: 'center', gap: 10 }}>
@@ -77,14 +89,26 @@ export default function Header() {
           <button className="mobile-close" onClick={() => setMenuOpen(false)} aria-label={t('a11y.close', lang)}>×</button>
           <LanguageSwitcher />
         </div>
-        <button onClick={() => scrollTo('services')}>{t('nav_services', lang)}</button>
-        <Link to="/countries">{t('nav_countries', lang)}</Link>
-        <Link to="/capabilities">{t('nav_capabilities', lang)}</Link>
-        <Link to="/apply">{t('nav_apply', lang)}</Link>
-        <Link to="/about">{t('nav_about', lang)}</Link>
-        <button onClick={() => scrollTo('why-us')}>{t('nav_why_us', lang)}</button>
-        <Link to="/faq">{t('nav_faq', lang)}</Link>
-        <Link to="/blog">{t('nav_blog', lang)}</Link>
+        {isBn ? (
+          <>
+            <Link to="/worker-guide">{t('nav_worker_guide', lang)}</Link>
+            <Link to="/faq">{t('nav_faq', lang)}</Link>
+            <Link to="/apply">{t('nav_apply', lang)}</Link>
+            <Link to="/countries">{t('nav_countries', lang)}</Link>
+            <Link to="/about">{t('nav_about', lang)}</Link>
+          </>
+        ) : (
+          <>
+            <button onClick={() => scrollTo('services')}>{t('nav_services', lang)}</button>
+            <Link to="/countries">{t('nav_countries', lang)}</Link>
+            <Link to="/capabilities">{t('nav_capabilities', lang)}</Link>
+            <Link to="/apply">{t('nav_apply', lang)}</Link>
+            <Link to="/about">{t('nav_about', lang)}</Link>
+            <button onClick={() => scrollTo('why-us')}>{t('nav_why_us', lang)}</button>
+            <Link to="/faq">{t('nav_faq', lang)}</Link>
+            <Link to="/blog">{t('nav_blog', lang)}</Link>
+          </>
+        )}
         <button className="btn btn-primary" onClick={() => scrollTo('contact')} style={{ fontSize: '1rem', padding: '16px 40px' }}>
           {t('sv.request', lang)}
         </button>
