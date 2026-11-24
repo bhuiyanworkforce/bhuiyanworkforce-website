@@ -4,8 +4,8 @@ import { SITE_URL } from '../i18n/config.js';
 
 const ORG_ID = `${SITE_URL}/#organization`;
 
-// Offer catalog: all 25 services, in the same order as src/data/services.jsx for the first 19
-// plus the six newest at the end. English only; see getPageHead.
+// Offer catalog carried over unchanged from index.html (20 of the 25 services:
+// the five newest are missing there). English only; see getPageHead.
 const OFFERS = [
   ['Construction & Engineering Workers', 'construction'],
   ['Drivers & Transport Workers', 'drivers'],
@@ -26,12 +26,6 @@ const OFFERS = [
   ['Laundry & Linen Services Staff', 'laundry-linen'],
   ['Landscaping & Groundskeeping Workers', 'landscaping-groundskeeping'],
   ['Electrical Helpers & Cable Pullers', 'electrical-helpers'],
-  ['Fishery & Aquaculture Workers', 'fishery-aquaculture'],
-  ['Welding & Fabrication Workers', 'welding-fabrication'],
-  ['Plumbing & HVAC Workers', 'plumbing-hvac'],
-  ['Heavy Equipment Operators', 'heavy-equipment'],
-  ['Ship & Marine Fabrication Workers', 'marine-fabrication'],
-  ['Domestic & Household Workers', 'domestic-household'],
 ];
 
 const PEOPLE = [
