@@ -26,8 +26,10 @@ export const SERVICES = [
       { title: 'Pre-Departure Training', desc: 'Workers complete a structured orientation covering site safety, emergency procedures, and cultural briefing.' },
       ...STANDARD_PROCESS_END,
     ],
-    // Mason laying concrete blocks on a construction site
-    image: 'https://drive.google.com/thumbnail?id=1Nc8H7XyyR5_pI8cSt_fqQjWouncGsP_O&sz=w800',
+    image: '/images/services/construction-and-engineering-card.webp',
+    imageW: 800, imageH: 601,
+    imageDetail: '/images/services/construction-and-engineering-detail.webp',
+    imageDetailW: 1200, imageDetailH: 901,
   },
   {
     slug: 'drivers',
@@ -49,8 +51,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, police certificate, passport validity check, and destination-country visa application.' },
       { title: 'Deployment', desc: 'Driver is briefed on destination-country traffic laws and employer expectations before departure.' },
     ],
-    // Truck driver in the cab of a heavy goods vehicle
-    image: 'https://drive.google.com/thumbnail?id=1kpgPY2ak1M3zvpfFKSRUyciytPYJL33D&sz=w800',
+    image: '/images/services/drivers-and-transport-card.webp',
+    imageW: 800, imageH: 533,
+    imageDetail: '/images/services/drivers-and-transport-detail.webp',
+    imageDetailW: 1200, imageDetailH: 800,
   },
   {
     slug: 'hospitality',
@@ -73,8 +77,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police certificate, and visa application.' },
       { title: 'On-Boarding Support', desc: 'We coordinate with your HR team for a smooth arrival and induction process.' },
     ],
-    // Chef actively cooking over a flame in a professional kitchen
-    image: 'https://drive.google.com/thumbnail?id=1FnI63UK5e_V6bChxPkEUoc5hua07yCb-&sz=w800',
+    image: '/images/services/chefs-and-hospitality-card.webp',
+    imageW: 800, imageH: 1422,
+    imageDetail: '/images/services/chefs-and-hospitality-detail.webp',
+    imageDetailW: 1200, imageDetailH: 2133,
   },
   {
     slug: 'farm-garden',
@@ -97,8 +103,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, valid passport, police clearance, and employer-specific visa category.' },
       { title: 'Seasonal Deployment Planning', desc: 'We plan deployment timelines around your harvest cycles or landscaping seasons.' },
     ],
-    // Farm workers harvesting crops in the field
-    image: 'https://drive.google.com/thumbnail?id=1UmanbXOyrHE6DCyrTfmRk5C6lRWr_GlG&sz=w800',
+    image: '/images/services/farm-and-garden-card.webp',
+    imageW: 800, imageH: 1067,
+    imageDetail: '/images/services/farm-and-garden-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1600,
   },
   {
     slug: 'warehouse',
@@ -120,8 +128,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'All standard emigration documentation processed within agreed timelines.' },
       { title: 'Ramp-Up Deployment', desc: 'For large teams (50+), we stagger arrivals to allow your induction team to onboard effectively.' },
     ],
-    // Warehouse worker scanning packages in a distribution centre
-    image: 'https://drive.google.com/thumbnail?id=1NQfvRm1EzwoVDTe9OcVjh5BlLE1c0HSL&sz=w800',
+    image: '/images/services/warehouse-and-logistics-card.webp',
+    imageW: 800, imageH: 1200,
+    imageDetail: '/images/services/warehouse-and-logistics-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1800,
   },
   {
     slug: 'factory',
@@ -143,8 +153,10 @@ export const SERVICES = [
       { title: 'Full Documentation', desc: 'BMET, police clearance, GAMCA medical, and visa processing handled end-to-end.' },
       { title: 'Employer Liaison', desc: 'We coordinate with your HR and production planning teams to align arrival with your ramp-up schedule.' },
     ],
-    // Workers on a factory production line
-    image: 'https://drive.google.com/thumbnail?id=1Svh0LVXF0vxDUfDI4UwIwHM4OeokEcxK&sz=w800',
+    image: '/images/services/factory-and-manufacturing-card.webp',
+    imageW: 800, imageH: 450,
+    imageDetail: '/images/services/factory-and-manufacturing-detail.webp',
+    imageDetailW: 1200, imageDetailH: 675,
   },
   {
     slug: 'oil-gas',
@@ -167,8 +179,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, GAMCA medical, offshore medical (if required), and visa processing.' },
       { title: 'Mobilisation', desc: 'Coordinated mobilisation to align with your project schedule and rotation roster.' },
     ],
-    // Oil & gas technician working on pipeline equipment
-    image: 'https://drive.google.com/thumbnail?id=1TcKdqROSVMY28GpWm4UHpx1tyMHJ7LKC&sz=w800',
+    image: '/images/services/oil-and-gas-card.webp',
+    imageW: 800, imageH: 533,
+    imageDetail: '/images/services/oil-and-gas-detail.webp',
+    imageDetailW: 1200, imageDetailH: 800,
   },
   {
     slug: 'security',
@@ -191,8 +205,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, police certificate, GAMCA medical, and visa application.' },
       { title: 'Employer Briefing', desc: 'Workers are briefed on your specific site protocols, uniform requirements, and reporting structures.' },
     ],
-    // Uniformed security guard on duty at a post
-    image: 'https://drive.google.com/thumbnail?id=13yuSGqHoAGCJ2Le_vy9ghLpcLbK7rzTD&sz=w800',
+    image: '/images/services/security-guards-card.webp',
+    imageW: 800, imageH: 1422,
+    imageDetail: '/images/services/security-guards-detail.webp',
+    imageDetailW: 1200, imageDetailH: 2133,
   },
   {
     slug: 'cleaning',
@@ -215,8 +231,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness (including food hygiene where applicable), and visa processing.' },
       { title: 'Uniform & Presentation Standards', desc: 'Workers are briefed on your uniform requirements and grooming standards before departure.' },
     ],
-    // Professional cleaner mopping a commercial floor
-    image: 'https://drive.google.com/thumbnail?id=1g0m5wfgE75CCTqBqlrCjT7uP_bgPQ6W3&sz=w800',
+    image: '/images/services/cleaning-and-housekeeping-card.webp',
+    imageW: 800, imageH: 1073,
+    imageDetail: '/images/services/cleaning-and-housekeeping-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1610,
   },
   {
     slug: 'retail',
@@ -239,8 +257,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa application.' },
       { title: 'Induction Coordination', desc: 'We liaise with your store management for a smooth first-week induction.' },
     ],
-    // Retail worker stocking shelves in a supermarket
-    image: 'https://drive.google.com/thumbnail?id=1IYSorJyxRdjb6ful4ZkmNW4jXNcolUyX&sz=w800',
+    image: '/images/services/retail-and-supermarket-staff-card.webp',
+    imageW: 800, imageH: 638,
+    imageDetail: '/images/services/retail-and-supermarket-staff-detail.webp',
+    imageDetailW: 1200, imageDetailH: 957,
   },
   {
     slug: 'painting-finishing',
@@ -262,8 +282,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, GAMCA medical, police clearance, and visa processing.' },
       { title: 'Deployment', desc: 'Workers depart with safety certifications and employer induction materials.' },
     ],
-    // Painter applying paint with a roller on a building wall
-    image: 'https://drive.google.com/thumbnail?id=1l_SpXAHKDnX-9EhpBFVsqVgZRFVZCGTi&sz=w800',
+    image: '/images/services/painting-and-finishing-card.webp',
+    imageW: 800, imageH: 1200,
+    imageDetail: '/images/services/painting-and-finishing-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1800,
   },
   {
     slug: 'steel-fixing',
@@ -284,8 +306,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and destination-country visa.' },
       { title: 'Deployment', desc: 'Coordinated mobilisation aligned with your project structural programme.' },
     ],
-    // Steel fixer tying rebar on a construction site
-    image: 'https://drive.google.com/thumbnail?id=12QUMotkXyMmJJuCgSvnNbDttLwz4sIBA&sz=w800',
+    image: '/images/services/steel-fixing-and-reinforcement-card.webp',
+    imageW: 800, imageH: 1200,
+    imageDetail: '/images/services/steel-fixing-and-reinforcement-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1800,
   },
   {
     slug: 'scaffolding-formwork',
@@ -306,8 +330,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa processing.' },
       { title: 'Deployment', desc: 'Workers briefed on employer-specific scaffold systems and site standards before departure.' },
     ],
-    // Scaffolders erecting tubular scaffolding on a building
-    image: 'https://drive.google.com/thumbnail?id=1pylX_nyBXQKKQN3xkEnBbl5DKY474Ky3&sz=w800',
+    image: '/images/services/scaffolding-and-formwork-card.webp',
+    imageW: 800, imageH: 1263,
+    imageDetail: '/images/services/scaffolding-and-formwork-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1895,
   },
   {
     slug: 'landscaping-groundskeeping',
@@ -329,8 +355,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa application.' },
       { title: 'Seasonal Planning', desc: 'Deployment coordinated around your planting seasons, project timelines, or resort opening schedules.' },
     ],
-    // Groundskeeper trimming hedges and maintaining garden beds
-    image: 'https://drive.google.com/thumbnail?id=1kv-UQOfuOlLT1Dr1Jk7hv9ZGELX-Lw4_&sz=w800',
+    image: '/images/services/landscaping-and-groundskeeping-card.webp',
+    imageW: 800, imageH: 1200,
+    imageDetail: '/images/services/landscaping-and-groundskeeping-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1800,
   },
   {
     slug: 'masonry-bricklaying',
@@ -352,8 +380,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa processing.' },
       { title: 'Deployment', desc: 'Mobilisation aligned with your project programme and site start dates.' },
     ],
-    // Bricklayer carefully laying bricks with mortar
-    image: 'https://drive.google.com/thumbnail?id=1jxMlRI1-ePAPgNVZrFFZhVAmyZwKfUxM&sz=w800',
+    image: '/images/services/mason-and-bricklaying-card.webp',
+    imageW: 800, imageH: 1200,
+    imageDetail: '/images/services/mason-and-bricklaying-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1800,
   },
   {
     slug: 'electrical-helpers',
@@ -375,8 +405,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, GAMCA medical, police clearance, and destination-country visa.' },
       { title: 'MEP Contractor Briefing', desc: 'Workers are briefed on your specific cable schedules, containment systems, and site procedures.' },
     ],
-    // Electrician installing cables and conduit on a construction site
-    image: 'https://drive.google.com/thumbnail?id=1LpHecyt-g1LYJ6lnDfp6Nj_lnc5yUrgA&sz=w800',
+    image: '/images/services/electrical-helpers-and-cable-pullers-card.webp',
+    imageW: 800, imageH: 1067,
+    imageDetail: '/images/services/electrical-helpers-and-cable-pullers-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1600,
   },
   {
     slug: 'laundry-linen',
@@ -398,8 +430,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness (including food hygiene where applicable), and visa processing.' },
       { title: 'Employer Induction', desc: 'Workers are briefed on your specific linen categories, shift patterns, and productivity standards.' },
     ],
-    // Laundry operative pressing and folding linen in an industrial facility
-    image: 'https://drive.google.com/thumbnail?id=1lRMEb26tvgICqUUWKK2wunI9bzABrfe2&sz=w800',
+    image: '/images/services/laundry-and-linen-services-card.webp',
+    imageW: 800, imageH: 533,
+    imageDetail: '/images/services/laundry-and-linen-services-detail.webp',
+    imageDetailW: 1200, imageDetailH: 800,
   },
   {
     slug: 'food-processing',
@@ -421,8 +455,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, food hygiene certificate, police clearance, and visa processing.' },
       { title: 'Employer Induction Coordination', desc: 'We liaise with your production management for a structured first-week induction.' },
     ],
-    // Workers on a food factory packing and processing line
-    image: 'https://drive.google.com/thumbnail?id=1p9L5pZIBnGOqCPl81aj0-70aMedDxEGx&sz=w800',
+    image: '/images/services/food-processing-and-packing-card.webp',
+    imageW: 800, imageH: 533,
+    imageDetail: '/images/services/food-processing-and-packing-detail.webp',
+    imageDetailW: 1200, imageDetailH: 800,
   },
   {
     slug: 'fishery-aquaculture',
@@ -444,8 +480,10 @@ export const SERVICES = [
       { title: 'Documentation', desc: 'BMET clearance, seafarer documentation, police clearance, and destination-country visa.' },
       { title: 'Vessel or Farm Briefing', desc: 'Workers are briefed on vessel-specific safety procedures, watch schedules, or aquaculture farm protocols.' },
     ],
-    // Fishermen working on deck hauling nets on a fishing vessel
-    image: 'https://drive.google.com/thumbnail?id=1AVm6FaJJZ6idBdjaOc0rdEe3X1psMUPB&sz=w800',
+    image: '/images/services/fishery-and-aquaculture-workers-card.webp',
+    imageW: 800, imageH: 533,
+    imageDetail: '/images/services/fishery-and-aquaculture-workers-detail.webp',
+    imageDetailW: 1200, imageDetailH: 800,
   },
   {
     slug: 'caregiving',
@@ -467,8 +505,10 @@ export const SERVICES = [
       { title: 'Language Assessment', desc: 'English or Arabic conversational assessment appropriate to the destination country requirement.' },
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa application. Enhanced background check for household placement roles.' },
     ],
-    // Caregiver assisting an elderly person with daily support
-    image: 'https://drive.google.com/thumbnail?id=1oUUlJ7PD2sAUK33eKFSAZmBb4RN-pWCU&sz=w800',
+    image: '/images/services/caregiving-and-elderly-support-card.webp',
+    imageW: 800, imageH: 566,
+    imageDetail: '/images/services/caregiving-and-elderly-support-detail.webp',
+    imageDetailW: 1200, imageDetailH: 849,
   },
   {
     slug: 'welding-fabrication',
@@ -488,6 +528,10 @@ export const SERVICES = [
       { title: 'Site Safety Training', desc: 'PPE usage, fire safety, and safe working practices around welding equipment and gas cylinders.' },
       ...STANDARD_PROCESS_END,
     ],
+    image: '/images/services/welding-and-fabrication-card.webp',
+    imageW: 800, imageH: 1201,
+    imageDetail: '/images/services/welding-and-fabrication-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1801,
   },
   {
     slug: 'plumbing-hvac',
@@ -506,6 +550,10 @@ export const SERVICES = [
       { title: 'Safety & Refrigerant Handling Training', desc: 'Safe handling of refrigerants and working-at-height awareness for ducting and rooftop unit work.' },
       ...STANDARD_PROCESS_END,
     ],
+    image: '/images/services/plumbing-and-hvac-card.webp',
+    imageW: 800, imageH: 533,
+    imageDetail: '/images/services/plumbing-and-hvac-detail.webp',
+    imageDetailW: 1200, imageDetailH: 800,
   },
   {
     slug: 'heavy-equipment',
@@ -525,6 +573,10 @@ export const SERVICES = [
       { title: 'Site Safety Training', desc: 'Load limits, signalling procedures, and safe operating practices around active job sites.' },
       ...STANDARD_PROCESS_END,
     ],
+    image: '/images/services/heavy-equipment-operator-card.webp',
+    imageW: 800, imageH: 534,
+    imageDetail: '/images/services/heavy-equipment-operator-detail.webp',
+    imageDetailW: 1200, imageDetailH: 801,
   },
   {
     slug: 'marine-fabrication',
@@ -543,6 +595,10 @@ export const SERVICES = [
       { title: 'Site Safety Training', desc: 'Confined space awareness, working-at-height, and shipyard-specific safety procedures.' },
       ...STANDARD_PROCESS_END,
     ],
+    image: '/images/services/ship-and-marine-fabrication-card.webp',
+    imageW: 800, imageH: 1067,
+    imageDetail: '/images/services/ship-and-marine-fabrication-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1600,
   },
   {
     slug: 'domestic-household',
@@ -562,6 +618,10 @@ export const SERVICES = [
       { title: 'Contract Terms Briefing', desc: 'Worker is briefed on and confirms understanding of working hours, rest days, and contract terms before departure.' },
       { title: 'Documentation', desc: 'BMET clearance, medical fitness, police clearance, and visa application. Enhanced background check for household placement roles.' },
     ],
+    image: '/images/services/domestic-and-household-workers-card.webp',
+    imageW: 800, imageH: 1200,
+    imageDetail: '/images/services/domestic-and-household-workers-detail.webp',
+    imageDetailW: 1200, imageDetailH: 1800,
   },
 ];
 
