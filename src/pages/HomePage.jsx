@@ -213,7 +213,8 @@ export default function HomePage() {
               <div className="bw-hero-img-card" style={{ position: 'relative' }}>
                 <div className="bw-hero-img-clip">
                 <img
-                  src="/hero-image.svg"
+                  src="/hero-photo.jpg"
+                  onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/hero-image.svg'; }}
                   alt={tr('h.hero_alt')}
                   style={{ width: '100%', height: 380, objectFit: 'cover', display: 'block' }}
                   fetchpriority="high"
@@ -245,11 +246,10 @@ export default function HomePage() {
               </div>
 
               {/* Mini stats row */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 12, marginTop: 32 }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 12, marginTop: 32 }}>
                 {[
                   { num: '25+', lbl: t('home_stats_countries', lang) },
                   { num: '25',  lbl: t('home_stats_sectors', lang) },
-                  { num: '100%', lbl: tr('h.stat_ethical') },
                 ].map(s => (
                   <div className="bw-stat-glass" key={s.lbl}>
                     <div className="num"><bdi dir="ltr">{s.num}</bdi></div>
