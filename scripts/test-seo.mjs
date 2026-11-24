@@ -21,6 +21,7 @@ import '../src/i18n/ms-bundle.js'; // same for Malay
 import '../src/i18n/de-bundle.js'; // same for German
 import '../src/i18n/hu-bundle.js'; // same for Hungarian
 import '../src/i18n/pt-bundle.js'; // same for Portuguese
+import '../src/i18n/bn-bundle.js'; // same for Bengali
 import '../src/i18n/ro-bundle.js'; // same for Romanian
 import { buildPath, parsePath, ENTITY_SLUGS, PAGE_SLUGS, SEGMENTS } from '../src/i18n/slugs.js';
 import { LOCALES, REAL_LOCALE_CODES } from '../src/i18n/config.js';
@@ -157,6 +158,7 @@ test('page counts', () => {
   assert.equal(by('it'), 11 + 25 + 33 + 18 + 3);
   assert.equal(by('es'), 11 + 25 + 33 + 18 + 3);
   assert.equal(by('ms'), 9 + 25 + 33); // Malay: no blog index, articles, employer guide or guides yet
+  assert.equal(by('bn'), 3); // Bengali worker section: home, FAQ, worker guide
   for (const l of ['de', 'hu', 'pt']) assert.equal(by(l), 9 + 25 + 33 + 3); // home, about, faq, countries index, capabilities, apply, privacy, terms, founder, services, countries, 3 guides; no blog or employer-guide index yet
 });
 test('availability and 404 resolution', () => {
@@ -174,6 +176,49 @@ test('hreflang: self, x-default, only real translations', () => {
   assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }).map((a) => a.hreflang), ['en', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
   assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
   assert.deepEqual(getAlternates({ type: 'country', id: 'slovenia' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
+});
+test('Bengali worker section: own URLs, hreflang pairs, no stray alternates', () => {
+  assert.equal(buildPath('bn', { type: 'page', id: 'home' }), '/bn');
+  assert.equal(buildPath('bn', { type: 'page', id: 'worker-guide' }), '/bn/worker-guide');
+  assert.equal(buildPath('bn', { type: 'page', id: 'faq' }), '/bn/faq');
+  assert.equal(resolvePath('/bn').status, 'ok');
+  assert.equal(resolvePath('/bn/worker-guide').status, 'ok');
+  assert.equal(resolvePath('/bn/faq').status, 'ok');
+  assert.equal(resolvePath('/bn/about').status, 'notfound'); // employer pages are English-only
+  assert.equal(resolvePath('/bn/countries/qatar').status, 'notfound');
+  const guide = getAlternates({ type: 'page', id: 'worker-guide' });
+  assert.deepEqual(guide.map((a) => a.hreflang), ['en', 'bn', 'x-default']);
+  assert.equal(guide.find((a) => a.hreflang === 'bn').href, 'https://bhuiyanworkforce.com/bn/worker-guide');
+  assert.deepEqual(getAlternates({ type: 'page', id: 'faq' }).map((a) => a.hreflang).slice(-2), ['bn', 'x-default']);
+  assert.ok(getAlternates({ type: 'page', id: 'home' }).some((a) => a.hreflang === 'bn' && a.href === 'https://bhuiyanworkforce.com/bn'));
+  assert.equal(getAlternates({ type: 'country', id: 'qatar' }).some((a) => a.hreflang === 'bn'), false);
+});
+test('Bengali heads: Bengali title and description, own canonical, bn_BD, Noto Sans Bengali, valid JSON-LD', () => {
+  for (const id of ['home', 'faq', 'worker-guide']) {
+    const h = getPageHead({ type: 'page', id }, 'bn', {});
+    assert.equal(h.lang, 'bn');
+    assert.equal(h.dir, 'ltr');
+    assert.ok(/[\u0980-\u09FF]/.test(h.title), `${id} title is not Bengali`);
+    assert.ok(/[\u0980-\u09FF]/.test(h.description), `${id} description is not Bengali`);
+    assert.equal(h.canonical, id === 'home' ? 'https://bhuiyanworkforce.com/bn' : `https://bhuiyanworkforce.com/bn/${id}`);
+    assert.equal(h.og.locale, 'bn_BD');
+    assert.ok(h.links.some((l) => /Noto\+Sans\+Bengali/.test(l.href)));
+    assert.ok(h.alternates.some((a) => a.hreflang === 'x-default'));
+    for (const j of h.jsonld) JSON.parse(JSON.stringify(j));
+  }
+  const faq = getPageHead({ type: 'page', id: 'faq' }, 'bn', {}).jsonld.find((j) => j['@type'] === 'FAQPage');
+  assert.ok(faq && faq.mainEntity.length >= 10, 'Bengali FAQPage schema missing');
+  assert.ok(faq.mainEntity.every((q) => q.name && q.acceptedAnswer.text));
+  // English worker guide is English now (the toggle is gone): no Bengali in its head.
+  const en = getPageHead({ type: 'page', id: 'worker-guide' }, 'en', {});
+  assert.ok(!/[\u0980-\u09FF]/.test(en.title + en.description));
+});
+test('Bengali pages avoid licence, visa-guarantee and cost claims in head text', () => {
+  for (const id of ['home', 'faq', 'worker-guide']) {
+    const h = getPageHead({ type: 'page', id }, 'bn', {});
+    const text = [h.title, h.description, h.keywords || ''].join(' ');
+    assert.ok(!/ভিসা\s*(নিশ্চিত|গ্যারান্টি)|লাইসেন্সপ্রাপ্ত\s*এজেন্সি|BMET\s*registered/i.test(text), `${id}: risky claim in head`);
+  }
 });
 test('language switcher links', () => {
   const links = getLanguageLinks({ type: 'page', id: 'privacy' }, 'en');
@@ -258,8 +303,8 @@ console.log('capabilities sheets');
 test('every real language has its own capabilities PDF; English keeps the original URL', () => {
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'public');
   assert.equal(capabilitiesPdf('en'), '/capabilities.pdf');
-  assert.equal(capabilitiesPdf('bn'), '/capabilities.pdf'); // overlay language: English sheet
-  for (const code of REAL_LOCALE_CODES.filter((c) => c !== 'en')) {
+  assert.equal(capabilitiesPdf('bn'), '/capabilities.pdf'); // Bengali is a worker section with no capabilities page: English sheet
+  for (const code of REAL_LOCALE_CODES.filter((c) => c !== 'en' && c !== 'bn')) {
     assert.ok(SHEET_LANGS.includes(code), `no capabilities sheet registered for ${code}`);
     assert.equal(capabilitiesPdf(code), `/capabilities-${code}.pdf`);
   }

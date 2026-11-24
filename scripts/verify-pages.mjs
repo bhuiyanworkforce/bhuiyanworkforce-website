@@ -19,6 +19,7 @@ import '../src/i18n/mk-bundle.js'; // same for Macedonian
 import '../src/i18n/it-bundle.js'; // same for Italian
 import '../src/i18n/es-bundle.js'; // same for Spanish
 import '../src/i18n/ms-bundle.js'; // same for Malay
+import '../src/i18n/bn-bundle.js'; // same for Bengali
 import '../src/i18n/de-bundle.js'; // same for German
 import '../src/i18n/hu-bundle.js'; // same for Hungarian
 import '../src/i18n/pt-bundle.js'; // same for Portuguese
