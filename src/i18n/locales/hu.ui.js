@@ -14,7 +14,7 @@ export default {
   "h.stats_aria": "Főbb statisztikák",
   "h.scroll": "Görgetés",
   "h.download_pdf": "Cégbemutató letöltése (PDF) ←",
-  "h.hero_alt": "Munkába állásra kész munkavállalók illusztrációja",
+  "h.hero_alt": "Védősisakot viselő építőmunkások egy építkezésen",
   "h.hero_verified": "// ellenőrzött külföldi munkába állítás",
   "h.hero_destinations": "Több mint 25 célország · 25 szakmacsoport",
   "h.badge_response": "Válaszidő",

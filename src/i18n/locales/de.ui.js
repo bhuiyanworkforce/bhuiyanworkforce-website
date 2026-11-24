@@ -14,7 +14,7 @@ export default {
   "h.stats_aria": "Wichtige Kennzahlen",
   "h.scroll": "Scrollen",
   "h.download_pdf": "Unternehmenspräsentation herunterladen →",
-  "h.hero_alt": "Illustration von Arbeitskräften, die für den Einsatz bereitstehen",
+  "h.hero_alt": "Bauarbeiter mit Schutzhelmen auf einer Baustelle",
   "h.hero_verified": "// verifizierter Einsatz",
   "h.hero_destinations": "25+ Zielländer · 25 Berufsgruppen",
   "h.badge_response": "Antwortzeit",

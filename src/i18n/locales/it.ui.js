@@ -16,7 +16,7 @@ export default {
   "h.stats_aria": "Statistiche principali",
   "h.scroll": "Scorrete",
   "h.download_pdf": "Scaricate la presentazione delle competenze (PDF) ←",
-  "h.hero_alt": "Illustrazione di lavoratori pronti per l’invio",
+  "h.hero_alt": "Operai edili con casco di protezione in un cantiere",
   "h.hero_verified": "// invio verificato",
   "h.hero_destinations": "Oltre 25 Paesi di destinazione · 25 categorie professionali",
   "h.badge_response": "Risposta",

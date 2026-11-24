@@ -14,7 +14,7 @@ export default {
   "h.stats_aria": "Ključni podaci",
   "h.scroll": "Pomjerite",
   "h.download_pdf": "Preuzmite prezentaciju mogućnosti kompanije (PDF) ←",
-  "h.hero_alt": "Ilustracija radnika spremnih za slanje",
+  "h.hero_alt": "Građevinski radnici sa zaštitnim kacigama na gradilištu",
   "h.hero_verified": "// provjereno slanje radnika",
   "h.hero_destinations": "Više od 25 zemalja odredišta · 25 stručnih kategorija",
   "h.badge_response": "Vrijeme odgovora",

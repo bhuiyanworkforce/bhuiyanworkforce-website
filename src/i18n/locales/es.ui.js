@@ -14,7 +14,7 @@ export default {
   "h.stats_aria": "Estadísticas clave",
   "h.scroll": "Desplazarse",
   "h.download_pdf": "Descargar presentación de capacidades en PDF →",
-  "h.hero_alt": "Ilustración de trabajadores listos para el envío",
+  "h.hero_alt": "Trabajadores de la construcción con casco en una obra",
   "h.hero_verified": "// envío verificado",
   "h.hero_destinations": "25+ países de destino · 25 categorías de oficios",
   "h.badge_response": "Respuesta",

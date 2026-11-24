@@ -14,7 +14,7 @@ export default {
   "h.stats_aria": "Key statistics",
   "h.scroll": "Scroll",
   "h.download_pdf": "Download Capabilities PDF →",
-  "h.hero_alt": "Illustration of workers ready for deployment",
+  "h.hero_alt": "Construction workers wearing hard hats on a building site",
   "h.hero_verified": "// verified deployment",
   "h.hero_destinations": "25+ destination countries · 25 trade categories",
   "h.badge_response": "Response",

@@ -14,7 +14,7 @@ export default {
   "h.stats_aria": "Statistik utama",
   "h.scroll": "Tatal",
   "h.download_pdf": "Muat turun pembentangan keupayaan syarikat (PDF) ←",
-  "h.hero_alt": "Ilustrasi pekerja yang bersedia untuk dihantar ke negara destinasi",
+  "h.hero_alt": "Pekerja binaan memakai topi keledar di tapak pembinaan",
   "h.hero_verified": "// penghantaran pekerja yang disahkan",
   "h.hero_destinations": "Lebih 25 negara destinasi · 25 kategori pekerjaan",
   "h.badge_response": "Tempoh maklum balas",

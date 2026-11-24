@@ -16,7 +16,7 @@ export default {
   "h.stats_aria": "إحصائيات رئيسية",
   "h.scroll": "مرّر",
   "h.download_pdf": "تحميل ملف الإمكانات (PDF) ←",
-  "h.hero_alt": "رسم توضيحي لعمال جاهزين للإيفاد",
+  "h.hero_alt": "عمال بناء يرتدون خوذات واقية في موقع بناء",
   "h.hero_verified": "// إيفاد موثّق",
   "h.hero_destinations": "أكثر من 25 دولة وجهة · 25 فئة مهنية",
   "h.badge_response": "زمن الاستجابة",

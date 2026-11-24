@@ -16,7 +16,7 @@ export default {
   "h.stats_aria": "Kluczowe liczby",
   "h.scroll": "Przewiń",
   "h.download_pdf": "Pobierz prezentację możliwości (PDF) →",
-  "h.hero_alt": "Ilustracja przedstawiająca pracowników gotowych do wyjazdu",
+  "h.hero_alt": "Pracownicy budowlani w kaskach ochronnych na placu budowy",
   "h.hero_verified": "// zweryfikowana rekrutacja",
   "h.hero_destinations": "ponad 25 krajów docelowych · 25 kategorii zawodowych",
   "h.badge_response": "Czas odpowiedzi",

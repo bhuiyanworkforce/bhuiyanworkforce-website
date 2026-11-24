@@ -14,7 +14,7 @@ export default {
   "h.stats_aria": "Estatísticas principais",
   "h.scroll": "Deslizar",
   "h.download_pdf": "Descarregar apresentação de capacidades (PDF) ←",
-  "h.hero_alt": "Ilustração de trabalhadores prontos para o envio",
+  "h.hero_alt": "Trabalhadores da construção civil com capacete num estaleiro",
   "h.hero_verified": "// envio verificado",
   "h.hero_destinations": "Mais de 25 países de destino · 25 categorias profissionais",
   "h.badge_response": "Tempo de resposta",

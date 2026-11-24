@@ -14,7 +14,7 @@ export default {
   "h.stats_aria": "Statistici cheie",
   "h.scroll": "Derulați",
   "h.download_pdf": "Capabilități de descărcare PDF →",
-  "h.hero_alt": "Ilustrație a lucrătorilor pregătiți pentru desfășurare",
+  "h.hero_alt": "Muncitori în construcții cu căști de protecție pe un șantier",
   "h.hero_verified": "// implementare verificată",
   "h.hero_destinations": "Peste 25 de țări de destinație · 25 de categorii comerciale",
   "h.badge_response": "Răspuns",
