@@ -2,6 +2,7 @@ import React from 'react';
 import { LanguageProvider, useLang } from './i18n/LanguageContext';
 import ScrollToTop from './components/ScrollToTop';
 import HeadSync from './components/HeadSync';
+import ScrollReveal from './components/ScrollReveal';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -84,6 +85,7 @@ export default function App() {
     <LanguageProvider>
       <ScrollToTop />
       <HeadSync />
+      <ScrollReveal />
       <Header />
       <main>
         <Routed />
