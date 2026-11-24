@@ -6,7 +6,10 @@ import { t } from '../i18n/translations';
 
 export default function Footer() {
   const navigate = useNavigate();
-  const { lang } = useLang();
+  const { lang, route } = useLang();
+  // Workers (Bengali pages, apply form) get the workers' number; employers get the employers' number.
+  const workerCtx = lang === 'bn' || (route && route.type === 'page' && route.id === 'apply');
+  const MAIN_NUM = workerCtx ? '8801978356710' : '8801864567912';
   const tr = (key) => t(key, lang);
   const goContact = () => {
     const el = document.getElementById('contact');
@@ -27,7 +30,7 @@ export default function Footer() {
             <div className="social-links" style={{ marginTop: 20 }}>
               <a href="https://www.linkedin.com/company/bhuiyan-workforce-ltd/" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
               <a href="https://www.facebook.com/share/1GjrNbPYvf/" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
-              <a href="https://wa.me/8801864567912" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">W</a>
+              <a href={`https://wa.me/${MAIN_NUM}`} className="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">W</a>
             </div>
           </div>
 
@@ -85,7 +88,7 @@ export default function Footer() {
     {/* Sticky Contact Buttons */}
     <div style={{ position: 'fixed', bottom: 24, insetInlineEnd: 20, zIndex: 999, display: 'flex', flexDirection: 'column', gap: 12 }}>
       <a
-        href="tel:+8801864567912"
+        href={`tel:+${MAIN_NUM}`}
         aria-label={tr('ft.call')}
         style={{
           width: 56, height: 56, borderRadius: '50%',
@@ -102,7 +105,7 @@ export default function Footer() {
         </svg>
       </a>
       <a
-        href="https://wa.me/8801864567912"
+        href={`https://wa.me/${MAIN_NUM}`}
         target="_blank" rel="noopener noreferrer"
         aria-label={tr('ft.chat_wa')}
         style={{
