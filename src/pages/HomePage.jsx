@@ -222,18 +222,6 @@ export default function HomePage() {
                   width="800"
                   height="380"
                 />
-                <div style={{
-                  position: 'absolute', inset: 0,
-                  background: 'linear-gradient(to top, rgba(8,25,46,0.85) 0%, transparent 50%)',
-                }} />
-                <div style={{ position: 'absolute', bottom: 20, insetInlineStart: 128, insetInlineEnd: 20 }}>
-                  <div style={{ fontFamily: 'monospace', fontSize: '0.65rem', color: 'var(--gold)', letterSpacing: '0.08em' }}>
-                    {tr('h.hero_verified')}
-                  </div>
-                  <div style={{ fontFamily: 'monospace', fontSize: '0.62rem', color: 'rgba(255,255,255,0.5)', marginTop: 4 }}>
-                    {tr('h.hero_destinations')}
-                  </div>
-                </div>
                 </div>
                 <div className="bw-badge-tr">
                   <div className="num">24h</div>
