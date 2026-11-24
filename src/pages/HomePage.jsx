@@ -316,8 +316,11 @@ export default function HomePage() {
                   <div style={{ width: '100%', height: 180, overflow: 'hidden', flexShrink: 0 }}>
                     <img
                       src={s.image}
+                      width={s.imageW}
+                      height={s.imageH}
                       alt={s.name}
                       loading="lazy"
+                      decoding="async"
                       style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.4s ease' }}
                       onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
                       onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}

@@ -36,11 +36,18 @@ export default function ServicePage() {
 
             {/* Left column */}
             <div>
-              {/* Five services (welding, plumbing/HVAC, heavy equipment, marine, domestic) have no image
-                  in the data file; without this guard the page crashes instead of rendering. */}
-              {service.image && (
+              {/* Guard kept so a service added later without an image renders instead of crashing.
+                  Image is self-hosted WebP (public/images/services); width/height reserve space. */}
+              {service.imageDetail && (
                 <div className="service-detail-image">
-                  <img src={service.image.replace('q=80', 'q=80&fm=webp')} alt={tr('sv.workers_alt', { name: service.name })} loading="lazy" decoding="async" />
+                  <img
+                    src={service.imageDetail}
+                    width={service.imageDetailW}
+                    height={service.imageDetailH}
+                    alt={tr('sv.workers_alt', { name: service.name })}
+                    fetchPriority="high"
+                    decoding="async"
+                  />
                 </div>
               )}
 
