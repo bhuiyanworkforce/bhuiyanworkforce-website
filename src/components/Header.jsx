@@ -46,7 +46,7 @@ export default function Header() {
                 <>
                   <Link to="/worker-guide">{t('nav_worker_guide', lang)}</Link>
                   <Link to="/faq">{t('nav_faq', lang)}</Link>
-                  <Link to="/countries">{t('nav_countries', lang)}</Link>
+                  <button onClick={() => scrollTo('countries')}>{t('nav_countries', lang)}</button>
                   <Link to="/about">{t('nav_about', lang)}</Link>
                 </>
               ) : (
@@ -94,7 +94,7 @@ export default function Header() {
             <Link to="/worker-guide">{t('nav_worker_guide', lang)}</Link>
             <Link to="/faq">{t('nav_faq', lang)}</Link>
             <Link to="/apply">{t('nav_apply', lang)}</Link>
-            <Link to="/countries">{t('nav_countries', lang)}</Link>
+            <button onClick={() => scrollTo('countries')}>{t('nav_countries', lang)}</button>
             <Link to="/about">{t('nav_about', lang)}</Link>
           </>
         ) : (
