@@ -80,6 +80,11 @@ const BN_T = {
   common_back: '← পেছনে যান',
 };
 
+// The English form is deliberately bilingual (English + Bangla side by side). Browser auto-translate
+// (Chrome / Google Translate) mangles the Bangla fragments and the English/Bangla pairs, so the page
+// is marked translate="no" in English. The other languages are real translations and stay translatable.
+const NO_TRANSLATE = (lang) => (lang === 'en' ? 'no' : undefined);
+
 // "English / বাংলা" for option text and placeholders (plain strings).
 const bi = (lang, en) => (lang === 'en' && BN[en] ? `${en} / ${BN[en]}` : tx(lang, en));
 // Label text: English, with the Bangla meaning on a second line for English visitors.
@@ -294,6 +299,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
 
   if (submitted) return (
     <StaticPageLocalizer locale={lang} file="src/pages/WorkerApplicationPage.jsx">
+    <div translate={NO_TRANSLATE(lang)}>
     <div className="page-hero" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center' }}>
       <div className="container" style={{ textAlign: 'center' }}>
         <div style={{ fontSize: '4rem', marginBottom: 24 }}>✅</div>
@@ -304,6 +310,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
         <BnNote lang={lang} style={{ color: 'rgba(255,255,255,0.7)', maxWidth: 500, margin: '-16px auto 32px' }}>ধন্যবাদ, {fields.fullName}। আপনার আবেদন আমরা পেয়েছি এবং ৩–৫ কর্মদিবসের মধ্যে দেখব। বাছাই হলে আমাদের দল সরাসরি যোগাযোগ করবে।</BnNote>
         <Link to="/" className="btn btn-primary">{tk('apply_back_home')}</Link>
       </div>
+    </div>
     </div>
     </StaticPageLocalizer>
   );
@@ -325,6 +332,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
 
   return (
     <StaticPageLocalizer locale={lang} file="src/pages/WorkerApplicationPage.jsx">
+      <div translate={NO_TRANSLATE(lang)}>
       <div className="page-hero">
         <div className="container">
           <div className="page-hero-inner">
@@ -605,6 +613,7 @@ The applicant accepted the Privacy Policy and consented to processing of their d
           </form>
         </div>
       </section>
+      </div>
     </StaticPageLocalizer>
   );
 }
