@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import BengaliHomePage from './pages/BengaliHomePage';
+import BengaliAboutPage from './pages/BengaliAboutPage';
 import { BengaliCountryPage, BengaliServicePage } from './pages/BengaliTopicPages';
 import AboutPage from './pages/AboutPage';
 import FAQPage from './pages/FAQPage';
@@ -26,15 +27,21 @@ import NotFoundPage from './pages/NotFoundPage';
 
 // Which component renders which route. The route itself (page, country, service, ...)
 // comes from the shared route module, so URLs in every language resolve the same way.
-// /bn is a Bengali worker landing page; every other language shows the main home page.
+// /bn is a Bengali worker landing page and /bn/about a short worker-focused About page;
+// every other language shows the main pages.
 function HomeRoute() {
   const { urlLang } = useLang();
   return urlLang === 'bn' ? <BengaliHomePage /> : <HomePage />;
 }
 
+function AboutRoute() {
+  const { urlLang } = useLang();
+  return urlLang === 'bn' ? <BengaliAboutPage /> : <AboutPage />;
+}
+
 const PAGE_COMPONENTS = {
   home: HomeRoute,
-  about: AboutPage,
+  about: AboutRoute,
   faq: FAQPage,
   blog: BlogPage,
   countries: CountriesPage,
