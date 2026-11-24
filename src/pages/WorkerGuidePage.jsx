@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link as RRLink } from 'react-router-dom';
 import { Link } from '../i18n/router';
+import { useLang } from '../i18n/LanguageContext';
 
 // Worker guide for Bangladeshi applicants: how overseas recruitment works, what it costs and what a
-// worker must never pay. The page is bilingual by design (Bengali first, English one click away),
-// lives only at the English URL, and is independent of the site language switcher.
+// worker must never pay. One language per URL so search engines index each properly:
+// /bn/worker-guide is Bengali, /worker-guide is English, and each links to the other.
 
 const BN_FONT = "'Noto Sans Bengali','Nirmala UI','Kalpurush','Siyam Rupali','Shonar Bangla',system-ui,sans-serif";
 const WA_WORKERS = 'https://wa.me/8801978356710';
@@ -60,6 +62,8 @@ const CONTENT = {
     contactLine: 'কোনো সমস্যা, প্রশ্ন বা অভিযোগ থাকলে সরাসরি WhatsApp-এ জানান:',
     apply: 'আবেদন করুন',
     whatsapp: 'WhatsApp-এ কথা বলুন',
+    faqLink: 'আরও প্রশ্ন আছে? সাধারণ প্রশ্ন ও উত্তর দেখুন',
+    otherLang: 'Read in English',
     note: 'এই পাতার তথ্য সাধারণ নির্দেশিকা। নির্দিষ্ট খরচ ও নিয়ম দেশ ও সময় অনুযায়ী বদলাতে পারে। সর্বশেষ নিয়ম বিএমইটি বা প্রবাসী কল্যাণ ও বৈদেশিক কর্মসংস্থান মন্ত্রণালয় থেকে যাচাই করুন।',
   },
   en: {
@@ -113,6 +117,8 @@ const CONTENT = {
     contactLine: 'For any problem, question or complaint, message us directly on WhatsApp:',
     apply: 'Apply now',
     whatsapp: 'Chat on WhatsApp',
+    faqLink: 'More questions? See the FAQ',
+    otherLang: 'বাংলায় পড়ুন',
     note: 'This page is general guidance. Specific costs and rules vary by country and over time. Check the latest rules with BMET or the Ministry of Expatriates’ Welfare and Overseas Employment.',
   },
 };
@@ -145,22 +151,11 @@ function Bullets({ items, mark, color }) {
 }
 
 export default function WorkerGuidePage() {
-  const [view, setView] = useState('bn');
+  const { urlLang } = useLang();
+  const view = urlLang === 'bn' ? 'bn' : 'en';
   const c = CONTENT[view];
-
-  const toggle = (id, label) => (
-    <button
-      type="button" onClick={() => setView(id)} aria-pressed={view === id} lang={id}
-      style={{
-        padding: '8px 18px', borderRadius: 8, cursor: 'pointer', fontFamily: id === 'bn' ? BN_FONT : 'inherit',
-        fontSize: '0.9rem', fontWeight: view === id ? 700 : 500,
-        background: view === id ? 'var(--gold, #c9a84c)' : 'transparent',
-        color: view === id ? '#0f2347' : 'var(--white, #fff)', border: '1px solid var(--gold, #c9a84c)',
-      }}
-    >
-      {label}
-    </button>
-  );
+  // A plain router link (not the language-aware one) so each language can point at the other.
+  const otherHref = view === 'bn' ? '/worker-guide' : '/bn/worker-guide';
 
   return (
     <div lang={view} style={view === 'bn' ? { fontFamily: BN_FONT } : undefined}>
@@ -173,10 +168,17 @@ export default function WorkerGuidePage() {
             </div>
             <h1 style={view === 'bn' ? { lineHeight: 1.35 } : undefined}>{c.h1}</h1>
             <p>{c.sub}</p>
-            <div style={{ display: 'flex', gap: 8, marginTop: 24 }}>
-              {toggle('bn', 'বাংলা')}
-              {toggle('en', 'English')}
-            </div>
+            <p style={{ marginTop: 20 }}>
+              <RRLink
+                to={otherHref}
+                reloadDocument
+                hrefLang={view === 'bn' ? 'en' : 'bn'}
+                lang={view === 'bn' ? 'en' : 'bn'}
+                style={{ color: 'var(--gold, #c9a84c)', fontWeight: 600, fontFamily: view === 'bn' ? 'inherit' : BN_FONT }}
+              >
+                {c.otherLang}
+              </RRLink>
+            </p>
           </div>
         </div>
       </div>
@@ -219,6 +221,7 @@ export default function WorkerGuidePage() {
           <Link to="/apply" className="btn btn-primary">{c.apply}</Link>
           <a href={WA_WORKERS} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">{c.whatsapp}</a>
         </div>
+        <p style={{ marginTop: 20 }}><Link to="/faq">{c.faqLink}</Link></p>
         <p style={{ marginTop: 32, fontSize: '0.85rem', lineHeight: 1.7, color: 'var(--gray-500)' }}>{c.note}</p>
       </Section>
     </div>
