@@ -1,6 +1,7 @@
 // Bengali head/SEO strings. Bengali pages: home (worker landing), FAQ and worker guide.
 // Wording avoids any licence, visa or placement promise. NEEDS NATIVE-SPEAKER REVIEW before launch.
 import en from './en.js';
+import { bnCountryHeads, bnServiceHeads } from '../../content/bn/topicHeads.js';
 
 const NAME = 'Bhuiyan Workforce Ltd.';
 
@@ -48,8 +49,8 @@ export default {
       },
     },
     notFound: { title: `পাতাটি পাওয়া যায়নি — ${NAME}`, description: 'আপনি যে পাতাটি খুঁজছেন সেটি নেই।' },
-    countries: {},
-    services: {},
+    countries: bnCountryHeads(),
+    services: bnServiceHeads(),
     posts: {},
     guides: {},
     // Country names in JSON-LD stay in English, as on every other language.
