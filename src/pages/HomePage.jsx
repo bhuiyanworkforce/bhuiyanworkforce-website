@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { Link } from '../i18n/router';
 import ContactTabs from '../components/ContactTabs';
+import HeroGlobe from '../components/HeroGlobe';
 const WorldMap = lazy(() => import('../components/WorldMap'));
 import { SERVICES } from '../data/services';
 import { COUNTRIES } from '../data/countries';
@@ -148,6 +149,20 @@ function ParticleField() {
         .bw-worker-cta {
           background: var(--navy); border-top: 1px solid rgba(255,255,255,0.06); padding: 48px 0;
         }
+        .bw-globe {
+          position: absolute; inset: 0; width: 100%; height: 100%;
+          background: radial-gradient(ellipse at 50% 45%, #12335c 0%, #0a2040 55%, #071a33 100%);
+          opacity: 0; transition: opacity 0.9s ease; cursor: grab; touch-action: pan-y;
+        }
+        .bw-globe.is-ready { opacity: 1; }
+        .bw-hero-img-clip.is-globe { height: 380px; }
+        .bw-hero-img-clip.is-globe img {
+          position: absolute !important; inset-inline-end: 16px; bottom: 16px; z-index: 2;
+          width: 140px !important; height: 96px !important; border-radius: 12px;
+          border: 1.5px solid rgba(201,168,76,0.55); box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+          animation: bwInsetIn 0.5s ease both;
+        }
+        @keyframes bwInsetIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: none; } }
         @media (max-width: 900px) {
           .bw-hero-right { display: none !important; }
           .bw-hero-grid { grid-template-columns: 1fr !important; }
@@ -163,6 +178,8 @@ export default function HomePage() {
   // The map needs the browser (topojson fetch, react-simple-maps), so the server and the first
   // client render both show the same placeholder and the map mounts after hydration.
   const [mapReady, setMapReady] = useState(false);
+  // True once the hero globe has faded in; the photo then shrinks into a small inset.
+  const [globeOn, setGlobeOn] = useState(false);
   useEffect(() => { setMapReady(true); }, []);
   const tr = (key, vars) => t(key, lang, vars);
 
@@ -211,7 +228,7 @@ export default function HomePage() {
             {/* Right */}
             <div className="bw-hero-right hero-right-anim" style={{ position: 'relative' }}>
               <div className="bw-hero-img-card" style={{ position: 'relative' }}>
-                <div className="bw-hero-img-clip">
+                <div className={`bw-hero-img-clip${globeOn ? ' is-globe' : ''}`}>
                 <img
                   src="/hero-photo.jpg"
                   onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/hero-image.svg'; }}
@@ -222,6 +239,7 @@ export default function HomePage() {
                   width="800"
                   height="380"
                 />
+                <HeroGlobe onActive={setGlobeOn} />
                 </div>
                 <div className="bw-badge-tr">
                   <div className="num">24h</div>
