@@ -197,6 +197,12 @@ export const REAL_LOCALE_CODES = Object.values(LOCALES)
   .filter((l) => !l.overlay)
   .map((l) => l.code);
 
+// Order of the language dropdown (display only). REAL_LOCALE_CODES above keeps its own order, which
+// the hreflang alternates and the sitemap use. A language missing from this list goes last.
+export const SWITCHER_ORDER = [
+  'en', 'bn', 'ar', 'pl', 'el', 'ro', 'es', 'it', 'sr', 'bs', 'pt', 'hr', 'bg', 'de', 'mk', 'hu', 'ms',
+];
+
 export const OVERLAY_LOCALE_CODES = Object.values(LOCALES)
   .filter((l) => l.overlay)
   .map((l) => l.code);
