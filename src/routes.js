@@ -8,7 +8,7 @@
 // The slug lists below mirror src/data/*.jsx. scripts/verify-pages.mjs and
 // scripts/test-seo.mjs fail the build if they drift from the data files.
 
-import { LOCALES, REAL_LOCALE_CODES, DEFAULT_LOCALE, SITE_URL, isRealLocale } from './i18n/config.js';
+import { LOCALES, REAL_LOCALE_CODES, SWITCHER_ORDER, DEFAULT_LOCALE, SITE_URL, isRealLocale } from './i18n/config.js';
 import { buildPath, parsePath } from './i18n/slugs.js';
 import { LOCALE_DATA } from './i18n/locales/index.js';
 
@@ -129,7 +129,12 @@ export function getAlternates(route) {
  * flagged (fallback: true) so the UI can tell the visitor.
  */
 export function getLanguageLinks(route, currentLang) {
-  return REAL_LOCALE_CODES.map((lang) => {
+  const rank = (code) => {
+    const i = SWITCHER_ORDER.indexOf(code);
+    return i === -1 ? SWITCHER_ORDER.length : i;
+  };
+  const ordered = [...REAL_LOCALE_CODES].sort((a, b) => rank(a) - rank(b));
+  return ordered.map((lang) => {
     const available = route ? isAvailable(route, lang) : false;
     const target = available ? route : { type: 'page', id: 'home' };
     return {
