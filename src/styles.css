@@ -469,6 +469,11 @@ html[lang="ar"] {
   --font-display: 'Noto Sans Arabic', 'DM Sans', sans-serif;
   --font-body: 'Noto Sans Arabic', 'DM Sans', sans-serif;
 }
+/* Bengali (/bn): Noto Sans Bengali is loaded from the generated head; system Bengali fonts are the fallback. */
+html[lang="bn"] {
+  --font-display: 'Noto Sans Bengali', 'Nirmala UI', 'Kalpurush', 'Siyam Rupali', 'Shonar Bangla', 'DM Sans', sans-serif;
+  --font-body: 'Noto Sans Bengali', 'Nirmala UI', 'Kalpurush', 'Siyam Rupali', 'Shonar Bangla', 'DM Sans', sans-serif;
+}
 /* Letter-spacing breaks Arabic letter joining. */
 [dir="rtl"] *, [dir="rtl"] *::before, [dir="rtl"] *::after { letter-spacing: normal !important; }
 [dir="rtl"] .header-nav,

@@ -16,6 +16,7 @@ import './i18n/ms-bundle.js';
 import './i18n/de-bundle.js';
 import './i18n/hu-bundle.js';
 import './i18n/pt-bundle.js';
+import './i18n/bn-bundle.js';
 import App from './App';
 import { contentData } from './seo/data.js';
 import { getFallbackReport, clearFallbacks } from './content/fallbacks.js';

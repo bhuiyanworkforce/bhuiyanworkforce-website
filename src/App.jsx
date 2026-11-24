@@ -5,6 +5,7 @@ import HeadSync from './components/HeadSync';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
+import BengaliHomePage from './pages/BengaliHomePage';
 import AboutPage from './pages/AboutPage';
 import FAQPage from './pages/FAQPage';
 import BlogPage from './pages/BlogPage';
@@ -24,8 +25,14 @@ import NotFoundPage from './pages/NotFoundPage';
 
 // Which component renders which route. The route itself (page, country, service, ...)
 // comes from the shared route module, so URLs in every language resolve the same way.
+// /bn is a Bengali worker landing page; every other language shows the main home page.
+function HomeRoute() {
+  const { urlLang } = useLang();
+  return urlLang === 'bn' ? <BengaliHomePage /> : <HomePage />;
+}
+
 const PAGE_COMPONENTS = {
-  home: HomePage,
+  home: HomeRoute,
   about: AboutPage,
   faq: FAQPage,
   blog: BlogPage,

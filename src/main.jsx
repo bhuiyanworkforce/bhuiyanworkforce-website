@@ -41,6 +41,7 @@ async function start() {
   else if (lang === 'de') await import('./i18n/de-bundle.js');
   else if (lang === 'hu') await import('./i18n/hu-bundle.js');
   else if (lang === 'pt') await import('./i18n/pt-bundle.js');
+  else if (lang === 'bn') await import('./i18n/bn-bundle.js');
 
   if (container.hasChildNodes() && renderedFor === here) {
     ReactDOM.hydrateRoot(container, tree);
