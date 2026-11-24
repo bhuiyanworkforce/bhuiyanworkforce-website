@@ -159,7 +159,7 @@ test('page counts', () => {
   assert.equal(by('it'), 11 + 25 + 33 + 18 + 3);
   assert.equal(by('es'), 11 + 25 + 33 + 18 + 3);
   assert.equal(by('ms'), 9 + 25 + 33); // Malay: no blog index, articles, employer guide or guides yet
-  assert.equal(by('bn'), 3 + 33 + 25); // Bengali worker section: home, FAQ, worker guide, every country and every service
+  assert.equal(by('bn'), 4 + 33 + 25); // Bengali worker section: home, About, FAQ, worker guide, every country and every service
   for (const l of ['de', 'hu', 'pt']) assert.equal(by(l), 9 + 25 + 33 + 3); // home, about, faq, countries index, capabilities, apply, privacy, terms, founder, services, countries, 3 guides; no blog or employer-guide index yet
 });
 test('availability and 404 resolution', () => {
@@ -175,7 +175,7 @@ test('hreflang: self, x-default, only real translations', () => {
   assert.deepEqual(alts.map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'bn', 'x-default']);
   assert.equal(alts.find((a) => a.hreflang === 'x-default').href, 'https://bhuiyanworkforce.com/countries/saudi-arabia');
   assert.deepEqual(getAlternates({ type: 'page', id: 'privacy' }).map((a) => a.hreflang), ['en', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
-  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'x-default']);
+  assert.deepEqual(getAlternates({ type: 'page', id: 'about' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'bn', 'x-default']);
   assert.deepEqual(getAlternates({ type: 'country', id: 'slovenia' }).map((a) => a.hreflang), ['en', 'ar', 'pl', 'bg', 'ro', 'el', 'hr', 'sr-Latn', 'bs', 'mk', 'it', 'es', 'ms', 'de', 'hu', 'pt', 'bn', 'x-default']);
 });
 test('Bengali worker section: own URLs, hreflang pairs, no stray alternates', () => {
@@ -185,7 +185,8 @@ test('Bengali worker section: own URLs, hreflang pairs, no stray alternates', ()
   assert.equal(resolvePath('/bn').status, 'ok');
   assert.equal(resolvePath('/bn/worker-guide').status, 'ok');
   assert.equal(resolvePath('/bn/faq').status, 'ok');
-  assert.equal(resolvePath('/bn/about').status, 'notfound'); // employer pages are English-only
+  assert.equal(resolvePath('/bn/about').status, 'ok'); // short worker-focused About page
+  assert.equal(resolvePath('/bn/blog').status, 'notfound'); // other employer pages are English-only
   assert.equal(resolvePath('/bn/countries/qatar').status, 'ok');
   assert.equal(resolvePath('/bn/services/drivers').status, 'ok');
   assert.equal(resolvePath('/bn/countries').status, 'notfound'); // no Bengali countries index
@@ -197,7 +198,7 @@ test('Bengali worker section: own URLs, hreflang pairs, no stray alternates', ()
   assert.equal(getAlternates({ type: 'country', id: 'qatar' }).some((a) => a.hreflang === 'bn' && a.href === 'https://bhuiyanworkforce.com/bn/countries/qatar'), true);
 });
 test('Bengali heads: Bengali title and description, own canonical, bn_BD, Noto Sans Bengali, valid JSON-LD', () => {
-  for (const id of ['home', 'faq', 'worker-guide']) {
+  for (const id of ['home', 'about', 'faq', 'worker-guide']) {
     const h = getPageHead({ type: 'page', id }, 'bn', {});
     assert.equal(h.lang, 'bn');
     assert.equal(h.dir, 'ltr');
@@ -217,7 +218,7 @@ test('Bengali heads: Bengali title and description, own canonical, bn_BD, Noto S
   assert.ok(!/[\u0980-\u09FF]/.test(en.title + en.description));
 });
 test('Bengali pages avoid licence, visa-guarantee and cost claims in head text', () => {
-  for (const id of ['home', 'faq', 'worker-guide']) {
+  for (const id of ['home', 'about', 'faq', 'worker-guide']) {
     const h = getPageHead({ type: 'page', id }, 'bn', {});
     const text = [h.title, h.description, h.keywords || ''].join(' ');
     assert.ok(!/ভিসা\s*(নিশ্চিত|গ্যারান্টি)|লাইসেন্সপ্রাপ্ত\s*এজেন্সি|BMET\s*registered/i.test(text), `${id}: risky claim in head`);
