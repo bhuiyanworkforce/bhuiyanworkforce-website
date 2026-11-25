@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
+import { track } from '../lib/analytics.js';
 
 // Decorative 3D-style globe for the home hero. It is an enhancement only:
 //   - the server and the first client render output nothing, so pre-rendered HTML is unchanged
@@ -54,6 +55,7 @@ export default function HeroGlobe({ onActive }) {
           onFirstFrame: () => {
             if (dead) return;
             setReady(true); // canvas cross-fades over the photo
+            track('hero_globe_shown');
             // Once the photo is fully covered, shrink it into a small inset.
             timer = window.setTimeout(() => { if (!dead && onActive) onActive(true); }, FADE_MS);
           },
