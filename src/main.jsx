@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './styles.css';
 import App from './App';
 import { parsePath } from './i18n/slugs.js';
+import { initAnalytics } from './lib/analytics.js';
 
 const container = document.getElementById('root');
 
@@ -52,3 +53,4 @@ async function start() {
 }
 
 start();
+initAnalytics();
