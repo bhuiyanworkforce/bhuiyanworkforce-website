@@ -87,7 +87,9 @@ export default function Header() {
       <nav className={`mobile-menu${menuOpen ? ' open' : ''}`} aria-label={t('a11y.mobile_nav', lang)}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 0 16px' }}>
           <button className="mobile-close" onClick={() => setMenuOpen(false)} aria-label={t('a11y.close', lang)}>×</button>
-          <LanguageSwitcher />
+          {/* Only mounted while the menu is open: the header already carries two copies (desktop + compact),
+              so a third always-rendered copy just adds DOM and hydration work. */}
+          {menuOpen ? <LanguageSwitcher /> : <span />}
         </div>
         {isBn ? (
           <>
