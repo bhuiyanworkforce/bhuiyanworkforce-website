@@ -58,7 +58,7 @@ if (data.slugs) {
 }
 
 const pages = listPages();
-const fileFor = (p) => (p === '/' ? path.join(DIST, 'index.html') : path.join(DIST, p.slice(1), 'index.html'));
+const fileFor = (p) => (p === '/' ? path.join(DIST, 'index.html') : path.join(DIST, `${p.slice(1)}.html`));
 const seenTitles = new Map();
 
 for (const page of pages) {

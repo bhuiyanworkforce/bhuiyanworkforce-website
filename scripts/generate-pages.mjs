@@ -78,8 +78,11 @@ export function injectPage(template, head, bodyHtml, ssrPath) {
   return html;
 }
 
+// Pages are written as dist/about.html (not dist/about/index.html). Cloudflare Pages serves about.html at /about
+// directly, which is the canonical URL. With about/index.html it answers /about with a 308 redirect to /about/,
+// an extra round trip on every first visit (and it counts toward Time to First Byte).
 function outFile(p) {
-  return p === '/' ? path.join(DIST, 'index.html') : path.join(DIST, p.replace(/^\//, ''), 'index.html');
+  return p === '/' ? path.join(DIST, 'index.html') : path.join(DIST, `${p.replace(/^\//, '')}.html`);
 }
 
 function write(file, content) {
