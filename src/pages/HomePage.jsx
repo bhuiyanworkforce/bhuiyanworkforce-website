@@ -17,7 +17,8 @@ const go = (id) => {
 };
 
 
-const mapPlaceholderStyle = { height: 260, background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' };
+// aspect-ratio matches the map's own 900x500 viewBox, so swapping the placeholder for the map does not shift the page.
+const mapPlaceholderStyle = { width: '100%', aspectRatio: '900 / 500', background: '#060f1e', borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem' };
 
 // Deterministic pseudo-random value in [0, 1) from integers only, so the server-rendered HTML and
 // the browser render the same positions (Math.random() would cause a hydration mismatch).
@@ -43,7 +44,7 @@ function ParticleField() {
           animation: `particleFloat ${p.dur}s ${p.delay}s ease-in-out infinite alternate`,
         }} />
       ))}
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         @keyframes particleFloat {
           from { transform: translateY(0) translateX(0); opacity: 0.1; }
           to   { transform: translateY(-16px) translateX(8px); opacity: 0.45; }
@@ -168,7 +169,7 @@ function ParticleField() {
           .bw-hero-grid { grid-template-columns: 1fr !important; }
           .bw-founding-inner { flex-direction: column; align-items: flex-start; }
         }
-      `}</style>
+      ` }} />
     </div>
   );
 }

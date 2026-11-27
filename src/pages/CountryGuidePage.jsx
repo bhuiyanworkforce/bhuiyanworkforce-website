@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useParams, Navigate } from '../i18n/router';
-import { getCountryGuide, COUNTRY_GUIDES } from '../data/countryGuides';
+import { getCountryGuide, COUNTRY_GUIDES, useGuidesReady } from '../data/countryGuides';
 import { getCountry } from '../data/countries';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
@@ -68,6 +68,7 @@ function RichText({ text, id }) {
 export default function CountryGuidePage() {
   const { slug } = useParams();
   const { lang, urlLang, arrow } = useLang();
+  const guidesReady = useGuidesReady();
   const guide = localizeGuide(getCountryGuide(slug), lang);
   const tr = (key, vars) => t(key, lang, vars);
   const country = getCountry(slug);
@@ -77,6 +78,7 @@ export default function CountryGuidePage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(false);
 
+  if (!guidesReady) return null; // the guide text is still loading
   if (!guide) return <Navigate to="/employer-guide" replace />;
 
   const handleSubmit = async (e) => {

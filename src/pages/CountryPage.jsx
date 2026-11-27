@@ -4,13 +4,14 @@ import { getCountry } from '../data/countries';
 import { useLang } from '../i18n/LanguageContext';
 import { t } from '../i18n/translations';
 import { localizeCountry } from '../content';
-import { getCountryGuide } from '../data/countryGuides';
+import { getCountryGuide, useGuidesReady } from '../data/countryGuides';
 
 export default function CountryPage() {
   const { slug } = useParams();
   const { lang, urlLang, arrow } = useLang();
   const country = localizeCountry(getCountry(slug), urlLang);
   const tr = (key, vars) => t(key, lang, vars);
+  useGuidesReady(); // re-render when the employer-guide text arrives
 
   if (!country) return <Navigate to="/countries" replace />;
   const guide = getCountryGuide(slug);

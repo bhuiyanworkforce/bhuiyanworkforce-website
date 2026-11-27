@@ -218,7 +218,7 @@ export default function CapabilitiesPage() {
         </div>
       </div>
 
-      <style>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         /* ── SCREEN LAYOUT CLASSES ── */
         .about-grid {
           display: grid;
@@ -460,7 +460,7 @@ export default function CapabilitiesPage() {
           .destinations-section { page-break-before: always; }
           .contact-footer-section { page-break-before: avoid; }
         }
-      `}</style>
+      ` }} />
     </StaticPageLocalizer>
   );
 }
