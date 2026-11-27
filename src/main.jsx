@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './styles.css';
 import App from './App';
 import { parsePath } from './i18n/slugs.js';
+import { ensureGuides } from './data/countryGuides.jsx';
+import { pageKeyFor, preloadPage } from './pageLoaders.jsx';
 import { initAnalytics } from './lib/analytics.js';
 
 const container = document.getElementById('root');
@@ -26,7 +28,9 @@ const renderedFor = container.getAttribute('data-ssr-path');
 // first (the pre-rendered page is already on screen), so hydration sees the same strings the
 // server used. Everyone else never downloads it.
 async function start() {
-  const { lang } = parsePath(globalThis.location.pathname);
+  const { lang, route } = parsePath(globalThis.location.pathname);
+  // Country and guide pages are pre-rendered with the guide text, so load it before hydrating them.
+  if (route && (route.type === 'country' || route.type === 'guide')) await ensureGuides();
   if (lang === 'ar') await import('./i18n/ar-bundle.js');
   else if (lang === 'pl') await import('./i18n/pl-bundle.js');
   else if (lang === 'bg') await import('./i18n/bg-bundle.js');
@@ -43,6 +47,9 @@ async function start() {
   else if (lang === 'hu') await import('./i18n/hu-bundle.js');
   else if (lang === 'pt') await import('./i18n/pt-bundle.js');
   else if (lang === 'bn') await import('./i18n/bn-bundle.js');
+
+  // The page for this URL may be an on-demand chunk; load it first so hydration sees the same markup the server sent.
+  await preloadPage(pageKeyFor(route, lang));
 
   if (container.hasChildNodes() && renderedFor === here) {
     ReactDOM.hydrateRoot(container, tree);

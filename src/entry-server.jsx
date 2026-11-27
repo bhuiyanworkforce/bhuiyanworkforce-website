@@ -18,6 +18,30 @@ import './i18n/hu-bundle.js';
 import './i18n/pt-bundle.js';
 import './i18n/bn-bundle.js';
 import App from './App';
+import { registerPage } from './pageLoaders';
+import WorkerApplicationPage from './pages/WorkerApplicationPage';
+import CapabilitiesPage from './pages/CapabilitiesPage';
+import WorkerGuidePage from './pages/WorkerGuidePage';
+import EmployerGuidePage from './pages/EmployerGuidePage';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
+import CountryGuidePage from './pages/CountryGuidePage';
+import BengaliHomePage from './pages/BengaliHomePage';
+import BengaliAboutPage from './pages/BengaliAboutPage';
+import { BengaliCountryPage, BengaliServicePage } from './pages/BengaliTopicPages';
+
+// Static pages are rendered synchronously, so every on-demand page is registered up front here.
+registerPage('page:apply', WorkerApplicationPage);
+registerPage('page:capabilities', CapabilitiesPage);
+registerPage('page:worker-guide', WorkerGuidePage);
+registerPage('page:employer-guide', EmployerGuidePage);
+registerPage('page:privacy', PrivacyPage);
+registerPage('page:terms', TermsPage);
+registerPage('guide', CountryGuidePage);
+registerPage('bn-home', BengaliHomePage);
+registerPage('bn-about', BengaliAboutPage);
+registerPage('bn-country', BengaliCountryPage);
+registerPage('bn-service', BengaliServicePage);
 import { contentData } from './seo/data.js';
 import { getFallbackReport, clearFallbacks } from './content/fallbacks.js';
 
